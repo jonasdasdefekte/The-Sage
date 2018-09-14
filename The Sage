@@ -1,0 +1,120 @@
+The Sage 
+	Character for Slay The Spire
+
+A mechanic who studied about the cult of a blue bird.
+She learned flying a carpet and brewing potions in order to stop its rise.
+
+Starts with 40 HP, 169 gold	
+
+Starting Relic:
+	Flying Carpet
+		Start each combat with 2 Flight. 
+
+Starting Deck:
+	5x Strike
+		Attack, 1 Energy: 
+		Deal 6 (9) damage.
+	5x Defend
+		Skill, 1 Energy: 
+		Gain 5 (8) Block.
+	1x Fly
+		Skill, 1 Energy: 
+		Air: Gain 8 (12) Block. Otherwise, gain 1 Flight.
+	1x Fire Brew
+		Skill, X Energy: 
+		Brew a Fire Potion in 4 (3)-X turns.
+
+Common Cards (grey)
+	Pincer Repair
+		Attack, 1 Energy
+		Deal 9 (12) damage. The enemy gains 1 Artefact.
+	On the Head
+		Attack, 1 Energy:
+		Deal 5 (8) damage. Air: Draw 1 card and gain 1 Energy.
+	Swoop Down
+		Attack, 1 Energy: 
+		Deal 4(5) damage per Flight you have.
+	Explosive Brew
+		Attack, 1 Energy: 
+		Deal 6 (9) damage. Gain an explosive potion in 4 (3) turns.
+	Quackster
+		Skill, 0 Energy: 
+		Brew a random potion in 4 (3) turns.
+	Armor Brew
+		Skill, 1 Energy: 
+		Draw 1 (2) cards. Gain a block potion in 4 (3) turns.
+	Energy shield
+		Skill, X Energy:
+		Gain X (X+3) Block. Gain X Energy.
+
+Uncommon Cards (blue)
+	Pour Tar Pitch
+		Attack, 3 Energy: 
+		Deal 20 (25) damage. Air: Affects ALL enemies.
+	Flight Feint
+		Attack, 2 Energy: 
+		Deal 6 (9) damage and apply 1 Disoriented. 
+	Burning Flask
+		Attack, 1 Energy: 
+		Discard 1 potion to deal 20 (24) damage.
+	Pincer
+		Attack, 1 Energy: 
+		Deal 6(8) damage. Repeat this once per Artifact on the enemy.
+	Gearwheel Master
+		Skill, 0 Energy: 
+		EVERYBODY gains 1(2) Artifact. Innate. Exhaust.
+	Wicked Brew
+		Skill, X Energy: 
+		Apply 5 poison. Gain a Poison potion in 4 (3)-X turns.
+	Strength Brew
+		Skill, X Energy: 
+		Gain a Strength potion in 4 (3)-X turns. 
+	Ghostly Brew
+		Skill, 1 Energy: 
+		Gain a Ghost in a Jar potion in 4 (3) turns. Exhaust.
+	Meditation
+		Skill, 0 Energy: 
+		Draw 1 card. Play it (Upgrade instead: Gain 1 Energy) if it costs 1.
+	Study
+		Skill, X Energy: 
+		Draw X cards and (you may) put one card from your hand hand on top of your deck. 
+	Flying Cauldron
+		Skill, 0 Energy: 
+		Air: Gain 1(2) Brewing. Otherwise, gain 1(2) Flight.
+	Magical Hideout
+		Skill, 1 Energy: 
+		Air: Lose 2 Flight and brew all potions immediately.
+	Accumulation
+		Power, 1 Energy: 
+		Lose 2 (1) Flight. At the start of each turn, gain 1 Energy.
+	Altitude
+		Power, 1 Energy: 
+		Gain 1(2) Flight.
+
+Rare Cards (gold)
+	Escape
+		Skill, X Energy: 
+		Gain X (X+1) Flight. Exhaust.
+	Extra Portion
+		Skill, 1 Energy: 
+		The next potion is (the next 2 potions are) applied twice this turn.
+	Deadly Contraption
+		Power, 1 Energy: 
+		At the end of your turn, enemies are dealt 10 (12) damage for every Artifact.
+	Perpetuum Mobile
+		Power, 2(1) Energy: 
+		Whenever you play a card costing X, gain 1 Energy.
+	Cultist form
+		Power, 3 Energy: 
+		Lose 2 Flight. ALL enemies gain 4 (5) Disoriented.
+	
+Character-specific relics
+	Byrd carpet
+		Boss relic: 
+		Replaces Flying carpet. Start each combat with 3 Flight.
+	Cookbook
+		Common relic: 
+		Start each combat with 1 Brewing.
+	Blowpipe
+		Rare relic: 
+		Potions you throw affect ALL enemies.
