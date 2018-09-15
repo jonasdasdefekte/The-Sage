@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src/main/java"/>
+	<classpathentry kind="src" path="src/main/resources"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="C:/Users/Dustin/Documents/workspaces/StS/libs/09-06-2018/BaseMod.jar" sourcepath="C:/Users/Dustin/Documents/workspaces/StS/libs/09-06-2018/BaseMod-3.2.2.zip"/>
+	<classpathentry kind="lib" path="C:/Users/Dustin/Documents/workspaces/StS/libs/09-06-2018/desktop-1.0.jar" sourcepath="C:/Users/Dustin/Documents/workspaces/StS/libs/09-06-2018/decompiled"/>
+	<classpathentry kind="lib" path="C:/Users/Dustin/Documents/workspaces/StS/libs/ModTheSpire.jar" sourcepath="C:/Users/Dustin/Documents/workspaces/StS/libs/ModTheSpire-3.1.0.zip"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
