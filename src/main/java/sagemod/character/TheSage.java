@@ -4,12 +4,15 @@ import java.util.ArrayList;
 
 import com.badlogic.gdx.math.MathUtils;
 import com.esotericsoftware.spine.AnimationState;
-import com.megacrit.cardcrawl.cards.green.Strike_Green;
 import com.megacrit.cardcrawl.core.EnergyManager;
+import com.megacrit.cardcrawl.core.Settings;
+import com.megacrit.cardcrawl.daily.DailyMods;
 import com.megacrit.cardcrawl.relics.Circlet;
 import com.megacrit.cardcrawl.screens.CharSelectInfo;
 
 import basemod.abstracts.CustomPlayer;
+import sagemode.cards.DefendSage;
+import sagemode.cards.StrikeSage;
 
 /**
  * The actual Character class
@@ -35,12 +38,16 @@ public class TheSage extends CustomPlayer {
 	public static final int START_GOLD = 169;
 
 	public TheSage(String name, PlayerClass playerClass) {
-		super(name, playerClass, ORB_TEXTURES, DEFAULT_ORB_VFX, null);
+		super(name, playerClass, ORB_TEXTURES, "sage/character/orb/vfx.png", (String) null, (String) null);
 		initializeClass(null, "sage/character/shoulder2.png", "sage/character/shoulder.png",
 				"sage/character/corpse.png", getLoadout(), 20.0f, -10.0f, 220.0f, 290.0f, new EnergyManager(ENERGY));
 		loadAnimation("sage/character/idle/skeleton.atlas", "sage/character/idle/skeleton.json", 1.0f);
 		AnimationState.TrackEntry e = state.setAnimation(0, "idle", true);
 		e.setTime(e.getEndTime() * MathUtils.random());
+		if (Settings.dailyModsEnabled() && DailyMods.cardMods.get("Diverse").booleanValue()
+				|| Settings.isTrial && customMods != null && customMods.contains("Blue Cards")) {
+			masterMaxOrbs = 1;
+		}
 	}
 
 	public static CharSelectInfo getLoadout() {
@@ -48,13 +55,25 @@ public class TheSage extends CustomPlayer {
 				SageCharEnum.THE_SAGE, getStartingRelics(), getStartingDeck(), false);
 	}
 
-	private static ArrayList<String> getStartingDeck() {
+	public static ArrayList<String> getStartingDeck() {
 		ArrayList<String> cards = new ArrayList<>();
-		cards.add(Strike_Green.ID);
+		// 5x Strike
+		cards.add(StrikeSage.ID);
+		cards.add(StrikeSage.ID);
+		cards.add(StrikeSage.ID);
+		cards.add(StrikeSage.ID);
+		cards.add(StrikeSage.ID);
+
+		// 5x Defend
+		cards.add(DefendSage.ID);
+		cards.add(DefendSage.ID);
+		cards.add(DefendSage.ID);
+		cards.add(DefendSage.ID);
+		cards.add(DefendSage.ID);
 		return cards;
 	}
 
-	private static ArrayList<String> getStartingRelics() {
+	public static ArrayList<String> getStartingRelics() {
 		ArrayList<String> relics = new ArrayList<>();
 		relics.add(Circlet.ID);
 		return relics;

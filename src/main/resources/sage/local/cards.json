@@ -1,0 +1,10 @@
+{
+  "Defend_Sage": {
+    "NAME": "Defend",
+    "DESCRIPTION": "Gain !B! Block."
+  },
+  "Strike_Sage": {
+    "NAME": "Strike",
+    "DESCRIPTION": "Deal !D! damage."
+  }
+}
