@@ -46,7 +46,7 @@ public class StrikeSage extends AbstractSageCard {
 
 	@Override
 	public void use(AbstractPlayer p, AbstractMonster m) {
-		damage(p, m, AttackEffect.SLASH_HORIZONTAL);
+		damage(m, AttackEffect.SLASH_HORIZONTAL);
 	}
 
 }

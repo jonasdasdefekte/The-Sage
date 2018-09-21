@@ -1,12 +1,14 @@
 package sagemode.cards;
 
 import com.megacrit.cardcrawl.actions.AbstractGameAction.AttackEffect;
+import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import com.megacrit.cardcrawl.powers.AbstractPower;
 
 import basemod.abstracts.CustomCard;
 import sagemod.SageMod;
@@ -30,16 +32,28 @@ public abstract class AbstractSageCard extends CustomCard {
 	/**
 	 * Deals card.damage with card.damageTypeForTurn to the specified monster
 	 */
-	protected void damage(AbstractPlayer p, AbstractMonster m, AttackEffect effect) {
+	protected void damage(AbstractMonster m, AttackEffect effect) {
 		AbstractDungeon.actionManager
-				.addToBottom(new DamageAction(m, new DamageInfo(p, damage, damageTypeForTurn), effect));
+				.addToBottom(new DamageAction(m, new DamageInfo(player(), damage, damageTypeForTurn), effect));
 	}
 
 	/**
 	 * Blocks the player for card.block amount
 	 */
-	protected void block(AbstractPlayer p) {
-		AbstractDungeon.actionManager.addToBottom(new GainBlockAction(p, p, block));
+	protected void block() {
+		AbstractDungeon.actionManager.addToBottom(new GainBlockAction(player(), player(), block));
+	}
+
+	protected void applyPowerToSelf(AbstractPower power) {
+		AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(player(), player(), power, power.amount));
+	}
+
+	protected boolean hasPower(String power) {
+		return player().hasPower(power);
+	}
+
+	protected AbstractPlayer player() {
+		return AbstractDungeon.player;
 	}
 
 	private static String getImageforID(String id) {

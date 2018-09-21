@@ -12,6 +12,8 @@ import com.megacrit.cardcrawl.screens.CharSelectInfo;
 
 import basemod.abstracts.CustomPlayer;
 import sagemode.cards.DefendSage;
+import sagemode.cards.FireBrew;
+import sagemode.cards.Fly;
 import sagemode.cards.StrikeSage;
 
 /**
@@ -70,6 +72,12 @@ public class TheSage extends CustomPlayer {
 		cards.add(DefendSage.ID);
 		cards.add(DefendSage.ID);
 		cards.add(DefendSage.ID);
+
+		// 1x Fly
+		cards.add(Fly.ID);
+
+		// 1x Fire Brew
+		cards.add(FireBrew.ID);
 		return cards;
 	}
 

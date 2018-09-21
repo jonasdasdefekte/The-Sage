@@ -1,10 +1,19 @@
 {
-  "Test": {
-    "NAME": "Test",
+  "SageFlight": {
+    "NAME": "Flight",
     "DESCRIPTIONS": [
-      "Test0",
-      "Test1",
-      "Test2"
+      "Reduce #yAttack damage taken by #b50%. Cancelled if dealt #yAttack damage #b",
+      " times in one turn."
+    ]
+  },
+  "Brew": {
+    "NAME": "Brew",
+    "DESCRIPTIONS": [
+      "Obtain a #r",
+      " in #b",
+      " turns.",
+      " at the start of your next turn.",
+      " NL "
     ]
   }
 }

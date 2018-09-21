@@ -26,6 +26,8 @@ import sagemod.character.SageCharEnum;
 import sagemod.character.SageColorEnum;
 import sagemod.character.TheSage;
 import sagemode.cards.DefendSage;
+import sagemode.cards.FireBrew;
+import sagemode.cards.Fly;
 import sagemode.cards.StrikeSage;
 
 @SpireInitializer
@@ -65,9 +67,12 @@ public class SageMod
 	@Override
 	public void receiveEditCards() {
 		logger.info("Adding Cards for TheSage");
+
 		// Basic
 		BaseMod.addCard(new StrikeSage());
 		BaseMod.addCard(new DefendSage());
+		BaseMod.addCard(new FireBrew());
+		BaseMod.addCard(new Fly());
 	}
 
 	@Override
