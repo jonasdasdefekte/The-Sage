@@ -5,46 +5,41 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.potions.FirePotion;
 import com.megacrit.cardcrawl.relics.ChemicalX;
 import com.megacrit.cardcrawl.ui.panels.EnergyPanel;
 
-import basemod.helpers.BaseModTags;
-import basemod.helpers.CardTags;
-import sagemod.powers.Brew;
+public class EnergyShield extends AbstractSageCard {
 
-public class FireBrew extends AbstractSageCard {
-
-	public static final String ID = "Fire_Brew";
+	public static final String ID = "Energy_Shield";
 	private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
 	public static final String NAME = cardStrings.NAME;
 	private static final int COST = -1;
 	public static final String DESCRIPTION = cardStrings.DESCRIPTION;
 	private static final CardType TYPE = CardType.SKILL;
-	private static final CardRarity RARITY = CardRarity.BASIC;
+	private static final CardRarity RARITY = CardRarity.COMMON;
 	private static final CardTarget TARGET = CardTarget.SELF;
 
-	private static final int TURNS = 4;
-	private static final int UPGRADE_TURNS = -1;
+	private static final int EXTRA_BLOCK = 0;
+	private static final int UPGRADE_EXTRA_BLOCK = 3;
 
-	public FireBrew() {
+	public EnergyShield() {
 		super(ID, NAME, COST, DESCRIPTION, TYPE, RARITY, TARGET);
-		baseMagicNumber = magicNumber = TURNS;
-
-		CardTags.addTags(this, BaseModTags.GREMLIN_MATCH);
+		baseBlock = EXTRA_BLOCK;
 	}
 
 	@Override
 	public void upgrade() {
 		if (!upgraded) {
 			upgradeName();
-			upgradeMagicNumber(UPGRADE_TURNS);
+			upgradeBlock(UPGRADE_EXTRA_BLOCK);
+			rawDescription = cardStrings.UPGRADE_DESCRIPTION;
+			initializeDescription();
 		}
 	}
 
 	@Override
 	public AbstractCard makeCopy() {
-		return new FireBrew();
+		return new EnergyShield();
 	}
 
 	@Override
@@ -61,9 +56,15 @@ public class FireBrew extends AbstractSageCard {
 			effect += ChemicalX.BOOST;
 			player().getRelic(ChemicalX.ID).flash();
 		}
-		int turns = Math.max(0, magicNumber - effect);
 
-		Brew.addPotion(turns, new FirePotion(), player());
+		int blockGain = effect * (1 + block);
+		if (blockGain > 0) {
+			block(blockGain);
+		}
+
+		if (effect > 0) {
+			gainEnergy(effect);
+		}
 
 		if (!freeToPlayOnce) {
 			player().energy.use(EnergyPanel.totalCount);

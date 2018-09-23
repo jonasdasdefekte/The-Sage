@@ -29,8 +29,11 @@ import basemod.interfaces.PostInitializeSubscriber;
 import sagemod.character.SageCharEnum;
 import sagemod.character.SageColorEnum;
 import sagemod.character.TheSage;
+import sagemod.patches.MiscDynamicVariable;
 import sagemod.relics.FlyingCarpet;
+import sagemode.cards.ArmorBrew;
 import sagemode.cards.DefendSage;
+import sagemode.cards.EnergyShield;
 import sagemode.cards.ExplosiveBrew;
 import sagemode.cards.FireBrew;
 import sagemode.cards.Fly;
@@ -80,6 +83,8 @@ public class SageMod implements EditCharactersSubscriber, EditCardsSubscriber, E
 	public void receiveEditCards() {
 		logger.info("Adding Cards for TheSage");
 
+		BaseMod.addDynamicVariable(new MiscDynamicVariable());
+
 		// Basic
 		BaseMod.addCard(new StrikeSage());
 		BaseMod.addCard(new DefendSage());
@@ -92,6 +97,8 @@ public class SageMod implements EditCharactersSubscriber, EditCardsSubscriber, E
 		BaseMod.addCard(new SwoopDown());
 		BaseMod.addCard(new ExplosiveBrew());
 		BaseMod.addCard(new Quackster());
+		BaseMod.addCard(new ArmorBrew());
+		BaseMod.addCard(new EnergyShield());
 	}
 
 	@Override

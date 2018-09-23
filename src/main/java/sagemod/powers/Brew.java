@@ -36,7 +36,8 @@ public class Brew extends AbstractSagePower {
 					AbstractPlayer player = (AbstractPlayer) owner;
 					player.obtainPotion(p.potion);
 					flash();
-					// TODO maybe if player can not gain potion let him use or discard it
+					// TODO maybe if player can not gain potion let him use or discard it or just
+					// increase the turns by 1 again and let the player say something
 				}
 			}
 		});
@@ -52,6 +53,7 @@ public class Brew extends AbstractSagePower {
 
 	@Override
 	public void updateDescription() {
+		// TODO add alternative for when there are too many potions
 		StringBuilder builder = new StringBuilder();
 		for (int i = 0; i < potions.size(); i++) {
 			Potion p = potions.get(i);

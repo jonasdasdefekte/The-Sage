@@ -1,56 +1,56 @@
 package sagemode.cards;
 
-import com.megacrit.cardcrawl.actions.AbstractGameAction.AttackEffect;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import com.megacrit.cardcrawl.potions.BlockPotion;
 
-import sagemod.powers.SageFlight;
+import sagemod.powers.Brew;
 
-public class SwoopDown extends AbstractSageCard {
+public class ArmorBrew extends AbstractSageCard {
 
-	public static final String ID = "Swoop_Down";
+	public static final String ID = "Armor_Brew";
 	private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
 	public static final String NAME = cardStrings.NAME;
 	private static final int COST = 1;
 	public static final String DESCRIPTION = cardStrings.DESCRIPTION;
-	private static final CardType TYPE = CardType.ATTACK;
+	private static final CardType TYPE = CardType.SKILL;
 	private static final CardRarity RARITY = CardRarity.COMMON;
-	private static final CardTarget TARGET = CardTarget.ENEMY;
+	private static final CardTarget TARGET = CardTarget.SELF;
 
-	private static final int ATTACK_DMG = 4;
-	private static final int UPGRADE_ATTACK_DMG = 1;
+	private static final int BREW_IN = 4;
+	private static final int UPGRADE_BREW_IN = -1;
+	private static final int DRAW_AMT = 1;
+	private static final int UPGRADE_DRAW_AMT = 1;
 
-	public SwoopDown() {
+	public ArmorBrew() {
 		super(ID, NAME, COST, DESCRIPTION, TYPE, RARITY, TARGET);
-		baseDamage = ATTACK_DMG;
-		// TODO maybe add extended description with toal damage
+		baseMagicNumber = magicNumber = BREW_IN;
+		misc = DRAW_AMT;
 	}
 
 	@Override
 	public void upgrade() {
 		if (!upgraded) {
 			upgradeName();
-			upgradeDamage(UPGRADE_ATTACK_DMG);
+			upgradeMagicNumber(UPGRADE_BREW_IN);
+			misc += UPGRADE_DRAW_AMT;
+			rawDescription = cardStrings.UPGRADE_DESCRIPTION;
+			initializeDescription();
 		}
 	}
 
 	@Override
 	public AbstractCard makeCopy() {
-		return new SwoopDown();
+		return new ArmorBrew();
 	}
 
 	@Override
 	public void use(AbstractPlayer p, AbstractMonster m) {
-		int times = 0;
-		if (player().hasPower(SageFlight.POWER_ID)) {
-			times = ((SageFlight) player().getPower(SageFlight.POWER_ID)).getStoredAmount();
-		}
-		for (int i = 0; i < times; i++) {
-			attack(m, AttackEffect.SLASH_VERTICAL);
-		}
+		draw(misc);
+		Brew.addPotion(magicNumber, new BlockPotion(), p);
 	}
 
 }

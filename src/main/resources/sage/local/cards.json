@@ -32,7 +32,17 @@
     "DESCRIPTION": "Deal !D! damage. Brew an Explosive Potion in !M! turns."
   },
   "Quackster": {
-    "NAME": "Quakster",
+    "NAME": "Quackster",
     "DESCRIPTION": "Brew a random Potion in !M! turns."
+  },
+  "Armor_Brew": {
+    "NAME": "Armor Brew",
+    "DESCRIPTION": "Draw !MISC! card. Brew a Block Potion in !M! turns.",
+    "UPGRADE_DESCRIPTION": "Draw !MISC! cards. Brew a Block Potion in !M! turns."
+  },
+  "Energy_Shield": {
+    "NAME": "Energy Shield",
+    "DESCRIPTION": "Gain X Block. Gain X [E].",
+    "UPGRADE_DESCRIPTION": "Gain X + !B! Block. Gain X [E]."
   }
 }

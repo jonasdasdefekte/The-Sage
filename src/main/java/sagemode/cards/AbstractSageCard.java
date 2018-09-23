@@ -44,7 +44,11 @@ public abstract class AbstractSageCard extends CustomCard {
 	 * Blocks the player for card.block amount
 	 */
 	protected void block() {
-		AbstractDungeon.actionManager.addToBottom(new GainBlockAction(player(), player(), block));
+		block(block);
+	}
+
+	protected void block(int amount) {
+		AbstractDungeon.actionManager.addToBottom(new GainBlockAction(player(), player(), amount));
 	}
 
 	protected void applyPowerToSelf(AbstractPower power) {
