@@ -8,7 +8,7 @@ Starts with 40 HP, 169 gold
 
 Starting Relic:
 	Flying Carpet
-		Start each combat with 2 Flight. 
+		Start each combat with 1 Flight. 
 
 Starting Deck:
 	5x Strike
@@ -19,15 +19,15 @@ Starting Deck:
 		Gain 5 (8) Block.
 	1x Fly
 		Skill, 1 Energy: 
-		Air: Gain 8 (12) Block. Otherwise, gain 1 Flight.
+		Air: Gain 8 (12) Block. Otherwise, gain 1 Flight. Exhaust.
 	1x Fire Brew
-		Skill, X Energy: 
-		Brew a Fire Potion in 4 (3)-X turns.
+		Skill, 1 Energy: 
+		Brew a Fire Potion in 4 (3) turns. Exhaust.
 
 Common Cards (grey)
 	Pincer Repair
 		Attack, 1 Energy
-		Deal 9 (12) damage. The enemy gains 1 Artefact.
+		Deal 9 (12) damage. The enemy gains 1 Artifact.
 	On the Head
 		Attack, 1 Energy:
 		Deal 5 (8) damage. Air: Draw 1 card and gain 1 Energy.
