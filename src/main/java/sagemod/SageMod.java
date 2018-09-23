@@ -33,6 +33,8 @@ import sagemod.relics.FlyingCarpet;
 import sagemode.cards.DefendSage;
 import sagemode.cards.FireBrew;
 import sagemode.cards.Fly;
+import sagemode.cards.OnTheHead;
+import sagemode.cards.PincerRepair;
 import sagemode.cards.StrikeSage;
 
 @SpireInitializer
@@ -80,6 +82,10 @@ public class SageMod implements EditCharactersSubscriber, EditCardsSubscriber, E
 		BaseMod.addCard(new DefendSage());
 		BaseMod.addCard(new FireBrew());
 		BaseMod.addCard(new Fly());
+
+		// Common
+		BaseMod.addCard(new PincerRepair());
+		BaseMod.addCard(new OnTheHead());
 	}
 
 	@Override

@@ -5,16 +5,22 @@
     ],
     "DESCRIPTION": "Air effects only trigger when you have the Flight buff."
   },
-  "FLIGHT": {
+  "ARTIFACT": {
     "NAMES": [
-      "flight"
+      "artifact"
     ],
-    "DESCRIPTION": "Reduce Attack damage taken by 50%. Cancelled if dealt Attack damage X times in one turn."
+    "DESCRIPTION": "Negates a debuff."
   },
   "BREW": {
     "NAMES": [
       "brew"
     ],
     "DESCRIPTION": "Obtain a potion in X turns."
+  },
+  "FLIGHT": {
+    "NAMES": [
+      "flight"
+    ],
+    "DESCRIPTION": "Reduce Attack damage taken by 50%. Cancelled if dealt Attack damage X times in one turn."
   }
 }

@@ -3,9 +3,12 @@ package sagemode.cards;
 import com.megacrit.cardcrawl.actions.AbstractGameAction.AttackEffect;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
+import com.megacrit.cardcrawl.actions.common.DrawCardAction;
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
+import com.megacrit.cardcrawl.actions.common.GainEnergyAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
+import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.AbstractPower;
@@ -45,7 +48,19 @@ public abstract class AbstractSageCard extends CustomCard {
 	}
 
 	protected void applyPowerToSelf(AbstractPower power) {
-		AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(player(), player(), power, power.amount));
+		applyPower(power, player());
+	}
+
+	protected void draw(int cards) {
+		AbstractDungeon.actionManager.addToBottom(new DrawCardAction(player(), cards));
+	}
+
+	protected void gainEnergy(int energy) {
+		AbstractDungeon.actionManager.addToBottom(new GainEnergyAction(energy));
+	}
+
+	protected void applyPower(AbstractPower power, AbstractCreature target) {
+		AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(target, player(), power, power.amount));
 	}
 
 	protected boolean hasPower(String power) {

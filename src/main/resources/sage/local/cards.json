@@ -3,16 +3,24 @@
     "NAME": "Defend",
     "DESCRIPTION": "Gain !B! Block."
   },
-  "Strike_Sage": {
-    "NAME": "Strike",
-    "DESCRIPTION": "Deal !D! damage."
+  "Fire_Brew": {
+    "NAME": "Fire Brew",
+    "DESCRIPTION": "Brew a Fire Potion in NL !M! - X turns."
   },
   "Fly": {
     "NAME": "Fly",
     "DESCRIPTION": "Air: Gain !B! Block. Otherwise, gain !M! Flight."
   },
-  "FireBrew": {
-    "NAME": "Fire Brew",
-    "DESCRIPTION": "Brew a Fire Potion in NL !M! - X turns."
+  "On_The_Head": {
+    "NAME": "On The Head",
+    "DESCRIPTION": "Deal !D! damage. NL Air: Draw !M! card and gain [E]."
+  },
+  "Pincer_Repair": {
+    "NAME": "Pincer Repair",
+    "DESCRIPTION": "Deal !D! damage. The enemy gains !M! Artifact."
+  },
+  "Strike_Sage": {
+    "NAME": "Strike",
+    "DESCRIPTION": "Deal !D! damage."
   }
 }
