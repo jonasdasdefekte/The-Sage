@@ -57,7 +57,7 @@ public class EnergyShield extends AbstractSageCard {
 			player().getRelic(ChemicalX.ID).flash();
 		}
 
-		int blockGain = effect * (1 + block);
+		int blockGain = effect + block;
 		if (blockGain > 0) {
 			block(blockGain);
 		}

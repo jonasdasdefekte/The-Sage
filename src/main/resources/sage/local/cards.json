@@ -1,7 +1,21 @@
 {
+  "Armor_Brew": {
+    "NAME": "Armor Brew",
+    "DESCRIPTION": "Draw !MISC! card. Brew a Block Potion in !M! turns.",
+    "UPGRADE_DESCRIPTION": "Draw !MISC! cards. Brew a Block Potion in !M! turns."
+  },
   "Defend_Sage": {
     "NAME": "Defend",
     "DESCRIPTION": "Gain !B! Block."
+  },
+  "Energy_Shield": {
+    "NAME": "Energy Shield",
+    "DESCRIPTION": "Gain X Block. NL Gain X [E].",
+    "UPGRADE_DESCRIPTION": "Gain X + !B! Block. NL Gain X [E]."
+  },
+  "Explosive_Brew": {
+    "NAME": "Explosive Brew",
+    "DESCRIPTION": "Deal !D! damage. Brew an Explosive Potion in !M! turns."
   },
   "Fire_Brew": {
     "NAME": "Fire Brew",
@@ -19,30 +33,20 @@
     "NAME": "Pincer Repair",
     "DESCRIPTION": "Deal !D! damage. The enemy gains !M! Artifact."
   },
+  "Quackster": {
+    "NAME": "Quackster",
+    "DESCRIPTION": "Brew a random Potion in !M! turns."
+  },
   "Strike_Sage": {
     "NAME": "Strike",
     "DESCRIPTION": "Deal !D! damage."
   },
   "Swoop_Down": {
     "NAME": "Swoop Down",
-    "DESCRIPTION": "Deal !D! damage per Flight you have."
-  },
-  "Explosive_Brew": {
-    "NAME": "Explosive Brew",
-    "DESCRIPTION": "Deal !D! damage. Brew an Explosive Potion in !M! turns."
-  },
-  "Quackster": {
-    "NAME": "Quackster",
-    "DESCRIPTION": "Brew a random Potion in !M! turns."
-  },
-  "Armor_Brew": {
-    "NAME": "Armor Brew",
-    "DESCRIPTION": "Draw !MISC! card. Brew a Block Potion in !M! turns.",
-    "UPGRADE_DESCRIPTION": "Draw !MISC! cards. Brew a Block Potion in !M! turns."
-  },
-  "Energy_Shield": {
-    "NAME": "Energy Shield",
-    "DESCRIPTION": "Gain X Block. Gain X [E].",
-    "UPGRADE_DESCRIPTION": "Gain X + !B! Block. Gain X [E]."
+    "DESCRIPTION": "Deal !D! damage per Flight you have.",
+    "EXTENDED_DESCRIPTION": [
+      " NL (Deals ",
+      " damage)"
+    ]
   }
 }

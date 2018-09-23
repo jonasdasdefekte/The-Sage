@@ -16,6 +16,7 @@ public class SwoopDown extends AbstractSageCard {
 	public static final String NAME = cardStrings.NAME;
 	private static final int COST = 1;
 	public static final String DESCRIPTION = cardStrings.DESCRIPTION;
+	public static final String[] EXTENDED_DESCRIPTION = cardStrings.EXTENDED_DESCRIPTION;
 	private static final CardType TYPE = CardType.ATTACK;
 	private static final CardRarity RARITY = CardRarity.COMMON;
 	private static final CardTarget TARGET = CardTarget.ENEMY;
@@ -26,7 +27,6 @@ public class SwoopDown extends AbstractSageCard {
 	public SwoopDown() {
 		super(ID, NAME, COST, DESCRIPTION, TYPE, RARITY, TARGET);
 		baseDamage = ATTACK_DMG;
-		// TODO maybe add extended description with toal damage
 	}
 
 	@Override
@@ -43,6 +43,28 @@ public class SwoopDown extends AbstractSageCard {
 	}
 
 	@Override
+	public void applyPowers() {
+		super.applyPowers();
+		updateExtendedDescription();
+	}
+
+	@Override
+	public void calculateCardDamage(AbstractMonster mo) {
+		super.calculateCardDamage(mo);
+		updateExtendedDescription();
+	}
+
+	private void updateExtendedDescription() {
+		int count = 0;
+		if (player().hasPower(SageFlight.POWER_ID)) {
+			count = ((SageFlight) player().getPower(SageFlight.POWER_ID)).getStoredAmount();
+		}
+		rawDescription = DESCRIPTION;
+		rawDescription = rawDescription + EXTENDED_DESCRIPTION[0] + damage * count + EXTENDED_DESCRIPTION[1];
+		initializeDescription();
+	}
+
+	@Override
 	public void use(AbstractPlayer p, AbstractMonster m) {
 		int times = 0;
 		if (player().hasPower(SageFlight.POWER_ID)) {
@@ -51,6 +73,14 @@ public class SwoopDown extends AbstractSageCard {
 		for (int i = 0; i < times; i++) {
 			attack(m, AttackEffect.SLASH_VERTICAL);
 		}
+		rawDescription = DESCRIPTION;
+		initializeDescription();
+	}
+
+	@Override
+	public void onMoveToDiscard() {
+		rawDescription = DESCRIPTION;
+		initializeDescription();
 	}
 
 }
