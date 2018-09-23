@@ -7,10 +7,10 @@ import com.esotericsoftware.spine.AnimationState;
 import com.megacrit.cardcrawl.core.EnergyManager;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.daily.DailyMods;
-import com.megacrit.cardcrawl.relics.Circlet;
 import com.megacrit.cardcrawl.screens.CharSelectInfo;
 
 import basemod.abstracts.CustomPlayer;
+import sagemod.relics.FlyingCarpet;
 import sagemode.cards.DefendSage;
 import sagemode.cards.FireBrew;
 import sagemode.cards.Fly;
@@ -83,7 +83,10 @@ public class TheSage extends CustomPlayer {
 
 	public static ArrayList<String> getStartingRelics() {
 		ArrayList<String> relics = new ArrayList<>();
-		relics.add(Circlet.ID);
+
+		// Flying Carpet
+		relics.add(FlyingCarpet.ID);
+
 		return relics;
 	}
 

@@ -9,6 +9,7 @@ import org.apache.logging.log4j.Logger;
 
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.Color;
+import com.badlogic.gdx.graphics.Texture;
 import com.evacipated.cardcrawl.modthespire.lib.SpireInitializer;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
@@ -18,23 +19,28 @@ import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.localization.RelicStrings;
 
 import basemod.BaseMod;
+import basemod.ModPanel;
 import basemod.interfaces.EditCardsSubscriber;
 import basemod.interfaces.EditCharactersSubscriber;
 import basemod.interfaces.EditKeywordsSubscriber;
+import basemod.interfaces.EditRelicsSubscriber;
 import basemod.interfaces.EditStringsSubscriber;
+import basemod.interfaces.PostInitializeSubscriber;
 import sagemod.character.SageCharEnum;
 import sagemod.character.SageColorEnum;
 import sagemod.character.TheSage;
+import sagemod.relics.FlyingCarpet;
 import sagemode.cards.DefendSage;
 import sagemode.cards.FireBrew;
 import sagemode.cards.Fly;
 import sagemode.cards.StrikeSage;
 
 @SpireInitializer
-public class SageMod
-		implements EditCharactersSubscriber, EditCardsSubscriber, EditStringsSubscriber, EditKeywordsSubscriber {
+public class SageMod implements EditCharactersSubscriber, EditCardsSubscriber, EditRelicsSubscriber,
+		EditStringsSubscriber, PostInitializeSubscriber, EditKeywordsSubscriber {
 
 	public static final Logger logger = LogManager.getLogger(SageMod.class.getName());
+	public static final String AUTHORS = "jonasdasdefekte, Skrelpoid";
 
 	/**
 	 * The initializing method for ModTheSpire. This gets called before the game is
@@ -60,6 +66,7 @@ public class SageMod
 
 	@Override
 	public void receiveEditCharacters() {
+		logger.info("Adding TheSage");
 		BaseMod.addCharacter(TheSage.class, TheSage.NAME, TheSage.NAME, SageColorEnum.THE_SAGE, TheSage.NAME,
 				TheSage.BUTTON, TheSage.PORTRAIT, SageCharEnum.THE_SAGE);
 	}
@@ -73,6 +80,14 @@ public class SageMod
 		BaseMod.addCard(new DefendSage());
 		BaseMod.addCard(new FireBrew());
 		BaseMod.addCard(new Fly());
+	}
+
+	@Override
+	public void receiveEditRelics() {
+		logger.info("Adding Relics for TheSage");
+
+		// Starter
+		BaseMod.addRelicToCustomPool(new FlyingCarpet(), SageColorEnum.THE_SAGE);
 	}
 
 	@Override
@@ -103,4 +118,11 @@ public class SageMod
 	private static String loadJson(String jsonPath) {
 		return Gdx.files.internal(jsonPath).readString(String.valueOf(StandardCharsets.UTF_8));
 	}
+
+	@Override
+	public void receivePostInitialize() {
+		Texture badgeTexture = new Texture(Gdx.files.internal("sage/mod-badge.png"));
+		BaseMod.registerModBadge(badgeTexture, TheSage.NAME, AUTHORS, TheSage.DESC, new ModPanel());
+	}
+
 }

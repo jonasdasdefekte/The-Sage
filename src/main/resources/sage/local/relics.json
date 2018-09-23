@@ -1,10 +1,10 @@
 {
-  "Test": {
-    "NAME": "Test",
-    "FLAVOR": "Test",
+  "FlyingCarpet": {
+    "NAME": "Flying Carpet",
+    "FLAVOR": "An old carpet, similar to those used by the merchants of the far east.",
     "DESCRIPTIONS": [
-      "Test0",
-      "Test1"
+      "Start each combat with #b",
+      " Flight."
     ]
   }
 }
