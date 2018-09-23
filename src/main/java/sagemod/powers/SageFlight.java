@@ -46,7 +46,7 @@ public class SageFlight extends FlightPower {
 	public void stackPower(int stackAmount) {
 		super.stackPower(stackAmount);
 		try {
-			storedAmount.set(this, (int) storedAmount.get(this) + stackAmount);
+			storedAmount.setInt(this, getStoredAmount() + stackAmount);
 		} catch (Exception ex) {
 			ex.printStackTrace();
 		}
@@ -57,6 +57,14 @@ public class SageFlight extends FlightPower {
 			return damage / 2.0f;
 		}
 		return damage;
+	}
+
+	public int getStoredAmount() {
+		try {
+			return storedAmount.getInt(this);
+		} catch (Exception ex) {
+			return 0;
+		}
 	}
 
 	@Override

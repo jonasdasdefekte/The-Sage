@@ -63,7 +63,7 @@ public class FireBrew extends AbstractSageCard {
 		}
 		int turns = Math.max(0, magicNumber - effect);
 
-		Brew.getOrCreate(turns, new FirePotion(), player());
+		Brew.addPotion(turns, new FirePotion(), player());
 
 		if (!freeToPlayOnce) {
 			player().energy.use(EnergyPanel.totalCount);

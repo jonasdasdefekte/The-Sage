@@ -22,5 +22,17 @@
   "Strike_Sage": {
     "NAME": "Strike",
     "DESCRIPTION": "Deal !D! damage."
+  },
+  "Swoop_Down": {
+    "NAME": "Swoop Down",
+    "DESCRIPTION": "Deal !D! damage per Flight you have."
+  },
+  "Explosive_Brew": {
+    "NAME": "Explosive Brew",
+    "DESCRIPTION": "Deal !D! damage. Brew an Explosive Potion in !M! turns."
+  },
+  "Quackster": {
+    "NAME": "Quakster",
+    "DESCRIPTION": "Brew a random Potion in !M! turns."
   }
 }

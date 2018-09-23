@@ -81,7 +81,7 @@ public class Brew extends AbstractSagePower {
 		updateDescription();
 	}
 
-	public static void getOrCreate(int turns, AbstractPotion potion, AbstractCreature owner) {
+	public static void addPotion(int turns, AbstractPotion potion, AbstractCreature owner) {
 		if (turns <= 0) {
 			AbstractDungeon.player.obtainPotion(potion);
 		} else {

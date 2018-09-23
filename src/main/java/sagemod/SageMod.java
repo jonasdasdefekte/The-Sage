@@ -31,11 +31,14 @@ import sagemod.character.SageColorEnum;
 import sagemod.character.TheSage;
 import sagemod.relics.FlyingCarpet;
 import sagemode.cards.DefendSage;
+import sagemode.cards.ExplosiveBrew;
 import sagemode.cards.FireBrew;
 import sagemode.cards.Fly;
 import sagemode.cards.OnTheHead;
 import sagemode.cards.PincerRepair;
+import sagemode.cards.Quackster;
 import sagemode.cards.StrikeSage;
+import sagemode.cards.SwoopDown;
 
 @SpireInitializer
 public class SageMod implements EditCharactersSubscriber, EditCardsSubscriber, EditRelicsSubscriber,
@@ -86,6 +89,9 @@ public class SageMod implements EditCharactersSubscriber, EditCardsSubscriber, E
 		// Common
 		BaseMod.addCard(new PincerRepair());
 		BaseMod.addCard(new OnTheHead());
+		BaseMod.addCard(new SwoopDown());
+		BaseMod.addCard(new ExplosiveBrew());
+		BaseMod.addCard(new Quackster());
 	}
 
 	@Override

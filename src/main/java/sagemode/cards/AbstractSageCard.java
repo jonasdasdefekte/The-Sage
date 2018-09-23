@@ -35,7 +35,7 @@ public abstract class AbstractSageCard extends CustomCard {
 	/**
 	 * Deals card.damage with card.damageTypeForTurn to the specified monster
 	 */
-	protected void damage(AbstractMonster m, AttackEffect effect) {
+	protected void attack(AbstractMonster m, AttackEffect effect) {
 		AbstractDungeon.actionManager
 				.addToBottom(new DamageAction(m, new DamageInfo(player(), damage, damageTypeForTurn), effect));
 	}

@@ -17,7 +17,7 @@ public class OnTheHead extends AbstractSageCard {
 	private static final int COST = 1;
 	public static final String DESCRIPTION = cardStrings.DESCRIPTION;
 	private static final CardType TYPE = CardType.ATTACK;
-	private static final CardRarity RARITY = CardRarity.BASIC;
+	private static final CardRarity RARITY = CardRarity.COMMON;
 	private static final CardTarget TARGET = CardTarget.ENEMY;
 
 	private static final int ATTACK_DMG = 5;
@@ -46,7 +46,7 @@ public class OnTheHead extends AbstractSageCard {
 
 	@Override
 	public void use(AbstractPlayer p, AbstractMonster m) {
-		damage(m, AttackEffect.SLASH_HORIZONTAL);
+		attack(m, AttackEffect.SLASH_HORIZONTAL);
 		if (hasPower(SageFlight.POWER_ID)) {
 			draw(magicNumber);
 			gainEnergy(magicNumber);
