@@ -30,6 +30,7 @@ public class FireBrew extends AbstractSageCard {
 	public FireBrew() {
 		super(ID, NAME, COST, DESCRIPTION, TYPE, RARITY, TARGET);
 		baseMagicNumber = magicNumber = TURNS;
+		exhaust = true;
 
 		CardTags.addTags(this, BaseModTags.GREMLIN_MATCH);
 	}

@@ -69,7 +69,7 @@ public class SageMod implements EditCharactersSubscriber, EditCardsSubscriber, E
 		BaseMod.addColor(SageColorEnum.THE_SAGE, new Color(0x380474ff), "sage/cards/512/bg_attack.png",
 				"sage/cards/512/bg_skill.png", "sage/cards/512/bg_power.png", "sage/cards/512/orb.png",
 				"sage/cards/1024/bg_attack.png", "sage/cards/1024/bg_skill.png", "sage/cards/1024/bg_power.png",
-				"sage/cards/1024/orb.png", "sage/cards/desc_orb.png");
+				"sage/cards/1024/orb.png", "sage/cards/orb/desc_orb.png");
 	}
 
 	@Override

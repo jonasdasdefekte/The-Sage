@@ -19,11 +19,11 @@
   },
   "Fire_Brew": {
     "NAME": "Fire Brew",
-    "DESCRIPTION": "Brew a Fire Potion in NL !M! - X turns."
+    "DESCRIPTION": "Brew a Fire Potion in NL !M! - X turns. NL Exhaust."
   },
   "Fly": {
     "NAME": "Fly",
-    "DESCRIPTION": "Air: Gain !B! Block. Otherwise, gain !M! Flight."
+    "DESCRIPTION": "Air: Gain !B! Block. Otherwise, gain !M! Flight. NL Exhaust."
   },
   "On_The_Head": {
     "NAME": "On The Head",

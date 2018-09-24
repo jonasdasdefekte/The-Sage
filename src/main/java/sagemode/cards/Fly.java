@@ -30,6 +30,7 @@ public class Fly extends AbstractSageCard {
 		super(ID, NAME, COST, DESCRIPTION, TYPE, RARITY, TARGET);
 		baseBlock = BLOCK_AMT;
 		baseMagicNumber = magicNumber = FLIGHT_AMT;
+		exhaust = true;
 		CardTags.addTags(this, BaseModTags.GREMLIN_MATCH);
 	}
 
