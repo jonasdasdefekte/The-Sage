@@ -39,6 +39,7 @@ import sagemode.cards.FireBrew;
 import sagemode.cards.Fly;
 import sagemode.cards.OnTheHead;
 import sagemode.cards.PincerRepair;
+import sagemode.cards.PourTarPitch;
 import sagemode.cards.Quackster;
 import sagemode.cards.StrikeSage;
 import sagemode.cards.SwoopDown;
@@ -99,6 +100,9 @@ public class SageMod implements EditCharactersSubscriber, EditCardsSubscriber, E
 		BaseMod.addCard(new Quackster());
 		BaseMod.addCard(new ArmorBrew());
 		BaseMod.addCard(new EnergyShield());
+
+		// Uncommon
+		BaseMod.addCard(new PourTarPitch());
 	}
 
 	@Override

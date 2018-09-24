@@ -1,8 +1,11 @@
 package sagemode.cards;
 
+import java.util.HashSet;
+
 import com.megacrit.cardcrawl.actions.AbstractGameAction.AttackEffect;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
+import com.megacrit.cardcrawl.actions.common.DamageAllEnemiesAction;
 import com.megacrit.cardcrawl.actions.common.DrawCardAction;
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.actions.common.GainEnergyAction;
@@ -21,15 +24,18 @@ public abstract class AbstractSageCard extends CustomCard {
 
 	public static final String PLACE_HOLDER = "Placeholder";
 
+	private static HashSet<String> images;
+	static {
+		images = new HashSet<>();
+		images.add(StrikeSage.ID);
+		images.add(DefendSage.ID);
+		images.add(Fly.ID);
+		images.add(FireBrew.ID);
+	}
+
 	public AbstractSageCard(String id, String name, int cost, String rawDescription, CardType type, CardRarity rarity,
 			CardTarget target) {
-		super(id, name, getImageforID(PLACE_HOLDER), cost, rawDescription, type, SageColorEnum.THE_SAGE, rarity,
-				target);
-		try {
-			loadCardImage(getImageforID(id));
-		} catch (Exception ex) {
-			SageMod.logger.info("Card with ID " + id + " has no image. Defaulting to placeholder image");
-		}
+		super(id, name, getImageforID(id), cost, rawDescription, type, SageColorEnum.THE_SAGE, rarity, target);
 	}
 
 	/**
@@ -38,6 +44,11 @@ public abstract class AbstractSageCard extends CustomCard {
 	protected void attack(AbstractMonster m, AttackEffect effect) {
 		AbstractDungeon.actionManager
 				.addToBottom(new DamageAction(m, new DamageInfo(player(), damage, damageTypeForTurn), effect));
+	}
+
+	protected void multiAttack(AttackEffect effect) {
+		AbstractDungeon.actionManager
+				.addToBottom(new DamageAllEnemiesAction(player(), multiDamage, damageTypeForTurn, effect));
 	}
 
 	/**
@@ -76,7 +87,12 @@ public abstract class AbstractSageCard extends CustomCard {
 	}
 
 	private static String getImageforID(String id) {
-		return "sage/cards/" + id + ".png";
+		if (images.contains(id)) {
+			return "sage/cards/" + id + ".png";
+		} else {
+			SageMod.logger.info("Card with ID " + id + " has no image configured. Defaulting to placeholder image");
+			return "sage/cards/" + PLACE_HOLDER + ".png";
+		}
 	}
 
 }

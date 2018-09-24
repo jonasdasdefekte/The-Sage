@@ -48,5 +48,9 @@
       " NL (Deals ",
       " damage)"
     ]
+  },
+  "Pour_Tar_Pitch": {
+    "NAME": "Pour Tar Pitch",
+    "DESCRIPTION": "Deal !D! damage. NL Air: Affects ALL enemies."
   }
 }

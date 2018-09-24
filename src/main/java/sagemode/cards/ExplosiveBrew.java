@@ -49,7 +49,7 @@ public class ExplosiveBrew extends AbstractSageCard {
 
 	@Override
 	public void use(AbstractPlayer p, AbstractMonster m) {
-		attack(m, AttackEffect.SLASH_HORIZONTAL);
+		attack(m, AttackEffect.BLUNT_LIGHT);
 		Brew.addPotion(magicNumber, new ExplosivePotion(), p);
 	}
 

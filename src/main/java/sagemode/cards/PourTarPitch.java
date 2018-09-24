@@ -7,28 +7,27 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
-import basemod.helpers.BaseModTags;
-import basemod.helpers.CardTags;
+import sagemod.powers.SageFlight;
 
-public class StrikeSage extends AbstractSageCard {
+public class PourTarPitch extends AbstractSageCard {
 
-	public static final String ID = "Strike_Sage";
+	public static final String ID = "Pour_Tar_Pitch";
 	private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
 	public static final String NAME = cardStrings.NAME;
-	private static final int COST = 1;
+	private static final int COST = 3;
 	public static final String DESCRIPTION = cardStrings.DESCRIPTION;
 	private static final CardType TYPE = CardType.ATTACK;
-	private static final CardRarity RARITY = CardRarity.BASIC;
+	private static final CardRarity RARITY = CardRarity.UNCOMMON;
 	private static final CardTarget TARGET = CardTarget.ENEMY;
 
-	private static final int ATTACK_DMG = 6;
-	private static final int UPGRADE_ATTACK_DMG = 3;
+	private static final int ATTACK_DMG = 20;
+	private static final int UPGRADE_ATTACK_DMG = 5;
 
-	public StrikeSage() {
+	public PourTarPitch() {
 		super(ID, NAME, COST, DESCRIPTION, TYPE, RARITY, TARGET);
 		baseDamage = ATTACK_DMG;
+		isMultiDamage = true;
 
-		CardTags.addTags(this, BaseModTags.BASIC_STRIKE, BaseModTags.STRIKE);
 	}
 
 	@Override
@@ -41,12 +40,16 @@ public class StrikeSage extends AbstractSageCard {
 
 	@Override
 	public AbstractCard makeCopy() {
-		return new StrikeSage();
+		return new PourTarPitch();
 	}
 
 	@Override
 	public void use(AbstractPlayer p, AbstractMonster m) {
-		attack(m, AttackEffect.SLASH_DIAGONAL);
+		if (hasPower(SageFlight.POWER_ID)) {
+			multiAttack(AttackEffect.BLUNT_HEAVY);
+		} else {
+			attack(m, AttackEffect.SLASH_DIAGONAL);
+		}
 	}
 
 }
