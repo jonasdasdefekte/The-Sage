@@ -1,4 +1,4 @@
-package sagemode.cards;
+package sagemod.cards;
 
 import com.megacrit.cardcrawl.actions.AbstractGameAction.AttackEffect;
 import com.megacrit.cardcrawl.cards.AbstractCard;

@@ -10,11 +10,11 @@ import com.megacrit.cardcrawl.daily.DailyMods;
 import com.megacrit.cardcrawl.screens.CharSelectInfo;
 
 import basemod.abstracts.CustomPlayer;
+import sagemod.cards.DefendSage;
+import sagemod.cards.FireBrew;
+import sagemod.cards.Fly;
+import sagemod.cards.StrikeSage;
 import sagemod.relics.FlyingCarpet;
-import sagemode.cards.DefendSage;
-import sagemode.cards.FireBrew;
-import sagemode.cards.Fly;
-import sagemode.cards.StrikeSage;
 
 /**
  * The actual Character class

@@ -26,23 +26,24 @@ import basemod.interfaces.EditKeywordsSubscriber;
 import basemod.interfaces.EditRelicsSubscriber;
 import basemod.interfaces.EditStringsSubscriber;
 import basemod.interfaces.PostInitializeSubscriber;
+import sagemod.cards.ArmorBrew;
+import sagemod.cards.DefendSage;
+import sagemod.cards.EnergyShield;
+import sagemod.cards.ExplosiveBrew;
+import sagemod.cards.FireBrew;
+import sagemod.cards.Fly;
+import sagemod.cards.GearwheelMaster;
+import sagemod.cards.OnTheHead;
+import sagemod.cards.PincerRepair;
+import sagemod.cards.PourTarPitch;
+import sagemod.cards.Quackster;
+import sagemod.cards.StrikeSage;
+import sagemod.cards.SwoopDown;
 import sagemod.character.SageCharEnum;
 import sagemod.character.SageColorEnum;
 import sagemod.character.TheSage;
 import sagemod.patches.MiscDynamicVariable;
 import sagemod.relics.FlyingCarpet;
-import sagemode.cards.ArmorBrew;
-import sagemode.cards.DefendSage;
-import sagemode.cards.EnergyShield;
-import sagemode.cards.ExplosiveBrew;
-import sagemode.cards.FireBrew;
-import sagemode.cards.Fly;
-import sagemode.cards.OnTheHead;
-import sagemode.cards.PincerRepair;
-import sagemode.cards.PourTarPitch;
-import sagemode.cards.Quackster;
-import sagemode.cards.StrikeSage;
-import sagemode.cards.SwoopDown;
 
 @SpireInitializer
 public class SageMod implements EditCharactersSubscriber, EditCardsSubscriber, EditRelicsSubscriber,
@@ -65,9 +66,8 @@ public class SageMod implements EditCharactersSubscriber, EditCardsSubscriber, E
 		BaseMod.subscribe(this);
 	}
 
-	// BlueDeep #380474
 	private void addColor() {
-		BaseMod.addColor(SageColorEnum.THE_SAGE, new Color(0x380474ff), "sage/cards/512/bg_attack.png",
+		BaseMod.addColor(SageColorEnum.THE_SAGE, new Color(0xc65e03), "sage/cards/512/bg_attack.png",
 				"sage/cards/512/bg_skill.png", "sage/cards/512/bg_power.png", "sage/cards/512/orb.png",
 				"sage/cards/1024/bg_attack.png", "sage/cards/1024/bg_skill.png", "sage/cards/1024/bg_power.png",
 				"sage/cards/1024/orb.png", "sage/cards/orb/desc_orb.png");
@@ -103,6 +103,7 @@ public class SageMod implements EditCharactersSubscriber, EditCardsSubscriber, E
 
 		// Uncommon
 		BaseMod.addCard(new PourTarPitch());
+		BaseMod.addCard(new GearwheelMaster());
 	}
 
 	@Override

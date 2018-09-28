@@ -1,0 +1,5 @@
+Disoriented: Extremely hard or impossible to implement:
+			 Idea: patch abstract action manager to scan every damageaction and damageallenemiesaction. Check the owner.
+			 If the owner has the power disoriented, remove the first damaging action you find (ignore damage type thorns)
+			 and then add the owner of damageinfo to a HashSet for the turn that keeps track of alraedy disoriented monsters
+			 ALSO: Different patch to actually display the right damage to the player

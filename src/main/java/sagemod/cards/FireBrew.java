@@ -1,45 +1,51 @@
-package sagemode.cards;
+package sagemod.cards;
 
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import com.megacrit.cardcrawl.potions.FirePotion;
 import com.megacrit.cardcrawl.relics.ChemicalX;
 import com.megacrit.cardcrawl.ui.panels.EnergyPanel;
 
-public class EnergyShield extends AbstractSageCard {
+import basemod.helpers.BaseModTags;
+import basemod.helpers.CardTags;
+import sagemod.powers.Brew;
 
-	public static final String ID = "Energy_Shield";
+public class FireBrew extends AbstractSageCard {
+
+	public static final String ID = "Fire_Brew";
 	private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
 	public static final String NAME = cardStrings.NAME;
 	private static final int COST = -1;
 	public static final String DESCRIPTION = cardStrings.DESCRIPTION;
 	private static final CardType TYPE = CardType.SKILL;
-	private static final CardRarity RARITY = CardRarity.COMMON;
+	private static final CardRarity RARITY = CardRarity.BASIC;
 	private static final CardTarget TARGET = CardTarget.SELF;
 
-	private static final int EXTRA_BLOCK = 0;
-	private static final int UPGRADE_EXTRA_BLOCK = 3;
+	private static final int TURNS = 4;
+	private static final int UPGRADE_TURNS = -1;
 
-	public EnergyShield() {
+	public FireBrew() {
 		super(ID, NAME, COST, DESCRIPTION, TYPE, RARITY, TARGET);
-		baseBlock = EXTRA_BLOCK;
+		baseMagicNumber = magicNumber = TURNS;
+		exhaust = true;
+
+		CardTags.addTags(this, BaseModTags.GREMLIN_MATCH);
 	}
 
 	@Override
 	public void upgrade() {
 		if (!upgraded) {
 			upgradeName();
-			upgradeBlock(UPGRADE_EXTRA_BLOCK);
-			rawDescription = cardStrings.UPGRADE_DESCRIPTION;
-			initializeDescription();
+			upgradeMagicNumber(UPGRADE_TURNS);
 		}
 	}
 
 	@Override
 	public AbstractCard makeCopy() {
-		return new EnergyShield();
+		return new FireBrew();
 	}
 
 	@Override
@@ -56,15 +62,9 @@ public class EnergyShield extends AbstractSageCard {
 			effect += ChemicalX.BOOST;
 			player().getRelic(ChemicalX.ID).flash();
 		}
+		int turns = Math.max(0, magicNumber - effect);
 
-		int blockGain = effect + block;
-		if (blockGain > 0) {
-			block(blockGain);
-		}
-
-		if (effect > 0) {
-			gainEnergy(effect);
-		}
+		Brew.addPotion(turns, new FirePotion(), player());
 
 		if (!freeToPlayOnce) {
 			player().energy.use(EnergyPanel.totalCount);

@@ -23,7 +23,7 @@
   },
   "Fly": {
     "NAME": "Fly",
-    "DESCRIPTION": "Air: Gain !B! Block. Otherwise, gain !M! Flight. NL Exhaust."
+    "DESCRIPTION": "If you don't fly, gain !M! Flight."
   },
   "On_The_Head": {
     "NAME": "On The Head",
@@ -52,5 +52,9 @@
   "Pour_Tar_Pitch": {
     "NAME": "Pour Tar Pitch",
     "DESCRIPTION": "Deal !D! damage. NL Air: Affects ALL enemies."
+  },
+  "Gearwheel_Master": {
+    "NAME": "Gearwheel Master",
+    "DESCRIPTION": "Innate. NL EVERYBODY gains !M! Artifact. NL Exhaust."
   }
 }

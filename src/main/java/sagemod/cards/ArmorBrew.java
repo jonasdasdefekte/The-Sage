@@ -1,63 +1,56 @@
-package sagemode.cards;
+package sagemod.cards;
 
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
-import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import com.megacrit.cardcrawl.potions.BlockPotion;
 
-import basemod.helpers.BaseModTags;
-import basemod.helpers.CardTags;
-import sagemod.powers.SageFlight;
+import sagemod.powers.Brew;
 
-public class Fly extends AbstractSageCard {
+public class ArmorBrew extends AbstractSageCard {
 
-	public static final String ID = "Fly";
+	public static final String ID = "Armor_Brew";
 	private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
 	public static final String NAME = cardStrings.NAME;
 	private static final int COST = 1;
 	public static final String DESCRIPTION = cardStrings.DESCRIPTION;
 	private static final CardType TYPE = CardType.SKILL;
-	private static final CardRarity RARITY = CardRarity.BASIC;
+	private static final CardRarity RARITY = CardRarity.COMMON;
 	private static final CardTarget TARGET = CardTarget.SELF;
 
-	private static final int BLOCK_AMT = 8;
-	private static final int UPGRADE_BLOCK_AMT = 4;
-	private static final int FLIGHT_AMT = 1;
+	private static final int BREW_IN = 4;
+	private static final int UPGRADE_BREW_IN = -1;
+	private static final int DRAW_AMT = 1;
+	private static final int UPGRADE_DRAW_AMT = 1;
 
-	public Fly() {
+	public ArmorBrew() {
 		super(ID, NAME, COST, DESCRIPTION, TYPE, RARITY, TARGET);
-		baseBlock = BLOCK_AMT;
-		baseMagicNumber = magicNumber = FLIGHT_AMT;
-		exhaust = true;
-		CardTags.addTags(this, BaseModTags.GREMLIN_MATCH);
+		baseMagicNumber = magicNumber = BREW_IN;
+		misc = DRAW_AMT;
 	}
 
 	@Override
 	public void upgrade() {
 		if (!upgraded) {
 			upgradeName();
-			upgradeBlock(UPGRADE_BLOCK_AMT);
+			upgradeMagicNumber(UPGRADE_BREW_IN);
+			misc += UPGRADE_DRAW_AMT;
+			rawDescription = cardStrings.UPGRADE_DESCRIPTION;
+			initializeDescription();
 		}
 	}
 
 	@Override
 	public AbstractCard makeCopy() {
-		return new Fly();
+		return new ArmorBrew();
 	}
 
 	@Override
 	public void use(AbstractPlayer p, AbstractMonster m) {
-		if (hasPower(SageFlight.POWER_ID)) {
-			block();
-		} else {
-			applyPowerToSelf(new SageFlight(player(), magicNumber));
-		}
-		// TODO remove this
-		if (Settings.isDebug) {
-			applyPowerToSelf(new SageFlight(player(), 2));
-		}
+		draw(misc);
+		Brew.addPotion(magicNumber, new BlockPotion(), p);
 	}
 
 }

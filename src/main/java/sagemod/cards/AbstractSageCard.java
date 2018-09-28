@@ -1,4 +1,4 @@
-package sagemode.cards;
+package sagemod.cards;
 
 import java.util.HashSet;
 
@@ -31,6 +31,7 @@ public abstract class AbstractSageCard extends CustomCard {
 		images.add(DefendSage.ID);
 		images.add(Fly.ID);
 		images.add(FireBrew.ID);
+		images.add(PincerRepair.ID);
 	}
 
 	public AbstractSageCard(String id, String name, int cost, String rawDescription, CardType type, CardRarity rarity,

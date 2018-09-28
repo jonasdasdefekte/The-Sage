@@ -1,4 +1,4 @@
-package sagemode.cards;
+package sagemod.cards;
 
 import com.megacrit.cardcrawl.actions.AbstractGameAction.AttackEffect;
 import com.megacrit.cardcrawl.cards.AbstractCard;
@@ -9,25 +9,24 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
 import sagemod.powers.SageFlight;
 
-public class OnTheHead extends AbstractSageCard {
+public class PourTarPitch extends AbstractSageCard {
 
-	public static final String ID = "On_The_Head";
+	public static final String ID = "Pour_Tar_Pitch";
 	private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
 	public static final String NAME = cardStrings.NAME;
-	private static final int COST = 1;
+	private static final int COST = 3;
 	public static final String DESCRIPTION = cardStrings.DESCRIPTION;
 	private static final CardType TYPE = CardType.ATTACK;
-	private static final CardRarity RARITY = CardRarity.COMMON;
+	private static final CardRarity RARITY = CardRarity.UNCOMMON;
 	private static final CardTarget TARGET = CardTarget.ENEMY;
 
-	private static final int ATTACK_DMG = 5;
-	private static final int UPGRADE_ATTACK_DMG = 3;
-	private static final int DRAW_AND_ENERGY_GAIN = 1;
+	private static final int ATTACK_DMG = 20;
+	private static final int UPGRADE_ATTACK_DMG = 5;
 
-	public OnTheHead() {
+	public PourTarPitch() {
 		super(ID, NAME, COST, DESCRIPTION, TYPE, RARITY, TARGET);
 		baseDamage = ATTACK_DMG;
-		baseMagicNumber = magicNumber = DRAW_AND_ENERGY_GAIN;
+		isMultiDamage = true;
 
 	}
 
@@ -41,15 +40,15 @@ public class OnTheHead extends AbstractSageCard {
 
 	@Override
 	public AbstractCard makeCopy() {
-		return new OnTheHead();
+		return new PourTarPitch();
 	}
 
 	@Override
 	public void use(AbstractPlayer p, AbstractMonster m) {
-		attack(m, AttackEffect.SLASH_HORIZONTAL);
 		if (hasPower(SageFlight.POWER_ID)) {
-			draw(magicNumber);
-			gainEnergy(magicNumber);
+			multiAttack(AttackEffect.BLUNT_HEAVY);
+		} else {
+			attack(m, AttackEffect.SLASH_DIAGONAL);
 		}
 	}
 
