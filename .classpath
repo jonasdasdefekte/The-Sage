@@ -6,6 +6,6 @@
 	<classpathentry kind="lib" path="C:/Users/Dustin/Documents/workspaces/StS/libs/ModTheSpire.jar" sourcepath="C:/Users/Dustin/Documents/workspaces/StS/libs/ModTheSpire-3.2.0.zip"/>
 	<classpathentry kind="lib" path="C:/Users/Dustin/Documents/workspaces/StS/libs/09-06-2018/TheDisciple.jar" sourcepath="C:/Users/Dustin/Documents/workspaces/StS/libs/09-06-2018/The-Disciple-0.9.4.zip"/>
 	<classpathentry kind="lib" path="C:/Users/Dustin/Documents/workspaces/StS/libs/09-20-2018/BaseMod.jar" sourcepath="C:/Users/Dustin/Documents/workspaces/StS/libs/09-20-2018/BaseMod.zip"/>
-	<classpathentry kind="lib" path="C:/Users/Dustin/Documents/workspaces/StS/libs/09-20-2018/desktop-1.0.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files (x86)/Steam/steamapps/common/SlayTheSpire/modded/desktop-1.0.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

@@ -6,7 +6,7 @@ import com.badlogic.gdx.math.MathUtils;
 import com.esotericsoftware.spine.AnimationState;
 import com.megacrit.cardcrawl.core.EnergyManager;
 import com.megacrit.cardcrawl.core.Settings;
-import com.megacrit.cardcrawl.daily.DailyMods;
+import com.megacrit.cardcrawl.helpers.ModHelper;
 import com.megacrit.cardcrawl.screens.CharSelectInfo;
 
 import basemod.abstracts.CustomPlayer;
@@ -46,7 +46,7 @@ public class TheSage extends CustomPlayer {
 		loadAnimation("sage/character/idle/skeleton.atlas", "sage/character/idle/skeleton.json", 1.0f);
 		AnimationState.TrackEntry e = state.setAnimation(0, "idle", true);
 		e.setTime(e.getEndTime() * MathUtils.random());
-		if (Settings.dailyModsEnabled() && DailyMods.cardMods.get("Diverse").booleanValue()
+		if (ModHelper.enabledMods.size() > 0 && (ModHelper.isModEnabled("Diverse") || ModHelper.isModEnabled("Chimera"))
 				|| Settings.isTrial && customMods != null && customMods.contains("Blue Cards")) {
 			masterMaxOrbs = 1;
 		}
