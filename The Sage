@@ -17,12 +17,12 @@ Starting Deck:
 	5x Defend
 		Skill, 1 Energy: 
 		Gain 5 (8) Block.
+	1x Bold move
+		Attack, 1 Energy:
+		Deal 10 (13) damage. Gain 2 Frail.
 	1x Fly
 		Skill, 2 (1) Energy: 
 		If you don't fly, gain 1 Flight.
-	1x Fire Brew
-		Skill, 1 Energy: 
-		Brew a Fire Potion in 4 (3) turns. Exhaust.
 
 Common Cards (grey)
 	Pincer Repair
@@ -33,19 +33,25 @@ Common Cards (grey)
 		Deal 5 (8) damage. Air: Draw 1 card and gain 1 Energy.
 	Swoop Down
 		Attack, 1 Energy: 
-		Deal 4(5) damage per Flight you have.
+		Deal 12 (15) damage per Flight you have. Then lose 1 Flight.
 	Explosive Brew
 		Attack, 1 Energy: 
-		Deal 6 (9) damage. Gain an explosive potion in 4 (3) turns.
+		Deal 6 (9) damage. Gain an explosive potion in 4 (3) turns.	
+	Fire Brew
+		Skill, X Energy: 
+		Brew a Fire Potion in 4 (3)-X turns. Exhaust.
 	Quackster
 		Skill, 0 Energy: 
 		Brew a random potion in 4 (3) turns.
 	Armor Brew
 		Skill, 1 Energy: 
-		Draw 1 (2) cards. Gain a block potion in 4 (3) turns.
+		Draw 1 (2) cards. Brew a block potion in 4 (3) turns.
 	Energy shield
 		Skill, X Energy:
 		Gain X (X+3) Block. Gain X Energy.
+	Catch me if you can
+		Skill, 1 Energy
+		Gain 3 Flight. At the start of your next turn, lose 3 Flight.
 
 Uncommon Cards (blue)
 	Pour Tar Pitch
@@ -56,8 +62,8 @@ Uncommon Cards (blue)
 		Deal 6 (9) damage and apply 1 Disoriented. 
 	Burning Flask
 		Attack, 1 Energy: 
-		Discard 1 potion to deal 20 (24) damage.
-	Pincer
+		Discard 1 random potion to deal 20 (24) damage.
+	Pincer Attack
 		Attack, 1 Energy: 
 		Deal 6(8) damage. Repeat this once per Artifact on the enemy.
 	Gearwheel Master
@@ -65,56 +71,76 @@ Uncommon Cards (blue)
 		EVERYBODY gains 1(2) Artifact. Innate. Exhaust.
 	Wicked Brew
 		Skill, X Energy: 
-		Apply 5 poison. Gain a Poison potion in 4 (3)-X turns.
-	Strength Brew
+		Apply 5 poison. Brew a Poison potion in 4 (3)-X turns.
+	Coffee Brew
 		Skill, X Energy: 
-		Gain a Strength potion in 4 (3)-X turns. 
-	Ghostly Brew
-		Skill, 1 Energy: 
-		Gain a Ghost in a Jar potion in 4 (3) turns. Exhaust.
+		Brew a Steroid potion in 4 (3)-X turns. 
+	Life Brew
+		Skill, X Energy: 
+		Brew a random rare potion in 4 (3)-X turns. Exhaust.
 	Meditation
 		Skill, 0 Energy: 
 		Draw 1 card. Play it (Upgrade instead: Gain 1 Energy) if it costs 1.
 	Study
-		Skill, X Energy: 
-		Draw X cards and (you may) put one card from your hand hand on top of your deck. 
+		Skill, 1 Energy: 
+		Draw 3 cards and (you may) put one card from your hand hand on top of your deck. 
 	Flying Cauldron
 		Skill, 0 Energy: 
 		Air: Gain 1(2) Brewing. Otherwise, gain 1(2) Flight.
-	Magical Hideout
+	Lunchtime!
 		Skill, 1 Energy: 
 		Air: Lose 2 Flight and brew all potions immediately.
+	Mechanics Break
+		Skill, 1 Energy:
+		Gain 10 (13) Block. ALL Enemies gain 4 Artifact. 
 	Accumulation
 		Power, 1 Energy: 
 		Lose 2 (1) Flight. At the start of each turn, gain 1 Energy.
 	Altitude
 		Power, 1 Energy: 
 		Gain 1(2) Flight.
-
-Rare Cards (gold)
-	Escape
-		Skill, X Energy: 
-		Gain X (X+1) Flight. Exhaust.
-	Extra Portion
-		Skill, 1 Energy: 
-		The next potion is (the next 2 potions are) applied twice this turn.
-	Deadly Contraption
-		Power, 1 Energy: 
-		At the end of your turn, enemies are dealt 10 (12) damage for every Artifact.
+	Taste this one
+		Power, 1 Energy:
+		Whenever you use a potion, apply 3 (5) Poison to ALL Enemies.
 	Perpetuum Mobile
 		Power, 2(1) Energy: 
 		Whenever you play a card costing X, gain 1 Energy.
+
+Rare Cards (gold)
+	Thunder Flight
+		Attack, X Energy:
+		Air: Deal 12 damage to a random enemy X (X+1) times.
+	Escape
+		Skill, 1 Energy: 
+		Double your Flight. Exhaust. (No Exhaust)
+	Extra Portion
+		Skill, 1 Energy: 
+		The next potion is (the next 2 potions are) applied twice this turn.
+	Alchemy Expert
+		Power, 1 Energy:
+		Whenever you use a potion, gain 1 Artifact before its effect.
+	Deadly Contraption
+		Power, 1 Energy: 
+		At the end of your turn, enemies are dealt 10 (12) damage per Artifact on them.
 	Cultist form
 		Power, 3 Energy: 
-		Lose 2 Flight. ALL enemies gain 4 (5) Disoriented.
+		Lose 2 Flight. ALL enemies gain 3 (4) Disoriented.
 	
 Character-specific relics
 	Byrd carpet
 		Boss relic: 
 		Replaces Flying carpet. Start each combat with 3 Flight.
-	Cookbook
+	Cooking Book
 		Common relic: 
 		Start each combat with 1 Brewing.
+	Ancient Magnet
+		Uncommon relic: 
+		Enemies have 1 less Strength per Artifact on them. You may use Artifact potions on enemies.
+
+Other relics
+	Red Beast Statue
+		Uncommon relic:
+		Potion rewards are ?% more likely to be rare potions.
 	Blowpipe
 		Rare relic: 
 		Potions you throw affect ALL enemies.
