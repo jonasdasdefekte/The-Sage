@@ -31,9 +31,9 @@ DONE:	Pincer Repair
 DONE:	On the Head
 		Attack, 1 Energy:
 		Deal 5 (8) damage. Air: Draw 1 card and gain 1 Energy.
-DONE:	Swoop Down
+CHANGED:	Swoop Down
 		Attack, 1 Energy: 
-		Deal 12 (15) damage per Flight you have. Then lose 1 Flight.
+		Deal 8 (10) damage per Flight you have. Then lose 1 Flight.
 DONE:	Explosive Brew
 		Attack, 1 Energy: 
 		Deal 6 (9) damage. Gain an explosive potion in 4 (3) turns.	
@@ -92,10 +92,7 @@ DONE:	Gearwheel Master
 		Air: Lose 2 Flight and brew all potions immediately.
 	Mechanics Break
 		Skill, 1 Energy:
-		Gain 10 (13) Block. ALL Enemies gain 4 Artifact. 
-	Accumulation
-		Power, 1 Energy: 
-		Lose 2 (1) Flight. At the start of each turn, gain 1 Energy.
+		Gain 10 (13) Block. ALL Enemies gain 4 Artifact. 	
 	Altitude
 		Power, 1 Energy: 
 		Gain 1(2) Flight.
@@ -125,6 +122,10 @@ Rare Cards (gold)
 	Cultist form
 		Power, 3 Energy: 
 		Lose 2 Flight. ALL enemies gain 3 (4) Disoriented.
+	Accumulation
+		Power, 1 Energy: 
+		Lose 2 (1) Flight. At the start of each turn, gain 1 Energy.
+
 	
 Character-specific relics
 	Byrd carpet
