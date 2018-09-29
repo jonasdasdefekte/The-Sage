@@ -1,7 +1,13 @@
 *.jar
 /build/
 !/gradle/wrapper/gradle-wrapper.jar
-/.gradle/
 /bin/
 .classpath
 .project
+.gradle
+
+# Ignore Gradle GUI config
+gradle-app.setting
+
+# Cache of project
+.gradletasknamecache
