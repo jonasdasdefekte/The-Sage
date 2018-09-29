@@ -16,6 +16,7 @@ public class LoseFlightNextTurn extends AbstractSagePower {
 
 	public LoseFlightNextTurn(AbstractCreature owner, int amount) {
 		super(POWER_ID, NAME, owner, amount);
+		updateDescription();
 	}
 
 	@Override
