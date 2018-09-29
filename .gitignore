@@ -1,3 +1,7 @@
 *.jar
 /build/
 !/gradle/wrapper/gradle-wrapper.jar
+/.gradle/
+/bin/
+/.classpath
+/.project
