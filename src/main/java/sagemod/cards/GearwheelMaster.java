@@ -17,7 +17,7 @@ public class GearwheelMaster extends AbstractSageCard {
 	public static final String DESCRIPTION = cardStrings.DESCRIPTION;
 	private static final CardType TYPE = CardType.SKILL;
 	private static final CardRarity RARITY = CardRarity.UNCOMMON;
-	private static final CardTarget TARGET = CardTarget.SELF;
+	private static final CardTarget TARGET = CardTarget.ALL;
 
 	private static final int ARTIFACT_GAIN = 1;
 	private static final int UPGRADE_ARTIFACT_GAIN = 1;

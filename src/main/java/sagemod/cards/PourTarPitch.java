@@ -39,6 +39,16 @@ public class PourTarPitch extends AbstractSageCard {
 	}
 
 	@Override
+	public void applyPowers() {
+		super.applyPowers();
+		if (hasPower(SageFlight.POWER_ID)) {
+			target = CardTarget.ALL_ENEMY;
+		} else {
+			target = CardTarget.ENEMY;
+		}
+	}
+
+	@Override
 	public AbstractCard makeCopy() {
 		return new PourTarPitch();
 	}
