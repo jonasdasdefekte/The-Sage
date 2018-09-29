@@ -49,9 +49,9 @@ DONE:	Armor Brew
 DONE:	Energy shield
 		Skill, X Energy:
 		Gain X (X+3) Block. Gain X Energy.
-	Catch me if you can
+DONE:	Catch me if you can
 		Skill, 1 Energy
-		Gain 3 Flight. At the start of your next turn, lose 3 Flight.
+		Gain 3 (5) Flight. At the start of your next turn, lose 3 (5) Flight.
 
 Uncommon Cards (blue)
 DONE:	Pour Tar Pitch

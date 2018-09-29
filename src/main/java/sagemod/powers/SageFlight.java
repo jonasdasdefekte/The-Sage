@@ -12,7 +12,7 @@ import com.megacrit.cardcrawl.powers.FlightPower;
 
 public class SageFlight extends FlightPower {
 
-	public static final String POWER_ID = "SageFlight";
+	public static final String POWER_ID = "Sage_Flight";
 	private static final PowerStrings powerStrings = CardCrawlGame.languagePack.getPowerStrings("Flight");
 	public static final String NAME = powerStrings.NAME;
 	public static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;
@@ -23,6 +23,7 @@ public class SageFlight extends FlightPower {
 		super(owner, amount);
 		name = NAME;
 		ID = POWER_ID;
+		canGoNegative = false;
 		try {
 			storedAmount = FlightPower.class.getDeclaredField("storedAmount");
 			storedAmount.setAccessible(true);

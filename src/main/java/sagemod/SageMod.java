@@ -28,6 +28,7 @@ import basemod.interfaces.EditStringsSubscriber;
 import basemod.interfaces.PostInitializeSubscriber;
 import sagemod.cards.ArmorBrew;
 import sagemod.cards.BoldMove;
+import sagemod.cards.CatchMeIfYouCan;
 import sagemod.cards.DefendSage;
 import sagemod.cards.EnergyShield;
 import sagemod.cards.ExplosiveBrew;
@@ -52,6 +53,8 @@ public class SageMod implements EditCharactersSubscriber, EditCardsSubscriber, E
 
 	public static final Logger logger = LogManager.getLogger(SageMod.class.getName());
 	public static final String AUTHORS = "jonasdasdefekte, Skrelpoid";
+
+	public static final String PLACEHOLDER = "Placeholder";
 
 	/**
 	 * The initializing method for ModTheSpire. This gets called before the game is
@@ -102,6 +105,7 @@ public class SageMod implements EditCharactersSubscriber, EditCardsSubscriber, E
 		BaseMod.addCard(new Quackster());
 		BaseMod.addCard(new ArmorBrew());
 		BaseMod.addCard(new EnergyShield());
+		BaseMod.addCard(new CatchMeIfYouCan());
 
 		// Uncommon
 		BaseMod.addCard(new PourTarPitch());
@@ -143,6 +147,16 @@ public class SageMod implements EditCharactersSubscriber, EditCardsSubscriber, E
 	// Copied from MadScienceMod
 	private static String loadJson(String jsonPath) {
 		return Gdx.files.internal(jsonPath).readString(String.valueOf(StandardCharsets.UTF_8));
+	}
+
+	public static String getExistingOrPlaceholder(String prefix, String id, String postfix) {
+		String maybeExisting = prefix + id + postfix;
+		if (Gdx.files.internal(maybeExisting).exists()) {
+			return maybeExisting;
+		} else {
+			SageMod.logger.info(id + " has no image configured. Defaulting to placeholder image");
+			return prefix + PLACEHOLDER + postfix;
+		}
 	}
 
 	@Override

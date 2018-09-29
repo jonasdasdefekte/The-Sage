@@ -8,15 +8,19 @@ import com.megacrit.cardcrawl.helpers.ImageMaster;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 
 import basemod.abstracts.CustomRelic;
+import sagemod.SageMod;
 
 public class AbstractSageRelic extends CustomRelic {
+
+	private static final String PREFIX = "sage/relics/";
+	private static final String POSTFIX = ".png";
 
 	public AbstractSageRelic(String id, RelicTier tier, LandingSound sfx) {
 		super(id, getImg(id), tier, sfx);
 	}
 
 	private static Texture getImg(String id) {
-		return ImageMaster.loadImage("sage/relics/" + id + ".png");
+		return ImageMaster.loadImage(SageMod.getExistingOrPlaceholder(PREFIX, id, POSTFIX));
 	}
 
 	protected void applyPowerToSelf(AbstractPower power) {

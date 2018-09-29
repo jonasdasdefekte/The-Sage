@@ -6,7 +6,7 @@ import sagemod.powers.SageFlight;
 
 public class FlyingCarpet extends AbstractSageRelic {
 
-	public static final String ID = "FlyingCarpet";
+	public static final String ID = "Flying_Carpet";
 	public static final RelicTier TIER = RelicTier.STARTER;
 	public static final LandingSound SOUND = LandingSound.MAGICAL;
 	private static final int FLY_AMT = 1;

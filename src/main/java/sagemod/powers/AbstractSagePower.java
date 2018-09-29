@@ -5,7 +5,12 @@ import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.helpers.ImageMaster;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 
+import sagemod.SageMod;
+
 public abstract class AbstractSagePower extends AbstractPower {
+
+	private static final String PREFIX = "sage/powers/";
+	private static final String POSTFIX = ".png";
 
 	public AbstractSagePower(String id, String name, AbstractCreature owner) {
 		ID = id;
@@ -20,7 +25,7 @@ public abstract class AbstractSagePower extends AbstractPower {
 	}
 
 	private static Texture getImg(String id) {
-		return ImageMaster.loadImage("sage/powers/" + id + ".png");
+		return ImageMaster.loadImage(SageMod.getExistingOrPlaceholder(PREFIX, id, POSTFIX));
 	}
 
 }

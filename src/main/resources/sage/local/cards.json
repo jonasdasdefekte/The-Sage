@@ -8,6 +8,10 @@
     "NAME": "Bold Move",
     "DESCRIPTION": "Deal !D! damage. Gain !M! Frail. NL "
   },
+  "Catch_Me_If_You_Can": {
+    "NAME": "Catch Me If You Can",
+    "DESCRIPTION": "Gain !M! Flight. At the start of your next turn, lose !M! Flight."
+  },
   "Defend_Sage": {
     "NAME": "Defend",
     "DESCRIPTION": "Gain !B! Block."
