@@ -3,5 +3,5 @@
 !/gradle/wrapper/gradle-wrapper.jar
 /.gradle/
 /bin/
-/.classpath
-/.project
+.classpath
+.project
