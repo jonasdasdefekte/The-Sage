@@ -13,14 +13,15 @@ libs next to the folder of this Project (not in it) where you have the jars of M
 BaseMod and the Game's jar (desktop1.0.jar)
 
 Your directory structure should look like this:
-  git (or wherever you store your git projects)
-     \_The-Sage
-               \_src...
-     \_libs
-           \_ModTheSpire.jar
-             BaseMod.jar
-             desktop1.0.jar
-
+```
+git (or wherever you store your git projects)
+   \_The-Sage
+             \_src...
+   \_libs
+         \_ModTheSpire.jar
+           BaseMod.jar
+           desktop1.0.jar
+```
 You can run "./gradlew listJars" (without the ") to see which jars are found in your 
 libs folder. If there are no jars listed, you probably haven't configured it correctly
 
