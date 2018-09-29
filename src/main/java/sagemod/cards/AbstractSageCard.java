@@ -1,7 +1,6 @@
 package sagemod.cards;
 
-import java.util.HashSet;
-
+import com.badlogic.gdx.Gdx;
 import com.megacrit.cardcrawl.actions.AbstractGameAction.AttackEffect;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
@@ -23,16 +22,6 @@ import sagemod.character.SageColorEnum;
 public abstract class AbstractSageCard extends CustomCard {
 
 	public static final String PLACE_HOLDER = "Placeholder";
-
-	private static HashSet<String> images;
-	static {
-		images = new HashSet<>();
-		images.add(StrikeSage.ID);
-		images.add(DefendSage.ID);
-		images.add(Fly.ID);
-		images.add(FireBrew.ID);
-		images.add(PincerRepair.ID);
-	}
 
 	public AbstractSageCard(String id, String name, int cost, String rawDescription, CardType type, CardRarity rarity,
 			CardTarget target) {
@@ -88,8 +77,9 @@ public abstract class AbstractSageCard extends CustomCard {
 	}
 
 	private static String getImageforID(String id) {
-		if (images.contains(id)) {
-			return "sage/cards/" + id + ".png";
+		String file = "sage/cards/" + id + ".png";
+		if (Gdx.files.internal(file).exists()) {
+			return file;
 		} else {
 			SageMod.logger.info("Card with ID " + id + " has no image configured. Defaulting to placeholder image");
 			return "sage/cards/" + PLACE_HOLDER + ".png";

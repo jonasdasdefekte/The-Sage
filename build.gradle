@@ -1,0 +1,19 @@
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'idea'
+
+
+repositories {
+   flatDir {
+       dirs '../libs'
+   }
+}
+
+dependencies {
+    compileOnly fileTree(dir: '../libs', include: '*.jar')
+}
+
+task listJars doLast {
+    configurations.compileOnly.each { File file -> println file.name }
+}
+

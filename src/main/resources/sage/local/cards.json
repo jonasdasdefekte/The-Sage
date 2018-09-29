@@ -4,6 +4,10 @@
     "DESCRIPTION": "Draw !MISC! card. Brew a Block Potion in !M! turns.",
     "UPGRADE_DESCRIPTION": "Draw !MISC! cards. Brew a Block Potion in !M! turns."
   },
+  "Bold_Move": {
+    "NAME": "Bold Move",
+    "DESCRIPTION": "Deal !D! damage. Gain !M! Frail. NL "
+  },
   "Defend_Sage": {
     "NAME": "Defend",
     "DESCRIPTION": "Gain !B! Block."
@@ -25,6 +29,10 @@
     "NAME": "Fly",
     "DESCRIPTION": "If you don't fly, gain !M! Flight."
   },
+  "Gearwheel_Master": {
+    "NAME": "Gearwheel Master",
+    "DESCRIPTION": "Innate. NL EVERYBODY gains !M! Artifact. NL Exhaust."
+  },
   "On_The_Head": {
     "NAME": "On The Head",
     "DESCRIPTION": "Deal !D! damage. NL Air: Draw !M! card and gain [E]."
@@ -32,6 +40,10 @@
   "Pincer_Repair": {
     "NAME": "Pincer Repair",
     "DESCRIPTION": "Deal !D! damage. The enemy gains !M! Artifact."
+  },
+  "Pour_Tar_Pitch": {
+    "NAME": "Pour Tar Pitch",
+    "DESCRIPTION": "Deal !D! damage. NL Air: Affects ALL enemies."
   },
   "Quackster": {
     "NAME": "Quackster",
@@ -48,17 +60,5 @@
       " NL (Deals ",
       " damage)"
     ]
-  },
-  "Pour_Tar_Pitch": {
-    "NAME": "Pour Tar Pitch",
-    "DESCRIPTION": "Deal !D! damage. NL Air: Affects ALL enemies."
-  },
-  "Gearwheel_Master": {
-    "NAME": "Gearwheel Master",
-    "DESCRIPTION": "Innate. NL EVERYBODY gains !M! Artifact. NL Exhaust."
-  },
-  "Bold_Move": {
-    "NAME": "Bold Move",
-    "DESCRIPTION": "Deal !D! damage. Gain !M! Frail."
   }
 }
