@@ -27,6 +27,7 @@ import basemod.interfaces.EditRelicsSubscriber;
 import basemod.interfaces.EditStringsSubscriber;
 import basemod.interfaces.PostInitializeSubscriber;
 import sagemod.cards.ArmorBrew;
+import sagemod.cards.BoldMove;
 import sagemod.cards.DefendSage;
 import sagemod.cards.EnergyShield;
 import sagemod.cards.ExplosiveBrew;
@@ -89,10 +90,11 @@ public class SageMod implements EditCharactersSubscriber, EditCardsSubscriber, E
 		// Basic
 		BaseMod.addCard(new StrikeSage());
 		BaseMod.addCard(new DefendSage());
-		BaseMod.addCard(new FireBrew());
 		BaseMod.addCard(new Fly());
+		BaseMod.addCard(new BoldMove());
 
 		// Common
+		BaseMod.addCard(new FireBrew());
 		BaseMod.addCard(new PincerRepair());
 		BaseMod.addCard(new OnTheHead());
 		BaseMod.addCard(new SwoopDown());

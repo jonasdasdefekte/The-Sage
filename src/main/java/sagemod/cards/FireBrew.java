@@ -9,8 +9,6 @@ import com.megacrit.cardcrawl.potions.FirePotion;
 import com.megacrit.cardcrawl.relics.ChemicalX;
 import com.megacrit.cardcrawl.ui.panels.EnergyPanel;
 
-import basemod.helpers.BaseModTags;
-import basemod.helpers.CardTags;
 import sagemod.powers.Brew;
 
 public class FireBrew extends AbstractSageCard {
@@ -31,8 +29,6 @@ public class FireBrew extends AbstractSageCard {
 		super(ID, NAME, COST, DESCRIPTION, TYPE, RARITY, TARGET);
 		baseMagicNumber = magicNumber = TURNS;
 		exhaust = true;
-
-		CardTags.addTags(this, BaseModTags.GREMLIN_MATCH);
 	}
 
 	@Override

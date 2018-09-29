@@ -56,5 +56,9 @@
   "Gearwheel_Master": {
     "NAME": "Gearwheel Master",
     "DESCRIPTION": "Innate. NL EVERYBODY gains !M! Artifact. NL Exhaust."
+  },
+  "Bold_Move": {
+    "NAME": "Bold Move",
+    "DESCRIPTION": "Deal !D! damage. Gain !M! Frail."
   }
 }

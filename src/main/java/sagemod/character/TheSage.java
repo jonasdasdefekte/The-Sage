@@ -10,8 +10,8 @@ import com.megacrit.cardcrawl.helpers.ModHelper;
 import com.megacrit.cardcrawl.screens.CharSelectInfo;
 
 import basemod.abstracts.CustomPlayer;
+import sagemod.cards.BoldMove;
 import sagemod.cards.DefendSage;
-import sagemod.cards.FireBrew;
 import sagemod.cards.Fly;
 import sagemod.cards.StrikeSage;
 import sagemod.relics.FlyingCarpet;
@@ -76,8 +76,8 @@ public class TheSage extends CustomPlayer {
 		// 1x Fly
 		cards.add(Fly.ID);
 
-		// 1x Fire Brew
-		cards.add(FireBrew.ID);
+		// 1x Bold Move
+		cards.add(BoldMove.ID);
 		return cards;
 	}
 

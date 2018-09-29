@@ -4,7 +4,7 @@
   "author_list": ["jonasdasdefekte" , "Skrelpoid" ],
   "description": "Adds a new character, The Sage. A mechanic who studied about the cult of a blue bird. She learned flying a carpet and brewing potions in order to stop its rise.",
   "version": "0.0.8",
-  "sts_version": "09-20-2018",
+  "sts_version": "09-27-2018",
   "mts_version": "3.2.0",
   "dependencies": ["basemod"],
   "update_json": "https://api.github.com/repos/jonasdasdefekte/The-Sage/releases/latest"
