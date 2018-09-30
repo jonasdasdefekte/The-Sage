@@ -6,6 +6,7 @@ import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.PowerStrings;
+import com.megacrit.cardcrawl.powers.AbstractPower;
 
 public class LoseFlightNextTurn extends AbstractSagePower {
 
@@ -17,13 +18,15 @@ public class LoseFlightNextTurn extends AbstractSagePower {
 	public LoseFlightNextTurn(AbstractCreature owner, int amount) {
 		super(POWER_ID, NAME, owner, amount);
 		updateDescription();
+		type = AbstractPower.PowerType.DEBUFF;
+		priority = 40;
 	}
 
 	@Override
 	public void atStartOfTurn() {
-		AbstractDungeon.actionManager.addToBottom(new ReducePowerAction(owner, owner, SageFlight.POWER_ID, amount));
-		AbstractDungeon.actionManager.addToTop(new RemoveSpecificPowerAction(owner, owner, this));
 		flash();
+		AbstractDungeon.actionManager.addToBottom(new ReducePowerAction(owner, owner, SageFlight.POWER_ID, amount));
+		AbstractDungeon.actionManager.addToBottom(new RemoveSpecificPowerAction(owner, owner, POWER_ID));
 
 	}
 
