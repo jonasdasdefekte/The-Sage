@@ -20,7 +20,7 @@ public class ThunderFlight extends AbstractSageCard {
 	private static final CardRarity RARITY = CardRarity.RARE;
 	private static final CardTarget TARGET = CardTarget.ALL_ENEMY;
 
-	private static final int ATTACK_DMG = 12;
+	private static final int ATTACK_DMG = 9;
 	private static final int BASE_ADDED_EFFECT = 0;
 	private static final int UPGRADE_ADDED_EFFECT = 1;
 

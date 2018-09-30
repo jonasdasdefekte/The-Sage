@@ -26,7 +26,6 @@ public class FireBrew extends AbstractSageCard {
 	public FireBrew() {
 		super(ID, NAME, COST, DESCRIPTION, TYPE, RARITY, TARGET);
 		baseMagicNumber = magicNumber = TURNS;
-		exhaust = true;
 	}
 
 	@Override

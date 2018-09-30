@@ -26,7 +26,6 @@ public class GearwheelMaster extends AbstractSageCard {
 		super(ID, NAME, COST, DESCRIPTION, TYPE, RARITY, TARGET);
 		baseMagicNumber = magicNumber = ARTIFACT_GAIN;
 		exhaust = true;
-		isInnate = true;
 	}
 
 	@Override

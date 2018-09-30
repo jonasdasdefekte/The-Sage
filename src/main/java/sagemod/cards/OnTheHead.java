@@ -21,7 +21,7 @@ public class OnTheHead extends AbstractSageCard {
 	private static final CardTarget TARGET = CardTarget.ENEMY;
 
 	private static final int ATTACK_DMG = 5;
-	private static final int UPGRADE_ATTACK_DMG = 3;
+	private static final int UPGRADE_ATTACK_DMG = 2;
 	private static final int DRAW_AND_ENERGY_GAIN = 1;
 
 	public OnTheHead() {

@@ -2,11 +2,11 @@
   "Armor_Brew": {
     "NAME": "Armor Brew",
     "DESCRIPTION": "Draw !MISC! card. Brew a Block Potion in !M! turns.",
-    "UPGRADE_DESCRIPTION": "Draw !MISC! cards. Brew a Block Potion in !M! turns."
+    "UPGRADE_DESCRIPTION": "Draw !MISC! cards. NL Brew a Block Potion in !M! turns."
   },
   "Bold_Move": {
     "NAME": "Bold Move",
-    "DESCRIPTION": "Deal !D! damage. Gain !M! Frail. NL "
+    "DESCRIPTION": "Deal !D! damage. NL Gain !M! Frail. "
   },
   "Catch_Me_If_You_Can": {
     "NAME": "Catch Me If You Can",
@@ -27,7 +27,7 @@
   },
   "Fire_Brew": {
     "NAME": "Fire Brew",
-    "DESCRIPTION": "Brew a Fire Potion in NL !M! - X turns. NL Exhaust."
+    "DESCRIPTION": "Brew a Fire Potion in NL !M! -X turns."
   },
   "Fly": {
     "NAME": "Fly",
@@ -35,7 +35,7 @@
   },
   "Gearwheel_Master": {
     "NAME": "Gearwheel Master",
-    "DESCRIPTION": "Innate. NL EVERYBODY gains !M! Artifact. NL Exhaust."
+    "DESCRIPTION": "EVERYBODY gains !M! Artifact. NL Exhaust."
   },
   "On_The_Head": {
     "NAME": "On The Head",
@@ -43,7 +43,7 @@
   },
   "Pincer_Repair": {
     "NAME": "Pincer Repair",
-    "DESCRIPTION": "Deal !D! damage. The enemy gains !M! Artifact."
+    "DESCRIPTION": "Deal !D! damage. NL The enemy gains !M! Artifact."
   },
   "Pour_Tar_Pitch": {
     "NAME": "Pour Tar Pitch",
@@ -59,7 +59,7 @@
   },
   "Swoop_Down": {
     "NAME": "Swoop Down",
-    "DESCRIPTION": "Deal !D! damage per Flight you have. Lose !M! Flight.",
+    "DESCRIPTION": "Deal !D! damage per Flight you have. NL Lose !M! Flight.",
     "EXTENDED_DESCRIPTION": [
       " NL (Deals ",
       " damage)"
@@ -77,7 +77,7 @@
   },
   "Accumulation": {
     "NAME": "Accumulation",
-    "DESCRIPTION": "Air: Lose !M! Flight. NL Gain [E]  at the start of each turn."
+    "DESCRIPTION": "Air: Lose !M! Flight. NL Gain [E] at the start of each turn."
   },
   "Altitude": {
     "NAME": "Altitude",
