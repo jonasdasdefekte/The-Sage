@@ -13,12 +13,18 @@ import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.AbstractPower;
+import com.megacrit.cardcrawl.relics.ChemicalX;
+import com.megacrit.cardcrawl.ui.panels.EnergyPanel;
 
 import basemod.abstracts.CustomCard;
 import sagemod.SageMod;
 import sagemod.character.SageColorEnum;
+import sagemod.powers.SageFlight;
 
 public abstract class AbstractSageCard extends CustomCard {
+
+	private static final String NO_FLIGHT = "I can only play this if I have no Flight!";
+	private static final String AIR = "I can only play this if I fly!";
 
 	private static final String PREFIX = "sage/cards/";
 	private static final String POSTFIX = ".png";
@@ -75,6 +81,50 @@ public abstract class AbstractSageCard extends CustomCard {
 
 	protected AbstractPlayer player() {
 		return AbstractDungeon.player;
+	}
+
+	protected boolean air() {
+		return player().hasPower(SageFlight.POWER_ID);
+	}
+
+	protected int getXEffect() {
+		if (energyOnUse < EnergyPanel.totalCount) {
+			energyOnUse = EnergyPanel.totalCount;
+		}
+
+		int effect = EnergyPanel.totalCount;
+		if (energyOnUse != -1) {
+			effect = energyOnUse;
+		}
+		if (player().hasRelic(ChemicalX.ID)) {
+			effect += ChemicalX.BOOST;
+			player().getRelic(ChemicalX.ID).flash();
+		}
+		return effect;
+	}
+
+	protected void useXEnergy() {
+		if (!freeToPlayOnce) {
+			player().energy.use(EnergyPanel.totalCount);
+		}
+	}
+
+	protected boolean canOnlyUseAir(AbstractPlayer p, AbstractMonster m) {
+		boolean superCanUse = super.canUse(p, m);
+		boolean hasFlight = air();
+		if (!hasFlight) {
+			cantUseMessage = AIR;
+		}
+		return superCanUse && hasFlight;
+	}
+
+	protected boolean canOnlyUseWithNoFlight(AbstractPlayer p, AbstractMonster m) {
+		boolean superCanUse = super.canUse(p, m);
+		boolean hasFlight = air();
+		if (hasFlight) {
+			cantUseMessage = NO_FLIGHT;
+		}
+		return superCanUse && !hasFlight;
 	}
 
 }

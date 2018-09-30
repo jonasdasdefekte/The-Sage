@@ -22,5 +22,12 @@
       "Reduce #yAttack damage taken by #b50%. Cancelled if dealt #yAttack damage #b",
       " times in one turn."
     ]
+  },
+  "Accumulation": {
+    "NAME": "Accumulation",
+    "DESCRIPTIONS": [
+     "Gain ",
+     "  at the start of your turn."
+    ]
   }
 }

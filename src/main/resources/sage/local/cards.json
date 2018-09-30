@@ -64,5 +64,23 @@
       " NL (Deals ",
       " damage)"
     ]
+  },
+  "Thunder_Flight": {
+    "NAME": "Thunder Flight",
+    "DESCRIPTION": "Air: Deal !D! damage to a random enemy X times.",
+    "UPGRADE_DESCRIPTION": "Air: Deal !D! damage to a random enemy X + !M! times."
+  },
+  "Escape": {
+    "NAME": "Escape",
+    "DESCRIPTION": "Double your Flight. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Double your Flight."
+  },
+  "Accumulation": {
+    "NAME": "Accumulation",
+    "DESCRIPTION": "Air: Lose !M! Flight. NL Gain [E]  at the start of each turn."
+  },
+  "Altitude": {
+    "NAME": "Altitude",
+    "DESCRIPTION": "Gain !M! Flight."
   }
 }

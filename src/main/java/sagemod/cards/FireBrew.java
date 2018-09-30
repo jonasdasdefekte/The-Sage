@@ -6,8 +6,6 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.potions.FirePotion;
-import com.megacrit.cardcrawl.relics.ChemicalX;
-import com.megacrit.cardcrawl.ui.panels.EnergyPanel;
 
 import sagemod.powers.Brew;
 
@@ -46,25 +44,11 @@ public class FireBrew extends AbstractSageCard {
 
 	@Override
 	public void use(AbstractPlayer p, AbstractMonster m) {
-		if (energyOnUse < EnergyPanel.totalCount) {
-			energyOnUse = EnergyPanel.totalCount;
-		}
-
-		int effect = EnergyPanel.totalCount;
-		if (energyOnUse != -1) {
-			effect = energyOnUse;
-		}
-		if (player().hasRelic(ChemicalX.ID)) {
-			effect += ChemicalX.BOOST;
-			player().getRelic(ChemicalX.ID).flash();
-		}
-		int turns = Math.max(0, magicNumber - effect);
+		int turns = Math.max(0, magicNumber - getXEffect());
 
 		Brew.addPotion(turns, new FirePotion(), player());
 
-		if (!freeToPlayOnce) {
-			player().energy.use(EnergyPanel.totalCount);
-		}
+		useXEnergy();
 	}
 
 }

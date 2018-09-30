@@ -93,7 +93,7 @@ DONE:	Gearwheel Master
 	Mechanics Break
 		Skill, 1 Energy:
 		Gain 10 (13) Block. ALL Enemies gain 4 Artifact. 	
-	Altitude
+DONE:	Altitude
 		Power, 1 Energy: 
 		Gain 1(2) Flight.
 	Taste this one
@@ -104,10 +104,10 @@ DONE:	Gearwheel Master
 		Whenever you play a card costing X, gain 1 Energy.
 
 Rare Cards (gold)
-	Thunder Flight
+DONE:	Thunder Flight
 		Attack, X Energy:
 		Air: Deal 12 damage to a random enemy X (X+1) times.
-	Escape
+DONE:	Escape
 		Skill, 1 Energy: 
 		Double your Flight. Exhaust. (No Exhaust)
 	Extra Portion
@@ -122,9 +122,9 @@ Rare Cards (gold)
 	Cultist form
 		Power, 3 Energy: 
 		Lose 2 Flight. ALL enemies gain 3 (4) Disoriented.
-	Accumulation
+DONE:	Accumulation
 		Power, 1 Energy: 
-		Lose 2 (1) Flight. At the start of each turn, gain 1 Energy.
+		Air: Lose 2 (1) Flight. At the start of each turn, gain 1 Energy.
 
 	
 Character-specific relics

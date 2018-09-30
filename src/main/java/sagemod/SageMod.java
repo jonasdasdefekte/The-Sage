@@ -26,11 +26,14 @@ import basemod.interfaces.EditKeywordsSubscriber;
 import basemod.interfaces.EditRelicsSubscriber;
 import basemod.interfaces.EditStringsSubscriber;
 import basemod.interfaces.PostInitializeSubscriber;
+import sagemod.cards.Accumulation;
+import sagemod.cards.Altitude;
 import sagemod.cards.ArmorBrew;
 import sagemod.cards.BoldMove;
 import sagemod.cards.CatchMeIfYouCan;
 import sagemod.cards.DefendSage;
 import sagemod.cards.EnergyShield;
+import sagemod.cards.Escape;
 import sagemod.cards.ExplosiveBrew;
 import sagemod.cards.FireBrew;
 import sagemod.cards.Fly;
@@ -41,6 +44,7 @@ import sagemod.cards.PourTarPitch;
 import sagemod.cards.Quackster;
 import sagemod.cards.StrikeSage;
 import sagemod.cards.SwoopDown;
+import sagemod.cards.ThunderFlight;
 import sagemod.character.SageCharEnum;
 import sagemod.character.SageColorEnum;
 import sagemod.character.TheSage;
@@ -110,6 +114,12 @@ public class SageMod implements EditCharactersSubscriber, EditCardsSubscriber, E
 		// Uncommon
 		BaseMod.addCard(new PourTarPitch());
 		BaseMod.addCard(new GearwheelMaster());
+		BaseMod.addCard(new Altitude());
+
+		// Rare
+		BaseMod.addCard(new ThunderFlight());
+		BaseMod.addCard(new Escape());
+		BaseMod.addCard(new Accumulation());
 	}
 
 	@Override
