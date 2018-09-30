@@ -26,8 +26,6 @@ public class CatchMeIfYouCan extends AbstractSageCard {
 	public CatchMeIfYouCan() {
 		super(ID, NAME, COST, DESCRIPTION, TYPE, RARITY, TARGET);
 		baseMagicNumber = magicNumber = TEMP_FLIGHT_GAIN;
-		exhaust = true;
-		isInnate = true;
 	}
 
 	@Override
