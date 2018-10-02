@@ -24,22 +24,25 @@ DONE:	1x Fly
 		Skill, 2 (1) Energy: 
 		If you don't fly, gain 1 Flight.
 
-Common Cards (grey)
+13 Common Cards (grey)
 DONE:	Pincer Repair
 		Attack, 1 Energy
 		Deal 9 (12) damage. The enemy gains 1 Artifact.
 DONE:	On the Head
 		Attack, 1 Energy:
-		Deal 5 (8) damage. Air: Draw 1 card and gain 1 Energy.
-DONE:	Swoop Down
-		Attack, 1 Energy: 
-		Deal 8 (10) damage per Flight you have. Then lose 1 Flight.
+		Deal 5 (7) damage. If you fly, draw 1 card and gain 1 Energy.
 DONE:	Explosive Brew
 		Attack, 1 Energy: 
 		Deal 6 (9) damage. Gain an explosive potion in 4 (3) turns.	
+	Salty Strike
+		Attack, 1 Energy:
+		Deal 6 (9) damage. The enemy gains 1 (2) Thirsty.
+	Frailing Attack
+		Attack, X Energy:
+		Gain 4 (3)-X Frail. Gain X Energy. Deal 8(10) damage to ALL enemies.
 DONE:	Fire Brew
 		Skill, X Energy: 
-		Brew a Fire Potion in 4 (3)-X turns. Exhaust.
+		Brew a Fire Potion in 4 (3)-X turns.
 DONE:	Quackster
 		Skill, 0 Energy: 
 		Brew a random potion in 4 (3) turns.
@@ -50,13 +53,26 @@ DONE:	Energy shield
 		Skill, X Energy:
 		Gain X (X+3) Block. Gain X Energy.
 DONE:	Catch me if you can
-		Skill, 1 Energy
+		Skill, 0 Energy
 		Gain 3 (5) Flight. At the start of your next turn, lose 3 (5) Flight.
+	Wicked Brew
+		Skill, X Energy: 
+		Apply 5 poison. Brew a Poison potion in 4 (3)-X turns.
+	The Flying Turtle 
+		Skill, 1 Energy:
+		If you fly, gain 5 (8) Block. Otherwise, gain 1 Flight.
+	Ambition
+		Skill, 1(0) Energy:
+		Gain 3 Frail. Gain [E][E].
 
-Uncommon Cards (blue)
+
+19 Uncommon Cards (blue)
+DONE:	Thunder Flight
+		Attack, X Energy:
+		If you fly, deal 9 damage to a random enemy X (X+1) times.
 DONE:	Pour Tar Pitch
 		Attack, 3 Energy: 
-		Deal 20 (25) damage. Air: Affects ALL enemies.
+		Deal 18 (22) damage. Affects ALL enemies if you fly.
 	Flight Feint
 		Attack, 2 Energy: 
 		Deal 6 (9) damage and apply 1 Disoriented. 
@@ -66,12 +82,15 @@ DONE:	Pour Tar Pitch
 	Pincer Attack
 		Attack, 1 Energy: 
 		Deal 6(8) damage. Repeat this once per Artifact on the enemy.
+	Bouncing Strike
+		Attack, 1 Energy: 
+		Deal 5(8) damage. Gain 2 Frail. Gain 1 Flight.
+	Turn Around
+		Attack, 2 Energy: 
+		Gain 2 Frail. Deal 8 (10) damage per Frail you have. 
 DONE:	Gearwheel Master
 		Skill, 0 Energy: 
-		EVERYBODY gains 1(2) Artifact. Innate. Exhaust.
-	Wicked Brew
-		Skill, X Energy: 
-		Apply 5 poison. Brew a Poison potion in 4 (3)-X turns.
+		EVERYBODY gains 1(2) Artifact. Exhaust.
 	Coffee Brew
 		Skill, X Energy: 
 		Brew a Steroid potion in 4 (3)-X turns. 
@@ -86,16 +105,19 @@ DONE:	Gearwheel Master
 		Draw 3 cards and (you may) put one card from your hand hand on top of your deck. 
 	Flying Cauldron
 		Skill, 0 Energy: 
-		Air: Gain 1(2) Brewing. Otherwise, gain 1(2) Flight.
+		If you fly, gain 1(2) Brewing. Otherwise, gain 1(2) Flight.
 	Lunchtime!
 		Skill, 1 Energy: 
-		Air: Lose 2 Flight and brew all potions immediately.
+		If you fly, lose 2 Flight and brew all potions immediately.
 	Mechanics Break
 		Skill, 1 Energy:
-		Gain 10 (13) Block. ALL Enemies gain 4 Artifact. 	
+		Gain 10 (13) Block. ALL Enemies gain 4 Artifact.
+	Spoiled Food
+		Skill, 1 (0) Energy:
+		Apply 99 Thirsty. 	
 DONE:	Altitude
 		Power, 1 Energy: 
-		Gain 1(2) Flight.
+		Gain 2(3) Flight.
 	Taste this one
 		Power, 1 Energy:
 		Whenever you use a potion, apply 3 (5) Poison to ALL Enemies.
@@ -103,19 +125,28 @@ DONE:	Altitude
 		Power, 2(1) Energy: 
 		Whenever you play a card costing X, gain 1 Energy.
 
-Rare Cards (gold)
-DONE:	Thunder Flight
-		Attack, X Energy:
-		Air: Deal 12 damage to a random enemy X (X+1) times.
+12 Rare Cards (gold)
+DONE:	Swoop Down
+		Attack, 1 Energy: 
+		Deal 8 (10) damage per Flight you have. Then lose 1 Flight.
+	Anti Ancient Attack
+		Attack, 2 Energy: 
+		Deal 20 (30) damage per Artifact on this enemy. 
+	The Almanach
+		Skill, X Energy:
+		Draw X (X+1) cards. Gain X (X+1) Energy. Gain 4 (3) - X Frail. Exhaust.
 DONE:	Escape
 		Skill, 1 Energy: 
 		Double your Flight. Exhaust. (No Exhaust)
 	Extra Portion
 		Skill, 1 Energy: 
 		The next potion is (the next 2 potions are) applied twice this turn.
+	Folded Carpet
+		Skill, 2 Energy:
+		Gain 18 (24) Block.
 	Alchemy Expert
 		Power, 1 Energy:
-		Whenever you use a potion, gain 1 Artifact before its effect.
+		Whenever you use a potion, gain 1 Artifact before applying its effect.
 	Deadly Contraption
 		Power, 1 Energy: 
 		At the end of your turn, enemies are dealt 10 (12) damage per Artifact on them.
@@ -124,13 +155,19 @@ DONE:	Escape
 		Lose 2 Flight. ALL enemies gain 3 (4) Disoriented.
 DONE:	Accumulation
 		Power, 1 Energy: 
-		Air: Lose 2 (1) Flight. At the start of each turn, gain 1 Energy.
+		If you fly, lose 2 (1) Flight and at the start of each turn, gain 1 Energy.
+	On Fire
+		Power, 2 Energy:
+		Whenever you play 6 (4) cards in a single turn, obtain a Fire Potion. 
+	Ancient Poison
+		Power, 1 Energy:
+		Artifacts do no longer negate Poison this combat. Apply 4 Poison to ALL enemies.
 
 	
 Character-specific relics
 	Byrd carpet
 		Boss relic: 
-		Replaces Flying carpet. Start each combat with 3 Flight.
+		Replaces Flying carpet. Start each combat with 3 Flight. If you have 1 or 2 Flight at the start of your turn, set it to 3 again.
 	Cooking Book
 		Common relic: 
 		Start each combat with 1 Brewing.

@@ -2,18 +2,15 @@ The Sage - Powers and Rules
 
 Flight
 	Buff
-	Reduce Attack damage taken by 50%. Cancelled if dealt Attack damage X times in one turn. Otherwise, the value is reset at the start of your turn to the value at the end of your last turn.
-Air
-	Air effects only have an effect if you have at least 1 Flight.
+	Reduce Attack damage taken by 50%. Cancelled if dealt Attack damage X times in one turn.
 Brew
-	You obtain a Potion in X turns, either now (X=0) or at the start of that turn. If you don't have  empty potion slots at that point, you must use it immediately or discard it.
-		-> Hier musst du sagen, wie sich das implementieren lässt, kannst evtl. die Regel auch so abändern, dass man ohne Slots einfach keinen Trank bekommt.
-Brewing
-	Buff: 
+	You obtain a Potion in X turns, either now (X=0) or at the start of that turn. If you don't have empty potion slots at that point, you choose which potions to keep.
+Brewing (Buff)	
 	You brew potions X turns faster.
-Disoriented
-	Debuff:
-	If you fly, the enemy attacks you one time less, for X turns.
-		-> Einfache Angriffe werden dadurch komplett auf 0 gesetzt (Hyperbeam!)
+Disoriented (Debuff)
+	The first Attack of this Enemy has no effect, for X turns.
+Thirsty (Debuff)
+	Receives 50% more damage from potions, for X turns.
+
 
 Gaining Artifacts is not considered a debuff.
