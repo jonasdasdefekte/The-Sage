@@ -11,24 +11,24 @@ Starting Relic:
 		Start each combat with 1 Flight. 
 
 Starting Deck:
-DONE:   5x Strike
+DONE:   5x Strike (illustriert)
 		Attack, 1 Energy: 
 		Deal 6 (9) damage.
-DONE:	5x Defend
+DONE:	5x Defend (illustriert)
 		Skill, 1 Energy: 
 		Gain 5 (8) Block.
-DONE:	1x Bold move
+DONE:	1x Bold move (illustriert)
 		Attack, 1 Energy:
 		Deal 10 (13) damage. Gain 2 Frail.
-DONE:	1x Fly
+DONE:	1x Fly (illustriert)
 		Skill, 2 (1) Energy: 
 		If you don't fly, gain 1 Flight.
 
 13 Common Cards (grey)
-DONE:	Pincer Repair
+DONE:	Pincer Repair (illustriert)
 		Attack, 1 Energy
 		Deal 9 (12) damage. The enemy gains 1 Artifact.
-DONE:	On the Head
+DONE:	On the Head (illustriert)
 		Attack, 1 Energy:
 		Deal 5 (7) damage. If you fly, draw 1 card and gain 1 Energy.
 DONE:	Explosive Brew
@@ -40,10 +40,10 @@ DONE:	Explosive Brew
 	Frailing Attack
 		Attack, X Energy:
 		Gain 4 (3)-X Frail. Gain X Energy. Deal 8(10) damage to ALL enemies.
-DONE:	Fire Brew
+DONE:	Fire Brew (illustriert)
 		Skill, X Energy: 
 		Brew a Fire Potion in 4 (3)-X turns.
-DONE:	Quackster
+DONE:	Quackster (illustriert)
 		Skill, 0 Energy: 
 		Brew a random potion in 4 (3) turns.
 DONE:	Armor Brew
@@ -70,7 +70,7 @@ DONE:	Catch me if you can
 DONE:	Thunder Flight
 		Attack, X Energy:
 		If you fly, deal 9 damage to a random enemy X (X+1) times.
-DONE:	Pour Tar Pitch
+DONE:	Pour Tar Pitch (illustriert)
 		Attack, 3 Energy: 
 		Deal 18 (22) damage. Affects ALL enemies if you fly.
 	Flight Feint
@@ -88,7 +88,7 @@ DONE:	Pour Tar Pitch
 	Turn Around
 		Attack, 2 Energy: 
 		Gain 2 Frail. Deal 8 (10) damage per Frail you have. 
-DONE:	Gearwheel Master
+DONE:	Gearwheel Master (illustriert)
 		Skill, 0 Energy: 
 		EVERYBODY gains 1(2) Artifact. Exhaust.
 	Coffee Brew
@@ -104,8 +104,8 @@ DONE:	Gearwheel Master
 		Skill, 1 Energy: 
 		Draw 3 cards and (you may) put one card from your hand hand on top of your deck. 
 	Flying Cauldron
-		Skill, 0 Energy: 
-		If you fly, gain 1(2) Brewing. Otherwise, gain 1(2) Flight.
+		Skill, 1 (0) Energy: 
+		If you fly, gain 1 Brewing. Otherwise, gain 1 Flight.
 	Lunchtime!
 		Skill, 1 Energy: 
 		If you fly, lose 2 Flight and brew all potions immediately.
@@ -114,7 +114,7 @@ DONE:	Gearwheel Master
 		Gain 10 (13) Block. ALL Enemies gain 4 Artifact.
 	Spoiled Food
 		Skill, 1 (0) Energy:
-		Apply 99 Thirsty. 	
+		Apply 99 Thirsty. Exhaust.
 DONE:	Altitude
 		Power, 1 Energy: 
 		Gain 2(3) Flight.
@@ -124,8 +124,11 @@ DONE:	Altitude
 	Perpetuum Mobile
 		Power, 2(1) Energy: 
 		Whenever you play a card costing X, gain 1 Energy.
+	Brewmaster
+		Power, 1 Energy:
+		Gain 1(2) Brewing.
 
-12 Rare Cards (gold)
+13 Rare Cards (gold)
 DONE:	Swoop Down
 		Attack, 1 Energy: 
 		Deal 8 (10) damage per Flight you have. Then lose 1 Flight.
@@ -137,13 +140,16 @@ DONE:	Swoop Down
 		Draw X (X+1) cards. Gain X (X+1) Energy. Gain 4 (3) - X Frail. Exhaust.
 DONE:	Escape
 		Skill, 1 Energy: 
-		Double your Flight. Exhaust. (No Exhaust)
+		Double your Flight (twice). Exhaust.
 	Extra Portion
 		Skill, 1 Energy: 
 		The next potion is (the next 2 potions are) applied twice this turn.
 	Folded Carpet
 		Skill, 2 Energy:
 		Gain 18 (24) Block.
+	Light-weighted
+		Skill, 0 Energy:
+		Lose all Frail. Gain that much Flight (+1). Exhaust.
 	Alchemy Expert
 		Power, 1 Energy:
 		Whenever you use a potion, gain 1 Artifact before applying its effect.
@@ -157,8 +163,8 @@ DONE:	Accumulation
 		Power, 1 Energy: 
 		If you fly, lose 2 (1) Flight and at the start of each turn, gain 1 Energy.
 	On Fire
-		Power, 2 Energy:
-		Whenever you play 6 (4) cards in a single turn, obtain a Fire Potion. 
+		Power, 2 (1) Energy:
+		Whenever you play 6 cards in a single turn, obtain a Fire Potion. 
 	Ancient Poison
 		Power, 1 Energy:
 		Artifacts do no longer negate Poison this combat. Apply 4 Poison to ALL enemies.
