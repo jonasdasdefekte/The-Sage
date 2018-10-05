@@ -37,10 +37,10 @@ DONE:	Explosive Brew
 	Salty Strike
 		Attack, 1 Energy:
 		Deal 6 (9) damage. The enemy gains 1 (2) Thirsty.
-	Frailing Attack
+	How To Poke At Slimes
 		Attack, X Energy:
-		Gain 4 (3)-X Frail. Gain X Energy. Deal 8(10) damage to ALL enemies.
-DONE:	Fire Brew (illustriert)
+		Gain 4 (3)-X Frail. Gain X Energy. Deal 6 (8) damage to ALL enemies.
+DONE:	How To Warm Elephants (neu illustrieren)
 		Skill, X Energy: 
 		Brew a Fire Potion in 4 (3)-X turns.
 DONE:	Quackster (illustriert)
@@ -48,17 +48,17 @@ DONE:	Quackster (illustriert)
 		Brew a random potion in 4 (3) turns.
 DONE:	Armor Brew
 		Skill, 1 Energy: 
-		Draw 1 (2) cards. Brew a block potion in 4 (3) turns.
-DONE:	Energy shield
+		Draw 1 card. Brew a block potion in 4 (3) turns.
+DONE:	How To Befriend A Turtle
 		Skill, X Energy:
 		Gain X (X+3) Block. Gain X Energy.
 DONE:	Catch me if you can
 		Skill, 0 Energy
 		Gain 3 (5) Flight. At the start of your next turn, lose 3 (5) Flight.
-	Wicked Brew
+	How To Talk To Spiders
 		Skill, X Energy: 
 		Apply 5 poison. Brew a Poison potion in 4 (3)-X turns.
-	The Flying Turtle 
+	Step Back 
 		Skill, 1 Energy:
 		If you fly, gain 5 (8) Block. Otherwise, gain 1 Flight.
 	Ambition
@@ -67,7 +67,7 @@ DONE:	Catch me if you can
 
 
 19 Uncommon Cards (blue)
-DONE:	Thunder Flight
+DONE:	How to Murder Ants
 		Attack, X Energy:
 		If you fly, deal 9 damage to a random enemy X (X+1) times.
 DONE:	Pour Tar Pitch (illustriert)
@@ -91,13 +91,13 @@ DONE:	Pour Tar Pitch (illustriert)
 DONE:	Gearwheel Master (illustriert)
 		Skill, 0 Energy: 
 		EVERYBODY gains 1(2) Artifact. Exhaust.
-	Coffee Brew
+	How to wake Lyons
 		Skill, X Energy: 
 		Brew a Steroid potion in 4 (3)-X turns. 
-	Life Brew
+	How to feed Apes
 		Skill, X Energy: 
 		Brew a random rare potion in 4 (3)-X turns. Exhaust.
-	Meditation
+	Perpetuum Mobile
 		Skill, 0 Energy: 
 		Draw 1 card. Play it (Upgrade instead: Gain 1 Energy) if it costs 1.
 	Study
@@ -115,13 +115,16 @@ DONE:	Gearwheel Master (illustriert)
 	Spoiled Food
 		Skill, 1 (0) Energy:
 		Apply 99 Thirsty. Exhaust.
+	How To Greet Byrds
+		Skill, X Energy:
+		Set your Flight to X. (Gain X Flight.) Innate. Exhaust.
 DONE:	Altitude
 		Power, 1 Energy: 
 		Gain 2(3) Flight.
 	Taste this one
 		Power, 1 Energy:
 		Whenever you use a potion, apply 3 (5) Poison to ALL Enemies.
-	Perpetuum Mobile
+	Bookworm
 		Power, 2(1) Energy: 
 		Whenever you play a card costing X, gain 1 Energy.
 	Brewmaster
@@ -130,17 +133,17 @@ DONE:	Altitude
 
 13 Rare Cards (gold)
 DONE:	Swoop Down
-		Attack, 1 Energy: 
-		Deal 8 (10) damage per Flight you have. Then lose 1 Flight.
+		Attack, 2 Energy: 
+		Deal 6 (8) damage per Flight you have. Then lose 1 Flight.
 	Anti Ancient Attack
 		Attack, 2 Energy: 
 		Deal 20 (30) damage per Artifact on this enemy. 
-	The Almanach
+	How To Amuse Sneckos
 		Skill, X Energy:
 		Draw X (X+1) cards. Gain X (X+1) Energy. Gain 4 (3) - X Frail. Exhaust.
 DONE:	Escape
 		Skill, 1 Energy: 
-		Double your Flight (twice). Exhaust.
+		Double your Flight. Exhaust. (Upgrade: No Exhaust.)
 	Extra Portion
 		Skill, 1 Energy: 
 		The next potion is (the next 2 potions are) applied twice this turn.
@@ -150,6 +153,9 @@ DONE:	Escape
 	Light-weighted
 		Skill, 0 Energy:
 		Lose all Frail. Gain that much Flight (+1). Exhaust.
+	Light-weighted
+		Skill, 0 Energy:
+		Lose all Flight. Gain 8 Energy. Exhaust.
 	Alchemy Expert
 		Power, 1 Energy:
 		Whenever you use a potion, gain 1 Artifact before applying its effect.
