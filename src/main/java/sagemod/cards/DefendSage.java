@@ -6,8 +6,7 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
-import basemod.helpers.BaseModTags;
-import basemod.helpers.CardTags;
+import basemod.helpers.BaseModCardTags;
 
 public class DefendSage extends AbstractSageCard {
 
@@ -27,7 +26,7 @@ public class DefendSage extends AbstractSageCard {
 		super(ID, NAME, COST, DESCRIPTION, TYPE, RARITY, TARGET);
 		baseBlock = BLOCK_AMT;
 
-		CardTags.addTags(this, BaseModTags.BASIC_DEFEND);
+		tags.add(BaseModCardTags.BASIC_DEFEND);
 	}
 
 	@Override

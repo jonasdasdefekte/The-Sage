@@ -8,8 +8,7 @@ import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.FrailPower;
 
-import basemod.helpers.BaseModTags;
-import basemod.helpers.CardTags;
+import basemod.helpers.BaseModCardTags;
 
 public class BoldMove extends AbstractSageCard {
 
@@ -31,7 +30,7 @@ public class BoldMove extends AbstractSageCard {
 		baseDamage = ATTACK_DMG;
 		baseMagicNumber = magicNumber = FRAIL_GAIN;
 
-		CardTags.addTags(this, BaseModTags.GREMLIN_MATCH);
+		tags.add(BaseModCardTags.GREMLIN_MATCH);
 	}
 
 	@Override
