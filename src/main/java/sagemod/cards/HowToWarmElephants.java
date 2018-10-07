@@ -9,9 +9,9 @@ import com.megacrit.cardcrawl.potions.FirePotion;
 
 import sagemod.powers.Brew;
 
-public class FireBrew extends AbstractSageCard {
+public class HowToWarmElephants extends AbstractSageCard {
 
-	public static final String ID = "Fire_Brew";
+	public static final String ID = "How_To_Warm_Elephants";
 	private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
 	public static final String NAME = cardStrings.NAME;
 	private static final int COST = -1;
@@ -23,7 +23,7 @@ public class FireBrew extends AbstractSageCard {
 	private static final int TURNS = 4;
 	private static final int UPGRADE_TURNS = -1;
 
-	public FireBrew() {
+	public HowToWarmElephants() {
 		super(ID, NAME, COST, DESCRIPTION, TYPE, RARITY, TARGET);
 		baseMagicNumber = magicNumber = TURNS;
 	}
@@ -38,7 +38,7 @@ public class FireBrew extends AbstractSageCard {
 
 	@Override
 	public AbstractCard makeCopy() {
-		return new FireBrew();
+		return new HowToWarmElephants();
 	}
 
 	@Override

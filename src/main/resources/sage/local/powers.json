@@ -1,4 +1,11 @@
 {
+  "Accumulation": {
+    "NAME": "Accumulation",
+    "DESCRIPTIONS": [
+      "Gain ",
+      "  at the start of your turn."
+    ]
+  },
   "Brew": {
     "NAME": "Brew",
     "DESCRIPTIONS": [
@@ -20,13 +27,6 @@
     "NAME": "Flight",
     "DESCRIPTIONS": [
       "Reduce #yattack damage taken by #b50%. Reduced by one if you take #yattack damage."
-    ]
-  },
-  "Accumulation": {
-    "NAME": "Accumulation",
-    "DESCRIPTIONS": [
-     "Gain ",
-     "  at the start of your turn."
     ]
   }
 }

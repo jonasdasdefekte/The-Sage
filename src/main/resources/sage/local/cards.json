@@ -1,4 +1,12 @@
 {
+  "Accumulation": {
+    "NAME": "Accumulation",
+    "DESCRIPTION": "If you fly: Lose !M! Flight. NL Gain [E] at the start of each turn."
+  },
+  "Altitude": {
+    "NAME": "Altitude",
+    "DESCRIPTION": "Gain !M! Flight."
+  },
   "Armor_Brew": {
     "NAME": "Armor Brew",
     "DESCRIPTION": "Draw !MISC! card. Brew a Block Potion in !M! turns.",
@@ -16,18 +24,14 @@
     "NAME": "Defend",
     "DESCRIPTION": "Gain !B! Block."
   },
-  "Energy_Shield": {
-    "NAME": "Energy Shield",
-    "DESCRIPTION": "Gain X Block. NL Gain X [E].",
-    "UPGRADE_DESCRIPTION": "Gain X + !B! Block. NL Gain X [E]."
+  "Escape": {
+    "NAME": "Escape",
+    "DESCRIPTION": "Double your Flight. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Double your Flight."
   },
   "Explosive_Brew": {
     "NAME": "Explosive Brew",
     "DESCRIPTION": "Deal !D! damage. Brew an Explosive Potion in !M! turns."
-  },
-  "Fire_Brew": {
-    "NAME": "Fire Brew",
-    "DESCRIPTION": "Brew a Fire Potion in NL !M! -X turns."
   },
   "Fly": {
     "NAME": "Fly",
@@ -37,9 +41,23 @@
     "NAME": "Gearwheel Master",
     "DESCRIPTION": "EVERYBODY gains !M! Artifact. NL Exhaust."
   },
+  "How_To_Befriend_A_Turtle": {
+    "NAME": "How To Befriend A Turtle",
+    "DESCRIPTION": "Gain X Block. NL Gain X [E].",
+    "UPGRADE_DESCRIPTION": "Gain X + !B! Block. NL Gain X [E]."
+  },
+  "How_To_Murder_Ants": {
+    "NAME": "How To Murder Ants",
+    "DESCRIPTION": "If you fly: Deal !D! damage to a random enemy X times.",
+    "UPGRADE_DESCRIPTION": "If you fly: Deal !D! damage to a random enemy X + !M! times."
+  },
+  "How_To_Warm_Elephants": {
+    "NAME": "How To Warm Elephants",
+    "DESCRIPTION": "Brew a Fire Potion in NL !M! -X turns."
+  },
   "On_The_Head": {
     "NAME": "On The Head",
-    "DESCRIPTION": "Deal !D! damage. NL Air: Draw !M! card and gain [E]."
+    "DESCRIPTION": "Deal !D! damage. NL If you fly: Draw !M! card and gain [E]."
   },
   "Pincer_Repair": {
     "NAME": "Pincer Repair",
@@ -47,7 +65,7 @@
   },
   "Pour_Tar_Pitch": {
     "NAME": "Pour Tar Pitch",
-    "DESCRIPTION": "Deal !D! damage. NL Air: Affects ALL enemies."
+    "DESCRIPTION": "Deal !D! damage. NL If you fly: Affects ALL enemies."
   },
   "Quackster": {
     "NAME": "Quackster",
@@ -64,23 +82,5 @@
       " NL (Deals ",
       " damage)"
     ]
-  },
-  "Thunder_Flight": {
-    "NAME": "Thunder Flight",
-    "DESCRIPTION": "Air: Deal !D! damage to a random enemy X times.",
-    "UPGRADE_DESCRIPTION": "Air: Deal !D! damage to a random enemy X + !M! times."
-  },
-  "Escape": {
-    "NAME": "Escape",
-    "DESCRIPTION": "Double your Flight. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Double your Flight."
-  },
-  "Accumulation": {
-    "NAME": "Accumulation",
-    "DESCRIPTION": "Air: Lose !M! Flight. NL Gain [E] at the start of each turn."
-  },
-  "Altitude": {
-    "NAME": "Altitude",
-    "DESCRIPTION": "Gain !M! Flight."
   }
 }

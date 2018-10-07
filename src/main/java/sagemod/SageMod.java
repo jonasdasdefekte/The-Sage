@@ -32,10 +32,10 @@ import sagemod.cards.ArmorBrew;
 import sagemod.cards.BoldMove;
 import sagemod.cards.CatchMeIfYouCan;
 import sagemod.cards.DefendSage;
-import sagemod.cards.EnergyShield;
+import sagemod.cards.HowToBefriendATurtle;
 import sagemod.cards.Escape;
 import sagemod.cards.ExplosiveBrew;
-import sagemod.cards.FireBrew;
+import sagemod.cards.HowToWarmElephants;
 import sagemod.cards.Fly;
 import sagemod.cards.GearwheelMaster;
 import sagemod.cards.OnTheHead;
@@ -44,7 +44,7 @@ import sagemod.cards.PourTarPitch;
 import sagemod.cards.Quackster;
 import sagemod.cards.StrikeSage;
 import sagemod.cards.SwoopDown;
-import sagemod.cards.ThunderFlight;
+import sagemod.cards.HowToMurderAnts;
 import sagemod.character.SageCharEnum;
 import sagemod.character.SageColorEnum;
 import sagemod.character.TheSage;
@@ -101,14 +101,14 @@ public class SageMod implements EditCharactersSubscriber, EditCardsSubscriber, E
 		BaseMod.addCard(new BoldMove());
 
 		// Common
-		BaseMod.addCard(new FireBrew());
+		BaseMod.addCard(new HowToWarmElephants());
 		BaseMod.addCard(new PincerRepair());
 		BaseMod.addCard(new OnTheHead());
 		BaseMod.addCard(new SwoopDown());
 		BaseMod.addCard(new ExplosiveBrew());
 		BaseMod.addCard(new Quackster());
 		BaseMod.addCard(new ArmorBrew());
-		BaseMod.addCard(new EnergyShield());
+		BaseMod.addCard(new HowToBefriendATurtle());
 		BaseMod.addCard(new CatchMeIfYouCan());
 
 		// Uncommon
@@ -117,7 +117,7 @@ public class SageMod implements EditCharactersSubscriber, EditCardsSubscriber, E
 		BaseMod.addCard(new Altitude());
 
 		// Rare
-		BaseMod.addCard(new ThunderFlight());
+		BaseMod.addCard(new HowToMurderAnts());
 		BaseMod.addCard(new Escape());
 		BaseMod.addCard(new Accumulation());
 	}

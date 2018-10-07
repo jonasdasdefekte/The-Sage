@@ -46,7 +46,7 @@ public class Accumulation extends AbstractSageCard {
 
 	@Override
 	public void use(AbstractPlayer p, AbstractMonster m) {
-		if (air()) {
+		if (isFlying()) {
 			AbstractDungeon.actionManager.addToBottom(new ReducePowerAction(p, p, SageFlight.POWER_ID, magicNumber));
 			applyPowerToSelf(new AccumulationPower(p, ACCUMULATION_GAIN));
 		}
@@ -54,7 +54,7 @@ public class Accumulation extends AbstractSageCard {
 
 	@Override
 	public boolean canUse(AbstractPlayer p, AbstractMonster m) {
-		return canOnlyUseAir(p, m);
+		return canOnlyUseWhileFlying(p, m);
 	}
 
 }

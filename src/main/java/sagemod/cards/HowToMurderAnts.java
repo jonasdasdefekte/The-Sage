@@ -9,9 +9,9 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
-public class ThunderFlight extends AbstractSageCard {
+public class HowToMurderAnts extends AbstractSageCard {
 
-	public static final String ID = "Thunder_Flight";
+	public static final String ID = "How_To_Murder_Ants";
 	private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
 	public static final String NAME = cardStrings.NAME;
 	private static final int COST = -1;
@@ -24,7 +24,7 @@ public class ThunderFlight extends AbstractSageCard {
 	private static final int BASE_ADDED_EFFECT = 0;
 	private static final int UPGRADE_ADDED_EFFECT = 1;
 
-	public ThunderFlight() {
+	public HowToMurderAnts() {
 		super(ID, NAME, COST, DESCRIPTION, TYPE, RARITY, TARGET);
 		baseMagicNumber = magicNumber = BASE_ADDED_EFFECT;
 		baseDamage = ATTACK_DMG;
@@ -42,25 +42,24 @@ public class ThunderFlight extends AbstractSageCard {
 
 	@Override
 	public AbstractCard makeCopy() {
-		return new ThunderFlight();
+		return new HowToMurderAnts();
 	}
 
 	@Override
 	public void use(AbstractPlayer p, AbstractMonster m) {
-		if (air()) {
-			int effect = getXEffect();
-
-			AbstractDungeon.actionManager
-					.addToBottom(new SwordBoomerangAction(AbstractDungeon.getMonsters().getRandomMonster(true),
-							new DamageInfo(p, baseDamage), effect + magicNumber));
-
-			useXEnergy();
+		if (isFlying()) {
+			int effect = getXEffect() + magicNumber;
+			if (effect > 0) {
+				AbstractDungeon.actionManager.addToBottom(new SwordBoomerangAction(
+						AbstractDungeon.getMonsters().getRandomMonster(true), new DamageInfo(p, baseDamage), effect));
+				useXEnergy();
+			}
 		}
 	}
 
 	@Override
 	public boolean canUse(AbstractPlayer p, AbstractMonster m) {
-		return canOnlyUseAir(p, m);
+		return canOnlyUseWhileFlying(p, m);
 	}
 
 }

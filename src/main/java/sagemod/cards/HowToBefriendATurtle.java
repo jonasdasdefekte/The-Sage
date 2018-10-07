@@ -8,9 +8,9 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.relics.ChemicalX;
 import com.megacrit.cardcrawl.ui.panels.EnergyPanel;
 
-public class EnergyShield extends AbstractSageCard {
+public class HowToBefriendATurtle extends AbstractSageCard {
 
-	public static final String ID = "Energy_Shield";
+	public static final String ID = "How_To_Befriend_A_Turtle";
 	private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
 	public static final String NAME = cardStrings.NAME;
 	private static final int COST = -1;
@@ -22,7 +22,7 @@ public class EnergyShield extends AbstractSageCard {
 	private static final int EXTRA_BLOCK = 0;
 	private static final int UPGRADE_EXTRA_BLOCK = 3;
 
-	public EnergyShield() {
+	public HowToBefriendATurtle() {
 		super(ID, NAME, COST, DESCRIPTION, TYPE, RARITY, TARGET);
 		baseBlock = EXTRA_BLOCK;
 	}
@@ -39,7 +39,7 @@ public class EnergyShield extends AbstractSageCard {
 
 	@Override
 	public AbstractCard makeCopy() {
-		return new EnergyShield();
+		return new HowToBefriendATurtle();
 	}
 
 	@Override
