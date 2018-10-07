@@ -32,22 +32,24 @@ import sagemod.cards.ArmorBrew;
 import sagemod.cards.BoldMove;
 import sagemod.cards.CatchMeIfYouCan;
 import sagemod.cards.DefendSage;
-import sagemod.cards.HowToBefriendATurtle;
 import sagemod.cards.Escape;
 import sagemod.cards.ExplosiveBrew;
-import sagemod.cards.HowToWarmElephants;
 import sagemod.cards.Fly;
 import sagemod.cards.GearwheelMaster;
+import sagemod.cards.HowToBefriendATurtle;
+import sagemod.cards.HowToMurderAnts;
+import sagemod.cards.HowToWarmElephants;
 import sagemod.cards.OnTheHead;
 import sagemod.cards.PincerRepair;
 import sagemod.cards.PourTarPitch;
 import sagemod.cards.Quackster;
+import sagemod.cards.SaltyStrike;
 import sagemod.cards.StrikeSage;
 import sagemod.cards.SwoopDown;
-import sagemod.cards.HowToMurderAnts;
 import sagemod.character.SageCharEnum;
 import sagemod.character.SageColorEnum;
 import sagemod.character.TheSage;
+import sagemod.listeners.ThirstyListener;
 import sagemod.patches.MiscDynamicVariable;
 import sagemod.relics.FlyingCarpet;
 
@@ -72,6 +74,7 @@ public class SageMod implements EditCharactersSubscriber, EditCardsSubscriber, E
 	public SageMod() {
 		addColor();
 		BaseMod.subscribe(this);
+		BaseMod.subscribe(new ThirstyListener());
 	}
 
 	private void addColor() {
@@ -110,6 +113,7 @@ public class SageMod implements EditCharactersSubscriber, EditCardsSubscriber, E
 		BaseMod.addCard(new ArmorBrew());
 		BaseMod.addCard(new HowToBefriendATurtle());
 		BaseMod.addCard(new CatchMeIfYouCan());
+		BaseMod.addCard(new SaltyStrike());
 
 		// Uncommon
 		BaseMod.addCard(new PourTarPitch());

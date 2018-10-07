@@ -28,5 +28,13 @@
     "DESCRIPTIONS": [
       "Reduce #yattack damage taken by #b50%. Reduced by one if you take #yattack damage."
     ]
+  },
+  "Thirsty": {
+    "NAME": "Thirsty",
+    "DESCRIPTIONS": [
+      "Receives 50% more damage from #y potions, for #b",
+      " turns.",
+      " turn."
+    ]
   }
 }

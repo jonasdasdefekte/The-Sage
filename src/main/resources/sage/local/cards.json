@@ -71,6 +71,10 @@
     "NAME": "Quackster",
     "DESCRIPTION": "Brew a random Potion in !M! turns."
   },
+  "Salty_Strike": {
+    "NAME": "Salty Strike",
+    "DESCRIPTION": "Deal !D! damage. The enemy gains !M! Thirsty."
+  },
   "Strike_Sage": {
     "NAME": "Strike",
     "DESCRIPTION": "Deal !D! damage."

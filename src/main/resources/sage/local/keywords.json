@@ -22,5 +22,11 @@
       "flight"
     ],
     "DESCRIPTION": "Reduce attack damage taken by 50%. Reduced by one if you take attack damage."
+  },
+  "THIRSTY": {
+    "NAMES": [
+      "thirsty"
+    ],
+    "DESCRIPTION": "The enemy takes 50% more damage from potions."
   }
 }
