@@ -21,6 +21,6 @@
     "NAMES": [
       "flight"
     ],
-    "DESCRIPTION": "Reduce Attack damage taken by 50%. Cancelled if dealt Attack damage X times in one turn."
+    "DESCRIPTION": "Reduce attack damage taken by 50%. Reduced by one if you take attack damage."
   }
 }

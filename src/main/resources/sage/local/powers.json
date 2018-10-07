@@ -19,8 +19,7 @@
   "Sage_Flight": {
     "NAME": "Flight",
     "DESCRIPTIONS": [
-      "Reduce #yAttack damage taken by #b50%. Cancelled if dealt #yAttack damage #b",
-      " times in one turn."
+      "Reduce #yattack damage taken by #b50%. Reduced by one if you take #yattack damage."
     ]
   },
   "Accumulation": {
