@@ -2,7 +2,7 @@
   "Armor_Brew": {
     "NAME": "Armor Brew",
     "DESCRIPTION": "Draw !MISC! card. Brew a Block Potion in !M! turns.",
-    "UPGRADE_DESCRIPTION": "Draw !MISC! cards. NL Brew a Block Potion in !M! turns."
+    "UPGRADE_DESCRIPTION": "Draw !MISC! card. NL Brew a Block Potion in !M! turns."
   },
   "Bold_Move": {
     "NAME": "Bold Move",

@@ -16,14 +16,14 @@ public class SwoopDown extends AbstractSageCard {
 	public static final String ID = "Swoop_Down";
 	private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
 	public static final String NAME = cardStrings.NAME;
-	private static final int COST = 1;
+	private static final int COST = 2;
 	public static final String DESCRIPTION = cardStrings.DESCRIPTION;
 	public static final String[] EXTENDED_DESCRIPTION = cardStrings.EXTENDED_DESCRIPTION;
 	private static final CardType TYPE = CardType.ATTACK;
-	private static final CardRarity RARITY = CardRarity.UNCOMMON;
+	private static final CardRarity RARITY = CardRarity.RARE;
 	private static final CardTarget TARGET = CardTarget.ENEMY;
 
-	private static final int ATTACK_DMG = 8;
+	private static final int ATTACK_DMG = 6;
 	private static final int UPGRADE_ATTACK_DMG = 2;
 	private static final int LOSE_FLIGHT = 1;
 

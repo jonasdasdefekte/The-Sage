@@ -11,24 +11,24 @@ Starting Relic:
 		Start each combat with 1 Flight. 
 
 Starting Deck:
-DONE:   5x Strike
+DONE:   5x Strike (illustriert)
 		Attack, 1 Energy: 
 		Deal 6 (9) damage.
-DONE:	5x Defend
+DONE:	5x Defend (illustriert)
 		Skill, 1 Energy: 
 		Gain 5 (8) Block.
-DONE:	1x Bold move
+DONE:	1x Bold move (illustriert)
 		Attack, 1 Energy:
 		Deal 10 (13) damage. Gain 2 Frail.
-DONE:	1x Fly
+DONE:	1x Fly (illustriert)
 		Skill, 2 (1) Energy: 
 		If you don't fly, gain 1 Flight.
 
 13 Common Cards (grey)
-DONE:	Pincer Repair
+DONE:	Pincer Repair (illustriert)
 		Attack, 1 Energy
 		Deal 9 (12) damage. The enemy gains 1 Artifact.
-DONE:	On the Head
+DONE:	On the Head (illustriert)
 		Attack, 1 Energy:
 		Deal 5 (7) damage. If you fly, draw 1 card and gain 1 Energy.
 DONE:	Explosive Brew
@@ -37,28 +37,28 @@ DONE:	Explosive Brew
 	Salty Strike
 		Attack, 1 Energy:
 		Deal 6 (9) damage. The enemy gains 1 (2) Thirsty.
-	Frailing Attack
+	How To Poke At Slimes
 		Attack, X Energy:
-		Gain 4 (3)-X Frail. Gain X Energy. Deal 8(10) damage to ALL enemies.
-DONE:	Fire Brew
+		Gain 4 (3)-X Frail. Gain X Energy. Deal 6 (8) damage to ALL enemies.
+DONE:	How To Warm Elephants (neu illustrieren)
 		Skill, X Energy: 
 		Brew a Fire Potion in 4 (3)-X turns.
-DONE:	Quackster
+DONE:	Quackster (illustriert)
 		Skill, 0 Energy: 
 		Brew a random potion in 4 (3) turns.
 DONE:	Armor Brew
 		Skill, 1 Energy: 
-		Draw 1 (2) cards. Brew a block potion in 4 (3) turns.
-DONE:	Energy shield
+		Draw 1 card. Brew a block potion in 4 (3) turns.
+DONE:	How To Befriend A Turtle
 		Skill, X Energy:
 		Gain X (X+3) Block. Gain X Energy.
 DONE:	Catch me if you can
 		Skill, 0 Energy
 		Gain 3 (5) Flight. At the start of your next turn, lose 3 (5) Flight.
-	Wicked Brew
+	How To Talk To Spiders
 		Skill, X Energy: 
 		Apply 5 poison. Brew a Poison potion in 4 (3)-X turns.
-	The Flying Turtle 
+	Step Back 
 		Skill, 1 Energy:
 		If you fly, gain 5 (8) Block. Otherwise, gain 1 Flight.
 	Ambition
@@ -67,10 +67,10 @@ DONE:	Catch me if you can
 
 
 19 Uncommon Cards (blue)
-DONE:	Thunder Flight
+DONE:	How to Murder Ants
 		Attack, X Energy:
 		If you fly, deal 9 damage to a random enemy X (X+1) times.
-DONE:	Pour Tar Pitch
+DONE:	Pour Tar Pitch (illustriert)
 		Attack, 3 Energy: 
 		Deal 18 (22) damage. Affects ALL enemies if you fly.
 	Flight Feint
@@ -88,24 +88,24 @@ DONE:	Pour Tar Pitch
 	Turn Around
 		Attack, 2 Energy: 
 		Gain 2 Frail. Deal 8 (10) damage per Frail you have. 
-DONE:	Gearwheel Master
+DONE:	Gearwheel Master (illustriert)
 		Skill, 0 Energy: 
 		EVERYBODY gains 1(2) Artifact. Exhaust.
-	Coffee Brew
+	How to wake Lyons
 		Skill, X Energy: 
 		Brew a Steroid potion in 4 (3)-X turns. 
-	Life Brew
+	How to feed Apes
 		Skill, X Energy: 
 		Brew a random rare potion in 4 (3)-X turns. Exhaust.
-	Meditation
+	Perpetuum Mobile
 		Skill, 0 Energy: 
 		Draw 1 card. Play it (Upgrade instead: Gain 1 Energy) if it costs 1.
 	Study
 		Skill, 1 Energy: 
 		Draw 3 cards and (you may) put one card from your hand hand on top of your deck. 
 	Flying Cauldron
-		Skill, 0 Energy: 
-		If you fly, gain 1(2) Brewing. Otherwise, gain 1(2) Flight.
+		Skill, 1 (0) Energy: 
+		If you fly, gain 1 Brewing. Otherwise, gain 1 Flight.
 	Lunchtime!
 		Skill, 1 Energy: 
 		If you fly, lose 2 Flight and brew all potions immediately.
@@ -114,36 +114,48 @@ DONE:	Gearwheel Master
 		Gain 10 (13) Block. ALL Enemies gain 4 Artifact.
 	Spoiled Food
 		Skill, 1 (0) Energy:
-		Apply 99 Thirsty. 	
+		Apply 99 Thirsty. Exhaust.
+	How To Greet Byrds
+		Skill, X Energy:
+		Set your Flight to X. (Gain X Flight.) Innate. Exhaust.
 DONE:	Altitude
 		Power, 1 Energy: 
 		Gain 2(3) Flight.
 	Taste this one
 		Power, 1 Energy:
 		Whenever you use a potion, apply 3 (5) Poison to ALL Enemies.
-	Perpetuum Mobile
+	Bookworm
 		Power, 2(1) Energy: 
 		Whenever you play a card costing X, gain 1 Energy.
+	Brewmaster
+		Power, 1 Energy:
+		Gain 1(2) Brewing.
 
-12 Rare Cards (gold)
+13 Rare Cards (gold)
 DONE:	Swoop Down
-		Attack, 1 Energy: 
-		Deal 8 (10) damage per Flight you have. Then lose 1 Flight.
+		Attack, 2 Energy: 
+		Deal 6 (8) damage per Flight you have. Then lose 1 Flight.
 	Anti Ancient Attack
 		Attack, 2 Energy: 
 		Deal 20 (30) damage per Artifact on this enemy. 
-	The Almanach
+	How To Amuse Sneckos
 		Skill, X Energy:
 		Draw X (X+1) cards. Gain X (X+1) Energy. Gain 4 (3) - X Frail. Exhaust.
 DONE:	Escape
 		Skill, 1 Energy: 
-		Double your Flight. Exhaust. (No Exhaust)
+		Double your Flight. Exhaust. (Upgrade: No Exhaust.)
 	Extra Portion
 		Skill, 1 Energy: 
 		The next potion is (the next 2 potions are) applied twice this turn.
 	Folded Carpet
 		Skill, 2 Energy:
 		Gain 18 (24) Block.
+	Light-weighted
+		Skill, 0 Energy:
+		Lose all Frail. Gain that much Flight (+1). Exhaust.
+	Light-weighted
+		Skill, 0 Energy:
+		Lose all Flight. Gain 8 Energy. Exhaust.
 	Alchemy Expert
 		Power, 1 Energy:
 		Whenever you use a potion, gain 1 Artifact before applying its effect.
@@ -157,8 +169,8 @@ DONE:	Accumulation
 		Power, 1 Energy: 
 		If you fly, lose 2 (1) Flight and at the start of each turn, gain 1 Energy.
 	On Fire
-		Power, 2 Energy:
-		Whenever you play 6 (4) cards in a single turn, obtain a Fire Potion. 
+		Power, 2 (1) Energy:
+		Whenever you play 6 cards in a single turn, obtain a Fire Potion. 
 	Ancient Poison
 		Power, 1 Energy:
 		Artifacts do no longer negate Poison this combat. Apply 4 Poison to ALL enemies.
