@@ -18,6 +18,7 @@ import com.megacrit.cardcrawl.ui.panels.EnergyPanel;
 
 import basemod.abstracts.CustomCard;
 import sagemod.SageMod;
+import sagemod.actions.LoseXEnergyAction;
 import sagemod.character.SageColorEnum;
 import sagemod.powers.SageFlight;
 
@@ -104,9 +105,7 @@ public abstract class AbstractSageCard extends CustomCard {
 	}
 
 	protected void useXEnergy() {
-		if (!freeToPlayOnce) {
-			player().energy.use(EnergyPanel.totalCount);
-		}
+		AbstractDungeon.actionManager.addToTop(new LoseXEnergyAction(player(), freeToPlayOnce));
 	}
 
 	protected boolean canOnlyUseWhileFlying(AbstractPlayer p, AbstractMonster m) {
