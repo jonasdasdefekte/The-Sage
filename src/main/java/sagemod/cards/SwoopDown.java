@@ -61,7 +61,7 @@ public class SwoopDown extends AbstractSageCard {
 	private void updateExtendedDescription() {
 		int count = 0;
 		if (player().hasPower(SageFlight.POWER_ID)) {
-			count = ((SageFlight) player().getPower(SageFlight.POWER_ID)).getStoredAmount();
+			count = player().getPower(SageFlight.POWER_ID).amount;
 		}
 		rawDescription = DESCRIPTION;
 		rawDescription = rawDescription + EXTENDED_DESCRIPTION[0] + damage * count + EXTENDED_DESCRIPTION[1];
@@ -72,7 +72,7 @@ public class SwoopDown extends AbstractSageCard {
 	public void use(AbstractPlayer p, AbstractMonster m) {
 		int times = 0;
 		if (player().hasPower(SageFlight.POWER_ID)) {
-			times = ((SageFlight) player().getPower(SageFlight.POWER_ID)).getStoredAmount();
+			times = player().getPower(SageFlight.POWER_ID).amount;
 		}
 		for (int i = 0; i < times; i++) {
 			attack(m, AttackEffect.SLASH_VERTICAL);

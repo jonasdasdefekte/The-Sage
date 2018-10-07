@@ -44,7 +44,7 @@ public class Escape extends AbstractSageCard {
 	@Override
 	public void use(AbstractPlayer p, AbstractMonster m) {
 		if (air()) {
-			int flightAmount = ((SageFlight) p.getPower(SageFlight.POWER_ID)).getStoredAmount();
+			int flightAmount = p.getPower(SageFlight.POWER_ID).amount;
 			AbstractDungeon.actionManager
 					.addToTop(new ApplyPowerAction(p, p, new SageFlight(p, flightAmount), flightAmount));
 		}
