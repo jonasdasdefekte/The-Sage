@@ -11,6 +11,7 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.core.EnergyManager;
 import com.megacrit.cardcrawl.core.Settings;
+import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.helpers.FontHelper;
 import com.megacrit.cardcrawl.helpers.ModHelper;
 import com.megacrit.cardcrawl.helpers.ScreenShake;
@@ -114,7 +115,8 @@ public class TheSage extends CustomPlayer {
 
 	@Override
 	public AbstractCard getStartCardForEvent() {
-		return new BoldMove();
+		// either Fly or BoldMove
+		return AbstractDungeon.cardRandomRng.randomBoolean() ? new Fly() : new BoldMove();
 	}
 
 	@Override
