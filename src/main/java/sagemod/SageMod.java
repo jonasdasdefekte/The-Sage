@@ -61,6 +61,7 @@ public class SageMod implements EditCharactersSubscriber, EditCardsSubscriber, E
 	public static final String AUTHORS = "jonasdasdefekte, Skrelpoid";
 
 	public static final String PLACEHOLDER = "Placeholder";
+	public static final Color COLOR = new Color(0xc65e03);
 
 	/**
 	 * The initializing method for ModTheSpire. This gets called before the game is
@@ -78,17 +79,17 @@ public class SageMod implements EditCharactersSubscriber, EditCardsSubscriber, E
 	}
 
 	private void addColor() {
-		BaseMod.addColor(SageColorEnum.THE_SAGE, new Color(0xc65e03), "sage/cards/512/bg_attack.png",
-				"sage/cards/512/bg_skill.png", "sage/cards/512/bg_power.png", "sage/cards/512/orb.png",
-				"sage/cards/1024/bg_attack.png", "sage/cards/1024/bg_skill.png", "sage/cards/1024/bg_power.png",
-				"sage/cards/1024/orb.png", "sage/cards/orb/desc_orb.png");
+		BaseMod.addColor(SageColorEnum.THE_SAGE, COLOR, "sage/cards/512/bg_attack.png", "sage/cards/512/bg_skill.png",
+				"sage/cards/512/bg_power.png", "sage/cards/512/orb.png", "sage/cards/1024/bg_attack.png",
+				"sage/cards/1024/bg_skill.png", "sage/cards/1024/bg_power.png", "sage/cards/1024/orb.png",
+				"sage/cards/orb/desc_orb.png");
 	}
 
 	@Override
 	public void receiveEditCharacters() {
 		logger.info("Adding TheSage");
-		BaseMod.addCharacter(TheSage.class, TheSage.NAME, TheSage.NAME, SageColorEnum.THE_SAGE, TheSage.NAME,
-				TheSage.BUTTON, TheSage.PORTRAIT, SageCharEnum.THE_SAGE);
+		BaseMod.addCharacter(new TheSage(TheSage.NAME, SageCharEnum.THE_SAGE), SageColorEnum.THE_SAGE, TheSage.BUTTON,
+				TheSage.PORTRAIT, SageCharEnum.THE_SAGE);
 	}
 
 	@Override

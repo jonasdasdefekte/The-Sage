@@ -5,12 +5,12 @@ apply plugin: 'idea'
 
 repositories {
    flatDir {
-       dirs '../libs'
+       dirs '../lib'
    }
 }
 
 dependencies {
-    compileOnly fileTree(dir: '../libs', include: '*.jar')
+    compileOnly fileTree(dir: '../lib', include: '*.jar')
 }
 
 task listJars doLast {
@@ -24,11 +24,11 @@ eclipse {
             whenMerged { 
             	try {
             	    def basemod = entries.find { it.path.contains 'BaseMod.jar' }
-            	    basemod.sourcePath = fileReference(file('../libs/BaseMod.zip'))
+            	    basemod.sourcePath = fileReference(file('../lib/BaseMod.zip'))
            	 	    def modthespire = entries.find { it.path.contains 'ModTheSpire.jar' }
-            	    modthespire.sourcePath = fileReference(file('../libs/ModTheSpire.zip'))
+            	    modthespire.sourcePath = fileReference(file('../lib/ModTheSpire.zip'))
              	    def slaythespire = entries.find { it.path.contains 'desktop-1.0.jar' }
-            	    slaythespire.sourcePath = fileReference(file('../libs/decompiled/'))
+            	    slaythespire.sourcePath = fileReference(file('../lib/decompiled/'))
             	    println 'Added sources for dependencies'
             	} catch (Exception ex) {
             		println 'Could not add sources for dependencies'

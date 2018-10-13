@@ -2,14 +2,22 @@ package sagemod.character;
 
 import java.util.ArrayList;
 
+import com.badlogic.gdx.graphics.Color;
+import com.badlogic.gdx.graphics.g2d.BitmapFont;
 import com.badlogic.gdx.math.MathUtils;
 import com.esotericsoftware.spine.AnimationState;
+import com.megacrit.cardcrawl.cards.AbstractCard;
+import com.megacrit.cardcrawl.characters.AbstractPlayer;
+import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.core.EnergyManager;
 import com.megacrit.cardcrawl.core.Settings;
+import com.megacrit.cardcrawl.helpers.FontHelper;
 import com.megacrit.cardcrawl.helpers.ModHelper;
+import com.megacrit.cardcrawl.helpers.ScreenShake;
 import com.megacrit.cardcrawl.screens.CharSelectInfo;
 
 import basemod.abstracts.CustomPlayer;
+import sagemod.SageMod;
 import sagemod.cards.BoldMove;
 import sagemod.cards.DefendSage;
 import sagemod.cards.Fly;
@@ -39,8 +47,11 @@ public class TheSage extends CustomPlayer {
 	public static final int ENERGY = 3;
 	public static final int START_GOLD = 169;
 
+	private PlayerClass playerClass;
+
 	public TheSage(String name, PlayerClass playerClass) {
 		super(name, playerClass, ORB_TEXTURES, "sage/character/orb/vfx.png", (String) null, (String) null);
+		this.playerClass = playerClass;
 		initializeClass(null, "sage/character/shoulder2.png", "sage/character/shoulder.png",
 				"sage/character/corpse.png", getLoadout(), 20.0f, -10.0f, 220.0f, 290.0f, new EnergyManager(ENERGY));
 		loadAnimation("sage/character/idle/skeleton.atlas", "sage/character/idle/skeleton.json", 1.0f);
@@ -52,22 +63,22 @@ public class TheSage extends CustomPlayer {
 		}
 	}
 
-	public static CharSelectInfo getLoadout() {
-		return new CharSelectInfo(NAME, DESC, START_HP, START_HP, MAX_ORBS, START_GOLD, CARD_DRAW,
-				SageCharEnum.THE_SAGE, getStartingRelics(), getStartingDeck(), false);
+	@Override
+	public CharSelectInfo getLoadout() {
+		return new CharSelectInfo(NAME, DESC, START_HP, START_HP, MAX_ORBS, START_GOLD, CARD_DRAW, this,
+				getStartingRelics(), getStartingDeck(), false);
 	}
 
-	public static ArrayList<String> getStartingDeck() {
+	@Override
+	public ArrayList<String> getStartingDeck() {
 		ArrayList<String> cards = new ArrayList<>();
-		// 5x Strike
-		cards.add(StrikeSage.ID);
+		// 4x Strike
 		cards.add(StrikeSage.ID);
 		cards.add(StrikeSage.ID);
 		cards.add(StrikeSage.ID);
 		cards.add(StrikeSage.ID);
 
-		// 5x Defend
-		cards.add(DefendSage.ID);
+		// 4x Defend
 		cards.add(DefendSage.ID);
 		cards.add(DefendSage.ID);
 		cards.add(DefendSage.ID);
@@ -81,13 +92,65 @@ public class TheSage extends CustomPlayer {
 		return cards;
 	}
 
-	public static ArrayList<String> getStartingRelics() {
+	@Override
+	public ArrayList<String> getStartingRelics() {
 		ArrayList<String> relics = new ArrayList<>();
 
 		// Flying Carpet
 		relics.add(FlyingCarpet.ID);
 
 		return relics;
+	}
+
+	@Override
+	public String getTitle(PlayerClass playerClass) {
+		return NAME;
+	}
+
+	@Override
+	public Color getCardColor() {
+		return SageMod.COLOR;
+	}
+
+	@Override
+	public AbstractCard getStartCardForEvent() {
+		return new BoldMove();
+	}
+
+	@Override
+	public Color getCardTrailColor() {
+		return SageMod.COLOR;
+	}
+
+	@Override
+	public int getAscensionMaxHPLoss() {
+		return 3;
+	}
+
+	@Override
+	public BitmapFont getEnergyNumFont() {
+		return FontHelper.energyNumFontGreen;
+	}
+
+	@Override
+	public void doCharSelectScreenSelectEffect() {
+		CardCrawlGame.sound.playA("ATTACK_MAGIC_SLOW_1", MathUtils.random(-0.2f, 0.2f));
+		CardCrawlGame.screenShake.shake(ScreenShake.ShakeIntensity.MED, ScreenShake.ShakeDur.SHORT, false);
+	}
+
+	@Override
+	public String getCustomModeCharacterButtonSoundKey() {
+		return "ATTACK_MAGIC_BEAM_SHORT";
+	}
+
+	@Override
+	public String getLocalizedCharacterName() {
+		return NAME;
+	}
+
+	@Override
+	public AbstractPlayer newInstance() {
+		return new TheSage(name, playerClass);
 	}
 
 }

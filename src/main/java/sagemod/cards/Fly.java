@@ -6,7 +6,6 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
-import basemod.helpers.BaseModCardTags;
 import sagemod.powers.SageFlight;
 
 public class Fly extends AbstractSageCard {
@@ -26,8 +25,6 @@ public class Fly extends AbstractSageCard {
 	public Fly() {
 		super(ID, NAME, COST, DESCRIPTION, TYPE, RARITY, TARGET);
 		baseMagicNumber = magicNumber = FLIGHT_AMT;
-
-		tags.add(BaseModCardTags.GREMLIN_MATCH);
 	}
 
 	@Override
