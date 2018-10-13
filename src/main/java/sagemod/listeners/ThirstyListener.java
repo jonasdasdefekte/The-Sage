@@ -17,12 +17,13 @@ public class ThirstyListener implements PrePotionUseSubscriber, PostPotionUseSub
 
 	@Override
 	public void receivePostPotionUse(AbstractPotion p) {
-		// TODO maybe do this with wait action and custom action instead
+		// Ugly hack so that there is a big enough time window to amplify potion damage
 		new Thread(() -> {
 			try {
 				Thread.sleep(DELAY);
-			} catch (InterruptedException e) {} finally {
 				wasPotionUsed = false;
+			} catch (InterruptedException e) {} finally {
+
 			}
 		}, "DelayedPotionUseThread").start();
 

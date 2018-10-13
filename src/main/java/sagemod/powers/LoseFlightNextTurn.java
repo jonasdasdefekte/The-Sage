@@ -1,12 +1,13 @@
 package sagemod.powers;
 
-import com.megacrit.cardcrawl.actions.common.ReducePowerAction;
 import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
+
+import sagemod.actions.ReduceFlightBlockableByArtifactAction;
 
 public class LoseFlightNextTurn extends AbstractSagePower {
 
@@ -25,7 +26,8 @@ public class LoseFlightNextTurn extends AbstractSagePower {
 	@Override
 	public void atStartOfTurn() {
 		flash();
-		AbstractDungeon.actionManager.addToBottom(new ReducePowerAction(owner, owner, SageFlight.POWER_ID, amount));
+		AbstractDungeon.actionManager
+				.addToBottom(new ReduceFlightBlockableByArtifactAction(amount, AbstractDungeon.player));
 		AbstractDungeon.actionManager.addToBottom(new RemoveSpecificPowerAction(owner, owner, POWER_ID));
 
 	}

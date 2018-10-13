@@ -1,6 +1,5 @@
 package sagemod.cards;
 
-import com.megacrit.cardcrawl.actions.common.ReducePowerAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -8,8 +7,8 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
+import sagemod.actions.ReduceFlightBlockableByArtifactAction;
 import sagemod.powers.AccumulationPower;
-import sagemod.powers.SageFlight;
 
 public class Accumulation extends AbstractSageCard {
 
@@ -47,7 +46,7 @@ public class Accumulation extends AbstractSageCard {
 	@Override
 	public void use(AbstractPlayer p, AbstractMonster m) {
 		if (isFlying()) {
-			AbstractDungeon.actionManager.addToBottom(new ReducePowerAction(p, p, SageFlight.POWER_ID, magicNumber));
+			AbstractDungeon.actionManager.addToBottom(new ReduceFlightBlockableByArtifactAction(magicNumber, p));
 			applyPowerToSelf(new AccumulationPower(p, ACCUMULATION_GAIN));
 		}
 	}

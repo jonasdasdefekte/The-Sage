@@ -22,13 +22,13 @@ public class ArmorBrew extends AbstractSageCard {
 
 	private static final int BREW_IN = 4;
 	private static final int UPGRADE_BREW_IN = -1;
-	private static final int DRAW_AMT = 1;
-	private static final int UPGRADE_DRAW_AMT = 0;
+	private static final int BLOCK_AMT = 5;
+	private static final int UPGRADE_BLOCK_AMT = 3;
 
 	public ArmorBrew() {
 		super(ID, NAME, COST, DESCRIPTION, TYPE, RARITY, TARGET);
 		baseMagicNumber = magicNumber = BREW_IN;
-		misc = DRAW_AMT;
+		baseBlock = BLOCK_AMT;
 	}
 
 	@Override
@@ -36,9 +36,7 @@ public class ArmorBrew extends AbstractSageCard {
 		if (!upgraded) {
 			upgradeName();
 			upgradeMagicNumber(UPGRADE_BREW_IN);
-			misc += UPGRADE_DRAW_AMT;
-			rawDescription = cardStrings.UPGRADE_DESCRIPTION;
-			initializeDescription();
+			upgradeBlock(UPGRADE_BLOCK_AMT);
 		}
 	}
 
@@ -49,7 +47,7 @@ public class ArmorBrew extends AbstractSageCard {
 
 	@Override
 	public void use(AbstractPlayer p, AbstractMonster m) {
-		draw(misc);
+		block();
 		Brew.addPotion(magicNumber, new BlockPotion(), p);
 	}
 

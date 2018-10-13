@@ -45,7 +45,7 @@ public class HowToWarmElephants extends AbstractSageCard {
 	public void use(AbstractPlayer p, AbstractMonster m) {
 		int turns = Math.max(0, magicNumber - getXEffect());
 
-		Brew.addPotion(turns, new FirePotion(), player());
+		Brew.addPotion(turns, new FirePotion(), p);
 
 		useXEnergy();
 	}

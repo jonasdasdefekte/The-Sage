@@ -1,7 +1,6 @@
 package sagemod.cards;
 
 import com.megacrit.cardcrawl.actions.AbstractGameAction.AttackEffect;
-import com.megacrit.cardcrawl.actions.common.ReducePowerAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -9,6 +8,7 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
+import sagemod.actions.ReduceFlightBlockableByArtifactAction;
 import sagemod.powers.SageFlight;
 
 public class SwoopDown extends AbstractSageCard {
@@ -71,13 +71,13 @@ public class SwoopDown extends AbstractSageCard {
 	@Override
 	public void use(AbstractPlayer p, AbstractMonster m) {
 		int times = 0;
-		if (player().hasPower(SageFlight.POWER_ID)) {
+		if (isFlying()) {
 			times = player().getPower(SageFlight.POWER_ID).amount;
 		}
 		for (int i = 0; i < times; i++) {
 			attack(m, AttackEffect.SLASH_VERTICAL);
 		}
-		AbstractDungeon.actionManager.addToBottom(new ReducePowerAction(p, p, SageFlight.POWER_ID, magicNumber));
+		AbstractDungeon.actionManager.addToBottom(new ReduceFlightBlockableByArtifactAction(magicNumber, p));
 		rawDescription = DESCRIPTION;
 		initializeDescription();
 	}

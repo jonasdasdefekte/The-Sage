@@ -5,51 +5,45 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import com.megacrit.cardcrawl.powers.FrailPower;
 
-import sagemod.powers.SageFlight;
+public class Ambition extends AbstractSageCard {
 
-public class Fly extends AbstractSageCard {
-
-	public static final String ID = "Fly";
+	public static final String ID = "Ambition";
 	private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
 	public static final String NAME = cardStrings.NAME;
-	private static final int COST = 2;
+	private static final int COST = 1;
 	public static final String DESCRIPTION = cardStrings.DESCRIPTION;
 	private static final CardType TYPE = CardType.SKILL;
-	private static final CardRarity RARITY = CardRarity.BASIC;
+	private static final CardRarity RARITY = CardRarity.COMMON;
 	private static final CardTarget TARGET = CardTarget.SELF;
 
-	private static final int COST_WHEN_UPGRADED = 1;
-	private static final int FLIGHT_AMT = 1;
+	private static final int UPGRADE_COST_TO = 0;
+	private static final int FRAIL_AMT = 5;
+	private static final int ENERGY_GAIN = 2;
 
-	public Fly() {
+	public Ambition() {
 		super(ID, NAME, COST, DESCRIPTION, TYPE, RARITY, TARGET);
-		baseMagicNumber = magicNumber = FLIGHT_AMT;
+		baseMagicNumber = magicNumber = FRAIL_AMT;
 	}
 
 	@Override
 	public void upgrade() {
 		if (!upgraded) {
 			upgradeName();
-			upgradeBaseCost(COST_WHEN_UPGRADED);
+			upgradeBaseCost(UPGRADE_COST_TO);
 		}
 	}
 
 	@Override
 	public AbstractCard makeCopy() {
-		return new Fly();
+		return new Ambition();
 	}
 
 	@Override
 	public void use(AbstractPlayer p, AbstractMonster m) {
-		if (!isFlying()) {
-			applyPowerToSelf(new SageFlight(player(), magicNumber));
-		}
-	}
-
-	@Override
-	public boolean canUse(AbstractPlayer p, AbstractMonster m) {
-		return canOnlyUseWithNoFlight(p, m);
+		applyPowerToSelf(new FrailPower(p, magicNumber, false));
+		gainEnergy(ENERGY_GAIN);
 	}
 
 }

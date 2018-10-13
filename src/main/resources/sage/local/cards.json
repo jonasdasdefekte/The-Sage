@@ -7,10 +7,13 @@
     "NAME": "Altitude",
     "DESCRIPTION": "Gain !M! Flight."
   },
+  "Ambition": {
+    "NAME": "Ambition",
+    "DESCRIPTION": "Gain !M! Frail. NL Gain [E] [E]."
+  },
   "Armor_Brew": {
     "NAME": "Armor Brew",
-    "DESCRIPTION": "Draw !MISC! card. Brew a Block Potion in !M! turns.",
-    "UPGRADE_DESCRIPTION": "Draw !MISC! card. NL Brew a Block Potion in !M! turns."
+    "DESCRIPTION": "Gain !B! Block. Brew a Block Potion in !M! turns."
   },
   "Bold_Move": {
     "NAME": "Bold Move",
@@ -35,7 +38,7 @@
   },
   "Fly": {
     "NAME": "Fly",
-    "DESCRIPTION": "If you don't fly, gain !M! Flight."
+    "DESCRIPTION": "If you don't fly: NL Gain !M! Flight."
   },
   "Gearwheel_Master": {
     "NAME": "Gearwheel Master",
@@ -50,6 +53,10 @@
     "NAME": "How To Murder Ants",
     "DESCRIPTION": "If you fly: Deal !D! damage to a random enemy X times.",
     "UPGRADE_DESCRIPTION": "If you fly: Deal !D! damage to a random enemy X + !M! times."
+  },
+  "How_To_Talk_To_Spiders": {
+    "NAME": "How To Talk To Spiders",
+    "DESCRIPTION": "Apply !MISC! poison. Brew a Poison Potion in !M! -X turns."
   },
   "How_To_Warm_Elephants": {
     "NAME": "How To Warm Elephants",
@@ -74,6 +81,10 @@
   "Salty_Strike": {
     "NAME": "Salty Strike",
     "DESCRIPTION": "Deal !D! damage. The enemy gains !M! Thirsty."
+  },
+  "Step_Back": {
+    "NAME": "Step Back",
+    "DESCRIPTION": "If you fly: NL Gain !B! Block. NL Otherwise: NL Gain !M! Flight."
   },
   "Strike_Sage": {
     "NAME": "Strike",

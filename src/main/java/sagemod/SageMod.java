@@ -28,6 +28,7 @@ import basemod.interfaces.EditStringsSubscriber;
 import basemod.interfaces.PostInitializeSubscriber;
 import sagemod.cards.Accumulation;
 import sagemod.cards.Altitude;
+import sagemod.cards.Ambition;
 import sagemod.cards.ArmorBrew;
 import sagemod.cards.BoldMove;
 import sagemod.cards.CatchMeIfYouCan;
@@ -38,12 +39,14 @@ import sagemod.cards.Fly;
 import sagemod.cards.GearwheelMaster;
 import sagemod.cards.HowToBefriendATurtle;
 import sagemod.cards.HowToMurderAnts;
+import sagemod.cards.HowToTalkToSpiders;
 import sagemod.cards.HowToWarmElephants;
 import sagemod.cards.OnTheHead;
 import sagemod.cards.PincerRepair;
 import sagemod.cards.PourTarPitch;
 import sagemod.cards.Quackster;
 import sagemod.cards.SaltyStrike;
+import sagemod.cards.StepBack;
 import sagemod.cards.StrikeSage;
 import sagemod.cards.SwoopDown;
 import sagemod.character.SageCharEnum;
@@ -115,6 +118,9 @@ public class SageMod implements EditCharactersSubscriber, EditCardsSubscriber, E
 		BaseMod.addCard(new HowToBefriendATurtle());
 		BaseMod.addCard(new CatchMeIfYouCan());
 		BaseMod.addCard(new SaltyStrike());
+		BaseMod.addCard(new HowToTalkToSpiders());
+		BaseMod.addCard(new Ambition());
+		BaseMod.addCard(new StepBack());
 
 		// Uncommon
 		BaseMod.addCard(new PourTarPitch());

@@ -55,7 +55,7 @@ public class PourTarPitch extends AbstractSageCard {
 
 	@Override
 	public void use(AbstractPlayer p, AbstractMonster m) {
-		if (hasPower(SageFlight.POWER_ID)) {
+		if (isFlying()) {
 			multiAttack(AttackEffect.BLUNT_HEAVY);
 		} else {
 			attack(m, AttackEffect.SLASH_DIAGONAL);
