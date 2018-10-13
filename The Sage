@@ -11,10 +11,10 @@ Starting Relic:
 		Start each combat with 1 Flight. 
 
 Starting Deck:
-DONE:   5x Strike (illustriert)
+DONE:   4x Strike (illustriert)
 		Attack, 1 Energy: 
 		Deal 6 (9) damage.
-DONE:	5x Defend (illustriert)
+DONE:	4x Defend (illustriert)
 		Skill, 1 Energy: 
 		Gain 5 (8) Block.
 DONE:	1x Bold move (illustriert)
@@ -30,7 +30,7 @@ DONE:	Pincer Repair (illustriert)
 		Deal 9 (12) damage. The enemy gains 1 Artifact.
 DONE:	On the Head (illustriert)
 		Attack, 1 Energy:
-		Deal 5 (7) damage. If you fly, draw 1 card and gain 1 Energy.
+		Deal 7 (10) damage. If you fly, gain 1 Energy.
 DONE:	Explosive Brew
 		Attack, 1 Energy: 
 		Deal 6 (9) damage. Gain an explosive potion in 4 (3) turns.	
@@ -46,15 +46,15 @@ DONE:	How To Warm Elephants (neu illustrieren)
 DONE:	Quackster (illustriert)
 		Skill, 0 Energy: 
 		Brew a random potion in 4 (3) turns.
-DONE:	Armor Brew
+CHANGED:	Armor Brew
 		Skill, 1 Energy: 
-		Draw 1 card. Brew a block potion in 4 (3) turns.
+		Gain 5 (8) Block. Brew a block potion in 4 (3) turns.
 DONE:	How To Befriend A Turtle
 		Skill, X Energy:
 		Gain X (X+3) Block. Gain X Energy.
-DONE:	Catch me if you can
+CHANGED:	Catch me if you can
 		Skill, 0 Energy
-		Gain 3 (5) Flight. At the start of your next turn, lose 3 (5) Flight.
+		Until your next turn, you don't lose Flight for the next 3 (5) times you take Attack damage.
 	How To Talk To Spiders
 		Skill, X Energy: 
 		Apply 5 poison. Brew a Poison potion in 4 (3)-X turns.
