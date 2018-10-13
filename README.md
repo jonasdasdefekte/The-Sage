@@ -2,7 +2,7 @@
 "A mechanic who studied about the cult of a blue bird. 
 She learned flying a carpet and brewing potions in order to stop its rise."
 
-## Building
+## Building (only important for Modders)
 This Mod uses Gradle for building. After making changes, you can double click buildMod.cmd 
 (or run ./gradlew build or gradlew build in a console) to 
 compile it and build the jar. The Mod will be in the /build/libs folder. Copy it over to 
