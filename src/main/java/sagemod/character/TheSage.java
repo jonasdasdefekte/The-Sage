@@ -48,6 +48,8 @@ public class TheSage extends CustomPlayer {
 	public static final int ENERGY = 3;
 	public static final int START_GOLD = 169;
 
+	private static final String CHAR_SOUND = "ATTACK_MAGIC_SLOW_1";
+
 	private PlayerClass playerClass;
 
 	public TheSage(String name, PlayerClass playerClass) {
@@ -136,13 +138,13 @@ public class TheSage extends CustomPlayer {
 
 	@Override
 	public void doCharSelectScreenSelectEffect() {
-		CardCrawlGame.sound.playA("ATTACK_MAGIC_SLOW_1", MathUtils.random(-0.2f, 0.2f));
+		CardCrawlGame.sound.playA(CHAR_SOUND, MathUtils.random(-0.2f, 0.2f));
 		CardCrawlGame.screenShake.shake(ScreenShake.ShakeIntensity.MED, ScreenShake.ShakeDur.SHORT, false);
 	}
 
 	@Override
 	public String getCustomModeCharacterButtonSoundKey() {
-		return "ATTACK_MAGIC_BEAM_SHORT";
+		return CHAR_SOUND;
 	}
 
 	@Override
