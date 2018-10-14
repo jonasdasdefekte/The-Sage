@@ -5,7 +5,7 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.potions.FirePotion;
+import com.megacrit.cardcrawl.potions.ExplosivePotion;
 
 import sagemod.powers.Brew;
 
@@ -45,7 +45,7 @@ public class HowToWarmElephants extends AbstractSageCard {
 	public void use(AbstractPlayer p, AbstractMonster m) {
 		int turns = Math.max(0, magicNumber - getXEffect());
 
-		Brew.addPotion(turns, new FirePotion(), p);
+		Brew.addPotion(turns, new ExplosivePotion(), p);
 
 		useXEnergy();
 	}

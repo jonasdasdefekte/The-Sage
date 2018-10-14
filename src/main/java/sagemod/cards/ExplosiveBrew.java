@@ -6,13 +6,13 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.potions.ExplosivePotion;
+import com.megacrit.cardcrawl.potions.FirePotion;
 
 import sagemod.powers.Brew;
 
-public class ExplosiveBrew extends AbstractSageCard {
+public class FireBrew extends AbstractSageCard {
 
-	public static final String ID = "Explosive_Brew";
+	public static final String ID = "Fire_Brew";
 	private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
 	public static final String NAME = cardStrings.NAME;
 	private static final int COST = 1;
@@ -26,7 +26,7 @@ public class ExplosiveBrew extends AbstractSageCard {
 	private static final int BREW_IN = 4;
 	private static final int UPGRADE_BREW_IN = -1;
 
-	public ExplosiveBrew() {
+	public FireBrew() {
 		super(ID, NAME, COST, DESCRIPTION, TYPE, RARITY, TARGET);
 		baseDamage = ATTACK_DMG;
 		baseMagicNumber = magicNumber = BREW_IN;
@@ -44,13 +44,13 @@ public class ExplosiveBrew extends AbstractSageCard {
 
 	@Override
 	public AbstractCard makeCopy() {
-		return new ExplosiveBrew();
+		return new FireBrew();
 	}
 
 	@Override
 	public void use(AbstractPlayer p, AbstractMonster m) {
 		attack(m, AttackEffect.BLUNT_LIGHT);
-		Brew.addPotion(magicNumber, new ExplosivePotion(), p);
+		Brew.addPotion(magicNumber, new FirePotion(), p);
 	}
 
 }
