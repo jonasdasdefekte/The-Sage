@@ -23,7 +23,7 @@ public class HowToTalkToSpiders extends AbstractSageCard {
 
 	private static final int BREW_IN = 4;
 	private static final int UPGRADE_BREW_IN = -1;
-	private static final int POISON_AMT = 5;
+	private static final int POISON_AMT = 4;
 
 	public HowToTalkToSpiders() {
 		super(ID, NAME, COST, DESCRIPTION, TYPE, RARITY, TARGET);
