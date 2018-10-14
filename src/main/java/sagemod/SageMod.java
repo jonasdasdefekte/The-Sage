@@ -31,6 +31,7 @@ import sagemod.cards.Altitude;
 import sagemod.cards.Ambition;
 import sagemod.cards.ArmorBrew;
 import sagemod.cards.BoldMove;
+import sagemod.cards.BurningFlask;
 import sagemod.cards.CatchMeIfYouCan;
 import sagemod.cards.DefendSage;
 import sagemod.cards.Escape;
@@ -128,6 +129,7 @@ public class SageMod implements EditCharactersSubscriber, EditCardsSubscriber, E
 		BaseMod.addCard(new PourTarPitch());
 		BaseMod.addCard(new GearwheelMaster());
 		BaseMod.addCard(new Altitude());
+		BaseMod.addCard(new BurningFlask());
 
 		// Rare
 		BaseMod.addCard(new HowToMurderAnts());
@@ -146,7 +148,6 @@ public class SageMod implements EditCharactersSubscriber, EditCardsSubscriber, E
 	@Override
 	public void receiveEditStrings() {
 		logger.info("Loading Strings for TheSage");
-		// TODO OrderJson these
 		BaseMod.loadCustomStrings(CardStrings.class, loadJson("sage/local/cards.json"));
 		BaseMod.loadCustomStrings(RelicStrings.class, loadJson("sage/local/relics.json"));
 		BaseMod.loadCustomStrings(PowerStrings.class, loadJson("sage/local/powers.json"));

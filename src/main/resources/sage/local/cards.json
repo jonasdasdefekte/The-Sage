@@ -19,6 +19,10 @@
     "NAME": "Bold Move",
     "DESCRIPTION": "Deal !D! damage. NL Gain !M! Frail. "
   },
+  "Burning_Flask": {
+    "NAME": "Burning Flask",
+    "DESCRIPTION": "Discard a random Potion. NL Deal !D! damage. "
+  },
   "Catch_Me_If_You_Can": {
     "NAME": "Catch Me If You Can",
     "DESCRIPTION": "Until your next turn, you don't lose Flight for the next !M! times you take attack damage."

@@ -56,7 +56,7 @@ public class HowToPokeAtSlimes extends AbstractSageCard {
 		if (effect > 0) {
 			gainEnergy(effect);
 		}
-		multiAttack(AttackEffect.SLASH_HORIZONTAL);
+		attackAllEnemies(AttackEffect.SLASH_HORIZONTAL);
 		useXEnergy();
 	}
 

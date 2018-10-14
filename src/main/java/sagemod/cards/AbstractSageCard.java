@@ -26,6 +26,7 @@ public abstract class AbstractSageCard extends CustomCard {
 
 	private static final String NO_FLIGHT = "I can only play this if I have no Flight!";
 	private static final String WHILE_FLYING = "I can only play this if I fly!";
+	private static final String NEEDS_POTION = "I can only play this if I have a potion!";
 
 	private static final String PREFIX = "sage/cards/";
 	private static final String POSTFIX = ".png";
@@ -44,7 +45,7 @@ public abstract class AbstractSageCard extends CustomCard {
 				.addToBottom(new DamageAction(m, new DamageInfo(player(), damage, damageTypeForTurn), effect));
 	}
 
-	protected void multiAttack(AttackEffect effect) {
+	protected void attackAllEnemies(AttackEffect effect) {
 		AbstractDungeon.actionManager
 				.addToBottom(new DamageAllEnemiesAction(player(), multiDamage, damageTypeForTurn, effect));
 	}
@@ -124,6 +125,15 @@ public abstract class AbstractSageCard extends CustomCard {
 			cantUseMessage = NO_FLIGHT;
 		}
 		return superCanUse && !hasFlight;
+	}
+
+	protected boolean canOnlyUseWhenHasPotion(AbstractPlayer p, AbstractMonster m) {
+		boolean superCanUse = super.canUse(p, m);
+		boolean hasPotion = player().hasAnyPotions();
+		if (!hasPotion) {
+			cantUseMessage = NEEDS_POTION;
+		}
+		return superCanUse && hasPotion;
 	}
 
 }
