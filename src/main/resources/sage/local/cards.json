@@ -40,6 +40,10 @@
     "NAME": "Explosive Brew",
     "DESCRIPTION": "Deal !D! damage. Brew an Explosive Potion in !M! turns."
   },
+  "Flight_Feint": {
+    "NAME": "Flight Feint",
+    "DESCRIPTION": "Deal !D! damage. Apply !M! Disoriented."
+  },
   "Fly": {
     "NAME": "Fly",
     "DESCRIPTION": "If you don't fly: NL Gain !M! Flight."

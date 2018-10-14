@@ -17,6 +17,12 @@
     ],
     "DESCRIPTION": "Obtain a potion in X turns."
   },
+  "DISORIENTED": {
+    "NAMES": [
+      "disoriented"
+    ],
+    "DESCRIPTION": "The first Attack of this Enemy has no effect, for X turns."
+  },
   "FLIGHT": {
     "NAMES": [
       "flight"

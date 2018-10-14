@@ -36,6 +36,7 @@ import sagemod.cards.CatchMeIfYouCan;
 import sagemod.cards.DefendSage;
 import sagemod.cards.Escape;
 import sagemod.cards.ExplosiveBrew;
+import sagemod.cards.FlightFeint;
 import sagemod.cards.Fly;
 import sagemod.cards.GearwheelMaster;
 import sagemod.cards.HowToBefriendATurtle;
@@ -134,6 +135,7 @@ public class SageMod implements EditCharactersSubscriber, EditCardsSubscriber, E
 		BaseMod.addCard(new Altitude());
 		BaseMod.addCard(new BurningFlask());
 		BaseMod.addCard(new TasteThisOne());
+		BaseMod.addCard(new FlightFeint());
 
 		// Rare
 		BaseMod.addCard(new HowToMurderAnts());
