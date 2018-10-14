@@ -39,6 +39,7 @@ import sagemod.cards.Fly;
 import sagemod.cards.GearwheelMaster;
 import sagemod.cards.HowToBefriendATurtle;
 import sagemod.cards.HowToMurderAnts;
+import sagemod.cards.HowToPokeAtSlimes;
 import sagemod.cards.HowToTalkToSpiders;
 import sagemod.cards.HowToWarmElephants;
 import sagemod.cards.OnTheHead;
@@ -121,6 +122,7 @@ public class SageMod implements EditCharactersSubscriber, EditCardsSubscriber, E
 		BaseMod.addCard(new HowToTalkToSpiders());
 		BaseMod.addCard(new Ambition());
 		BaseMod.addCard(new StepBack());
+		BaseMod.addCard(new HowToPokeAtSlimes());
 
 		// Uncommon
 		BaseMod.addCard(new PourTarPitch());

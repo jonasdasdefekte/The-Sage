@@ -54,9 +54,13 @@
     "DESCRIPTION": "If you fly: Deal !D! damage to a random enemy X times.",
     "UPGRADE_DESCRIPTION": "If you fly: Deal !D! damage to a random enemy X + !M! times."
   },
+  "How_To_Poke_At_Slimes": {
+    "NAME": "How To Poke At Slimes",
+    "DESCRIPTION": "Gain !M! -X Frail. Gain X [E]. NL Deal !D! to ALL enemies."
+  },
   "How_To_Talk_To_Spiders": {
     "NAME": "How To Talk To Spiders",
-    "DESCRIPTION": "Apply !MISC! poison. Brew a Poison Potion in !M! -X turns."
+    "DESCRIPTION": "Apply !MISC! Poison. Brew a Poison Potion in !M! -X turns."
   },
   "How_To_Warm_Elephants": {
     "NAME": "How To Warm Elephants",
