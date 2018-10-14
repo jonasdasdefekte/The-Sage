@@ -21,7 +21,7 @@
   },
   "Catch_Me_If_You_Can": {
     "NAME": "Catch Me If You Can",
-    "DESCRIPTION": "Gain !M! Flight. At the start of your next turn, lose !M! Flight."
+    "DESCRIPTION": "Until your next turn, you don't lose Flight for the next !M! times you take attack damage."
   },
   "Defend_Sage": {
     "NAME": "Defend",

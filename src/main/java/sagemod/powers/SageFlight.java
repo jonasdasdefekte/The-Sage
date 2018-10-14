@@ -48,7 +48,13 @@ public class SageFlight extends AbstractSagePower {
 		if (info.owner != null && info.type != DamageInfo.DamageType.HP_LOSS
 				&& info.type != DamageInfo.DamageType.THORNS && damageAmount > 0 && willLive) {
 			flash();
-			AbstractDungeon.actionManager.addToBottom(new ReducePowerAction(owner, info.owner, this, 1));
+			// Airborne prevents Flight loss
+			if (!owner.hasPower(Airborne.POWER_ID)) {
+				AbstractDungeon.actionManager.addToBottom(new ReducePowerAction(owner, info.owner, this, 1));
+			} else {
+				// will reduce Airborneand play a sound
+				owner.getPower(Airborne.POWER_ID).onSpecificTrigger();
+			}
 		}
 		return damageAmount;
 	}

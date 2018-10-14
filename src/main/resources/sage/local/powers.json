@@ -6,6 +6,14 @@
       "  at the start of your turn."
     ]
   },
+  "Airborne": {
+    "NAME": "Airborne",
+    "DESCRIPTIONS": [
+      "Until your next turn, you don't lose Flight for the next #b",
+      " times you take #yattack damage.",
+      "Until your next turn, you don't lose Flight for the next time you take #yattack damage."
+    ]
+  },
   "Brew": {
     "NAME": "Brew",
     "DESCRIPTIONS": [
