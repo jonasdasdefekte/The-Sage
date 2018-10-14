@@ -51,9 +51,11 @@ import sagemod.cards.SaltyStrike;
 import sagemod.cards.StepBack;
 import sagemod.cards.StrikeSage;
 import sagemod.cards.SwoopDown;
+import sagemod.cards.TasteThisOne;
 import sagemod.character.SageCharEnum;
 import sagemod.character.SageColorEnum;
 import sagemod.character.TheSage;
+import sagemod.listeners.TasteThisOneListener;
 import sagemod.listeners.ThirstyListener;
 import sagemod.patches.MiscDynamicVariable;
 import sagemod.relics.FlyingCarpet;
@@ -81,6 +83,7 @@ public class SageMod implements EditCharactersSubscriber, EditCardsSubscriber, E
 		addColor();
 		BaseMod.subscribe(this);
 		BaseMod.subscribe(new ThirstyListener());
+		BaseMod.subscribe(new TasteThisOneListener());
 	}
 
 	private void addColor() {
@@ -130,6 +133,7 @@ public class SageMod implements EditCharactersSubscriber, EditCardsSubscriber, E
 		BaseMod.addCard(new GearwheelMaster());
 		BaseMod.addCard(new Altitude());
 		BaseMod.addCard(new BurningFlask());
+		BaseMod.addCard(new TasteThisOne());
 
 		// Rare
 		BaseMod.addCard(new HowToMurderAnts());

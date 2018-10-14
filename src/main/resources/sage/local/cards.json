@@ -105,5 +105,9 @@
       " NL (Deals ",
       " damage)"
     ]
+  },
+  "Taste_This_One": {
+    "NAME": "Taste This One",
+    "DESCRIPTION": "Whenever you use a potion, apply !M! Poison to ALL enemies."
   }
 }

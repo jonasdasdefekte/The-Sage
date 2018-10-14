@@ -37,10 +37,17 @@
       "Reduce #yattack damage taken by #b50%. Reduced by one if you take #yattack damage."
     ]
   },
+  "Taste_This_One": {
+    "NAME": "Taste This One",
+    "DESCRIPTIONS": [
+      "Whenever you use a potion, apply #b",
+      " Poison to ALL enemies."
+    ]
+  },
   "Thirsty": {
     "NAME": "Thirsty",
     "DESCRIPTIONS": [
-      "Receives 50% more damage from #y potions, for #b",
+      "Receives 50% more damage from #ypotions, for #b",
       " turns.",
       " turn."
     ]
