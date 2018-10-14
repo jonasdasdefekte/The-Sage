@@ -35,7 +35,7 @@ import sagemod.cards.BurningFlask;
 import sagemod.cards.CatchMeIfYouCan;
 import sagemod.cards.DefendSage;
 import sagemod.cards.Escape;
-import sagemod.cards.ExplosiveBrew;
+import sagemod.cards.FireBrew;
 import sagemod.cards.FlightFeint;
 import sagemod.cards.Fly;
 import sagemod.cards.GearwheelMaster;
@@ -118,7 +118,7 @@ public class SageMod implements EditCharactersSubscriber, EditCardsSubscriber, E
 		BaseMod.addCard(new PincerRepair());
 		BaseMod.addCard(new OnTheHead());
 		BaseMod.addCard(new SwoopDown());
-		BaseMod.addCard(new ExplosiveBrew());
+		BaseMod.addCard(new FireBrew());
 		BaseMod.addCard(new Quackster());
 		BaseMod.addCard(new ArmorBrew());
 		BaseMod.addCard(new HowToBefriendATurtle());

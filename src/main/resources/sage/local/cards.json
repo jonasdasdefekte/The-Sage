@@ -36,9 +36,9 @@
     "DESCRIPTION": "Double your Flight. NL Exhaust.",
     "UPGRADE_DESCRIPTION": "Double your Flight."
   },
-  "Explosive_Brew": {
-    "NAME": "Explosive Brew",
-    "DESCRIPTION": "Deal !D! damage. Brew an Explosive Potion in !M! turns."
+  "Fire_Brew": {
+    "NAME": "Fire Brew",
+    "DESCRIPTION": "Deal !D! damage. Brew a Fire Potion in !M! turns."
   },
   "Flight_Feint": {
     "NAME": "Flight Feint",
@@ -72,7 +72,7 @@
   },
   "How_To_Warm_Elephants": {
     "NAME": "How To Warm Elephants",
-    "DESCRIPTION": "Brew a Fire Potion in NL !M! -X turns."
+    "DESCRIPTION": "Brew an Explosive Potion in NL !M! -X turns."
   },
   "On_The_Head": {
     "NAME": "On The Head",
