@@ -119,7 +119,6 @@ public class SageMod implements EditCharactersSubscriber, EditCardsSubscriber, E
 		BaseMod.addCard(new OnTheHead());
 		BaseMod.addCard(new SwoopDown());
 		BaseMod.addCard(new FireBrew());
-		BaseMod.addCard(new Quackster());
 		BaseMod.addCard(new ArmorBrew());
 		BaseMod.addCard(new HowToBefriendATurtle());
 		BaseMod.addCard(new CatchMeIfYouCan());
@@ -130,6 +129,7 @@ public class SageMod implements EditCharactersSubscriber, EditCardsSubscriber, E
 		BaseMod.addCard(new HowToPokeAtSlimes());
 
 		// Uncommon
+		BaseMod.addCard(new Quackster());
 		BaseMod.addCard(new PourTarPitch());
 		BaseMod.addCard(new GearwheelMaster());
 		BaseMod.addCard(new Altitude());
