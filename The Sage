@@ -201,8 +201,14 @@ Other relics (for all characters)
 
 Potions
 	Flight Potion
-		Rare
+		Rare, Sage only
 		Gain 1 Flight.
 	Fata Morgana
 		Rare
 		Apply 1 Disoriented.
+
+Events
+	Carpet trader
+		Akt 2, for non-Sage characters
+		Option 1: #rLose #r50% #rmax. #rHP. #gObtain #gthe #gFlying #gCarpet.
+		Option 2: Leave
