@@ -17,6 +17,12 @@
     ],
     "DESCRIPTION": "Obtain a potion in X turns."
   },
+  "BREWING": {
+    "NAMES": [
+      "brewing"
+    ],
+    "DESCRIPTION": "You brew potions X turns quicker."
+  },
   "DISORIENTED": {
     "NAMES": [
       "disoriented"

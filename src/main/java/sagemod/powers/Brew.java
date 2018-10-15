@@ -11,6 +11,7 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.potions.AbstractPotion;
+import com.megacrit.cardcrawl.powers.AbstractPower;
 
 public class Brew extends AbstractSagePower {
 
@@ -53,27 +54,68 @@ public class Brew extends AbstractSagePower {
 
 	@Override
 	public void updateDescription() {
-		// TODO add alternative for when there are too many potions
 		StringBuilder builder = new StringBuilder();
-		for (int i = 0; i < potions.size(); i++) {
-			Potion p = potions.get(i);
-			builder.append(DESCRIPTIONS[0]);
-			builder.append(p.potion.name);
-			if (p.turns > 1) {
-				builder.append(DESCRIPTIONS[1]);
-				builder.append(p.turns);
-				builder.append(DESCRIPTIONS[2]);
-			} else {
-				builder.append(DESCRIPTIONS[3]);
+		// elaborate view
+		if (potions.size() <= 3) {
+			for (int i = 0; i < potions.size(); i++) {
+				Potion p = potions.get(i);
+				builder.append(DESCRIPTIONS[0]);
+				builder.append(getNameInRed(p.potion.name));
+				if (p.turns > 1) {
+					builder.append(DESCRIPTIONS[3]);
+					builder.append(p.turns);
+					builder.append(DESCRIPTIONS[6]);
+				} else {
+					builder.append(DESCRIPTIONS[7]);
+				}
+				if (i != potions.size() - 1) {
+					// new line
+					builder.append(DESCRIPTIONS[8]);
+				}
 			}
-			if (i != potions.size() - 1) {
+		} else {
+			// compact view
+			ArrayList<Potion> compactList = getListForCompactView();
+			for (int i = 0; i < compactList.size(); i++) {
+				Potion p = compactList.get(i);
+				builder.append(DESCRIPTIONS[1]);
+				builder.append(p.times);
+				builder.append(DESCRIPTIONS[2]);
+				builder.append(getNameInRed(p.potion.name));
 				builder.append(DESCRIPTIONS[4]);
+				builder.append(p.turns);
+				if (p.turns > 1) {
+					builder.append(DESCRIPTIONS[6]);
+				} else {
+					builder.append(DESCRIPTIONS[5]);
+				}
+				if (i != compactList.size() - 1) {
+					// new line
+					builder.append(DESCRIPTIONS[8]);
+				}
 			}
 		}
 		description = builder.toString();
 	}
 
-	public void addPotion(int turns, AbstractPotion potion) {
+	private String getNameInRed(String name) {
+		return name.replaceAll(" ", " #r");
+	}
+
+	private ArrayList<Potion> getListForCompactView() {
+		ArrayList<Potion> list = new ArrayList<>();
+		for (Potion p : potions) {
+			if (list.contains(p)) {
+				list.get(list.indexOf(p)).times++;
+			} else {
+				p.times = 1;
+				list.add(p);
+			}
+		}
+		return list;
+	}
+
+	public void addPotionToQueue(int turns, AbstractPotion potion) {
 		Potion p = new Potion(turns, potion);
 		if (turns < amount) {
 			amount = turns;
@@ -84,18 +126,25 @@ public class Brew extends AbstractSagePower {
 	}
 
 	public static void addPotion(int turns, AbstractPotion potion, AbstractCreature owner) {
+		// subtract brewing from turns
+		if (AbstractDungeon.player.hasPower(Brewing.POWER_ID)) {
+			AbstractPower brewing = AbstractDungeon.player.getPower(Brewing.POWER_ID);
+			turns -= brewing.amount;
+			brewing.flash();
+		}
+
 		if (turns <= 0) {
 			AbstractDungeon.player.obtainPotion(potion);
 		} else {
 			Brew power = null;
 			if (owner.hasPower(POWER_ID)) {
 				power = (Brew) owner.getPower(POWER_ID);
-				power.addPotion(turns, potion);
+				power.addPotionToQueue(turns, potion);
 				power.flash();
 			} else {
 				power = new Brew(owner, turns);
 				AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(owner, owner, power, turns));
-				power.addPotion(turns, potion);
+				power.addPotionToQueue(turns, potion);
 			}
 		}
 	}
@@ -104,15 +153,33 @@ public class Brew extends AbstractSagePower {
 
 		int turns;
 		AbstractPotion potion;
+		int times;
 
 		public Potion(int turns, AbstractPotion potion) {
 			this.turns = turns;
 			this.potion = potion;
+			times = 1;
 		}
 
 		@Override
 		public int compareTo(Potion o) {
 			return turns - o.turns;
+		}
+
+		@Override
+		public boolean equals(Object other) {
+			if (other instanceof Potion) {
+				Potion otherPotion = (Potion) other;
+				boolean samePotion = otherPotion.potion != null && potion != null
+						&& otherPotion.potion.ID.equals(potion.ID);
+				return samePotion && otherPotion.turns == turns;
+			}
+			return false;
+		}
+
+		@Override
+		public int hashCode() {
+			return turns;
 		}
 
 	}

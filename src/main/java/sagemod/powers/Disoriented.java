@@ -67,10 +67,6 @@ public class Disoriented extends AbstractSagePower {
 		if (type == DamageType.NORMAL && owner instanceof AbstractMonster && !changedIntent && !isAlmostRemoved) {
 			AbstractMonster monster = (AbstractMonster) owner;
 			EnemyMoveInfo move = (EnemyMoveInfo) ReflectionHacks.getPrivate(monster, AbstractMonster.class, "move");
-			/*
-			 * System.out.println("Move: " + move.intent + "; " + move.multiplier + " x " +
-			 * move.baseDamage + " changedIntent: " + changedIntent);
-			 */
 			if (isAttack(move.intent)) {
 				if (move.isMultiDamage) {
 					changedIntent = true;

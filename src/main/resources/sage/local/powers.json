@@ -18,10 +18,22 @@
     "NAME": "Brew",
     "DESCRIPTIONS": [
       "Obtain a #r",
+      "#b",
+      "x #r",
       " in #b",
+      ": #b",
+      " turn.",
       " turns.",
       " at the start of your next turn.",
       " NL "
+    ]
+  },
+  "Brewing": {
+    "NAME": "Brewing",
+    "DESCRIPTIONS": [
+      "You brew potions #b",
+      " turns quicker.",
+      " turn quicker."
     ]
   },
   "Disoriented": {

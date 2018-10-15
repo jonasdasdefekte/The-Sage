@@ -17,7 +17,11 @@
   },
   "Bold_Move": {
     "NAME": "Bold Move",
-    "DESCRIPTION": "Deal !D! damage. NL Gain !M! Frail. "
+    "DESCRIPTION": "Deal !D! damage. NL Gain !M! Frail."
+  },
+  "Brewmaster": {
+    "NAME": "Brewmaster",
+    "DESCRIPTION": "Gain !M! Brewing. "
   },
   "Burning_Flask": {
     "NAME": "Burning Flask",
