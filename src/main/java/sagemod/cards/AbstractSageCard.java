@@ -25,7 +25,7 @@ import sagemod.powers.SageFlight;
 public abstract class AbstractSageCard extends CustomCard {
 
 	private static final String NO_FLIGHT = "I can only play this if I have no Flight!";
-	private static final String WHILE_FLYING = "I can only play this if I fly!";
+	private static final String WHILE_FLYING = "I can only play this if I am flying!";
 	private static final String NEEDS_POTION = "I can only play this if I have a potion!";
 
 	private static final String PREFIX = "sage/cards/";
