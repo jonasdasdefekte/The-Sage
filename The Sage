@@ -100,7 +100,7 @@ DONE:	Quackster (illustriert)
 		Brew a Steroid potion in 4 (3)-X turns. 
 	How to feed Apes
 		Skill, X Energy: 
-		Brew a random rare potion in 4 (3)-X turns. Exhaust.
+		Randomly brew one of these potions in 4 (3)-X turns: Flight Potion, Blood Potion, Regen Potion or Fruit Juice. Exhaust.
 	Perpetuum Mobile
 		Skill, 0 Energy: 
 		Draw 1 card. Play it (Upgrade instead: Gain 1 Energy) if it costs 1.
@@ -169,18 +169,18 @@ DONE:	Escape
 DONE:	Accumulation
 		Power, 1 Energy: 
 		If you fly, lose 2 (1) Flight and at the start of each turn, gain 1 Energy.
+DONE:	Bookworm
+		Power, 2(1) Energy: 
+		Whenever you play a card costing X, gain 1 Energy.
 	On Fire
 		Power, 2 (1) Energy:
 		Whenever you play 6 cards in a single turn, obtain a Fire Potion. 
 	Ancient Poison
 		Power, 1 Energy:
 		Artifacts do no longer negate Poison this combat. Apply 4 Poison to ALL enemies.
-DONE:	Bookworm
-		Power, 2(1) Energy: 
-		Whenever you play a card costing X, gain 1 Energy.
 
 	
-Character-specific relics
+Character-specific relics (Sage only)
 	Byrd carpet
 		Boss relic: 
 		Replaces Flying carpet. Start each combat with 3 Flight. If you have 1 or 2 Flight at the start of your turn, set it to 3 again.
@@ -191,10 +191,18 @@ Character-specific relics
 		Uncommon relic: 
 		Enemies have 1 less Strength per Artifact on them. You may use Artifact potions on enemies.
 
-Other relics
+Other relics (for all characters)
 	Red Beast Statue
 		Uncommon relic:
-		Potion rewards are ?% more likely to be rare potions.
+		Potion rewards are ?% more likely to be uncommon or rare potions.
 	Blowpipe
 		Rare relic: 
 		Potions you throw affect ALL enemies.
+
+Potions
+	Flight Potion
+		Rare
+		Gain 1 Flight.
+	Fata Morgana
+		Rare
+		Apply 1 Disoriented.
