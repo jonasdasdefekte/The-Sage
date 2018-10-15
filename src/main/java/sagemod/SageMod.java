@@ -139,9 +139,9 @@ public class SageMod implements EditCharactersSubscriber, EditCardsSubscriber, E
 		BaseMod.addCard(new TasteThisOne());
 		BaseMod.addCard(new FlightFeint());
 		BaseMod.addCard(new Brewmaster());
-		BaseMod.addCard(new Bookworm());
 
 		// Rare
+		BaseMod.addCard(new Bookworm());
 		BaseMod.addCard(new HowToMurderAnts());
 		BaseMod.addCard(new Escape());
 		BaseMod.addCard(new Accumulation());

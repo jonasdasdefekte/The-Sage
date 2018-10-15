@@ -128,9 +128,6 @@ DONE:	Altitude
 DONE:	Taste this one
 		Power, 1 Energy:
 		Whenever you use a potion, apply 3 (5) Poison to ALL Enemies.
-DONE:	Bookworm
-		Power, 2(1) Energy: 
-		Whenever you play a card costing X, gain 1 Energy.
 DONE:	Brewmaster
 		Power, 1 Energy:
 		Gain 1(2) Brewing.
@@ -178,6 +175,9 @@ DONE:	Accumulation
 	Ancient Poison
 		Power, 1 Energy:
 		Artifacts do no longer negate Poison this combat. Apply 4 Poison to ALL enemies.
+DONE:	Bookworm
+		Power, 2(1) Energy: 
+		Whenever you play a card costing X, gain 1 Energy.
 
 	
 Character-specific relics
