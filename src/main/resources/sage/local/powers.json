@@ -14,6 +14,13 @@
       "Until your next turn, you don't lose Flight for the next time you take #yattack damage."
     ]
   },
+  "Bookworm": {
+    "NAME": "Bookworm",
+    "DESCRIPTIONS": [
+      "Gain ",
+      " every time you play a card that costs X."
+    ]
+  },
   "Brew": {
     "NAME": "Brew",
     "DESCRIPTIONS": [

@@ -1,7 +1,7 @@
 {
   "Accumulation": {
     "NAME": "Accumulation",
-    "DESCRIPTION": "If you are flying: Lose !M! Flight once and gain [E] at the start of each turn."
+    "DESCRIPTION": "If you are flying: Lose !M! Flight once and gain [E]  at the start of each turn."
   },
   "Altitude": {
     "NAME": "Altitude",
@@ -18,6 +18,10 @@
   "Bold_Move": {
     "NAME": "Bold Move",
     "DESCRIPTION": "Deal !D! damage. NL Gain !M! Frail."
+  },
+  "Bookworm": {
+    "NAME": "Bookworm",
+    "DESCRIPTION": "Gain [E]  every time NL you play a card NL that costs X."
   },
   "Brewmaster": {
     "NAME": "Brewmaster",

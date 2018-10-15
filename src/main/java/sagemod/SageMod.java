@@ -31,6 +31,7 @@ import sagemod.cards.Altitude;
 import sagemod.cards.Ambition;
 import sagemod.cards.ArmorBrew;
 import sagemod.cards.BoldMove;
+import sagemod.cards.Bookworm;
 import sagemod.cards.Brewmaster;
 import sagemod.cards.BurningFlask;
 import sagemod.cards.CatchMeIfYouCan;
@@ -138,6 +139,7 @@ public class SageMod implements EditCharactersSubscriber, EditCardsSubscriber, E
 		BaseMod.addCard(new TasteThisOne());
 		BaseMod.addCard(new FlightFeint());
 		BaseMod.addCard(new Brewmaster());
+		BaseMod.addCard(new Bookworm());
 
 		// Rare
 		BaseMod.addCard(new HowToMurderAnts());
