@@ -6,14 +6,14 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 
-public class AccumulationPower extends AbstractSagePower {
+public class Accumulate extends AbstractSagePower {
 
-	public static final String POWER_ID = "Accumulation";
+	public static final String POWER_ID = "Accumulate";
 	private static final PowerStrings powerStrings = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
 	public static final String NAME = powerStrings.NAME;
 	public static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;
 
-	public AccumulationPower(AbstractCreature owner, int amount) {
+	public Accumulate(AbstractCreature owner, int amount) {
 		super(POWER_ID, NAME, owner, amount);
 		updateDescription();
 	}

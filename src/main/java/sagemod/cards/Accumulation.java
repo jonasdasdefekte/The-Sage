@@ -8,7 +8,7 @@ import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
 import sagemod.actions.ReduceFlightBlockableByArtifactAction;
-import sagemod.powers.AccumulationPower;
+import sagemod.powers.Accumulate;
 
 public class Accumulation extends AbstractSageCard {
 
@@ -47,7 +47,7 @@ public class Accumulation extends AbstractSageCard {
 	public void use(AbstractPlayer p, AbstractMonster m) {
 		if (isFlying()) {
 			AbstractDungeon.actionManager.addToBottom(new ReduceFlightBlockableByArtifactAction(magicNumber, p));
-			applyPowerToSelf(new AccumulationPower(p, ACCUMULATION_GAIN));
+			applyPowerToSelf(new Accumulate(p, ACCUMULATION_GAIN));
 		}
 	}
 

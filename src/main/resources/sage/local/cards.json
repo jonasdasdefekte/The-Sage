@@ -1,7 +1,7 @@
 {
   "Accumulation": {
     "NAME": "Accumulation",
-    "DESCRIPTION": "If you are flying: Lose !M! Flight once and gain [E]  at the start of each turn."
+    "DESCRIPTION": "If you are flying: Lose !M! Flight once and NL gain [E]  at the start of each turn."
   },
   "Altitude": {
     "NAME": "Altitude",
@@ -13,7 +13,7 @@
   },
   "Armor_Brew": {
     "NAME": "Armor Brew",
-    "DESCRIPTION": "Gain !B! Block. Brew a Block Potion in !M! turns."
+    "DESCRIPTION": "Gain !B! Block. NL Brew a Block Potion NL in !M! turns."
   },
   "Bold_Move": {
     "NAME": "Bold Move",
@@ -29,7 +29,7 @@
   },
   "Burning_Flask": {
     "NAME": "Burning Flask",
-    "DESCRIPTION": "Discard a random Potion. NL Deal !D! damage. "
+    "DESCRIPTION": "Discard a NL random Potion. NL Deal !D! damage. "
   },
   "Catch_Me_If_You_Can": {
     "NAME": "Catch Me If You Can",
@@ -46,11 +46,11 @@
   },
   "Fire_Brew": {
     "NAME": "Fire Brew",
-    "DESCRIPTION": "Deal !D! damage. Brew a Fire Potion in !M! turns."
+    "DESCRIPTION": "Deal !D! damage. NL Brew a Fire Potion NL in !M! turns."
   },
   "Flight_Feint": {
     "NAME": "Flight Feint",
-    "DESCRIPTION": "Deal !D! damage. Apply !M! Disoriented."
+    "DESCRIPTION": "Deal !D! damage. NL Apply !M! Disoriented."
   },
   "Fly": {
     "NAME": "Fly",
@@ -72,23 +72,23 @@
   },
   "How_To_Poke_At_Slimes": {
     "NAME": "How To Poke At Slimes",
-    "DESCRIPTION": "Gain !M! -X Frail. Gain X [E]. NL Deal !D! to ALL enemies."
+    "DESCRIPTION": "Gain !M! -X Frail. NL Gain X [E]. NL Deal !D! to ALL enemies."
   },
   "How_To_Talk_To_Spiders": {
     "NAME": "How To Talk To Spiders",
-    "DESCRIPTION": "Apply !MISC! Poison. Brew a Poison Potion in !M! -X turns."
+    "DESCRIPTION": "Apply !MISC! Poison. NL Brew a Poison Potion NL in !M! -X turns."
   },
   "How_To_Warm_Elephants": {
     "NAME": "How To Warm Elephants",
-    "DESCRIPTION": "Brew an Explosive Potion in NL !M! -X turns."
+    "DESCRIPTION": "Brew an NL Explosive Potion NL in !M! -X turns."
   },
   "On_The_Head": {
     "NAME": "On The Head",
-    "DESCRIPTION": "Deal !D! damage. NL If you are flying: Draw !M! card and gain [E]."
+    "DESCRIPTION": "Deal !D! damage. NL If you are flying: NL Draw !M! card NL and gain [E]."
   },
   "Pincer_Repair": {
     "NAME": "Pincer Repair",
-    "DESCRIPTION": "Deal !D! damage. NL The enemy gains !M! Artifact."
+    "DESCRIPTION": "Deal !D! damage. NL The enemy gains NL !M! Artifact."
   },
   "Pour_Tar_Pitch": {
     "NAME": "Pour Tar Pitch",
@@ -100,7 +100,7 @@
   },
   "Salty_Strike": {
     "NAME": "Salty Strike",
-    "DESCRIPTION": "Deal !D! damage. The enemy gains !M! Thirsty."
+    "DESCRIPTION": "Deal !D! damage. NL The enemy gains NL !M! Thirsty."
   },
   "Step_Back": {
     "NAME": "Step Back",

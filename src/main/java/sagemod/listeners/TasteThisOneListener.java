@@ -30,6 +30,7 @@ public class TasteThisOneListener implements PostPotionUseSubscriber {
 
 			if (actuallyDidSomething) {
 				power.flash();
+				// TODO play potion sound
 			}
 		}
 	}
