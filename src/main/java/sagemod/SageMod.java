@@ -188,7 +188,8 @@ public class SageMod implements EditCharactersSubscriber, EditCardsSubscriber, E
 		if (Gdx.files.internal(maybeExisting).exists()) {
 			return maybeExisting;
 		} else {
-			SageMod.logger.info(id + " has no image configured. Defaulting to placeholder image");
+			SageMod.logger.info(
+					id + " has no image configured. Defaulting to placeholder image (should be in " + prefix + ")");
 			return prefix + PLACEHOLDER + postfix;
 		}
 	}
@@ -196,7 +197,8 @@ public class SageMod implements EditCharactersSubscriber, EditCardsSubscriber, E
 	@Override
 	public void receivePostInitialize() {
 		Texture badgeTexture = new Texture(Gdx.files.internal("sage/mod-badge.png"));
-		BaseMod.registerModBadge(badgeTexture, TheSage.NAME, AUTHORS, TheSage.DESC, new ModPanel());
+		ModPanel panel = new ModPanel();
+		BaseMod.registerModBadge(badgeTexture, TheSage.NAME, AUTHORS, TheSage.DESC, panel);
 	}
 
 }
