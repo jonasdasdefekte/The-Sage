@@ -86,6 +86,10 @@
     "NAME": "On The Head",
     "DESCRIPTION": "Deal !D! damage. NL If you are flying: NL Draw !M! card NL and gain [E]."
   },
+  "Pincer_Attack": {
+    "NAME": "Pincer Attack",
+    "DESCRIPTION": "Deal !D! damage. NL Deal !D! damage per Artifact the enemy has."
+  },
   "Pincer_Repair": {
     "NAME": "Pincer Repair",
     "DESCRIPTION": "Deal !D! damage. NL The enemy gains NL !M! Artifact."

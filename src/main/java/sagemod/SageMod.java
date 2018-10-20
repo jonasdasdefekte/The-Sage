@@ -47,6 +47,7 @@ import sagemod.cards.HowToPokeAtSlimes;
 import sagemod.cards.HowToTalkToSpiders;
 import sagemod.cards.HowToWarmElephants;
 import sagemod.cards.OnTheHead;
+import sagemod.cards.PincerAttack;
 import sagemod.cards.PincerRepair;
 import sagemod.cards.PourTarPitch;
 import sagemod.cards.Quackster;
@@ -146,6 +147,7 @@ EditStringsSubscriber, PostInitializeSubscriber, EditKeywordsSubscriber {
 		BaseMod.addCard(new TasteThisOne());
 		BaseMod.addCard(new FlightFeint());
 		BaseMod.addCard(new Brewmaster());
+		BaseMod.addCard(new PincerAttack());
 
 		// Rare
 		BaseMod.addCard(new Bookworm());

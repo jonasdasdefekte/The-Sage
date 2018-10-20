@@ -80,9 +80,9 @@ DONE:	Flight Feint
 DONE:	Burning Flask
 		Attack, 1 Energy: 
 		Discard 1 random potion to deal 20 (24) damage. (Can not play with 0 potions)
-	Pincer Attack
+DONE:	Pincer Attack
 		Attack, 1 Energy: 
-		Deal 6(8) damage. Repeat this once per Artifact on the enemy.
+		Deal 6(8) damage. Deal 6 (8) damage per Artifact the enemy has.
 	Bouncing Strike
 		Attack, 1 Energy: 
 		Deal 5(8) damage. Gain 2 Frail. Gain 1 Flight.
