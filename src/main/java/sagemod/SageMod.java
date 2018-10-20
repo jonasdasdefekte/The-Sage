@@ -29,6 +29,7 @@ import basemod.interfaces.PostInitializeSubscriber;
 import sagemod.cards.Accumulation;
 import sagemod.cards.Altitude;
 import sagemod.cards.Ambition;
+import sagemod.cards.AntiAncientAttack;
 import sagemod.cards.ArmorBrew;
 import sagemod.cards.BoldMove;
 import sagemod.cards.Bookworm;
@@ -46,6 +47,7 @@ import sagemod.cards.HowToBefriendATurtle;
 import sagemod.cards.HowToMurderAnts;
 import sagemod.cards.HowToPokeAtSlimes;
 import sagemod.cards.HowToTalkToSpiders;
+import sagemod.cards.HowToWakeLyons;
 import sagemod.cards.HowToWarmElephants;
 import sagemod.cards.OnTheHead;
 import sagemod.cards.PincerAttack;
@@ -152,12 +154,14 @@ EditStringsSubscriber, PostInitializeSubscriber, EditKeywordsSubscriber {
 		BaseMod.addCard(new PincerAttack());
 		BaseMod.addCard(new BouncingStrike());
 		BaseMod.addCard(new TurnAround());
+		BaseMod.addCard(new HowToWakeLyons());
 
 		// Rare
 		BaseMod.addCard(new Bookworm());
 		BaseMod.addCard(new HowToMurderAnts());
 		BaseMod.addCard(new Escape());
 		BaseMod.addCard(new Accumulation());
+		BaseMod.addCard(new AntiAncientAttack());
 
 	}
 

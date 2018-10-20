@@ -11,6 +11,10 @@
     "NAME": "Ambition",
     "DESCRIPTION": "Gain !M! Frail. NL Gain [E] [E]."
   },
+  "Anti_Ancient_Attack": {
+    "NAME": "Anti Ancient Attack",
+    "DESCRIPTION": "Deal !D! damage per Artifact the enemy has."
+  },
   "Armor_Brew": {
     "NAME": "Armor Brew",
     "DESCRIPTION": "Gain !B! Block. NL Brew a Block Potion NL in !BRW! turns."
@@ -81,6 +85,10 @@
   "How_To_Talk_To_Spiders": {
     "NAME": "How To Talk To Spiders",
     "DESCRIPTION": "Apply !M! Poison. NL Brew a Poison Potion NL in !BRW! -X turns."
+  },
+  "How_To_Wake_Lyons": {
+    "NAME": "How To Wake Lyons",
+    "DESCRIPTION": "Brew a NL Steroid Potion NL in !BRW! -X turns."
   },
   "How_To_Warm_Elephants": {
     "NAME": "How To Warm Elephants",
