@@ -99,8 +99,8 @@ public class SageMod implements EditCharactersSubscriber, EditCardsSubscriber, E
 	@Override
 	public void receiveEditCharacters() {
 		logger.info("Adding TheSage");
-		BaseMod.addCharacter(new TheSage(TheSage.NAME, SageCharEnum.THE_SAGE), SageColorEnum.THE_SAGE, TheSage.BUTTON,
-				TheSage.PORTRAIT, SageCharEnum.THE_SAGE);
+		BaseMod.addCharacter(new TheSage(TheSage.NAME, SageCharEnum.THE_SAGE), TheSage.BUTTON, TheSage.PORTRAIT,
+				SageCharEnum.THE_SAGE);
 	}
 
 	@Override

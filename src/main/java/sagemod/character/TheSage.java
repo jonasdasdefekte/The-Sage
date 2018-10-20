@@ -6,12 +6,15 @@ import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.g2d.BitmapFont;
 import com.badlogic.gdx.math.MathUtils;
 import com.esotericsoftware.spine.AnimationState;
+import com.megacrit.cardcrawl.actions.AbstractGameAction.AttackEffect;
 import com.megacrit.cardcrawl.cards.AbstractCard;
+import com.megacrit.cardcrawl.cards.AbstractCard.CardColor;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.core.EnergyManager;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
+import com.megacrit.cardcrawl.events.city.Vampires;
 import com.megacrit.cardcrawl.helpers.FontHelper;
 import com.megacrit.cardcrawl.helpers.ModHelper;
 import com.megacrit.cardcrawl.helpers.ScreenShake;
@@ -111,8 +114,8 @@ public class TheSage extends CustomPlayer {
 	}
 
 	@Override
-	public Color getCardColor() {
-		return SageMod.COLOR;
+	public CardColor getCardColor() {
+		return SageColorEnum.THE_SAGE;
 	}
 
 	@Override
@@ -155,6 +158,34 @@ public class TheSage extends CustomPlayer {
 	@Override
 	public AbstractPlayer newInstance() {
 		return new TheSage(name, playerClass);
+	}
+
+	@Override
+	public Color getCardRenderColor() {
+		return SageMod.COLOR;
+	}
+
+	@Override
+	public String getSpireHeartText() {
+		return "NL You concentrate on speeding up your carpet...";
+	}
+
+	@Override
+	public Color getSlashAttackColor() {
+		return SageMod.COLOR;
+	}
+
+	@Override
+	public AttackEffect[] getSpireHeartSlashEffect() {
+		// TODO change this
+		return new AttackEffect[] { AttackEffect.SLASH_HEAVY, AttackEffect.POISON, AttackEffect.SLASH_DIAGONAL,
+				AttackEffect.SLASH_HEAVY, AttackEffect.POISON, AttackEffect.SLASH_DIAGONAL };
+	}
+
+	@Override
+	public String getVampireText() {
+		// sister
+		return Vampires.DESCRIPTIONS[1];
 	}
 
 }

@@ -39,10 +39,15 @@ public class Brew extends AbstractSagePower {
 					flash();
 					// TODO maybe if player can not gain potion let him use or discard it or just
 					// increase the turns by 1 again and let the player say something
+					// OR: rewardscreen
 				}
 			}
 		});
 		potions.removeAll(toRemove);
+		// play a sound if the player gained a potion
+		if (!toRemove.isEmpty()) {
+			AbstractPotion.playPotionSound();
+		}
 		Collections.sort(potions);
 		if (potions.isEmpty()) {
 			AbstractDungeon.actionManager.addToBottom(new RemoveSpecificPowerAction(owner, owner, this));
