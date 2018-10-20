@@ -13,7 +13,7 @@ public class Brewing extends AbstractSagePower {
 	public static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;
 
 	/**
-	 * actual implementation in Brew
+	 * actual implementation in AbstractSageCard.applyPowers()
 	 */
 	public Brewing(AbstractCreature owner, int amount) {
 		super(POWER_ID, NAME, owner, amount);

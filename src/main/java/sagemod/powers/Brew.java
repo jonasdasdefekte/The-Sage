@@ -11,7 +11,6 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.potions.AbstractPotion;
-import com.megacrit.cardcrawl.powers.AbstractPower;
 
 public class Brew extends AbstractSagePower {
 
@@ -131,11 +130,9 @@ public class Brew extends AbstractSagePower {
 	}
 
 	public static void addPotion(int turns, AbstractPotion potion, AbstractCreature owner) {
-		// subtract brewing from turns
+		// flash brewing if player has it
 		if (AbstractDungeon.player.hasPower(Brewing.POWER_ID)) {
-			AbstractPower brewing = AbstractDungeon.player.getPower(Brewing.POWER_ID);
-			turns -= brewing.amount;
-			brewing.flash();
+			AbstractDungeon.player.getPower(Brewing.POWER_ID).flash();
 		}
 
 		if (turns <= 0) {

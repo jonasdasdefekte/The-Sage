@@ -73,23 +73,29 @@ public abstract class AbstractSageCard extends CustomCard {
 				brewIn = Math.max(0, baseBrewIn - amount);
 
 			}
-
 			if (usesBrewIn && brewIn <= 1) {
 				rawDescription = getLoadedDescription();
 				if (cost == -1) {
 					if (brewIn == 0) {
-						rawDescription.replaceAll(
-								"[(NL) ]*?in[(NL) ]*?!BRW![(NL) ]*?-[(NL) ]*?X*.*[(NL) ]*?turns*.*[(NL) ]*?",
-								"in X turns.");
+						rawDescription = rawDescription.replaceAll(
+								"[(NL) ]*in[(NL) ]*!BRW![(NL) ]*-[(NL) ]*X*.*[(NL) ]*turns*\\.",
+								".");
+						SageMod.logger.info("Changing Description for " + name + " (0 - X to .)");
 					}
 				} else {
 					if (brewIn == 0) {
-						rawDescription.replaceAll("[(NL) ]*?in[(NL) ]*?!BRW![(NL) ]*?turns*.*[(NL) ]*?", ".");
+						rawDescription = rawDescription.replaceAll("[(NL) ]*in[(NL) ]*!BRW![(NL) ]*turns*\\.",
+								".");
+						SageMod.logger.info("Changing Description for " + name + " (0 to .)");
 					} else if (brewIn == 1) {
-						rawDescription.replaceAll("[(NL) ]*?in[(NL) ]*?!BRW![(NL) ]*?turns*.*[(NL) ]*?", " next turn.");
+						rawDescription = rawDescription.replaceAll(" *in[(NL) ]*!BRW![(NL) ]*turns*\\.*",
+								" next turn.");
+						SageMod.logger.info("Changing Description for " + name + " (1 to next turn)");
 					}
 				}
+				System.out.println("rawAfter: " + rawDescription);
 			}
+
 
 			initializeDescription();
 		}
