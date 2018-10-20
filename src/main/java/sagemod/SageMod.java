@@ -44,6 +44,7 @@ import sagemod.cards.FlightFeint;
 import sagemod.cards.Fly;
 import sagemod.cards.GearwheelMaster;
 import sagemod.cards.HowToBefriendATurtle;
+import sagemod.cards.HowToFeedApes;
 import sagemod.cards.HowToMurderAnts;
 import sagemod.cards.HowToPokeAtSlimes;
 import sagemod.cards.HowToTalkToSpiders;
@@ -155,6 +156,7 @@ EditStringsSubscriber, PostInitializeSubscriber, EditKeywordsSubscriber {
 		BaseMod.addCard(new BouncingStrike());
 		BaseMod.addCard(new TurnAround());
 		BaseMod.addCard(new HowToWakeLyons());
+		BaseMod.addCard(new HowToFeedApes());
 
 		// Rare
 		BaseMod.addCard(new Bookworm());

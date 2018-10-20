@@ -93,7 +93,6 @@ public abstract class AbstractSageCard extends CustomCard {
 						SageMod.logger.info("Changing Description for " + name + " (1 to next turn)");
 					}
 				}
-				System.out.println("rawAfter: " + rawDescription);
 			}
 
 
