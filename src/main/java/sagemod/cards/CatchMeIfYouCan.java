@@ -45,4 +45,8 @@ public class CatchMeIfYouCan extends AbstractSageCard {
 		applyPowerToSelf(new Airborne(p, magicNumber));
 	}
 
+	@Override
+	public String getLoadedDescription() {
+		return DESCRIPTION;
+	}
 }

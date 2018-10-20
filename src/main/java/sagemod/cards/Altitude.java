@@ -45,4 +45,9 @@ public class Altitude extends AbstractSageCard {
 		applyPowerToSelf(new SageFlight(p, magicNumber));
 	}
 
+	@Override
+	public String getLoadedDescription() {
+		return DESCRIPTION;
+	}
+
 }

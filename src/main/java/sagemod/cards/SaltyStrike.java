@@ -53,4 +53,9 @@ public class SaltyStrike extends AbstractSageCard {
 		applyPower(new Thirsty(m, magicNumber), m);
 	}
 
+	@Override
+	public String getLoadedDescription() {
+		return DESCRIPTION;
+	}
+
 }

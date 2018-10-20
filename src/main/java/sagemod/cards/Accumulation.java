@@ -56,4 +56,9 @@ public class Accumulation extends AbstractSageCard {
 		return canOnlyUseWhileFlying(p, m);
 	}
 
+	@Override
+	public String getLoadedDescription() {
+		return DESCRIPTION;
+	}
+
 }

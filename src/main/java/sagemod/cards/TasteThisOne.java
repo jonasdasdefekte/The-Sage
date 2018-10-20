@@ -45,4 +45,8 @@ public class TasteThisOne extends AbstractSageCard {
 		applyPowerToSelf(new TasteThisOnePower(p, magicNumber));
 	}
 
+	@Override
+	public String getLoadedDescription() {
+		return DESCRIPTION;
+	}
 }

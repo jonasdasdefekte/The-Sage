@@ -27,15 +27,16 @@ public class HowToTalkToSpiders extends AbstractSageCard {
 
 	public HowToTalkToSpiders() {
 		super(ID, NAME, COST, DESCRIPTION, TYPE, RARITY, TARGET);
-		baseMagicNumber = magicNumber = BREW_IN;
-		misc = POISON_AMT;
+		baseMagicNumber = magicNumber = POISON_AMT;
+		initBrewIn(BREW_IN);
+
 	}
 
 	@Override
 	public void upgrade() {
 		if (!upgraded) {
 			upgradeName();
-			upgradeMagicNumber(UPGRADE_BREW_IN);
+			upgradeBrewIn(UPGRADE_BREW_IN);
 		}
 	}
 
@@ -46,12 +47,17 @@ public class HowToTalkToSpiders extends AbstractSageCard {
 
 	@Override
 	public void use(AbstractPlayer p, AbstractMonster m) {
-		int turns = Math.max(0, magicNumber - getXEffect());
+		int turns = Math.max(0, brewIn - getXEffect());
 
-		applyPower(new PoisonPower(m, p, misc), m);
+		applyPower(new PoisonPower(m, p, magicNumber), m);
 		Brew.addPotion(turns, new PoisonPotion(), p);
 
 		useXEnergy();
+	}
+
+	@Override
+	public String getLoadedDescription() {
+		return DESCRIPTION;
 	}
 
 }

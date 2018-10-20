@@ -51,4 +51,9 @@ public class OnTheHead extends AbstractSageCard {
 		}
 	}
 
+	@Override
+	public String getLoadedDescription() {
+		return DESCRIPTION;
+	}
+
 }

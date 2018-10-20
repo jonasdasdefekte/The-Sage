@@ -51,4 +51,8 @@ public class ArmorBrew extends AbstractSageCard {
 		Brew.addPotion(brewIn, new BlockPotion(), p);
 	}
 
+	@Override
+	public String getLoadedDescription() {
+		return DESCRIPTION;
+	}
 }

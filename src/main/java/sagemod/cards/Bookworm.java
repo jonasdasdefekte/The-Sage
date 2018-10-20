@@ -44,4 +44,9 @@ public class Bookworm extends AbstractSageCard {
 		applyPowerToSelf(new BookwormPower(p, ENERGY_GAIN));
 	}
 
+	@Override
+	public String getLoadedDescription() {
+		return DESCRIPTION;
+	}
+
 }

@@ -50,4 +50,9 @@ public class BoldMove extends AbstractSageCard {
 
 	}
 
+	@Override
+	public String getLoadedDescription() {
+		return DESCRIPTION;
+	}
+
 }

@@ -49,4 +49,8 @@ public class StrikeSage extends AbstractSageCard {
 		attack(m, AttackEffect.SLASH_DIAGONAL);
 	}
 
+	@Override
+	public String getLoadedDescription() {
+		return DESCRIPTION;
+	}
 }

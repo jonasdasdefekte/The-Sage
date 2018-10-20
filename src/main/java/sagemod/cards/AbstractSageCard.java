@@ -36,6 +36,7 @@ public abstract class AbstractSageCard extends CustomCard {
 	public int brewIn = 0;
 	public boolean upgradedBrewIn;
 	public boolean isBrewInModified;
+	public boolean usesBrewIn;
 
 	public AbstractSageCard(String id, String name, int cost, String rawDescription, CardType type, CardRarity rarity,
 			CardTarget target) {
@@ -43,9 +44,12 @@ public abstract class AbstractSageCard extends CustomCard {
 				SageColorEnum.THE_SAGE, rarity, target);
 	}
 
+	public abstract String getLoadedDescription();
+
 	public void initBrewIn(int value) {
 		baseBrewIn = value;
 		brewIn = value;
+		usesBrewIn = true;
 	}
 
 	public void upgradeBrewIn(int by) {
@@ -69,6 +73,25 @@ public abstract class AbstractSageCard extends CustomCard {
 				brewIn = Math.max(0, baseBrewIn - amount);
 
 			}
+
+			if (usesBrewIn && brewIn <= 1) {
+				rawDescription = getLoadedDescription();
+				if (cost == -1) {
+					if (brewIn == 0) {
+						rawDescription.replaceAll(
+								"[(NL) ]*?in[(NL) ]*?!BRW![(NL) ]*?-[(NL) ]*?X*.*[(NL) ]*?turns*.*[(NL) ]*?",
+								"in X turns.");
+					}
+				} else {
+					if (brewIn == 0) {
+						rawDescription.replaceAll("[(NL) ]*?in[(NL) ]*?!BRW![(NL) ]*?turns*.*[(NL) ]*?", ".");
+					} else if (brewIn == 1) {
+						rawDescription.replaceAll("[(NL) ]*?in[(NL) ]*?!BRW![(NL) ]*?turns*.*[(NL) ]*?", " next turn.");
+					}
+				}
+			}
+
+			initializeDescription();
 		}
 	}
 

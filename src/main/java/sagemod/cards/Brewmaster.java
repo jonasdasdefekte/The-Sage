@@ -45,4 +45,8 @@ public class Brewmaster extends AbstractSageCard {
 		applyPowerToSelf(new Brewing(p, magicNumber));
 	}
 
+	@Override
+	public String getLoadedDescription() {
+		return DESCRIPTION;
+	}
 }

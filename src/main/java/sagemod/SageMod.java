@@ -51,6 +51,7 @@ import sagemod.cards.PincerRepair;
 import sagemod.cards.PourTarPitch;
 import sagemod.cards.Quackster;
 import sagemod.cards.SaltyStrike;
+import sagemod.cards.Slalom;
 import sagemod.cards.StepBack;
 import sagemod.cards.StrikeSage;
 import sagemod.cards.SwoopDown;
@@ -68,7 +69,7 @@ import sagemod.relics.FlyingCarpet;
 
 @SpireInitializer
 public class SageMod implements EditCharactersSubscriber, EditCardsSubscriber, EditRelicsSubscriber,
-		EditStringsSubscriber, PostInitializeSubscriber, EditKeywordsSubscriber {
+EditStringsSubscriber, PostInitializeSubscriber, EditKeywordsSubscriber {
 
 	public static final Logger logger = LogManager.getLogger(SageMod.class.getName());
 	public static final String AUTHORS = "jonasdasdefekte, Skrelpoid";
@@ -134,6 +135,7 @@ public class SageMod implements EditCharactersSubscriber, EditCardsSubscriber, E
 		BaseMod.addCard(new Ambition());
 		BaseMod.addCard(new StepBack());
 		BaseMod.addCard(new HowToPokeAtSlimes());
+		BaseMod.addCard(new Slalom());
 
 		// Uncommon
 		BaseMod.addCard(new Quackster());

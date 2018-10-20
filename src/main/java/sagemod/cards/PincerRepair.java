@@ -49,4 +49,9 @@ public class PincerRepair extends AbstractSageCard {
 		applyPower(new ArtifactPower(m, magicNumber), m);
 	}
 
+	@Override
+	public String getLoadedDescription() {
+		return DESCRIPTION;
+	}
+
 }

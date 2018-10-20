@@ -51,4 +51,9 @@ public class StepBack extends AbstractSageCard {
 		}
 	}
 
+	@Override
+	public String getLoadedDescription() {
+		return DESCRIPTION;
+	}
+
 }

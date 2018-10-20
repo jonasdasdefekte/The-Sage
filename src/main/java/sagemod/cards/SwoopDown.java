@@ -88,4 +88,9 @@ public class SwoopDown extends AbstractSageCard {
 		initializeDescription();
 	}
 
+	@Override
+	public String getLoadedDescription() {
+		return DESCRIPTION;
+	}
+
 }

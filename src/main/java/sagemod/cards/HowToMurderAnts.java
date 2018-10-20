@@ -62,4 +62,8 @@ public class HowToMurderAnts extends AbstractSageCard {
 		return canOnlyUseWhileFlying(p, m);
 	}
 
+	@Override
+	public String getLoadedDescription() {
+		return DESCRIPTION;
+	}
 }

@@ -52,4 +52,8 @@ public class Fly extends AbstractSageCard {
 		return canOnlyUseWithNoFlight(p, m);
 	}
 
+	@Override
+	public String getLoadedDescription() {
+		return DESCRIPTION;
+	}
 }

@@ -46,8 +46,12 @@ public class Escape extends AbstractSageCard {
 		if (isFlying()) {
 			int flightAmount = p.getPower(SageFlight.POWER_ID).amount;
 			AbstractDungeon.actionManager
-					.addToTop(new ApplyPowerAction(p, p, new SageFlight(p, flightAmount), flightAmount));
+			.addToTop(new ApplyPowerAction(p, p, new SageFlight(p, flightAmount), flightAmount));
 		}
 	}
 
+	@Override
+	public String getLoadedDescription() {
+		return DESCRIPTION;
+	}
 }

@@ -46,4 +46,9 @@ public class Ambition extends AbstractSageCard {
 		gainEnergy(ENERGY_GAIN);
 	}
 
+	@Override
+	public String getLoadedDescription() {
+		return DESCRIPTION;
+	}
+
 }

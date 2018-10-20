@@ -76,7 +76,7 @@
   },
   "How_To_Talk_To_Spiders": {
     "NAME": "How To Talk To Spiders",
-    "DESCRIPTION": "Apply !MISC! Poison. NL Brew a Poison Potion NL in !M! -X turns."
+    "DESCRIPTION": "Apply !M! Poison. NL Brew a Poison Potion NL in !BRW! -X turns."
   },
   "How_To_Warm_Elephants": {
     "NAME": "How To Warm Elephants",
@@ -101,6 +101,10 @@
   "Salty_Strike": {
     "NAME": "Salty Strike",
     "DESCRIPTION": "Deal !D! damage. NL The enemy gains NL !M! Thirsty."
+  },
+  "Slalom": {
+    "NAME": "Slalom",
+    "DESCRIPTION": "Gain !B! Block. NL Gain !M! Frail."
   },
   "Step_Back": {
     "NAME": "Step Back",

@@ -62,4 +62,9 @@ public class PourTarPitch extends AbstractSageCard {
 		}
 	}
 
+	@Override
+	public String getLoadedDescription() {
+		return DESCRIPTION;
+	}
+
 }

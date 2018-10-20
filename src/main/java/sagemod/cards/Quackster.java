@@ -47,4 +47,9 @@ public class Quackster extends AbstractSageCard {
 		Brew.addPotion(brewIn, AbstractDungeon.returnRandomPotion(), p);
 	}
 
+	@Override
+	public String getLoadedDescription() {
+		return DESCRIPTION;
+	}
+
 }

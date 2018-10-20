@@ -49,4 +49,8 @@ public class FlightFeint extends AbstractSageCard {
 		applyPower(new Disoriented(m, magicNumber), m);
 	}
 
+	@Override
+	public String getLoadedDescription() {
+		return DESCRIPTION;
+	}
 }

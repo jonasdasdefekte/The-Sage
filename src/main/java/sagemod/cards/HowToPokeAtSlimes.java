@@ -60,4 +60,9 @@ public class HowToPokeAtSlimes extends AbstractSageCard {
 		useXEnergy();
 	}
 
+	@Override
+	public String getLoadedDescription() {
+		return DESCRIPTION;
+	}
+
 }

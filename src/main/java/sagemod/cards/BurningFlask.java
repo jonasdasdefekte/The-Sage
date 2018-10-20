@@ -66,4 +66,8 @@ public class BurningFlask extends AbstractSageCard {
 		return canOnlyUseWhenHasPotion(p, m);
 	}
 
+	@Override
+	public String getLoadedDescription() {
+		return DESCRIPTION;
+	}
 }

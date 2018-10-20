@@ -71,4 +71,9 @@ public class HowToBefriendATurtle extends AbstractSageCard {
 		}
 	}
 
+	@Override
+	public String getLoadedDescription() {
+		return DESCRIPTION;
+	}
+
 }

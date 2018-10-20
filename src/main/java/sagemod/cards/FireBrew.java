@@ -53,4 +53,9 @@ public class FireBrew extends AbstractSageCard {
 		Brew.addPotion(brewIn, new FirePotion(), p);
 	}
 
+	@Override
+	public String getLoadedDescription() {
+		return DESCRIPTION;
+	}
+
 }

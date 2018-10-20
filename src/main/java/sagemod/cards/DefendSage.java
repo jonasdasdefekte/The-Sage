@@ -47,4 +47,9 @@ public class DefendSage extends AbstractSageCard {
 		block();
 	}
 
+	@Override
+	public String getLoadedDescription() {
+		return DESCRIPTION;
+	}
+
 }

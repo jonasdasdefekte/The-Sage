@@ -49,4 +49,8 @@ public class GearwheelMaster extends AbstractSageCard {
 		applyPowerToSelf(new ArtifactPower(p, magicNumber));
 	}
 
+	@Override
+	public String getLoadedDescription() {
+		return DESCRIPTION;
+	}
 }

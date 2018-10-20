@@ -50,4 +50,9 @@ public class HowToWarmElephants extends AbstractSageCard {
 		useXEnergy();
 	}
 
+	@Override
+	public String getLoadedDescription() {
+		return DESCRIPTION;
+	}
+
 }
