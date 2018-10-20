@@ -177,9 +177,8 @@ public class TheSage extends CustomPlayer {
 
 	@Override
 	public AttackEffect[] getSpireHeartSlashEffect() {
-		// TODO change this
-		return new AttackEffect[] { AttackEffect.SLASH_HEAVY, AttackEffect.POISON, AttackEffect.SLASH_DIAGONAL,
-				AttackEffect.SLASH_HEAVY, AttackEffect.POISON, AttackEffect.SLASH_DIAGONAL };
+		return new AttackEffect[] { AttackEffect.SMASH, AttackEffect.FIRE, AttackEffect.POISON, AttackEffect.SMASH,
+				AttackEffect.FIRE, AttackEffect.POISON };
 	}
 
 	@Override
