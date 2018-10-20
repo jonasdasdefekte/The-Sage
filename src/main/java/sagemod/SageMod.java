@@ -32,6 +32,7 @@ import sagemod.cards.Ambition;
 import sagemod.cards.ArmorBrew;
 import sagemod.cards.BoldMove;
 import sagemod.cards.Bookworm;
+import sagemod.cards.BouncingStrike;
 import sagemod.cards.Brewmaster;
 import sagemod.cards.BurningFlask;
 import sagemod.cards.CatchMeIfYouCan;
@@ -57,6 +58,7 @@ import sagemod.cards.StepBack;
 import sagemod.cards.StrikeSage;
 import sagemod.cards.SwoopDown;
 import sagemod.cards.TasteThisOne;
+import sagemod.cards.TurnAround;
 import sagemod.character.SageCharEnum;
 import sagemod.character.SageColorEnum;
 import sagemod.character.TheSage;
@@ -148,6 +150,8 @@ EditStringsSubscriber, PostInitializeSubscriber, EditKeywordsSubscriber {
 		BaseMod.addCard(new FlightFeint());
 		BaseMod.addCard(new Brewmaster());
 		BaseMod.addCard(new PincerAttack());
+		BaseMod.addCard(new BouncingStrike());
+		BaseMod.addCard(new TurnAround());
 
 		// Rare
 		BaseMod.addCard(new Bookworm());

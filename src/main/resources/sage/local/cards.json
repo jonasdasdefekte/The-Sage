@@ -23,6 +23,10 @@
     "NAME": "Bookworm",
     "DESCRIPTION": "Gain [E] every time NL you play a card NL that costs X."
   },
+  "Bouncing_Strike": {
+    "NAME": "Bouncing Strike",
+    "DESCRIPTION": "Deal !D! damage. NL Gain !MISC! Frail. NL Gain !M! Flight."
+  },
   "Brewmaster": {
     "NAME": "Brewmaster",
     "DESCRIPTION": "Gain !M! Brewing. "
@@ -129,5 +133,9 @@
   "Taste_This_One": {
     "NAME": "Taste This One",
     "DESCRIPTION": "Whenever you use a potion, apply !M! Poison to a random enemy."
+  },
+  "Turn_Around": {
+    "NAME": "Turn Around",
+    "DESCRIPTION": "Gain !M! Frail. NL Deal !D! damage per Frail you have."
   }
 }
