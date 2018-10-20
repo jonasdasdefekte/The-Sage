@@ -60,6 +60,7 @@ import sagemod.character.SageColorEnum;
 import sagemod.character.TheSage;
 import sagemod.listeners.TasteThisOneListener;
 import sagemod.listeners.ThirstyListener;
+import sagemod.patches.BrewingDynamicVariable;
 import sagemod.patches.MiscDynamicVariable;
 import sagemod.potions.FataMorgana;
 import sagemod.potions.FlightPotion;
@@ -107,9 +108,11 @@ public class SageMod implements EditCharactersSubscriber, EditCardsSubscriber, E
 
 	@Override
 	public void receiveEditCards() {
-		logger.info("Adding Cards for TheSage");
-
+		logger.info("Adding DynamicVariables for TheSage");
 		BaseMod.addDynamicVariable(new MiscDynamicVariable());
+		BaseMod.addDynamicVariable(new BrewingDynamicVariable());
+
+		logger.info("Adding Cards for TheSage");
 
 		// Basic
 		BaseMod.addCard(new StrikeSage());

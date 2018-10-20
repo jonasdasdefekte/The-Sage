@@ -1,7 +1,7 @@
 {
   "Accumulation": {
     "NAME": "Accumulation",
-    "DESCRIPTION": "If you are flying: Lose !M! Flight once and NL gain [E]  at the start of each turn."
+    "DESCRIPTION": "If you are flying: Lose !M! Flight once and NL gain [E] at the start of each turn."
   },
   "Altitude": {
     "NAME": "Altitude",
@@ -13,7 +13,7 @@
   },
   "Armor_Brew": {
     "NAME": "Armor Brew",
-    "DESCRIPTION": "Gain !B! Block. NL Brew a Block Potion NL in !M! turns."
+    "DESCRIPTION": "Gain !B! Block. NL Brew a Block Potion NL in !BRW! turns."
   },
   "Bold_Move": {
     "NAME": "Bold Move",
@@ -46,7 +46,7 @@
   },
   "Fire_Brew": {
     "NAME": "Fire Brew",
-    "DESCRIPTION": "Deal !D! damage. NL Brew a Fire Potion NL in !M! turns."
+    "DESCRIPTION": "Deal !D! damage. NL Brew a Fire Potion NL in !BRW! turns."
   },
   "Flight_Feint": {
     "NAME": "Flight Feint",
@@ -80,7 +80,7 @@
   },
   "How_To_Warm_Elephants": {
     "NAME": "How To Warm Elephants",
-    "DESCRIPTION": "Brew an NL Explosive Potion NL in !M! -X turns."
+    "DESCRIPTION": "Brew an NL Explosive Potion NL in !BRW! -X turns."
   },
   "On_The_Head": {
     "NAME": "On The Head",
@@ -96,7 +96,7 @@
   },
   "Quackster": {
     "NAME": "Quackster",
-    "DESCRIPTION": "Brew a random Potion in !M! turns."
+    "DESCRIPTION": "Brew a random Potion in !BRW! turns."
   },
   "Salty_Strike": {
     "NAME": "Salty Strike",
@@ -120,6 +120,6 @@
   },
   "Taste_This_One": {
     "NAME": "Taste This One",
-    "DESCRIPTION": "Whenever you use a potion, apply !M! Poison to ALL enemies."
+    "DESCRIPTION": "Whenever you use a potion, apply !M! Poison to a random enemy."
   }
 }

@@ -20,6 +20,7 @@ import basemod.abstracts.CustomCard;
 import sagemod.SageMod;
 import sagemod.actions.LoseXEnergyAction;
 import sagemod.character.SageColorEnum;
+import sagemod.powers.Brewing;
 import sagemod.powers.SageFlight;
 
 public abstract class AbstractSageCard extends CustomCard {
@@ -31,10 +32,44 @@ public abstract class AbstractSageCard extends CustomCard {
 	private static final String PREFIX = "sage/cards/";
 	private static final String POSTFIX = ".png";
 
+	public int baseBrewIn = 0;
+	public int brewIn = 0;
+	public boolean upgradedBrewIn;
+	public boolean isBrewInModified;
+
 	public AbstractSageCard(String id, String name, int cost, String rawDescription, CardType type, CardRarity rarity,
 			CardTarget target) {
 		super(id, name, SageMod.getExistingOrPlaceholder(PREFIX, id, POSTFIX), cost, rawDescription, type,
 				SageColorEnum.THE_SAGE, rarity, target);
+	}
+
+	public void initBrewIn(int value) {
+		baseBrewIn = value;
+		brewIn = value;
+	}
+
+	public void upgradeBrewIn(int by) {
+		baseBrewIn += by;
+		brewIn = baseBrewIn;
+		upgradedBrewIn = true;
+	}
+
+	@Override
+	public void applyPowers() {
+		super.applyPowers();
+		isBrewInModified = false;
+
+		if (player().hasPower(Brewing.POWER_ID)) {
+
+			int amount = player().getPower(Brewing.POWER_ID).amount;
+
+			if (amount > 0) {
+
+				isBrewInModified = true;
+				brewIn = Math.max(0, baseBrewIn - amount);
+
+			}
+		}
 	}
 
 	/**
@@ -42,12 +77,12 @@ public abstract class AbstractSageCard extends CustomCard {
 	 */
 	protected void attack(AbstractMonster m, AttackEffect effect) {
 		AbstractDungeon.actionManager
-				.addToBottom(new DamageAction(m, new DamageInfo(player(), damage, damageTypeForTurn), effect));
+		.addToBottom(new DamageAction(m, new DamageInfo(player(), damage, damageTypeForTurn), effect));
 	}
 
 	protected void attackAllEnemies(AttackEffect effect) {
 		AbstractDungeon.actionManager
-				.addToBottom(new DamageAllEnemiesAction(player(), multiDamage, damageTypeForTurn, effect));
+		.addToBottom(new DamageAllEnemiesAction(player(), multiDamage, damageTypeForTurn, effect));
 	}
 
 	/**

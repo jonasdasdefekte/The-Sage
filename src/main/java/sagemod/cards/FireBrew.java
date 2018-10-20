@@ -29,7 +29,7 @@ public class FireBrew extends AbstractSageCard {
 	public FireBrew() {
 		super(ID, NAME, COST, DESCRIPTION, TYPE, RARITY, TARGET);
 		baseDamage = ATTACK_DMG;
-		baseMagicNumber = magicNumber = BREW_IN;
+		initBrewIn(BREW_IN);
 
 	}
 
@@ -38,7 +38,7 @@ public class FireBrew extends AbstractSageCard {
 		if (!upgraded) {
 			upgradeName();
 			upgradeDamage(UPGRADE_ATTACK_DMG);
-			upgradeMagicNumber(UPGRADE_BREW_IN);
+			upgradeBrewIn(UPGRADE_BREW_IN);
 		}
 	}
 
@@ -50,7 +50,7 @@ public class FireBrew extends AbstractSageCard {
 	@Override
 	public void use(AbstractPlayer p, AbstractMonster m) {
 		attack(m, AttackEffect.BLUNT_LIGHT);
-		Brew.addPotion(magicNumber, new FirePotion(), p);
+		Brew.addPotion(brewIn, new FirePotion(), p);
 	}
 
 }

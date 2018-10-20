@@ -15,23 +15,17 @@ public class TasteThisOneListener implements PostPotionUseSubscriber {
 	@Override
 	public void receivePostPotionUse(AbstractPotion p) {
 		if (AbstractDungeon.player.hasPower(TasteThisOnePower.POWER_ID)) {
-			boolean actuallyDidSomething = false;
 			AbstractPower power = AbstractDungeon.player.getPower(TasteThisOnePower.POWER_ID);
+			AbstractMonster m = AbstractDungeon.getRandomMonster();
 
-			for (AbstractMonster m : AbstractDungeon.getCurrRoom().monsters.monsters) {
-				if (m.isDying || m.currentHealth <= 0 || m.isEscaping) {
-					continue;
-				}
-				actuallyDidSomething = true;
-				int amount = power.amount;
+			if (!m.isDying && m.currentHealth > 0 && !m.isEscaping) {
+
 				AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(m, AbstractDungeon.player,
-						new PoisonPower(m, AbstractDungeon.player, amount), amount));
+						new PoisonPower(m, AbstractDungeon.player, power.amount), power.amount));
+
+				power.flash();
 			}
 
-			if (actuallyDidSomething) {
-				power.flash();
-				// TODO play potion sound
-			}
 		}
 	}
 

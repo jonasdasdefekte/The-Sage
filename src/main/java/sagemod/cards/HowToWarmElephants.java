@@ -25,14 +25,14 @@ public class HowToWarmElephants extends AbstractSageCard {
 
 	public HowToWarmElephants() {
 		super(ID, NAME, COST, DESCRIPTION, TYPE, RARITY, TARGET);
-		baseMagicNumber = magicNumber = TURNS;
+		initBrewIn(TURNS);
 	}
 
 	@Override
 	public void upgrade() {
 		if (!upgraded) {
 			upgradeName();
-			upgradeMagicNumber(UPGRADE_TURNS);
+			upgradeBrewIn(UPGRADE_TURNS);
 		}
 	}
 
@@ -43,7 +43,7 @@ public class HowToWarmElephants extends AbstractSageCard {
 
 	@Override
 	public void use(AbstractPlayer p, AbstractMonster m) {
-		int turns = Math.max(0, magicNumber - getXEffect());
+		int turns = Math.max(0, brewIn - getXEffect());
 
 		Brew.addPotion(turns, new ExplosivePotion(), p);
 
