@@ -61,6 +61,8 @@ import sagemod.character.TheSage;
 import sagemod.listeners.TasteThisOneListener;
 import sagemod.listeners.ThirstyListener;
 import sagemod.patches.MiscDynamicVariable;
+import sagemod.potions.FataMorgana;
+import sagemod.potions.FlightPotion;
 import sagemod.relics.FlyingCarpet;
 
 @SpireInitializer
@@ -145,6 +147,7 @@ public class SageMod implements EditCharactersSubscriber, EditCardsSubscriber, E
 		BaseMod.addCard(new HowToMurderAnts());
 		BaseMod.addCard(new Escape());
 		BaseMod.addCard(new Accumulation());
+
 	}
 
 	@Override
@@ -199,6 +202,14 @@ public class SageMod implements EditCharactersSubscriber, EditCardsSubscriber, E
 		Texture badgeTexture = new Texture(Gdx.files.internal("sage/mod-badge.png"));
 		ModPanel panel = new ModPanel();
 		BaseMod.registerModBadge(badgeTexture, TheSage.NAME, AUTHORS, TheSage.DESC, panel);
+
+		SageMod.logger.info("Adding Potions for TheSage");
+		// character specific: The Sage
+		BaseMod.addPotion(FlightPotion.class, FlightPotion.LIQUID_COLOR, FlightPotion.HYBRID_COLOR,
+				FlightPotion.SPOTS_COLOR, FlightPotion.POTION_ID, SageCharEnum.THE_SAGE);
+		// all characters
+		BaseMod.addPotion(FataMorgana.class, FataMorgana.LIQUID_COLOR, FataMorgana.HYBRID_COLOR,
+				FataMorgana.SPOTS_COLOR, FataMorgana.POTION_ID);
 	}
 
 }
