@@ -44,6 +44,7 @@ import sagemod.cards.FlightFeint;
 import sagemod.cards.Fly;
 import sagemod.cards.FlyingCauldron;
 import sagemod.cards.GearwheelMaster;
+import sagemod.cards.HowToAmuseSneckos;
 import sagemod.cards.HowToBefriendATurtle;
 import sagemod.cards.HowToFeedApes;
 import sagemod.cards.HowToGreetByrds;
@@ -178,6 +179,7 @@ EditStringsSubscriber, PostInitializeSubscriber, EditKeywordsSubscriber {
 		BaseMod.addCard(new Escape());
 		BaseMod.addCard(new Accumulation());
 		BaseMod.addCard(new AntiAncientAttack());
+		BaseMod.addCard(new HowToAmuseSneckos());
 
 	}
 

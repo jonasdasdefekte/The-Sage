@@ -72,6 +72,11 @@
     "NAME": "Gearwheel Master",
     "DESCRIPTION": "EVERYBODY gains !M! Artifact. NL Exhaust."
   },
+  "How_To_Amuse_Sneckos": {
+    "NAME": "How To Amuse Sneckos",
+    "DESCRIPTION": "Gain X [E]. NL Draw X cards. NL Gain !M! -X Frail. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Gain X + !MISC! [E]. NL Draw X + !MISC! cards. NL Gain !M! -X Frail. NL Exhaust."
+  },
   "How_To_Befriend_A_Turtle": {
     "NAME": "How To Befriend A Turtle",
     "DESCRIPTION": "Gain X Block. NL Gain X [E].",
