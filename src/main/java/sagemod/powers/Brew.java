@@ -122,7 +122,8 @@ public class Brew extends AbstractSagePower {
 			}
 		}
 		if (openScreen) {
-			AbstractDungeon.combatRewardScreen.open("You brewed some potions!");
+			String title = collection.size() == 1 ? "You brewed a potion!" : "You brewed some potions!";
+			AbstractDungeon.combatRewardScreen.open(title);
 			AbstractDungeon.combatRewardScreen.rewards.removeIf(i -> i.type != RewardType.POTION);
 			AbstractDungeon.getCurrRoom().rewardPopOutTimer = 0;
 		}
