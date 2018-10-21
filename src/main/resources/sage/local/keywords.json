@@ -15,19 +15,19 @@
     "NAMES": [
       "brew"
     ],
-    "DESCRIPTION": "Obtain a potion in X turns."
+    "DESCRIPTION": "Obtain a potion after a specific amount of turns."
   },
   "BREWING": {
     "NAMES": [
       "brewing"
     ],
-    "DESCRIPTION": "You brew potions X turns quicker."
+    "DESCRIPTION": "You need less turns to brew potionsr."
   },
   "DISORIENTED": {
     "NAMES": [
       "disoriented"
     ],
-    "DESCRIPTION": "The first Attack of this Enemy has no effect, for X turns."
+    "DESCRIPTION": "The first Attack of this Enemy has no effect."
   },
   "FLIGHT": {
     "NAMES": [

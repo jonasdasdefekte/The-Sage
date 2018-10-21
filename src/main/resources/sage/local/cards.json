@@ -37,7 +37,7 @@
   },
   "Burning_Flask": {
     "NAME": "Burning Flask",
-    "DESCRIPTION": "Discard a NL random Potion. NL Deal !D! damage. "
+    "DESCRIPTION": "If you have potions, discard one at random and deal !D! damage. "
   },
   "Catch_Me_If_You_Can": {
     "NAME": "Catch Me If You Can",
@@ -75,7 +75,7 @@
   },
   "How_To_Feed_Apes": {
     "NAME": "How To Feed Apes",
-    "DESCRIPTION": "Brew one of the NL possible Potions NL in !BRW! -X turns.."
+    "DESCRIPTION": "Brew one of the NL possible Potions NL in !BRW! -X turns."
   },
   "How_To_Murder_Ants": {
     "NAME": "How To Murder Ants",
