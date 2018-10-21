@@ -21,7 +21,7 @@ public class MechanicsBreak extends AbstractSageCard {
 
 	private static final int BLOCK_AMT = 10;
 	private static final int UPGRADE_BLOCK_AMT = 3;
-	private static final int ARTIFACT_GAIN = 4;
+	private static final int ARTIFACT_GAIN = 1;
 
 	public MechanicsBreak() {
 		super(ID, NAME, COST, DESCRIPTION, TYPE, RARITY, TARGET);

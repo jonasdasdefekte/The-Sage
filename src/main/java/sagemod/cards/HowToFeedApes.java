@@ -46,6 +46,7 @@ public class HowToFeedApes extends AbstractSageCard {
 	public HowToFeedApes() {
 		super(ID, NAME, COST, DESCRIPTION, TYPE, RARITY, TARGET);
 		initBrewIn(TURNS);
+		exhaust = true;
 	}
 
 

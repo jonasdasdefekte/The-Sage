@@ -4,9 +4,12 @@ import com.megacrit.cardcrawl.actions.AbstractGameAction.AttackEffect;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
+import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.FrailPower;
+
+import sagemod.actions.AttackForEveryStackOfPowerAction;
 
 public class TurnAround extends AbstractSageCard {
 
@@ -44,15 +47,10 @@ public class TurnAround extends AbstractSageCard {
 
 	@Override
 	public void use(AbstractPlayer p, AbstractMonster m) {
-		// start with frail amount you would gain
-		int times = magicNumber;
-		if (p.hasPower(FrailPower.POWER_ID)) {
-			times += p.getPower(FrailPower.POWER_ID).amount;
-		}
 		applyPowerToSelf(new FrailPower(p, magicNumber, false));
-		for (int i = 0; i < times; i++) {
-			attack(m, AttackEffect.SLASH_DIAGONAL);
-		}
+		AbstractDungeon.actionManager.addToBottom(
+				new AttackForEveryStackOfPowerAction(p, m, FrailPower.POWER_ID, AttackEffect.BLUNT_HEAVY, damage,
+						damageTypeForTurn));
 	}
 
 	@Override
