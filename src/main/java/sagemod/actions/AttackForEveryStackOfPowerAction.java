@@ -22,6 +22,7 @@ public class AttackForEveryStackOfPowerAction extends AbstractGameAction {
 		this.source = source;
 		this.target = target;
 		this.powerId = powerId;
+		this.effect = effect;
 		damageType = type;
 		baseDamage = damage;
 	}
