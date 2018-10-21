@@ -1,6 +1,7 @@
 package sagemod.powers;
 
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.Collections;
 
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
@@ -10,6 +11,8 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.potions.AbstractPotion;
+import com.megacrit.cardcrawl.potions.PotionSlot;
+import com.megacrit.cardcrawl.rewards.RewardItem.RewardType;
 
 public class Brew extends AbstractSagePower {
 
@@ -28,23 +31,16 @@ public class Brew extends AbstractSagePower {
 	@Override
 	public void atStartOfTurn() {
 		ArrayList<Potion> toRemove = new ArrayList<>();
+		AbstractDungeon.getCurrRoom().rewards.clear();
 		potions.forEach(p -> {
 			if (p.turns-- <= 1) {
 				toRemove.add(p);
-				AbstractDungeon.player.obtainPotion(p.potion);
-				// TODO maybe if player can not gain potion let him use or discard it or just
-				// increase the turns by 1 again and let the player say something
-				// OR: rewardscreen
 			}
 		});
 		if (!toRemove.isEmpty()) {
-			flash();
+			obtain(toRemove);
 		}
 		potions.removeAll(toRemove);
-		// play a sound if the player gained a potion
-		if (!toRemove.isEmpty()) {
-			AbstractPotion.playPotionSound();
-		}
 		Collections.sort(potions);
 		if (potions.isEmpty()) {
 			AbstractDungeon.actionManager.addToBottom(new RemoveSpecificPowerAction(owner, owner, this));
@@ -98,6 +94,31 @@ public class Brew extends AbstractSagePower {
 			}
 		}
 		description = builder.toString();
+	}
+
+	private void obtain(Collection<Potion> collection) {
+		int freeSlots = 0;
+		for (AbstractPotion p : AbstractDungeon.player.potions) {
+			if (p instanceof PotionSlot) {
+				freeSlots++;
+			}
+		}
+
+		boolean openScreen = freeSlots < collection.size();
+
+		for (Potion p : collection) {
+			if (openScreen) {
+				AbstractDungeon.getCurrRoom().addPotionToRewards(p.potion);
+			} else {
+				AbstractDungeon.player.obtainPotion(p.potion);
+			}
+		}
+		if (openScreen) {
+			AbstractDungeon.combatRewardScreen.open("You brewed some potions!");
+			AbstractDungeon.combatRewardScreen.rewards.removeIf(i -> i.type != RewardType.POTION);
+			AbstractDungeon.getCurrRoom().rewardPopOutTimer = 0;
+		}
+		flash();
 	}
 
 	private String getNameInRed(String name) {
@@ -157,13 +178,9 @@ public class Brew extends AbstractSagePower {
 
 		Brew power = (Brew) AbstractDungeon.player.getPower(Brew.POWER_ID);
 
-		for (Potion p : power.potions) {
-			AbstractDungeon.player.obtainPotion(p.potion);
-		}
+		power.obtain(power.potions);
 
 		power.potions.clear();
-
-		power.flash();
 
 		AbstractDungeon.actionManager.addToBottom(new RemoveSpecificPowerAction(power.owner, power.owner, power));
 	}
