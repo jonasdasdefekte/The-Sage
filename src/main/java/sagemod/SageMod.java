@@ -60,6 +60,7 @@ import sagemod.cards.SaltyStrike;
 import sagemod.cards.Slalom;
 import sagemod.cards.StepBack;
 import sagemod.cards.StrikeSage;
+import sagemod.cards.Study;
 import sagemod.cards.SwoopDown;
 import sagemod.cards.TasteThisOne;
 import sagemod.cards.TurnAround;
@@ -159,6 +160,7 @@ EditStringsSubscriber, PostInitializeSubscriber, EditKeywordsSubscriber {
 		BaseMod.addCard(new HowToWakeLyons());
 		BaseMod.addCard(new HowToFeedApes());
 		BaseMod.addCard(new PerpetuumMobile());
+		BaseMod.addCard(new Study());
 
 		// Rare
 		BaseMod.addCard(new Bookworm());

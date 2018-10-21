@@ -105,7 +105,7 @@
   "Perpetuum_Mobile": {
     "NAME": "Perpetuum Mobile",
     "DESCRIPTION": "Draw !M! card. NL Play it if it costs !MISC!.",
-    "UPGRADE_DESCRIPTION": "Draw !M! card. NL Gain [E] it costs !MISC!."
+    "UPGRADE_DESCRIPTION": "Draw !M! card. NL Gain [E] if it costs !MISC!."
   },
   "Pincer_Attack": {
     "NAME": "Pincer Attack",
@@ -138,6 +138,11 @@
   "Strike_Sage": {
     "NAME": "Strike",
     "DESCRIPTION": "Deal !D! damage."
+  },
+  "Study": {
+    "NAME": "Study",
+    "DESCRIPTION": "Draw !M! cards. Put !MISC! card from your hand on top of your draw pile.",
+    "UPGRADE_DESCRIPTION": "Draw !M! cards. You may put !MISC! card from your hand on top of your draw pile."
   },
   "Swoop_Down": {
     "NAME": "Swoop Down",

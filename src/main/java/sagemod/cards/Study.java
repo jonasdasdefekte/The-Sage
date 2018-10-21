@@ -7,32 +7,38 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
-import sagemod.actions.PerpetuumMobileAction;
+import sagemod.actions.HandToTopOfDrawPileAction;
 
-public class PerpetuumMobile extends AbstractSageCard {
+public class Study extends AbstractSageCard {
 
-	public static final String ID = "Perpetuum_Mobile";
+	public static final String ID = "Study";
 	private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
 	public static final String NAME = cardStrings.NAME;
-	private static final int COST = 0;
+	private static final int COST = 1;
 	public static final String DESCRIPTION = cardStrings.DESCRIPTION;
 	private static final CardType TYPE = CardType.SKILL;
 	private static final CardRarity RARITY = CardRarity.UNCOMMON;
 	private static final CardTarget TARGET = CardTarget.SELF;
 
-	private static final int DRAW_AMT = 1;
-	private static final int FOR_COST = 1;
+	private static final int DRAW_AMT = 3;
+	private static final int PUT_ON_TOP_MAX = 1;
+	private static final int PUT_ON_TOP_MIN = 1;
+	private static final int UPGRADED_MIN = 0;
 
-	public PerpetuumMobile() {
+	int min;
+
+	public Study() {
 		super(ID, NAME, COST, DESCRIPTION, TYPE, RARITY, TARGET);
 		baseMagicNumber = magicNumber = DRAW_AMT;
-		misc = FOR_COST;
+		misc = PUT_ON_TOP_MAX;
+		min = PUT_ON_TOP_MIN;
 	}
 
 	@Override
 	public void upgrade() {
 		if (!upgraded) {
 			upgradeName();
+			min = UPGRADED_MIN;
 			rawDescription = cardStrings.UPGRADE_DESCRIPTION;
 			initializeDescription();
 		}
@@ -40,14 +46,13 @@ public class PerpetuumMobile extends AbstractSageCard {
 
 	@Override
 	public AbstractCard makeCopy() {
-		return new PerpetuumMobile();
+		return new Study();
 	}
 
 	@Override
 	public void use(AbstractPlayer p, AbstractMonster m) {
-		AbstractDungeon.actionManager.addToBottom(new PerpetuumMobileAction(
-				AbstractDungeon.getCurrRoom().monsters.getRandomMonster(null, true, AbstractDungeon.cardRng), misc,
-				upgraded));
+		draw(magicNumber);
+		AbstractDungeon.actionManager.addToBottom(new HandToTopOfDrawPileAction(min, misc, false));
 	}
 
 	@Override
