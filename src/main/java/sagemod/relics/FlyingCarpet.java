@@ -16,7 +16,7 @@ public class FlyingCarpet extends AbstractSageRelic {
 	}
 
 	@Override
-	public void atBattleStart() {
+	public void atBattleStartPreDraw() {
 		applyPowerToSelf(new SageFlight(player(), FLY_AMT));
 	}
 
