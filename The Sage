@@ -119,9 +119,9 @@ DONE:	Mechanics Break
 DONE:	Spoiled Food
 		Skill, 1 (0) Energy:
 		Apply 99 Thirsty. Exhaust.
-	How To Greet Byrds
+DONE:	How To Greet Byrds
 		Skill, X Energy:
-		Set your Flight to X. (Gain X Flight.) Innate. Exhaust.
+		Innate. Set your Flight to X. (Gain X Flight.) Exhaust.
 DONE:	Altitude
 		Power, 1 Energy: 
 		Gain 2(3) Flight.

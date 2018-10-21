@@ -46,6 +46,7 @@ import sagemod.cards.FlyingCauldron;
 import sagemod.cards.GearwheelMaster;
 import sagemod.cards.HowToBefriendATurtle;
 import sagemod.cards.HowToFeedApes;
+import sagemod.cards.HowToGreetByrds;
 import sagemod.cards.HowToMurderAnts;
 import sagemod.cards.HowToPokeAtSlimes;
 import sagemod.cards.HowToTalkToSpiders;
@@ -169,6 +170,7 @@ EditStringsSubscriber, PostInitializeSubscriber, EditKeywordsSubscriber {
 		BaseMod.addCard(new Lunchtime());
 		BaseMod.addCard(new MechanicsBreak());
 		BaseMod.addCard(new SpoiledFood());
+		BaseMod.addCard(new HowToGreetByrds());
 
 		// Rare
 		BaseMod.addCard(new Bookworm());
