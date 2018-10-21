@@ -110,9 +110,9 @@ DONE:	Study
 DONE:	Flying Cauldron
 		Skill, 1 (0) Energy: 
 		If you are flying, gain 1 Brewing. Otherwise, gain 1 Flight. Exhaust.
-	Lunchtime!
+DONE:	Lunchtime!
 		Skill, 1 Energy: 
-		If you are flying, lose 2 Flight and brew all potions immediately.
+		If you are flying, lose 2 (1) Flight and brew all potions immediately.
 	Mechanics Break
 		Skill, 1 Energy:
 		Gain 10 (13) Block. ALL Enemies gain 4 Artifact.

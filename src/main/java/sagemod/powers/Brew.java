@@ -5,7 +5,6 @@ import java.util.Collections;
 
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
-import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
@@ -32,16 +31,15 @@ public class Brew extends AbstractSagePower {
 		potions.forEach(p -> {
 			if (p.turns-- <= 1) {
 				toRemove.add(p);
-				if (owner instanceof AbstractPlayer) {
-					AbstractPlayer player = (AbstractPlayer) owner;
-					player.obtainPotion(p.potion);
-					flash();
-					// TODO maybe if player can not gain potion let him use or discard it or just
-					// increase the turns by 1 again and let the player say something
-					// OR: rewardscreen
-				}
+				AbstractDungeon.player.obtainPotion(p.potion);
+				// TODO maybe if player can not gain potion let him use or discard it or just
+				// increase the turns by 1 again and let the player say something
+				// OR: rewardscreen
 			}
 		});
+		if (!toRemove.isEmpty()) {
+			flash();
+		}
 		potions.removeAll(toRemove);
 		// play a sound if the player gained a potion
 		if (!toRemove.isEmpty()) {
@@ -149,6 +147,25 @@ public class Brew extends AbstractSagePower {
 				power.addPotionToQueue(turns, potion);
 			}
 		}
+	}
+
+	public static void brewAllPotions() {
+		// return if the player does not have potions to brew
+		if (!AbstractDungeon.player.hasPower(Brew.POWER_ID)) {
+			return;
+		}
+
+		Brew power = (Brew) AbstractDungeon.player.getPower(Brew.POWER_ID);
+
+		for (Potion p : power.potions) {
+			AbstractDungeon.player.obtainPotion(p.potion);
+		}
+
+		power.potions.clear();
+
+		power.flash();
+
+		AbstractDungeon.actionManager.addToBottom(new RemoveSpecificPowerAction(power.owner, power.owner, power));
 	}
 
 	class Potion implements Comparable<Potion> {

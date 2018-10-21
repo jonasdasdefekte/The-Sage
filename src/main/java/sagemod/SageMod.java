@@ -51,6 +51,7 @@ import sagemod.cards.HowToPokeAtSlimes;
 import sagemod.cards.HowToTalkToSpiders;
 import sagemod.cards.HowToWakeLyons;
 import sagemod.cards.HowToWarmElephants;
+import sagemod.cards.Lunchtime;
 import sagemod.cards.OnTheHead;
 import sagemod.cards.PerpetuumMobile;
 import sagemod.cards.PincerAttack;
@@ -163,6 +164,7 @@ EditStringsSubscriber, PostInitializeSubscriber, EditKeywordsSubscriber {
 		BaseMod.addCard(new PerpetuumMobile());
 		BaseMod.addCard(new Study());
 		BaseMod.addCard(new FlyingCauldron());
+		BaseMod.addCard(new Lunchtime());
 
 		// Rare
 		BaseMod.addCard(new Bookworm());

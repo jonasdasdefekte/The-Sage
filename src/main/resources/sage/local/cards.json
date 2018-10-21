@@ -102,6 +102,10 @@
     "NAME": "How To Warm Elephants",
     "DESCRIPTION": "Brew an NL Explosive Potion NL in !BRW! -X turns."
   },
+  "Lunchtime": {
+    "NAME": "Lunchtime!",
+    "DESCRIPTION": "If you are flying: Lose !M! Flight and brew all potions immediately."
+  },
   "On_The_Head": {
     "NAME": "On The Head",
     "DESCRIPTION": "Deal !D! damage. NL If you are flying: NL Draw !M! card NL and gain [E]."
