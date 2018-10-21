@@ -62,7 +62,11 @@
   },
   "Fly": {
     "NAME": "Fly",
-    "DESCRIPTION": "If you don't fly: NL Gain !M! Flight."
+    "DESCRIPTION": "If you aren't flying: NL Gain !M! Flight."
+  },
+  "Flying_Cauldron": {
+    "NAME": "Flying Cauldron",
+    "DESCRIPTION": "If you are flying: Gain !M! Brewing. Otherwise: Gain !M! Flight. NL Exhaust."
   },
   "Gearwheel_Master": {
     "NAME": "Gearwheel Master",

@@ -107,9 +107,9 @@ DONE:	Perpetuum Mobile
 DONE:	Study
 		Skill, 1 Energy: 
 		Draw 3 cards and (you may) put one card from your hand hand on top of your deck. 
-	Flying Cauldron
+DONE:	Flying Cauldron
 		Skill, 1 (0) Energy: 
-		If you are flying, gain 1 Brewing. Otherwise, gain 1 Flight.
+		If you are flying, gain 1 Brewing. Otherwise, gain 1 Flight. Exhaust.
 	Lunchtime!
 		Skill, 1 Energy: 
 		If you are flying, lose 2 Flight and brew all potions immediately.

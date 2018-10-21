@@ -42,6 +42,7 @@ import sagemod.cards.Escape;
 import sagemod.cards.FireBrew;
 import sagemod.cards.FlightFeint;
 import sagemod.cards.Fly;
+import sagemod.cards.FlyingCauldron;
 import sagemod.cards.GearwheelMaster;
 import sagemod.cards.HowToBefriendATurtle;
 import sagemod.cards.HowToFeedApes;
@@ -161,6 +162,7 @@ EditStringsSubscriber, PostInitializeSubscriber, EditKeywordsSubscriber {
 		BaseMod.addCard(new HowToFeedApes());
 		BaseMod.addCard(new PerpetuumMobile());
 		BaseMod.addCard(new Study());
+		BaseMod.addCard(new FlyingCauldron());
 
 		// Rare
 		BaseMod.addCard(new Bookworm());
