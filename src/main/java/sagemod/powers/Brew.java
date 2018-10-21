@@ -21,6 +21,8 @@ public class Brew extends AbstractSagePower {
 	public static final String NAME = powerStrings.NAME;
 	public static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;
 
+	public static boolean isBrewRewards;
+
 	private ArrayList<Potion> potions;
 
 	public Brew(AbstractCreature owner, int amount) {
@@ -31,7 +33,7 @@ public class Brew extends AbstractSagePower {
 	@Override
 	public void atStartOfTurn() {
 		ArrayList<Potion> toRemove = new ArrayList<>();
-		AbstractDungeon.getCurrRoom().rewards.clear();
+		removePotionsFromRewards();
 		potions.forEach(p -> {
 			if (p.turns-- <= 1) {
 				toRemove.add(p);
@@ -48,6 +50,11 @@ public class Brew extends AbstractSagePower {
 			amount = potions.get(0).turns;
 		}
 		updateDescription();
+	}
+
+	public static void removePotionsFromRewards() {
+		AbstractDungeon.getCurrRoom().rewards.removeIf(i -> i.type == RewardType.POTION);
+		AbstractDungeon.combatRewardScreen.rewards.removeIf(i -> i.type == RewardType.POTION);
 	}
 
 	@Override
@@ -105,6 +112,7 @@ public class Brew extends AbstractSagePower {
 		}
 
 		boolean openScreen = freeSlots < collection.size();
+		isBrewRewards = openScreen;
 
 		for (Potion p : collection) {
 			if (openScreen) {
@@ -171,6 +179,7 @@ public class Brew extends AbstractSagePower {
 	}
 
 	public static void brewAllPotions() {
+		removePotionsFromRewards();
 		// return if the player does not have potions to brew
 		if (!AbstractDungeon.player.hasPower(Brew.POWER_ID)) {
 			return;
