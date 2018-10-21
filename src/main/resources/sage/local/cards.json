@@ -143,6 +143,10 @@
     "NAME": "Slalom",
     "DESCRIPTION": "Gain !B! Block. NL Gain !M! Frail."
   },
+  "Spoiled_Food": {
+    "NAME": "Spoiled Food",
+    "DESCRIPTION": "Apply !M! Thirsty. NL Exhaust."
+  },
   "Step_Back": {
     "NAME": "Step Back",
     "DESCRIPTION": "If you are flying: NL Gain !B! Block. NL Otherwise: NL Gain !M! Flight."

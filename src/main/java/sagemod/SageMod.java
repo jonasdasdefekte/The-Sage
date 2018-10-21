@@ -61,6 +61,7 @@ import sagemod.cards.PourTarPitch;
 import sagemod.cards.Quackster;
 import sagemod.cards.SaltyStrike;
 import sagemod.cards.Slalom;
+import sagemod.cards.SpoiledFood;
 import sagemod.cards.StepBack;
 import sagemod.cards.StrikeSage;
 import sagemod.cards.Study;
@@ -167,6 +168,7 @@ EditStringsSubscriber, PostInitializeSubscriber, EditKeywordsSubscriber {
 		BaseMod.addCard(new FlyingCauldron());
 		BaseMod.addCard(new Lunchtime());
 		BaseMod.addCard(new MechanicsBreak());
+		BaseMod.addCard(new SpoiledFood());
 
 		// Rare
 		BaseMod.addCard(new Bookworm());
