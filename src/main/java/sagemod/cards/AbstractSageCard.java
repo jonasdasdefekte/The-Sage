@@ -7,6 +7,7 @@ import com.megacrit.cardcrawl.actions.common.DamageAllEnemiesAction;
 import com.megacrit.cardcrawl.actions.common.DrawCardAction;
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.actions.common.GainEnergyAction;
+import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.AbstractCreature;
@@ -98,6 +99,31 @@ public abstract class AbstractSageCard extends CustomCard {
 
 			initializeDescription();
 		}
+	}
+
+	@Override
+	public AbstractCard makeStatEquivalentCopy() {
+		AbstractCard card = super.makeStatEquivalentCopy();
+		if (card instanceof AbstractSageCard) {
+			SageMod.logger.info("makingStatEquivalentCopy of Brew card");
+			AbstractSageCard sageCard = (AbstractSageCard) card;
+			sageCard.brewIn = brewIn;
+			sageCard.baseBrewIn = baseBrewIn;
+			sageCard.isBrewInModified = isBrewInModified;
+			sageCard.upgradedBrewIn = upgradedBrewIn;
+			sageCard.usesBrewIn = usesBrewIn;
+			return sageCard;
+		}
+		SageMod.logger.info("makingStatEquivalentCopy of non Brew card");
+		return card;
+	}
+
+	@Override
+	public void resetAttributes() {
+		super.resetAttributes();
+		SageMod.logger.info("makingStatEquivalentCopy of Brew card");
+		brewIn = baseBrewIn;
+		isBrewInModified = false;
 	}
 
 	/**
