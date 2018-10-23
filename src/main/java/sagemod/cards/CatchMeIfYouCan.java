@@ -19,7 +19,7 @@ public class CatchMeIfYouCan extends AbstractSageCard {
 	private static final CardRarity RARITY = CardRarity.UNCOMMON;
 	private static final CardTarget TARGET = CardTarget.SELF;
 
-	private static final int AIRBORNE_GAIN = 3;
+	private static final int AIRBORNE_GAIN = 2;
 	private static final int UPGRADE_AIRBORNET_GAIN = 2;
 
 	public CatchMeIfYouCan() {

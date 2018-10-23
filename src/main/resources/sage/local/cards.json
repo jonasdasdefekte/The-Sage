@@ -1,7 +1,7 @@
 {
   "Accumulation": {
     "NAME": "Accumulation",
-    "DESCRIPTION": "If you are flying: Lose !M! Flight once and NL gain [E] at the start of each turn."
+    "DESCRIPTION": "Air. NL Lose !M! Flight once and NL gain [E] at the start of each turn."
   },
   "Altitude": {
     "NAME": "Altitude",
@@ -93,8 +93,8 @@
   },
   "How_To_Murder_Ants": {
     "NAME": "How To Murder Ants",
-    "DESCRIPTION": "If you are flying: Deal !D! damage to a random enemy X times.",
-    "UPGRADE_DESCRIPTION": "If you are flying: Deal !D! damage to a random enemy X + !M! times."
+    "DESCRIPTION": "Air. NL Deal !D! damage to a random enemy X times.",
+    "UPGRADE_DESCRIPTION": "Air. NL Deal !D! damage to a random enemy X + !M! times."
   },
   "How_To_Poke_At_Slimes": {
     "NAME": "How To Poke At Slimes",
@@ -114,7 +114,7 @@
   },
   "Lunchtime": {
     "NAME": "Lunchtime!",
-    "DESCRIPTION": "If you are flying: Lose !M! Flight and brew all potions immediately."
+    "DESCRIPTION": "Air. Lose !M! Flight and brew all potions immediately."
   },
   "Mechanics_Break": {
     "NAME": "Mechanics Break!",

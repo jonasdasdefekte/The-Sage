@@ -3,7 +3,7 @@
     "NAMES": [
       "air"
     ],
-    "DESCRIPTION": "Air effects only trigger when you have the Flight buff."
+    "DESCRIPTION": "This card can only be played if you have Flight."
   },
   "ARTIFACT": {
     "NAMES": [
