@@ -18,14 +18,14 @@ public class OnTheHead extends AbstractSageCard {
 	private static final CardRarity RARITY = CardRarity.COMMON;
 	private static final CardTarget TARGET = CardTarget.ENEMY;
 
-	private static final int ATTACK_DMG = 7;
-	private static final int UPGRADE_ATTACK_DMG = 3;
-	private static final int ENERGY_GAIN = 1;
+	private static final int ATTACK_DMG = 5;
+	private static final int UPGRADE_ATTACK_DMG = 2;
+	private static final int DRAW_AND_ENERGY_GAIN = 1;
 
 	public OnTheHead() {
 		super(ID, NAME, COST, DESCRIPTION, TYPE, RARITY, TARGET);
 		baseDamage = ATTACK_DMG;
-		baseMagicNumber = magicNumber = ENERGY_GAIN;
+		baseMagicNumber = magicNumber = DRAW_AND_ENERGY_GAIN;
 
 	}
 
@@ -46,6 +46,7 @@ public class OnTheHead extends AbstractSageCard {
 	public void use(AbstractPlayer p, AbstractMonster m) {
 		attack(m, AttackEffect.SLASH_HORIZONTAL);
 		if (isFlying()) {
+			draw(magicNumber);
 			gainEnergy(magicNumber);
 		}
 	}
