@@ -24,13 +24,10 @@ DONE:	1x Fly (illustriert)
 		Skill, 2 (1) Energy: 
 		If you don't fly, gain 1 Flight.
 
-13 Common Cards (grey)
+12 Common Cards (grey)
 DONE:	Pincer Repair (illustriert)
 		Attack, 1 Energy
 		Deal 9 (12) damage. The enemy gains 1 Artifact.
-CHANGED:	On the Head (illustriert)
-		Attack, 1 Energy:
-		Deal 7 (10) damage. If you are flying, gain 1 Energy. (Keine Karte mehr!)
 DONE:	Fire Brew
 		Attack, 1 Energy: 
 		Deal 6 (9) damage. Gain a Fire potion in 4 (3) turns.
@@ -67,7 +64,10 @@ DONE:	Slalom
 
 
 
-21 Uncommon Cards (blue)
+22 Uncommon Cards (blue)
+DONE:	On the Head (illustriert)
+		Attack, 1 Energy:
+		Deal 5 (7) damage. If you are flying, draw 1 card and gain 1 Energy.
 DONE:	How to Murder Ants
 		Attack, X Energy:
 		Air. Deal 8 damage to a random enemy X (X+1) times.
@@ -84,11 +84,11 @@ DONE:	Pincer Attack
 		Attack, 1 Energy: 
 		Deal 6(8) damage. Deal 6 (8) damage per Artifact the enemy has.
 DONE:	Bouncing Strike
-		Attack, 1 Energy: 
-		Deal 5(8) damage. Gain 2 Frail. Gain 1 Flight.
+		Attack, 2 Energy: 
+		Deal 7(10) damage. Gain 2 Frail. Gain 1 Flight.
 DONE:	Turn Around
 		Attack, 2 Energy: 
-		Gain 2 Frail. Deal 8 (10) damage per Frail you have. 
+		Gain 1 Frail. Deal 8 (10) damage per Frail you have. 
 DONE:	Gearwheel Master (illustriert)
 		Skill, 0 Energy: 
 		EVERYBODY gains 1(2) Artifact. Exhaust.

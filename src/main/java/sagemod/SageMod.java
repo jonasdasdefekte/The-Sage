@@ -140,7 +140,6 @@ EditStringsSubscriber, PostInitializeSubscriber, EditKeywordsSubscriber {
 		// Common
 		BaseMod.addCard(new HowToWarmElephants());
 		BaseMod.addCard(new PincerRepair());
-		BaseMod.addCard(new OnTheHead());
 		BaseMod.addCard(new SwoopDown());
 		BaseMod.addCard(new FireBrew());
 		BaseMod.addCard(new ArmorBrew());
@@ -154,6 +153,7 @@ EditStringsSubscriber, PostInitializeSubscriber, EditKeywordsSubscriber {
 		BaseMod.addCard(new Slalom());
 
 		// Uncommon
+		BaseMod.addCard(new OnTheHead());
 		BaseMod.addCard(new Quackster());
 		BaseMod.addCard(new PourTarPitch());
 		BaseMod.addCard(new GearwheelMaster());

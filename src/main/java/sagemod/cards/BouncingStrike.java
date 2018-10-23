@@ -15,13 +15,13 @@ public class BouncingStrike extends AbstractSageCard {
 	public static final String ID = "Bouncing_Strike";
 	private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
 	public static final String NAME = cardStrings.NAME;
-	private static final int COST = 1;
+	private static final int COST = 2;
 	public static final String DESCRIPTION = cardStrings.DESCRIPTION;
 	private static final CardType TYPE = CardType.ATTACK;
 	private static final CardRarity RARITY = CardRarity.UNCOMMON;
 	private static final CardTarget TARGET = CardTarget.ENEMY;
 
-	private static final int ATTACK_DMG = 5;
+	private static final int ATTACK_DMG = 7;
 	private static final int UPGRADE_ATTACK_DMG = 3;
 	private static final int FRAIL_GAIN = 2;
 	private static final int FLIGHT_GAIN = 1;

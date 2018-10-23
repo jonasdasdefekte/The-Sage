@@ -24,7 +24,7 @@ public class TurnAround extends AbstractSageCard {
 
 	private static final int ATTACK_DMG = 8;
 	private static final int UPGRADE_ATTACK_DMG = 2;
-	private static final int FRAIL_GAIN = 2;
+	private static final int FRAIL_GAIN = 1;
 
 	public TurnAround() {
 		super(ID, NAME, COST, DESCRIPTION, TYPE, RARITY, TARGET);
