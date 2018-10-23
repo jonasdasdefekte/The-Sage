@@ -10,6 +10,7 @@ import org.apache.logging.log4j.Logger;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.Texture;
+import com.evacipated.cardcrawl.modthespire.Loader;
 import com.evacipated.cardcrawl.modthespire.lib.SpireInitializer;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
@@ -19,6 +20,7 @@ import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.localization.RelicStrings;
 
 import basemod.BaseMod;
+import basemod.ModButton;
 import basemod.ModPanel;
 import basemod.interfaces.EditCardsSubscriber;
 import basemod.interfaces.EditCharactersSubscriber;
@@ -234,6 +236,11 @@ EditStringsSubscriber, PostInitializeSubscriber, EditKeywordsSubscriber {
 	public void receivePostInitialize() {
 		Texture badgeTexture = new Texture(Gdx.files.internal("sage/mod-badge.png"));
 		ModPanel panel = new ModPanel();
+		if (Loader.DEBUG) {
+			panel.addUIElement(new ModButton(400, 400, panel, b -> {
+				StatAnalyzer.printStatsForAllCharacters();
+			}));
+		}
 		BaseMod.registerModBadge(badgeTexture, TheSage.NAME, AUTHORS, TheSage.DESC, panel);
 
 		SageMod.logger.info("Adding Potions for TheSage");
@@ -244,5 +251,6 @@ EditStringsSubscriber, PostInitializeSubscriber, EditKeywordsSubscriber {
 		BaseMod.addPotion(FataMorgana.class, FataMorgana.LIQUID_COLOR, FataMorgana.HYBRID_COLOR,
 				FataMorgana.SPOTS_COLOR, FataMorgana.POTION_ID);
 	}
+
 
 }
