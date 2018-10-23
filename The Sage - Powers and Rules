@@ -3,6 +3,8 @@ The Sage - Powers and Rules
 Flight
 	Buff
 	Reduce Attack damage taken by 50%. Cancelled if dealt Attack damage X times in one turn.
+Air
+	This card can only be played if you have Flight.
 Brew
 	You obtain a Potion in X turns, either now (X=0) or at the start of that turn. If you don't have empty potion slots at that point, you choose which potions to keep.
 Brewing (Buff)	

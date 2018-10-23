@@ -28,9 +28,9 @@ DONE:	1x Fly (illustriert)
 DONE:	Pincer Repair (illustriert)
 		Attack, 1 Energy
 		Deal 9 (12) damage. The enemy gains 1 Artifact.
-DONE:	On the Head (illustriert)
+CHANGED:	On the Head (illustriert)
 		Attack, 1 Energy:
-		Deal 7 (10) damage. If you are flying, gain 1 Energy.
+		Deal 7 (10) damage. If you are flying, gain 1 Energy. (Keine Karte mehr!)
 DONE:	Fire Brew
 		Attack, 1 Energy: 
 		Deal 6 (9) damage. Gain a Fire potion in 4 (3) turns.
@@ -49,9 +49,9 @@ DONE:	Armor Brew
 DONE:	How To Befriend A Turtle
 		Skill, X Energy:
 		Gain X (X+3) Block. Gain X Energy.
-DONE:	Catch me if you can
+CHANGED:	Catch me if you can
 		Skill, 0 Energy
-		Until your next turn, you don't lose Flight for the next 3 (5) times you take Attack damage.
+		Until your next turn, you don't lose Flight for the next 2 (4) times you take Attack damage.
 DONE:	How To Talk To Spiders
 		Skill, X Energy: 
 		Apply 4 poison. Brew a Poison potion in 4 (3)-X turns.
@@ -67,10 +67,10 @@ DONE:	Slalom
 
 
 
-22 Uncommon Cards (blue)
-DONE:	How to Murder Ants
+21 Uncommon Cards (blue)
+CHANGED:	How to Murder Ants
 		Attack, X Energy:
-		If you are flying, deal 9 damage to a random enemy X (X+1) times.
+		Air. Deal 8 damage to a random enemy X (X+1) times.
 DONE:	Pour Tar Pitch (illustriert)
 		Attack, 3 Energy: 
 		Deal 18 (22) damage. Affects ALL enemies If you are flying.
@@ -112,10 +112,10 @@ DONE:	Flying Cauldron
 		If you are flying, gain 1 Brewing. Otherwise, gain 1 Flight. Exhaust.
 DONE:	Lunchtime!
 		Skill, 1 Energy: 
-		If you are flying, lose 2 (1) Flight and brew all potions immediately.
+		Air. Lose 2 (1) Flight and brew all potions immediately.
 DONE:	Mechanics Break
 		Skill, 1 Energy:
-		Gain 10 (13) Block. ALL Enemies gain 4 Artifact.
+		Gain 10 (13) Block. ALL Enemies gain 1 Artifact.
 DONE:	Spoiled Food
 		Skill, 1 (0) Energy:
 		Apply 99 Thirsty. Exhaust.
@@ -131,8 +131,12 @@ DONE:	Taste this one
 DONE:	Brewmaster
 		Power, 1 Energy:
 		Gain 1(2) Brewing.
+	Deadly Contraption
+		Power, 1 Energy: 
+		At the end of your turn, enemies are dealt 5 (8) damage per Artifact on them.
 
-13 Rare Cards (gold)
+
+14 Rare Cards (gold)
 DONE:	Swoop Down
 		Attack, 2 Energy: 
 		Deal 6 (8) damage per Flight you have. Then lose 1 Flight.
@@ -154,21 +158,18 @@ DONE:	Escape
 	Light-weighted
 		Skill, 0 Energy:
 		Lose all Frail. Gain that much Flight (+1). Exhaust.
-	Light-weighted
+	Meditation
 		Skill, 0 Energy:
-		Lose all Flight. Gain 8 Energy. Exhaust.
+		Lose all Flight. Draw 3 (5) cards. Exhaust.
 	Alchemy Expert
 		Power, 1 Energy:
 		Whenever you use a potion, gain 1 Artifact before applying its effect.
-	Deadly Contraption
-		Power, 1 Energy: 
-		At the end of your turn, enemies are dealt 5 (8) damage per Artifact on them.
 	Cultist form
 		Power, 3 Energy: 
 		Lose 2 Flight. ALL enemies gain 3 (4) Disoriented.
 DONE:	Accumulation
 		Power, 1 Energy: 
-		If you are flying, lose 2 (1) Flight and at the start of each turn, gain 1 Energy.
+		Air. Lose 2 (1) Flight and at the start of each turn, gain 1 Energy.
 DONE:	Bookworm
 		Power, 2(1) Energy: 
 		Whenever you play a card costing X, gain 1 Energy.
