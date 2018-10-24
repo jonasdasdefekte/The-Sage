@@ -58,6 +58,14 @@
       "The first attack of this enemy has no effect for this turn."
     ]
   },
+  "Extra_Portion": {
+    "NAME": "Extra Portion",
+    "DESCRIPTIONS": [
+      "The next #b",
+      " potions are applied twice this turn.",
+      "The next potion is applied twice this turn."
+    ]
+  },
   "Lose_Flight_Next_Turn": {
     "NAME": "Lose Flight",
     "DESCRIPTIONS": [

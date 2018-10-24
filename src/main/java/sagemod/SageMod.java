@@ -42,6 +42,7 @@ import sagemod.cards.CatchMeIfYouCan;
 import sagemod.cards.DeadlyContraption;
 import sagemod.cards.DefendSage;
 import sagemod.cards.Escape;
+import sagemod.cards.ExtraPortion;
 import sagemod.cards.FireBrew;
 import sagemod.cards.FlightFeint;
 import sagemod.cards.Fly;
@@ -76,6 +77,7 @@ import sagemod.cards.TurnAround;
 import sagemod.character.SageCharEnum;
 import sagemod.character.SageColorEnum;
 import sagemod.character.TheSage;
+import sagemod.listeners.ExtraPortionListener;
 import sagemod.listeners.TasteThisOneListener;
 import sagemod.listeners.ThirstyListener;
 import sagemod.patches.BrewingDynamicVariable;
@@ -108,6 +110,7 @@ EditStringsSubscriber, PostInitializeSubscriber, EditKeywordsSubscriber {
 		BaseMod.subscribe(this);
 		BaseMod.subscribe(new ThirstyListener());
 		BaseMod.subscribe(new TasteThisOneListener());
+		BaseMod.subscribe(new ExtraPortionListener());
 	}
 
 	private void addColor() {
@@ -184,6 +187,7 @@ EditStringsSubscriber, PostInitializeSubscriber, EditKeywordsSubscriber {
 		BaseMod.addCard(new Accumulation());
 		BaseMod.addCard(new AntiAncientAttack());
 		BaseMod.addCard(new HowToAmuseSneckos());
+		BaseMod.addCard(new ExtraPortion());
 
 	}
 

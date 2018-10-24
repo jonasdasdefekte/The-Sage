@@ -56,6 +56,11 @@
     "DESCRIPTION": "Double your Flight. NL Exhaust.",
     "UPGRADE_DESCRIPTION": "Double your Flight."
   },
+  "Extra_Portion": {
+    "NAME": "Extra Portion",
+    "DESCRIPTION": "The next potion is applied twice this turn.",
+    "UPGRADE_DESCRIPTION": "The next !M! potions are applied twice this turn."
+  },
   "Fire_Brew": {
     "NAME": "Fire Brew",
     "DESCRIPTION": "Deal !D! damage. NL Brew a Fire Potion NL in !BRW! turns."
