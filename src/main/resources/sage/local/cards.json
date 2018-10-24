@@ -77,6 +77,10 @@
     "NAME": "Flying Cauldron",
     "DESCRIPTION": "If you are flying: Gain !M! Brewing. Otherwise: Gain !M! Flight. NL Exhaust."
   },
+  "Folded_Carpet": {
+    "NAME": "Folded Carpet",
+    "DESCRIPTION": "Gain !B! Block."
+  },
   "Gearwheel_Master": {
     "NAME": "Gearwheel Master",
     "DESCRIPTION": "EVERYBODY gains !M! Artifact. NL Exhaust."
