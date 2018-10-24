@@ -43,6 +43,13 @@
       " turn quicker."
     ]
   },
+  "Deadly_Contraption": {
+    "NAME": "Deadly Contraption",
+    "DESCRIPTIONS": [
+      "At the end of your turn, enemeies are dealt #b",
+      " damage per Artifact on them."
+    ]
+  },
   "Disoriented": {
     "NAME": "Disoriented",
     "DESCRIPTIONS": [

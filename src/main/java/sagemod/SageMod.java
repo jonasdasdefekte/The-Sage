@@ -39,6 +39,7 @@ import sagemod.cards.BouncingStrike;
 import sagemod.cards.Brewmaster;
 import sagemod.cards.BurningFlask;
 import sagemod.cards.CatchMeIfYouCan;
+import sagemod.cards.DeadlyContraption;
 import sagemod.cards.DefendSage;
 import sagemod.cards.Escape;
 import sagemod.cards.FireBrew;
@@ -174,6 +175,7 @@ EditStringsSubscriber, PostInitializeSubscriber, EditKeywordsSubscriber {
 		BaseMod.addCard(new MechanicsBreak());
 		BaseMod.addCard(new SpoiledFood());
 		BaseMod.addCard(new HowToGreetByrds());
+		BaseMod.addCard(new DeadlyContraption());
 
 		// Rare
 		BaseMod.addCard(new Bookworm());
@@ -238,7 +240,7 @@ EditStringsSubscriber, PostInitializeSubscriber, EditKeywordsSubscriber {
 		ModPanel panel = new ModPanel();
 		if (Loader.DEBUG) {
 			panel.addUIElement(new ModButton(400, 400, panel, b -> {
-				StatAnalyzer.printStatsForAllCharacters();
+				StatAnalyzer.printStatsForCharacter(SageCharEnum.THE_SAGE);
 			}));
 		}
 		BaseMod.registerModBadge(badgeTexture, TheSage.NAME, AUTHORS, TheSage.DESC, panel);
