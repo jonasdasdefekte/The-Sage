@@ -132,7 +132,7 @@
   "Light_Weighted": {
     "NAME": "Light-Weighted",
     "DESCRIPTION": "Lose all Frail. NL Gain that much Flight. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Lose all Frail. NL Gain that much Flight + !M!. NL Exhaust."
+    "UPGRADE_DESCRIPTION": "Lose all Frail. NL Gain that much NL Flight + !M!. NL Exhaust."
   },
   "Lunchtime": {
     "NAME": "Lunchtime!",

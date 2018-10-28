@@ -35,8 +35,6 @@ public class Meditation extends AbstractSageCard {
 		if (!upgraded) {
 			upgradeName();
 			upgradeMagicNumber(UPGRADE_CARD_DRAW);
-			rawDescription = cardStrings.UPGRADE_DESCRIPTION;
-			initializeDescription();
 		}
 	}
 
