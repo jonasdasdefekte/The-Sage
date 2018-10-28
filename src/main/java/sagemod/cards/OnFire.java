@@ -3,58 +3,51 @@ package sagemod.cards;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
-import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
-import basemod.helpers.BaseModCardTags;
-import sagemod.actions.ReduceFlightBlockableByArtifactAction;
-import sagemod.powers.Disoriented;
+import sagemod.powers.OnFirePower;
 
-public class CultistForm extends AbstractSageCard {
+public class OnFire extends AbstractSageCard {
 
-	public static final String ID = "Cultist_Form";
+	public static final String ID = "On_Fire";
 	private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
 	public static final String NAME = cardStrings.NAME;
-	private static final int COST = 3;
+	private static final int COST = 2;
 	public static final String DESCRIPTION = cardStrings.DESCRIPTION;
 	private static final CardType TYPE = CardType.POWER;
 	private static final CardRarity RARITY = CardRarity.RARE;
 	private static final CardTarget TARGET = CardTarget.SELF;
 
-	private static final int LOSE_FLIGHT = 2;
-	private static final int DISORIENTED_AMT = 3;
-	private static final int UPGRADE_DISORIENTED_AMT = 3;
+	public static final int CARDS_NEEDED = 6;
+	private static final int UPGRADE_COST_TO = 1;
 
-	public CultistForm() {
+	public OnFire() {
 		super(ID, NAME, COST, DESCRIPTION, TYPE, RARITY, TARGET);
-		baseMagicNumber = magicNumber = DISORIENTED_AMT;
-		misc = LOSE_FLIGHT;
-
-		tags.add(BaseModCardTags.FORM);
+		baseMagicNumber = magicNumber = CARDS_NEEDED;
 	}
 
 	@Override
 	public void upgrade() {
 		if (!upgraded) {
 			upgradeName();
-			upgradeMagicNumber(UPGRADE_DISORIENTED_AMT);
+			upgradeBaseCost(UPGRADE_COST_TO);
 		}
 	}
 
 	@Override
 	public AbstractCard makeCopy() {
-		return new CultistForm();
+		return new OnFire();
 	}
 
 	@Override
 	public void use(AbstractPlayer p, AbstractMonster m) {
-		if (isFlying()) {
-			AbstractDungeon.actionManager.addToBottom(new ReduceFlightBlockableByArtifactAction(misc, p));
-		}
-
-		for (AbstractMonster mo : AbstractDungeon.getCurrRoom().monsters.monsters) {
-			applyPower(new Disoriented(mo, magicNumber), mo);
+		// do not apply the power again if the player already has it
+		if (!p.hasPower(OnFirePower.POWER_ID)) {
+			applyPowerToSelf(new OnFirePower(p, magicNumber));
+		} else {
+			// instead just flash
+			p.getPower(OnFirePower.POWER_ID).flash();
 		}
 	}
 

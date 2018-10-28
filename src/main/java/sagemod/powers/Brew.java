@@ -1,6 +1,7 @@
 package sagemod.powers;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collection;
 import java.util.Collections;
 
@@ -103,7 +104,7 @@ public class Brew extends AbstractSagePower {
 		description = builder.toString();
 	}
 
-	private void obtain(Collection<Potion> collection) {
+	private static void obtain(Collection<Potion> collection) {
 		int freeSlots = 0;
 		for (AbstractPotion p : AbstractDungeon.player.potions) {
 			if (p instanceof PotionSlot) {
@@ -127,7 +128,9 @@ public class Brew extends AbstractSagePower {
 			AbstractDungeon.combatRewardScreen.rewards.removeIf(i -> i.type != RewardType.POTION);
 			AbstractDungeon.getCurrRoom().rewardPopOutTimer = 0;
 		}
-		flash();
+		if (AbstractDungeon.player.hasPower(Brew.POWER_ID)) {
+			AbstractDungeon.player.getPower(Brew.POWER_ID).flash();
+		}
 	}
 
 	private String getNameInRed(String name) {
@@ -164,7 +167,7 @@ public class Brew extends AbstractSagePower {
 		}
 
 		if (turns <= 0) {
-			AbstractDungeon.player.obtainPotion(potion);
+			obtain(Arrays.asList(new Potion(turns, potion)));
 		} else {
 			Brew power = null;
 			if (owner.hasPower(POWER_ID)) {
@@ -188,14 +191,14 @@ public class Brew extends AbstractSagePower {
 
 		Brew power = (Brew) AbstractDungeon.player.getPower(Brew.POWER_ID);
 
-		power.obtain(power.potions);
+		Brew.obtain(power.potions);
 
 		power.potions.clear();
 
 		AbstractDungeon.actionManager.addToBottom(new RemoveSpecificPowerAction(power.owner, power.owner, power));
 	}
 
-	class Potion implements Comparable<Potion> {
+	static class Potion implements Comparable<Potion> {
 
 		int turns;
 		AbstractPotion potion;

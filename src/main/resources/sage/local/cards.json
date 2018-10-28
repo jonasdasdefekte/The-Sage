@@ -146,6 +146,10 @@
     "NAME": "Meditation",
     "DESCRIPTION": "Lose all Flight. NL Draw !M! cards. NL Exhaust."
   },
+  "On_Fire": {
+    "NAME": "On Fire",
+    "DESCRIPTION": "Whenever you play !M! cards in a single turn, obtain a Fire Potion."
+  },
   "On_The_Head": {
     "NAME": "On The Head",
     "DESCRIPTION": "Deal !D! damage. NL If you are flying: NL Draw !M! card NL and gain [E]."

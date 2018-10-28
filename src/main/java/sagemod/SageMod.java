@@ -63,6 +63,7 @@ import sagemod.cards.LightWeighted;
 import sagemod.cards.Lunchtime;
 import sagemod.cards.MechanicsBreak;
 import sagemod.cards.Meditation;
+import sagemod.cards.OnFire;
 import sagemod.cards.OnTheHead;
 import sagemod.cards.PerpetuumMobile;
 import sagemod.cards.PincerAttack;
@@ -196,6 +197,7 @@ EditStringsSubscriber, PostInitializeSubscriber, EditKeywordsSubscriber {
 		BaseMod.addCard(new LightWeighted());
 		BaseMod.addCard(new Meditation());
 		BaseMod.addCard(new CultistForm());
+		BaseMod.addCard(new OnFire());
 
 	}
 

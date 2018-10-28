@@ -73,6 +73,14 @@
       " Flight."
     ]
   },
+  "On_Fire": {
+    "NAME": "On Fire",
+    "DESCRIPTIONS": [
+      "Play #b",
+      " more cards this turn to obtain a Fire Potion.",
+      " more card this turn to obtain a Fire Potion."
+    ]
+  },
   "Sage_Flight": {
     "NAME": "Flight",
     "DESCRIPTIONS": [
