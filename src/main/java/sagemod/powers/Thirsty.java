@@ -9,7 +9,8 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 
-import sagemod.listeners.ThirstyListener;
+import sagemod.listeners.PotionListener;
+
 
 public class Thirsty extends AbstractSagePower {
 
@@ -39,7 +40,7 @@ public class Thirsty extends AbstractSagePower {
 	}
 
 	private float calculateDamageTakenAmount(float damage) {
-		if (ThirstyListener.wasPotionUsed) {
+		if (PotionListener.wasPotionUsed) {
 			return damage * MULTIPLIER;
 		}
 		return damage;

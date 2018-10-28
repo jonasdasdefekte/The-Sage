@@ -82,9 +82,7 @@ import sagemod.cards.TurnAround;
 import sagemod.character.SageCharEnum;
 import sagemod.character.SageColorEnum;
 import sagemod.character.TheSage;
-import sagemod.listeners.ExtraPortionListener;
-import sagemod.listeners.TasteThisOneListener;
-import sagemod.listeners.ThirstyListener;
+import sagemod.listeners.PotionListener;
 import sagemod.patches.BrewingDynamicVariable;
 import sagemod.patches.MiscDynamicVariable;
 import sagemod.potions.FataMorgana;
@@ -113,9 +111,7 @@ EditStringsSubscriber, PostInitializeSubscriber, EditKeywordsSubscriber {
 	public SageMod() {
 		addColor();
 		BaseMod.subscribe(this);
-		BaseMod.subscribe(new ThirstyListener());
-		BaseMod.subscribe(new TasteThisOneListener());
-		BaseMod.subscribe(new ExtraPortionListener());
+		BaseMod.subscribe(new PotionListener());
 	}
 
 	private void addColor() {

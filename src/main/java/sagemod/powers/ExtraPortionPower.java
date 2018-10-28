@@ -12,7 +12,7 @@ public class ExtraPortionPower extends AbstractSagePower {
 	public static final String NAME = powerStrings.NAME;
 	public static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;
 
-	// actual implementation in ExtraPortionListener
+	// actual implementation in PotionListener
 	public ExtraPortionPower(AbstractCreature owner, int amount) {
 		super(POWER_ID, NAME, owner, amount);
 		updateDescription();

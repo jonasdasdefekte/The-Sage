@@ -12,7 +12,7 @@ public class TasteThisOnePower extends AbstractSagePower {
 	public static final String NAME = powerStrings.NAME;
 	public static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;
 
-	// Implementation in taste this one listener
+	// Implementation in PotionListener
 	public TasteThisOnePower(AbstractCreature owner, int amount) {
 		super(POWER_ID, NAME, owner, amount);
 		updateDescription();
