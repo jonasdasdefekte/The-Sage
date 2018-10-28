@@ -43,6 +43,10 @@
     "NAME": "Catch Me If You Can",
     "DESCRIPTION": "Until your next turn, you don't lose Flight for the next !M! times you take attack damage."
   },
+  "Cultist_Form": {
+    "NAME": "Cultist Form",
+    "DESCRIPTION": "Lose !MISC! Flight. NL ALL enemies gain !M! Disoriented."
+  },
   "Deadly_Contraption": {
     "NAME": "Deadly Contraption",
     "DESCRIPTION": "At the end of your turn, enemies are dealt !M! damage per Artifact on them."

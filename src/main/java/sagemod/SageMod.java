@@ -39,6 +39,7 @@ import sagemod.cards.BouncingStrike;
 import sagemod.cards.Brewmaster;
 import sagemod.cards.BurningFlask;
 import sagemod.cards.CatchMeIfYouCan;
+import sagemod.cards.CultistForm;
 import sagemod.cards.DeadlyContraption;
 import sagemod.cards.DefendSage;
 import sagemod.cards.Escape;
@@ -194,6 +195,7 @@ EditStringsSubscriber, PostInitializeSubscriber, EditKeywordsSubscriber {
 		BaseMod.addCard(new FoldedCarpet());
 		BaseMod.addCard(new LightWeighted());
 		BaseMod.addCard(new Meditation());
+		BaseMod.addCard(new CultistForm());
 
 	}
 
