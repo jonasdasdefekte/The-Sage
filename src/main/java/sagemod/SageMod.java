@@ -29,6 +29,7 @@ import basemod.interfaces.EditRelicsSubscriber;
 import basemod.interfaces.EditStringsSubscriber;
 import basemod.interfaces.PostInitializeSubscriber;
 import sagemod.cards.Accumulation;
+import sagemod.cards.AlchemyExpert;
 import sagemod.cards.Altitude;
 import sagemod.cards.Ambition;
 import sagemod.cards.AntiAncientAttack;
@@ -194,6 +195,7 @@ EditStringsSubscriber, PostInitializeSubscriber, EditKeywordsSubscriber {
 		BaseMod.addCard(new Meditation());
 		BaseMod.addCard(new CultistForm());
 		BaseMod.addCard(new OnFire());
+		BaseMod.addCard(new AlchemyExpert());
 
 	}
 

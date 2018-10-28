@@ -3,6 +3,10 @@
     "NAME": "Accumulation",
     "DESCRIPTION": "Air. NL Lose !M! Flight once and NL gain [E] at the start of each turn."
   },
+  "Alchemy_Expert": {
+    "NAME": "Alchemy Expert",
+    "DESCRIPTION": "Whenever you use a potion, gain !M! Artifact."
+  },
   "Altitude": {
     "NAME": "Altitude",
     "DESCRIPTION": "Gain !M! Flight."

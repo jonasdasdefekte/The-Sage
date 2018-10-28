@@ -14,6 +14,13 @@
       "Until your next turn, you don't lose Flight for the next time you take #yattack damage."
     ]
   },
+  "Alchemy_Expert": {
+    "NAME": "Alchemy Expert",
+    "DESCRIPTIONS": [
+      "Whenever you use a potion, gain #b",
+      " Artifact"
+    ]
+  },
   "Bookworm": {
     "NAME": "Bookworm",
     "DESCRIPTIONS": [

@@ -161,7 +161,7 @@ DONE:	Light-weighted
 DONE:	Meditation
 		Skill, 0 Energy:
 		Lose all Flight. Draw 3 (5) cards. Exhaust.
-	Alchemy Expert
+DONE:	Alchemy Expert
 		Power, 1 Energy:
 		Whenever you use a potion, gain 1 Artifact before applying its effect.
 DONE:	Cultist form

@@ -6,12 +6,14 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.potions.AbstractPotion;
 import com.megacrit.cardcrawl.powers.AbstractPower;
+import com.megacrit.cardcrawl.powers.ArtifactPower;
 import com.megacrit.cardcrawl.powers.PoisonPower;
 import com.megacrit.cardcrawl.ui.panels.PotionPopUp;
 
 import basemod.ReflectionHacks;
 import basemod.interfaces.PostPotionUseSubscriber;
 import basemod.interfaces.PrePotionUseSubscriber;
+import sagemod.powers.AlchemyExpertPower;
 import sagemod.powers.ExtraPortionPower;
 import sagemod.powers.TasteThisOnePower;
 
@@ -30,6 +32,7 @@ public class PotionListener implements PrePotionUseSubscriber, PostPotionUseSubs
 
 	public void preRealPotionUse(AbstractPotion p) {
 		thirstyPre(p);
+		alchemyExpert(p);
 	}
 
 	public void postRealPotionUse(AbstractPotion p) {
@@ -91,6 +94,16 @@ public class PotionListener implements PrePotionUseSubscriber, PostPotionUseSubs
 			}
 		}, "DelayedPotionUseThread").start();
 
+	}
+
+	private void alchemyExpert(AbstractPotion p) {
+		if (AbstractDungeon.player.hasPower(AlchemyExpertPower.POWER_ID)) {
+			AbstractPower power = AbstractDungeon.player.getPower(AlchemyExpertPower.POWER_ID);
+			int amount = power.amount;
+			AbstractDungeon.actionManager.addToTop(new ApplyPowerAction(AbstractDungeon.player,
+					AbstractDungeon.player, new ArtifactPower(AbstractDungeon.player, amount), amount));
+			power.flash();
+		}
 	}
 
 }
