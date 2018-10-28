@@ -155,10 +155,10 @@ DONE:	Extra Portion
 DOME:	Folded Carpet
 		Skill, 2 Energy:
 		Gain 18 (24) Block.
-	Light-weighted
+DONE:	Light-weighted
 		Skill, 0 Energy:
 		Lose all Frail. Gain that much Flight (+1). Exhaust.
-	Meditation
+DONE:	Meditation
 		Skill, 0 Energy:
 		Lose all Flight. Draw 3 (5) cards. Exhaust.
 	Alchemy Expert

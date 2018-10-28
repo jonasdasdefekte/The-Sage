@@ -58,8 +58,10 @@ import sagemod.cards.HowToPokeAtSlimes;
 import sagemod.cards.HowToTalkToSpiders;
 import sagemod.cards.HowToWakeLyons;
 import sagemod.cards.HowToWarmElephants;
+import sagemod.cards.LightWeighted;
 import sagemod.cards.Lunchtime;
 import sagemod.cards.MechanicsBreak;
+import sagemod.cards.Meditation;
 import sagemod.cards.OnTheHead;
 import sagemod.cards.PerpetuumMobile;
 import sagemod.cards.PincerAttack;
@@ -190,6 +192,8 @@ EditStringsSubscriber, PostInitializeSubscriber, EditKeywordsSubscriber {
 		BaseMod.addCard(new HowToAmuseSneckos());
 		BaseMod.addCard(new ExtraPortion());
 		BaseMod.addCard(new FoldedCarpet());
+		BaseMod.addCard(new LightWeighted());
+		BaseMod.addCard(new Meditation());
 
 	}
 

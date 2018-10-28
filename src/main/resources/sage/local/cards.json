@@ -125,6 +125,11 @@
     "NAME": "How To Warm Elephants",
     "DESCRIPTION": "Brew an NL Explosive Potion NL in !BRW! -X turns."
   },
+  "Light_Weighted": {
+    "NAME": "Light-Weighted",
+    "DESCRIPTION": "Lose all Frail. NL Gain that much Flight. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Lose all Frail. NL Gain that much Flight + !M!. NL Exhaust."
+  },
   "Lunchtime": {
     "NAME": "Lunchtime!",
     "DESCRIPTION": "Air. Lose !M! Flight and brew all potions immediately."
@@ -132,6 +137,10 @@
   "Mechanics_Break": {
     "NAME": "Mechanics Break!",
     "DESCRIPTION": "Gain !B! Block. NL ALL enemies gain !M! Artifact."
+  },
+  "Meditation": {
+    "NAME": "Meditation",
+    "DESCRIPTION": "Lose all Flight. NL Draw !M! cards. NL Exhaust."
   },
   "On_The_Head": {
     "NAME": "On The Head",
