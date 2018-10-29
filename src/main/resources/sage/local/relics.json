@@ -1,5 +1,15 @@
 {
-  "Flying_Carpet": {
+  "Byrd_Carpet": {
+    "NAME": "Byrd Carpet",
+    "FLAVOR": "An ancient carpet, woven by eery cultists and infused with strange magic.",
+    "DESCRIPTIONS": [
+      "Start each combat with #b",
+      " Flight. If you have #b",
+      " or #b",
+      " Flight at the start of your turn, set it to #b",
+      "."
+    ]
+  },"Flying_Carpet": {
     "NAME": "Flying Carpet",
     "FLAVOR": "An old carpet, similar to those used by the merchants of the far east.",
     "DESCRIPTIONS": [

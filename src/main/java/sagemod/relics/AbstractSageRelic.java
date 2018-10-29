@@ -2,6 +2,8 @@ package sagemod.relics;
 
 import com.badlogic.gdx.graphics.Texture;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
+import com.megacrit.cardcrawl.actions.common.RelicAboveCreatureAction;
+import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.helpers.ImageMaster;
@@ -27,8 +29,12 @@ public class AbstractSageRelic extends CustomRelic {
 		AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(player(), player(), power, power.amount));
 	}
 
-	protected AbstractCreature player() {
+	protected AbstractPlayer player() {
 		return AbstractDungeon.player;
+	}
+
+	protected void appearAbove(AbstractCreature creature) {
+		AbstractDungeon.actionManager.addToBottom(new RelicAboveCreatureAction(creature, this));
 	}
 
 }

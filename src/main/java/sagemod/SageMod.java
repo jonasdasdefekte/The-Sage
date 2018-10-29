@@ -89,6 +89,7 @@ import sagemod.patches.BrewingDynamicVariable;
 import sagemod.patches.MiscDynamicVariable;
 import sagemod.potions.FataMorgana;
 import sagemod.potions.FlightPotion;
+import sagemod.relics.ByrdCarpet;
 import sagemod.relics.FlyingCarpet;
 
 @SpireInitializer
@@ -207,6 +208,9 @@ EditStringsSubscriber, PostInitializeSubscriber, EditKeywordsSubscriber {
 
 		// Starter
 		BaseMod.addRelicToCustomPool(new FlyingCarpet(), SageColorEnum.THE_SAGE);
+
+		// Boss
+		BaseMod.addRelicToCustomPool(new ByrdCarpet(), SageColorEnum.THE_SAGE);
 	}
 
 	@Override
