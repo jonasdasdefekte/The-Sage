@@ -4,17 +4,24 @@
     "FLAVOR": "An ancient carpet, woven by eery cultists and infused with strange magic.",
     "DESCRIPTIONS": [
       "Start each combat with #b",
-      " Flight. If you have #b",
+      " #yFlight. If you have #b",
       " or #b",
-      " Flight at the start of your turn, set it to #b",
+      " #yFlight at the start of your turn, set it to #b",
       "."
+    ]
+  },"Cooking_Book": {
+    "NAME": "Cooking Book",
+    "FLAVOR": "After you blow the dust off, this book reveals you all its secrets.",
+    "DESCRIPTIONS": [
+      "Start each combat with #b",
+      " #yBrewing."
     ]
   },"Flying_Carpet": {
     "NAME": "Flying Carpet",
     "FLAVOR": "An old carpet, similar to those used by the merchants of the far east.",
     "DESCRIPTIONS": [
       "Start each combat with #b",
-      " Flight."
+      " #yFlight."
     ]
   }
 }
