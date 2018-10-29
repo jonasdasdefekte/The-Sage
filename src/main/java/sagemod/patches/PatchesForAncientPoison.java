@@ -18,13 +18,16 @@ import sagemod.powers.AncientPoisonPower;
 public class PatchesForAncientPoison {
 	@SpirePatch(clz = ApplyPowerAction.class, method = "update")
 	public static class ApplyPowerActionPatch {
-		private static final int LINE_NUMBER = 178;
+
+		// we want the first type that appears
+		private static final int OCCURENCE = 0;
+		private static int counter = 0;
 
 		public static ExprEditor Instrument() {
 			return new ExprEditor() {
 				@Override
 				public void edit(FieldAccess f) throws CannotCompileException {
-					if (f.getFieldName().equals("type") && f.getLineNumber() == LINE_NUMBER) {
+					if (f.getFieldName().equals("type") && counter++ == OCCURENCE) {
 						f.replace(
 								"{ $_ = sagemod.patches.PatchesForAncientPoison.returnWrongPowerTypeForPoison($0); }");
 					}
