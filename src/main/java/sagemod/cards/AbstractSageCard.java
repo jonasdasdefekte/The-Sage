@@ -105,7 +105,6 @@ public abstract class AbstractSageCard extends CustomCard {
 	public AbstractCard makeStatEquivalentCopy() {
 		AbstractCard card = super.makeStatEquivalentCopy();
 		if (card instanceof AbstractSageCard) {
-			SageMod.logger.info("makingStatEquivalentCopy of Brew card");
 			AbstractSageCard sageCard = (AbstractSageCard) card;
 			sageCard.brewIn = brewIn;
 			sageCard.baseBrewIn = baseBrewIn;
@@ -114,14 +113,12 @@ public abstract class AbstractSageCard extends CustomCard {
 			sageCard.usesBrewIn = usesBrewIn;
 			return sageCard;
 		}
-		SageMod.logger.info("makingStatEquivalentCopy of non Brew card");
 		return card;
 	}
 
 	@Override
 	public void resetAttributes() {
 		super.resetAttributes();
-		SageMod.logger.info("makingStatEquivalentCopy of Brew card");
 		brewIn = baseBrewIn;
 		isBrewInModified = false;
 	}
