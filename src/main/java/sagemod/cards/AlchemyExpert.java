@@ -30,13 +30,15 @@ public class AlchemyExpert extends AbstractSageCard {
 	public void upgrade() {
 		if (!upgraded) {
 			upgradeName();
+			isInnate = true;
+			rawDescription = cardStrings.UPGRADE_DESCRIPTION;
+			initializeDescription();
 		}
 	}
 
 	@Override
 	public AbstractCard makeCopy() {
 		return new AlchemyExpert();
-		// TODO needs upgrade
 	}
 
 	@Override
