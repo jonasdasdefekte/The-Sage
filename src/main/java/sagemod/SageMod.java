@@ -22,6 +22,7 @@ import com.megacrit.cardcrawl.localization.RelicStrings;
 import basemod.BaseMod;
 import basemod.ModButton;
 import basemod.ModPanel;
+import basemod.helpers.RelicType;
 import basemod.interfaces.EditCardsSubscriber;
 import basemod.interfaces.EditCharactersSubscriber;
 import basemod.interfaces.EditKeywordsSubscriber;
@@ -92,6 +93,7 @@ import sagemod.potions.FlightPotion;
 import sagemod.relics.ByrdCarpet;
 import sagemod.relics.CookingBook;
 import sagemod.relics.FlyingCarpet;
+import sagemod.relics.RedBeastStatue;
 
 @SpireInitializer
 public class SageMod implements EditCharactersSubscriber, EditCardsSubscriber, EditRelicsSubscriber,
@@ -212,6 +214,9 @@ EditStringsSubscriber, PostInitializeSubscriber, EditKeywordsSubscriber {
 
 		// Common
 		BaseMod.addRelicToCustomPool(new CookingBook(), SageColorEnum.THE_SAGE);
+
+		// Uncommon
+		BaseMod.addRelic(new RedBeastStatue(), RelicType.SHARED);
 
 		// Boss
 		BaseMod.addRelicToCustomPool(new ByrdCarpet(), SageColorEnum.THE_SAGE);

@@ -176,7 +176,7 @@ DONE:	Bookworm
 DONE:	On Fire
 		Power, 2 (1) Energy:
 		Whenever you play 6 cards in a single turn, obtain a Fire Potion. 
-DONE:+ 	Ancient Poison
+DONE: 	Ancient Poison
 		Power, 1 Energy:
 		Artifact no longer negates Poison for this combat. Apply 4 (7) Poison to ALL enemies.
 
@@ -193,9 +193,9 @@ DONE:	Cooking Book
 		Enemies have 1 less Strength per Artifact on them. You may use Artifact potions on enemies.
 
 Other relics (for all characters)
-	Red Beast Statue
+DONE:	Red Beast Statue
 		Uncommon relic:
-		Potion rewards are ?% more likely to be uncommon or rare potions.
+		Potions are 50% more likely to be uncommon or rare.
 	Blowpipe
 		Rare relic: 
 		Potions you throw affect ALL enemies.

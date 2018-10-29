@@ -9,19 +9,29 @@
       " #yFlight at the start of your turn, set it to #b",
       "."
     ]
-  },"Cooking_Book": {
+  },
+  "Cooking_Book": {
     "NAME": "Cooking Book",
     "FLAVOR": "After you blow the dust off, this book reveals you all its secrets.",
     "DESCRIPTIONS": [
       "Start each combat with #b",
       " #yBrewing."
     ]
-  },"Flying_Carpet": {
+  },
+  "Flying_Carpet": {
     "NAME": "Flying Carpet",
     "FLAVOR": "An old carpet, similar to those used by the merchants of the far east.",
     "DESCRIPTIONS": [
       "Start each combat with #b",
       " #yFlight."
+    ]
+  },
+  "Red_Beast_Statue": {
+    "NAME": "Red Beast Statue",
+    "FLAVOR": "A small red statue of a creature you have never seen before.",
+    "DESCRIPTIONS": [
+      "#yPotions are #b",
+      "% more likely to be uncommon or rare."
     ]
   }
 }
