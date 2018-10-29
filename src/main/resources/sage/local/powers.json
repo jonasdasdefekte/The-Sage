@@ -21,6 +21,12 @@
       " Artifact"
     ]
   },
+  "Ancient_Poison": {
+    "NAME": "Ancient Posion",
+    "DESCRIPTIONS": [
+      "Artifact no longer negates Poison for this combat."
+    ]
+  },
   "Bookworm": {
     "NAME": "Bookworm",
     "DESCRIPTIONS": [

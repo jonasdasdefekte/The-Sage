@@ -32,6 +32,7 @@ import sagemod.cards.Accumulation;
 import sagemod.cards.AlchemyExpert;
 import sagemod.cards.Altitude;
 import sagemod.cards.Ambition;
+import sagemod.cards.AncientPoison;
 import sagemod.cards.AntiAncientAttack;
 import sagemod.cards.ArmorBrew;
 import sagemod.cards.BoldMove;
@@ -196,6 +197,7 @@ EditStringsSubscriber, PostInitializeSubscriber, EditKeywordsSubscriber {
 		BaseMod.addCard(new CultistForm());
 		BaseMod.addCard(new OnFire());
 		BaseMod.addCard(new AlchemyExpert());
+		BaseMod.addCard(new AncientPoison());
 
 	}
 

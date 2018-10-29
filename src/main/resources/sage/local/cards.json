@@ -16,6 +16,10 @@
     "NAME": "Ambition",
     "DESCRIPTION": "Gain !M! Frail. NL Gain [E] [E]."
   },
+  "Ancient_Poison": {
+    "NAME": "Ancient Poison",
+    "DESCRIPTION": "Artifact no longer negates Poison NL for this combat. NL Apply !M! Poison to NL ALL Enemies."
+  },
   "Anti_Ancient_Attack": {
     "NAME": "Anti Ancient Attack",
     "DESCRIPTION": "Deal !D! damage per Artifact the enemy has."
