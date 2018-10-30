@@ -61,7 +61,9 @@ DONE:	Ambition
 DONE:	Slalom
 		Skill, 1 Energy:
 		Gain 10 (13) Block. Gain 2 Frail. 
-
+	Viral Strike
+		Attack, 1 Energy:
+		Deal 8 (11) damage. If the enemy has Artifact, apply 6 Poison.
 
 
 22 Uncommon Cards (blue)
@@ -134,6 +136,9 @@ DONE:	Brewmaster
 DONE:	Deadly Contraption
 		Power, 1 Energy: 
 		At the end of your turn, enemies are dealt 5 (8) damage per Artifact on them.
+	Toxic Chains
+		Skill, 1 Energy:
+		(Gain 3 Frail.) Lose all Frail and apply that much Poison to ALL enemies.
 
 
 14 Rare Cards (gold)
@@ -179,6 +184,9 @@ DONE:	On Fire
 DONE: 	Ancient Poison
 		Power, 1 Energy:
 		Artifact no longer negates Poison for this combat. Apply 4 (7) Poison to ALL enemies.
+	Vigorous Body
+		Power, 2 Energy:
+		Everytime an Artifact of you (or an enemy) gets used, you gain 1 Strength.
 
 	
 Character-specific relics (Sage only)
