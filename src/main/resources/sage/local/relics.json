@@ -10,8 +10,8 @@
       "."
     ]
   },
-  "Cooking_Book": {
-    "NAME": "Cooking Book",
+  "Cookbook": {
+    "NAME": "Cookbook",
     "FLAVOR": "After you blow the dust off, this book reveals you all its secrets.",
     "DESCRIPTIONS": [
       "Start each combat with #b",

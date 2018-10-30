@@ -4,14 +4,14 @@ import com.megacrit.cardcrawl.relics.AbstractRelic;
 
 import sagemod.powers.Brewing;
 
-public class CookingBook extends AbstractSageRelic {
+public class Cookbook extends AbstractSageRelic {
 
-	public static final String ID = "Cooking_Book";
+	public static final String ID = "Cookbook";
 	public static final RelicTier TIER = RelicTier.COMMON;
 	public static final LandingSound SOUND = LandingSound.FLAT;
 	private static final int BREWING_AMT = 1;
 
-	public CookingBook() {
+	public Cookbook() {
 		super(ID, TIER, SOUND);
 	}
 
@@ -29,7 +29,7 @@ public class CookingBook extends AbstractSageRelic {
 
 	@Override
 	public AbstractRelic makeCopy() {
-		return new CookingBook();
+		return new Cookbook();
 	}
 
 }
