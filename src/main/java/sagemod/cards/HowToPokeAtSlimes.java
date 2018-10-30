@@ -19,7 +19,7 @@ public class HowToPokeAtSlimes extends AbstractSageCard {
 	private static final CardRarity RARITY = CardRarity.COMMON;
 	private static final CardTarget TARGET = CardTarget.ALL_ENEMY;
 
-	private static final int ATTACK_DMG = 6;
+	private static final int ATTACK_DMG = 5;
 	private static final int UPGRADE_ATTACK_DMG = 2;
 	private static final int FRAIL_GAIN = 4;
 	private static final int UPGRADE_FRAIL_GAIN = -1;

@@ -19,7 +19,7 @@ public class Ambition extends AbstractSageCard {
 	private static final CardTarget TARGET = CardTarget.SELF;
 
 	private static final int UPGRADE_COST_TO = 0;
-	private static final int FRAIL_AMT = 5;
+	private static final int FRAIL_AMT = 3;
 	private static final int ENERGY_GAIN = 2;
 
 	public Ambition() {

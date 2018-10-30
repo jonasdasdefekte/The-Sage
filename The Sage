@@ -24,7 +24,7 @@ DONE:	1x Fly (illustriert)
 		Skill, 2 (1) Energy: 
 		If you don't fly, gain 1 Flight.
 
-12 Common Cards (grey)
+14 Common Cards (grey)
 DONE:	Pincer Repair (illustriert)
 		Attack, 1 Energy
 		Deal 9 (12) damage. The enemy gains 1 Artifact.
@@ -36,7 +36,13 @@ DONE:	Salty Strike
 		Deal 6 (9) damage. The enemy gains 1 (2) Thirsty.
 DONE:	How To Poke At Slimes
 		Attack, X Energy:
-		Gain 4 (3)-X Frail. Gain X Energy. Deal 6 (8) damage to ALL enemies.
+		Gain 4 (3)-X Frail. Gain X Energy. Deal 5 (7) damage to ALL enemies.
+	Viral Strike
+		Attack, 1 Energy:
+		Deal 8 (11) damage. If the enemy has Artifact, apply 6 Poison.
+	Krank
+		Attack, 1 Energy:
+		Deal 8 (11) damage. If the enemy has Artifact, draw 1 card.
 DONE:	How To Warm Elephants (neu illustrieren)
 		Skill, X Energy: 
 		Brew an Explosive Potion in 4 (3)-X turns.
@@ -49,9 +55,9 @@ DONE:	How To Befriend A Turtle
 DONE:	Catch me if you can
 		Skill, 0 Energy
 		Until your next turn, you don't lose Flight for the next 2 (4) times you take Attack damage.
-DONE:	How To Talk To Spiders
+CHANGED:	How To Talk To Spiders
 		Skill, X Energy: 
-		Apply 4 poison. Brew a Poison potion in 4 (3)-X turns.
+		Apply X poison. Brew a Poison potion in 4 (3)-X turns.
 DONE:	Step Back 
 		Skill, 1 Energy:
 		If you are flying, gain 5 (8) Block. Otherwise, gain 1 Flight.
@@ -61,12 +67,9 @@ DONE:	Ambition
 DONE:	Slalom
 		Skill, 1 Energy:
 		Gain 10 (13) Block. Gain 2 Frail. 
-	Viral Strike
-		Attack, 1 Energy:
-		Deal 8 (11) damage. If the enemy has Artifact, apply 6 Poison.
 
 
-22 Uncommon Cards (blue)
+25 Uncommon Cards (blue)
 DONE:	On the Head (illustriert)
 		Attack, 1 Energy:
 		Deal 5 (7) damage. If you are flying, draw 1 card and gain 1 Energy.
@@ -124,6 +127,12 @@ DONE:	Spoiled Food
 DONE:	How To Greet Byrds
 		Skill, X Energy:
 		Innate. Set your Flight to X. (Gain X Flight.) Exhaust.
+	Toxic Chains
+		Skill, 1 Energy:
+		Lose all Frail. Apply that much Poison (+3) to ALL enemies.
+	Potion Trance
+		Skill, 1 Energy:
+		Draw 1 Card whenever you use a Potion this turn. You cannot gain Energy for the rest of this turn.
 DONE:	Altitude
 		Power, 1 Energy: 
 		Gain 2(3) Flight.
@@ -136,12 +145,9 @@ DONE:	Brewmaster
 DONE:	Deadly Contraption
 		Power, 1 Energy: 
 		At the end of your turn, enemies are dealt 5 (8) damage per Artifact on them.
-	Toxic Chains
-		Skill, 1 Energy:
-		(Gain 3 Frail.) Lose all Frail and apply that much Poison to ALL enemies.
 
 
-14 Rare Cards (gold)
+15 Rare Cards (gold)
 DONE:	Swoop Down
 		Attack, 2 Energy: 
 		Deal 6 (8) damage per Flight you have. Then lose 1 Flight.
@@ -186,7 +192,7 @@ DONE: 	Ancient Poison
 		Artifact no longer negates Poison for this combat. Apply 4 (7) Poison to ALL enemies.
 	Vigorous Body
 		Power, 2 Energy:
-		Everytime an Artifact of you (or an enemy) gets used, you gain 1 Strength.
+		Whenever an Artifact (of you or an enemy) gets used, gain 1 Strength.
 
 	
 Character-specific relics (Sage only)
@@ -198,7 +204,11 @@ DONE:	Cooking Book
 		Start each combat with 1 Brewing.
 	Ancient Magnet
 		Uncommon relic: 
-		Enemies have 1 less Strength per Artifact on them. You may use Artifact potions on enemies.
+		Enemies have 1 less Strength per Artifact on them and gain 1 Artifact at the beginning of a combat.
+	Can also use poison Relics (from Silent):
+		- Snecko Skull
+		- The Specimen
+		- Twisted Funnel
 
 Other relics (for all characters)
 DONE:	Red Beast Statue
