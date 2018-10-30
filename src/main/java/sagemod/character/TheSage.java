@@ -5,7 +5,6 @@ import java.util.ArrayList;
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.g2d.BitmapFont;
 import com.badlogic.gdx.math.MathUtils;
-import com.esotericsoftware.spine.AnimationState;
 import com.megacrit.cardcrawl.actions.AbstractGameAction.AttackEffect;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.AbstractCard.CardColor;
@@ -21,6 +20,7 @@ import com.megacrit.cardcrawl.helpers.ScreenShake;
 import com.megacrit.cardcrawl.screens.CharSelectInfo;
 
 import basemod.abstracts.CustomPlayer;
+import basemod.animations.SpriterAnimation;
 import sagemod.SageMod;
 import sagemod.cards.BoldMove;
 import sagemod.cards.DefendSage;
@@ -56,13 +56,11 @@ public class TheSage extends CustomPlayer {
 	private PlayerClass playerClass;
 
 	public TheSage(String name, PlayerClass playerClass) {
-		super(name, playerClass, ORB_TEXTURES, "sage/character/orb/vfx.png", (String) null, (String) null);
+		super(name, playerClass, ORB_TEXTURES, "sage/character/orb/vfx.png",
+				new SpriterAnimation("sage/character/idle/SageAnimations.scml"));
 		this.playerClass = playerClass;
 		initializeClass(null, "sage/character/shoulder2.png", "sage/character/shoulder.png",
 				"sage/character/corpse.png", getLoadout(), 20.0f, -10.0f, 220.0f, 290.0f, new EnergyManager(ENERGY));
-		loadAnimation("sage/character/idle/skeleton.atlas", "sage/character/idle/skeleton.json", 1.0f);
-		AnimationState.TrackEntry e = state.setAnimation(0, "idle", true);
-		e.setTime(e.getEndTime() * MathUtils.random());
 		if (ModHelper.enabledMods.size() > 0 && (ModHelper.isModEnabled("Diverse") || ModHelper.isModEnabled("Chimera"))
 				|| Settings.isTrial && customMods != null && customMods.contains("Blue Cards")) {
 			masterMaxOrbs = 1;

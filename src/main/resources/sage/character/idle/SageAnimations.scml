@@ -11,12 +11,19 @@
         <file id="7" name="Ebene 10.png" width="119" height="141" pivot_x="0" pivot_y="1"/>
     </folder>
     <entity id="0" name="Sage_idle">
+    	<obj_info name="bone_000" type="bone" w="635.321" h="10"/>
         <obj_info name="bone_001" type="bone" w="94.1636" h="10"/>
         <obj_info name="bone_002" type="bone" w="22.0625" h="10"/>
         <obj_info name="bone_003" type="bone" w="22.5591" h="10"/>
         <obj_info name="bone_005" type="bone" w="26.5265" h="10"/>
         <obj_info name="bone_004" type="bone" w="22.0625" h="10"/>
         <obj_info name="bone_006" type="bone" w="22.0625" h="10"/>
+        <obj_info name="bone_007" type="bone" w="488.97" h="10"/>
+        <obj_info name="bone_008" type="bone" w="199.975" h="10"/>
+        <obj_info name="bone_009" type="bone" w="159.335" h="10"/>
+        <obj_info name="bone_010" type="bone" w="410.606" h="10"/>
+        <obj_info name="bone_011" type="bone" w="116.598" h="10"/>
+        <obj_info name="bone_012" type="bone" w="119.038" h="10"/>
         <animation id="0" name="Sage_idle" length="5000" interval="100">
             <mainline>
                 <key id="0">
@@ -220,16 +227,7 @@
                 </key>
             </timeline>
         </animation>
-    </entity>
-    <entity id="1" name="Sage_flight">
-        <obj_info name="bone_000" type="bone" w="635.321" h="10"/>
-        <obj_info name="bone_007" type="bone" w="488.97" h="10"/>
-        <obj_info name="bone_008" type="bone" w="199.975" h="10"/>
-        <obj_info name="bone_009" type="bone" w="159.335" h="10"/>
-        <obj_info name="bone_010" type="bone" w="410.606" h="10"/>
-        <obj_info name="bone_011" type="bone" w="116.598" h="10"/>
-        <obj_info name="bone_012" type="bone" w="119.038" h="10"/>
-        <animation id="0" name="Sage_flight" length="5000" interval="100">
+        <animation id="1" name="Sage_flight" length="5000" interval="100">
             <mainline>
                 <key id="0">
                     <bone_ref id="0" timeline="8" key="0"/>

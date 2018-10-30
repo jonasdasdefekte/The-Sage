@@ -91,7 +91,7 @@ import sagemod.patches.MiscDynamicVariable;
 import sagemod.potions.FataMorgana;
 import sagemod.potions.FlightPotion;
 import sagemod.relics.ByrdCarpet;
-import sagemod.relics.CookingBook;
+import sagemod.relics.Cookbook;
 import sagemod.relics.FlyingCarpet;
 import sagemod.relics.RedBeastStatue;
 
@@ -213,7 +213,7 @@ EditStringsSubscriber, PostInitializeSubscriber, EditKeywordsSubscriber {
 		BaseMod.addRelicToCustomPool(new FlyingCarpet(), SageColorEnum.THE_SAGE);
 
 		// Common
-		BaseMod.addRelicToCustomPool(new CookingBook(), SageColorEnum.THE_SAGE);
+		BaseMod.addRelicToCustomPool(new Cookbook(), SageColorEnum.THE_SAGE);
 
 		// Uncommon
 		BaseMod.addRelic(new RedBeastStatue(), RelicType.SHARED);
