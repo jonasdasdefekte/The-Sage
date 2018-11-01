@@ -135,7 +135,7 @@ DONE:	How To Greet Byrds
 		Draw 1 Card whenever you use a Potion this turn. You cannot gain Energy for the rest of this turn.
 DONE:	Altitude
 		Power, 1 Energy: 
-		Gain 2(3) Flight.
+		Gain 1(2) Flight.
 DONE:	Taste this one
 		Power, 1 Energy:
 		Whenever you use a potion, apply 6 (9) Poison to a random Enemy.
@@ -199,7 +199,7 @@ Character-specific relics (Sage only)
 DONE:	Byrd carpet
 		Boss relic: 
 		Replaces Flying carpet. Start each combat with 3 Flight. If you have 1 or 2 Flight at the start of your turn, set it to 3 again.
-DONE:	Cooking Book
+DONE:	Cook Book
 		Common relic: 
 		Start each combat with 1 Brewing.
 	Ancient Magnet
