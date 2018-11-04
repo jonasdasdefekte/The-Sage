@@ -59,6 +59,8 @@ public class TheSage extends CustomPlayer {
 		super(name, playerClass, ORB_TEXTURES, "sage/character/orb/vfx.png",
 				new SpriterAnimation("sage/character/idle/SageAnimations.scml"));
 		this.playerClass = playerClass;
+		dialogX = (drawX + 0.0F * Settings.scale); // set location for text bubbles
+		dialogY = (drawY + 220.0F * Settings.scale);
 		initializeClass(null, "sage/character/shoulder2.png", "sage/character/shoulder.png",
 				"sage/character/corpse.png", getLoadout(), 20.0f, -10.0f, 220.0f, 290.0f, new EnergyManager(ENERGY));
 		if (ModHelper.enabledMods.size() > 0 && (ModHelper.isModEnabled("Diverse") || ModHelper.isModEnabled("Chimera"))

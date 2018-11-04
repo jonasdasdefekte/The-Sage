@@ -13,10 +13,13 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.potions.AbstractPotion;
 import com.megacrit.cardcrawl.potions.PotionSlot;
+import com.megacrit.cardcrawl.relics.Sozu;
 import com.megacrit.cardcrawl.rewards.RewardItem.RewardType;
+import com.megacrit.cardcrawl.vfx.SpeechBubble;
 
 public class Brew extends AbstractSagePower {
 
+	private static final String CANNOT_BREW_SOZU = "Sozu prevents brewing potions!";
 	public static final String POWER_ID = "Brew";
 	private static final PowerStrings powerStrings = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
 	public static final String NAME = powerStrings.NAME;
@@ -161,6 +164,12 @@ public class Brew extends AbstractSagePower {
 	}
 
 	public static void addPotion(int turns, AbstractPotion potion, AbstractCreature owner) {
+		if (AbstractDungeon.player.hasRelic(Sozu.ID)) {
+			AbstractDungeon.effectList.add(new SpeechBubble(AbstractDungeon.player.dialogX,
+					AbstractDungeon.player.dialogY, 2.0f, CANNOT_BREW_SOZU, true));
+			return;
+		}
+
 		// flash brewing if player has it
 		if (AbstractDungeon.player.hasPower(Brewing.POWER_ID)) {
 			AbstractDungeon.player.getPower(Brewing.POWER_ID).flash();
