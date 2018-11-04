@@ -127,7 +127,7 @@ DONE:	Spoiled Food
 DONE:	How To Greet Byrds
 		Skill, X Energy:
 		Innate. Set your Flight to X. (Gain X Flight.) Exhaust.
-	Toxic Chains
+DONE:	Toxic Chains
 		Skill, 1 Energy:
 		Lose all Frail. Apply that much Poison (+3) to ALL enemies.
 	Potion Trance

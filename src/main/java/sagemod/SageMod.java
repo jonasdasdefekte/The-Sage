@@ -81,6 +81,7 @@ import sagemod.cards.StrikeSage;
 import sagemod.cards.Study;
 import sagemod.cards.SwoopDown;
 import sagemod.cards.TasteThisOne;
+import sagemod.cards.ToxicChains;
 import sagemod.cards.TurnAround;
 import sagemod.character.SageCharEnum;
 import sagemod.character.SageColorEnum;
@@ -186,6 +187,7 @@ EditStringsSubscriber, PostInitializeSubscriber, EditKeywordsSubscriber {
 		BaseMod.addCard(new SpoiledFood());
 		BaseMod.addCard(new HowToGreetByrds());
 		BaseMod.addCard(new DeadlyContraption());
+		BaseMod.addCard(new ToxicChains());
 
 		// Rare
 		BaseMod.addCard(new Bookworm());

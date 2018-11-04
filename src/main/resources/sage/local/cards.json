@@ -221,6 +221,11 @@
     "NAME": "Taste This One",
     "DESCRIPTION": "Whenever you use a potion, apply !M! Poison to a random enemy."
   },
+  "Toxic_Chains": {
+    "NAME": "Toxic Chains",
+    "DESCRIPTION": "Lose all Frail. NL Apply that much Poison to ALL enemies.",
+    "UPGRADE_DESCRIPTION": "Lose all Frail. NL Apply that much Poison + !M! to ALL enemies."
+  },
   "Turn_Around": {
     "NAME": "Turn Around",
     "DESCRIPTION": "Gain !M! Frail. NL Deal !D! damage per Frail you have."
