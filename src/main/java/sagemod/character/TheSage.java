@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.g2d.BitmapFont;
 import com.badlogic.gdx.math.MathUtils;
+import com.brashmonkey.spriter.PlayerTweener;
 import com.megacrit.cardcrawl.actions.AbstractGameAction.AttackEffect;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.AbstractCard.CardColor;
@@ -54,10 +55,12 @@ public class TheSage extends CustomPlayer {
 	private static final String CHAR_SOUND = "ATTACK_MAGIC_SLOW_1";
 
 	private PlayerClass playerClass;
+	private PlayerTweener animationPlayer;
 
 	public TheSage(String name, PlayerClass playerClass) {
 		super(name, playerClass, ORB_TEXTURES, "sage/character/orb/vfx.png",
 				new SpriterAnimation("sage/character/idle/SageAnimations.scml"));
+		animationPlayer = ((SpriterAnimation) animation).myPlayer;
 		this.playerClass = playerClass;
 		dialogX = (drawX + 0.0F * Settings.scale); // set location for text bubbles
 		dialogY = (drawY + 220.0F * Settings.scale);
@@ -66,6 +69,16 @@ public class TheSage extends CustomPlayer {
 		if (ModHelper.enabledMods.size() > 0 && (ModHelper.isModEnabled("Diverse") || ModHelper.isModEnabled("Chimera"))
 				|| Settings.isTrial && customMods != null && customMods.contains("Blue Cards")) {
 			masterMaxOrbs = 1;
+		}
+	}
+
+	public static void setSageAnimation(int from, int to) {
+		if (AbstractDungeon.player != null && AbstractDungeon.player instanceof TheSage) {
+			TheSage sage = (TheSage) AbstractDungeon.player;
+			sage.animationPlayer.setBaseAnimation(from);
+			sage.animationPlayer.getFirstPlayer().setAnimation(from);
+			sage.animationPlayer.getSecondPlayer().setAnimation(to);
+			sage.animationPlayer.setWeight(1);
 		}
 	}
 

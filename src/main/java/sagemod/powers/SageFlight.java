@@ -7,6 +7,8 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 
+import sagemod.character.TheSage;
+
 public class SageFlight extends AbstractSagePower {
 
 	public static final String POWER_ID = "Sage_Flight";
@@ -23,6 +25,18 @@ public class SageFlight extends AbstractSagePower {
 	@Override
 	public void playApplyPowerSfx() {
 		CardCrawlGame.sound.play("POWER_FLIGHT", 0.05f);
+	}
+
+	@Override
+	public void onInitialApplication() {
+		// from idle (0) to flight (1)
+		TheSage.setSageAnimation(0, 1);
+	}
+
+	@Override
+	public void onRemove() {
+		// from flight (1) to idle (0)
+		TheSage.setSageAnimation(1, 0);
 	}
 
 	@Override
