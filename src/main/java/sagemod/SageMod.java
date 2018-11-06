@@ -3,10 +3,8 @@ package sagemod;
 import java.lang.reflect.Type;
 import java.nio.charset.StandardCharsets;
 import java.util.Map;
-
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.Texture;
@@ -18,7 +16,6 @@ import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.localization.Keyword;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.localization.RelicStrings;
-
 import basemod.BaseMod;
 import basemod.ModButton;
 import basemod.ModPanel;
@@ -42,6 +39,7 @@ import sagemod.cards.BouncingStrike;
 import sagemod.cards.Brewmaster;
 import sagemod.cards.BurningFlask;
 import sagemod.cards.CatchMeIfYouCan;
+import sagemod.cards.Crank;
 import sagemod.cards.CultistForm;
 import sagemod.cards.DeadlyContraption;
 import sagemod.cards.DefendSage;
@@ -163,6 +161,7 @@ EditStringsSubscriber, PostInitializeSubscriber, EditKeywordsSubscriber {
 		BaseMod.addCard(new StepBack());
 		BaseMod.addCard(new HowToPokeAtSlimes());
 		BaseMod.addCard(new Slalom());
+		BaseMod.addCard(new Crank());
 
 		// Uncommon
 		BaseMod.addCard(new OnTheHead());
