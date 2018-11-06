@@ -12,10 +12,14 @@ import com.evacipated.cardcrawl.modthespire.Loader;
 import com.evacipated.cardcrawl.modthespire.lib.SpireInitializer;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
+import com.megacrit.cardcrawl.helpers.RelicLibrary;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.localization.Keyword;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.localization.RelicStrings;
+import com.megacrit.cardcrawl.relics.SneckoSkull;
+import com.megacrit.cardcrawl.relics.TheSpecimen;
+import com.megacrit.cardcrawl.relics.TwistedFunnel;
 import basemod.BaseMod;
 import basemod.ModButton;
 import basemod.ModPanel;
@@ -221,6 +225,17 @@ EditStringsSubscriber, PostInitializeSubscriber, EditKeywordsSubscriber {
 
 		// Boss
 		BaseMod.addRelicToCustomPool(new ByrdCarpet(), SageColorEnum.THE_SAGE);
+
+		// Add Silent's poison relics
+		SneckoSkull sneckoSkull = new SneckoSkull();
+		BaseMod.addRelicToCustomPool(sneckoSkull, SageColorEnum.THE_SAGE);
+		RelicLibrary.commonList.remove(sneckoSkull);
+		TheSpecimen theSpecimen = new TheSpecimen();
+		BaseMod.addRelicToCustomPool(theSpecimen, SageColorEnum.THE_SAGE);
+		RelicLibrary.rareList.remove(theSpecimen);
+		TwistedFunnel twistedFunnel = new TwistedFunnel();
+		BaseMod.addRelicToCustomPool(twistedFunnel, SageColorEnum.THE_SAGE);
+		RelicLibrary.shopList.remove(twistedFunnel);
 	}
 
 	@Override
