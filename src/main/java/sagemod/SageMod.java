@@ -12,6 +12,7 @@ import com.evacipated.cardcrawl.modthespire.Loader;
 import com.evacipated.cardcrawl.modthespire.lib.SpireInitializer;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
+import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.helpers.RelicLibrary;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.localization.Keyword;
@@ -20,6 +21,7 @@ import com.megacrit.cardcrawl.localization.RelicStrings;
 import com.megacrit.cardcrawl.relics.SneckoSkull;
 import com.megacrit.cardcrawl.relics.TheSpecimen;
 import com.megacrit.cardcrawl.relics.TwistedFunnel;
+import com.megacrit.cardcrawl.rooms.AbstractRoom;
 import basemod.BaseMod;
 import basemod.ModButton;
 import basemod.ModPanel;
@@ -29,6 +31,7 @@ import basemod.interfaces.EditCharactersSubscriber;
 import basemod.interfaces.EditKeywordsSubscriber;
 import basemod.interfaces.EditRelicsSubscriber;
 import basemod.interfaces.EditStringsSubscriber;
+import basemod.interfaces.PostBattleSubscriber;
 import basemod.interfaces.PostInitializeSubscriber;
 import sagemod.cards.Accumulation;
 import sagemod.cards.AlchemyExpert;
@@ -100,7 +103,8 @@ import sagemod.relics.RedBeastStatue;
 
 @SpireInitializer
 public class SageMod implements EditCharactersSubscriber, EditCardsSubscriber, EditRelicsSubscriber,
-EditStringsSubscriber, PostInitializeSubscriber, EditKeywordsSubscriber {
+		EditStringsSubscriber, PostInitializeSubscriber, EditKeywordsSubscriber,
+		PostBattleSubscriber {
 
 	public static final Logger logger = LogManager.getLogger(SageMod.class.getName());
 	public static final String AUTHORS = "jonasdasdefekte, Skrelpoid";
@@ -295,6 +299,14 @@ EditStringsSubscriber, PostInitializeSubscriber, EditKeywordsSubscriber {
 		// all characters
 		BaseMod.addPotion(FataMorgana.class, FataMorgana.LIQUID_COLOR, FataMorgana.HYBRID_COLOR,
 				FataMorgana.SPOTS_COLOR, FataMorgana.POTION_ID);
+	}
+
+	@Override
+	public void receivePostBattle(AbstractRoom battleRoom) {
+		if (AbstractDungeon.player != null) {
+			// from flight (1) to idle (0)
+			TheSage.setSageAnimation(1, 0);
+		}
 	}
 
 
