@@ -14,9 +14,8 @@ public class AncientPoisonPower extends AbstractSagePower {
 
 	// Implementation in PatchesForAncientPoison
 	public AncientPoisonPower(AbstractCreature owner, int amount) {
-		super(POWER_ID, NAME, owner, amount);
+		super(POWER_ID, NAME, owner, -1);
 		type = AbstractPower.PowerType.BUFF;
-		amount = -1;
 		updateDescription();
 	}
 

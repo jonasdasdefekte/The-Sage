@@ -6,7 +6,6 @@ import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.PowerStrings;
-
 import sagemod.character.TheSage;
 
 public class SageFlight extends AbstractSagePower {
@@ -66,7 +65,7 @@ public class SageFlight extends AbstractSagePower {
 			if (!owner.hasPower(Airborne.POWER_ID)) {
 				AbstractDungeon.actionManager.addToBottom(new ReducePowerAction(owner, info.owner, this, 1));
 			} else {
-				// will reduce Airborneand play a sound
+				// will reduce Airborne and play a sound
 				owner.getPower(Airborne.POWER_ID).onSpecificTrigger();
 			}
 		}

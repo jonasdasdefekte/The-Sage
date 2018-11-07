@@ -96,6 +96,21 @@ import sagemod.patches.BrewingDynamicVariable;
 import sagemod.patches.MiscDynamicVariable;
 import sagemod.potions.FataMorgana;
 import sagemod.potions.FlightPotion;
+import sagemod.powers.Accumulate;
+import sagemod.powers.Airborne;
+import sagemod.powers.AlchemyExpertPower;
+import sagemod.powers.AncientPoisonPower;
+import sagemod.powers.BookwormPower;
+import sagemod.powers.Brew;
+import sagemod.powers.Brewing;
+import sagemod.powers.DeadlyContraptionPower;
+import sagemod.powers.Disoriented;
+import sagemod.powers.ExtraPortionPower;
+import sagemod.powers.LoseFlightNextTurn;
+import sagemod.powers.OnFirePower;
+import sagemod.powers.SageFlight;
+import sagemod.powers.TasteThisOnePower;
+import sagemod.powers.Thirsty;
 import sagemod.relics.ByrdCarpet;
 import sagemod.relics.Cookbook;
 import sagemod.relics.FlyingCarpet;
@@ -103,8 +118,8 @@ import sagemod.relics.RedBeastStatue;
 
 @SpireInitializer
 public class SageMod implements EditCharactersSubscriber, EditCardsSubscriber, EditRelicsSubscriber,
-		EditStringsSubscriber, PostInitializeSubscriber, EditKeywordsSubscriber,
-		PostBattleSubscriber {
+EditStringsSubscriber, PostInitializeSubscriber, EditKeywordsSubscriber,
+PostBattleSubscriber {
 
 	public static final Logger logger = LogManager.getLogger(SageMod.class.getName());
 	public static final String AUTHORS = "jonasdasdefekte, Skrelpoid";
@@ -211,6 +226,26 @@ public class SageMod implements EditCharactersSubscriber, EditCardsSubscriber, E
 		BaseMod.addCard(new OnFire());
 		BaseMod.addCard(new AlchemyExpert());
 		BaseMod.addCard(new AncientPoison());
+
+		registerPowers();
+	}
+
+	private void registerPowers() {
+		BaseMod.addPower(Accumulate.class, Accumulate.POWER_ID);
+		BaseMod.addPower(Airborne.class, Airborne.POWER_ID);
+		BaseMod.addPower(AlchemyExpertPower.class, AlchemyExpertPower.POWER_ID);
+		BaseMod.addPower(AncientPoisonPower.class, AncientPoisonPower.POWER_ID);
+		BaseMod.addPower(BookwormPower.class, BookwormPower.POWER_ID);
+		BaseMod.addPower(Brew.class, Brew.POWER_ID);
+		BaseMod.addPower(Brewing.class, Brewing.POWER_ID);
+		BaseMod.addPower(DeadlyContraptionPower.class, DeadlyContraptionPower.POWER_ID);
+		BaseMod.addPower(Disoriented.class, Disoriented.POWER_ID);
+		BaseMod.addPower(ExtraPortionPower.class, ExtraPortionPower.POWER_ID);
+		BaseMod.addPower(LoseFlightNextTurn.class, LoseFlightNextTurn.POWER_ID);
+		BaseMod.addPower(OnFirePower.class, OnFirePower.POWER_ID);
+		BaseMod.addPower(SageFlight.class, SageFlight.POWER_ID);
+		BaseMod.addPower(TasteThisOnePower.class, TasteThisOnePower.POWER_ID);
+		BaseMod.addPower(Thirsty.class, Thirsty.POWER_ID);
 
 	}
 
