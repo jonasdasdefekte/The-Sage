@@ -1,5 +1,12 @@
 {
-  "Byrd_Carpet": {
+  "Ancient_Magnet": {
+    "NAME": "Ancient Magnet",
+    "FLAVOR": "The rust probably hurts.",
+    "DESCRIPTIONS": [
+      "Enemies have #b",
+      " less #yStrength per #yArtifact on them."
+    ]
+  },"Byrd_Carpet": {
     "NAME": "Byrd Carpet",
     "FLAVOR": "An ancient carpet, woven by eery cultists and infused with strange magic.",
     "DESCRIPTIONS": [
