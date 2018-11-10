@@ -15,28 +15,23 @@ public class HowToAmuseSneckos extends AbstractSageCard {
 	private static final int COST = -1;
 	public static final String DESCRIPTION = cardStrings.DESCRIPTION;
 	private static final CardType TYPE = CardType.SKILL;
-	private static final CardRarity RARITY = CardRarity.RARE;
+	private static final CardRarity RARITY = CardRarity.UNCOMMON;
 	private static final CardTarget TARGET = CardTarget.SELF;
 
-	private static final int FRAIL_GAIN = 4;
-	private static final int UPGRADE_FRAIL_GAIN = -1;
-	private static final int ADDITIONAL_DRAW_AND_ENERGY = 0;
-	private static final int UPGRADE_ADDITIONAL_DRAW_AND_ENERGY = 1;
+	private static final int ADDITIONAL_DRAW = 0;
+	private static final int UPGRADE_ADDITIONAL_DRAW = 1;
 
 	public HowToAmuseSneckos() {
 		super(ID, NAME, COST, DESCRIPTION, TYPE, RARITY, TARGET);
-		baseMagicNumber = magicNumber = FRAIL_GAIN;
-		misc = ADDITIONAL_DRAW_AND_ENERGY;
+		baseMagicNumber = magicNumber = ADDITIONAL_DRAW;
 
-		exhaust = true;
 	}
 
 	@Override
 	public void upgrade() {
 		if (!upgraded) {
 			upgradeName();
-			upgradeMagicNumber(UPGRADE_FRAIL_GAIN);
-			misc += UPGRADE_ADDITIONAL_DRAW_AND_ENERGY;
+			upgradeMagicNumber(UPGRADE_ADDITIONAL_DRAW);
 
 			rawDescription = cardStrings.UPGRADE_DESCRIPTION;
 			initializeDescription();
@@ -52,15 +47,9 @@ public class HowToAmuseSneckos extends AbstractSageCard {
 	public void use(AbstractPlayer p, AbstractMonster m) {
 		int effect = getXEffect();
 
-		int drawAndEnergyGain = effect + misc;
-		if (drawAndEnergyGain > 0) {
-			draw(drawAndEnergyGain);
-			gainEnergy(drawAndEnergyGain);
-		}
-
-		int frailGain = magicNumber - effect;
-		if (frailGain > 0) {
-			applyPowerToSelf(new FrailPower(p, frailGain, false));
+		int draw = effect + magicNumber;
+		if (draw > 0) {
+			draw(draw);
 		}
 
 		useXEnergy();

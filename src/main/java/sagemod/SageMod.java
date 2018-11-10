@@ -50,6 +50,7 @@ import sagemod.cards.Crank;
 import sagemod.cards.CultistForm;
 import sagemod.cards.DeadlyContraption;
 import sagemod.cards.DefendSage;
+import sagemod.cards.EnergeticBrew;
 import sagemod.cards.Escape;
 import sagemod.cards.ExtraPortion;
 import sagemod.cards.FireBrew;
@@ -185,6 +186,7 @@ PostBattleSubscriber {
 		BaseMod.addCard(new HowToPokeAtSlimes());
 		BaseMod.addCard(new Slalom());
 		BaseMod.addCard(new Crank());
+		BaseMod.addCard(new EnergeticBrew());
 
 		// Uncommon
 		BaseMod.addCard(new OnTheHead());
@@ -210,14 +212,14 @@ PostBattleSubscriber {
 		BaseMod.addCard(new HowToGreetByrds());
 		BaseMod.addCard(new DeadlyContraption());
 		BaseMod.addCard(new ToxicChains());
+		BaseMod.addCard(new HowToMurderAnts());
+		BaseMod.addCard(new HowToAmuseSneckos());
 
 		// Rare
 		BaseMod.addCard(new Bookworm());
-		BaseMod.addCard(new HowToMurderAnts());
 		BaseMod.addCard(new Escape());
 		BaseMod.addCard(new Accumulation());
 		BaseMod.addCard(new AntiAncientAttack());
-		BaseMod.addCard(new HowToAmuseSneckos());
 		BaseMod.addCard(new ExtraPortion());
 		BaseMod.addCard(new FoldedCarpet());
 		BaseMod.addCard(new LightWeighted());

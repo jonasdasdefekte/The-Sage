@@ -40,6 +40,9 @@ DONE:	How To Poke At Slimes
 	Viral Strike
 		Attack, 1 Energy:
 		Deal 8 (11) damage. If the enemy has Artifact, apply 6 Poison.
+	Energetic Brew
+		Attack, 1 Energy: 
+		Deal 6 (9) damage. Gain a Energy potion in 4 (3) turns.
 DONE:	Crank
 		Attack, 1 Energy:
 		Deal 8 (12) damage. If the enemy has Artifact, draw 1 card.
@@ -138,13 +141,13 @@ DONE:	Altitude
 		Gain 1(2) Flight.
 DONE:	Taste this one
 		Power, 1 Energy:
-		Whenever you use a potion, apply 6 (9) Poison to a random Enemy.
+		Whenever you use a potion, apply 4 (6) Poison to a random Enemy.
 DONE:	Brewmaster
 		Power, 1 Energy:
 		Gain 1(2) Brewing.
 DONE:	Deadly Contraption
 		Power, 1 Energy: 
-		At the end of your turn, enemies are dealt 5 (8) damage per Artifact on them.
+		At the end of your turn, enemies are dealt 2 (4) damage per Artifact on them.
 
 
 15 Rare Cards (gold)

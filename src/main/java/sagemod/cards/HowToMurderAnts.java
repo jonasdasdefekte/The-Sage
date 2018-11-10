@@ -17,7 +17,7 @@ public class HowToMurderAnts extends AbstractSageCard {
 	private static final int COST = -1;
 	public static final String DESCRIPTION = cardStrings.DESCRIPTION;
 	private static final CardType TYPE = CardType.ATTACK;
-	private static final CardRarity RARITY = CardRarity.RARE;
+	private static final CardRarity RARITY = CardRarity.UNCOMMON;
 	private static final CardTarget TARGET = CardTarget.ALL_ENEMY;
 
 	private static final int ATTACK_DMG = 8;

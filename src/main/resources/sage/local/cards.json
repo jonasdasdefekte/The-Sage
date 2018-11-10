@@ -68,6 +68,10 @@
     "NAME": "Defend",
     "DESCRIPTION": "Gain !B! Block."
   },
+  "Energetic_Brew": {
+    "NAME": "Energetic Brew",
+    "DESCRIPTION": "Deal !D! damage. NL Brew an Energy Potion NL in !BRW! turns."
+  },
   "Escape": {
     "NAME": "Escape",
     "DESCRIPTION": "Double your Flight. NL Exhaust.",
@@ -92,7 +96,7 @@
   },
   "Flying_Cauldron": {
     "NAME": "Flying Cauldron",
-    "DESCRIPTION": "If you are flying: Gain !M! Brewing. Otherwise: Gain !M! Flight. NL Exhaust."
+    "DESCRIPTION": "If you are flying: NL Gain !M! Brewing. NL Otherwise: NL Gain !M! Flight. NL Exhaust."
   },
   "Folded_Carpet": {
     "NAME": "Folded Carpet",
