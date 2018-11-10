@@ -136,6 +136,9 @@ DONE:	Toxic Chains
 	Potion Trance
 		Skill, 1 Energy:
 		Draw 1 Card whenever you use a Potion this turn. You cannot gain Energy for the rest of this turn.
+DONE:	How To Amuse Sneckos
+		Skill, X Energy:
+		Draw X (X+1) cards.
 DONE:	Altitude
 		Power, 1 Energy: 
 		Gain 1(2) Flight.
@@ -157,9 +160,6 @@ DONE:	Swoop Down
 DONE:	Anti Ancient Attack
 		Attack, 3 Energy: 
 		Deal 20 (30) damage per Artifact the enemy has. 
-DONE:	How To Amuse Sneckos
-		Skill, X Energy:
-		Draw X (X+1) cards. Gain X (X+1) Energy. Gain 4 (3) - X Frail. Exhaust.
 DONE:	Escape
 		Skill, 1 Energy: 
 		Double your Flight. Exhaust. (Upgrade: No Exhaust.)
