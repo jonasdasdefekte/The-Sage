@@ -12,7 +12,7 @@ Brewing (Buff)
 Disoriented (Debuff)
 	The first Attack of this Enemy has no effect, for X turns.
 Thirsty (Debuff)
-	Receives 50% more damage from potions, for X turns.
+	Potions used against this enemy are 50% more effective, for X turns.
 
 
 Gaining Artifacts is not considered a debuff.

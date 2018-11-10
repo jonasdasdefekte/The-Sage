@@ -110,7 +110,7 @@
   "Thirsty": {
     "NAME": "Thirsty",
     "DESCRIPTIONS": [
-      "Receives 50% more damage from #ypotions, for #b",
+      "#yPotions used against this enemy are #y50% more effective, for #b",
       " turns.",
       " turn."
     ]

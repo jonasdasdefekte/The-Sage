@@ -6,7 +6,6 @@ import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.helpers.PowerTip;
 import com.megacrit.cardcrawl.potions.AbstractPotion;
-
 import basemod.abstracts.CustomPotion;
 import sagemod.Keywords;
 import sagemod.powers.Disoriented;
@@ -16,7 +15,7 @@ public class FataMorgana extends CustomPotion {
 	public static final String NAME = "Fata Morgana";
 	public static final String POTION_ID = "Fata_Morgana";
 	public static final int POTENCY = 1;
-	public static final String DESCRIPTION = "Apply " + POTENCY + " Disoriented.";
+	public static final String DESCRIPTION = "Apply #b" + POTENCY + " #yDisoriented.";
 	public static final PotionRarity RARITY = PotionRarity.RARE;
 	public static final PotionSize SIZE = PotionSize.H;
 	public static final PotionColor COLOR = PotionColor.WHITE;

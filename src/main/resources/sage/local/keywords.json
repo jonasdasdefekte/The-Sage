@@ -39,6 +39,6 @@
     "NAMES": [
       "thirsty"
     ],
-    "DESCRIPTION": "The enemy takes 50% more damage from potions."
+    "DESCRIPTION": "Potions used against the enemy are 50% more effective."
   }
 }

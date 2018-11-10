@@ -5,19 +5,31 @@ import com.megacrit.cardcrawl.actions.common.ReducePowerAction;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.potions.AbstractPotion;
+import com.megacrit.cardcrawl.potions.ExplosivePotion;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 import com.megacrit.cardcrawl.powers.ArtifactPower;
 import com.megacrit.cardcrawl.powers.PoisonPower;
 import com.megacrit.cardcrawl.ui.panels.PotionPopUp;
-
 import basemod.ReflectionHacks;
 import basemod.interfaces.PostPotionUseSubscriber;
 import basemod.interfaces.PrePotionUseSubscriber;
 import sagemod.powers.AlchemyExpertPower;
 import sagemod.powers.ExtraPortionPower;
 import sagemod.powers.TasteThisOnePower;
+import sagemod.powers.Thirsty;
 
 public class PotionListener implements PrePotionUseSubscriber, PostPotionUseSubscriber {
+
+	private AbstractMonster getHoveredMonster() {
+		return (AbstractMonster) ReflectionHacks.getPrivate(AbstractDungeon.topPanel.potionUi,
+				PotionPopUp.class, "hoveredMonster");
+	}
+
+	private void multiplyPotencyBy(AbstractPotion p, float multiplier) {
+		int potency = (int) ReflectionHacks.getPrivate(p, AbstractPotion.class, "potency");
+		ReflectionHacks.setPrivate(p, AbstractPotion.class,
+				"potency", (int) (potency * multiplier));
+	}
 
 	@Override
 	public void receivePrePotionUse(AbstractPotion p) {
@@ -37,7 +49,6 @@ public class PotionListener implements PrePotionUseSubscriber, PostPotionUseSubs
 
 	public void postRealPotionUse(AbstractPotion p) {
 		tasteThisOne(p);
-		thirstyPost(p);
 	}
 
 	private void usePotion(AbstractPotion p, AbstractMonster m) {
@@ -49,8 +60,7 @@ public class PotionListener implements PrePotionUseSubscriber, PostPotionUseSubs
 	private void extraPortion(AbstractPotion p) {
 		if (AbstractDungeon.player.hasPower(ExtraPortionPower.POWER_ID)) {
 			AbstractPower power = AbstractDungeon.player.getPower(ExtraPortionPower.POWER_ID);
-			AbstractMonster monster = (AbstractMonster) ReflectionHacks.getPrivate(AbstractDungeon.topPanel.potionUi,
-					PotionPopUp.class, "hoveredMonster");
+			AbstractMonster monster = getHoveredMonster();
 			monster = monster == null ? AbstractDungeon.getRandomMonster() : monster;
 			usePotion(p, monster);
 			power.flash();
@@ -76,24 +86,33 @@ public class PotionListener implements PrePotionUseSubscriber, PostPotionUseSubs
 		}
 	}
 
-	public static volatile boolean wasPotionUsed = false;
-	private static final int DELAY = 1000;
 
 	private void thirstyPre(AbstractPotion p) {
-		wasPotionUsed = true;
-	}
-
-	private void thirstyPost(AbstractPotion p) {
-		// Ugly hack so that there is a big enough time window to amplify potion damage
-		new Thread(() -> {
-			try {
-				Thread.sleep(DELAY);
-				wasPotionUsed = false;
-			} catch (InterruptedException e) {} finally {
-
+		if (p.ID.equals(ExplosivePotion.POTION_ID)) {
+			for (AbstractMonster mo : AbstractDungeon.getCurrRoom().monsters.monsters) {
+				if (mo.hasPower(Thirsty.POWER_ID)) {
+					((Thirsty) mo.getPower(Thirsty.POWER_ID)).onExplosivePotionUsed();
+				}
 			}
-		}, "DelayedPotionUseThread").start();
-
+		} else if (p.isThrown && !p.targetRequired) {
+			AbstractMonster monsterWithThirsty = null;
+			for (AbstractMonster mo : AbstractDungeon.getCurrRoom().monsters.monsters) {
+				if (mo.hasPower(Thirsty.POWER_ID)) {
+					monsterWithThirsty = mo;
+					break;
+				}
+			}
+			if (monsterWithThirsty != null) {
+				multiplyPotencyBy(p, Thirsty.MULTIPLIER);
+				monsterWithThirsty.getPower(Thirsty.POWER_ID).flash();
+			}
+		} else {
+			AbstractMonster target = getHoveredMonster();
+			if (target != null && target.hasPower(Thirsty.POWER_ID)) {
+				multiplyPotencyBy(p, Thirsty.MULTIPLIER);
+				target.getPower(Thirsty.POWER_ID).flash();
+			}
+		}
 	}
 
 	private void alchemyExpert(AbstractPotion p) {

@@ -9,8 +9,6 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 
-import sagemod.listeners.PotionListener;
-
 
 public class Thirsty extends AbstractSagePower {
 
@@ -20,6 +18,7 @@ public class Thirsty extends AbstractSagePower {
 	public static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;
 
 	public static final float MULTIPLIER = 1.5f;
+	private int explosivePotionsUsed;
 
 	public Thirsty(AbstractCreature owner, int amount) {
 		super(POWER_ID, NAME, owner, amount);
@@ -40,7 +39,8 @@ public class Thirsty extends AbstractSagePower {
 	}
 
 	private float calculateDamageTakenAmount(float damage) {
-		if (PotionListener.wasPotionUsed) {
+		if (explosivePotionsUsed > 0) {
+			explosivePotionsUsed--;
 			return damage * MULTIPLIER;
 		}
 		return damage;
@@ -53,5 +53,10 @@ public class Thirsty extends AbstractSagePower {
 		} else {
 			AbstractDungeon.actionManager.addToBottom(new ReducePowerAction(owner, owner, POWER_ID, 1));
 		}
+	}
+
+	public void onExplosivePotionUsed() {
+		explosivePotionsUsed++;
+		flash();
 	}
 }
