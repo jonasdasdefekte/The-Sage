@@ -15,9 +15,11 @@ import com.google.gson.reflect.TypeToken;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
+import com.megacrit.cardcrawl.dungeons.TheCity;
 import com.megacrit.cardcrawl.helpers.RelicLibrary;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.localization.CharacterStrings;
+import com.megacrit.cardcrawl.localization.EventStrings;
 import com.megacrit.cardcrawl.localization.Keyword;
 import com.megacrit.cardcrawl.localization.PotionStrings;
 import com.megacrit.cardcrawl.localization.PowerStrings;
@@ -99,6 +101,7 @@ import sagemod.cards.ViralStrike;
 import sagemod.character.SageCharEnum;
 import sagemod.character.SageColorEnum;
 import sagemod.character.TheSage;
+import sagemod.events.CarpetTrader;
 import sagemod.listeners.PotionListener;
 import sagemod.potions.FataMorgana;
 import sagemod.potions.FlightPotion;
@@ -140,6 +143,8 @@ PostBattleSubscriber {
 	public static final String PLACEHOLDER = "Placeholder";
 	public static final Color COLOR = new Color(0xc65e03);
 	public static String LOCALIZATION_FOLDER = "sage/local/";
+
+	public static final String EVENT_FOLDER = "sage/events/";
 
 	private static String localLanguage;
 
@@ -359,6 +364,8 @@ PostBattleSubscriber {
 				loadJson(LOCALIZATION_FOLDER + localLanguage + "potions.json"));
 		BaseMod.loadCustomStrings(CharacterStrings.class,
 				loadJson(LOCALIZATION_FOLDER + localLanguage + "characters.json"));
+		BaseMod.loadCustomStrings(EventStrings.class,
+				loadJson(LOCALIZATION_FOLDER + localLanguage + "events.json"));
 	}
 
 	@Override
@@ -405,6 +412,12 @@ PostBattleSubscriber {
 		}
 		BaseMod.registerModBadge(badgeTexture, TheSage.NAME, AUTHORS, TheSage.DESC, panel);
 
+		initPotions();
+		initEvents();
+	}
+
+
+	private void initPotions() {
 		SageMod.logger.info("Adding Potions for TheSage");
 		// character specific: The Sage
 		BaseMod.addPotion(FlightPotion.class, FlightPotion.LIQUID_COLOR, FlightPotion.HYBRID_COLOR,
@@ -412,6 +425,11 @@ PostBattleSubscriber {
 		// all characters
 		BaseMod.addPotion(FataMorgana.class, FataMorgana.LIQUID_COLOR, FataMorgana.HYBRID_COLOR,
 				FataMorgana.SPOTS_COLOR, FataMorgana.POTION_ID);
+	}
+
+	private void initEvents() {
+		// excludes The Sage see PatchForCarpetTrader
+		BaseMod.addEvent(CarpetTrader.ID, CarpetTrader.class, TheCity.ID);
 	}
 
 	@Override

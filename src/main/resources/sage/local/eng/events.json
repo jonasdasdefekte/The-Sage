@@ -1,0 +1,17 @@
+{
+  "Carpet_Trader": {
+    "NAME": "Carpet Trader",
+    "DESCRIPTIONS": [
+      "In the corner you spot a creature that looks similar to the merchant.",
+      "As you approach, the creature stands up. Still looking at the wall, the hooded figure speaks: \"Are you ready? The carpet is. @For@ @you@ !\"",
+      "You ran away as fast as you could.",
+      "You fly away with the carpet under your feet."
+    ],
+    "OPTIONS": [
+      "[Approach]",
+      "[Run]",
+      "[Accept the offer] #rLose #r30% #rMax #rHP. #gObtain #gthe #gFlying #gCarpet.",
+      "[Leave]"
+    ]
+  }
+}
