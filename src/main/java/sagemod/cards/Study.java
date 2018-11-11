@@ -6,7 +6,6 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-
 import sagemod.actions.HandToTopOfDrawPileAction;
 
 public class Study extends AbstractSageCard {
@@ -52,7 +51,8 @@ public class Study extends AbstractSageCard {
 	@Override
 	public void use(AbstractPlayer p, AbstractMonster m) {
 		draw(magicNumber);
-		AbstractDungeon.actionManager.addToBottom(new HandToTopOfDrawPileAction(min, misc, false));
+		AbstractDungeon.actionManager.addToBottom(new HandToTopOfDrawPileAction(min, misc, false,
+				cardStrings.EXTENDED_DESCRIPTION[0]));
 	}
 
 	@Override

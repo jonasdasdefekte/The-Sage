@@ -37,18 +37,18 @@ SOFTWARE.
  */
 public class HandToTopOfDrawPileAction extends AbstractGameAction {
 
-	public static final String TITLE = "put on top of your draw pile.";
-
 	private AbstractPlayer p = AbstractDungeon.player;
 	private boolean upgrade;
 	private int minAmount, maxAmount;
+	private String title;
 
-	public HandToTopOfDrawPileAction(int minAmount, int maxAmount, boolean upgrade) {
+	public HandToTopOfDrawPileAction(int minAmount, int maxAmount, boolean upgrade, String title) {
 		duration = Settings.ACTION_DUR_FAST;
 		actionType = AbstractGameAction.ActionType.CARD_MANIPULATION;
 		this.minAmount = minAmount;
 		this.maxAmount = maxAmount;
 		this.upgrade = upgrade;
+		this.title = title;
 	}
 
 	@Override
@@ -68,7 +68,7 @@ public class HandToTopOfDrawPileAction extends AbstractGameAction {
 				isDone = true;
 				return;
 			}
-			AbstractDungeon.handCardSelectScreen.open(TITLE, maxAmount,
+			AbstractDungeon.handCardSelectScreen.open(title, maxAmount,
 					minAmount < maxAmount, minAmount == 0);
 			tickDuration();
 			return;
