@@ -12,9 +12,11 @@ import com.evacipated.cardcrawl.modthespire.Loader;
 import com.evacipated.cardcrawl.modthespire.lib.SpireInitializer;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
+import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.helpers.RelicLibrary;
 import com.megacrit.cardcrawl.localization.CardStrings;
+import com.megacrit.cardcrawl.localization.CharacterStrings;
 import com.megacrit.cardcrawl.localization.Keyword;
 import com.megacrit.cardcrawl.localization.PotionStrings;
 import com.megacrit.cardcrawl.localization.PowerStrings;
@@ -162,7 +164,8 @@ PostBattleSubscriber {
 	@Override
 	public void receiveEditCharacters() {
 		logger.info("Adding TheSage");
-		BaseMod.addCharacter(new TheSage(TheSage.NAME, SageCharEnum.THE_SAGE), TheSage.BUTTON, TheSage.PORTRAIT,
+		BaseMod.addCharacter(new TheSage(CardCrawlGame.playerName, SageCharEnum.THE_SAGE),
+				TheSage.BUTTON, TheSage.PORTRAIT,
 				SageCharEnum.THE_SAGE);
 	}
 
@@ -305,6 +308,7 @@ PostBattleSubscriber {
 		BaseMod.loadCustomStrings(RelicStrings.class, loadJson("sage/local/relics.json"));
 		BaseMod.loadCustomStrings(PowerStrings.class, loadJson("sage/local/powers.json"));
 		BaseMod.loadCustomStrings(PotionStrings.class, loadJson("sage/local/potions.json"));
+		BaseMod.loadCustomStrings(CharacterStrings.class, loadJson("sage/local/characters.json"));
 	}
 
 	@Override

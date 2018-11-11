@@ -1,7 +1,6 @@
 package sagemod.character;
 
 import java.util.ArrayList;
-
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.g2d.BitmapFont;
 import com.badlogic.gdx.math.MathUtils;
@@ -18,8 +17,8 @@ import com.megacrit.cardcrawl.events.city.Vampires;
 import com.megacrit.cardcrawl.helpers.FontHelper;
 import com.megacrit.cardcrawl.helpers.ModHelper;
 import com.megacrit.cardcrawl.helpers.ScreenShake;
+import com.megacrit.cardcrawl.localization.CharacterStrings;
 import com.megacrit.cardcrawl.screens.CharSelectInfo;
-
 import basemod.abstracts.CustomPlayer;
 import basemod.animations.SpriterAnimation;
 import sagemod.SageMod;
@@ -34,9 +33,11 @@ import sagemod.relics.FlyingCarpet;
  */
 public class TheSage extends CustomPlayer {
 
-	public static final String NAME = "The Sage";
-	public static final String DESC = "A mechanic who studied about the cult of a blue bird. NL "
-			+ "She learned flying a carpet and brewing potions in order to stop its rise.";
+	public static final String ID = "Sage";
+	public static final CharacterStrings characterStrings =
+			CardCrawlGame.languagePack.getCharacterString(ID);
+	public static final String NAME = characterStrings.NAMES[0];
+	public static final String DESC = characterStrings.TEXT[0];
 	public static final String BUTTON = "sage/character/button.png";
 	public static final String PORTRAIT = "sage/character/portrait.jpg";
 
@@ -180,7 +181,7 @@ public class TheSage extends CustomPlayer {
 
 	@Override
 	public String getSpireHeartText() {
-		return "NL You concentrate on speeding up your carpet...";
+		return characterStrings.TEXT[1];
 	}
 
 	@Override
