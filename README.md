@@ -14,7 +14,7 @@ This mod for the brilliant game Slay the Sprire introduces:
 - 2 relics for any character
 - 1 potion for any character
 
-For details, feel free to check out our [design document](https://github.com/jonasdasdefekte/The-Sage/blob/master/The%20Sage "The Sage").
+For details, feel free to check out our [design document](https://github.com/jonasdasdefekte/The-Sage/blob/master/The%20Sage "The Sage"). You can also read on here for an introduction on the basic gameplay concepts. 
 
 ## Gameplay
 
@@ -34,7 +34,7 @@ Many cards from the Sage allow you to Brew potions.
 
 ![Brewing Potions](https://github.com/jonasdasdefekte/The-Sage/blob/master/src/main/resources/sage/cards/Quackster.png "Quackster")
 
-**Quackster** (Uncommon Skill, 0 Energy): *Brew a random potion in 4 (3) turns.*
+*Quackster (Uncommon Skill, 0 Energy): Brew a random potion in 4 (3) turns.*
 
 Every basegame character has its special take on a card type: The Ironclad likes Attacks, The Silent goes well with Skills and The Defect is specialized in playing Powers. Rather than introducing a new card type, this character focusses on another game element: Potions.  
 Usually you have to wait a couple of turns before your potions are ready to use. But there is also a Brewing power that will help brewing your potions faster. For example, when playing the above card, Quackster with 2 Brewing power, you will recieve your random potion not in 4 but in 2 turns. The potion mechanic introduces many new tactical decisions because you will can only hold a couple of potions at the same time.
@@ -46,9 +46,9 @@ Further mechanics included in the Sage's card set are:
 - profit from Frail on the character,
 - profit from Artifacts on the enemy.
 
-Each of them can be a winning condition for your deck playing with the Sage!
+Each of them can be a winning condition for your deck playing with The Sage!
 
-## Our plans for the Sage
+## Our plans for The Sage
 - **Balance** (we have been playtesting since end of 09/2018, most things should be reasonable by now but we are still tweaking here and there, feedback is welcome);
 - growing the card set to **full size** of 75 (feel free to share your ideas if you like to);
 - card **art** will be added in slow pace (Jonas has already made some and just finished the character art);
@@ -56,7 +56,7 @@ Each of them can be a winning condition for your deck playing with the Sage!
 - maybe we'll come up with some more suprises?
 
 ## How To Mod The Spire
-If you have found this, chances are that you know how this works. Still we like to welcome everybody, so if you aren't familiar, you can look at this [tutorial video](https://www.youtube.com/watch?v=AAhs55x7oFo) by Rhapsody (the basics still work the same way).  
+If you have found this, chances are that you know how this works. Still we want to welcome everybody, so if you aren't familiar to Modding, you can take a look at this [Tutorial Video](https://www.youtube.com/watch?v=AAhs55x7oFo) by Rhapsody (the basics still work the same way).  
 This mod requires to use [ModTheSpire](https://github.com/kiooeht/ModTheSpire/releases) as well as [Base Mod](https://github.com/daviscook477/BaseMod/releases).  
 We want to thank the active modding community of this game to make such a project possible!
 
