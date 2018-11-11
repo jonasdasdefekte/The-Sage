@@ -1,0 +1,16 @@
+{
+  "Fata_Morgana": {
+    "NAME": "Fata Morgana",
+    "DESCRIPTIONS": [
+      "Apply #b",
+      " #yDisoriented."
+    ]
+  },
+  "Flight_Potion": {
+    "NAME": "Flight Potion",
+    "DESCRIPTIONS": [
+      "Gain #b",
+      " #yFlight."
+    ]
+  }
+}

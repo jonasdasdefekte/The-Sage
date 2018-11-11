@@ -1,0 +1,44 @@
+{
+  "AIR": {
+    "NAMES": [
+      "air"
+    ],
+    "DESCRIPTION": "This card can only be played if you have Flight."
+  },
+  "ARTIFACT": {
+    "NAMES": [
+      "artifact"
+    ],
+    "DESCRIPTION": "Negates a debuff."
+  },
+  "BREW": {
+    "NAMES": [
+      "brew"
+    ],
+    "DESCRIPTION": "Obtain a potion after a specific amount of turns."
+  },
+  "BREWING": {
+    "NAMES": [
+      "brewing"
+    ],
+    "DESCRIPTION": "You need less turns to brew potions."
+  },
+  "DISORIENTED": {
+    "NAMES": [
+      "disoriented"
+    ],
+    "DESCRIPTION": "The first Attack of this Enemy has no effect."
+  },
+  "FLIGHT": {
+    "NAMES": [
+      "flight"
+    ],
+    "DESCRIPTION": "Reduce attack damage taken by 50%. Reduced by one if you take attack damage."
+  },
+  "THIRSTY": {
+    "NAMES": [
+      "thirsty"
+    ],
+    "DESCRIPTION": "Potions used against the enemy are 50% more effective."
+  }
+}

@@ -13,6 +13,7 @@ import com.evacipated.cardcrawl.modthespire.lib.SpireInitializer;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
+import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.helpers.RelicLibrary;
 import com.megacrit.cardcrawl.localization.CardStrings;
@@ -138,6 +139,9 @@ PostBattleSubscriber {
 
 	public static final String PLACEHOLDER = "Placeholder";
 	public static final Color COLOR = new Color(0xc65e03);
+	public static String LOCALIZATION_FOLDER = "sage/local/";
+
+	private static String localLanguage;
 
 	/**
 	 * The initializing method for ModTheSpire. This gets called before the game is
@@ -301,25 +305,73 @@ PostBattleSubscriber {
 		RelicLibrary.shopList.remove(twistedFunnel);
 	}
 
+	private void maybeLoadLanguage() {
+		if (localLanguage != null) {
+			return;
+		}
+		logger.info("Determining Language for TheSage");
+		switch (Settings.language) {
+			case DEU:
+				localLanguage = "deu/";
+				break;
+			case EPO:
+			case FRA:
+			case GRE:
+			case IND:
+			case ITA:
+			case JPN:
+			case KOR:
+			case NOR:
+			case POL:
+			case PTB:
+			case RUS:
+			case SPA:
+			case SRB:
+			case SRP:
+			case THA:
+			case TUR:
+			case UKR:
+			case WWW:
+			case ZHS:
+			case ZHT:
+			case ENG:
+				localLanguage = "eng/";
+				break;
+			default:
+				localLanguage = "eng/";
+				break;
+		}
+	}
+
 	@Override
 	public void receiveEditStrings() {
-		logger.info("Loading Strings for TheSage");
-		BaseMod.loadCustomStrings(CardStrings.class, loadJson("sage/local/cards.json"));
-		BaseMod.loadCustomStrings(RelicStrings.class, loadJson("sage/local/relics.json"));
-		BaseMod.loadCustomStrings(PowerStrings.class, loadJson("sage/local/powers.json"));
-		BaseMod.loadCustomStrings(PotionStrings.class, loadJson("sage/local/potions.json"));
-		BaseMod.loadCustomStrings(CharacterStrings.class, loadJson("sage/local/characters.json"));
+
+		maybeLoadLanguage();
+
+		logger.info("Loading localization Strings for TheSage");
+		BaseMod.loadCustomStrings(CardStrings.class,
+				loadJson(LOCALIZATION_FOLDER + localLanguage + "cards.json"));
+		BaseMod.loadCustomStrings(RelicStrings.class,
+				loadJson(LOCALIZATION_FOLDER + localLanguage + "relics.json"));
+		BaseMod.loadCustomStrings(PowerStrings.class,
+				loadJson(LOCALIZATION_FOLDER + localLanguage + "powers.json"));
+		BaseMod.loadCustomStrings(PotionStrings.class,
+				loadJson(LOCALIZATION_FOLDER + localLanguage + "potions.json"));
+		BaseMod.loadCustomStrings(CharacterStrings.class,
+				loadJson(LOCALIZATION_FOLDER + localLanguage + "characters.json"));
 	}
 
 	@Override
 	public void receiveEditKeywords() {
+		maybeLoadLanguage();
+
 		logger.info("Adding Keywords for TheSage");
 		// Note: KeywordStrings is a horrible hardcoded class, we can't use it
 		// use a custom class instead
 		// Copied from MadScienceMod
 		Type typeToken = new TypeToken<Map<String, Keyword>>() {}.getType();
 		Gson gson = new Gson();
-		String strings = loadJson("sage/local/keywords.json");
+		String strings = loadJson(LOCALIZATION_FOLDER + localLanguage + "keywords.json");
 		Map<String, Keyword> keywords = gson.<Map<String, Keyword>>fromJson(strings, typeToken);
 		for (Keyword kw : keywords.values()) {
 			BaseMod.addKeyword(kw.NAMES, kw.DESCRIPTION);

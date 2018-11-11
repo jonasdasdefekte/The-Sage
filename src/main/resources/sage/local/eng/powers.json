@@ -1,0 +1,143 @@
+{
+  "Accumulate": {
+    "NAME": "Accumulate",
+    "DESCRIPTIONS": [
+      "Gain ",
+      " at the start of your turn."
+    ]
+  },
+  "Airborne": {
+    "NAME": "Airborne",
+    "DESCRIPTIONS": [
+      "Until your next turn, you don't lose Flight for the next #b",
+      " times you take #yattack damage.",
+      "Until your next turn, you don't lose Flight for the next time you take #yattack damage."
+    ]
+  },
+  "Alchemy_Expert": {
+    "NAME": "Alchemy Expert",
+    "DESCRIPTIONS": [
+      "Whenever you use a potion, gain #b",
+      " Artifact"
+    ]
+  },
+  "Ancient_Poison": {
+    "NAME": "Ancient Posion",
+    "DESCRIPTIONS": [
+      "Artifact no longer negates Poison for this combat."
+    ]
+  },
+  "Bookworm": {
+    "NAME": "Bookworm",
+    "DESCRIPTIONS": [
+      "Gain ",
+      " every time you play a card that costs X."
+    ]
+  },
+  "Brew": {
+    "NAME": "Brew",
+    "DESCRIPTIONS": [
+      "Obtain a #r",
+      "#b",
+      "x #r",
+      " in #b",
+      ": #b",
+      " turn.",
+      " turns.",
+      " at the start of your next turn.",
+      " NL ",
+      "Sozu prevents brewing potions!",
+      "You brewed a potion!",
+      "You brewed some potions!"
+    ]
+  },
+  "Brewing": {
+    "NAME": "Brewing",
+    "DESCRIPTIONS": [
+      "You brew potions #b",
+      " turns quicker.",
+      " turn quicker."
+    ]
+  },
+  "Deadly_Contraption": {
+    "NAME": "Deadly Contraption",
+    "DESCRIPTIONS": [
+      "At the end of your turn, enemeies are dealt #b",
+      " damage per Artifact on them."
+    ]
+  },
+  "Disoriented": {
+    "NAME": "Disoriented",
+    "DESCRIPTIONS": [
+      "The first attack of this enemy has no effect, for #b",
+      " turns.",
+      "The first attack of this enemy has no effect for this turn."
+    ]
+  },
+  "Extra_Portion": {
+    "NAME": "Extra Portion",
+    "DESCRIPTIONS": [
+      "The next #b",
+      " potions are applied twice this turn.",
+      "The next potion is applied twice this turn."
+    ]
+  },
+  "Lose_Flight_Next_Turn": {
+    "NAME": "Lose Flight",
+    "DESCRIPTIONS": [
+      "At the start of your next turn, lose #b",
+      " Flight."
+    ]
+  },
+  "No_Energy": {
+    "NAME": "No Energy",
+    "DESCRIPTIONS": [
+      "You cannot gain energy this turn."
+    ]
+  },
+  "On_Fire": {
+    "NAME": "On Fire",
+    "DESCRIPTIONS": [
+      "Play #b",
+      " more cards this turn to obtain a Fire Potion.",
+      " more card this turn to obtain a Fire Potion."
+    ]
+  },
+  "Potion_Trance": {
+    "NAME": "Potion Trance",
+    "DESCRIPTIONS": [
+      "Draw #b",
+      " cards whenever you use a #yPotion this turn.",
+      " card whenever you use a #yPotion this turn."
+    ]
+  },
+  "Sage_Flight": {
+    "NAME": "Flight",
+    "DESCRIPTIONS": [
+      "Reduce #yattack damage taken by #b50%. Reduced by one if you take #yattack damage."
+    ]
+  },
+  "Taste_This_One": {
+    "NAME": "Taste This One",
+    "DESCRIPTIONS": [
+      "Whenever you use a potion, apply #b",
+      " Poison to a random enemy."
+    ]
+  },
+  "Thirsty": {
+    "NAME": "Thirsty",
+    "DESCRIPTIONS": [
+      "#yPotions used against this enemy are #y50% more effective, for #b",
+      " turns.",
+      " turn."
+    ]
+  },
+  "Vigorous_Body": {
+    "NAME": "Vigorous Body",
+    "DESCRIPTIONS": [
+      "Whenever an #yArtifact of you gets triggered, gain #b",
+      "Whenever an #yArtifact of you or an enemy gets triggered, gain #b",
+      " #yStrength."
+    ]
+  }
+}

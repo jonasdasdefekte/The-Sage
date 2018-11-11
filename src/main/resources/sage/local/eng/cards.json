@@ -1,0 +1,273 @@
+{
+  "AbstractSageCard": {
+    "NAME": "Abstract Sage Card",
+    "DESCRIPTION": "ABSTRACT CLASS! THIS SHOULD NEVER BE DISPLAYED! (Translate this one last)",
+    "UPGRADE_DESCRIPTION": "These values are for speech bubbles and updating the brew variable",
+    "EXTENDED_DESCRIPTION": [
+      "I can only play this if I have no Flight!",
+      "I can only play this if I am flying!",
+      "I can only play this if I have a potion!",
+      ".",
+      " next turn.",
+      "[(NL) ]*in[(NL) ]*!BRW![(NL) ]*-[(NL) ]*X*.*[(NL) ]*turns*\\.",
+      "[(NL) ]*in[(NL) ]*!BRW![(NL) ]*turns*\\.",
+      " *in[(NL) ]*!BRW![(NL) ]*turns*\\.*"
+    ]
+  },
+  "Accumulation": {
+    "NAME": "Accumulation",
+    "DESCRIPTION": "Air. NL Lose !M! Flight once and NL gain [E] at the start of each turn."
+  },
+  "Alchemy_Expert": {
+    "NAME": "Alchemy Expert",
+    "DESCRIPTION": "Whenever you use a potion, gain !M! Artifact.",
+    "UPGRADE_DESCRIPTION": "Innate. NL Whenever you use a potion, gain !M! Artifact."
+  },
+  "Altitude": {
+    "NAME": "Altitude",
+    "DESCRIPTION": "Gain !M! Flight."
+  },
+  "Ambition": {
+    "NAME": "Ambition",
+    "DESCRIPTION": "Gain !M! Frail. NL Gain [E] [E]."
+  },
+  "Ancient_Poison": {
+    "NAME": "Ancient Poison",
+    "DESCRIPTION": "Artifact no longer negates Poison NL for this combat. NL Apply !M! Poison to NL ALL Enemies."
+  },
+  "Anti_Ancient_Attack": {
+    "NAME": "Anti Ancient Attack",
+    "DESCRIPTION": "Deal !D! damage per Artifact the enemy has."
+  },
+  "Armor_Brew": {
+    "NAME": "Armor Brew",
+    "DESCRIPTION": "Gain !B! Block. NL Brew a Block Potion NL in !BRW! turns."
+  },
+  "Bold_Move": {
+    "NAME": "Bold Move",
+    "DESCRIPTION": "Deal !D! damage. NL Gain !M! Frail."
+  },
+  "Bookworm": {
+    "NAME": "Bookworm",
+    "DESCRIPTION": "Gain [E] every time NL you play a card NL that costs X."
+  },
+  "Bouncing_Strike": {
+    "NAME": "Bouncing Strike",
+    "DESCRIPTION": "Deal !D! damage. NL Gain !MISC! Frail. NL Gain !M! Flight."
+  },
+  "Brewmaster": {
+    "NAME": "Brewmaster",
+    "DESCRIPTION": "Gain !M! Brewing. "
+  },
+  "Burning_Flask": {
+    "NAME": "Burning Flask",
+    "DESCRIPTION": "If you have potions, discard one at random and deal !D! damage. "
+  },
+  "Catch_Me_If_You_Can": {
+    "NAME": "Catch Me If You Can",
+    "DESCRIPTION": "Until your next turn, you don't lose Flight for the next !M! times you take attack damage."
+  },
+  "Crank": {
+    "NAME": "Crank",
+    "DESCRIPTION": "Deal !D! damage. NL If the enemy has Artifact, draw !M! card."
+  },
+  "Cultist_Form": {
+    "NAME": "Cultist Form",
+    "DESCRIPTION": "Lose !MISC! Flight. NL ALL enemies gain !M! Disoriented."
+  },
+  "Deadly_Contraption": {
+    "NAME": "Deadly Contraption",
+    "DESCRIPTION": "At the end of your turn, enemies are dealt !M! damage per Artifact on them."
+  },
+  "Defend_Sage": {
+    "NAME": "Defend",
+    "DESCRIPTION": "Gain !B! Block."
+  },
+  "Energetic_Brew": {
+    "NAME": "Energetic Brew",
+    "DESCRIPTION": "Deal !D! damage. NL Brew an Energy Potion NL in !BRW! turns."
+  },
+  "Escape": {
+    "NAME": "Escape",
+    "DESCRIPTION": "Double your Flight. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Double your Flight."
+  },
+  "Extra_Portion": {
+    "NAME": "Extra Portion",
+    "DESCRIPTION": "The next potion is applied twice this turn.",
+    "UPGRADE_DESCRIPTION": "The next !M! potions are applied twice this turn."
+  },
+  "Fire_Brew": {
+    "NAME": "Fire Brew",
+    "DESCRIPTION": "Deal !D! damage. NL Brew a Fire Potion NL in !BRW! turns."
+  },
+  "Flight_Feint": {
+    "NAME": "Flight Feint",
+    "DESCRIPTION": "Deal !D! damage. NL Apply !M! Disoriented."
+  },
+  "Fly": {
+    "NAME": "Fly",
+    "DESCRIPTION": "If you aren't flying: NL Gain !M! Flight."
+  },
+  "Flying_Cauldron": {
+    "NAME": "Flying Cauldron",
+    "DESCRIPTION": "If you are flying: NL Gain !M! Brewing. NL Otherwise: NL Gain !M! Flight. NL Exhaust."
+  },
+  "Folded_Carpet": {
+    "NAME": "Folded Carpet",
+    "DESCRIPTION": "Gain !B! Block."
+  },
+  "Gearwheel_Master": {
+    "NAME": "Gearwheel Master",
+    "DESCRIPTION": "EVERYBODY gains !M! Artifact. NL Exhaust."
+  },
+  "How_To_Amuse_Sneckos": {
+    "NAME": "How To Amuse Sneckos",
+    "DESCRIPTION": "Draw X cards.",
+    "UPGRADE_DESCRIPTION": "Draw X + !M! cards."
+  },
+  "How_To_Befriend_A_Turtle": {
+    "NAME": "How To Befriend A Turtle",
+    "DESCRIPTION": "Gain X Block. NL Gain X [E].",
+    "UPGRADE_DESCRIPTION": "Gain X + !B! Block. NL Gain X [E]."
+  },
+  "How_To_Feed_Apes": {
+    "NAME": "How To Feed Apes",
+    "DESCRIPTION": "Brew one of the NL possible Potions NL in !BRW! -X turns. NL Exhaust."
+  },
+  "How_To_Greet_Byrds": {
+    "NAME": "How To Greet Byrds",
+    "DESCRIPTION": "Innate. NL Set your Flight to X. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Innate. NL Gain X Flight. NL Exhaust."
+  },
+  "How_To_Murder_Ants": {
+    "NAME": "How To Murder Ants",
+    "DESCRIPTION": "Air. NL Deal !D! damage to a random enemy X times.",
+    "UPGRADE_DESCRIPTION": "Air. NL Deal !D! damage to a random enemy X + !M! times."
+  },
+  "How_To_Poke_At_Slimes": {
+    "NAME": "How To Poke At Slimes",
+    "DESCRIPTION": "Gain !M! -X Frail. NL Gain X [E]. NL Deal !D! to ALL enemies."
+  },
+  "How_To_Talk_To_Spiders": {
+    "NAME": "How To Talk To Spiders",
+    "DESCRIPTION": "Apply X Poison. NL Brew a Poison Potion NL in !BRW! -X turns."
+  },
+  "How_To_Wake_Lyons": {
+    "NAME": "How To Wake Lyons",
+    "DESCRIPTION": "Brew a NL Steroid Potion NL in !BRW! -X turns."
+  },
+  "How_To_Warm_Elephants": {
+    "NAME": "How To Warm Elephants",
+    "DESCRIPTION": "Brew an NL Explosive Potion NL in !BRW! -X turns."
+  },
+  "Light_Weighted": {
+    "NAME": "Light-Weighted",
+    "DESCRIPTION": "Lose all Frail. NL Gain that much Flight. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Lose all Frail. NL Gain that much NL Flight + !M!. NL Exhaust."
+  },
+  "Lunchtime": {
+    "NAME": "Lunchtime!",
+    "DESCRIPTION": "Air. Lose !M! Flight and brew all potions immediately."
+  },
+  "Mechanics_Break": {
+    "NAME": "Mechanics Break!",
+    "DESCRIPTION": "Gain !B! Block. NL ALL enemies gain !M! Artifact."
+  },
+  "Meditation": {
+    "NAME": "Meditation",
+    "DESCRIPTION": "Lose all Flight. NL Draw !M! cards. NL Exhaust."
+  },
+  "On_Fire": {
+    "NAME": "On Fire",
+    "DESCRIPTION": "Whenever you play !M! cards in a single turn, obtain a Fire Potion."
+  },
+  "On_The_Head": {
+    "NAME": "On The Head",
+    "DESCRIPTION": "Deal !D! damage. NL If you are flying: NL Draw !M! card NL and gain [E]."
+  },
+  "Perpetuum_Mobile": {
+    "NAME": "Perpetuum Mobile",
+    "DESCRIPTION": "Draw !M! card. NL Play it if it costs !MISC!.",
+    "UPGRADE_DESCRIPTION": "Draw !M! card. NL Gain [E] if it costs !MISC!."
+  },
+  "Pincer_Attack": {
+    "NAME": "Pincer Attack",
+    "DESCRIPTION": "Deal !D! damage. NL Deal !D! damage per Artifact the enemy has."
+  },
+  "Pincer_Repair": {
+    "NAME": "Pincer Repair",
+    "DESCRIPTION": "Deal !D! damage. NL The enemy gains NL !M! Artifact."
+  },
+  "Potion_Trance": {
+    "NAME": "Potion Trance",
+    "DESCRIPTION": "Draw !M! card whenever you use a potion this turn. You cannot gain energy this turn.",
+    "UPGRADE_DESCRIPTION": "Draw !M! cards whenever you use a potion this turn. You cannot gain energy this turn."
+  },
+  "Pour_Tar_Pitch": {
+    "NAME": "Pour Tar Pitch",
+    "DESCRIPTION": "Deal !D! damage. NL If you are flying: Affects ALL enemies."
+  },
+  "Quackster": {
+    "NAME": "Quackster",
+    "DESCRIPTION": "Brew a random Potion in !BRW! turns."
+  },
+  "Salty_Strike": {
+    "NAME": "Salty Strike",
+    "DESCRIPTION": "Deal !D! damage. NL The enemy gains NL !M! Thirsty."
+  },
+  "Slalom": {
+    "NAME": "Slalom",
+    "DESCRIPTION": "Gain !B! Block. NL Gain !M! Frail."
+  },
+  "Spoiled_Food": {
+    "NAME": "Spoiled Food",
+    "DESCRIPTION": "Apply !M! Thirsty. NL Exhaust."
+  },
+  "Step_Back": {
+    "NAME": "Step Back",
+    "DESCRIPTION": "If you are flying: NL Gain !B! Block. NL Otherwise: NL Gain !M! Flight."
+  },
+  "Strike_Sage": {
+    "NAME": "Strike",
+    "DESCRIPTION": "Deal !D! damage."
+  },
+  "Study": {
+    "NAME": "Study",
+    "DESCRIPTION": "Draw !M! cards. Put !MISC! card from your hand on top of your draw pile.",
+    "UPGRADE_DESCRIPTION": "Draw !M! cards. You may put !MISC! card from your hand on top of your draw pile.",
+    "EXTENDED_DESCRIPTION": [
+      "put on top of your draw pile."
+    ]
+  },
+  "Swoop_Down": {
+    "NAME": "Swoop Down",
+    "DESCRIPTION": "Deal !D! damage per Flight you have. NL Lose !M! Flight.",
+    "EXTENDED_DESCRIPTION": [
+      " NL (Deals ",
+      " damage)"
+    ]
+  },
+  "Taste_This_One": {
+    "NAME": "Taste This One",
+    "DESCRIPTION": "Whenever you use a potion, apply !M! Poison to a random enemy."
+  },
+  "Toxic_Chains": {
+    "NAME": "Toxic Chains",
+    "DESCRIPTION": "Lose all Frail. NL Apply that much Poison to ALL enemies.",
+    "UPGRADE_DESCRIPTION": "Lose all Frail. NL Apply that much Poison + !M! to ALL enemies."
+  },
+  "Turn_Around": {
+    "NAME": "Turn Around",
+    "DESCRIPTION": "Gain !M! Frail. NL Deal !D! damage per Frail you have."
+  },
+  "Vigorous_Body": {
+    "NAME": "Vigorous Body",
+    "DESCRIPTION": "Whenever an Artifact of you gets triggered, gain !M! Strength.",
+    "UPGRADE_DESCRIPTION": "Whenever an Artifact of you or an enemy gets triggered, gain !M! Strength."
+  },
+  "Viral_Strike": {
+    "NAME": "Viral Strike",
+    "DESCRIPTION": "Deal !D! damage. NL If the enemy has Artifact, apply !M! Poison."
+  }
+}

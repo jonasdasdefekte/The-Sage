@@ -1,0 +1,52 @@
+{
+  "Ancient_Magnet": {
+    "NAME": "Ancient Magnet",
+    "FLAVOR": "The rust probably hurts.",
+    "DESCRIPTIONS": [
+      "Enemies have #b",
+      " less #yStrength per #yArtifact on them."
+    ]
+  },
+  "Blowpipe": {
+    "NAME": "Blowpipe",
+    "FLAVOR": "The sounds it emits are angelic and devilish at the same time.",
+    "DESCRIPTIONS": [
+      "Whenever you throw a potion at an enemy, it also effects the other enemies."
+    ]
+  },
+  "Byrd_Carpet": {
+    "NAME": "Byrd Carpet",
+    "FLAVOR": "An ancient carpet, woven by eery cultists and infused with strange magic.",
+    "DESCRIPTIONS": [
+      "Start each combat with #b",
+      " #yFlight. If you have #b",
+      " or #b",
+      " #yFlight at the start of your turn, set it to #b",
+      "."
+    ]
+  },
+  "Cookbook": {
+    "NAME": "Cookbook",
+    "FLAVOR": "After you blow the dust off, this book reveals you all its secrets.",
+    "DESCRIPTIONS": [
+      "Start each combat with #b",
+      " #yBrewing."
+    ]
+  },
+  "Flying_Carpet": {
+    "NAME": "Flying Carpet",
+    "FLAVOR": "An old carpet, similar to those used by the merchants of the far east.",
+    "DESCRIPTIONS": [
+      "Start each combat with #b",
+      " #yFlight."
+    ]
+  },
+  "Red_Beast_Statue": {
+    "NAME": "Red Beast Statue",
+    "FLAVOR": "A small red statue of a creature you have never seen before.",
+    "DESCRIPTIONS": [
+      "#yPotions are #b",
+      "% more likely to be uncommon or rare."
+    ]
+  }
+}
