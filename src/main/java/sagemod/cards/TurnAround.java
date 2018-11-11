@@ -22,7 +22,7 @@ public class TurnAround extends AbstractSageCard {
 	private static final CardRarity RARITY = CardRarity.UNCOMMON;
 	private static final CardTarget TARGET = CardTarget.ENEMY;
 
-	private static final int ATTACK_DMG = 8;
+	private static final int ATTACK_DMG = 5;
 	private static final int UPGRADE_ATTACK_DMG = 2;
 	private static final int FRAIL_GAIN = 1;
 
