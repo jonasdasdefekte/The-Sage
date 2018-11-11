@@ -1,4 +1,19 @@
 {
+  "AbstractSageCard": {
+    "NAME": "Abstract Sage Card",
+    "DESCRIPTION": "ABSTRACT CLASS! THIS SHOULD NEVER BE DISPLAYED! (Translate this one last)",
+    "UPGRADE_DESCRIPTION": "These values are for speech bubbles and updating the brew variable",
+    "EXTENDED_DESCRIPTION": [
+      "I can only play this if I have no Flight!",
+      "I can only play this if I am flying!",
+      "I can only play this if I have a potion!",
+      ".",
+      " next turn.",
+      "[(NL) ]*in[(NL) ]*!BRW![(NL) ]*-[(NL) ]*X*.*[(NL) ]*turns*\\.",
+      "[(NL) ]*in[(NL) ]*!BRW![(NL) ]*turns*\\.",
+      " *in[(NL) ]*!BRW![(NL) ]*turns*\\.*"
+    ]
+  },
   "Accumulation": {
     "NAME": "Accumulation",
     "DESCRIPTION": "Air. NL Lose !M! Flight once and NL gain [E] at the start of each turn."

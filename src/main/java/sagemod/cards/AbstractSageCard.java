@@ -11,12 +11,13 @@ import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.AbstractCreature;
+import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
+import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 import com.megacrit.cardcrawl.relics.ChemicalX;
 import com.megacrit.cardcrawl.ui.panels.EnergyPanel;
-
 import basemod.abstracts.CustomCard;
 import sagemod.SageMod;
 import sagemod.actions.LoseXEnergyAction;
@@ -26,9 +27,13 @@ import sagemod.powers.SageFlight;
 
 public abstract class AbstractSageCard extends CustomCard {
 
-	private static final String NO_FLIGHT = "I can only play this if I have no Flight!";
-	private static final String WHILE_FLYING = "I can only play this if I am flying!";
-	private static final String NEEDS_POTION = "I can only play this if I have a potion!";
+	public static final CardStrings cardStrings =
+			CardCrawlGame.languagePack.getCardStrings("AbstractSageCard");
+	public static final String[] TEXT = cardStrings.EXTENDED_DESCRIPTION;
+
+	private static final String NO_FLIGHT = TEXT[0];
+	private static final String WHILE_FLYING = TEXT[1];
+	private static final String NEEDS_POTION = TEXT[2];
 
 	private static final String PREFIX = "sage/cards/";
 	private static final String POSTFIX = ".png";
@@ -79,23 +84,22 @@ public abstract class AbstractSageCard extends CustomCard {
 				if (cost == -1) {
 					if (brewIn == 0) {
 						rawDescription = rawDescription.replaceAll(
-								"[(NL) ]*in[(NL) ]*!BRW![(NL) ]*-[(NL) ]*X*.*[(NL) ]*turns*\\.",
-								".");
+								TEXT[5],
+								TEXT[3]);
 						SageMod.logger.info("Changing Description for " + name + " (0 - X to .)");
 					}
 				} else {
 					if (brewIn == 0) {
-						rawDescription = rawDescription.replaceAll("[(NL) ]*in[(NL) ]*!BRW![(NL) ]*turns*\\.",
-								".");
+						rawDescription = rawDescription.replaceAll(TEXT[6],
+								TEXT[3]);
 						SageMod.logger.info("Changing Description for " + name + " (0 to .)");
 					} else if (brewIn == 1) {
-						rawDescription = rawDescription.replaceAll(" *in[(NL) ]*!BRW![(NL) ]*turns*\\.*",
-								" next turn.");
+						rawDescription = rawDescription.replaceAll(TEXT[7],
+								TEXT[4]);
 						SageMod.logger.info("Changing Description for " + name + " (1 to next turn)");
 					}
 				}
 			}
-
 
 			initializeDescription();
 		}
