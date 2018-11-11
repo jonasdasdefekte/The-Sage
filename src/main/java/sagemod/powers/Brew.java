@@ -4,8 +4,8 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
 import java.util.Collections;
-
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
+import com.megacrit.cardcrawl.actions.common.RelicAboveCreatureAction;
 import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -19,11 +19,14 @@ import com.megacrit.cardcrawl.vfx.SpeechBubble;
 
 public class Brew extends AbstractSagePower {
 
-	private static final String CANNOT_BREW_SOZU = "Sozu prevents brewing potions!";
 	public static final String POWER_ID = "Brew";
 	private static final PowerStrings powerStrings = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
 	public static final String NAME = powerStrings.NAME;
 	public static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;
+
+	private static final String CANNOT_BREW_SOZU = DESCRIPTIONS[9];
+	private static final String BREWED_A_POTION = DESCRIPTIONS[10];
+	private static final String BREWED_SOME_POTIONS = DESCRIPTIONS[11];
 
 	public static boolean isBrewRewards;
 
@@ -126,7 +129,7 @@ public class Brew extends AbstractSagePower {
 			}
 		}
 		if (openScreen) {
-			String title = collection.size() == 1 ? "You brewed a potion!" : "You brewed some potions!";
+			String title = collection.size() == 1 ? BREWED_A_POTION : BREWED_SOME_POTIONS;
 			AbstractDungeon.combatRewardScreen.open(title);
 			AbstractDungeon.combatRewardScreen.rewards.removeIf(i -> i.type != RewardType.POTION);
 			AbstractDungeon.getCurrRoom().rewardPopOutTimer = 0;
@@ -167,6 +170,9 @@ public class Brew extends AbstractSagePower {
 		if (AbstractDungeon.player.hasRelic(Sozu.ID)) {
 			AbstractDungeon.effectList.add(new SpeechBubble(AbstractDungeon.player.dialogX,
 					AbstractDungeon.player.dialogY, 2.0f, CANNOT_BREW_SOZU, true));
+			AbstractDungeon.player.getRelic(Sozu.ID).flash();
+			AbstractDungeon.actionManager.addToBottom(new RelicAboveCreatureAction(
+					AbstractDungeon.player, AbstractDungeon.player.getRelic(Sozu.ID)));
 			return;
 		}
 

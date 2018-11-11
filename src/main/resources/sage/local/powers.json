@@ -45,7 +45,10 @@
       " turn.",
       " turns.",
       " at the start of your next turn.",
-      " NL "
+      " NL ",
+      "Sozu prevents brewing potions!",
+      "You brewed a potion!",
+      "You brewed some potions!"
     ]
   },
   "Brewing": {
