@@ -37,8 +37,8 @@
     "NAME": "Flying Carpet",
     "FLAVOR": "An old carpet, similar to those used by the merchants of the far east.",
     "DESCRIPTIONS": [
-      "Start each combat with #b",
-      " #yFlight."
+      "Gain #b",
+      " #yFlight at the start of your second turn."
     ]
   },
   "Red_Beast_Statue": {
