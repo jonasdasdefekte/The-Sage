@@ -11,7 +11,7 @@
     "NAME": "Blowpipe",
     "FLAVOR": "The sounds it emits are angelic and devilish at the same time.",
     "DESCRIPTIONS": [
-      "Potions you throw affect ALL enemies."
+      "Whenever you throw a potion at an enemy, it also effects the other enemies."
     ]
   },
   "Byrd_Carpet": {

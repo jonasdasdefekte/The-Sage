@@ -46,9 +46,9 @@ public class PotionListener implements PrePotionUseSubscriber, PostPotionUseSubs
 	}
 
 	public void preRealPotionUse(AbstractPotion p) {
-		thirsty(p);
-		alchemyExpert(p);
 		blowpipe(p);
+		thirsty(p, getHoveredMonster());
+		alchemyExpert(p);
 	}
 
 	public void postRealPotionUse(AbstractPotion p) {
@@ -92,7 +92,7 @@ public class PotionListener implements PrePotionUseSubscriber, PostPotionUseSubs
 		}
 	}
 
-	private void thirsty(AbstractPotion p) {
+	private void thirsty(AbstractPotion p, AbstractMonster target) {
 		if (p.ID.equals(ExplosivePotion.POTION_ID)) {
 			for (AbstractMonster mo : AbstractDungeon.getCurrRoom().monsters.monsters) {
 				if (mo.hasPower(Thirsty.POWER_ID)) {
@@ -112,7 +112,6 @@ public class PotionListener implements PrePotionUseSubscriber, PostPotionUseSubs
 				monsterWithThirsty.getPower(Thirsty.POWER_ID).flash();
 			}
 		} else {
-			AbstractMonster target = getHoveredMonster();
 			if (target != null && target.hasPower(Thirsty.POWER_ID)) {
 				multiplyPotencyBy(p, Thirsty.MULTIPLIER);
 				target.getPower(Thirsty.POWER_ID).flash();
@@ -145,7 +144,9 @@ public class PotionListener implements PrePotionUseSubscriber, PostPotionUseSubs
 			AbstractMonster target = getHoveredMonster();
 			for (AbstractMonster mo : AbstractDungeon.getCurrRoom().monsters.monsters) {
 				if (target != mo) {
-					p.use(mo);
+					AbstractPotion copy = p.makeCopy();
+					thirsty(copy, mo);
+					copy.use(mo);
 					relic.flash();
 					relic.appearAbove(mo);
 				}
