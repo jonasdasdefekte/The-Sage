@@ -34,7 +34,7 @@ public class AncientMagnet extends AbstractSageRelic {
 		}
 		if (difference > 0) {
 			flash();
-			appearAbove(AbstractDungeon.player);
+			appearAbove(target);
 		}
 	}
 
