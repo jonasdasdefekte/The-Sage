@@ -94,6 +94,14 @@
       " more card this turn to obtain a Fire Potion."
     ]
   },
+  "Potion_Trance": {
+    "NAME": "Potion Trance",
+    "DESCRIPTIONS": [
+      "Draw #b",
+      " cards whenever you use a #yPotion this turn.",
+      " card whenever you use a #yPotion this turn."
+    ]
+  },
   "Sage_Flight": {
     "NAME": "Flight",
     "DESCRIPTIONS": [

@@ -1,6 +1,7 @@
 package sagemod.listeners;
 
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
+import com.megacrit.cardcrawl.actions.common.DrawCardAction;
 import com.megacrit.cardcrawl.actions.common.ReducePowerAction;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
@@ -15,6 +16,7 @@ import basemod.interfaces.PostPotionUseSubscriber;
 import basemod.interfaces.PrePotionUseSubscriber;
 import sagemod.powers.AlchemyExpertPower;
 import sagemod.powers.ExtraPortionPower;
+import sagemod.powers.PotionTrancePower;
 import sagemod.powers.TasteThisOnePower;
 import sagemod.powers.Thirsty;
 
@@ -43,12 +45,13 @@ public class PotionListener implements PrePotionUseSubscriber, PostPotionUseSubs
 	}
 
 	public void preRealPotionUse(AbstractPotion p) {
-		thirstyPre(p);
+		thirsty(p);
 		alchemyExpert(p);
 	}
 
 	public void postRealPotionUse(AbstractPotion p) {
 		tasteThisOne(p);
+		potionTrance(p);
 	}
 
 	private void usePotion(AbstractPotion p, AbstractMonster m) {
@@ -66,7 +69,8 @@ public class PotionListener implements PrePotionUseSubscriber, PostPotionUseSubs
 			power.flash();
 
 			AbstractDungeon.actionManager
-			.addToBottom(new ReducePowerAction(AbstractDungeon.player, AbstractDungeon.player, power, 1));
+			.addToBottom(new ReducePowerAction(AbstractDungeon.player,
+					AbstractDungeon.player, power, 1));
 		}
 	}
 
@@ -86,8 +90,7 @@ public class PotionListener implements PrePotionUseSubscriber, PostPotionUseSubs
 		}
 	}
 
-
-	private void thirstyPre(AbstractPotion p) {
+	private void thirsty(AbstractPotion p) {
 		if (p.ID.equals(ExplosivePotion.POTION_ID)) {
 			for (AbstractMonster mo : AbstractDungeon.getCurrRoom().monsters.monsters) {
 				if (mo.hasPower(Thirsty.POWER_ID)) {
@@ -121,6 +124,15 @@ public class PotionListener implements PrePotionUseSubscriber, PostPotionUseSubs
 			int amount = power.amount;
 			AbstractDungeon.actionManager.addToTop(new ApplyPowerAction(AbstractDungeon.player,
 					AbstractDungeon.player, new ArtifactPower(AbstractDungeon.player, amount), amount));
+			power.flash();
+		}
+	}
+
+	private void potionTrance(AbstractPotion p) {
+		if (AbstractDungeon.player.hasPower(PotionTrancePower.POWER_ID)) {
+			AbstractPower power = AbstractDungeon.player.getPower(PotionTrancePower.POWER_ID);
+			AbstractDungeon.actionManager
+			.addToBottom(new DrawCardAction(AbstractDungeon.player, power.amount));
 			power.flash();
 		}
 	}

@@ -184,6 +184,11 @@
     "NAME": "Pincer Repair",
     "DESCRIPTION": "Deal !D! damage. NL The enemy gains NL !M! Artifact."
   },
+  "Potion_Trance": {
+    "NAME": "Potion Trance",
+    "DESCRIPTION": "Draw !M! card whenever you use a potion this turn. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Draw !M! card whenever you use a potion this turn."
+  },
   "Pour_Tar_Pitch": {
     "NAME": "Pour Tar Pitch",
     "DESCRIPTION": "Deal !D! damage. NL If you are flying: Affects ALL enemies."

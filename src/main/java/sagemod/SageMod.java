@@ -77,6 +77,7 @@ import sagemod.cards.OnTheHead;
 import sagemod.cards.PerpetuumMobile;
 import sagemod.cards.PincerAttack;
 import sagemod.cards.PincerRepair;
+import sagemod.cards.PotionTrance;
 import sagemod.cards.PourTarPitch;
 import sagemod.cards.Quackster;
 import sagemod.cards.SaltyStrike;
@@ -108,6 +109,7 @@ import sagemod.powers.Disoriented;
 import sagemod.powers.ExtraPortionPower;
 import sagemod.powers.LoseFlightNextTurn;
 import sagemod.powers.OnFirePower;
+import sagemod.powers.PotionTrancePower;
 import sagemod.powers.SageFlight;
 import sagemod.powers.TasteThisOnePower;
 import sagemod.powers.Thirsty;
@@ -217,6 +219,7 @@ PostBattleSubscriber {
 		BaseMod.addCard(new ToxicChains());
 		BaseMod.addCard(new HowToMurderAnts());
 		BaseMod.addCard(new HowToAmuseSneckos());
+		BaseMod.addCard(new PotionTrance());
 
 		// Rare
 		BaseMod.addCard(new Bookworm());
@@ -249,6 +252,7 @@ PostBattleSubscriber {
 		BaseMod.addPower(ExtraPortionPower.class, ExtraPortionPower.POWER_ID);
 		BaseMod.addPower(LoseFlightNextTurn.class, LoseFlightNextTurn.POWER_ID);
 		BaseMod.addPower(OnFirePower.class, OnFirePower.POWER_ID);
+		BaseMod.addPower(PotionTrancePower.class, PotionTrancePower.POWER_ID);
 		BaseMod.addPower(SageFlight.class, SageFlight.POWER_ID);
 		BaseMod.addPower(TasteThisOnePower.class, TasteThisOnePower.POWER_ID);
 		BaseMod.addPower(Thirsty.class, Thirsty.POWER_ID);
