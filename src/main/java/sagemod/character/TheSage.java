@@ -54,6 +54,11 @@ public class TheSage extends CustomPlayer {
 	public static final int START_GOLD = 169;
 
 	private static final String CHAR_SOUND = "ATTACK_MAGIC_SLOW_1";
+	private static final float GROUND_DIALOG_Y_OFFSET = 240f;
+	private static final float FLIGHT_DIALOG_Y_OFFSET = 320f;
+
+	public static final int GROUND = 0;
+	public static final int FLIGHT = 1;
 
 	private PlayerClass playerClass;
 	private PlayerTweener animationPlayer;
@@ -63,8 +68,8 @@ public class TheSage extends CustomPlayer {
 				new SpriterAnimation("sage/character/idle/SageAnimations.scml"));
 		animationPlayer = ((SpriterAnimation) animation).myPlayer;
 		this.playerClass = playerClass;
-		dialogX = (drawX + 0.0F * Settings.scale); // set location for text bubbles
-		dialogY = (drawY + 220.0F * Settings.scale);
+		dialogX = drawX + 0.0F * Settings.scale; // set location for text bubbles
+		dialogY = drawY + GROUND_DIALOG_Y_OFFSET * Settings.scale;
 		initializeClass(null, "sage/character/shoulder2.png", "sage/character/shoulder.png",
 				"sage/character/corpse.png", getLoadout(), 20.0f, -10.0f, 220.0f, 290.0f, new EnergyManager(ENERGY));
 		if (ModHelper.enabledMods.size() > 0 && (ModHelper.isModEnabled("Diverse") || ModHelper.isModEnabled("Chimera"))
@@ -74,12 +79,21 @@ public class TheSage extends CustomPlayer {
 	}
 
 	public static void setSageAnimation(int from, int to) {
-		if (AbstractDungeon.player != null && AbstractDungeon.player instanceof TheSage) {
+		if (AbstractDungeon.player instanceof TheSage) {
 			TheSage sage = (TheSage) AbstractDungeon.player;
 			sage.animationPlayer.setBaseAnimation(from);
 			sage.animationPlayer.getFirstPlayer().setAnimation(from);
 			sage.animationPlayer.getSecondPlayer().setAnimation(to);
 			sage.animationPlayer.setWeight(1);
+			sage.updateDialogY();
+		}
+	}
+
+	public void updateDialogY() {
+		if (animationPlayer.getSecondPlayer().getAnimation().id == FLIGHT) {
+			dialogY = drawY + FLIGHT_DIALOG_Y_OFFSET * Settings.scale;
+		} else {
+			dialogY = drawY + GROUND_DIALOG_Y_OFFSET * Settings.scale;
 		}
 	}
 

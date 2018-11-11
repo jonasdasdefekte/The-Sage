@@ -1,12 +1,14 @@
 package sagemod.powers;
 
+import static sagemod.character.TheSage.FLIGHT;
+import static sagemod.character.TheSage.GROUND;
+import static sagemod.character.TheSage.setSageAnimation;
 import com.megacrit.cardcrawl.actions.common.ReducePowerAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.PowerStrings;
-import sagemod.character.TheSage;
 
 public class SageFlight extends AbstractSagePower {
 
@@ -28,14 +30,12 @@ public class SageFlight extends AbstractSagePower {
 
 	@Override
 	public void onInitialApplication() {
-		// from idle (0) to flight (1)
-		TheSage.setSageAnimation(0, 1);
+		setSageAnimation(GROUND, FLIGHT);
 	}
 
 	@Override
 	public void onRemove() {
-		// from flight (1) to idle (0)
-		TheSage.setSageAnimation(1, 0);
+		setSageAnimation(FLIGHT, GROUND);
 	}
 
 	@Override

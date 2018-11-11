@@ -37,6 +37,7 @@ import basemod.interfaces.EditCharactersSubscriber;
 import basemod.interfaces.EditKeywordsSubscriber;
 import basemod.interfaces.EditRelicsSubscriber;
 import basemod.interfaces.EditStringsSubscriber;
+import basemod.interfaces.OnStartBattleSubscriber;
 import basemod.interfaces.PostBattleSubscriber;
 import basemod.interfaces.PostInitializeSubscriber;
 import sagemod.cards.Accumulation;
@@ -135,7 +136,7 @@ import sagemod.variables.MiscDynamicVariable;
 @SpireInitializer
 public class SageMod implements EditCharactersSubscriber, EditCardsSubscriber, EditRelicsSubscriber,
 EditStringsSubscriber, PostInitializeSubscriber, EditKeywordsSubscriber,
-PostBattleSubscriber {
+		PostBattleSubscriber, OnStartBattleSubscriber {
 
 	public static final Logger logger = LogManager.getLogger(SageMod.class.getName());
 	public static final String AUTHORS = "jonasdasdefekte, Skrelpoid";
@@ -435,8 +436,14 @@ PostBattleSubscriber {
 	@Override
 	public void receivePostBattle(AbstractRoom battleRoom) {
 		if (AbstractDungeon.player != null) {
-			// from flight (1) to idle (0)
-			TheSage.setSageAnimation(1, 0);
+			TheSage.setSageAnimation(TheSage.FLIGHT, TheSage.GROUND);
+		}
+	}
+
+	@Override
+	public void receiveOnBattleStart(AbstractRoom room) {
+		if (AbstractDungeon.player instanceof TheSage) {
+			((TheSage) AbstractDungeon.player).updateDialogY();
 		}
 	}
 
