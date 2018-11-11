@@ -16,6 +16,7 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.helpers.RelicLibrary;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.localization.Keyword;
+import com.megacrit.cardcrawl.localization.PotionStrings;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.localization.RelicStrings;
 import com.megacrit.cardcrawl.relics.SneckoSkull;
@@ -301,6 +302,7 @@ PostBattleSubscriber {
 		BaseMod.loadCustomStrings(CardStrings.class, loadJson("sage/local/cards.json"));
 		BaseMod.loadCustomStrings(RelicStrings.class, loadJson("sage/local/relics.json"));
 		BaseMod.loadCustomStrings(PowerStrings.class, loadJson("sage/local/powers.json"));
+		BaseMod.loadCustomStrings(PotionStrings.class, loadJson("sage/local/potions.json"));
 	}
 
 	@Override
