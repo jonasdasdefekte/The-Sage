@@ -186,8 +186,8 @@
   },
   "Potion_Trance": {
     "NAME": "Potion Trance",
-    "DESCRIPTION": "Draw !M! card whenever you use a potion this turn. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Draw !M! card whenever you use a potion this turn."
+    "DESCRIPTION": "Draw !M! card whenever you use a potion this turn. You cannot gain energy this turn.",
+    "UPGRADE_DESCRIPTION": "Draw !M! cards whenever you use a potion this turn. You cannot gain energy this turn."
   },
   "Pour_Tar_Pitch": {
     "NAME": "Pour Tar Pitch",

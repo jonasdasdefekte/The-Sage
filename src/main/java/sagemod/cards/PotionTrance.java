@@ -5,6 +5,7 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import sagemod.powers.NoEnergyPower;
 import sagemod.powers.PotionTrancePower;
 
 public class PotionTrance extends AbstractSageCard {
@@ -19,18 +20,18 @@ public class PotionTrance extends AbstractSageCard {
 	private static final CardTarget TARGET = CardTarget.SELF;
 
 	private static final int DRAW_AMT = 1;
+	private static final int UPGRADE_DRAW_AMT = 1;
 
 	public PotionTrance() {
 		super(ID, NAME, COST, DESCRIPTION, TYPE, RARITY, TARGET);
 		baseMagicNumber = magicNumber = DRAW_AMT;
-		exhaust = true;
 	}
 
 	@Override
 	public void upgrade() {
 		if (!upgraded) {
 			upgradeName();
-			exhaust = false;
+			upgradeMagicNumber(UPGRADE_DRAW_AMT);
 			rawDescription = cardStrings.UPGRADE_DESCRIPTION;
 			initializeDescription();
 		}
@@ -44,6 +45,7 @@ public class PotionTrance extends AbstractSageCard {
 	@Override
 	public void use(AbstractPlayer p, AbstractMonster m) {
 		applyPowerToSelf(new PotionTrancePower(p, magicNumber));
+		applyPowerToSelf(new NoEnergyPower(p, magicNumber));
 	}
 
 

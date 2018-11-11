@@ -86,6 +86,12 @@
       " Flight."
     ]
   },
+  "No_Energy": {
+    "NAME": "No Energy",
+    "DESCRIPTIONS": [
+      "You cannot gain energy this turn."
+    ]
+  },
   "On_Fire": {
     "NAME": "On Fire",
     "DESCRIPTIONS": [

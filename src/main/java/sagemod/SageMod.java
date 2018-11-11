@@ -110,6 +110,7 @@ import sagemod.powers.DeadlyContraptionPower;
 import sagemod.powers.Disoriented;
 import sagemod.powers.ExtraPortionPower;
 import sagemod.powers.LoseFlightNextTurn;
+import sagemod.powers.NoEnergyPower;
 import sagemod.powers.OnFirePower;
 import sagemod.powers.PotionTrancePower;
 import sagemod.powers.SageFlight;
@@ -255,6 +256,7 @@ PostBattleSubscriber {
 		BaseMod.addPower(Disoriented.class, Disoriented.POWER_ID);
 		BaseMod.addPower(ExtraPortionPower.class, ExtraPortionPower.POWER_ID);
 		BaseMod.addPower(LoseFlightNextTurn.class, LoseFlightNextTurn.POWER_ID);
+		BaseMod.addPower(NoEnergyPower.class, NoEnergyPower.POWER_ID);
 		BaseMod.addPower(OnFirePower.class, OnFirePower.POWER_ID);
 		BaseMod.addPower(PotionTrancePower.class, PotionTrancePower.POWER_ID);
 		BaseMod.addPower(SageFlight.class, SageFlight.POWER_ID);
