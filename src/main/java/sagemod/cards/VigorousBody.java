@@ -43,11 +43,11 @@ public class VigorousBody extends AbstractSageCard {
 	public void use(AbstractPlayer p, AbstractMonster m) {
 		VigorousBodyPower power = new VigorousBodyPower(p, magicNumber);
 		if (upgraded) {
-			power.upgraded = true;
+			power.upgrade();
 			if (p.hasPower(VigorousBodyPower.POWER_ID)) {
 				VigorousBodyPower vigorBody =
 						(VigorousBodyPower) p.getPower(VigorousBodyPower.POWER_ID);
-				vigorBody.upgraded = true;
+				vigorBody.upgrade();
 			}
 		}
 		applyPowerToSelf(power);

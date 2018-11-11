@@ -15,7 +15,7 @@ public class VigorousBodyPower extends AbstractSagePower {
 	public static final String NAME = powerStrings.NAME;
 	public static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;
 
-	public boolean upgraded;
+	private boolean upgraded;
 
 	public VigorousBodyPower(AbstractCreature owner, int amount) {
 		super(POWER_ID, NAME, owner, amount);
@@ -35,6 +35,11 @@ public class VigorousBodyPower extends AbstractSagePower {
 							new StrengthPower(AbstractDungeon.player, amount), amount));
 			flash();
 		}
+	}
+
+	public void upgrade() {
+		upgraded = true;
+		updateDescription();
 	}
 
 
