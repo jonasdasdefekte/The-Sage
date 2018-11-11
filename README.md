@@ -14,7 +14,7 @@ This mod for the brilliant game Slay the Sprire introduces:
 - 2 relics for any character
 - 1 potion for any character
 
-For details, feel free to check out our [design document](https://github.com/jonasdasdefekte/The-Sage/blob/master/The%20Sage "The Sage"). You can also read on here for an introduction on the basic gameplay concepts. 
+For details, feel free to check out our [design document](https://github.com/jonasdasdefekte/The-Sage/blob/master/The%20Sage "The Sage"). You can also read on here for an introduction on the basic gameplay concepts. Further contents are: our [plans](https://github.com/jonasdasdefekte/The-Sage#our-plans-for-the-sage) for this mod, a brief guide [How To Mod The Spire](https://github.com/jonasdasdefekte/The-Sage#how-to-mod-the-spire), and a note for Modders about [Building](https://github.com/jonasdasdefekte/The-Sage#building-only-important-for-modders)
 
 ## Gameplay
 
@@ -53,12 +53,12 @@ Each of them can be a winning condition for your deck playing with The Sage!
 - growing the card set to **full size** of 75 (feel free to share your ideas if you like to);
 - card **art** will be added in slow pace (Jonas has already made some and just finished the character art);
 - full **German** localization (since we are both Germans);
-- maybe we'll come up with some more suprises?
+- maybe we'll come up with some more suprises...?
 
 ## How To Mod The Spire
 If you have found this, chances are that you know how this works. Still we want to welcome everybody, so if you aren't familiar to Modding, you can take a look at this [Tutorial Video](https://www.youtube.com/watch?v=AAhs55x7oFo) by Rhapsody (the basics still work the same way).  
-This mod requires to use [ModTheSpire](https://github.com/kiooeht/ModTheSpire/releases) as well as [Base Mod](https://github.com/daviscook477/BaseMod/releases).  
-We want to thank the active modding community of this game to make such a project possible!
+This mod requires to use [ModTheSpire](https://github.com/kiooeht/ModTheSpire/releases) as well as [Base Mod](https://github.com/daviscook477/BaseMod/releases). Make sure you have the latest versions and - while you're at it - also check whether you use our [latest release](https://github.com/jonasdasdefekte/The-Sage/releases).  
+We want to thank the active modding community of this game to make such an exciting project possible!
 
 ## Building (only important for Modders)
 This Mod uses Gradle for building. After making changes, you can double click buildMod.cmd 
