@@ -89,12 +89,11 @@ import sagemod.cards.SwoopDown;
 import sagemod.cards.TasteThisOne;
 import sagemod.cards.ToxicChains;
 import sagemod.cards.TurnAround;
+import sagemod.cards.VigorousBody;
 import sagemod.character.SageCharEnum;
 import sagemod.character.SageColorEnum;
 import sagemod.character.TheSage;
 import sagemod.listeners.PotionListener;
-import sagemod.patches.BrewingDynamicVariable;
-import sagemod.patches.MiscDynamicVariable;
 import sagemod.potions.FataMorgana;
 import sagemod.potions.FlightPotion;
 import sagemod.powers.Accumulate;
@@ -112,11 +111,14 @@ import sagemod.powers.OnFirePower;
 import sagemod.powers.SageFlight;
 import sagemod.powers.TasteThisOnePower;
 import sagemod.powers.Thirsty;
+import sagemod.powers.VigorousBodyPower;
 import sagemod.relics.AncientMagnet;
 import sagemod.relics.ByrdCarpet;
 import sagemod.relics.Cookbook;
 import sagemod.relics.FlyingCarpet;
 import sagemod.relics.RedBeastStatue;
+import sagemod.variables.BrewingDynamicVariable;
+import sagemod.variables.MiscDynamicVariable;
 
 @SpireInitializer
 public class SageMod implements EditCharactersSubscriber, EditCardsSubscriber, EditRelicsSubscriber,
@@ -229,6 +231,7 @@ PostBattleSubscriber {
 		BaseMod.addCard(new OnFire());
 		BaseMod.addCard(new AlchemyExpert());
 		BaseMod.addCard(new AncientPoison());
+		BaseMod.addCard(new VigorousBody());
 
 		registerPowers();
 	}
@@ -249,6 +252,7 @@ PostBattleSubscriber {
 		BaseMod.addPower(SageFlight.class, SageFlight.POWER_ID);
 		BaseMod.addPower(TasteThisOnePower.class, TasteThisOnePower.POWER_ID);
 		BaseMod.addPower(Thirsty.class, Thirsty.POWER_ID);
+		BaseMod.addPower(VigorousBodyPower.class, VigorousBodyPower.POWER_ID);
 
 	}
 

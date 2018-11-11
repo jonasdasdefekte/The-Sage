@@ -1,4 +1,4 @@
-package sagemod.patches;
+package sagemod.variables;
 
 import com.badlogic.gdx.graphics.Color;
 import com.megacrit.cardcrawl.cards.AbstractCard;

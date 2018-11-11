@@ -1,4 +1,4 @@
-package sagemod.patches;
+package sagemod.variables;
 
 import com.megacrit.cardcrawl.cards.AbstractCard;
 

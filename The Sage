@@ -193,9 +193,9 @@ DONE:	On Fire
 DONE: 	Ancient Poison
 		Power, 1 Energy:
 		Artifact no longer negates Poison for this combat. Apply 4 (7) Poison to ALL enemies.
-	Vigorous Body
+DONE:	Vigorous Body
 		Power, 2 Energy:
-		Whenever an Artifact (of you or an enemy) gets used, gain 1 Strength.
+		Whenever an Artifact (of you or an enemy) gets triggered, gain 1 Strength.
 
 	
 Character-specific relics (Sage only)

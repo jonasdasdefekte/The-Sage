@@ -237,5 +237,10 @@
   "Turn_Around": {
     "NAME": "Turn Around",
     "DESCRIPTION": "Gain !M! Frail. NL Deal !D! damage per Frail you have."
+  },
+  "Vigorous_Body": {
+    "NAME": "Vigorous Body",
+    "DESCRIPTION": "Whenever an Artifact of you gets triggered, gain !M! Strength.",
+    "UPGRADE_DESCRIPTION": "Whenever an Artifact of you or an enemy gets triggered, gain !M! Strength."
   }
 }
