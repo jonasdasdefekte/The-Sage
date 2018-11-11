@@ -91,6 +91,7 @@ import sagemod.cards.TasteThisOne;
 import sagemod.cards.ToxicChains;
 import sagemod.cards.TurnAround;
 import sagemod.cards.VigorousBody;
+import sagemod.cards.ViralStrike;
 import sagemod.character.SageCharEnum;
 import sagemod.character.SageColorEnum;
 import sagemod.character.TheSage;
@@ -192,6 +193,7 @@ PostBattleSubscriber {
 		BaseMod.addCard(new Slalom());
 		BaseMod.addCard(new Crank());
 		BaseMod.addCard(new EnergeticBrew());
+		BaseMod.addCard(new ViralStrike());
 
 		// Uncommon
 		BaseMod.addCard(new OnTheHead());

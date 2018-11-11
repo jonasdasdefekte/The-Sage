@@ -247,5 +247,9 @@
     "NAME": "Vigorous Body",
     "DESCRIPTION": "Whenever an Artifact of you gets triggered, gain !M! Strength.",
     "UPGRADE_DESCRIPTION": "Whenever an Artifact of you or an enemy gets triggered, gain !M! Strength."
+  },
+  "Viral_Strike": {
+    "NAME": "Viral Strike",
+    "DESCRIPTION": "Deal !D! damage. NL If the enemy has Artifact, apply !M! Poison."
   }
 }
