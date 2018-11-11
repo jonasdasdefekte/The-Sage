@@ -6,7 +6,15 @@
       "Enemies have #b",
       " less #yStrength per #yArtifact on them."
     ]
-  },"Byrd_Carpet": {
+  },
+  "Blowpipe": {
+    "NAME": "Blowpipe",
+    "FLAVOR": "The sounds it emits are angelic and devilish at the same time.",
+    "DESCRIPTIONS": [
+      "Potions you throw affect ALL enemies."
+    ]
+  },
+  "Byrd_Carpet": {
     "NAME": "Byrd Carpet",
     "FLAVOR": "An ancient carpet, woven by eery cultists and infused with strange magic.",
     "DESCRIPTIONS": [

@@ -19,6 +19,7 @@ import sagemod.powers.ExtraPortionPower;
 import sagemod.powers.PotionTrancePower;
 import sagemod.powers.TasteThisOnePower;
 import sagemod.powers.Thirsty;
+import sagemod.relics.Blowpipe;
 
 public class PotionListener implements PrePotionUseSubscriber, PostPotionUseSubscriber {
 
@@ -47,6 +48,7 @@ public class PotionListener implements PrePotionUseSubscriber, PostPotionUseSubs
 	public void preRealPotionUse(AbstractPotion p) {
 		thirsty(p);
 		alchemyExpert(p);
+		blowpipe(p);
 	}
 
 	public void postRealPotionUse(AbstractPotion p) {
@@ -134,6 +136,20 @@ public class PotionListener implements PrePotionUseSubscriber, PostPotionUseSubs
 			AbstractDungeon.actionManager
 			.addToBottom(new DrawCardAction(AbstractDungeon.player, power.amount));
 			power.flash();
+		}
+	}
+
+	private void blowpipe(AbstractPotion p) {
+		if (AbstractDungeon.player.hasRelic(Blowpipe.ID) && p.isThrown && p.targetRequired) {
+			Blowpipe relic = (Blowpipe) AbstractDungeon.player.getRelic(Blowpipe.ID);
+			AbstractMonster target = getHoveredMonster();
+			for (AbstractMonster mo : AbstractDungeon.getCurrRoom().monsters.monsters) {
+				if (target != mo) {
+					p.use(mo);
+					relic.flash();
+					relic.appearAbove(mo);
+				}
+			}
 		}
 	}
 

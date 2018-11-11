@@ -116,6 +116,7 @@ import sagemod.powers.TasteThisOnePower;
 import sagemod.powers.Thirsty;
 import sagemod.powers.VigorousBodyPower;
 import sagemod.relics.AncientMagnet;
+import sagemod.relics.Blowpipe;
 import sagemod.relics.ByrdCarpet;
 import sagemod.relics.Cookbook;
 import sagemod.relics.FlyingCarpet;
@@ -275,6 +276,9 @@ PostBattleSubscriber {
 		// Uncommon
 		BaseMod.addRelic(new RedBeastStatue(), RelicType.SHARED);
 		BaseMod.addRelicToCustomPool(new AncientMagnet(), SageColorEnum.THE_SAGE);
+
+		// Rare
+		BaseMod.addRelic(new Blowpipe(), RelicType.SHARED);
 
 		// Boss
 		BaseMod.addRelicToCustomPool(new ByrdCarpet(), SageColorEnum.THE_SAGE);

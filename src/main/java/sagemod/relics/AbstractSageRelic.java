@@ -8,7 +8,6 @@ import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.helpers.ImageMaster;
 import com.megacrit.cardcrawl.powers.AbstractPower;
-
 import basemod.abstracts.CustomRelic;
 import sagemod.SageMod;
 
@@ -33,7 +32,7 @@ public class AbstractSageRelic extends CustomRelic {
 		return AbstractDungeon.player;
 	}
 
-	protected void appearAbove(AbstractCreature creature) {
+	public void appearAbove(AbstractCreature creature) {
 		AbstractDungeon.actionManager.addToBottom(new RelicAboveCreatureAction(creature, this));
 	}
 
