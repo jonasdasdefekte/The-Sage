@@ -14,7 +14,8 @@ This mod for the brilliant game Slay the Sprire introduces:
 - 2 relics for any character
 - 1 potion for any character
 
-For details, feel free to check out our [design document](https://github.com/jonasdasdefekte/The-Sage/blob/master/The%20Sage "The Sage"). You can also read on here for an introduction on the basic gameplay concepts. Further contents are: our [plans](https://github.com/jonasdasdefekte/The-Sage#our-plans-for-the-sage) for this mod, a brief guide [How To Mod The Spire](https://github.com/jonasdasdefekte/The-Sage#how-to-mod-the-spire), and a note for Modders about [Building](https://github.com/jonasdasdefekte/The-Sage#building-only-important-for-modders)
+For details, feel free to check out our [design document](https://github.com/jonasdasdefekte/The-Sage/blob/master/The%20Sage "The Sage"). You can also read on here for an introduction on the basic [Gameplay](https://github.com/jonasdasdefekte/The-Sage#gameplay) concepts.  
+*Further contents are: our [plans](https://github.com/jonasdasdefekte/The-Sage#our-plans-for-the-sage) for this mod, a brief guide [How To Mod The Spire](https://github.com/jonasdasdefekte/The-Sage#how-to-mod-the-spire), and a note for Modders about [Building](https://github.com/jonasdasdefekte/The-Sage#building-only-important-for-modders).*
 
 ## Gameplay
 
