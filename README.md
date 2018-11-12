@@ -37,7 +37,7 @@ Every basegame character has its special take on a card type: The Ironclad likes
 
 *Quackster (Uncommon Skill, 0 Energy): Brew a random potion in 4 (3) turns.*
 
-Usually you have to wait a couple of turns before your potions are ready to use. But there is also a Brewing power that will help brewing your potions faster. For example, when playing the above card, Quackster with 2 Brewing power, you will recieve your random potion not in 4 but in 2 turns. The potion mechanic introduces many new tactical decisions because you will can only hold a couple of potions at the same time.
+Usually you have to wait a couple of turns before your potions are ready to use. But there is also a Brewing power that will help brewing your potions faster. For example, when playing the above card, Quackster with 2 Brewing power, you will recieve your random potion not in 4 but in 2 turns. The potion mechanic introduces many new tactical decisions because, just as you might know, you can only hold a couple of potions at the same time.
 
 #### Other mechanics
 Further mechanics included in the Sage's card set are:
@@ -47,6 +47,11 @@ Further mechanics included in the Sage's card set are:
 - profit from Artifacts on the enemy.
 
 Each of them can be a winning condition for your deck playing with The Sage!
+
+![Artifacts](https://github.com/jonasdasdefekte/The-Sage/blob/master/src/main/resources/sage/cards/Gearwheel_Master.png "Gearwheel Master")
+
+*Gearwheel Master (Uncommon Skill, 0 Energy): EVERYBODY gains 1 (2) Artifact. Exhaust.*
+
 
 ## Our plans for The Sage
 - **Balance** (we have been playtesting since end of 09/2018, most things should be reasonable by now but we are still tweaking here and there, feedback is welcome);
