@@ -63,7 +63,8 @@ public class SageFlight extends AbstractSagePower {
 			flash();
 			// Airborne prevents Flight loss
 			if (!owner.hasPower(Airborne.POWER_ID)) {
-				AbstractDungeon.actionManager.addToBottom(new ReducePowerAction(owner, info.owner, this, 1));
+				AbstractDungeon.actionManager
+						.addToTop(new ReducePowerAction(owner, info.owner, this, 1));
 			} else {
 				// will reduce Airborne and play a sound
 				owner.getPower(Airborne.POWER_ID).onSpecificTrigger();
