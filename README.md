@@ -15,7 +15,7 @@ This mod for the brilliant game Slay the Sprire introduces:
 - 1 potion for any character
 
 For details, feel free to check out our [design document](https://github.com/jonasdasdefekte/The-Sage/blob/master/The%20Sage "The Sage"). You can also read on here for an introduction on the basic [Gameplay](https://github.com/jonasdasdefekte/The-Sage#gameplay) concepts.  
-*Further contents are: our [plans](https://github.com/jonasdasdefekte/The-Sage#our-plans-for-the-sage) for this mod, a brief guide [How To Mod The Spire](https://github.com/jonasdasdefekte/The-Sage#how-to-mod-the-spire), and a note for Modders about [Building](https://github.com/jonasdasdefekte/The-Sage#building-only-important-for-modders).*
+*Further contents of this Readme: our [plans](https://github.com/jonasdasdefekte/The-Sage#our-plans-for-the-sage) for this mod, a brief guide [How To Mod The Spire](https://github.com/jonasdasdefekte/The-Sage#how-to-mod-the-spire), and a note for Modders about [Building](https://github.com/jonasdasdefekte/The-Sage#building-only-important-for-modders).*
 
 ## Gameplay
 
@@ -31,13 +31,12 @@ Flight is the same buff that we all know from our beloved Byrd friends. This cha
 
 #### Brewing
 
-Many cards from the Sage allow you to Brew potions.
+Every basegame character has its special take on a card type: The Ironclad likes Attacks, The Silent goes well with Skills and The Defect is specialized in playing Powers. Rather than introducing a new card type, this character focusses on another game element: Potions.  
 
 ![Brewing Potions](https://github.com/jonasdasdefekte/The-Sage/blob/master/src/main/resources/sage/cards/Quackster.png "Quackster")
 
 *Quackster (Uncommon Skill, 0 Energy): Brew a random potion in 4 (3) turns.*
 
-Every basegame character has its special take on a card type: The Ironclad likes Attacks, The Silent goes well with Skills and The Defect is specialized in playing Powers. Rather than introducing a new card type, this character focusses on another game element: Potions.  
 Usually you have to wait a couple of turns before your potions are ready to use. But there is also a Brewing power that will help brewing your potions faster. For example, when playing the above card, Quackster with 2 Brewing power, you will recieve your random potion not in 4 but in 2 turns. The potion mechanic introduces many new tactical decisions because you will can only hold a couple of potions at the same time.
 
 #### Other mechanics
