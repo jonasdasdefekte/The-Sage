@@ -4,52 +4,52 @@
     "DESCRIPTION": "ABSTRACT CLASS! THIS SHOULD NEVER BE DISPLAYED! (Translate this one last)",
     "UPGRADE_DESCRIPTION": "These values are for speech bubbles and updating the brew variable",
     "EXTENDED_DESCRIPTION": [
-      "I can only play this if I have no Flight!",
-      "I can only play this if I am flying!",
-      "I can only play this if I have a potion!",
+      "Das kann ich nicht spielen, wenn ich fliege!",
+      "Das kann ich nur spielen, wenn ich fliege!",
+      "Dafür brauche ich einen Trank!",
       ".",
-      " next turn.",
-      "[(NL) ]*in[(NL) ]*!BRW![(NL) ]*-[(NL) ]*X*.*[(NL) ]*turns*\\.",
-      "[(NL) ]*in[(NL) ]*!BRW![(NL) ]*turns*\\.",
-      " *in[(NL) ]*!BRW![(NL) ]*turns*\\.*"
+      " im nächsten Zug.",
+      "[(NL) ]*in[(NL) ]*!BRW![(NL) ]*-[(NL) ]*X*.*[(NL) ]*Zügen*\\.",
+      "[(NL) ]*in[(NL) ]*!BRW![(NL) ]*Zügen*\\.",
+      " *in[(NL) ]*!BRW![(NL) ]*Zügen*\\.*"
     ]
   },
   "Accumulation": {
-    "NAME": "Accumulation",
-    "DESCRIPTION": "Air. NL Lose !M! Flight once and NL gain [E] at the start of each turn."
+    "NAME": "Akkumulation",
+    "DESCRIPTION": "Luft. NL Verliere einmal !M! Flug. NL Erhalte [E] zu Beginn jedes Zuges."
   },
   "Alchemy_Expert": {
-    "NAME": "Alchemy Expert",
-    "DESCRIPTION": "Whenever you use a potion, gain !M! Artifact.",
-    "UPGRADE_DESCRIPTION": "Innate. NL Whenever you use a potion, gain !M! Artifact."
+    "NAME": "Alchemistin",
+    "DESCRIPTION": "Immer wenn du einen Trank nutzt, erhalte !M! Artefakt.",
+    "UPGRADE_DESCRIPTION": "Angeboren. NL Immer wenn du einen Trank nutzt, erhalte !M! Artefakt."
   },
   "Altitude": {
-    "NAME": "Altitude",
-    "DESCRIPTION": "Gain !M! Flight."
+    "NAME": "Flughöhe",
+    "DESCRIPTION": "Erhalte !M! Flug."
   },
   "Ambition": {
     "NAME": "Ambition",
-    "DESCRIPTION": "Gain !M! Frail. NL Gain [E] [E]."
+    "DESCRIPTION": "Erhalte !M! Gebrechlich. NL Erhalte [E] [E]."
   },
   "Ancient_Poison": {
-    "NAME": "Ancient Poison",
-    "DESCRIPTION": "Artifact no longer negates Poison NL for this combat. NL Apply !M! Poison to NL ALL Enemies."
+    "NAME": "Uraltes Gift",
+    "DESCRIPTION": "Artefakt negiert in diesem Kampf kein Gift mehr. NL Wende an ALLEN Gegnern !M! Gift an."
   },
   "Anti_Ancient_Attack": {
-    "NAME": "Anti Ancient Attack",
-    "DESCRIPTION": "Deal !D! damage per Artifact the enemy has."
+    "NAME": "Anti-Ahnen-Angriff",
+    "DESCRIPTION": "Füge pro Artefakt auf diesem Gegner !D! Schaden zu."
   },
   "Armor_Brew": {
-    "NAME": "Armor Brew",
-    "DESCRIPTION": "Gain !B! Block. NL Brew a Block Potion NL in !BRW! turns."
+    "NAME": "Rüstungstrank",
+    "DESCRIPTION": "Erhalte !B! Block. NL Braue einen Blocktrank NL in !BRW! Zügen."
   },
   "Bold_Move": {
-    "NAME": "Bold Move",
-    "DESCRIPTION": "Deal !D! damage. NL Gain !M! Frail."
+    "NAME": "Mutiger Schritt",
+    "DESCRIPTION": "Füge !D! Schaden zu. NL Erhalte !M! Verwundbar."
   },
   "Bookworm": {
-    "NAME": "Bookworm",
-    "DESCRIPTION": "Gain [E] every time NL you play a card NL that costs X."
+    "NAME": "Bücherwurm",
+    "DESCRIPTION": "Erhalte jedes Mal [E] , wenn du eine Karte spielst, die X kostet."
   },
   "Bouncing_Strike": {
     "NAME": "Bouncing Strike",
@@ -80,8 +80,8 @@
     "DESCRIPTION": "At the end of your turn, enemies are dealt !M! damage per Artifact on them."
   },
   "Defend_Sage": {
-    "NAME": "Defend",
-    "DESCRIPTION": "Gain !B! Block."
+    "NAME": "Verteidigen",
+    "DESCRIPTION": "Erhalte !B! Block."
   },
   "Energetic_Brew": {
     "NAME": "Energetic Brew",
@@ -229,8 +229,8 @@
     "DESCRIPTION": "If you are flying: NL Gain !B! Block. NL Otherwise: NL Gain !M! Flight."
   },
   "Strike_Sage": {
-    "NAME": "Strike",
-    "DESCRIPTION": "Deal !D! damage."
+    "NAME": "Schlag",
+    "DESCRIPTION": "Füge !D! Schaden zu."
   },
   "Study": {
     "NAME": "Study",
