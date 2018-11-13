@@ -11,226 +11,232 @@ Starting Relic:
 		Start each combat with 1 Flight. 
 
 Starting Deck:
-DONE:   4x Strike (illustriert)
+   4x Strike
 		Attack, 1 Energy: 
 		Deal 6 (9) damage.
-DONE:	4x Defend (illustriert)
+	4x Defend
 		Skill, 1 Energy: 
 		Gain 5 (8) Block.
-DONE:	1x Bold move (illustriert)
+	1x Bold move
 		Attack, 1 Energy:
 		Deal 10 (13) damage. Gain 2 Frail.
-DONE:	1x Fly (illustriert)
+	1x Fly
 		Skill, 2 (1) Energy: 
 		If you don't fly, gain 1 Flight.
 
-14 Common Cards (grey)
-DONE:	Pincer Repair (illustriert)
+15 Common Cards (grey)
+	Pincer Repair
 		Attack, 1 Energy
 		Deal 9 (12) damage. The enemy gains 1 Artifact.
-DONE:	Fire Brew
+	Fire Brew
 		Attack, 1 Energy: 
 		Deal 6 (9) damage. Gain a Fire potion in 4 (3) turns.
-DONE:	Salty Strike
+	Salty Strike
 		Attack, 1 Energy:
 		Deal 6 (9) damage. The enemy gains 1 (2) Thirsty.
-DONE:	How To Poke At Slimes
+	How To Poke At Slimes
 		Attack, X Energy:
 		Gain 4 (3)-X Frail. Gain X Energy. Deal 5 (7) damage to ALL enemies.
-DONE:	Viral Strike
-		Attack, 1 Energy:
-		Deal 8 (11) damage. If the enemy has Artifact, apply 6 Poison.
-DONE:	Energetic Brew
+	Energetic Brew
 		Attack, 1 Energy: 
 		Deal 6 (9) damage. Gain a Energy potion in 4 (3) turns.
-DONE:	Crank
+	Crank
 		Attack, 1 Energy:
 		Deal 8 (12) damage. If the enemy has Artifact, draw 1 card.
-DONE:	How To Warm Elephants (neu illustrieren)
+NEW:	Grounded Strike
+		Attack, 1 Energy:
+		Lose all Flight. Deal 10 (13) damage.
+	How To Warm Elephants (neu illustrieren)
 		Skill, X Energy: 
 		Brew an Explosive Potion in 4 (3)-X turns.
-DONE:	Armor Brew
+	Armor Brew
 		Skill, 1 Energy: 
 		Gain 5 (8) Block. Brew a block potion in 4 (3) turns.
-DONE:	How To Befriend A Turtle
+	How To Befriend A Turtle
 		Skill, X Energy:
 		Gain X (X+3) Block. Gain X Energy.
-DONE:	Catch me if you can
+	Catch me if you can
 		Skill, 0 Energy
 		Until your next turn, you don't lose Flight for the next 2 (4) times you take Attack damage.
-DONE:	How To Talk To Spiders
+	How To Talk To Spiders
 		Skill, X Energy: 
 		Apply X poison. Brew a Poison potion in 4 (3)-X turns.
-DONE:	Step Back 
+	Step Back 
 		Skill, 1 Energy:
 		If you are flying, gain 5 (8) Block. Otherwise, gain 1 Flight.
-DONE:	Ambition
+	Ambition
 		Skill, 1(0) Energy:
 		Gain 3 Frail. Gain [E][E].
-DONE:	Slalom
+	Slalom
 		Skill, 1 Energy:
 		Gain 10 (13) Block. Gain 2 Frail. 
 
 
-25 Uncommon Cards (blue)
-DONE:	On the Head (illustriert)
+26 Uncommon Cards (blue)
+	On the Head
 		Attack, 1 Energy:
 		Deal 5 (7) damage. If you are flying, draw 1 card and gain 1 Energy.
-DONE:	How to Murder Ants
+	How to Murder Ants
 		Attack, X Energy:
 		Air. Deal 8 damage to a random enemy X (X+1) times.
-DONE:	Pour Tar Pitch (illustriert)
+	Pour Tar Pitch
 		Attack, 3 Energy: 
 		Deal 18 (22) damage. Affects ALL enemies If you are flying.
-DONE:	Flight Feint
+	Flight Feint
 		Attack, 2 Energy: 
 		Deal 6 (9) damage and apply 1 Disoriented. 
-DONE:	Burning Flask
-		Attack, 1 Energy: 
+	Burning Flask
+		Attack, 0 Energy: 
 		Discard 1 random potion to deal 20 (24) damage. (Can not play with 0 potions)
-DONE:	Pincer Attack
+	Pincer Attack
 		Attack, 1 Energy: 
 		Deal 6(8) damage. Deal 6 (8) damage per Artifact the enemy has.
-DONE:	Bouncing Strike
+	Bouncing Strike
 		Attack, 2 Energy: 
 		Deal 7(10) damage. Gain 2 Frail. Gain 1 Flight.
-DONE:	Turn Around
+	Turn Around
 		Attack, 2 Energy: 
 		Gain 1 Frail. Deal 8 (10) damage per Frail you have. 
-DONE:	Gearwheel Master (illustriert)
+TODO:	Viral Strike
+		Attack, 2 Energy:
+		Deal 4 damage. Apply Virus and 7 Poison.
+	Gearwheel Master
 		Skill, 0 Energy: 
 		EVERYBODY gains 1(2) Artifact. Exhaust.
-DONE:	Quackster (illustriert)
+TODO:	Quackster
 		Skill, 0 Energy: 
-		Brew a random potion in 4 (3) turns.
-DONE:	How to Wake Lyons
+		Brew a random potion in 4 (3) turns. (Cannot brew healing potions.)
+	How to Wake Lyons
 		Skill, X Energy: 
 		Brew a Steroid potion in 4 (3)-X turns. 
-DONE:	How to feed Apes
+	How to feed Apes
 		Skill, X Energy: 
 		Randomly brew one of these potions in 4 (3)-X turns: Flight Potion, Blood Potion, Regen Potion or Fruit Juice. Exhaust.
-DONE:	Perpetuum Mobile
+	Perpetuum Mobile
 		Skill, 0 Energy: 
 		Draw 1 card. Play it (Upgrade instead: Gain 1 Energy) if it costs 1.
-DONE:	Study
+	Study
 		Skill, 1 Energy: 
 		Draw 3 cards and (you may) put one card from your hand hand on top of your deck. 
-DONE:	Flying Cauldron
+	Flying Cauldron
 		Skill, 1 (0) Energy: 
 		If you are flying, gain 1 Brewing. Otherwise, gain 1 Flight. Exhaust.
-DONE:	Lunchtime!
+	Lunchtime!
 		Skill, 1 Energy: 
 		Air. Lose 2 (1) Flight and brew all potions immediately.
-DONE:	Mechanics Break
+	Mechanics Break
 		Skill, 1 Energy:
 		Gain 10 (13) Block. ALL Enemies gain 1 Artifact.
-DONE:	Spoiled Food
+	Spoiled Food
 		Skill, 1 (0) Energy:
 		Apply 99 Thirsty. Exhaust.
-DONE:	How To Greet Byrds
+	How To Greet Byrds
 		Skill, X Energy:
 		Innate. Set your Flight to X. (Gain X Flight.) Exhaust.
-DONE:	Toxic Chains
+	Toxic Chains
 		Skill, 1 Energy:
 		Lose all Frail. Apply that much Poison (+3) to ALL enemies.
-DONE:	Potion Trance
+	Potion Trance
 		Skill, 1 Energy:
 		Draw 1 Card whenever you use a Potion this turn. You cannot gain energy this turn.
-DONE:	How To Amuse Sneckos
+	How To Amuse Sneckos
 		Skill, X Energy:
 		Draw X (X+1) cards.
-DONE:	Altitude
+	Altitude
 		Power, 1 Energy: 
 		Gain 1(2) Flight.
-DONE:	Taste this one
+	Taste this one
 		Power, 1 Energy:
 		Whenever you use a potion, apply 4 (6) Poison to a random Enemy.
-DONE:	Brewmaster
-		Power, 1 Energy:
-		Gain 1(2) Brewing.
-DONE:	Deadly Contraption
+	Brewmaster
+		Power, 2 (1) Energy:
+		Gain 1 Brewing.
+	Deadly Contraption
 		Power, 1 Energy: 
 		At the end of your turn, enemies are dealt 2 (4) damage per Artifact on them.
 
 
 15 Rare Cards (gold)
-DONE:	Swoop Down
-		Attack, 2 Energy: 
-		Deal 6 (8) damage per Flight you have. Then lose 1 Flight.
-DONE:	Anti Ancient Attack
+	Swoop Down
+		Attack, 1 Energy: 
+		Deal 4 (6) damage per Flight you have. Then lose 1 Flight.
+	Anti Ancient Attack
 		Attack, 3 Energy: 
-		Deal 20 (30) damage per Artifact the enemy has. 
-DONE:	Escape
+		Deal 18 (25) damage per Artifact the enemy has. 
+	Escape
 		Skill, 1 Energy: 
 		Double your Flight. Exhaust. (Upgrade: No Exhaust.)
-DONE:	Extra Portion
+	Extra Portion
 		Skill, 1 Energy: 
 		The next potion is (the next 2 potions are) applied twice this turn.
-DOME:	Folded Carpet
+	Folded Carpet
 		Skill, 2 Energy:
-		Gain 18 (24) Block.
-DONE:	Light-weighted
+		Gain 15 (18) Block.
+	Light-weighted
 		Skill, 0 Energy:
 		Lose all Frail. Gain that much Flight (+1). Exhaust.
-DONE:	Meditation
+	Meditation
 		Skill, 0 Energy:
 		Lose all Flight. Draw 3 (5) cards. Exhaust.
-DONE:	Alchemy Expert
+	Alchemy Expert
 		Power, 1 Energy:
 		Whenever you use a potion, gain 1 Artifact before applying its effect.
-DONE:	Cultist form
+TODO:	Cultist form
 		Power, 3 Energy: 
-		Lose 2 Flight. ALL enemies gain 3 (4) Disoriented.
-DONE:	Accumulation
+		Lose 2 Flight. Apply 1 Disoriented to a random enemy 3 (4) times.
+	Accumulation
 		Power, 1 Energy: 
 		Air. Lose 2 (1) Flight and at the start of each turn, gain 1 Energy.
-DONE:	Bookworm
+	Bookworm
 		Power, 2(1) Energy: 
 		Whenever you play a card costing X, gain 1 Energy.
-DONE:	On Fire
+	On Fire
 		Power, 2 (1) Energy:
 		Whenever you play 6 cards in a single turn, obtain a Fire Potion. 
-DONE: 	Ancient Poison
+ 	Ancient Poison
 		Power, 1 Energy:
 		Artifact no longer negates Poison for this combat. Apply 4 (7) Poison to ALL enemies.
-DONE:	Vigorous Body
+	Vigorous Body
 		Power, 2 Energy:
 		Whenever an Artifact (of you or an enemy) gets triggered, gain 1 Strength.
 
 	
 Character-specific relics (Sage only)
-DONE:	Byrd carpet
+	Byrd carpet
 		Boss relic: 
 		Replaces Flying carpet. Start each combat with 3 Flight. If you have 1 or 2 Flight at the start of your turn, set it to 3 again.
-DONE:	Cook Book
+	Cook Book
 		Common relic: 
 		Start each combat with 1 Brewing.
-DONE:	Ancient Magnet
+	Ancient Magnet
 		Uncommon relic: 
 		Enemies have 1 less Strength per Artifact on them.
-DONE:	Can also use poison Relics (from Silent):
+NEW:	Balloon Animal
+		Uncommon relic:
+		Draw 1 card at the start of your turn if you have no Flight.
+	Can also use poison Relics (from Silent):
 		- Snecko Skull
 		- The Specimen
 		- Twisted Funnel
 
 Other relics (for all characters)
-DONE:	Red Beast Statue
+	Red Beast Statue
 		Uncommon relic:
 		Potions are 50% more likely to be uncommon or rare.
-DONE:	Blowpipe
+	Blowpipe
 		Rare relic: 
 		Whenever you throw a potion at an enemy, it also effects the other enemies.
 
 Potions
-DONE:	Flight Potion
+	Flight Potion
 		Rare, Sage only
 		Gain 1 Flight.
-DONE:	Fata Morgana
+	Fata Morgana
 		Rare
 		Apply 1 Disoriented.
 
 Events
 	Carpet trader
 		Akt 2, for non-Sage characters
-		Option 1: #rLose #r50% #rmax. #rHP. #gObtain #gthe #gFlying #gCarpet.
+		Option 1: #rLose #r30% #rmax. #rHP. #gObtain #gthe #gFlying #gCarpet.
 		Option 2: Leave

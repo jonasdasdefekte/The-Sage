@@ -24,7 +24,7 @@ public class CultistForm extends AbstractSageCard {
 
 	private static final int LOSE_FLIGHT = 2;
 	private static final int DISORIENTED_AMT = 3;
-	private static final int UPGRADE_DISORIENTED_AMT = 3;
+	private static final int UPGRADE_DISORIENTED_AMT = 1;
 
 	public CultistForm() {
 		super(ID, NAME, COST, DESCRIPTION, TYPE, RARITY, TARGET);

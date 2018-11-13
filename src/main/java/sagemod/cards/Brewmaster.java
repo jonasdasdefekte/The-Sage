@@ -13,14 +13,14 @@ public class Brewmaster extends AbstractSageCard {
 	public static final String ID = "Brewmaster";
 	private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
 	public static final String NAME = cardStrings.NAME;
-	private static final int COST = 1;
+	private static final int COST = 2;
 	public static final String DESCRIPTION = cardStrings.DESCRIPTION;
 	private static final CardType TYPE = CardType.POWER;
 	private static final CardRarity RARITY = CardRarity.UNCOMMON;
 	private static final CardTarget TARGET = CardTarget.SELF;
 
 	private static final int BREWING_AMT = 1;
-	private static final int UPGRADE_BREWING_AMT = 1;
+	private static final int UPGRADE_COST_TO = 1;
 
 	public Brewmaster() {
 		super(ID, NAME, COST, DESCRIPTION, TYPE, RARITY, TARGET);
@@ -31,7 +31,7 @@ public class Brewmaster extends AbstractSageCard {
 	public void upgrade() {
 		if (!upgraded) {
 			upgradeName();
-			upgradeMagicNumber(UPGRADE_BREWING_AMT);
+			upgradeBaseCost(UPGRADE_COST_TO);
 		}
 	}
 
