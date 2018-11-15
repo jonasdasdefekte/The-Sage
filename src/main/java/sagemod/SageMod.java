@@ -408,7 +408,7 @@ PostBattleSubscriber, OnStartBattleSubscriber {
 		ModPanel panel = new ModPanel();
 		if (Loader.DEBUG) {
 			panel.addUIElement(new ModButton(400, 400, panel, b -> {
-				StatAnalyzer.printStatsForCharacter(SageCharEnum.THE_SAGE);
+				StatAnalyzer.printStatsForAllCharacters();
 			}));
 		}
 		BaseMod.registerModBadge(badgeTexture, TheSage.NAME, AUTHORS, TheSage.DESC, panel);
