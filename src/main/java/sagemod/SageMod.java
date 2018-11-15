@@ -136,7 +136,7 @@ import sagemod.variables.MiscDynamicVariable;
 @SpireInitializer
 public class SageMod implements EditCharactersSubscriber, EditCardsSubscriber, EditRelicsSubscriber,
 EditStringsSubscriber, PostInitializeSubscriber, EditKeywordsSubscriber,
-		PostBattleSubscriber, OnStartBattleSubscriber {
+PostBattleSubscriber, OnStartBattleSubscriber {
 
 	public static final Logger logger = LogManager.getLogger(SageMod.class.getName());
 	public static final String AUTHORS = "jonasdasdefekte, Skrelpoid";
@@ -396,7 +396,7 @@ EditStringsSubscriber, PostInitializeSubscriber, EditKeywordsSubscriber,
 		if (Gdx.files.internal(maybeExisting).exists()) {
 			return maybeExisting;
 		} else {
-			SageMod.logger.info(
+			SageMod.logger.debug(
 					id + " has no image configured. Defaulting to placeholder image (should be in " + prefix + ")");
 			return prefix + PLACEHOLDER + postfix;
 		}
