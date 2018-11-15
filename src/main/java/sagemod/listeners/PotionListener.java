@@ -99,22 +99,24 @@ public class PotionListener implements PrePotionUseSubscriber, PostPotionUseSubs
 					((Thirsty) mo.getPower(Thirsty.POWER_ID)).onExplosivePotionUsed();
 				}
 			}
-		} else if (p.isThrown && !p.targetRequired) {
-			AbstractMonster monsterWithThirsty = null;
-			for (AbstractMonster mo : AbstractDungeon.getCurrRoom().monsters.monsters) {
-				if (mo.hasPower(Thirsty.POWER_ID)) {
-					monsterWithThirsty = mo;
-					break;
+		} else if (p.isThrown) {
+			if (p.targetRequired) {
+				if (target != null && target.hasPower(Thirsty.POWER_ID)) {
+					multiplyPotencyBy(p, Thirsty.MULTIPLIER);
+					target.getPower(Thirsty.POWER_ID).flash();
 				}
-			}
-			if (monsterWithThirsty != null) {
-				multiplyPotencyBy(p, Thirsty.MULTIPLIER);
-				monsterWithThirsty.getPower(Thirsty.POWER_ID).flash();
-			}
-		} else {
-			if (target != null && target.hasPower(Thirsty.POWER_ID)) {
-				multiplyPotencyBy(p, Thirsty.MULTIPLIER);
-				target.getPower(Thirsty.POWER_ID).flash();
+			} else {
+				AbstractMonster monsterWithThirsty = null;
+				for (AbstractMonster mo : AbstractDungeon.getCurrRoom().monsters.monsters) {
+					if (mo.hasPower(Thirsty.POWER_ID)) {
+						monsterWithThirsty = mo;
+						break;
+					}
+				}
+				if (monsterWithThirsty != null) {
+					multiplyPotencyBy(p, Thirsty.MULTIPLIER);
+					monsterWithThirsty.getPower(Thirsty.POWER_ID).flash();
+				}
 			}
 		}
 	}
