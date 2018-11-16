@@ -20,7 +20,7 @@ public class PourTarPitch extends AbstractSageCard {
 	private static final CardRarity RARITY = CardRarity.UNCOMMON;
 	private static final CardTarget TARGET = CardTarget.ENEMY;
 
-	private static final int ATTACK_DMG = 18;
+	private static final int ATTACK_DMG = 22;
 	private static final int UPGRADE_ATTACK_DMG = 4;
 
 	public PourTarPitch() {

@@ -19,7 +19,7 @@ public class BoldMove extends AbstractSageCard {
 	private static final CardRarity RARITY = CardRarity.BASIC;
 	private static final CardTarget TARGET = CardTarget.ENEMY;
 
-	private static final int ATTACK_DMG = 10;
+	private static final int ATTACK_DMG = 8;
 	private static final int UPGRADE_ATTACK_DMG = 3;
 	private static final int FRAIL_GAIN = 2;
 

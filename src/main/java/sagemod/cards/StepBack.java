@@ -13,13 +13,13 @@ public class StepBack extends AbstractSageCard {
 	public static final String ID = "Step_Back";
 	private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
 	public static final String NAME = cardStrings.NAME;
-	private static final int COST = 1;
+	private static final int COST = 2;
 	public static final String DESCRIPTION = cardStrings.DESCRIPTION;
 	private static final CardType TYPE = CardType.SKILL;
 	private static final CardRarity RARITY = CardRarity.COMMON;
 	private static final CardTarget TARGET = CardTarget.SELF;
 
-	private static final int BLOCK_AMT = 5;
+	private static final int BLOCK_AMT = 10;
 	private static final int UPGRADE_BLOCK_AMT = 3;
 	private static final int FLIGHT_AMT = 1;
 

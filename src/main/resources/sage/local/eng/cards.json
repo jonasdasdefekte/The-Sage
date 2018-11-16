@@ -234,8 +234,8 @@
   },
   "Study": {
     "NAME": "Study",
-    "DESCRIPTION": "Draw !M! cards. Put !MISC! card from your hand on top of your draw pile.",
-    "UPGRADE_DESCRIPTION": "Draw !M! cards. You may put !MISC! card from your hand on top of your draw pile.",
+    "DESCRIPTION": "Draw !M! cards. NL Put !MISC! card from your hand on top of your draw pile.",
+    "UPGRADE_DESCRIPTION": "Draw !M! cards. NL You may put !MISC! card from your hand on top of your draw pile.",
     "EXTENDED_DESCRIPTION": [
       "put on top of your draw pile."
     ]
