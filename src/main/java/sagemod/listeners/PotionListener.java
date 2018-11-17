@@ -64,10 +64,13 @@ public class PotionListener implements PrePotionUseSubscriber, PostPotionUseSubs
 
 	private void extraPortion(AbstractPotion p) {
 		if (AbstractDungeon.player.hasPower(ExtraPortionPower.POWER_ID)) {
+			if (p.isThrown && p.targetRequired && getHoveredMonster() == null) {
+				return;
+			}
 			AbstractPower power = AbstractDungeon.player.getPower(ExtraPortionPower.POWER_ID);
 			AbstractMonster monster = getHoveredMonster();
 			monster = monster == null ? AbstractDungeon.getRandomMonster() : monster;
-			usePotion(p, monster);
+			usePotion(p.makeCopy(), monster);
 			power.flash();
 
 			AbstractDungeon.actionManager
@@ -78,6 +81,9 @@ public class PotionListener implements PrePotionUseSubscriber, PostPotionUseSubs
 
 	private void tasteThisOne(AbstractPotion p) {
 		if (AbstractDungeon.player.hasPower(TasteThisOnePower.POWER_ID)) {
+			if (p.isThrown && p.targetRequired && getHoveredMonster() == null) {
+				return;
+			}
 			AbstractPower power = AbstractDungeon.player.getPower(TasteThisOnePower.POWER_ID);
 			AbstractMonster m = AbstractDungeon.getRandomMonster();
 
@@ -123,6 +129,9 @@ public class PotionListener implements PrePotionUseSubscriber, PostPotionUseSubs
 
 	private void alchemyExpert(AbstractPotion p) {
 		if (AbstractDungeon.player.hasPower(AlchemyExpertPower.POWER_ID)) {
+			if (p.isThrown && p.targetRequired && getHoveredMonster() == null) {
+				return;
+			}
 			AbstractPower power = AbstractDungeon.player.getPower(AlchemyExpertPower.POWER_ID);
 			int amount = power.amount;
 			AbstractDungeon.actionManager.addToTop(new ApplyPowerAction(AbstractDungeon.player,
@@ -133,6 +142,9 @@ public class PotionListener implements PrePotionUseSubscriber, PostPotionUseSubs
 
 	private void potionTrance(AbstractPotion p) {
 		if (AbstractDungeon.player.hasPower(PotionTrancePower.POWER_ID)) {
+			if (p.isThrown && p.targetRequired && getHoveredMonster() == null) {
+				return;
+			}
 			AbstractPower power = AbstractDungeon.player.getPower(PotionTrancePower.POWER_ID);
 			AbstractDungeon.actionManager
 			.addToBottom(new DrawCardAction(AbstractDungeon.player, power.amount));
@@ -144,6 +156,9 @@ public class PotionListener implements PrePotionUseSubscriber, PostPotionUseSubs
 		if (AbstractDungeon.player.hasRelic(Blowpipe.ID) && p.isThrown && p.targetRequired) {
 			Blowpipe relic = (Blowpipe) AbstractDungeon.player.getRelic(Blowpipe.ID);
 			AbstractMonster target = getHoveredMonster();
+			if (target == null) {
+				return;
+			}
 			for (AbstractMonster mo : AbstractDungeon.getCurrRoom().monsters.monsters) {
 				if (target != mo) {
 					AbstractPotion copy = p.makeCopy();
