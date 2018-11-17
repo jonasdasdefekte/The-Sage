@@ -40,9 +40,9 @@ TODO:	How To Poke At Slimes
 	Energetic Brew
 		Attack, 1 Energy: 
 		Deal 6 (9) damage. Gain a Energy potion in 4 (3) turns.
-	Crank
+TODO:	Crank
 		Attack, 1 Energy:
-		Deal 8 (12) damage. If the enemy has Artifact, draw 1 card.
+		Deal 8 (12) damage. If the enemy has Artifact, draw 1 card. (Draw cards equal to the enemie's Artifact.)
 NEW:	Grounded Strike
 		Attack, 1 Energy:
 		Lose all (1) Flight. Deal 10 (13) damage.
@@ -196,9 +196,9 @@ TODO:	Cultist form
 	On Fire
 		Power, 1 (0) Energy:
 		Whenever you play 6 cards in a single turn, obtain a Fire Potion. 
- 	Ancient Poison
+TODO: 	Ancient Poison
 		Power, 1 Energy:
-		Artifact no longer negates Poison for this combat. Apply 4 (7) Poison to ALL enemies.
+		Artifact no longer negates Poison for this combat. Each enemy gains Poison equal to their Artifact (+ 5).
 	Vigorous Body
 		Power, 2 Energy:
 		Whenever an Artifact (of you or an enemy) gets triggered, gain 1 Strength.
