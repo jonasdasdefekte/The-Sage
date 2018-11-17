@@ -136,8 +136,9 @@
     "NAME": "Vigorous Body",
     "DESCRIPTIONS": [
       "Whenever an #yArtifact of you gets triggered, gain #b",
-      "Whenever an #yArtifact of you or an enemy gets triggered, gain #b",
-      " #yStrength."
+      "Whenever an #yArtifact of an enemy gets triggered, gain #b",
+      " #yStrength.",
+      " NL "
     ]
   }
 }

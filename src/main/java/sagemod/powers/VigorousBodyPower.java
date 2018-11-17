@@ -15,7 +15,8 @@ public class VigorousBodyPower extends AbstractSagePower {
 	public static final String NAME = powerStrings.NAME;
 	public static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;
 
-	private boolean upgraded;
+	private int upgradedAmount;
+	private int unupgradedAmount;
 
 	public VigorousBodyPower(AbstractCreature owner, int amount) {
 		super(POWER_ID, NAME, owner, amount);
@@ -24,23 +25,43 @@ public class VigorousBodyPower extends AbstractSagePower {
 
 	@Override
 	public void updateDescription() {
-		String firstPart = upgraded ? DESCRIPTIONS[1] : DESCRIPTIONS[0];
-		description = firstPart + amount + DESCRIPTIONS[2];
+		StringBuilder builder = new StringBuilder();
+		builder.append(DESCRIPTIONS[0]);
+		builder.append(unupgradedAmount + upgradedAmount);
+		builder.append(DESCRIPTIONS[2]);
+		if (upgradedAmount > 0) {
+			builder.append(DESCRIPTIONS[3]);
+			builder.append(DESCRIPTIONS[1]);
+			builder.append(upgradedAmount);
+			builder.append(DESCRIPTIONS[2]);
+		}
+		description = builder.toString();
 	}
 
 	public void onArtifactTriggered(ArtifactPower power) {
-		if (upgraded || power.owner.isPlayer) {
+		int strength = 0;
+		if (power.owner.isPlayer) {
+			strength += unupgradedAmount;
+		}
+		strength += upgradedAmount;
+		if (strength > 0) {
 			AbstractDungeon.actionManager.addToBottom(
 					new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player,
-							new StrengthPower(AbstractDungeon.player, amount), amount));
+							new StrengthPower(AbstractDungeon.player, strength), strength));
 			flash();
 		}
 	}
 
-	public void upgrade() {
-		upgraded = true;
+	public void upgrade(int upgradedAmount) {
+		this.upgradedAmount += upgradedAmount;
+		amount = Math.max(upgradedAmount, unupgradedAmount);
 		updateDescription();
 	}
 
+	public void increaseUnupgraded(int by) {
+		unupgradedAmount += by;
+		amount = Math.max(upgradedAmount, unupgradedAmount);
+		updateDescription();
+	}
 
 }

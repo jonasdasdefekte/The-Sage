@@ -43,11 +43,18 @@ public class VigorousBody extends AbstractSageCard {
 	public void use(AbstractPlayer p, AbstractMonster m) {
 		VigorousBodyPower power = new VigorousBodyPower(p, magicNumber);
 		if (upgraded) {
-			power.upgrade();
+			power.upgrade(magicNumber);
 			if (p.hasPower(VigorousBodyPower.POWER_ID)) {
 				VigorousBodyPower vigorBody =
 						(VigorousBodyPower) p.getPower(VigorousBodyPower.POWER_ID);
-				vigorBody.upgrade();
+				vigorBody.upgrade(magicNumber);
+			}
+		} else {
+			power.increaseUnupgraded(magicNumber);
+			if (p.hasPower(VigorousBodyPower.POWER_ID)) {
+				VigorousBodyPower vigorBody =
+						(VigorousBodyPower) p.getPower(VigorousBodyPower.POWER_ID);
+				vigorBody.increaseUnupgraded(magicNumber);
 			}
 		}
 		applyPowerToSelf(power);
