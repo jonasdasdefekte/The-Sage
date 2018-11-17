@@ -4,12 +4,16 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
 import java.util.Collections;
+import com.badlogic.gdx.graphics.Color;
+import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.RelicAboveCreatureAction;
 import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
+import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
+import com.megacrit.cardcrawl.helpers.FontHelper;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.potions.AbstractPotion;
 import com.megacrit.cardcrawl.potions.PotionSlot;
@@ -122,6 +126,7 @@ public class Brew extends AbstractSagePower {
 		isBrewRewards = openScreen;
 
 		for (Potion p : collection) {
+			p.potion.scale = Settings.scale;
 			if (openScreen) {
 				AbstractDungeon.getCurrRoom().addPotionToRewards(p.potion);
 			} else {
@@ -244,6 +249,31 @@ public class Brew extends AbstractSagePower {
 		@Override
 		public int hashCode() {
 			return turns;
+		}
+
+	}
+
+	private static final float X = 40 * Settings.scale;
+	private static final float Y = 800 * Settings.scale;
+
+	@Override
+	public void renderIcons(SpriteBatch sb, float x, float y, Color c) {
+		super.renderIcons(sb, x, y, c);
+		int lastTurns = -1;
+		int xOffset = 1;
+		for (Potion p : potions) {
+			float yPos = Y - p.turns * p.potion.hb.height * 0.75f;
+			if (lastTurns != p.turns) {
+				xOffset = 1;
+				super.renderIcons(sb, X, yPos, c);
+				FontHelper.powerAmountFont.draw(sb, String.valueOf(p.turns), X, yPos);
+			}
+			float xPos = X + xOffset * p.potion.hb.width * 0.75f;
+			p.potion.scale = Settings.scale * 0.75f;
+			p.potion.move(xPos, yPos);
+			p.potion.render(sb);
+			xOffset++;
+			lastTurns = p.turns;
 		}
 
 	}
