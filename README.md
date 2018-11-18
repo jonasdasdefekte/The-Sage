@@ -8,13 +8,12 @@ She learned flying a carpet and brewing potions in order to stop its rise.*
 
 This mod for the brilliant game Slay the Sprire introduces:
 - The Sage, a new character to play with currently... 
-    - 59 cards
+    - 60 cards
     - 4 Sage-only relics
     - 1 Sage-only potion
-    
-- one event for non-Sage characters
-- 2 relics for any character
-- 1 potion for any character
+- 1 general Event
+- 2 general Relics
+- 1 general Potion
 
 For details, feel free to check out our [design document](https://github.com/jonasdasdefekte/The-Sage/blob/master/The%20Sage "The Sage"). You can also read on here for an introduction on the basic [Gameplay](#gameplay) concepts.  
 *Further contents of this Readme: our [plans](#our-plans-for-the-sage) for this mod, a brief guide [How To Mod The Spire](#how-to-mod-the-spire), and a note for Modders about [Building](#building-only-important-for-modders).*
