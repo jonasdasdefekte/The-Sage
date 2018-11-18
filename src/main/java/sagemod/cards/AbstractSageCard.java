@@ -1,5 +1,6 @@
 package sagemod.cards;
 
+import java.util.Locale;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import com.megacrit.cardcrawl.actions.AbstractGameAction.AttackEffect;
@@ -50,8 +51,13 @@ public abstract class AbstractSageCard extends CustomCard {
 
 	public AbstractSageCard(String id, String name, int cost, String rawDescription, CardType type, CardRarity rarity,
 			CardTarget target) {
-		super(id, name, SageMod.getExistingOrPlaceholder(PREFIX, id, POSTFIX), cost, rawDescription, type,
+		super(id, name, SageMod.getExistingOrPlaceholder(getPrefix(type), id, POSTFIX), cost,
+				rawDescription, type,
 				SageColorEnum.THE_SAGE, rarity, target);
+	}
+
+	private static String getPrefix(CardType type) {
+		return PREFIX + type.toString().toLowerCase(Locale.ROOT) + "/";
 	}
 
 	public abstract String getLoadedDescription();
