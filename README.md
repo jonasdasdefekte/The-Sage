@@ -2,7 +2,7 @@
 *A mechanic who studied about the cult of a blue bird.  
 She learned flying a carpet and brewing potions in order to stop its rise.*
 
-### [Download](https://github.com/jonasdasdefekte/The-Sage/releases "Download")
+### [ :inbox_tray: Download](https://github.com/jonasdasdefekte/The-Sage/releases "Download")
 
 ## Content
 
@@ -15,8 +15,12 @@ This mod for the brilliant game Slay the Sprire introduces:
 - 2 general Relics
 - 1 general Potion
 
-For details, feel free to check out our [design document](https://github.com/jonasdasdefekte/The-Sage/blob/master/The%20Sage "The Sage"). You can also read on here for an introduction on the basic [Gameplay](#gameplay) concepts.  
-*Further contents of this Readme: our [plans](#our-plans-for-the-sage) for this mod, a brief guide [How To Mod The Spire](#how-to-mod-the-spire), and a note for Modders about [Building](#building-only-important-for-modders).*
+For details, feel free to check out our [design document](https://github.com/jonasdasdefekte/The-Sage/blob/master/The%20Sage "The Sage").  
+You can also read on here for an introduction on the basic [Gameplay](#gameplay) concepts.  
+*Further contents of this Readme: 
+our [plans](#our-plans-for-the-sage) for this mod,  
+a brief guide [How To Mod The Spire](#how-to-mod-the-spire),  
+and a note for Modders about [Building](#building-only-important-for-modders).*
 
 ## Gameplay
 
