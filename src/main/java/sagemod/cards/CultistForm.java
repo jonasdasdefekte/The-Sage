@@ -6,7 +6,6 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-
 import basemod.helpers.BaseModCardTags;
 import sagemod.actions.ReduceFlightBlockableByArtifactAction;
 import sagemod.powers.Disoriented;
@@ -23,12 +22,13 @@ public class CultistForm extends AbstractSageCard {
 	private static final CardTarget TARGET = CardTarget.SELF;
 
 	private static final int LOSE_FLIGHT = 2;
-	private static final int DISORIENTED_AMT = 3;
-	private static final int UPGRADE_DISORIENTED_AMT = 1;
+	private static final int DISORIENTED_AMT = 1;
+	private static final int DISORIENTED_TIMES = 4;
+	private static final int UPGRADE_DISORIENTED_TIMES = 1;
 
 	public CultistForm() {
 		super(ID, NAME, COST, DESCRIPTION, TYPE, RARITY, TARGET);
-		baseMagicNumber = magicNumber = DISORIENTED_AMT;
+		baseMagicNumber = magicNumber = DISORIENTED_TIMES;
 		misc = LOSE_FLIGHT;
 
 		tags.add(BaseModCardTags.FORM);
@@ -38,7 +38,7 @@ public class CultistForm extends AbstractSageCard {
 	public void upgrade() {
 		if (!upgraded) {
 			upgradeName();
-			upgradeMagicNumber(UPGRADE_DISORIENTED_AMT);
+			upgradeMagicNumber(UPGRADE_DISORIENTED_TIMES);
 		}
 	}
 
@@ -53,8 +53,12 @@ public class CultistForm extends AbstractSageCard {
 			AbstractDungeon.actionManager.addToBottom(new ReduceFlightBlockableByArtifactAction(misc, p));
 		}
 
-		for (AbstractMonster mo : AbstractDungeon.getCurrRoom().monsters.monsters) {
-			applyPower(new Disoriented(mo, magicNumber), mo);
+		for (int i = 0; i < magicNumber; i++) {
+			if (AbstractDungeon.getCurrRoom().monsters.areMonstersBasicallyDead()) {
+				break;
+			}
+			AbstractMonster mo = AbstractDungeon.getMonsters().getRandomMonster(true);
+			applyPower(new Disoriented(mo, DISORIENTED_AMT), mo);
 		}
 	}
 

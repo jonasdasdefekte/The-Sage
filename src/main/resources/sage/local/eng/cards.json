@@ -74,7 +74,7 @@
   },
   "Cultist_Form": {
     "NAME": "Cultist Form",
-    "DESCRIPTION": "Lose !MISC! Flight. NL ALL enemies gain !M! Disoriented."
+    "DESCRIPTION": "Lose !MISC! Flight. NL Apply 1 Disoriented to a random enemy !M! times."
   },
   "Deadly_Contraption": {
     "NAME": "Deadly Contraption",
