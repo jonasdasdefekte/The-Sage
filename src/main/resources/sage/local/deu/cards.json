@@ -33,7 +33,8 @@
   },
   "Ancient_Poison": {
     "NAME": "Uraltes Gift",
-    "DESCRIPTION": "Artefakt negiert in diesem Kampf kein Gift mehr. NL Wende an ALLEN Gegnern !M! Gift an."
+    "DESCRIPTION": "Artefakt negiert in diesem Kampf kein Gift mehr. NL Jeder Gegner erhält soviel Gift, wie er Artefakt hat.",
+    "UPGRADE_DESCRIPTION": "Artefakt negiert in diesem Kampf kein Gift mehr. NL Jeder Gegner erhält soviel Gift, wie er Artefakt hat + !M!."
   },
   "Anti_Ancient_Attack": {
     "NAME": "Anti-Ahnen-Angriff",

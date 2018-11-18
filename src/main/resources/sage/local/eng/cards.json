@@ -33,7 +33,8 @@
   },
   "Ancient_Poison": {
     "NAME": "Ancient Poison",
-    "DESCRIPTION": "Artifact no longer negates Poison NL for this combat. NL Apply !M! Poison to NL ALL Enemies."
+    "DESCRIPTION": "Artifact no longer negates Poison NL for this combat. NL Each enemy gains Poison equal to their Artifact.",
+    "UPGRADE_DESCRIPTION": "Artifact no longer negates Poison NL for this combat. NL Each enemy gains Poison equal to their Artifact + !M!."
   },
   "Anti_Ancient_Attack": {
     "NAME": "Anti Ancient Attack",
