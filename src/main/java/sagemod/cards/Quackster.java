@@ -1,12 +1,16 @@
 package sagemod.cards;
 
+import java.util.ArrayList;
+import java.util.Arrays;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
-import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
+import com.megacrit.cardcrawl.helpers.PotionHelper;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-
+import com.megacrit.cardcrawl.potions.BloodPotion;
+import com.megacrit.cardcrawl.potions.FruitJuice;
+import com.megacrit.cardcrawl.potions.RegenPotion;
 import sagemod.powers.Brew;
 
 public class Quackster extends AbstractSageCard {
@@ -22,6 +26,9 @@ public class Quackster extends AbstractSageCard {
 
 	private static final int BREW_IN = 4;
 	private static final int UPGRADE_BREW_IN = -1;
+
+	private static final ArrayList<String> EXCLUDED = new ArrayList<>(
+			Arrays.asList(FruitJuice.POTION_ID, BloodPotion.POTION_ID, RegenPotion.POTION_ID));
 
 	public Quackster() {
 		super(ID, NAME, COST, DESCRIPTION, TYPE, RARITY, TARGET);
@@ -44,7 +51,7 @@ public class Quackster extends AbstractSageCard {
 
 	@Override
 	public void use(AbstractPlayer p, AbstractMonster m) {
-		Brew.addPotion(brewIn, AbstractDungeon.returnRandomPotion(), p);
+		Brew.addPotion(brewIn, PotionHelper.getRandomPotion(EXCLUDED), p);
 	}
 
 	@Override
