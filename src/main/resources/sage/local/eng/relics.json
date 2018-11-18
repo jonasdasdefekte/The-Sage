@@ -7,6 +7,14 @@
       " less #yStrength per #yArtifact on them."
     ]
   },
+  "Balloon_Animal": {
+    "NAME": "Balloon Animal",
+    "FLAVOR": "Handle carefully or it might pop.",
+    "DESCRIPTIONS": [
+      "Draw #b",
+      " card at the start of your turn if you have no #yFlight"
+    ]
+  },
   "Blowpipe": {
     "NAME": "Blowpipe",
     "FLAVOR": "The sounds it emits are angelic and devilish at the same time.",
