@@ -17,12 +17,10 @@ public class HowToAmuseSneckos extends AbstractSageCard {
 	private static final CardRarity RARITY = CardRarity.UNCOMMON;
 	private static final CardTarget TARGET = CardTarget.SELF;
 
-	private static final int ADDITIONAL_DRAW = 0;
-	private static final int UPGRADE_ADDITIONAL_DRAW = 1;
+	private static final int UPGRADED_ENERGY_GAIN = 1;
 
 	public HowToAmuseSneckos() {
 		super(ID, NAME, COST, DESCRIPTION, TYPE, RARITY, TARGET);
-		baseMagicNumber = magicNumber = ADDITIONAL_DRAW;
 
 	}
 
@@ -30,7 +28,6 @@ public class HowToAmuseSneckos extends AbstractSageCard {
 	public void upgrade() {
 		if (!upgraded) {
 			upgradeName();
-			upgradeMagicNumber(UPGRADE_ADDITIONAL_DRAW);
 
 			rawDescription = cardStrings.UPGRADE_DESCRIPTION;
 			initializeDescription();
@@ -46,9 +43,13 @@ public class HowToAmuseSneckos extends AbstractSageCard {
 	public void use(AbstractPlayer p, AbstractMonster m) {
 		int effect = getXEffect();
 
-		int draw = effect + magicNumber;
+		int draw = effect;
 		if (draw > 0) {
 			draw(draw);
+		}
+
+		if (upgraded) {
+			gainEnergy(UPGRADED_ENERGY_GAIN);
 		}
 
 		useXEnergy();

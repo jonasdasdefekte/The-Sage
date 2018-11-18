@@ -1,7 +1,7 @@
 {
   "AbstractSageCard": {
     "NAME": "Abstract Sage Card",
-    "DESCRIPTION": "ABSTRACT CLASS! THIS SHOULD NEVER BE DISPLAYED! (Translate this one last)",
+    "DESCRIPTION": "ABSTRACT CLASS! THIS SHOULD NEVER BE DISPLAYED!",
     "UPGRADE_DESCRIPTION": "These values are for speech bubbles and updating the brew variable",
     "EXTENDED_DESCRIPTION": [
       "I can only play this if I have no Flight!",
@@ -124,7 +124,7 @@
   "How_To_Amuse_Sneckos": {
     "NAME": "How To Amuse Sneckos",
     "DESCRIPTION": "Draw X cards.",
-    "UPGRADE_DESCRIPTION": "Draw X + !M! cards."
+    "UPGRADE_DESCRIPTION": "Draw X cards. NL Gain [E]."
   },
   "How_To_Befriend_A_Turtle": {
     "NAME": "How To Befriend A Turtle",
