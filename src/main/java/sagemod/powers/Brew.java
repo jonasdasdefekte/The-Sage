@@ -13,13 +13,13 @@ import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
-import com.megacrit.cardcrawl.helpers.FontHelper;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.potions.AbstractPotion;
 import com.megacrit.cardcrawl.potions.PotionSlot;
 import com.megacrit.cardcrawl.relics.Sozu;
 import com.megacrit.cardcrawl.rewards.RewardItem.RewardType;
 import com.megacrit.cardcrawl.vfx.SpeechBubble;
+import sagemod.SageMod;
 
 public class Brew extends AbstractSagePower {
 
@@ -266,7 +266,7 @@ public class Brew extends AbstractSagePower {
 			if (lastTurns != p.turns) {
 				xOffset = 1;
 				super.renderIcons(sb, X, yPos, c);
-				FontHelper.powerAmountFont.draw(sb, String.valueOf(p.turns), X, yPos);
+				SageMod.brewFont.draw(sb, String.valueOf(p.turns), X, yPos);
 			}
 			float xPos = X + xOffset * p.potion.hb.width * 0.75f;
 			p.potion.scale = Settings.scale * 0.75f;

@@ -8,6 +8,9 @@ import org.apache.logging.log4j.Logger;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.Texture;
+import com.badlogic.gdx.graphics.g2d.BitmapFont;
+import com.badlogic.gdx.graphics.g2d.freetype.FreeTypeFontGenerator;
+import com.badlogic.gdx.graphics.g2d.freetype.FreeTypeFontGenerator.FreeTypeFontParameter;
 import com.evacipated.cardcrawl.modthespire.Loader;
 import com.evacipated.cardcrawl.modthespire.lib.SpireInitializer;
 import com.google.gson.Gson;
@@ -146,6 +149,8 @@ PostBattleSubscriber, OnStartBattleSubscriber {
 	public static String LOCALIZATION_FOLDER = "sage/local/";
 
 	public static final String EVENT_FOLDER = "sage/events/";
+
+	public static BitmapFont brewFont;
 
 	private static String localLanguage;
 
@@ -415,7 +420,9 @@ PostBattleSubscriber, OnStartBattleSubscriber {
 
 		initPotions();
 		initEvents();
+		initFonts();
 	}
+
 
 
 	private void initPotions() {
@@ -431,6 +438,16 @@ PostBattleSubscriber, OnStartBattleSubscriber {
 	private void initEvents() {
 		// excludes The Sage see PatchForCarpetTrader
 		BaseMod.addEvent(CarpetTrader.ID, CarpetTrader.class, TheCity.ID);
+	}
+
+	private void initFonts() {
+		// Console font
+		FreeTypeFontGenerator generator =
+				new FreeTypeFontGenerator(Gdx.files.internal("font/04b03.ttf"));
+		FreeTypeFontParameter parameter = new FreeTypeFontParameter();
+		parameter.size = Math.round(16 * Settings.scale);
+		brewFont = generator.generateFont(parameter);
+		generator.dispose();
 	}
 
 	@Override
