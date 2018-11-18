@@ -74,6 +74,12 @@
       "The first attack of this enemy has no effect for this turn."
     ]
   },
+  "Endless_Fear": {
+    "NAME": "Endless Fear",
+    "DESCRIPTIONS": [
+      "Whenever you use a non-Fear Potion, obtain a Fear Potion."
+    ]
+  },
   "Extra_Portion": {
     "NAME": "Extra Portion",
     "DESCRIPTIONS": [

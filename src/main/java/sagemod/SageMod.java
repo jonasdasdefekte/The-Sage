@@ -60,6 +60,7 @@ import sagemod.cards.Crank;
 import sagemod.cards.CultistForm;
 import sagemod.cards.DeadlyContraption;
 import sagemod.cards.DefendSage;
+import sagemod.cards.EndlessFear;
 import sagemod.cards.EnergeticBrew;
 import sagemod.cards.Escape;
 import sagemod.cards.ExtraPortion;
@@ -118,6 +119,7 @@ import sagemod.powers.Brew;
 import sagemod.powers.Brewing;
 import sagemod.powers.DeadlyContraptionPower;
 import sagemod.powers.Disoriented;
+import sagemod.powers.EndlessFearPower;
 import sagemod.powers.ExtraPortionPower;
 import sagemod.powers.LoseFlightNextTurn;
 import sagemod.powers.NoEnergyPower;
@@ -259,6 +261,7 @@ PostBattleSubscriber, OnStartBattleSubscriber {
 		BaseMod.addCard(new AlchemyExpert());
 		BaseMod.addCard(new AncientPoison());
 		BaseMod.addCard(new VigorousBody());
+		BaseMod.addCard(new EndlessFear());
 
 		registerPowers();
 	}
@@ -273,6 +276,7 @@ PostBattleSubscriber, OnStartBattleSubscriber {
 		BaseMod.addPower(Brewing.class, Brewing.POWER_ID);
 		BaseMod.addPower(DeadlyContraptionPower.class, DeadlyContraptionPower.POWER_ID);
 		BaseMod.addPower(Disoriented.class, Disoriented.POWER_ID);
+		BaseMod.addPower(EndlessFearPower.class, EndlessFearPower.POWER_ID);
 		BaseMod.addPower(ExtraPortionPower.class, ExtraPortionPower.POWER_ID);
 		BaseMod.addPower(LoseFlightNextTurn.class, LoseFlightNextTurn.POWER_ID);
 		BaseMod.addPower(NoEnergyPower.class, NoEnergyPower.POWER_ID);

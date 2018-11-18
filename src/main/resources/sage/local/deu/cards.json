@@ -83,6 +83,10 @@
     "NAME": "Verteidigen",
     "DESCRIPTION": "Erhalte !B! Block."
   },
+  "Endless_Fear": {
+    "NAME": "Endless Fear",
+    "DESCRIPTION": "Whenever you use a non-Fear Potion, obtain a Fear Potion."
+  },
   "Energetic_Brew": {
     "NAME": "Energetic Brew",
     "DESCRIPTION": "Deal !D! damage. NL Brew an Energy Potion NL in !BRW! turns."
