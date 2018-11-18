@@ -114,7 +114,7 @@ TODO:	Quackster
 		Randomly brew one of these potions in 4 (3)-X turns: Flight Potion, Blood Potion, Regen Potion or Fruit Juice. Exhaust.
 	Perpetuum Mobile
 		Skill, 0 Energy: 
-		Draw 1 card. Play it (Upgrade instead: Gain 1 Energy) if it costs 1.
+		Draw 1 card. Play it if it costs 1 (or 2).
 	Study
 		Skill, 1 Energy: 
 		Draw 3 cards and (you may) put one card from your hand hand on top of your deck. 
@@ -174,7 +174,7 @@ NEW:	Let it go
 		The next potion is (the next 2 potions are) applied twice this turn.
 	Folded Carpet
 		Skill, 2 Energy:
-		Gain 15 (18) Block.
+		Gain 6 (8) Block per Flight you have.
 	Light-weighted
 		Skill, 0 Energy:
 		Lose all Frail. Gain that much Flight (+1). Exhaust.
@@ -207,11 +207,19 @@ TODO:	Endless Fear
 		Whenever you use a non-Fear Potion, obtain a Fear Potion.
 
 
+2 Neutral cards (Shop)
+NEW:	Perplexing Glare
+		Skill, 2 Energy:
+		Apply 1 (2) Disoriented. Exhaust.
+NEW:	Trixter
+		Skill, 1 (0) Energy:
+		The next card you play does not use up Energy.
+
 	
 Character-specific relics (Sage only)
-	Byrd carpet
+TODO:	Thunder Carpet
 		Boss relic: 
-		Replaces Flying carpet. Start each combat with 3 Flight. If you have 1 or 2 Flight at the start of your turn, set it to 3 again.
+		Replaces Flying carpet. Start each combat with 3 Flight.
 	Cook Book
 		Common relic: 
 		Start each combat with 1 Brewing.
@@ -221,6 +229,9 @@ Character-specific relics (Sage only)
 NEW:	Balloon Animal
 		Uncommon relic:
 		Draw 1 card at the start of your turn if you have no Flight.
+TODO:	Byrd Feather
+		Event relic:
+		If you have 1 or 2 Flight at the start of your turn, set it to 3.
 	Can also use poison Relics (from Silent):
 		- Snecko Skull
 		- The Specimen
@@ -243,7 +254,9 @@ Potions
 		Apply 1 Disoriented.
 
 Events
-	Carpet trader
-		Akt 2, for non-Sage characters
-		Option 1: #rLose #r30% #rmax. #rHP. #gObtain #gthe #gFlying #gCarpet.
+TODO:	Carpet trader
+		Akt 2
+		Option 1: #rLose #r30% #rmax. #rHP. 
+			(For The Sage:) #gObtain #gthe #gByrd #gfeather. 
+			(Any other character:) #gObtain #gthe #gFlying #gCarpet.
 		Option 2: Leave

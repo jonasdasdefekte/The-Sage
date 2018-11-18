@@ -19,7 +19,7 @@ public class Altitude extends AbstractSageCard {
 	private static final CardRarity RARITY = CardRarity.UNCOMMON;
 	private static final CardTarget TARGET = CardTarget.SELF;
 
-	private static final int FLIGHT_AMT = 1;
+	private static final int FLIGHT_AMT = 2;
 	private static final int UPGRADE_FLIGHT_AMT = 1;
 
 	public Altitude() {
