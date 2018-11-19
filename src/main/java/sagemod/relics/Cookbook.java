@@ -7,7 +7,7 @@ import sagemod.powers.Brewing;
 public class Cookbook extends AbstractSageRelic {
 
 	public static final String ID = "Cookbook";
-	public static final RelicTier TIER = RelicTier.COMMON;
+	public static final RelicTier TIER = RelicTier.UNCOMMON;
 	public static final LandingSound SOUND = LandingSound.FLAT;
 	private static final int BREWING_AMT = 1;
 

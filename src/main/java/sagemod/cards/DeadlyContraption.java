@@ -19,7 +19,7 @@ public class DeadlyContraption extends AbstractSageCard {
 	private static final CardRarity RARITY = CardRarity.UNCOMMON;
 	private static final CardTarget TARGET = CardTarget.SELF;
 
-	private static final int POWER_AMT = 2;
+	private static final int POWER_AMT = 3;
 	private static final int UPGRADE_POWER_AMT = 2;
 
 	public DeadlyContraption() {

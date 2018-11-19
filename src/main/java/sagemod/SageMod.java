@@ -297,9 +297,9 @@ PostBattleSubscriber, OnStartBattleSubscriber {
 		BaseMod.addRelicToCustomPool(new FlyingCarpet(), SageColorEnum.THE_SAGE);
 
 		// Common
-		BaseMod.addRelicToCustomPool(new Cookbook(), SageColorEnum.THE_SAGE);
 
 		// Uncommon
+		BaseMod.addRelicToCustomPool(new Cookbook(), SageColorEnum.THE_SAGE);
 		BaseMod.addRelic(new RedBeastStatue(), RelicType.SHARED);
 		BaseMod.addRelicToCustomPool(new AncientMagnet(), SageColorEnum.THE_SAGE);
 		BaseMod.addRelicToCustomPool(new BalloonAnimal(), SageColorEnum.THE_SAGE);

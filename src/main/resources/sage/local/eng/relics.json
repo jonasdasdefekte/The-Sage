@@ -1,7 +1,7 @@
 {
   "Ancient_Magnet": {
     "NAME": "Ancient Magnet",
-    "FLAVOR": "The rust probably hurts.",
+    "FLAVOR": "It reacts on any technology of the Ancients.",
     "DESCRIPTIONS": [
       "Enemies have #b",
       " less #yStrength per #yArtifact on them."
@@ -9,7 +9,7 @@
   },
   "Balloon_Animal": {
     "NAME": "Balloon Animal",
-    "FLAVOR": "Handle carefully or it might pop.",
+    "FLAVOR": "This cute figure almost pulls you upwards.",
     "DESCRIPTIONS": [
       "Draw #b",
       " card at the start of your turn if you have no #yFlight."
@@ -17,9 +17,9 @@
   },
   "Blowpipe": {
     "NAME": "Blowpipe",
-    "FLAVOR": "The sounds it emits are angelic and devilish at the same time.",
+    "FLAVOR": "This hunting tool can apply any liquid on distant targets in the twinkling of an eye.",
     "DESCRIPTIONS": [
-      "Whenever you throw a potion at an enemy, it also effects the other enemies."
+      "Whenever you throw a potion at an enemy, it also affects the other enemies."
     ]
   },
   "Byrd_Carpet": {
@@ -35,7 +35,7 @@
   },
   "Cookbook": {
     "NAME": "Cookbook",
-    "FLAVOR": "After you blow the dust off, this book reveals you all its secrets.",
+    "FLAVOR": "Reading this makes you hungry. Although probably you better should abstain from some of these dishes.",
     "DESCRIPTIONS": [
       "Start each combat with #b",
       " #yBrewing."
@@ -43,7 +43,7 @@
   },
   "Flying_Carpet": {
     "NAME": "Flying Carpet",
-    "FLAVOR": "An old carpet, similar to those used by the merchants of the far east.",
+    "FLAVOR": "An old carpet, similar to those used by the Slavers of the far east.",
     "DESCRIPTIONS": [
       "Gain #b",
       " #yFlight at the start of your second turn."
@@ -51,7 +51,7 @@
   },
   "Red_Beast_Statue": {
     "NAME": "Red Beast Statue",
-    "FLAVOR": "A small red statue of a creature you have never seen before.",
+    "FLAVOR": "You have never seen such a creature before, but this statue reminds you of something.",
     "DESCRIPTIONS": [
       "#yPotions are #b",
       "% more likely to be uncommon or rare."

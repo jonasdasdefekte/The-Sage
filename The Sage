@@ -18,8 +18,8 @@ Starting Deck:
 		Skill, 1 Energy: 
 		Gain 5 (8) Block.
 	1x Bold move
-		Attack, 1 Energy:
-		Deal 10 (13) damage. Gain 2 Frail.
+		Attack, 0 Energy:
+		Deal 6 (9) damage. Gain 2 Frail.
 	1x Fly
 		Skill, 2 (1) Energy: 
 		If you don't fly, gain 1 Flight.
@@ -42,7 +42,7 @@ TODO:	How To Poke At Slimes
 		Deal 6 (9) damage. Gain a Energy potion in 4 (3) turns.
 TODO:	Crank
 		Attack, 1 Energy:
-		Deal 8 (12) damage. If the enemy has Artifact, draw 1 card. (Draw cards equal to the enemie's Artifact.)
+		Deal 8 (12) damage. If the enemy has Artifact, draw 1 card. (Draw cards equal to the enemy's Artifact.)
 NEW:	Grounded Strike
 		Attack, 1 Energy:
 		Lose all (1) Flight. Deal 10 (13) damage.
@@ -99,13 +99,13 @@ NEW:	Grounded Strike
 		Gain 1 Frail. Deal 8 (10) damage per Frail you have. 
 TODO:	Viral Strike
 		Attack, 2 Energy:
-		Deal 4 damage. Apply Virus and 7 Poison.
+		Deal 4 damage. Apply Virus and 7 Poison. (Virus: Poison applied to this enemy spreads to all other enemies instantly)
 	Gearwheel Master
 		Skill, 0 Energy: 
 		EVERYBODY gains 1(2) Artifact. Exhaust.
-	Quackster
+TODO:	Quackster
 		Skill, 0 Energy: 
-		Brew a random potion in 4 (3) turns. (Cannot brew healing potions.)
+		Brew a random potion in 4 turns. Exhaust. (No Exhaust.)
 	How to Wake Lyons
 		Skill, X Energy: 
 		Brew a Steroid potion in 4 (3)-X turns. 
@@ -156,7 +156,7 @@ NEW:	Let it go
 		Gain 1 Brewing.
 	Deadly Contraption
 		Power, 1 Energy: 
-		At the end of your turn, enemies are dealt 2 (4) damage per Artifact on them.
+		At the end of your turn, enemies are dealt 3 (5) damage per Artifact on them.
 
 
 15 Rare Cards (gold)
@@ -221,7 +221,7 @@ TODO:	Thunder Carpet
 		Boss relic: 
 		Replaces Flying carpet. Start each combat with 3 Flight.
 	Cook Book
-		Common relic: 
+		Uncommon relic: 
 		Start each combat with 1 Brewing.
 	Ancient Magnet
 		Uncommon relic: 
@@ -243,7 +243,10 @@ Other relics (for all characters)
 		Potions are 50% more likely to be uncommon or rare.
 	Blowpipe
 		Rare relic: 
-		Whenever you throw a potion at an enemy, it also effects the other enemies.
+		Whenever you throw a potion at an enemy, it also affects the other enemies.
+	Falmel's Amulet
+		Boss relic:
+		Gain [E] at the start of your turn. Enemies attack 1 additional time on their first turn.
 
 Potions
 	Flight Potion
