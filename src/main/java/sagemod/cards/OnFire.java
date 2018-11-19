@@ -19,8 +19,7 @@ public class OnFire extends AbstractSageCard {
 	private static final CardRarity RARITY = CardRarity.RARE;
 	private static final CardTarget TARGET = CardTarget.SELF;
 
-	public static final int CARDS_NEEDED = 6;
-	private static final int UPGRADE_COST_TO = 0;
+	public static final int CARDS_NEEDED = 5;
 
 	public OnFire() {
 		super(ID, NAME, COST, DESCRIPTION, TYPE, RARITY, TARGET);
@@ -31,7 +30,9 @@ public class OnFire extends AbstractSageCard {
 	public void upgrade() {
 		if (!upgraded) {
 			upgradeName();
-			upgradeBaseCost(UPGRADE_COST_TO);
+			isInnate = true;
+			rawDescription = cardStrings.UPGRADE_DESCRIPTION;
+			initializeDescription();
 		}
 	}
 
