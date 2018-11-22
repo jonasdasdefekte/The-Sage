@@ -8,7 +8,7 @@ Starts with 40 HP, 169 gold
 
 **STARTING RELIC**
 	Flying Carpet
-		Start each combat with 1 Flight. 
+		At the start of your second turn, 1 Flight. 
 
 **STARTING DECK**
    4x Strike
@@ -77,7 +77,7 @@ TODO:	Mechanics Break
 		Skill, 1 Energy:
 		Gain 10 (13) Block. Target enemy gains 3 Artifact.
 
-**30 UNCOMMON CARDS (blue)**
+**31 UNCOMMON CARDS (blue)**
 	On the Head
 		Attack, 1 Energy:
 		Deal 5 (7) damage. If you are flying, draw 1 card and gain 1 Energy.
@@ -107,13 +107,13 @@ TODO:	Viral Strike
 		Deal 4 damage. Apply Virus and 7 Poison. (Virus: Poison applied to this enemy other than by Virus spreads to all other enemies instantly.)
 NEW:	Potion Explosion
 		Attack, 1 Energy:
-		Deal 7 (9) damage to a random target once per potion you used this turn.
+		Deal 6 (8) damage to ALL enemies once per potion you used this turn.
 NEW:	About Clark
 		Attack, 5 (4) Energy:
 		Deal 8 (10) damage two times. Costs 1 [E] less per Frail you have.
-	Gearwheel Master
+TODO:	Gearwheel Master
 		Skill, 0 Energy: 
-		EVERYBODY gains 1(2) Artifact. Exhaust.
+		EVERYBODY gains 1(2/3/...) Artifact. Exhaust. Can be upgraded any number of times.
 TODO:	Quackster
 		Skill, 0 Energy: 
 		Brew a random potion in 4 turns. Exhaust. (No Exhaust.)
@@ -156,6 +156,9 @@ NEW:	Let it go
 NEW:	Gear Wall
 		Skill, 0 Energy:
 		Draw 1 card (2 cards). Whenever you are attacked this turn, the Attacker gains 1 Artifact.
+NEW:	Tinker
+		Skill, 1 Energy:
+		(Gain 1 Artifact.) Gain Block equal to all Artifact on the field.
 	Altitude
 		Power, 1 Energy: 
 		Gain 2(3) Flight.
@@ -170,13 +173,16 @@ NEW:	Gear Wall
 		At the end of your turn, enemies are dealt 3 (5) damage per Artifact on them.
 
 
-**15 RARE CARDS (gold)**
+**16 RARE CARDS (gold)**
 	Swoop Down
 		Attack, 1 Energy: 
 		Deal 4 (6) damage per Flight you have. Then lose 1 Flight.
-	Anti Ancient Attack
+TODO:	Anti Ancient Attack
 		Attack, 3 Energy: 
-		Deal 18 (25) damage per Artifact the enemy has. 
+		Deal 18 (25) damage per Artifact on the field. 
+NEW:	Lecture
+		Attack, 1 Energy
+		Deal 4 (6) damage per X cost card played this combat.
 	Escape
 		Skill, 1 Energy: 
 		Double your Flight. Exhaust. (Upgrade: No Exhaust.)
@@ -227,7 +233,7 @@ NEW:	Trixter
 		The next card you play does not use up Energy.
 
 	
-**5+3 CHARACTER-SPECIFIC RELICS (Sage only)**
+**6+3 CHARACTER-SPECIFIC RELICS (Sage only)**
 TODO:	Thunder Carpet
 		Boss relic: 
 		Replaces Flying carpet. Start each combat with 3 Flight.
@@ -240,6 +246,9 @@ TODO:	Thunder Carpet
 	Balloon Animal
 		Uncommon relic:
 		Draw 1 card at the start of your turn if you have no Flight.
+TODO:	Carrot
+		Common relic:
+		While you are Frail, gain 2 Strength.
 TODO:	Byrd Feather
 		Event relic:
 		If you have 1 or 2 Flight at the start of your turn, set it to 3.
@@ -248,7 +257,7 @@ TODO:	Byrd Feather
 		- The Specimen
 		- Twisted Funnel
 
-**3 OTHER RELICS (for all characters)**
+**5 OTHER RELICS (for all characters)**
 	Red Beast Statue
 		Uncommon relic:
 		Potions are 50% more likely to be uncommon or rare.
@@ -258,6 +267,13 @@ TODO:	Byrd Feather
 TODO:	Falmel's Amulet
 		Boss relic:
 		Gain [E] at the start of your turn. Enemies attack 1 additional time on their first turn.
+TODO:	Xarxas' Xepter
+		Shop relic:
+		Whenever you play a card costing X, exhaust it and refund the energy.
+TODO:	Carousel
+		Rare relic:
+		Every 5 turns, apply 1 Disoriented to a random enemy.
+
 
 **2 POTIONS**
 	Flight Potion
