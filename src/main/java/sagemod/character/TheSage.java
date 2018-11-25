@@ -47,7 +47,7 @@ public class TheSage extends CustomPlayer {
 			"sage/character/orb/layer2d.png", "sage/character/orb/layer3d.png", "sage/character/orb/layer4d.png",
 			"sage/character/orb/layer5d.png", };
 
-	public static final int START_HP = 40;
+	public static final int START_HP = 50;
 	public static final int CARD_DRAW = 5;
 	public static final int MAX_ORBS = 0;
 	public static final int ENERGY = 3;
