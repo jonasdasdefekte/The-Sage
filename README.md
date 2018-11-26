@@ -17,7 +17,7 @@ This mod for the brilliant game Slay the Sprire introduces:
 - 2 general Relics
 - 1 general Potion
 
-For details, feel free to check out our design document.
+For details, feel free to check out our [design document](https://github.com/jonasdasdefekte/The-Sage/blob/master/The%20Sage "The Sage - Mod for Slay The Spire").
 
 ## Gameplay
 
