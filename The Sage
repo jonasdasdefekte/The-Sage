@@ -58,9 +58,9 @@ NEW:	How To Charm a Sentry
 	How To Befriend A Turtle
 		Skill, X Energy:
 		Gain X (X+3) Block. Gain X Energy.
-	Catch me if you can
+TODO:	Catch me if you can
 		Skill, 0 Energy
-		Until your next turn, you don't lose Flight for the next 2 (4) times you take Attack damage.
+		Air. Prevent the next 2 (4) times you would lose Flight until the enemy's turn. // (Should also work on Flight loss in your own turn, but will be cancelled by "lose all flight".)
 	How To Talk To Spiders
 		Skill, X Energy: 
 		Apply X poison. Brew a Poison potion in 4 (3)-X turns.
@@ -117,9 +117,9 @@ TODO:	Gearwheel Master
 TODO:	Quackster
 		Skill, 0 Energy: 
 		Brew a random potion in 4 turns. Exhaust. (No Exhaust.)
-	How to Wake Lyons
+TODO:	How to Wake Lyons
 		Skill, X Energy: 
-		Brew a Steroid potion in 4 (3)-X turns. 
+		Brew a Steroid potion in 4 - X turns. Exhaust. (No Exhaust.)
 	How to feed Apes
 		Skill, X Energy: 
 		Randomly brew one of these potions in 4 (3)-X turns: Flight Potion, Blood Potion, Regen Potion or Fruit Juice. Exhaust.
@@ -168,9 +168,9 @@ NEW:	Tinker
 	Brewmaster
 		Power, 2 (1) Energy:
 		Gain 1 Brewing.
-	Deadly Contraption
+TODO:	Deadly Contraption
 		Power, 1 Energy: 
-		At the end of your turn, enemies are dealt 3 (5) damage per Artifact on them.
+		ALL enemies gain 1 (2) Artifact. Whenever you deal Attack damage, enemies take 1 (2) more damage per Artifact on them. // (Numbers could change)
 
 
 **16 RARE CARDS (gold)**
@@ -248,7 +248,7 @@ TODO:	Thunder Carpet
 		Draw 1 card at the start of your turn if you have no Flight.
 TODO:	Carrot
 		Common relic:
-		While you are Frail, gain 2 Strength.
+		While you are Frail, gain 2 Dexterity.
 TODO:	Byrd Feather
 		Event relic:
 		If you have 1 or 2 Flight at the start of your turn, set it to 3.
@@ -264,13 +264,13 @@ TODO:	Byrd Feather
 	Blowpipe
 		Rare relic: 
 		Whenever you throw a potion at an enemy, it also affects the other enemies.
-TODO:	Falmel's Amulet
+NEW:	Falmel's Amulet
 		Boss relic:
 		Gain [E] at the start of your turn. Enemies attack 1 additional time on their first turn.
-TODO:	Xarxas' Xepter
+NEW:	Xarxas' Xepter
 		Shop relic:
 		Whenever you play a card costing X, exhaust it and refund the energy.
-TODO:	Carousel
+NEW:	Carousel
 		Rare relic:
 		Every 5 turns, apply 1 Disoriented to a random enemy.
 
