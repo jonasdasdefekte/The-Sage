@@ -19,8 +19,8 @@ public class PincerRepair extends AbstractSageCard {
 	private static final CardRarity RARITY = CardRarity.COMMON;
 	private static final CardTarget TARGET = CardTarget.ENEMY;
 
-	private static final int ATTACK_DMG = 9;
-	private static final int UPGRADE_ATTACK_DMG = 3;
+	private static final int ATTACK_DMG = 8;
+	private static final int UPGRADE_ATTACK_DMG = 4;
 	private static final int ARTIFACT_GAIN = 1;
 
 	public PincerRepair() {

@@ -126,6 +126,11 @@
     "NAME": "Gearwheel Master",
     "DESCRIPTION": "EVERYBODY gains !M! Artifact. NL Exhaust."
   },
+  "Grounded_Strike": {
+    "NAME": "Grounded Strike",
+    "DESCRIPTION": "Lose all Flight. NL Deal !D! damage.",
+    "UPGRADE_DESCRIPTION": "Lose !M! Flight. NL Deal !D! damage."
+  },
   "How_To_Amuse_Sneckos": {
     "NAME": "How To Amuse Sneckos",
     "DESCRIPTION": "Draw X cards.",
@@ -177,7 +182,7 @@
   },
   "Mechanics_Break": {
     "NAME": "Mechanics Break!",
-    "DESCRIPTION": "Gain !B! Block. NL ALL enemies gain !M! Artifact."
+    "DESCRIPTION": "Gain !B! Block. NL The target enemy gains !M! Artifact."
   },
   "Meditation": {
     "NAME": "Meditation",

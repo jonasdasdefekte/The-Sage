@@ -70,6 +70,7 @@ import sagemod.cards.Fly;
 import sagemod.cards.FlyingCauldron;
 import sagemod.cards.FoldedCarpet;
 import sagemod.cards.GearwheelMaster;
+import sagemod.cards.GroundedStrike;
 import sagemod.cards.HowToAmuseSneckos;
 import sagemod.cards.HowToBefriendATurtle;
 import sagemod.cards.HowToFeedApes;
@@ -218,6 +219,7 @@ PostBattleSubscriber, OnStartBattleSubscriber {
 		BaseMod.addCard(new Crank());
 		BaseMod.addCard(new EnergeticBrew());
 		BaseMod.addCard(new ViralStrike());
+		BaseMod.addCard(new GroundedStrike());
 
 		// Uncommon
 		BaseMod.addCard(new OnTheHead());
