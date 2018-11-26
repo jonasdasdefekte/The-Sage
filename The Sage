@@ -27,7 +27,7 @@ Starts with 40 HP, 169 gold
 **17 COMMON CARDS (grey)**
 	Pincer Repair
 		Attack, 1 Energy
-		Deal 9 (12) damage. The enemy gains 1 Artifact.
+		Deal 8 (12) damage. The enemy gains 1 Artifact.
 	Fire Brew
 		Attack, 1 Energy: 
 		Deal 6 (9) damage. Gain a Fire potion in 4 (3) turns.
@@ -43,7 +43,7 @@ TODO:	How To Poke At Slimes
 TODO:	Crank
 		Attack, 1 Energy:
 		Deal 8 (12) damage. If the enemy has Artifact, draw 1 card. (Draw cards equal to the enemy's Artifact.)
-NEW:	Grounded Strike
+	Grounded Strike
 		Attack, 1 Energy:
 		Lose all (1) Flight. Deal 10 (13) damage.
 NEW:	How To Charm a Sentry
@@ -73,7 +73,7 @@ TODO:	Catch me if you can
 	Slalom
 		Skill, 1 Energy:
 		Gain 10 (13) Block. Gain 2 Frail. 
-TODO:	Mechanics Break
+	Mechanics Break
 		Skill, 1 Energy:
 		Gain 10 (13) Block. Target enemy gains 3 Artifact.
 
@@ -191,7 +191,7 @@ NEW:	Lecture
 		The next potion is (the next 2 potions are) applied twice this turn.
 TODO:	Folded Carpet
 		Skill, 2 Energy:
-		Gain 6 (8) Block per Flight you have.
+		Gain 6 (9) Block per Flight you have.
 	Light-weighted
 		Skill, 0 Energy:
 		Lose all Frail. Gain that much Flight (+1). Exhaust.
