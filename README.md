@@ -17,6 +17,8 @@ This mod for the brilliant game Slay the Sprire introduces:
 - 2 general Relics
 - 1 general Potion
 
+For details, feel free to check out our design document.
+
 ## Gameplay
 
 #### Flight
