@@ -8,14 +8,14 @@ Jump to: **[Content](#content) - [Gameplay](#gameplay) - [Our Plans](#our-plans-
 
 ## Content
 
-This mod for the brilliant game Slay the Sprire introduces:
-- The Sage, a new character to play with currently... 
-    - 60 cards
-    - 4 Sage-only relics
-    - 1 Sage-only potion
-- 1 general Event
-- 2 general Relics
-- 1 general Potion
+This mod for the brilliant game Slay the Sprire currently introduces:
+
+| For The Sage Only | For all characters |
+|:-----------------:|:------------------:|
+| 60 cards          |                    |
+| 4 relics          | 2 relics           |
+| 1 potion          | 1 potion           |
+|                   | 1 Event            |
 
 For details, feel free to check out our [design document](https://github.com/jonasdasdefekte/The-Sage/blob/master/The%20Sage "The Sage - Mod for Slay The Spire").
 
