@@ -21,7 +21,7 @@ public class FlightFeint extends AbstractSageCard {
 	private static final CardTarget TARGET = CardTarget.ENEMY;
 
 	private static final int ATTACK_DMG = 6;
-	private static final int UPGRADE_ATTACK_DMG = 3;
+	private static final int UPGRADE_ATTACK_DMG = 6;
 	private static final int DISORIENTED_AMT = 1;
 
 	public FlightFeint() {
