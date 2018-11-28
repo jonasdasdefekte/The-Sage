@@ -20,7 +20,7 @@ public class StepBack extends AbstractSageCard {
 	private static final CardTarget TARGET = CardTarget.SELF;
 
 	private static final int BLOCK_AMT = 10;
-	private static final int UPGRADE_BLOCK_AMT = 3;
+	private static final int UPGRADE_BLOCK_AMT = 6;
 	private static final int FLIGHT_AMT = 1;
 
 	public StepBack() {
