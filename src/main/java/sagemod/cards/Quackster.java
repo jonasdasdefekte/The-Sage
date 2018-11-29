@@ -25,7 +25,6 @@ public class Quackster extends AbstractSageCard {
 	private static final CardTarget TARGET = CardTarget.SELF;
 
 	private static final int BREW_IN = 4;
-	private static final int UPGRADE_BREW_IN = -1;
 
 	private static final ArrayList<String> EXCLUDED = new ArrayList<>(
 			Arrays.asList(FruitJuice.POTION_ID, BloodPotion.POTION_ID, RegenPotion.POTION_ID));
@@ -33,15 +32,17 @@ public class Quackster extends AbstractSageCard {
 	public Quackster() {
 		super(ID, NAME, COST, DESCRIPTION, TYPE, RARITY, TARGET);
 		initBrewIn(BREW_IN);
-
+		exhaust = true;
 	}
 
 	@Override
 	public void upgrade() {
 		if (!upgraded) {
 			upgradeName();
-			upgradeBrewIn(UPGRADE_BREW_IN);
-		}
+			exhaust = false;
+			rawDescription = cardStrings.UPGRADE_DESCRIPTION;
+			initializeDescription();
+			}
 	}
 
 	@Override

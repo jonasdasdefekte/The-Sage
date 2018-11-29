@@ -157,7 +157,7 @@
   },
   "How_To_Poke_At_Slimes": {
     "NAME": "How To Poke At Slimes",
-    "DESCRIPTION": "Gain !M! -X Frail. NL Gain X [E]. NL Deal !D! damage to ALL enemies."
+    "DESCRIPTION": "Deal 5 damage to ALL enemies. NL Gain !M! -X Frail. NL Gain X [E]."
   },
   "How_To_Talk_To_Spiders": {
     "NAME": "How To Talk To Spiders",
@@ -165,7 +165,8 @@
   },
   "How_To_Wake_Lyons": {
     "NAME": "How To Wake Lyons",
-    "DESCRIPTION": "Brew a NL Steroid Potion NL in !BRW! -X turns."
+    "DESCRIPTION": "Brew a NL Steroid Potion NL in !BRW! -X turns. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Brew a NL Steroid Potion NL in !BRW! -X turns."
   },
   "How_To_Warm_Elephants": {
     "NAME": "How To Warm Elephants",
@@ -221,7 +222,8 @@
   },
   "Quackster": {
     "NAME": "Quackster",
-    "DESCRIPTION": "Brew a random Potion in !BRW! turns."
+    "DESCRIPTION": "Brew a random Potion in !BRW! turns. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Brew a random Potion in !BRW! turns."
   },
   "Salty_Strike": {
     "NAME": "Salty Strike",

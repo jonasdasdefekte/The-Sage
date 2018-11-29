@@ -33,6 +33,8 @@ public class HowToWakeLyons extends AbstractSageCard {
 		if (!upgraded) {
 			upgradeName();
 			upgradeBrewIn(UPGRADE_TURNS);
+			rawDescription = cardStrings.UPGRADE_DESCRIPTION;
+			initializeDescription();
 		}
 	}
 

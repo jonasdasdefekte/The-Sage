@@ -4,7 +4,7 @@ The Sage
 A mechanic who studied about the cult of a blue bird.
 She learned flying a carpet and brewing potions in order to stop its rise.
 
-Starts with 40 HP, 169 gold	
+Starts with 50 HP, 169 gold	
 
 **STARTING RELIC**
 	Flying Carpet
@@ -36,7 +36,7 @@ Starts with 40 HP, 169 gold
 		Deal 6 (9) damage. The enemy gains 1 (2) Thirsty.
 TODO:	How To Poke At Slimes
 		Attack, X Energy:
-		Deal X (+3) damage to ALL enemies. Gain 2 Frail. Refund 2 (all).
+		Deal X (+3) damage to ALL enemies. Gain 2 Frail. Refund 3 (all).
 	Energetic Brew
 		Attack, 1 Energy: 
 		Deal 6 (9) damage. Gain a Energy potion in 4 (3) turns.
@@ -48,10 +48,10 @@ TODO:	Crank
 		Lose all (1) Flight. Deal 10 (13) damage.
 NEW:	How To Charm a Sentry
 		Attack, X Energy:
-		Deal X + 3 (6) damage. The enemy gains X Artifact. Refund 2 (all).
+		Deal X + 3 (6) damage. The enemy gains X Artifact. Refund 3 (all).
 TODO:	How To Warm Elephants
 		Skill, X Energy: 
-		Brew an Explosive Potion in 5 -X turns. Refund 1 (all).
+		Brew an Explosive Potion in 4 -X turns. (Refund all).
 	Armor Brew
 		Skill, 1 Energy: 
 		Gain 5 (8) Block. Brew a block potion in 4 (3) turns.
@@ -81,9 +81,9 @@ TODO:	Catch me if you can
 	On the Head
 		Attack, 1 Energy:
 		Deal 5 (7) damage. If you are flying, draw 1 card and gain 1 Energy.
-	How to Murder Ants
+TODO:	How to Murder Ants
 		Attack, X Energy:
-		Air. Deal 8 damage to a random enemy X (X+1) times.
+		Air. Deal X damage to a random enemy 6 (8) times.
 	Pour Tar Pitch
 		Attack, 3 Energy: 
 		Deal 22 (26) damage. Affects ALL enemies if you are flying.
@@ -122,7 +122,7 @@ TODO:	Quackster
 		Brew a random potion in 4 turns. Exhaust. (No Exhaust.)
 TODO:	How to Wake Lyons
 		Skill, X Energy: 
-		Brew a Steroid potion in 4 - X turns. Exhaust. (No Exhaust.)
+		Brew a Steroid potion in 4 (3) - X turns. Exhaust. (No Exhaust.)
 	How to feed Apes
 		Skill, X Energy: 
 		Randomly brew one of these potions in 4 (3)-X turns: Flight Potion, Blood Potion, Regen Potion or Fruit Juice. Exhaust.
