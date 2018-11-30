@@ -8,16 +8,20 @@ Jump to: **[Content](#content) - [Gameplay](#gameplay) - [Our Plans](#our-plans-
 
 ## Content
 
-This mod for the brilliant game Slay the Sprire currently introduces:
+This mod for the brilliant game Slay the Sprire is currently under development.  
+At the moment the Sage Mod introduces:
 
-| For The Sage Only | For all characters |
+| For all Runs      | For Sage Runs      |
 |:-----------------:|:------------------:|
-| 60 cards          |                    |
-| 4 relics          | 2 relics           |
-| 1 potion          | 1 potion           |
-|                   | 1 Event            |
+|                   | 61 Cards           |
+| 2 Relics          | 4 Relics           |
+| 1 Potion          | 1 Potion           |
+| 1 Event           |                    |
 
-For details, feel free to check out our [design document](https://github.com/jonasdasdefekte/The-Sage/blob/master/The%20Sage "The Sage - Mod for Slay The Spire").
+If you are interested in details, feel free to check out our [design document](https://github.com/jonasdasdefekte/The-Sage/blob/master/The%20Sage "The Sage - Mod for Slay The Spire").
+
+Disclaimer: *We aren't artists! While we appreciate that there are some very beautiful mods out there, we went with rather goofy selfmade art. So don't set your expectations too high there. (If it randomly happens that you like making STS Art as well as the playstyle of this mod and you want to get involved into a project, hey, you could get involved into our project!)*
+
 
 ## Gameplay
 
@@ -61,6 +65,7 @@ Artifacts are the Power of Ancient technology. As a tinkerer, the Sage has grown
 
 When playing this character, you will have to make strategic decisions about where you would like Artifacts to be and where not. Several cards allow you not only to gain Artifacts for yourself, but also to "help" the enemies with some of this Ancient Gearwheels. Artifacts on enemies will let you handle them easier. Do you want to stack Artifacts on your enemies or do you prefer the good old poisoning? Also there are cards that reward being Frail. Will you use the Artifact on yourself to protect you from Frailty or do you prefer being Frail for a while in order to get a big payoff? The tinkering is up to you...
 
+![Character Button](https://raw.githubusercontent.com/jonasdasdefekte/The-Sage/master/src/main/resources/sage/character/button.png)
 
 Each of these main Archetypes can be a winning condition for your deck playing with The Sage!  
 There are more effects and mini-Archetypes. Although we better leave them for you to discover. :smile:  
@@ -68,7 +73,7 @@ There are more effects and mini-Archetypes. Although we better leave them for yo
 ## Our plans for The Sage
 - **Balance** (we have been playtesting since end of 09/2018, most things should be reasonable by now but we are still tweaking here and there, feedback is welcome);
 - growing the card set to **full size** of 75 (feel free to share your ideas if you like to);
-- card **art** will be added in slow pace (Jonas has already made some and just finished the character art);
+- card **art** will be added in slow pace (Jonas made all of it so far, we would be glad for anyone who contributes);
 - full **German** localization (since we are both Germans);
 - maybe we'll come up with some more suprises...?
 
