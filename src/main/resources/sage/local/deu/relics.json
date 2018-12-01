@@ -1,60 +1,60 @@
 {
   "Ancient_Magnet": {
-    "NAME": "Ancient Magnet",
-    "FLAVOR": "It reacts on any technology of the Ancients.",
+    "NAME": "Uralter Magnet",
+    "FLAVOR": "Er reagiert auf die Technologie der Ahnen.",
     "DESCRIPTIONS": [
-      "Enemies have #b",
-      " less #yStrength per #yArtifact on them."
+      "Gegner haben #b",
+      " weniger #yStärke pro #yArtefakt auf ihnen."
     ]
   },
   "Balloon_Animal": {
-    "NAME": "Balloon Animal",
-    "FLAVOR": "This cute figure almost pulls you upwards.",
+    "NAME": "Ballontier",
+    "FLAVOR": "Diese süße Figur zieht dich beinahe aufwärts.",
     "DESCRIPTIONS": [
-      "Draw #b",
-      " card at the start of your turn if you have no #yFlight."
+      "Ziehe #b",
+      " Karte zu Beginn deines Zuges, wenn du keinen #yFlug hast."
     ]
   },
   "Blowpipe": {
-    "NAME": "Blowpipe",
-    "FLAVOR": "This hunting tool can apply any liquid on distant targets in the twinkling of an eye.",
+    "NAME": "Blasrohr",
+    "FLAVOR": "Dieses Jagdgerät kann jegliche Flüssigkeit im Handumdrehen auf ferne Ziele anwenden.",
     "DESCRIPTIONS": [
-      "Whenever you throw a potion at an enemy, it also affects the other enemies."
+      "Immer wenn du einen Trank auf einen Gegner wirfst, trifft er auch die anderen Gegner."
     ]
   },
   "Byrd_Carpet": {
-    "NAME": "Byrd Carpet",
-    "FLAVOR": "An ancient carpet, woven by eery cultists and infused with strange magic.",
+    "NAME": "Foglteppich",
+    "FLAVOR": "Ein uralter Teppich, von dunklen Kultisten gewoben und mit seltsamer Magie versetzt.",
     "DESCRIPTIONS": [
-      "Start each combat with #b",
-      " #yFlight. If you have #b",
-      " or #b",
-      " #yFlight at the start of your turn, set it to #b",
+      "Beginne jeden Kampf mit #b",
+      " #yFlug. Falls du zu Beginn deines Zuges #b",
+      " oder #b",
+      " #yFlug hast, setze ihn auf #b",
       "."
     ]
   },
   "Cookbook": {
-    "NAME": "Cookbook",
-    "FLAVOR": "Reading this makes you hungry. Although probably you better should abstain from some of these dishes.",
+    "NAME": "Kochbuch",
+    "FLAVOR": "Diese Lektüre macht dich hungrig. Allerdings solltest du manche dieser Gerichte wohl besser nicht essen.",
     "DESCRIPTIONS": [
-      "Start each combat with #b",
-      " #yBrewing."
+      "Beginne jeden Kampf mit #b",
+      " #yBrauen."
     ]
   },
   "Flying_Carpet": {
-    "NAME": "Flying Carpet",
-    "FLAVOR": "An old carpet, similar to those used by the Slavers of the far east.",
+    "NAME": "Fliegender Teppich",
+    "FLAVOR": "Ein alter Teppich, ähnlich wie die der Sklavenhändler aus den östlichen Gefilden.",
     "DESCRIPTIONS": [
-      "Gain #b",
-      " #yFlight at the start of your second turn."
+      "Erhalte #b",
+      " #yFlug am Beginn deines zweiten Zuges."
     ]
   },
   "Red_Beast_Statue": {
-    "NAME": "Red Beast Statue",
-    "FLAVOR": "You have never seen such a creature before, but this statue reminds you of something.",
+    "NAME": "Rote Bestienstatue",
+    "FLAVOR": "So eine Kreatur hast du noch nie zu Gesicht bekommen, aber diese Statue erinnert dich an etwas.",
     "DESCRIPTIONS": [
-      "#yPotions are #b",
-      "% more likely to be uncommon or rare."
+      "Zufällige #yTränke sind #b",
+      "% wahrscheinlicher ungewöhnlich oder selten."
     ]
   }
 }

@@ -1,17 +1,17 @@
 {
   "Carpet_Trader": {
-    "NAME": "Carpet Trader",
+    "NAME": "Teppichhändler",
     "DESCRIPTIONS": [
-      "In the corner you spot a creature that looks similar to the merchant.",
-      "As you approach, the creature stands up. Still looking at the wall, the hooded figure speaks: \"Are you ready? The carpet is. @For@ @you@ !\"",
-      "You ran away as fast as you could.",
-      "You fly away with the carpet under your feet."
+      "Die Stadt ist ein eigenwilliger Ort. Als du um eine Ecke schleichst, stolperst du beinahe über eine #rvermummte #r Person, die an einem Hauseingang lauert. NL NL Du siehst überall Teppiche. Selbst dieser Mann scheint einen am Körper zu tragen.",
+      "Der Mann bemerkt dich und steht auf. Mit dem Blick zur Mauer gerichtet sagt die vermummte Figur: \"Bist du bereit? Der Teppich ist. @Für@ @dich@ !\"",
+      "Du bist so schnell wie möglich fortgerannt.",
+      "Du nimmst das Angebot an. NL NL Als du den #rroten #rTeppich an dich nimmst, spürst du, wie ein Teil deiner Stärke deinen Körper verlässt. Gleichzeitig fühlst du, dass der Teppich dich tragen kann. NL Hinter dir hörst du das höhnische Gelächter dieses komischen Mannes, als du mit dem Teppich unter den Füßen fortfliegst. Du bist nicht sicher, ob dieses fliegende Meisterwerk dir helfen oder dich umbringen wird..."
     ],
     "OPTIONS": [
-      "[Approach]",
-      "[Run]",
-      "[Accept the offer] #rLose #r30% #rMax #rHP. #gObtain #gthe #gFlying #gCarpet.",
-      "[Leave]"
+      "[Weitergehen]",
+      "[Rennen]",
+      "[Angebot annehmen] #rLose #r30% #rMax #rHP. #gObtain #gthe #gFlying #gCarpet.",
+      "[Verlassen]"
     ]
   }
 }

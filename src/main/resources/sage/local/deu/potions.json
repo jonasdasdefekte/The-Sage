@@ -2,15 +2,15 @@
   "Fata_Morgana": {
     "NAME": "Fata Morgana",
     "DESCRIPTIONS": [
-      "Apply #b",
-      " #yDisoriented."
+      "Wende #b",
+      " #yDesorientiert an."
     ]
   },
   "Flight_Potion": {
-    "NAME": "Flight Potion",
+    "NAME": "Flugtrank",
     "DESCRIPTIONS": [
-      "Gain #b",
-      " #yFlight."
+      "Erhalte #b",
+      " #yFlug."
     ]
   }
 }

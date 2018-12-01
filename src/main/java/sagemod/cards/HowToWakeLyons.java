@@ -26,6 +26,7 @@ public class HowToWakeLyons extends AbstractSageCard {
 	public HowToWakeLyons() {
 		super(ID, NAME, COST, DESCRIPTION, TYPE, RARITY, TARGET);
 		initBrewIn(TURNS);
+		exhaust = true;
 	}
 
 	@Override
@@ -33,6 +34,7 @@ public class HowToWakeLyons extends AbstractSageCard {
 		if (!upgraded) {
 			upgradeName();
 			upgradeBrewIn(UPGRADE_TURNS);
+			exhaust = false;
 			rawDescription = cardStrings.UPGRADE_DESCRIPTION;
 			initializeDescription();
 		}

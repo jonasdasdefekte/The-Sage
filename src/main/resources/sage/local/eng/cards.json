@@ -227,7 +227,7 @@
   },
   "Salty_Strike": {
     "NAME": "Salty Strike",
-    "DESCRIPTION": "Deal !D! damage. NL The enemy gains NL !M! Thirsty."
+    "DESCRIPTION": "Deal !D! damage. NL Apply !M! Thirsty."
   },
   "Slalom": {
     "NAME": "Slalom",

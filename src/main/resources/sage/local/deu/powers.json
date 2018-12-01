@@ -1,149 +1,149 @@
 {
   "Accumulate": {
-    "NAME": "Accumulate",
+    "NAME": "Akkumulation",
     "DESCRIPTIONS": [
-      "Gain ",
-      " at the start of your turn."
+      "Erhalte ",
+      " zu Beginn deines Zuges."
     ]
   },
   "Airborne": {
-    "NAME": "Airborne",
+    "NAME": "Fang mich doch",
     "DESCRIPTIONS": [
-      "Until your next turn, you don't lose Flight for the next #b",
-      " times you take #yattack damage.",
-      "Until your next turn, you don't lose Flight for the next time you take #yattack damage."
+      "Bis zu deinem nächsten Zug verlierst du keinen Flug bei den nächsten #b",
+      " Mal #yAngriffsschaden.",
+      "Bis zu deinem nächsten Zug verlierst du keinen Flug beim nächsten #yAngriffsschaden."
     ]
   },
   "Alchemy_Expert": {
-    "NAME": "Alchemy Expert",
+    "NAME": "Alchemistin",
     "DESCRIPTIONS": [
-      "Whenever you use a potion, gain #b",
-      " Artifact"
+      "Immer wenn du einen Trank benutzt, erhalte #b",
+      " Artefakt."
     ]
   },
   "Ancient_Poison": {
-    "NAME": "Ancient Posion",
+    "NAME": "Uraltes Gift",
     "DESCRIPTIONS": [
-      "Artifact no longer negates Poison for this combat."
+      "Artefakt negiert in diesem Kampf kein Gift."
     ]
   },
   "Bookworm": {
-    "NAME": "Bookworm",
+    "NAME": "Bücherwurm",
     "DESCRIPTIONS": [
-      "Gain ",
-      " every time you play a card that costs X."
+      "Erhalte ",
+      " , wenn du eine Karte spielst, die X kostet."
     ]
   },
   "Brew": {
-    "NAME": "Brew",
+    "NAME": "Braue",
     "DESCRIPTIONS": [
-      "Obtain a #r",
+      "Erhalte einen #r",
       "#b",
       "x #r",
       " in #b",
       ": #b",
-      " turn.",
-      " turns.",
-      " at the start of your next turn.",
+      " Zug.",
+      " Zügen.",
+      " zu Beginn deines nächsten Zuges.",
       " NL ",
-      "Sozu prevents brewing potions!",
-      "You brewed a potion!",
-      "You brewed some potions!"
+      "Mit Sozu kann ich nicht brauen!",
+      "Du hast einen Trank gebraut!",
+      "Du hast Tränke gebraut!"
     ]
   },
   "Brewing": {
-    "NAME": "Brewing",
+    "NAME": "Brauen",
     "DESCRIPTIONS": [
-      "You brew potions #b",
-      " turns quicker.",
-      " turn quicker."
+      "Du braust Tränke #b",
+      " Züge schneller.",
+      " Zug schneller."
     ]
   },
   "Deadly_Contraption": {
-    "NAME": "Deadly Contraption",
+    "NAME": "Tödlicher Apparat",
     "DESCRIPTIONS": [
-      "At the end of your turn, enemies are dealt #b",
-      " damage per Artifact on them."
+      "Am Ende deines Zuges erhalten Gegner #b",
+      " Schaden pro Artefakt auf ihnen."
     ]
   },
   "Disoriented": {
-    "NAME": "Disoriented",
+    "NAME": "Desorientiert",
     "DESCRIPTIONS": [
-      "The first attack of this enemy has no effect, for #b",
-      " turns.",
-      "The first attack of this enemy has no effect for this turn."
+      "Der erste Angriff dieses Gegners hat keinen Effekt - für #b",
+      " Züge.",
+      "Der erste Angriff dieses Gegners hat in diesem Zug keinen Effekt."
     ]
   },
   "Endless_Fear": {
-    "NAME": "Endless Fear",
+    "NAME": "Endlose Furcht",
     "DESCRIPTIONS": [
-      "Whenever you use a non-Fear Potion, obtain a Fear Potion."
+      "Immer wenn du einen Trank außer Furchttrank benutzt, erhalte einen Furchttrank."
     ]
   },
   "Extra_Portion": {
-    "NAME": "Extra Portion",
+    "NAME": "Extraportion",
     "DESCRIPTIONS": [
-      "The next #b",
-      " potions are applied twice this turn.",
-      "The next potion is applied twice this turn."
+      "Die nächsten #b",
+      " Tränke in diesem Zug werden zweimal angewendet.",
+      "Der nächste Trank in diesem Zug wird zweimal angewendet"
     ]
   },
   "Lose_Flight_Next_Turn": {
-    "NAME": "Lose Flight",
+    "NAME": "Flug verlieren",
     "DESCRIPTIONS": [
-      "At the start of your next turn, lose #b",
-      " Flight."
+      "Verliere zu Beginn deines nächsten Zuges #b",
+      " Flug."
     ]
   },
   "No_Energy": {
-    "NAME": "No Energy",
+    "NAME": "Keine Energie",
     "DESCRIPTIONS": [
-      "You cannot gain energy this turn."
+      "Du kannst in diesem Zug keine Energie erhalten."
     ]
   },
   "On_Fire": {
-    "NAME": "On Fire",
+    "NAME": "Feuer",
     "DESCRIPTIONS": [
-      "Play #b",
-      " more cards this turn to obtain a Fire Potion.",
-      " more card this turn to obtain a Fire Potion."
+      "Spiele #b",
+      " weitere Karten in diesem Zug, um einen Feuertrank zu erhalten.",
+      " weitere Karte in diesem Zug, um einen Feuertrank zu erhalten."
     ]
   },
   "Potion_Trance": {
-    "NAME": "Potion Trance",
+    "NAME": "Tranktrance",
     "DESCRIPTIONS": [
-      "Draw #b",
-      " cards whenever you use a #yPotion this turn.",
-      " card whenever you use a #yPotion this turn."
+      "Ziehe #b",
+      " Karten, wenn du in diesem Zug einen #yTrank benutzt.",
+      " Karte, wenn du in diesem Zug einen #yTrank benutzt."
     ]
   },
   "Sage_Flight": {
-    "NAME": "Flight",
+    "NAME": "Flug",
     "DESCRIPTIONS": [
-      "Reduce #yattack damage taken by #b50%. Reduced by one if you take #yattack damage."
+      "Reduziere #yAngriffsschaden, den du nimmst, um #b50%. Sinkt um 1, wenn du #yAngriffsschaden nimmst."
     ]
   },
   "Taste_This_One": {
-    "NAME": "Taste This One",
+    "NAME": "Probier das mal",
     "DESCRIPTIONS": [
-      "Whenever you use a potion, apply #b",
-      " Poison to a random enemy."
+      "Immer wenn du einen Trank benutzt, wende #b",
+      " Gift an einem zufälligen Gegner an."
     ]
   },
   "Thirsty": {
-    "NAME": "Thirsty",
+    "NAME": "Durstig",
     "DESCRIPTIONS": [
-      "#yPotions used against this enemy are #y50% more effective, for #b",
-      " turns.",
-      " turn."
+      "#yTränke sind gegen diesen Gegner #y50% effektiver - für #b",
+      " Züge.",
+      " Zug."
     ]
   },
   "Vigorous_Body": {
-    "NAME": "Vigorous Body",
+    "NAME": "Energischer Körper",
     "DESCRIPTIONS": [
-      "Whenever an #yArtifact of you gets triggered, gain #b",
-      "Whenever an #yArtifact of an enemy gets triggered, gain #b",
-      " #yStrength.",
+      "Immer wenn ein #yArtefakt bei dir genutzt wird, erhalte #b",
+      "Immer wenn ein #yArtefakt bei einem Gegner genutzt wird, erhalte #b",
+      " #yStärke.",
       " NL "
     ]
   }

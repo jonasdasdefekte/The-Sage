@@ -53,78 +53,78 @@
     "DESCRIPTION": "Erhalte jedes Mal [E] , wenn du eine Karte spielst, die X kostet."
   },
   "Bouncing_Strike": {
-    "NAME": "Bouncing Strike",
-    "DESCRIPTION": "Deal !D! damage. NL Gain !MISC! Frail. NL Gain !M! Flight."
+    "NAME": "Sprungschlag",
+    "DESCRIPTION": "Füge !D! Schaden zu. NL Erhalte !MISC! Gebrechlich. NL Erhalte !M! Flug."
   },
   "Brewmaster": {
-    "NAME": "Brewmaster",
-    "DESCRIPTION": "Gain !M! Brewing. "
+    "NAME": "Braumeisterin",
+    "DESCRIPTION": "Erhalte !M! Brauen. "
   },
   "Burning_Flask": {
-    "NAME": "Burning Flask",
-    "DESCRIPTION": "If you have potions, discard one at random and deal !D! damage. "
+    "NAME": "Brennende Flasche",
+    "DESCRIPTION": "Wenn du Tränke hast, wirf einen zufälligen ab und füge !D! Schaden zu. "
   },
   "Catch_Me_If_You_Can": {
-    "NAME": "Catch Me If You Can",
-    "DESCRIPTION": "Until your next turn, you don't lose Flight for the next !M! times you take attack damage."
+    "NAME": "Fang mich doch",
+    "DESCRIPTION": "Bis zu deinem nächsten Zug verlierst du !M! Mal keinen Flug, wenn du Angriffsschaden nimmst."
   },
   "Crank": {
-    "NAME": "Crank",
-    "DESCRIPTION": "Deal !D! damage. NL If the enemy has Artifact, draw !M! card."
+    "NAME": "Am Rad drehen",
+    "DESCRIPTION": "Füge !D! Schaden zu. NL Falls der Gegner Artefakt hat, ziehe !M! Karte."
   },
   "Cultist_Form": {
-    "NAME": "Cultist Form",
-    "DESCRIPTION": "Lose !MISC! Flight. NL Apply 1 Disoriented to a random enemy !M! times."
+    "NAME": "Kultistenform",
+    "DESCRIPTION": "Verliere !MISC! Flug. NL Wende !M! mal 1 Desorientiert an einem zufälligen Gegner an."
   },
   "Deadly_Contraption": {
-    "NAME": "Deadly Contraption",
-    "DESCRIPTION": "At the end of your turn, enemies are dealt !M! damage per Artifact on them."
+    "NAME": "Tödlicher Apparat",
+    "DESCRIPTION": "Am Ende deines Zuges erhalten Gegner !M! Schaden zu pro Artefakt auf ihnen."
   },
   "Defend_Sage": {
     "NAME": "Verteidigen",
     "DESCRIPTION": "Erhalte !B! Block."
   },
   "Endless_Fear": {
-    "NAME": "Endless Fear",
-    "DESCRIPTION": "Whenever you use a non-Fear Potion, obtain a Fear Potion."
+    "NAME": "Endlose Furcht",
+    "DESCRIPTION": "Immer wenn du einen Trank außer Furchttrank benutzt, erhalte einen Furchttrank."
   },
   "Energetic_Brew": {
-    "NAME": "Energetic Brew",
-    "DESCRIPTION": "Deal !D! damage. NL Brew an Energy Potion NL in !BRW! turns."
+    "NAME": "Energiegebräu",
+    "DESCRIPTION": "Füge !D! Schaden zu. NL Braue einen Energietrank NL in !BRW! Zügen."
   },
   "Escape": {
-    "NAME": "Escape",
-    "DESCRIPTION": "Double your Flight. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Double your Flight."
+    "NAME": "Entfliehen",
+    "DESCRIPTION": "Verdopple deinen Flug. NL Erschöpft.",
+    "UPGRADE_DESCRIPTION": "Verdopple deinen Flug."
   },
   "Extra_Portion": {
-    "NAME": "Extra Portion",
-    "DESCRIPTION": "The next potion is applied twice this turn.",
-    "UPGRADE_DESCRIPTION": "The next !M! potions are applied twice this turn."
+    "NAME": "Extraportion",
+    "DESCRIPTION": "Der nächste Trank in diesem Zug wird zweimal angewendet.",
+    "UPGRADE_DESCRIPTION": "Die nächsten !M! Tränke in diesem Zug werden zweimal angewendet."
   },
   "Fire_Brew": {
-    "NAME": "Fire Brew",
-    "DESCRIPTION": "Deal !D! damage. NL Brew a Fire Potion NL in !BRW! turns."
+    "NAME": "Feuergebräu",
+    "DESCRIPTION": "Füge !D! Schaden zu. NL Braue einen Feuertrank NL in !BRW! Zügen."
   },
   "Flight_Feint": {
-    "NAME": "Flight Feint",
-    "DESCRIPTION": "Deal !D! damage. NL Apply !M! Disoriented."
+    "NAME": "Flugfinte",
+    "DESCRIPTION": "Füge !D! Schaden zu. NL Wende !M! Desorientiert."
   },
   "Fly": {
-    "NAME": "Fly",
-    "DESCRIPTION": "If you aren't flying: NL Gain !M! Flight."
+    "NAME": "Fliegen",
+    "DESCRIPTION": "Falls du nicht fliegst: NL Erhalte !M! Flug."
   },
   "Flying_Cauldron": {
-    "NAME": "Flying Cauldron",
-    "DESCRIPTION": "If you are flying: NL Gain !M! Brewing. NL Otherwise: NL Gain !M! Flight. NL Exhaust."
+    "NAME": "Fliegender Kessel",
+    "DESCRIPTION": "Falls du fliegst: NL Erhalte !M! Brauen. NL Ansonsten: NL Erhalte !M! Flug. NL Erschöpft."
   },
   "Folded_Carpet": {
-    "NAME": "Folded Carpet",
-    "DESCRIPTION": "Gain !B! Block."
+    "NAME": "Gefalteter Teppich",
+    "DESCRIPTION": "Erhalte !B! Block."
   },
   "Gearwheel_Master": {
-    "NAME": "Gearwheel Master",
-    "DESCRIPTION": "EVERYBODY gains !M! Artifact. NL Exhaust."
+    "NAME": "Zahnradkünstlerin",
+    "DESCRIPTION": "ALLE erhalten !M! Artefakt. NL Erschöpft."
   },
   "Grounded_Strike": {
     "NAME": "Bodenschlag",
@@ -132,155 +132,155 @@
     "UPGRADE_DESCRIPTION": "Verliere allen Flug. NL Füge !D! Schaden zu."
   },
   "How_To_Amuse_Sneckos": {
-    "NAME": "How To Amuse Sneckos",
-    "DESCRIPTION": "Draw X cards.",
-    "UPGRADE_DESCRIPTION": "Draw X cards. NL Gain [E]."
+    "NAME": "Wie man Sneckos erfreut",
+    "DESCRIPTION": "Ziehe X Karten.",
+    "UPGRADE_DESCRIPTION": "Ziehe X Karten. NL Erhalte [E]."
   },
   "How_To_Befriend_A_Turtle": {
-    "NAME": "How To Befriend A Turtle",
-    "DESCRIPTION": "Gain X Block. NL Gain X [E].",
-    "UPGRADE_DESCRIPTION": "Gain X + !B! Block. NL Gain X [E]."
+    "NAME": "Wie man Schildkröten liebt",
+    "DESCRIPTION": "Erhalte X Block. NL Erhalte X [E].",
+    "UPGRADE_DESCRIPTION": "Erhalte X + !B! Block. NL Erhalte X [E]."
   },
   "How_To_Feed_Apes": {
-    "NAME": "How To Feed Apes",
-    "DESCRIPTION": "Brew one of the NL possible Potions NL in !BRW! -X turns. NL Exhaust."
+    "NAME": "Wie man Affen füttert",
+    "DESCRIPTION": "Braue einen der NL möglichen Tränke NL in !BRW! -X Zügen. NL Erschöpft."
   },
   "How_To_Greet_Byrds": {
-    "NAME": "How To Greet Byrds",
-    "DESCRIPTION": "Innate. NL Set your Flight to X. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Innate. NL Gain X Flight. NL Exhaust."
+    "NAME": "Wie man Fögl grüßt",
+    "DESCRIPTION": "Angeboren. NL Setze deinen Flug auf X. NL Erschöpft.",
+    "UPGRADE_DESCRIPTION": "Angeboren. NL Erhalte X Flug. NL Erschöpft."
   },
   "How_To_Murder_Ants": {
-    "NAME": "How To Murder Ants",
-    "DESCRIPTION": "Air. NL Deal !D! damage to a random enemy X times.",
-    "UPGRADE_DESCRIPTION": "Air. NL Deal !D! damage to a random enemy X + !M! times."
+    "NAME": "Wie man Ameisen mordet",
+    "DESCRIPTION": "Luft. NL Füge X mal an einem zufälligen Gegner !D! Schaden zu.",
+    "UPGRADE_DESCRIPTION": "Luft. NL Füge X + !M! mal an einem zufälligen Gegner !D! Schaden zu."
   },
   "How_To_Poke_At_Slimes": {
-    "NAME": "How To Poke At Slimes",
-    "DESCRIPTION": "Deal 5 damage to ALL enemies. NL Gain !M! -X Frail. NL Gain X [E]."
+    "NAME": "Wie man Schleime sticht",
+    "DESCRIPTION": "Füge ALLEN Gegnern 5 Schaden zu. NL Erhalte !M! -X Gebrechlich. NL Erhalte X [E]."
   },
   "How_To_Talk_To_Spiders": {
-    "NAME": "How To Talk To Spiders",
-    "DESCRIPTION": "Apply X Poison. NL Brew a Poison Potion NL in !BRW! -X turns."
+    "NAME": "Wie man mit Spinnen redet",
+    "DESCRIPTION": "Wende X Gift an. NL Braue einen Gifttrank NL in !BRW! -X Zügen."
   },
   "How_To_Wake_Lyons": {
-    "NAME": "How To Wake Lyons",
-    "DESCRIPTION": "Brew a NL Steroid Potion NL in !BRW! -X turns. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Brew a NL Steroid Potion NL in !BRW! -X turns."
+    "NAME": "Wie man Lywen aufweckt",
+    "DESCRIPTION": "Braue einen NL Steroidetrank NL in !BRW! -X Zügen. NL Erschöpft.",
+    "UPGRADE_DESCRIPTION": "Braue einen NL Steroidetrank NL in !BRW! -X Zügen."
   },
   "How_To_Warm_Elephants": {
-    "NAME": "How To Warm Elephants",
-    "DESCRIPTION": "Brew an NL Explosive Potion NL in !BRW! -X turns."
+    "NAME": "Wie man Elefanten wärmt",
+    "DESCRIPTION": "Braue einen NL Explosivtrank NL in !BRW! -X Zügen."
   },
   "Light_Weighted": {
-    "NAME": "Light-Weighted",
-    "DESCRIPTION": "Lose all Frail. NL Gain that much Flight. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Lose all Frail. NL Gain that much NL Flight + !M!. NL Exhaust."
+    "NAME": "Leichtgewicht",
+    "DESCRIPTION": "Verliere alles Gebrechlich. NL Erhalte ebensoviel Flug. NL Erschöpft.",
+    "UPGRADE_DESCRIPTION": "Verliere alles Gebrechlich. NL Erhalte ebensoviel NL Flug + !M!. NL Erschöpft."
   },
   "Lunchtime": {
-    "NAME": "Lunchtime!",
-    "DESCRIPTION": "Air. Lose !M! Flight and brew all potions immediately."
+    "NAME": "Essenszeit!",
+    "DESCRIPTION": "Luft. Verliere !M! Flug und braue sofort alle Tränke."
   },
   "Mechanics_Break": {
-    "NAME": "Mechanics Break!",
+    "NAME": "Mechanik zerbricht!",
     "DESCRIPTION": "Erhalte !B! Block. NL Der Gegner erhält !M! Artefakt."
   },
   "Meditation": {
     "NAME": "Meditation",
-    "DESCRIPTION": "Lose all Flight. NL Draw !M! cards. NL Exhaust."
+    "DESCRIPTION": "Verliere allen Flug. NL Ziehe !M! Karten. NL Erschöpft."
   },
   "On_Fire": {
-    "NAME": "On Fire",
-    "DESCRIPTION": "Whenever you play !M! cards in a single turn, obtain a Fire Potion.",
-    "UPGRADE_DESCRIPTION": "Innate. NL Whenever you play !M! cards in a single turn, obtain a Fire Potion."
+    "NAME": "Feuer",
+    "DESCRIPTION": "Immer wenn du !M! Karten in einem Zug spielst, erhalte einen Feuertrank.",
+    "UPGRADE_DESCRIPTION": "Angeboren. NL Immer wenn du !M! Karten in einem Zug spielst, erhalte einen Feuertrank."
   },
   "On_The_Head": {
-    "NAME": "On The Head",
-    "DESCRIPTION": "Deal !D! damage. NL If you are flying: NL Draw !M! card NL and gain [E]."
+    "NAME": "Auf den Kopf",
+    "DESCRIPTION": "Füge !D! Schaden zu. NL Falls du fliegst: NL Ziehe !M! Karte NL and erhalte [E]."
   },
   "Perpetuum_Mobile": {
     "NAME": "Perpetuum Mobile",
-    "DESCRIPTION": "Draw !M! card. NL Play it if it costs !MISC!.",
-    "UPGRADE_DESCRIPTION": "Draw !M! card. NL Gain [E] if it costs !MISC!."
+    "DESCRIPTION": "Ziehe !M! Karte. NL Spiele sie, falls sie !MISC! kostet.",
+    "UPGRADE_DESCRIPTION": "Ziehe !M! Karte. NL Erhalte [E] , falls sie !MISC! kostet."
   },
   "Pincer_Attack": {
-    "NAME": "Pincer Attack",
-    "DESCRIPTION": "Deal !D! damage. NL Deal !D! damage per Artifact the enemy has."
+    "NAME": "Zangenangriff",
+    "DESCRIPTION": "Füge !D! Schaden zu. NL Füge pro Artefakt auf dem Gegner !D! Schaden zu."
   },
   "Pincer_Repair": {
-    "NAME": "Pincer Repair",
-    "DESCRIPTION": "Deal !D! damage. NL The enemy gains NL !M! Artifact."
+    "NAME": "Reparaturzange",
+    "DESCRIPTION": "Füge !D! Schaden zu. NL Der Gegner erhält NL !M! Artefakt."
   },
   "Potion_Trance": {
-    "NAME": "Potion Trance",
-    "DESCRIPTION": "Draw !M! card whenever you use a potion this turn. You cannot gain energy this turn.",
-    "UPGRADE_DESCRIPTION": "Draw !M! cards whenever you use a potion this turn. You cannot gain energy this turn."
+    "NAME": "Tranktrance",
+    "DESCRIPTION": "Ziehe !M! Karte, wenn du in diesem Zug einen Trank benutzt. NL Du kannst in diesem Zug keine Energie erhalten.",
+    "UPGRADE_DESCRIPTION": "Ziehe !M! Karten, wenn du in diesem Zug einen Trank benutzt. NL Du kannst in diesem Zug keine Energie erhalten."
   },
   "Pour_Tar_Pitch": {
-    "NAME": "Pour Tar Pitch",
-    "DESCRIPTION": "Deal !D! damage. NL If you are flying: Affects ALL enemies."
+    "NAME": "Pech schütten",
+    "DESCRIPTION": "Füge !D! Schaden zu. NL Falls du fliegst: Trifft ALLE Gegner."
   },
   "Quackster": {
-    "NAME": "Quackster",
-    "DESCRIPTION": "Brew a random Potion in !BRW! turns. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Brew a random Potion in !BRW! turns."
+    "NAME": "Quacksalber",
+    "DESCRIPTION": "Braue einen zufälligen Trank in !BRW! Zügen. NL Erschöpft.",
+    "UPGRADE_DESCRIPTION": "Braue einen zufälligen Trank in !BRW! Zügen."
   },
   "Salty_Strike": {
     "NAME": "Salty Strike",
-    "DESCRIPTION": "Deal !D! damage. NL The enemy gains NL !M! Thirsty."
+    "DESCRIPTION": "Füge !D! Schaden zu. NL Wende !M! Durstig an."
   },
   "Slalom": {
     "NAME": "Slalom",
-    "DESCRIPTION": "Gain !B! Block. NL Gain !M! Frail."
+    "DESCRIPTION": "Erhalte !B! Block. NL Erhalte !M! Gebrechlich."
   },
   "Spoiled_Food": {
-    "NAME": "Spoiled Food",
-    "DESCRIPTION": "Apply !M! Thirsty. NL Exhaust."
+    "NAME": "Verdorbenes Essen",
+    "DESCRIPTION": "Wende !M! Durstig an. NL Erschöpft."
   },
   "Step_Back": {
-    "NAME": "Step Back",
-    "DESCRIPTION": "If you are flying: NL Gain !B! Block. NL Otherwise: NL Gain !M! Flight."
+    "NAME": "Schritt zurück",
+    "DESCRIPTION": "Falls du fliegst: NL Erhalte !B! Block. NL Ansonsten: NL Erhalte !M! Flug."
   },
   "Strike_Sage": {
     "NAME": "Schlag",
     "DESCRIPTION": "Füge !D! Schaden zu."
   },
   "Study": {
-    "NAME": "Study",
-    "DESCRIPTION": "Draw !M! cards. Put !MISC! card from your hand on top of your draw pile.",
-    "UPGRADE_DESCRIPTION": "Draw !M! cards. You may put !MISC! card from your hand on top of your draw pile.",
+    "NAME": "Studieren",
+    "DESCRIPTION": "Ziehe !M! Karten. Lege !MISC! Handkarte auf deinen Nachziehstapel.",
+    "UPGRADE_DESCRIPTION": "Ziehe !M! Karten. Du darfst !MISC! Handkarte auf deinen Nachziehstapel legen.",
     "EXTENDED_DESCRIPTION": [
-      "put on top of your draw pile."
+      "auf deinen Nachziehstapel legst."
     ]
   },
   "Swoop_Down": {
-    "NAME": "Swoop Down",
-    "DESCRIPTION": "Deal !D! damage per Flight you have. NL Lose !M! Flight.",
+    "NAME": "Herabsausen",
+    "DESCRIPTION": "Füge !D! Schaden zu pro Flug, den du hast. NL Verliere !M! Flug.",
     "EXTENDED_DESCRIPTION": [
-      " NL (Deals ",
-      " damage)"
+      " NL (Fügt ",
+      " Schaden zu)"
     ]
   },
   "Taste_This_One": {
-    "NAME": "Taste This One",
-    "DESCRIPTION": "Whenever you use a potion, apply !M! Poison to a random enemy."
+    "NAME": "Probier das mal",
+    "DESCRIPTION": "Immer wenn du einen Trank benutzt, wende !M! Gift an einem zufälligen Gegner an."
   },
   "Toxic_Chains": {
-    "NAME": "Toxic Chains",
-    "DESCRIPTION": "Lose all Frail. NL Apply that much Poison to ALL enemies.",
-    "UPGRADE_DESCRIPTION": "Lose all Frail. NL Apply that much Poison + !M! to ALL enemies."
+    "NAME": "Giftige Ketten",
+    "DESCRIPTION": "Verliere alles Gebrechlich. NL Wende ALLEN Gegnern ebensoviel Gift an.",
+    "UPGRADE_DESCRIPTION": "Verliere alles Gebrechlich. NL Wende ALLEN Gegnern ebensoviel Gift + !M! an."
   },
   "Turn_Around": {
-    "NAME": "Turn Around",
-    "DESCRIPTION": "Gain !M! Frail. NL Deal !D! damage per Frail you have."
+    "NAME": "Umkehren",
+    "DESCRIPTION": "Erhalte !M! Gebrechlich. NL Füge !D! Schaden zu pro Gebrechlich, das du hast."
   },
   "Vigorous_Body": {
-    "NAME": "Vigorous Body",
-    "DESCRIPTION": "Whenever an Artifact of you gets triggered, gain !M! Strength.",
-    "UPGRADE_DESCRIPTION": "Whenever an Artifact of you or an enemy gets triggered, gain !M! Strength."
+    "NAME": "Energischer Körper",
+    "DESCRIPTION": "Immer wenn ein Artefakt bei dir genutzt wird, erhalte !M! Stärke.",
+    "UPGRADE_DESCRIPTION": "Immer wenn ein Artefakt bei dir oder einem Gegner genutzt wird, erhalte !M! Stärke."
   },
   "Viral_Strike": {
-    "NAME": "Viral Strike",
-    "DESCRIPTION": "Deal !D! damage. NL If the enemy has Artifact, apply !M! Poison."
+    "NAME": "Viraler Schlag",
+    "DESCRIPTION": "Füge !D! Schaden zu. NL Falls der Gegner Artefakt hat, wende !M! Gift an."
   }
 }

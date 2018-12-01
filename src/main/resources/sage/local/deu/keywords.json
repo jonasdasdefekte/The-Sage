@@ -1,44 +1,44 @@
 {
   "AIR": {
     "NAMES": [
-      "air"
+      "luft"
     ],
-    "DESCRIPTION": "This card can only be played if you have Flight."
+    "DESCRIPTION": "Diese Karte kann nur gespielt werden, wenn du Flug hast."
   },
   "ARTIFACT": {
     "NAMES": [
-      "artifact"
+      "artefakt"
     ],
-    "DESCRIPTION": "Negates a debuff."
+    "DESCRIPTION": "Negiert einen Debuff."
   },
   "BREW": {
     "NAMES": [
-      "brew"
+      "braue"
     ],
-    "DESCRIPTION": "Obtain a potion after a specific amount of turns."
+    "DESCRIPTION": "Erhalte einen Trank in einer bestimmten Anzahl Runden."
   },
   "BREWING": {
     "NAMES": [
-      "brewing"
+      "brauen"
     ],
-    "DESCRIPTION": "You need less turns to brew potions."
+    "DESCRIPTION": "Du brauchst weniger Züge, um Tränke zu brauen."
   },
   "DISORIENTED": {
     "NAMES": [
-      "disoriented"
+      "desorientiert"
     ],
-    "DESCRIPTION": "The first Attack of this Enemy has no effect."
+    "DESCRIPTION": "Der erste Angriff dieses Gegners hat keinen Effekt."
   },
   "FLIGHT": {
     "NAMES": [
-      "flight"
+      "flug"
     ],
-    "DESCRIPTION": "Reduce attack damage taken by 50%. Reduced by one if you take attack damage."
+    "DESCRIPTION": "Reduziert Angriffsschaden, den du nimmst, um 50%. Sinkt um 1, wenn du Angriffsschaden nimmst."
   },
   "THIRSTY": {
     "NAMES": [
-      "thirsty"
+      "durstig"
     ],
-    "DESCRIPTION": "Potions used against the enemy are 50% more effective."
+    "DESCRIPTION": "Tränke sind gegen diesen Gegner 50% effektiver."
   }
 }
