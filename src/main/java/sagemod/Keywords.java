@@ -1,5 +1,7 @@
 package sagemod;
 
+import java.util.HashMap;
+import java.util.Map;
 import com.megacrit.cardcrawl.helpers.GameDictionary;
 import com.megacrit.cardcrawl.helpers.PowerTip;
 import com.megacrit.cardcrawl.helpers.TipHelper;
@@ -18,7 +20,10 @@ public class Keywords {
 	public static final String THIRSTY = "thirsty";
 	public static final String VIRUS = "virus";
 
+	public static final Map<String, String> langMap = new HashMap<>();
+
 	public static PowerTip makePowerTip(String keyword) {
-		return new PowerTip(TipHelper.capitalize(keyword), GameDictionary.keywords.get(keyword));
+		String translated = langMap.get(keyword);
+		return new PowerTip(TipHelper.capitalize(translated), GameDictionary.keywords.get(translated));
 	}
 }

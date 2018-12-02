@@ -2,7 +2,9 @@ package sagemod;
 
 import java.lang.reflect.Type;
 import java.nio.charset.StandardCharsets;
+import java.util.Locale;
 import java.util.Map;
+import java.util.Map.Entry;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import com.badlogic.gdx.Gdx;
@@ -398,8 +400,10 @@ PostBattleSubscriber, OnStartBattleSubscriber {
 		Gson gson = new Gson();
 		String strings = loadJson(LOCALIZATION_FOLDER + localLanguage + "keywords.json");
 		Map<String, Keyword> keywords = gson.<Map<String, Keyword>>fromJson(strings, typeToken);
-		for (Keyword kw : keywords.values()) {
+		for (Entry<String, Keyword> entry : keywords.entrySet()) {
+			Keyword kw = entry.getValue();
 			BaseMod.addKeyword(kw.NAMES, kw.DESCRIPTION);
+			Keywords.langMap.put(entry.getKey().toLowerCase(Locale.ROOT), kw.NAMES[0]);
 		}
 	}
 
