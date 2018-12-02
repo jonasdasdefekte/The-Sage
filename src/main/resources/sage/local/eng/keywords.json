@@ -40,5 +40,11 @@
       "thirsty"
     ],
     "DESCRIPTION": "Potions used against the enemy are 50% more effective."
+  },
+  "VIRUS": {
+    "NAMES": [
+      "virus"
+    ],
+    "DESCRIPTION": "Poison applied to the enemy other than by Virus spreads to all other enemies instantly."
   }
 }

@@ -281,6 +281,6 @@
   },
   "Viral_Strike": {
     "NAME": "Viraler Schlag",
-    "DESCRIPTION": "Füge !D! Schaden zu. NL Falls der Gegner Artefakt hat, wende !M! Gift an."
+    "DESCRIPTION": "Füge !D! Schaden zu. Wende Virus und !M! Gift an."
   }
 }

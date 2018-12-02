@@ -40,5 +40,11 @@
       "durstig"
     ],
     "DESCRIPTION": "Tränke sind gegen diesen Gegner 50% effektiver."
+  },
+  "VIRUS": {
+    "NAMES": [
+      "virus" 
+    ],
+    "DESCRIPTION": "Gift, dass auf den Gegner außer durch Virus selber angewendet wird, wird auch auf alle anderen Gegner angewendet."
   }
 }

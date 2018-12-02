@@ -146,5 +146,11 @@
       " #yStärke.",
       " NL "
     ]
+  },
+  "Virus": {
+    "NAME": "Virus",
+    "DESCRIPTIONS": [
+      "Gift, dass auf diesen Gegner außer durch Virus selber angewendet wird, wird auch auf alle anderen Gegner angewendet."
+    ]
   }
 }

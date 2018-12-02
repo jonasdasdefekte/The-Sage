@@ -16,6 +16,7 @@ public class Keywords {
 	public static final String DISORIENTED = "disoriented";
 	public static final String FLIGHT = "flight";
 	public static final String THIRSTY = "thirsty";
+	public static final String VIRUS = "virus";
 
 	public static PowerTip makePowerTip(String keyword) {
 		return new PowerTip(TipHelper.capitalize(keyword), GameDictionary.keywords.get(keyword));

@@ -281,6 +281,6 @@
   },
   "Viral_Strike": {
     "NAME": "Viral Strike",
-    "DESCRIPTION": "Deal !D! damage. NL If the enemy has Artifact, apply !M! Poison."
+    "DESCRIPTION": "Deal !D! damage. Apply Virus and !M! Poison."
   }
 }

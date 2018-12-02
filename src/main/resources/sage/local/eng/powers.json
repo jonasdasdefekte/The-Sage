@@ -146,5 +146,11 @@
       " #yStrength.",
       " NL "
     ]
+  },
+  "Virus": {
+    "NAME": "Virus",
+    "DESCRIPTIONS": [
+      "Poison applied to this enemy other than by Virus spreads to all other enemies instantly."
+    ]
   }
 }

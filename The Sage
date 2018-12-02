@@ -103,8 +103,8 @@ TODO:	Bouncing Strike
 		Attack, 1 Energy: 
 		Gain 1 Frail. Deal 4 (6) damage per Frail you have. 
 TODO:	Viral Strike
-		Attack, 2 Energy:
-		Deal 4 damage. Apply Virus and 7 Poison. (Virus: Poison applied to this enemy other than by Virus spreads to all other enemies instantly.)
+		Attack, 2 (1) Energy:
+		Deal 6 damage. Apply Virus and 7 Poison. (Virus: Poison applied to this enemy other than by Virus spreads to all other enemies instantly.)
 NEW:	Potion Explosion
 		Attack, 1 Energy:
 		Deal 6 (8) damage to ALL enemies once per potion you used this turn.

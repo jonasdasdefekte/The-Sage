@@ -109,6 +109,7 @@ import sagemod.character.SageColorEnum;
 import sagemod.character.TheSage;
 import sagemod.events.CarpetTrader;
 import sagemod.listeners.PotionListener;
+import sagemod.listeners.VirusListener;
 import sagemod.potions.FataMorgana;
 import sagemod.potions.FlightPotion;
 import sagemod.powers.Accumulate;
@@ -130,6 +131,7 @@ import sagemod.powers.SageFlight;
 import sagemod.powers.TasteThisOnePower;
 import sagemod.powers.Thirsty;
 import sagemod.powers.VigorousBodyPower;
+import sagemod.powers.Virus;
 import sagemod.relics.AncientMagnet;
 import sagemod.relics.BalloonAnimal;
 import sagemod.relics.Blowpipe;
@@ -171,6 +173,7 @@ PostBattleSubscriber, OnStartBattleSubscriber {
 		addColor();
 		BaseMod.subscribe(this);
 		BaseMod.subscribe(new PotionListener());
+		BaseMod.subscribe(new VirusListener());
 	}
 
 	private void addColor() {
@@ -288,6 +291,7 @@ PostBattleSubscriber, OnStartBattleSubscriber {
 		BaseMod.addPower(TasteThisOnePower.class, TasteThisOnePower.POWER_ID);
 		BaseMod.addPower(Thirsty.class, Thirsty.POWER_ID);
 		BaseMod.addPower(VigorousBodyPower.class, VigorousBodyPower.POWER_ID);
+		BaseMod.addPower(Virus.class, Virus.POWER_ID);
 
 	}
 
