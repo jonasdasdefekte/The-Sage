@@ -126,12 +126,12 @@ TODO:	Gearwheel Master
 	How to feed Apes
 		Skill, X Energy: 
 		Randomly brew one of these potions in 4 (3)-X turns: Flight Potion, Blood Potion, Regen Potion or Fruit Juice. Exhaust.
-TODO:	Perpetuum Mobile
+	Perpetuum Mobile
 		Skill, 0 Energy: 
-		Draw 1 card. Play it if it costs 1. (Upgrade: Also plays X cost cards for 1 Energy.)
-QUESTION:	Study
+		Draw 1 card. Play it if it costs 1 (or X).
+	Study
 		Skill, 1 Energy: 
-		Draw 3 cards and (you may) put one card from your hand hand on top of your deck. // Is it possible to change the button on upgrade from "Confirm" to "None" while there is no card selected?
+		Draw 3 cards and (you may) put one card from your hand hand on top of your deck.
 TODO:	Flying Cauldron
 		Skill, 1 Energy: 
 		Air. Gain 1 Brewing. Exhaust. (Upgrade: If you are flying, gain 1 Brewing. Otherwise, gain 1 Flight. Exhaust.)
@@ -147,9 +147,9 @@ TODO:	Flying Cauldron
 	Toxic Chains
 		Skill, 1 Energy:
 		Lose all Frail. Apply that much Poison (+3) to ALL enemies.
-QUESTION:	Potion Trance
+	Potion Trance
 		Skill, 1 Energy:
-		Draw 1 card (2 cards) whenever you use a Potion this turn. You cannot gain energy this turn. // How does the debuff interact with Refund? Probably shouldn't refund.
+		Draw 1 card (2 cards) whenever you use a Potion this turn. You cannot gain energy this turn.
 	How To Amuse Sneckos
 		Skill, X Energy:
 		Draw X cards. (Refund 1.)

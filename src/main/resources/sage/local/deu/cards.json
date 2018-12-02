@@ -201,7 +201,7 @@
   "Perpetuum_Mobile": {
     "NAME": "Perpetuum Mobile",
     "DESCRIPTION": "Ziehe !M! Karte. NL Spiele sie, falls sie !MISC! kostet.",
-    "UPGRADE_DESCRIPTION": "Ziehe !M! Karte. NL Erhalte [E] , falls sie !MISC! kostet."
+    "UPGRADE_DESCRIPTION": "Ziehe !M! Karte. NL Spiele sie, falls sie !MISC! oder X kostet."
   },
   "Pincer_Attack": {
     "NAME": "Zangenangriff",

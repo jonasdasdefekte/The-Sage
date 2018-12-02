@@ -3,7 +3,6 @@ package sagemod.actions;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DrawCardAction;
 import com.megacrit.cardcrawl.actions.common.EmptyDeckShuffleAction;
-import com.megacrit.cardcrawl.actions.common.GainEnergyAction;
 import com.megacrit.cardcrawl.actions.utility.QueueCardAction;
 import com.megacrit.cardcrawl.actions.utility.UnlimboAction;
 import com.megacrit.cardcrawl.actions.utility.WaitAction;
@@ -46,23 +45,16 @@ public class PerpetuumMobileAction extends AbstractGameAction {
 			} else {
 				AbstractCard card = AbstractDungeon.player.drawPile.getTopCard();
 
-				if (upgraded) {
-					AbstractDungeon.actionManager.addToTop(new DrawCardAction(player, 1));
-					AbstractDungeon.actionManager.addToTop(new WaitAction(0.4F));
-					if (card.cost == forCost) {
-						AbstractDungeon.actionManager.addToTop(new GainEnergyAction(forCost));
-					}
-					isDone = true;
-					return;
-				}
-
-				// not upgraded
-
-				if (!card.canUse(AbstractDungeon.player, (AbstractMonster) target) || card.cost != forCost) {
-					AbstractDungeon.actionManager.addToTop(new DrawCardAction(player, 1));
-					AbstractDungeon.actionManager.addToTop(new WaitAction(0.4F));
-				} else {
+				if (card.cost == forCost || (upgraded && card.cost == -1)) {
+					boolean freeToPlayBefore = card.freeToPlayOnce;
 					card.freeToPlayOnce = true;
+					if (!card.canUse(AbstractDungeon.player, (AbstractMonster) target)) {
+						card.freeToPlayOnce = freeToPlayBefore;
+						AbstractDungeon.actionManager.addToTop(new DrawCardAction(player, 1));
+						AbstractDungeon.actionManager.addToTop(new WaitAction(0.4F));
+						isDone = true;
+						return;
+					}
 					AbstractDungeon.player.limbo.group.add(card);
 					card.current_y = (-200.0F * Settings.scale);
 					card.target_x = (Settings.WIDTH / 2.0F + 200.0F * Settings.scale);
@@ -82,6 +74,9 @@ public class PerpetuumMobileAction extends AbstractGameAction {
 					} else {
 						AbstractDungeon.actionManager.addToTop(new WaitAction(Settings.ACTION_DUR_FASTER));
 					}
+				} else {
+					AbstractDungeon.actionManager.addToTop(new DrawCardAction(player, 1));
+					AbstractDungeon.actionManager.addToTop(new WaitAction(0.4F));
 				}
 			}
 			isDone = true;
