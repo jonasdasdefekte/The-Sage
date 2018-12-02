@@ -108,7 +108,7 @@
   },
   "Flight_Feint": {
     "NAME": "Flugfinte",
-    "DESCRIPTION": "Füge !D! Schaden zu. NL Wende !M! Desorientiert."
+    "DESCRIPTION": "Füge !D! Schaden zu. NL Wende !M! Desorientiert an."
   },
   "Fly": {
     "NAME": "Fliegen",
@@ -129,7 +129,7 @@
   "Grounded_Strike": {
     "NAME": "Bodenschlag",
     "DESCRIPTION": "Verliere allen Flug. NL Füge !D! Schaden zu.",
-    "UPGRADE_DESCRIPTION": "Verliere allen Flug. NL Füge !D! Schaden zu."
+    "UPGRADE_DESCRIPTION": "Verliere !M! Flug. NL Füge !D! Schaden zu."
   },
   "How_To_Amuse_Sneckos": {
     "NAME": "Wie man Sneckos erfreut",
