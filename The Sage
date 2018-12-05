@@ -24,7 +24,7 @@ Starts with 50 HP, 169 gold
 		Skill, 2 (1) Energy: 
 		If you don't fly, gain 1 Flight.
 
-**17 COMMON CARDS (grey)**
+**18 COMMON CARDS (grey)**
 	Pincer Repair
 		Attack, 1 Energy
 		Deal 8 (12) damage. The enemy gains 1 Artifact.
@@ -48,7 +48,10 @@ TODO:	Crank
 		Lose all (1) Flight. Deal 10 (13) damage.
 NEW:	How To Charm a Sentry
 		Attack, X Energy:
-		Deal X + 3 (6) damage. The enemy gains X Artifact. Refund 3 (all).
+		Deal X times 2 (4) damage. The enemy gains X Artifact.
+NEW:	Cane Strike
+		Attack, 1 Energy:
+		Deal 7 (10) damage. Deals double damage if you are Frail.
 TODO:	How To Warm Elephants
 		Skill, X Energy: 
 		Brew an Explosive Potion in 4 -X turns. (Refund all).
@@ -60,7 +63,7 @@ TODO:	How To Befriend A Turtle
 		Gain X (X+3) Block. Refund 3 (all).
 TODO:	Catch me if you can
 		Skill, 0 Energy
-		Air. Prevent the next 2 (4) times you would lose Flight until the enemy's turn. // (Should also work on Flight loss in your own turn. "Lose 2 Flight" and "Lose all Flight" will cancel 1 stack of Airborne. Artifact no longer negates Flight loss.)
+		Air. Prevent the next 2 (4) times you would lose Flight until the enemy's turn. // (Should also work on Flight loss in your own turn. "Lose 2 Flight" will lose 2 stacks of Airborne instead and "Lose all Flight" will cancel Airborne and Flight completely. Artifact no longer negates Flight loss.)
 	How To Talk To Spiders
 		Skill, X Energy: 
 		Apply X poison. Brew a Poison potion in 4 (3)-X turns.
@@ -77,7 +80,7 @@ TODO:	Catch me if you can
 		Skill, 1 Energy:
 		Gain 10 (13) Block. Target enemy gains 3 Artifact.
 
-**33 UNCOMMON CARDS (blue)**
+**34 UNCOMMON CARDS (blue)**
 	On the Head
 		Attack, 1 Energy:
 		Deal 5 (7) damage. If you are flying, draw 1 card and gain 1 Energy.
@@ -90,9 +93,9 @@ TODO:	How to Murder Ants
 	Flight Feint
 		Attack, 2 Energy: 
 		Deal 6 (12) damage and apply 1 Disoriented. 
-	Burning Flask
-		Attack, 0 Energy: 
-		Discard 1 random potion to deal 20 (24) damage.
+TODO:	Burning Flask
+		Attack, 1 Energy: 
+		Deal 8 damage to ALL enemies. If you carry potions, discard one randomly to deal 12 (22) extra damage.
 	Pincer Attack
 		Attack, 1 Energy: 
 		Deal 6 (8) damage. Deal 6 (8) damage per Artifact the enemy has.
@@ -102,7 +105,7 @@ TODO:	Bouncing Strike
 	Turn Around
 		Attack, 1 Energy: 
 		Gain 1 Frail. Deal 4 (6) damage per Frail you have. 
-TODO:	Viral Strike
+	Viral Strike
 		Attack, 2 (1) Energy:
 		Deal 6 damage. Apply Virus and 7 Poison. (Virus: Poison applied to this enemy other than by Virus spreads to all other enemies instantly.)
 NEW:	Potion Explosion
@@ -161,24 +164,27 @@ NEW:	Gear Wall
 		Gain 10 (15) Block. Whenever you are attacked this turn, the Attacker gains 1 Artifact.
 NEW:	Tinker
 		Skill, 1 Energy:
-		(Gain 1 Artifact.) Gain Block equal to all Artifact on the field.
+		(Gain 1 Artifact.) Gain Block equal to all Artifact on the field + 5.
 NEW:	Rock Oil
 		Skill, 1 Energy:
 		Gain 5 Block per Potion used this turn.
+NEW:	Momentum
+		Skill, 1 Energy:
+		Brew a Momentum potion in 4 (3) turns. Exhaust. (No Exhaust.)
 	Altitude
 		Power, 1 Energy: 
 		Gain 2 (3) Flight.
 	Taste this one
 		Power, 1 Energy:
 		Whenever you use a potion, apply 4 (6) Poison to a random Enemy.
-	Brewmaster
+QUESTION:	Brewmaster
 		Power, 2 (1) Energy:
-		Gain 1 Brewing.
+		Gain 1 Brewing. // Maybe it would be nicer if Brewing also affected Potions that are already currently in the queue.
 TODO:	Deadly Contraption
 		Power, 1 Energy: 
-		ALL enemies gain 1 (2) Artifact. Whenever you deal Attack damage, enemies take 1 (2) more damage per Artifact on them.
+		ALL enemies gain 1 (3) Artifact. Whenever you deal Attack damage, enemies take 1 more damage per Artifact on them.
 
-**19 RARE CARDS (gold)**
+**20 RARE CARDS (gold)**
 TODO:	Swoop Down
 		Attack, 1 Energy: 
 		Deal 4 (6) damage per Flight you have. Then lose 1 Flight. (Upgrade: No Flight loss.)
@@ -190,7 +196,7 @@ NEW:	Lecture
 		Deal 4 (6) damage per X cost card played this combat.
 NEW:	Prey
 		Attack, 1 Energy
-		Deal 10 (14) damage. If this kills an enemy with more max HP than you, gain 10 (14) max HP and Purge this.
+		Deal 10 (14) damage. If this kills an enemy with more max HP than you, gain 10 (14) max HP and remove this from your deck.
 	Escape
 		Skill, 1 Energy: 
 		Double your Flight. Exhaust. (Upgrade: No Exhaust.)
@@ -212,6 +218,9 @@ NEW:	Read the riot act
 NEW:	Blurry
 		Skill, 1 Energy
 		Gain 4 (6) Temporary HP. Gain 2 (3) Temporary HP per Frail you have. Exhaust.
+NEW:	Refine
+		Skill, 1 Energy
+		Upgrade a random unupgraded potion (all unupgraded potions) you are holding. // Upgrading a potion doubles its effect/ magic number. (Just an idea to add a bit oomph, if it's too hard to implement we can toss it away again.)
 	Alchemy Expert
 		Power, 1 Energy:
 		Whenever you use a potion, gain 1 Artifact. (Innate.)
@@ -233,9 +242,9 @@ TODO:	Bookworm
 	Vigorous Body
 		Power, 1 Energy:
 		Whenever an Artifact (of you or an enemy) gets triggered, gain 1 Strength.
-	Endless Fear
+QUESTION:	Endless Fear
 		Power, 1 (0) Energy:
-		Whenever you use a non-Fear Potion, obtain a Fear Potion.
+		Whenever you use a non-Fear Potion, obtain a Fear Potion. // This effect seems a bit too tedious. Maybe immediately throw the potion to a random enemy? 
 
 
 **2 NEUTRAL CARDS (Shop)**
@@ -244,7 +253,7 @@ NEW:	Perplexing Glare
 		Apply 1 (2) Disoriented. Exhaust.
 NEW:	Trixter
 		Skill, 1 (0) Energy:
-		Refund all Energy used to play your next card.
+		Refund all Energy used when playing your next card.
 
 	
 **6+3 CHARACTER-SPECIFIC RELICS (Sage only)**
@@ -260,12 +269,15 @@ TODO:	Thunder Carpet
 	Balloon Animal
 		Uncommon relic:
 		Draw 1 card at the start of your turn if you have no Flight.
-TODO:	Carrot
+TODO:	Cabbage Head
 		Common relic:
 		While you are Frail, gain 2 Dexterity.
 TODO:	Byrd Feather
 		Event relic:
 		If you have 1 or 2 Flight at the start of your turn, set it to 3.
+NEW:	Fruit Press
+		Common relic:
+		Whenever you discard a Potion, raise your Max HP by 2. // Alternativ: Effekt von Toy Ornithopter für The Sage umwandeln in "Whenever you discard a potion, heal 5 HP."
 	Can also use poison Relics (from Silent):
 		- Snecko Skull
 		- The Specimen
@@ -296,6 +308,9 @@ NEW:	Carousel
 	Fata Morgana
 		Rare
 		Apply 1 Disoriented.
+NEW:	Momentum Potion
+		Uncommon
+		Draw until your hand is full.
 
 **1 EVENT**
 TODO:	Carpet trader
