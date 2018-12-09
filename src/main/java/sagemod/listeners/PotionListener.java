@@ -68,9 +68,6 @@ public class PotionListener implements PrePotionUseSubscriber, PostPotionUseSubs
 
 	private void extraPortion(AbstractPotion p) {
 		if (AbstractDungeon.player.hasPower(ExtraPortionPower.POWER_ID)) {
-			if (p.isThrown && p.targetRequired && getHoveredMonster() == null) {
-				return;
-			}
 			AbstractPower power = AbstractDungeon.player.getPower(ExtraPortionPower.POWER_ID);
 			AbstractMonster monster = getHoveredMonster();
 			monster = monster == null ? AbstractDungeon.getRandomMonster() : monster;
@@ -85,9 +82,6 @@ public class PotionListener implements PrePotionUseSubscriber, PostPotionUseSubs
 
 	private void tasteThisOne(AbstractPotion p) {
 		if (AbstractDungeon.player.hasPower(TasteThisOnePower.POWER_ID)) {
-			if (p.isThrown && p.targetRequired && getHoveredMonster() == null) {
-				return;
-			}
 			AbstractPower power = AbstractDungeon.player.getPower(TasteThisOnePower.POWER_ID);
 			AbstractMonster m = AbstractDungeon.getRandomMonster();
 
@@ -133,9 +127,6 @@ public class PotionListener implements PrePotionUseSubscriber, PostPotionUseSubs
 
 	private void alchemyExpert(AbstractPotion p) {
 		if (AbstractDungeon.player.hasPower(AlchemyExpertPower.POWER_ID)) {
-			if (p.isThrown && p.targetRequired && getHoveredMonster() == null) {
-				return;
-			}
 			AbstractPower power = AbstractDungeon.player.getPower(AlchemyExpertPower.POWER_ID);
 			int amount = power.amount;
 			AbstractDungeon.actionManager.addToTop(new ApplyPowerAction(AbstractDungeon.player,
@@ -146,9 +137,6 @@ public class PotionListener implements PrePotionUseSubscriber, PostPotionUseSubs
 
 	private void potionTrance(AbstractPotion p) {
 		if (AbstractDungeon.player.hasPower(PotionTrancePower.POWER_ID)) {
-			if (p.isThrown && p.targetRequired && getHoveredMonster() == null) {
-				return;
-			}
 			AbstractPower power = AbstractDungeon.player.getPower(PotionTrancePower.POWER_ID);
 			AbstractDungeon.actionManager
 			.addToBottom(new DrawCardAction(AbstractDungeon.player, power.amount));
@@ -177,9 +165,6 @@ public class PotionListener implements PrePotionUseSubscriber, PostPotionUseSubs
 
 	private void endlessFear(AbstractPotion p) {
 		if (AbstractDungeon.player.hasPower(EndlessFearPower.POWER_ID)) {
-			if (p.isThrown && p.targetRequired && getHoveredMonster() == null) {
-				return;
-			}
 			if (!p.ID.equals(FearPotion.POTION_ID)) {
 				AbstractDungeon.actionManager.addToBottom(new ExecuteLaterAction(() -> {
 					AbstractDungeon.player.obtainPotion(new FearPotion());
