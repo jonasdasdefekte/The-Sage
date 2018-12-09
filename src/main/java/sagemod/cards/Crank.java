@@ -34,6 +34,8 @@ public class Crank extends AbstractSageCard {
 		if (!upgraded) {
 			upgradeName();
 			upgradeDamage(UPGRADE_ATTACK_DMG);
+			rawDescription = cardStrings.UPGRADE_DESCRIPTION;
+			initializeDescription();
 		}
 	}
 
@@ -46,7 +48,11 @@ public class Crank extends AbstractSageCard {
 	public void use(AbstractPlayer p, AbstractMonster m) {
 		attack(m, AttackEffect.SLASH_HEAVY);
 		if (m.hasPower(ArtifactPower.POWER_ID)) {
-			draw(magicNumber);
+			if (upgraded) {
+				draw(m.getPower(ArtifactPower.POWER_ID).amount);
+			} else {
+				draw(magicNumber);
+			}
 		}
 	}
 

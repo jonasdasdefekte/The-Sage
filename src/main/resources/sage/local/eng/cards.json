@@ -70,7 +70,8 @@
   },
   "Crank": {
     "NAME": "Crank",
-    "DESCRIPTION": "Deal !D! damage. NL If the enemy has Artifact, draw !M! card."
+    "DESCRIPTION": "Deal !D! damage. NL If the enemy has Artifact, draw !M! card.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL If the enemy has Artifact, draw cards equal to the enemies Artifact."
   },
   "Cultist_Form": {
     "NAME": "Cultist Form",
