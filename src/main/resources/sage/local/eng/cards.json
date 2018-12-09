@@ -142,6 +142,10 @@
     "DESCRIPTION": "Gain X Block. NL Gain X [E].",
     "UPGRADE_DESCRIPTION": "Gain X + !B! Block. NL Gain X [E]."
   },
+  "How_To_Charm_A_Sentry": {
+    "NAME": "How To Charm A Sentry",
+    "DESCRIPTION": "Deal X times !D! damage. The enemy gains X Artifact."
+  },
   "How_To_Feed_Apes": {
     "NAME": "How To Feed Apes",
     "DESCRIPTION": "Brew one of the NL possible Potions NL in !BRW! -X turns. NL Exhaust."

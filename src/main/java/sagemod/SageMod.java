@@ -75,6 +75,7 @@ import sagemod.cards.GearwheelMaster;
 import sagemod.cards.GroundedStrike;
 import sagemod.cards.HowToAmuseSneckos;
 import sagemod.cards.HowToBefriendATurtle;
+import sagemod.cards.HowToCharmASentry;
 import sagemod.cards.HowToFeedApes;
 import sagemod.cards.HowToGreetByrds;
 import sagemod.cards.HowToMurderAnts;
@@ -225,6 +226,7 @@ PostBattleSubscriber, OnStartBattleSubscriber {
 		BaseMod.addCard(new EnergeticBrew());
 		BaseMod.addCard(new ViralStrike());
 		BaseMod.addCard(new GroundedStrike());
+		BaseMod.addCard(new HowToCharmASentry());
 
 		// Uncommon
 		BaseMod.addCard(new OnTheHead());
