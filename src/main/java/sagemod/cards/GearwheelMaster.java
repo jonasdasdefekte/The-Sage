@@ -23,22 +23,33 @@ public class GearwheelMaster extends AbstractSageCard {
 	private static final int UPGRADE_ARTIFACT_GAIN = 1;
 
 	public GearwheelMaster() {
+		this(0);
+	}
+
+	public GearwheelMaster(int upgrades) {
 		super(ID, NAME, COST, DESCRIPTION, TYPE, RARITY, TARGET);
 		baseMagicNumber = magicNumber = ARTIFACT_GAIN;
 		exhaust = true;
+		timesUpgraded = upgrades;
 	}
 
 	@Override
 	public void upgrade() {
-		if (!upgraded) {
-			upgradeName();
-			upgradeMagicNumber(UPGRADE_ARTIFACT_GAIN);
-		}
+		upgradeMagicNumber(UPGRADE_ARTIFACT_GAIN);
+		++timesUpgraded;
+		upgraded = true;
+		name = NAME + "+" + timesUpgraded;
+		initializeTitle();
+	}
+
+	@Override
+	public boolean canUpgrade() {
+		return true;
 	}
 
 	@Override
 	public AbstractCard makeCopy() {
-		return new GearwheelMaster();
+		return new GearwheelMaster(timesUpgraded);
 	}
 
 	@Override

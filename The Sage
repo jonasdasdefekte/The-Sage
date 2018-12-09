@@ -117,7 +117,7 @@ NEW:	About Clark
 	Noxious Wave
 		Attack, 1 Energy
 		Deal 6 damage. Trigger Poison on this enemy (twice). // (like at the start of their turn)
-TODO:	Gearwheel Master
+	Gearwheel Master
 		Skill, 0 Energy: 
 		EVERYBODY gains 1(2/3/...) Artifact. Exhaust. Can be upgraded any number of times.
 	Quackster
