@@ -71,7 +71,7 @@
   "Crank": {
     "NAME": "Am Rad drehen",
     "DESCRIPTION": "Füge !D! Schaden zu. NL Falls der Gegner Artefakt hat, ziehe !M! Karte.",
-    "UPGRADE_DESCRIPTION": "Füge !D! Schaden zu. NL Falls der Gegner Artefakt hat, ziehe soviele Karten, wie er Artefakt hat.."
+    "UPGRADE_DESCRIPTION": "Füge !D! Schaden zu. NL Falls der Gegner Artefakt hat, ziehe soviele Karten, wie er Artefakt hat."
   },
   "Cultist_Form": {
     "NAME": "Kultistenform",
