@@ -62,7 +62,11 @@
   },
   "Burning_Flask": {
     "NAME": "Burning Flask",
-    "DESCRIPTION": "If you have potions, discard one at random and deal !D! damage. "
+    "DESCRIPTION": "If you have potions, discard one at random and deal !D! damage."
+  },
+  "Cane_Strike": {
+    "NAME": "Cane Strike",
+    "DESCRIPTION": "Deal !D! damage. Deals double damage if you are Frail."
   },
   "Catch_Me_If_You_Can": {
     "NAME": "Catch Me If You Can",

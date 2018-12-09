@@ -57,6 +57,7 @@ import sagemod.cards.Bookworm;
 import sagemod.cards.BouncingStrike;
 import sagemod.cards.Brewmaster;
 import sagemod.cards.BurningFlask;
+import sagemod.cards.CaneStrike;
 import sagemod.cards.CatchMeIfYouCan;
 import sagemod.cards.Crank;
 import sagemod.cards.CultistForm;
@@ -227,6 +228,7 @@ PostBattleSubscriber, OnStartBattleSubscriber {
 		BaseMod.addCard(new ViralStrike());
 		BaseMod.addCard(new GroundedStrike());
 		BaseMod.addCard(new HowToCharmASentry());
+		BaseMod.addCard(new CaneStrike());
 
 		// Uncommon
 		BaseMod.addCard(new OnTheHead());

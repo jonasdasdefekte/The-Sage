@@ -64,6 +64,10 @@
     "NAME": "Brennende Flasche",
     "DESCRIPTION": "Wenn du Tränke hast, wirf einen zufälligen ab und füge !D! Schaden zu. "
   },
+  "Cane_Strike": {
+    "NAME": "Stockschlag",
+    "DESCRIPTION": "Füge !D! Schaden zu. Fügt doppelten Schaden zu, wenn du Gebrechlich bist."
+  },
   "Catch_Me_If_You_Can": {
     "NAME": "Fang mich doch",
     "DESCRIPTION": "Bis zu deinem nächsten Zug verlierst du !M! Mal keinen Flug, wenn du Angriffsschaden nimmst."
