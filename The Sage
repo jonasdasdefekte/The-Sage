@@ -167,7 +167,7 @@ NEW:	Tinker
 		(Gain 1 Artifact.) Gain Block equal to all Artifact on the field + 5.
 NEW:	Rock Oil
 		Skill, 1 Energy:
-		Gain 5 Block per Potion used this turn.
+		Gain 5 (7) Block per Potion used this turn.
 NEW:	Momentum
 		Skill, 1 Energy:
 		Brew a Momentum potion in 4 (3) turns. Exhaust. (No Exhaust.)
