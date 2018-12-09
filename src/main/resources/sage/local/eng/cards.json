@@ -161,8 +161,7 @@
   },
   "How_To_Murder_Ants": {
     "NAME": "How To Murder Ants",
-    "DESCRIPTION": "Air. NL Deal !D! damage to a random enemy X times.",
-    "UPGRADE_DESCRIPTION": "Air. NL Deal !D! damage to a random enemy X + !M! times."
+    "DESCRIPTION": "Air. NL Deal X damage to a random enemy !M! times."
   },
   "How_To_Poke_At_Slimes": {
     "NAME": "How To Poke At Slimes",

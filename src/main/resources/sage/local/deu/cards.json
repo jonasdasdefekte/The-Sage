@@ -161,8 +161,7 @@
   },
   "How_To_Murder_Ants": {
     "NAME": "Wie man Ameisen mordet",
-    "DESCRIPTION": "Luft. NL Füge X mal an einem zufälligen Gegner !D! Schaden zu.",
-    "UPGRADE_DESCRIPTION": "Luft. NL Füge X + !M! mal an einem zufälligen Gegner !D! Schaden zu."
+    "DESCRIPTION": "Luft. NL Füge !M! mal einem zufälligen Gegner X Schaden zu."
   },
   "How_To_Poke_At_Slimes": {
     "NAME": "Wie man Schleime sticht",
