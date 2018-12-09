@@ -62,7 +62,7 @@
   },
   "Burning_Flask": {
     "NAME": "Brennende Flasche",
-    "DESCRIPTION": "Wenn du Tränke hast, wirf einen zufälligen ab und füge !D! Schaden zu. "
+    "DESCRIPTION": "Füge ALLEN Gegnern !D! Schaden zu. Wenn du Tränke hast, wirf einen zufälligen ab und füge !M! zusätzlichen Schaden zu. "
   },
   "Cane_Strike": {
     "NAME": "Stockschlag",

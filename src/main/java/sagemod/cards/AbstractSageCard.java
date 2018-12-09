@@ -141,13 +141,21 @@ public abstract class AbstractSageCard extends CustomCard {
 	 * Deals card.damage with card.damageTypeForTurn to the specified monster
 	 */
 	protected void attack(AbstractMonster m, AttackEffect effect) {
-		AbstractDungeon.actionManager
-		.addToBottom(new DamageAction(m, new DamageInfo(player(), damage, damageTypeForTurn), effect));
+		attack(m, effect, damage);
+	}
+
+	protected void attack(AbstractMonster m, AttackEffect effect, int damageAmount) {
+		AbstractDungeon.actionManager.addToBottom(new DamageAction(m,
+				new DamageInfo(player(), damageAmount, damageTypeForTurn), effect));
 	}
 
 	protected void attackAllEnemies(AttackEffect effect) {
-		AbstractDungeon.actionManager
-		.addToBottom(new DamageAllEnemiesAction(player(), multiDamage, damageTypeForTurn, effect));
+		attackAllEnemies(effect, multiDamage);
+	}
+
+	protected void attackAllEnemies(AttackEffect effect, int[] damageAmounts) {
+		AbstractDungeon.actionManager.addToBottom(
+				new DamageAllEnemiesAction(player(), damageAmounts, damageTypeForTurn, effect));
 	}
 
 	/**

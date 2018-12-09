@@ -62,7 +62,7 @@
   },
   "Burning_Flask": {
     "NAME": "Burning Flask",
-    "DESCRIPTION": "If you have potions, discard one at random and deal !D! damage."
+    "DESCRIPTION": "Deal !D! damage to ALL enemies. If you carry potions, discard one at random and deal !M! extra damage."
   },
   "Cane_Strike": {
     "NAME": "Cane Strike",
