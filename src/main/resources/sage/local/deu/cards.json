@@ -198,6 +198,11 @@
     "NAME": "Meditation",
     "DESCRIPTION": "Verliere allen Flug. NL Ziehe !M! Karten. NL Erschöpft."
   },
+  "Noxious_Wave": {
+    "NAME": "Giftige Welle",
+    "DESCRIPTION": "Füge !D! Schaden zu. Gift des Gegners wird ausgelöst.",
+    "UPGRADE_DESCRIPTION": "Füge !D! Schaden zu. Gift des Gegners wird zweimal ausgelöst."
+  },
   "On_Fire": {
     "NAME": "Feuer",
     "DESCRIPTION": "Immer wenn du !M! Karten in einem Zug spielst, erhalte einen Feuertrank.",

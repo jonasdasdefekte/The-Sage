@@ -88,6 +88,7 @@ import sagemod.cards.LightWeighted;
 import sagemod.cards.Lunchtime;
 import sagemod.cards.MechanicsBreak;
 import sagemod.cards.Meditation;
+import sagemod.cards.NoxiousWave;
 import sagemod.cards.OnFire;
 import sagemod.cards.OnTheHead;
 import sagemod.cards.PerpetuumMobile;
@@ -257,6 +258,7 @@ PostBattleSubscriber, OnStartBattleSubscriber {
 		BaseMod.addCard(new HowToMurderAnts());
 		BaseMod.addCard(new HowToAmuseSneckos());
 		BaseMod.addCard(new PotionTrance());
+		BaseMod.addCard(new NoxiousWave());
 
 		// Rare
 		BaseMod.addCard(new Bookworm());

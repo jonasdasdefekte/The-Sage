@@ -198,6 +198,11 @@
     "NAME": "Meditation",
     "DESCRIPTION": "Lose all Flight. NL Draw !M! cards. NL Exhaust."
   },
+  "Noxious_Wave": {
+    "NAME": "Noxious Wave",
+    "DESCRIPTION": "Deal !D! damage. Trigger Poison on this enemy.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. Trigger Poison on this enemy twice."
+  },
   "On_Fire": {
     "NAME": "On Fire",
     "DESCRIPTION": "Whenever you play !M! cards in a single turn, obtain a Fire Potion.",

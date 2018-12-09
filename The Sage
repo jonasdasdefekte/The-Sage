@@ -114,9 +114,9 @@ NEW:	Potion Explosion
 NEW:	About Clark
 		Attack, 5 (4) Energy:
 		Deal 8 (10) damage two times. Costs 1 [E] less per Frail you have.
-NEW:	Noxious Wave
+	Noxious Wave
 		Attack, 1 Energy
-		Deal 6 damage. Trigger Poison on this enemy. // (like at the start of their turn)
+		Deal 6 damage. Trigger Poison on this enemy (twice). // (like at the start of their turn)
 TODO:	Gearwheel Master
 		Skill, 0 Energy: 
 		EVERYBODY gains 1(2/3/...) Artifact. Exhaust. Can be upgraded any number of times.
