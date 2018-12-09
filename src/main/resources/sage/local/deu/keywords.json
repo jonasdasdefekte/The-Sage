@@ -31,7 +31,8 @@
   },
   "FLIGHT": {
     "NAMES": [
-      "flug"
+      "flug",
+      "flugs"
     ],
     "DESCRIPTION": "Reduziert Angriffsschaden, den du nimmst, um 50%. Sinkt um 1, wenn du Angriffsschaden nimmst."
   },
