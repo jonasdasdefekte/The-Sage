@@ -28,9 +28,9 @@ public class Brew extends AbstractSagePower {
 	public static final String NAME = powerStrings.NAME;
 	public static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;
 
-	private static final String CANNOT_BREW_SOZU = DESCRIPTIONS[9];
-	private static final String BREWED_A_POTION = DESCRIPTIONS[10];
-	private static final String BREWED_SOME_POTIONS = DESCRIPTIONS[11];
+	private static final String CANNOT_BREW_SOZU = DESCRIPTIONS[10];
+	private static final String BREWED_A_POTION = DESCRIPTIONS[11];
+	private static final String BREWED_SOME_POTIONS = DESCRIPTIONS[12];
 
 	public static boolean isBrewRewards;
 
@@ -80,13 +80,13 @@ public class Brew extends AbstractSagePower {
 				if (p.turns > 1) {
 					builder.append(DESCRIPTIONS[3]);
 					builder.append(p.turns);
-					builder.append(DESCRIPTIONS[6]);
-				} else {
 					builder.append(DESCRIPTIONS[7]);
+				} else {
+					builder.append(DESCRIPTIONS[8]);
 				}
 				if (i != potions.size() - 1) {
 					// new line
-					builder.append(DESCRIPTIONS[8]);
+					builder.append(DESCRIPTIONS[9]);
 				}
 			}
 		} else {
@@ -107,7 +107,7 @@ public class Brew extends AbstractSagePower {
 				}
 				if (i != compactList.size() - 1) {
 					// new line
-					builder.append(DESCRIPTIONS[8]);
+					builder.append(DESCRIPTIONS[9]);
 				}
 			}
 		}
