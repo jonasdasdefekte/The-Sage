@@ -42,7 +42,7 @@ public class Quackster extends AbstractSageCard {
 			exhaust = false;
 			rawDescription = cardStrings.UPGRADE_DESCRIPTION;
 			initializeDescription();
-			}
+		}
 	}
 
 	@Override

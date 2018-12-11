@@ -117,6 +117,7 @@ import sagemod.listeners.PotionListener;
 import sagemod.listeners.VirusListener;
 import sagemod.potions.FataMorgana;
 import sagemod.potions.FlightPotion;
+import sagemod.potions.UpgradedPotion;
 import sagemod.powers.Accumulate;
 import sagemod.powers.Airborne;
 import sagemod.powers.AlchemyExpertPower;
@@ -443,6 +444,7 @@ PostBattleSubscriber, OnStartBattleSubscriber {
 		initPotions();
 		initEvents();
 		initFonts();
+		UpgradedPotion.initTextureMap();
 	}
 
 

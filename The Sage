@@ -301,7 +301,7 @@ NEW:	Carousel
 		Every 5 turns, apply 1 Disoriented to a random enemy.
 
 
-**2 POTIONS**
+**3 POTIONS**
 	Flight Potion
 		Rare, Sage only
 		Gain 1 Flight.
@@ -311,6 +311,11 @@ NEW:	Carousel
 NEW:	Momentum Potion
 		Uncommon
 		Draw until your hand is full.
+		
+NEW: 	Upgraded Potion
+		Potions that are number based can have an upgrade whoch doubles the number
+		Droprate: 12%
+		(needs images)
 
 **1 EVENT**
 TODO:	Carpet trader

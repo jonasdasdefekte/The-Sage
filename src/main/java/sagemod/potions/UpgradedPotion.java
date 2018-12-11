@@ -1,0 +1,137 @@
+package sagemod.potions;
+
+import java.util.EnumMap;
+import java.util.Map;
+import com.badlogic.gdx.graphics.Texture;
+import com.megacrit.cardcrawl.core.AbstractCreature;
+import com.megacrit.cardcrawl.helpers.PowerTip;
+import com.megacrit.cardcrawl.potions.AbstractPotion;
+import com.megacrit.cardcrawl.potions.AttackPotion;
+import com.megacrit.cardcrawl.potions.EntropicBrew;
+import com.megacrit.cardcrawl.potions.FairyPotion;
+import com.megacrit.cardcrawl.potions.FirePotion;
+import com.megacrit.cardcrawl.potions.GamblersBrew;
+import com.megacrit.cardcrawl.potions.PowerPotion;
+import com.megacrit.cardcrawl.potions.SkillPotion;
+import com.megacrit.cardcrawl.potions.SmokeBomb;
+import basemod.ReflectionHacks;
+import basemod.abstracts.CustomPotion;
+
+public class UpgradedPotion extends CustomPotion {
+
+	public static final String SAVE_POSTFIX = "+SAGE+";
+
+
+	public static final float CHANCE = 0.12f;
+	public static final float POTENCY_MULTIPLIER = 2f;
+	public static final float PRICE_MULTIPLIER = 1.75f;
+
+	public static final String TWICE = "2x: ";
+
+	private static Map<PotionSize, Texture> textureMap;
+
+	private AbstractPotion potion;
+
+	public UpgradedPotion(AbstractPotion potion) {
+		super(loadName(potion), potion.ID, potion.rarity, potion.size, potion.color);
+		this.potion = potion;
+
+		potency = loadPotency();
+		ReflectionHacks.setPrivate(potion, AbstractPotion.class, "potency", potency);
+
+		description = loadDescription();
+
+		tips.add(new PowerTip(name, description));
+		for (int i = 1; i < potion.tips.size(); i++) {
+			tips.add(potion.tips.get(i));
+		}
+
+		isThrown = potion.isThrown;
+		targetRequired = potion.targetRequired;
+
+		loadContainer();
+	}
+
+
+	public static AbstractPotion getUpgradeIfAvailable(AbstractPotion potion) {
+		if (potion == null) {
+			return new FirePotion();
+		}
+		if (potion.ID.equals(EntropicBrew.POTION_ID) || potion.ID.equals(SmokeBomb.POTION_ID)
+				|| potion instanceof UpgradedPotion) {
+			return potion;
+		} else {
+			return new UpgradedPotion(potion);
+		}
+	}
+
+	public static void initTextureMap() {
+		textureMap = new EnumMap<>(PotionSize.class);
+	}
+
+	private static String loadName(AbstractPotion p) {
+		if (p instanceof UpgradedPotion) {
+			return p.name;
+		}
+		return p.name + "+";
+	}
+
+	private int loadPotency() {
+		if (potion instanceof UpgradedPotion) {
+			return potion.getPotency();
+		}
+		return (int) (potion.getPotency() * POTENCY_MULTIPLIER);
+
+	}
+
+	private String loadDescription() {
+		if (isDoubledPotion() && !potion.ID.equals(FairyPotion.POTION_ID)) {
+			return TWICE + potion.description;
+		}
+		return potion.description.replaceAll(String.valueOf(potion.getPotency()),
+				String.valueOf(potency));
+	}
+
+	private void loadContainer() {
+		if (textureMap.containsKey(potion.size)) {
+			ReflectionHacks.setPrivate(this, AbstractPotion.class, "containerImg",
+					textureMap.get(potion.size));
+		}
+	}
+
+	private boolean isDoubledPotion() {
+		return potion.ID.equals(AttackPotion.POTION_ID) || potion.ID.equals(PowerPotion.POTION_ID)
+				|| potion.ID.equals(SkillPotion.POTION_ID)
+				|| potion.ID.equals(FairyPotion.POTION_ID)
+				|| potion.ID.equals(GamblersBrew.POTION_ID);
+	}
+
+	@Override
+	public int getPotency(int asc) {
+		return potency;
+	}
+
+	@Override
+	public AbstractPotion makeCopy() {
+		return new UpgradedPotion(potion.makeCopy());
+	}
+
+	@Override
+	public void use(AbstractCreature c) {
+		potion.use(c);
+		if (isDoubledPotion()) {
+			potion.use(c);
+		}
+	}
+
+	@Override
+	public int getPrice() {
+		return (int) (potion.getPrice() * PRICE_MULTIPLIER);
+	}
+
+	public void multiplyPotencyBy(float f) {
+		potency *= f;
+		ReflectionHacks.setPrivate(potion, AbstractPotion.class, "potency", potency);
+	}
+
+}
