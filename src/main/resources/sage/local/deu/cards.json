@@ -118,7 +118,7 @@
   },
   "Fly": {
     "NAME": "Fliegen",
-    "DESCRIPTION": "Falls du nicht fliegst: NL Erhalte !M! Flug."
+    "DESCRIPTION": "Falls du fliegst: NL Erhalte !B! Block. NL Ansonsten: NL Erhalte !M! Flug."
   },
   "Flying_Cauldron": {
     "NAME": "Fliegender Kessel",

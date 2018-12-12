@@ -18,11 +18,11 @@ Starts with 50 HP, 169 gold
 		Skill, 1 Energy: 
 		Gain 5 (8) Block.
 	1x Bold move
-		Attack, 0 Energy:
-		Deal 6 (9) damage. Gain 2 Frail.
+		Attack, 1 Energy:
+		Deal 10 (14) damage. Gain 2 Frail.
 	1x Fly
 		Skill, 2 (1) Energy: 
-		If you don't fly, gain 1 Flight.
+		If you fly, gain 8 Block. Otherwise, gain 1 Flight.
 
 **18 COMMON CARDS (grey)**
 	Pincer Repair
@@ -39,7 +39,7 @@ TODO:	How To Poke At Slimes
 		Deal X (+3) damage to ALL enemies. Gain 2 Frail. Refund 3 (all).
 	Energetic Brew
 		Attack, 1 Energy: 
-		Deal 6 (9) damage. Gain a Energy potion in 4 (3) turns.
+		Deal 6 (9) damage. Gain an Energy potion in 4 (3) turns.
 	Crank
 		Attack, 1 Energy:
 		Deal 8 (12) damage. If the enemy has Artifact, draw 1 card. (Draw cards equal to the enemy's Artifact.)
@@ -54,7 +54,7 @@ TODO:	How To Poke At Slimes
 		Deal 7 (10) damage. Deals double damage if you are Frail.
 TODO:	How To Warm Elephants
 		Skill, X Energy: 
-		Brew an Explosive Potion in 4 -X turns. (Refund all).
+		Brew an (upgraded) Explosive Potion in 4 -X turns.
 	Armor Brew
 		Skill, 1 Energy: 
 		Gain 5 (8) Block. Brew a block potion in 4 (3) turns.
@@ -159,18 +159,18 @@ TODO:	Flying Cauldron
 NEW:	Let it go
 		Skill, 1 Energy:
 		Exhaust a card (up to 2 cards) from your hand. Gain Flight equal to its (their) cost. Exhaust.
-NEW:	Gear Wall
-		Skill, 1 Energy:
-		Gain 10 (15) Block. Whenever you are attacked this turn, the Attacker gains 1 Artifact.
 NEW:	Tinker
 		Skill, 1 Energy:
 		(Gain 1 Artifact.) Gain Block equal to all Artifact on the field + 5.
 NEW:	Rock Oil
-		Skill, 1 Energy:
-		Gain 5 (7) Block per Potion used this turn.
+		Skill, Unplayable:
+		Whenever you use a Potion with this card in your hand, gain 5 (7) Block.
 NEW:	Momentum
-		Skill, 1 Energy:
-		Brew a Momentum potion in 4 (3) turns. Exhaust. (No Exhaust.)
+		Skill, 0 Energy:
+		Brew a (an upgraded) Swift potion in 4 turns.
+NEW:	Trash
+		Skill, Unplayable:
+		Whenever you use a Potion with this card in your hand, gain 1 (2) Energy.
 	Altitude
 		Power, 1 Energy: 
 		Gain 2 (3) Flight.
@@ -180,9 +180,9 @@ NEW:	Momentum
 QUESTION:	Brewmaster
 		Power, 2 (1) Energy:
 		Gain 1 Brewing. // Maybe it would be nicer if Brewing also affected Potions that are already currently in the queue.
-TODO:	Deadly Contraption
+	Deadly Contraption
 		Power, 1 Energy: 
-		ALL enemies gain 1 (3) Artifact. Whenever you deal Attack damage, enemies take 1 more damage per Artifact on them.
+		At the end of your turn, enemies are dealt 3 (5) damage per Artifact on them.
 
 **20 RARE CARDS (gold)**
 TODO:	Swoop Down
@@ -299,23 +299,23 @@ NEW:	Xarxas' Xepter
 NEW:	Carousel
 		Rare relic:
 		Every 5 turns, apply 1 Disoriented to a random enemy.
+NEW:	Singing Vial
+		Uncommon relic:
+		When adding cards into your deck, you may upgrade a random Potion instead. // Could there be another button next to Singing Bowl's? 
 
 
-**3 POTIONS**
+**2 POTIONS**
 	Flight Potion
 		Rare, Sage only
 		Gain 1 Flight.
 	Fata Morgana
 		Rare
 		Apply 1 Disoriented.
-NEW:	Momentum Potion
-		Uncommon
-		Draw until your hand is full.
 		
-NEW: 	Upgraded Potion
-		Potions that are number based can have an upgrade whoch doubles the number
-		Droprate: 12%
-		(needs images)
+**NEW FEATURE FOR POTIONS**
+	Potions that are number based can have an upgrade which doubles the number
+	Droprate: 12%
+	(needs images)
 
 **1 EVENT**
 TODO:	Carpet trader

@@ -118,7 +118,7 @@
   },
   "Fly": {
     "NAME": "Fly",
-    "DESCRIPTION": "If you aren't flying: NL Gain !M! Flight."
+    "DESCRIPTION": "If you are flying: NL Gain !B! Block. NL Otherwise: NL Gain !M! Flight."
   },
   "Flying_Cauldron": {
     "NAME": "Flying Cauldron",

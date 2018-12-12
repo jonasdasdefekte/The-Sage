@@ -19,11 +19,14 @@ public class Fly extends AbstractSageCard {
 	private static final CardRarity RARITY = CardRarity.BASIC;
 	private static final CardTarget TARGET = CardTarget.SELF;
 
+	private static final int BLOCK_AMT = 10;
 	private static final int COST_WHEN_UPGRADED = 1;
 	private static final int FLIGHT_AMT = 1;
 
+
 	public Fly() {
 		super(ID, NAME, COST, DESCRIPTION, TYPE, RARITY, TARGET);
+		baseBlock = BLOCK_AMT;
 		baseMagicNumber = magicNumber = FLIGHT_AMT;
 	}
 
@@ -42,14 +45,11 @@ public class Fly extends AbstractSageCard {
 
 	@Override
 	public void use(AbstractPlayer p, AbstractMonster m) {
-		if (!isFlying()) {
-			applyPowerToSelf(new SageFlight(player(), magicNumber));
+		if (isFlying()) {
+			block();
+		} else {
+			applyPowerToSelf(new SageFlight(p, magicNumber));
 		}
-	}
-
-	@Override
-	public boolean canUse(AbstractPlayer p, AbstractMonster m) {
-		return canOnlyUseWithNoFlight(p, m);
 	}
 
 	@Override
