@@ -2,7 +2,9 @@ package sagemod.potions;
 
 import java.util.EnumMap;
 import java.util.Map;
+import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.Texture;
+import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.helpers.PowerTip;
 import com.megacrit.cardcrawl.potions.AbstractPotion;
@@ -27,10 +29,13 @@ public class UpgradedPotion extends CustomPotion {
 	public static final float PRICE_MULTIPLIER = 1.75f;
 
 	public static final String TWICE = "2x: ";
+	private static final Color OUTLINE_COLOR = new Color(0xFFD70088);
+	private static final Color LIGHT_OUTLINE_COLOR = new Color(0xFFD70044);
 
 	private static Map<PotionSize, Texture> textureMap;
 
 	private AbstractPotion potion;
+	private Texture outlineImg;
 
 	public UpgradedPotion(AbstractPotion potion) {
 		super(loadName(potion), potion.ID, potion.rarity, potion.size, potion.color);
@@ -48,6 +53,8 @@ public class UpgradedPotion extends CustomPotion {
 
 		isThrown = potion.isThrown;
 		targetRequired = potion.targetRequired;
+
+		outlineImg = (Texture) ReflectionHacks.getPrivate(this, AbstractPotion.class, "outlineImg");
 
 		loadContainer();
 	}
@@ -122,6 +129,24 @@ public class UpgradedPotion extends CustomPotion {
 		if (isDoubledPotion()) {
 			potion.use(c);
 		}
+	}
+
+	@Override
+	public void renderOutline(SpriteBatch sb) {
+		sb.setColor(OUTLINE_COLOR);
+		sb.draw(outlineImg, posX - 32.0F, posY - 32.0F, 32.0F, 32.0F, 64.0F, 64.0F, scale, scale,
+				getAngle(), 0, 0, 64, 64, false, false);
+	}
+
+	@Override
+	public void renderLightOutline(SpriteBatch sb) {
+		sb.setColor(LIGHT_OUTLINE_COLOR);
+		sb.draw(outlineImg, posX - 32.0F, posY - 32.0F, 32.0F, 32.0F, 64.0F, 64.0F, scale, scale,
+				getAngle(), 0, 0, 64, 64, false, false);
+	}
+
+	private float getAngle() {
+		return (Float) ReflectionHacks.getPrivate(this, AbstractPotion.class, "angle");
 	}
 
 	@Override

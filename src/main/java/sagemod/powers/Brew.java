@@ -271,6 +271,7 @@ public class Brew extends AbstractSagePower {
 			float xPos = X + xOffset * p.potion.hb.width * 0.75f;
 			p.potion.scale = Settings.scale * 0.75f;
 			p.potion.move(xPos, yPos);
+			p.potion.renderOutline(sb);
 			p.potion.render(sb);
 			xOffset++;
 			lastTurns = p.turns;
