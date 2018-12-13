@@ -3,6 +3,7 @@ package sagemod.patches;
 import com.evacipated.cardcrawl.modthespire.lib.SpirePatch;
 import com.evacipated.cardcrawl.modthespire.lib.SpirePostfixPatch;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
+import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.helpers.PotionHelper;
 import com.megacrit.cardcrawl.potions.AbstractPotion;
@@ -51,7 +52,8 @@ public class PatchesForUpgradedPotion {
 			if (potion == null) {
 				return null;
 			}
-			if (AbstractDungeon.potionRng.randomBoolean(UpgradedPotion.CHANCE)) {
+			float chance = Settings.isDebug ? UpgradedPotion.DEBUG_CHANCE : UpgradedPotion.CHANCE;
+			if (AbstractDungeon.potionRng.randomBoolean(chance)) {
 				return UpgradedPotion.getUpgradeIfAvailable(potion);
 			} else {
 				return potion;

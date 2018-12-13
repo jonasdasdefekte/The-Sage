@@ -5,6 +5,8 @@ import java.util.Arrays;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
+import com.megacrit.cardcrawl.core.Settings;
+import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.helpers.PotionHelper;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
@@ -52,7 +54,11 @@ public class Quackster extends AbstractSageCard {
 
 	@Override
 	public void use(AbstractPlayer p, AbstractMonster m) {
-		Brew.addPotion(brewIn, PotionHelper.getRandomPotion(EXCLUDED), p);
+		if (Settings.isDebug) {
+			Brew.addPotion(brewIn, AbstractDungeon.returnRandomPotion(), p);
+		} else {
+			Brew.addPotion(brewIn, PotionHelper.getRandomPotion(EXCLUDED), p);
+		}
 	}
 
 	@Override
