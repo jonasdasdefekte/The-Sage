@@ -1,7 +1,5 @@
 package sagemod.potions;
 
-import java.util.EnumMap;
-import java.util.Map;
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
@@ -32,7 +30,7 @@ public class UpgradedPotion extends CustomPotion {
 	private static final Color OUTLINE_COLOR = new Color(0xFFD70088);
 	private static final Color LIGHT_OUTLINE_COLOR = new Color(0xFFD70044);
 
-	private static Map<PotionSize, Texture> textureMap;
+	private static Texture plusImg;
 
 	private AbstractPotion potion;
 	private Texture outlineImg;
@@ -51,14 +49,13 @@ public class UpgradedPotion extends CustomPotion {
 			tips.add(potion.tips.get(i));
 		}
 
+
 		isThrown = potion.isThrown;
 		targetRequired = potion.targetRequired;
 
 		outlineImg = (Texture) ReflectionHacks.getPrivate(this, AbstractPotion.class, "outlineImg");
 
-		loadContainer();
 	}
-
 
 	public static AbstractPotion getUpgradeIfAvailable(AbstractPotion potion) {
 		if (potion == null) {
@@ -72,8 +69,8 @@ public class UpgradedPotion extends CustomPotion {
 		}
 	}
 
-	public static void initTextureMap() {
-		textureMap = new EnumMap<>(PotionSize.class);
+	public static void initTextures() {
+		plusImg = new Texture("sage/potions/plus.png");
 	}
 
 	private static String loadName(AbstractPotion p) {
@@ -97,13 +94,6 @@ public class UpgradedPotion extends CustomPotion {
 		}
 		return potion.description.replaceAll(String.valueOf(potion.getPotency()),
 				String.valueOf(potency));
-	}
-
-	private void loadContainer() {
-		if (textureMap.containsKey(potion.size)) {
-			ReflectionHacks.setPrivate(this, AbstractPotion.class, "containerImg",
-					textureMap.get(potion.size));
-		}
 	}
 
 	private boolean isDoubledPotion() {
@@ -132,6 +122,28 @@ public class UpgradedPotion extends CustomPotion {
 	}
 
 	@Override
+	public int getPrice() {
+		return (int) (potion.getPrice() * PRICE_MULTIPLIER);
+	}
+
+	public void multiplyPotencyBy(float f) {
+		potency *= f;
+		ReflectionHacks.setPrivate(potion, AbstractPotion.class, "potency", potency);
+	}
+
+	private float getAngle() {
+		return (Float) ReflectionHacks.getPrivate(this, AbstractPotion.class, "angle");
+	}
+
+	@Override
+	public void render(SpriteBatch sb) {
+		super.render(sb);
+		sb.setColor(Color.WHITE);
+		sb.draw(plusImg, posX - 32.0F, posY - 32.0F, 32.0F, 32.0F, 64.0F, 64.0F, scale, scale,
+				getAngle(), 0, 0, 64, 64, false, false);
+	}
+
+	@Override
 	public void renderOutline(SpriteBatch sb) {
 		sb.setColor(OUTLINE_COLOR);
 		sb.draw(outlineImg, posX - 32.0F, posY - 32.0F, 32.0F, 32.0F, 64.0F, 64.0F, scale, scale,
@@ -143,20 +155,6 @@ public class UpgradedPotion extends CustomPotion {
 		sb.setColor(LIGHT_OUTLINE_COLOR);
 		sb.draw(outlineImg, posX - 32.0F, posY - 32.0F, 32.0F, 32.0F, 64.0F, 64.0F, scale, scale,
 				getAngle(), 0, 0, 64, 64, false, false);
-	}
-
-	private float getAngle() {
-		return (Float) ReflectionHacks.getPrivate(this, AbstractPotion.class, "angle");
-	}
-
-	@Override
-	public int getPrice() {
-		return (int) (potion.getPrice() * PRICE_MULTIPLIER);
-	}
-
-	public void multiplyPotencyBy(float f) {
-		potency *= f;
-		ReflectionHacks.setPrivate(potion, AbstractPotion.class, "potency", potency);
 	}
 
 }

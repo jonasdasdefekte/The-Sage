@@ -444,7 +444,7 @@ PostBattleSubscriber, OnStartBattleSubscriber {
 		initPotions();
 		initEvents();
 		initFonts();
-		UpgradedPotion.initTextureMap();
+		UpgradedPotion.initTextures();
 	}
 
 
