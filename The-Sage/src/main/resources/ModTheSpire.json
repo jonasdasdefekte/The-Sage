@@ -1,0 +1,11 @@
+{
+  "modid": "sagemod",
+  "name": "The Sage",
+  "author_list": ["jonasdasdefekte" , "Skrelpoid" ],
+  "description": "Adds a new character, The Sage. \n\nA mechanic who studied about the cult of a blue bird. She learned flying a carpet and brewing potions in order to stop its rise.\n\nLearn more about The Sage's gameplay on our description page at www.github.com/repos/jonasdasdefekte/The-Sage!",
+  "version": "0.2.5",
+  "sts_version": "12-06-2018",
+  "mts_version": "3.6.2",
+  "dependencies": ["basemod"],
+  "update_json": "https://api.github.com/repos/jonasdasdefekte/The-Sage/releases/latest"
+}
