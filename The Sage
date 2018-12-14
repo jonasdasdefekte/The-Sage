@@ -27,19 +27,19 @@ Starts with 50 HP, 169 gold
 **18 COMMON CARDS (grey)**
 	Pincer Repair
 		Attack, 1 Energy
-		Deal 8 (12) damage. The enemy gains 1 Artifact.
-	Fire Brew
+		Deal 8 (12) damage. The enemy gains 2 Artifact.
+TODO:	Fire Brew
 		Attack, 1 Energy: 
-		Deal 6 (9) damage. Gain a Fire potion in 4 (3) turns.
+		Deal 6 damage. Brew a Fire potion(+) in 4 turns.
 	Salty Strike
 		Attack, 1 Energy:
 		Deal 6 (9) damage. The enemy gains 1 (2) Thirsty.
-TODO:	How To Poke At Slimes
+STSLIB:	How To Poke At Slimes
 		Attack, X Energy:
 		Deal X (+3) damage to ALL enemies. Gain 2 Frail. Refund 3 (all).
-	Energetic Brew
+TODO:	Energetic Brew
 		Attack, 1 Energy: 
-		Deal 6 (9) damage. Gain an Energy potion in 4 (3) turns.
+		Deal 6 damage. Brew an Energy potion(+) in 4 turns.
 	Crank
 		Attack, 1 Energy:
 		Deal 8 (12) damage. If the enemy has Artifact, draw 1 card. (Draw cards equal to the enemy's Artifact.)
@@ -54,19 +54,19 @@ TODO:	How To Poke At Slimes
 		Deal 7 (10) damage. Deals double damage if you are Frail.
 TODO:	How To Warm Elephants
 		Skill, X Energy: 
-		Brew an (upgraded) Explosive Potion in 4 -X turns.
-	Armor Brew
+		Brew an Explosive Potion(+) in 4 -X turns.
+TODO:	Armor Brew
 		Skill, 1 Energy: 
-		Gain 5 (8) Block. Brew a block potion in 4 (3) turns.
-TODO:	How To Befriend A Turtle
+		Gain 5 (8) Block. Brew a Block potion(+) in 4 turns.
+STSLIB:	How To Befriend A Turtle
 		Skill, X Energy:
-		Gain X (X+3) Block. Refund 3 (all).
+		Gain X (+3) Block. Refund all.
 TODO:	Catch me if you can
 		Skill, 0 Energy
 		Air. Prevent the next 2 (4) times you would lose Flight until the enemy's turn. // (Should also work on Flight loss in your own turn. "Lose 2 Flight" will lose 2 stacks of Airborne instead and "Lose all Flight" will cancel Airborne and Flight completely. Artifact no longer negates Flight loss.)
-	How To Talk To Spiders
+TODO:	How To Talk To Spiders
 		Skill, X Energy: 
-		Apply X poison. Brew a Poison potion in 4 (3)-X turns.
+		Apply X poison. Brew a Poison potion(+) in 4 -X turns.
 	Step Back 
 		Skill, 2 Energy:
 		If you are flying, gain 10 (16) Block. Otherwise, gain 1 Flight.
@@ -78,7 +78,7 @@ TODO:	Catch me if you can
 		Gain 10 (13) Block. Gain 2 Frail. 
 	Mechanics Break
 		Skill, 1 Energy:
-		Gain 10 (13) Block. Target enemy gains 3 Artifact.
+		Gain 10 (15) Block. Target enemy gains 2 (4) Artifact.
 
 **34 UNCOMMON CARDS (blue)**
 	On the Head
@@ -99,9 +99,9 @@ TODO:	Catch me if you can
 	Pincer Attack
 		Attack, 1 Energy: 
 		Deal 6 (8) damage. Deal 6 (8) damage per Artifact the enemy has.
-	Bouncing Strike
+TODO:	Bouncing Strike
 		Attack, 2 Energy: 
-		Gain 2 Frail. Gain 1 Flight. Deal damage equal to the sum (product) of your Frail and Flight.
+		Gain 2 Frail. Gain 1 Flight. Deal damage equal to the sum (product) of your Frail and Flight. // "deals ... damage" preview needed
 	Turn Around
 		Attack, 1 Energy: 
 		Gain 1 Frail. Deal 4 (6) damage per Frail you have. 
@@ -116,7 +116,7 @@ NEW:	About Clark
 		Deal 8 (10) damage two times. Costs 1 [E] less per Frail you have.
 	Noxious Wave
 		Attack, 1 Energy
-		Deal 6 damage. Trigger Poison on this enemy (twice). // (like at the start of their turn)
+		Deal 6 damage. Trigger Poison on this enemy (twice).
 	Gearwheel Master
 		Skill, 0 Energy: 
 		EVERYBODY gains 1(2/3/...) Artifact. Exhaust. Can be upgraded any number of times.
@@ -153,7 +153,7 @@ TODO:	Flying Cauldron
 	Potion Trance
 		Skill, 1 Energy:
 		Draw 1 card (2 cards) whenever you use a Potion this turn. You cannot gain energy this turn.
-	How To Amuse Sneckos
+STSLIB:	How To Amuse Sneckos
 		Skill, X Energy:
 		Draw X cards. (Refund 1.)
 NEW:	Let it go
@@ -164,13 +164,13 @@ NEW:	Tinker
 		(Gain 1 Artifact.) Gain Block equal to all Artifact on the field + 5.
 NEW:	Rock Oil
 		Skill, Unplayable:
-		Whenever you use a Potion with this card in your hand, gain 5 (7) Block.
+		Whenever you use a Potion while this card in your hand, gain 5 (7) Block.
 NEW:	Momentum
 		Skill, 0 Energy:
 		Brew a (an upgraded) Swift potion in 4 turns.
-NEW:	Trash
+NEW:	Shining Powder
 		Skill, Unplayable:
-		Whenever you use a Potion with this card in your hand, gain 1 (2) Energy.
+		Whenever you use a Potion while this card in your hand, gain 1 (2) Energy.
 	Altitude
 		Power, 1 Energy: 
 		Gain 2 (3) Flight.
@@ -194,9 +194,9 @@ TODO:	Anti Ancient Attack
 NEW:	Lecture
 		Attack, 1 Energy
 		Deal 4 (6) damage per X cost card played this combat.
-NEW:	Prey
+STSLIB:	Prey
 		Attack, 1 Energy
-		Deal 10 (14) damage. If this kills an enemy with more max HP than you, gain 10 (14) max HP and remove this from your deck.
+		Deal 10 (14) damage. If this kills an enemy with more max HP than you, gain 10 (14) max HP and Fleeting.
 	Escape
 		Skill, 1 Energy: 
 		Double your Flight. Exhaust. (Upgrade: No Exhaust.)
@@ -212,15 +212,15 @@ TODO:	Folded Carpet
 	Meditation
 		Skill, 0 Energy:
 		Lose all Flight. Draw 3 (5) cards. Exhaust.
-NEW:	Read the riot act
+STSLIB:	Read the riot act
 		Skill, 1 Energy
 		Fetch an X cost card from your draw pile. Play it and Refund all Energy. Exhaust. (No Exhaust.)
-NEW:	Blurry
+STSLIB:	Blurry
 		Skill, 1 Energy
 		Gain 4 (6) Temporary HP. Gain 2 (3) Temporary HP per Frail you have. Exhaust.
 NEW:	Refine
 		Skill, 1 Energy
-		Upgrade a random unupgraded potion (all unupgraded potions) you are holding. // Upgrading a potion doubles its effect/ magic number. (Just an idea to add a bit oomph, if it's too hard to implement we can toss it away again.)
+		Upgrade a random unupgraded potion (all unupgraded potions) you are holding. // Upgrading a potion doubles its effect/ magic number.
 	Alchemy Expert
 		Power, 1 Energy:
 		Whenever you use a potion, gain 1 Artifact. (Innate.)
@@ -230,28 +230,28 @@ NEW:	Refine
 TODO:	Accumulation
 		Power, 1 Energy: 
 		Air. At the start of each turn, gain 1 Energy and lose 2 (1) Flight.
-TODO:	Bookworm
+STSLIB:	Bookworm
 		Power, 1 Energy: 
 		Whenever you play an X cost card, Refund (gain) 1 Energy.
 	On Fire
 		Power, 1 Energy:
 		Whenever you play 5 cards in a single turn, obtain a Fire Potion. (Innate.)
- 	Ancient Poison
+TODO: 	Ancient Poison
 		Power, 1 Energy:
-		Artifact no longer negates Poison for this combat. Each enemy gains Poison equal to their Artifact (+ 5).
+		Artifact no longer negates Poison for this combat. Whenever you apply Artifact to an enemy, also apply 3 Poison.
 	Vigorous Body
 		Power, 1 Energy:
 		Whenever an Artifact (of you or an enemy) gets triggered, gain 1 Strength.
-QUESTION:	Endless Fear
+TODO:	Endless Fear
 		Power, 1 (0) Energy:
-		Whenever you use a non-Fear Potion, obtain a Fear Potion. // This effect seems a bit too tedious. Maybe immediately throw the potion to a random enemy? 
+		Whenever you use an upgraded potion, obtain a random unupgraded potion. // No healing Potions (like Quackster)
 
 
 **2 NEUTRAL CARDS (Shop)**
 NEW:	Perplexing Glare
 		Skill, 2 Energy:
 		Apply 1 (2) Disoriented. Exhaust.
-NEW:	Trixter
+STSLIB:	Trixter
 		Skill, 1 (0) Energy:
 		Refund all Energy used when playing your next card.
 
@@ -293,7 +293,7 @@ NEW:	Fruit Press
 NEW:	Falmel's Amulet
 		Boss relic:
 		Gain [E] at the start of your turn. Enemies attack 1 additional time on their first turn.
-NEW:	Xarxas' Xepter
+STSLIB:	The Guidebook Guide
 		Shop relic:
 		Whenever you play a card costing X, exhaust it and refund the energy.
 NEW:	Carousel

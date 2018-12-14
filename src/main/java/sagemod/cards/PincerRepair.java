@@ -21,7 +21,7 @@ public class PincerRepair extends AbstractSageCard {
 
 	private static final int ATTACK_DMG = 8;
 	private static final int UPGRADE_ATTACK_DMG = 4;
-	private static final int ARTIFACT_GAIN = 1;
+	private static final int ARTIFACT_GAIN = 2;
 
 	public PincerRepair() {
 		super(ID, NAME, COST, DESCRIPTION, TYPE, RARITY, TARGET);
