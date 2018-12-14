@@ -31,7 +31,7 @@ Disclaimer: *We aren't artists! While we appreciate that there are some very bea
 
 The Sage's starting Relic is the **Flying Carpet**.
 
-![The Sage: Flying Carpet](https://github.com/jonasdasdefekte/The-Sage/blob/master/src/main/resources/sage/relics/Flying_Carpet.png "Flying Carpet")
+![The Sage: Flying Carpet](https://github.com/jonasdasdefekte/The-Sage/blob/master/The-Sage/src/main/resources/sage/relics/Flying_Carpet.png "Flying Carpet")
 
 *At the start of your second turn, gain 1 Flight.*
 
@@ -41,7 +41,7 @@ Flight is the same buff that we all know from our beloved Byrd friends. This cha
 
 Every basegame character has its special take on a card type: The Ironclad likes Attacks, The Silent goes well with Skills and The Defect is specialized in playing Powers. Rather than introducing a new card type, this character focusses on another game element: Potions.  
 
-![The Sage: Brewing Potions](https://raw.githubusercontent.com/jonasdasdefekte/The-Sage/master/src/main/resources/sage/cards/skill/Quackster.png "Quackster")
+![The Sage: Brewing Potions](https://raw.githubusercontent.com/jonasdasdefekte/The-Sage/master/The-Sage/src/main/resources/sage/cards/skill/Gearwheel_Master.png "Quackster")
 
 *Quackster (Uncommon Skill, 0 Energy): Brew a random potion in 4 turns.*
 
@@ -51,7 +51,7 @@ Usually you have to wait a couple of turns before your potions are ready to use.
 
 We decided to include 10 (sic, in words: ten!) cards with X cost in The Sage's card set. They share the theme of being guidebooks, like this one excempli gratia:
 
-![The Sage: Guidebooks represent X cost cards](https://raw.githubusercontent.com/jonasdasdefekte/The-Sage/master/src/main/resources/sage/cards/skill/How_To_Befriend_A_Turtle.png "How To Befriend A Turtle")
+![The Sage: Guidebooks represent X cost cards](https://raw.githubusercontent.com/jonasdasdefekte/The-Sage/master/The-Sage/src/main/resources/sage/cards/skill/How_To_Befriend_A_Turtle.png "How To Befriend A Turtle")
 
 *How To Befriend A Turtle (Common Skill, X Energy): Gain X (+3) Block. Gain X Energy.*
 
@@ -61,13 +61,13 @@ This may sound underwhelming, but we balanced the X cost cards so that you can b
 
 Artifacts are the Power of Ancient technology. As a tinkerer, the Sage has grown familiar to that knowledge since her childhood. 
 
-![Artifacts](https://raw.githubusercontent.com/jonasdasdefekte/The-Sage/master/src/main/resources/sage/cards/skill/Gearwheel_Master.png "Gearwheel Master")
+![Artifacts](https://raw.githubusercontent.com/jonasdasdefekte/The-Sage/master/The-Sage/src/main/resources/sage/cards/skill/Gearwheel_Master.png "Gearwheel Master")
 
 *Gearwheel Master (Uncommon Skill, 0 Energy): EVERYBODY gains 1 Artifact. Exhaust. Can be upgraded any number of times.*
 
 When playing this character, you will have to make strategic decisions about where you would like Artifacts to be and where not. Several cards allow you not only to gain Artifacts for yourself, but also to "help" the enemies with some of this Ancient Gearwheels. Artifacts on enemies will let you handle them easier. Do you want to stack Artifacts on your enemies or do you prefer the good old poisoning? Also there are cards that reward being Frail. Will you use the Artifact on yourself to protect you from Frailty or do you prefer being Frail for a while in order to get a big payoff? The tinkering is up to you...
 
-![Character Button](https://raw.githubusercontent.com/jonasdasdefekte/The-Sage/master/src/main/resources/sage/character/button.png)
+![Character Button](https://raw.githubusercontent.com/jonasdasdefekte/The-Sage/master/The-Sage/src/main/resources/sage/character/button.png)
 
 Each of these main Archetypes can be a winning condition for your deck playing with The Sage!  
 There are more effects and mini-Archetypes. Although we better leave them for you to discover. :smile:  
