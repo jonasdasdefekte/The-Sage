@@ -41,7 +41,7 @@ Flight is the same buff that we all know from our beloved Byrd friends. This cha
 
 Every basegame character has its special take on a card type: The Ironclad likes Attacks, The Silent goes well with Skills and The Defect is specialized in playing Powers. Rather than introducing a new card type, this character focusses on another game element: Potions.  
 
-![The Sage: Brewing Potions](https://raw.githubusercontent.com/jonasdasdefekte/The-Sage/master/The-Sage/src/main/resources/sage/cards/skill/Gearwheel_Master.png "Quackster")
+![The Sage: Brewing Potions](https://raw.githubusercontent.com/jonasdasdefekte/The-Sage/master/The-Sage/src/main/resources/sage/cards/skill/Quackster.png "Quackster")
 
 *Quackster (Uncommon Skill, 0 Energy): Brew a random potion in 4 turns.*
 
