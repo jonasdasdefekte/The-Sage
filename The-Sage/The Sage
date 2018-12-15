@@ -60,11 +60,11 @@ TODO:	Armor Brew
 		Gain 5 (8) Block. Brew a Block potion(+) in 4 turns.
 STSLIB:	How To Befriend A Turtle
 		Skill, X Energy:
-		Gain X (+3) Block. Refund all.
+		Gain X (+3) Temporary HP. Refund all.
 TODO:	Catch me if you can
 		Skill, 0 Energy
 		Air. Prevent the next 2 (4) times you would lose Flight until the enemy's turn. // (Should also work on Flight loss in your own turn. "Lose 2 Flight" will lose 2 stacks of Airborne instead and "Lose all Flight" will cancel Airborne and Flight completely. Artifact no longer negates Flight loss.)
-TODO:	How To Talk To Spiders
+DEPRECATED:	How To Talk To Spiders
 		Skill, X Energy: 
 		Apply X poison. Brew a Poison potion(+) in 4 -X turns.
 	Step Back 
@@ -105,7 +105,7 @@ TODO:	Bouncing Strike
 	Turn Around
 		Attack, 1 Energy: 
 		Gain 1 Frail. Deal 4 (6) damage per Frail you have. 
-	Viral Strike
+DEPRECATED:	Viral Strike
 		Attack, 2 (1) Energy:
 		Deal 6 damage. Apply Virus and 7 Poison. (Virus: Poison applied to this enemy other than by Virus spreads to all other enemies instantly.)
 NEW:	Potion Explosion
@@ -114,7 +114,7 @@ NEW:	Potion Explosion
 NEW:	About Clark
 		Attack, 5 (4) Energy:
 		Deal 8 (10) damage two times. Costs 1 [E] less per Frail you have.
-	Noxious Wave
+DEPRECATED:	Noxious Wave
 		Attack, 1 Energy
 		Deal 6 damage. Trigger Poison on this enemy (twice).
 	Gearwheel Master
@@ -147,7 +147,7 @@ TODO:	Flying Cauldron
 	How To Greet Byrds
 		Skill, X Energy:
 		Innate. Set your Flight to X. (Gain X Flight.) Exhaust.
-	Toxic Chains
+DEPRECATED:	Toxic Chains
 		Skill, 1 Energy:
 		Lose all Frail. Apply that much Poison (+3) to ALL enemies.
 	Potion Trance
@@ -174,9 +174,9 @@ NEW:	Shining Powder
 	Altitude
 		Power, 1 Energy: 
 		Gain 2 (3) Flight.
-	Taste this one
+TODO:	Taste this one
 		Power, 1 Energy:
-		Whenever you use a potion, apply 4 (6) Poison to a random Enemy.
+		Whenever you use a potion, deal 10 (15) damage to a random Enemy.
 QUESTION:	Brewmaster
 		Power, 2 (1) Energy:
 		Gain 1 Brewing. // Maybe it would be nicer if Brewing also affected Potions that are already currently in the queue.
@@ -238,10 +238,10 @@ STSLIB:	Bookworm
 		Whenever you play 5 cards in a single turn, obtain a Fire Potion. (Innate.)
 TODO: 	Ancient Poison
 		Power, 1 Energy:
-		Artifact no longer negates Poison for this combat. Whenever you apply Artifact to an enemy, also apply 3 Poison.
+		Whenever you apply Artifact to an enemy, they lose HP equal to their Artifact.
 	Vigorous Body
 		Power, 1 Energy:
-		Whenever an Artifact (of you or an enemy) gets triggered, gain 1 Strength.
+		Whenever an Artifact of you (or an enemy) gets triggered, gain 1 Strength.
 TODO:	Endless Fear
 		Power, 1 (0) Energy:
 		Whenever you use an upgraded potion, obtain a random unupgraded potion. // No healing Potions (like Quackster)
@@ -275,13 +275,10 @@ TODO:	Cabbage Head
 TODO:	Byrd Feather
 		Event relic:
 		If you have 1 or 2 Flight at the start of your turn, set it to 3.
-NEW:	Fruit Press
-		Common relic:
-		Whenever you discard a Potion, raise your Max HP by 2. // Alternativ: Effekt von Toy Ornithopter für The Sage umwandeln in "Whenever you discard a potion, heal 5 HP."
-	Can also use poison Relics (from Silent):
-		- Snecko Skull
-		- The Specimen
-		- Twisted Funnel
+TODO:	Toy Ornithopter 
+		Special case for The Sage 
+		Whenever you discard a potion, heal 5 HP.
+
 
 **5 OTHER RELICS (for all characters)**
 	Red Beast Statue
