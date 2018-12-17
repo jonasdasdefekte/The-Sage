@@ -183,6 +183,10 @@ QUESTION:	Brewmaster
 	Deadly Contraption
 		Power, 1 Energy: 
 		At the end of your turn, enemies are dealt 3 (5) damage per Artifact on them.
+NEW:	Rickety Defense
+		Power, 1 Energy:
+		Whenever you gain Frail, gain 4 (8) Block per new stack.
+
 
 **20 RARE CARDS (gold)**
 TODO:	Swoop Down
@@ -233,12 +237,12 @@ TODO:	Accumulation
 STSLIB:	Bookworm
 		Power, 1 Energy: 
 		Whenever you play an X cost card, Refund (gain) 1 Energy.
-	On Fire
+TODO:	On Fire
 		Power, 1 Energy:
-		Whenever you play 5 cards in a single turn, obtain a Fire Potion. (Innate.)
-TODO: 	Ancient Poison
+		Whenever you play 5 cards in a single turn, obtain a Fire Potion(+).
+DEPRECATED: 	Ancient Poison
 		Power, 1 Energy:
-		Whenever you apply Artifact to an enemy, they lose HP equal to their Artifact.
+		--
 	Vigorous Body
 		Power, 1 Energy:
 		Whenever an Artifact of you (or an enemy) gets triggered, gain 1 Strength.
