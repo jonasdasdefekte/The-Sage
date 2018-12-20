@@ -24,7 +24,7 @@ Starts with 50 HP, 169 gold
 		Skill, 2 (1) Energy: 
 		If you fly, gain 8 Block. Otherwise, gain 1 Flight.
 
-**18 COMMON CARDS (grey)**
+**17 COMMON CARDS (grey)**
 	Pincer Repair
 		Attack, 1 Energy
 		Deal 8 (12) damage. The enemy gains 2 Artifact.
@@ -67,9 +67,9 @@ TODO:	Catch me if you can
 DEPRECATED:	How To Talk To Spiders
 		Skill, X Energy: 
 		Apply X poison. Brew a Poison potion(+) in 4 -X turns.
-	Step Back 
+TODO:	Step Back 
 		Skill, 2 Energy:
-		If you are flying, gain 10 (16) Block. Otherwise, gain 1 Flight.
+		Gain 5 (8) Block. If you are flying, gain 2 Energy. Otherwise, gain 1 Flight.
 	Ambition
 		Skill, 1(0) Energy:
 		Gain 2 Frail. Gain [E][E].
@@ -80,7 +80,7 @@ DEPRECATED:	How To Talk To Spiders
 		Skill, 1 Energy:
 		Gain 10 (15) Block. Target enemy gains 2 (4) Artifact.
 
-**34 UNCOMMON CARDS (blue)**
+**33 UNCOMMON CARDS (blue)**
 	On the Head
 		Attack, 1 Energy:
 		Deal 5 (7) damage. If you are flying, draw 1 card and gain 1 Energy.
@@ -171,6 +171,9 @@ NEW:	Momentum
 NEW:	Shining Powder
 		Skill, Unplayable:
 		Whenever you use a Potion while this card in your hand, gain 1 (2) Energy.
+NEW:	Undermine
+		Skill, 1 Energy:
+		Apply 5 (8) Artifact. When you attack an enemy this turn, they take extra damage equal to the Artifact on them. // Works on multi Attacks. Multiple copies of this stack for the amount of turns.
 	Altitude
 		Power, 1 Energy: 
 		Gain 2 (3) Flight.
@@ -180,15 +183,15 @@ TODO:	Taste this one
 QUESTION:	Brewmaster
 		Power, 2 (1) Energy:
 		Gain 1 Brewing. // Maybe it would be nicer if Brewing also affected Potions that are already currently in the queue.
-	Deadly Contraption
+TODO:	Deadly Contraption
 		Power, 1 Energy: 
-		At the end of your turn, enemies are dealt 3 (5) damage per Artifact on them.
+		Apply 3 (5) Artifact to ALL enemies. At the end of your turn, enemies are dealt 1 damage per Artifact on them.
 NEW:	Rickety Defense
 		Power, 1 Energy:
 		Whenever you gain Frail, gain 4 (8) Block per new stack.
 
 
-**20 RARE CARDS (gold)**
+**19 RARE CARDS (gold)**
 TODO:	Swoop Down
 		Attack, 1 Energy: 
 		Deal 4 (6) damage per Flight you have. Then lose 1 Flight. (Upgrade: No Flight loss.)
@@ -297,7 +300,7 @@ NEW:	Falmel's Amulet
 STSLIB:	The Guidebook Guide
 		Shop relic:
 		Whenever you play a card costing X, exhaust it and refund the energy.
-NEW:	Carousel
+NEW:	Creepy Carousel
 		Rare relic:
 		Every 5 turns, apply 1 Disoriented to a random enemy.
 NEW:	Singing Vial
