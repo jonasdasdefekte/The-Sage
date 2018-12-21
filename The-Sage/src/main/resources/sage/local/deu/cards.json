@@ -42,7 +42,8 @@
   },
   "Armor_Brew": {
     "NAME": "Rüstungstrank",
-    "DESCRIPTION": "Erhalte !B! Block. NL Braue einen Blocktrank NL in !BRW! Zügen."
+    "DESCRIPTION": "Erhalte !B! Block. NL Braue einen Blocktrank NL in !BRW! Zügen.",
+    "UPGRADE_DESCRIPTION": "Erhalte !B! Block. NL Braue einen verbesserten Blocktrank NL in !BRW! Zügen."
   },
   "Bold_Move": {
     "NAME": "Mutiger Schritt",

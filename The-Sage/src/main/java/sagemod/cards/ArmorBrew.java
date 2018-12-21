@@ -5,8 +5,9 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import com.megacrit.cardcrawl.potions.AbstractPotion;
 import com.megacrit.cardcrawl.potions.BlockPotion;
-
+import sagemod.potions.UpgradedPotion;
 import sagemod.powers.Brew;
 
 public class ArmorBrew extends AbstractSageCard {
@@ -21,7 +22,6 @@ public class ArmorBrew extends AbstractSageCard {
 	private static final CardTarget TARGET = CardTarget.SELF;
 
 	private static final int BREW_IN = 4;
-	private static final int UPGRADE_BREW_IN = -1;
 	private static final int BLOCK_AMT = 5;
 	private static final int UPGRADE_BLOCK_AMT = 3;
 
@@ -35,8 +35,9 @@ public class ArmorBrew extends AbstractSageCard {
 	public void upgrade() {
 		if (!upgraded) {
 			upgradeName();
-			upgradeBrewIn(UPGRADE_BREW_IN);
 			upgradeBlock(UPGRADE_BLOCK_AMT);
+			rawDescription = cardStrings.UPGRADE_DESCRIPTION;
+			initializeDescription();
 		}
 	}
 
@@ -47,12 +48,16 @@ public class ArmorBrew extends AbstractSageCard {
 
 	@Override
 	public void use(AbstractPlayer p, AbstractMonster m) {
+		AbstractPotion potion = new BlockPotion();
+		if (upgraded) {
+			potion = UpgradedPotion.getUpgradeIfAvailable(potion);
+		}
 		block();
-		Brew.addPotion(brewIn, new BlockPotion(), p);
+		Brew.addPotion(brewIn, potion, p);
 	}
 
 	@Override
 	public String getLoadedDescription() {
-		return DESCRIPTION;
+		return upgraded ? cardStrings.UPGRADE_DESCRIPTION : DESCRIPTION;
 	}
 }

@@ -52,10 +52,10 @@ STSLIB:	How To Poke At Slimes
 	Cane Strike
 		Attack, 1 Energy:
 		Deal 7 (10) damage. Deals double damage if you are Frail.
-TODO:	How To Warm Elephants
+	How To Warm Elephants
 		Skill, X Energy: 
 		Brew an Explosive Potion(+) in 4 -X turns.
-TODO:	Armor Brew
+	Armor Brew
 		Skill, 1 Energy: 
 		Gain 5 (8) Block. Brew a Block potion(+) in 4 turns.
 STSLIB:	How To Befriend A Turtle

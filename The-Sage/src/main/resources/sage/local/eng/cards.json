@@ -42,7 +42,8 @@
   },
   "Armor_Brew": {
     "NAME": "Armor Brew",
-    "DESCRIPTION": "Gain !B! Block. NL Brew a Block Potion NL in !BRW! turns."
+    "DESCRIPTION": "Gain !B! Block. NL Brew a Block Potion NL in !BRW! turns.",
+    "UPGRADE_DESCRIPTION": "Gain !B! Block. NL Brew an upgraded Block Potion NL in !BRW! turns."
   },
   "Bold_Move": {
     "NAME": "Bold Move",
