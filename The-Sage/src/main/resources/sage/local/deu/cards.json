@@ -110,7 +110,8 @@
   },
   "Fire_Brew": {
     "NAME": "Feuergebräu",
-    "DESCRIPTION": "Füge !D! Schaden zu. NL Braue einen Feuertrank NL in !BRW! Zügen."
+    "DESCRIPTION": "Füge !D! Schaden zu. NL Braue einen Feuertrank NL in !BRW! Zügen.",
+    "UPGRADE_DESCRIPTION": "Füge !D! Schaden zu. NL Braue einen verbesserten Feuertrank NL in !BRW! Zügen."
   },
   "Flight_Feint": {
     "NAME": "Flugfinte",

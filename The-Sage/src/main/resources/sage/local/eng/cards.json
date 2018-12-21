@@ -110,7 +110,8 @@
   },
   "Fire_Brew": {
     "NAME": "Fire Brew",
-    "DESCRIPTION": "Deal !D! damage. NL Brew a Fire Potion NL in !BRW! turns."
+    "DESCRIPTION": "Deal !D! damage. NL Brew a Fire Potion NL in !BRW! turns.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Brew an upgraded Fire Potion NL in !BRW! turns."
   },
   "Flight_Feint": {
     "NAME": "Flight Feint",

@@ -6,8 +6,9 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import com.megacrit.cardcrawl.potions.AbstractPotion;
 import com.megacrit.cardcrawl.potions.FirePotion;
-
+import sagemod.potions.UpgradedPotion;
 import sagemod.powers.Brew;
 
 public class FireBrew extends AbstractSageCard {
@@ -22,23 +23,20 @@ public class FireBrew extends AbstractSageCard {
 	private static final CardTarget TARGET = CardTarget.ENEMY;
 
 	private static final int ATTACK_DMG = 6;
-	private static final int UPGRADE_ATTACK_DMG = 3;
 	private static final int BREW_IN = 4;
-	private static final int UPGRADE_BREW_IN = -1;
 
 	public FireBrew() {
 		super(ID, NAME, COST, DESCRIPTION, TYPE, RARITY, TARGET);
 		baseDamage = ATTACK_DMG;
 		initBrewIn(BREW_IN);
-
 	}
 
 	@Override
 	public void upgrade() {
 		if (!upgraded) {
 			upgradeName();
-			upgradeDamage(UPGRADE_ATTACK_DMG);
-			upgradeBrewIn(UPGRADE_BREW_IN);
+			rawDescription = cardStrings.UPGRADE_DESCRIPTION;
+			initializeDescription();
 		}
 	}
 
@@ -49,13 +47,17 @@ public class FireBrew extends AbstractSageCard {
 
 	@Override
 	public void use(AbstractPlayer p, AbstractMonster m) {
+		AbstractPotion potion = new FirePotion();
+		if (upgraded) {
+			potion = new UpgradedPotion(potion);
+		}
 		attack(m, AttackEffect.BLUNT_LIGHT);
-		Brew.addPotion(brewIn, new FirePotion(), p);
+		Brew.addPotion(brewIn, potion, p);
 	}
 
 	@Override
 	public String getLoadedDescription() {
-		return DESCRIPTION;
+		return upgraded ? cardStrings.UPGRADE_DESCRIPTION : DESCRIPTION;
 	}
 
 }
