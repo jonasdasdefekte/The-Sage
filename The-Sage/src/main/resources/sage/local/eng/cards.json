@@ -257,7 +257,7 @@
   },
   "Step_Back": {
     "NAME": "Step Back",
-    "DESCRIPTION": "If you are flying: NL Gain !B! Block. NL Otherwise: NL Gain !M! Flight."
+    "DESCRIPTION": "Gain !B! Block. If you are flying: Gain [E] [E] . NL Otherwise: NL Gain !M! Flight."
   },
   "Strike_Sage": {
     "NAME": "Strike",

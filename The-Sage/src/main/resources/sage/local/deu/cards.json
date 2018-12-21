@@ -257,7 +257,7 @@
   },
   "Step_Back": {
     "NAME": "Schritt zurück",
-    "DESCRIPTION": "Falls du fliegst: NL Erhalte !B! Block. NL Ansonsten: NL Erhalte !M! Flug."
+    "DESCRIPTION": "Erhalte !B! Block. Falls du fliegst: Erhalte [E] [E] . NL Ansonsten: NL Erhalte !M! Flug."
   },
   "Strike_Sage": {
     "NAME": "Schlag",
