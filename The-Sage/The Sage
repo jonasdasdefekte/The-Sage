@@ -99,9 +99,9 @@ DEPRECATED:	How To Talk To Spiders
 	Pincer Attack
 		Attack, 1 Energy: 
 		Deal 6 (8) damage. Deal 6 (8) damage per Artifact the enemy has.
-TODO:	Bouncing Strike
+	Bouncing Strike
 		Attack, 2 Energy: 
-		Gain 2 Frail. Gain 1 Flight. Deal damage equal to the sum (product) of your Frail and Flight. // "deals ... damage" preview needed
+		Gain 2 Frail. Gain 1 Flight. Deal damage equal to the sum (product) of your Frail and Flight.
 	Turn Around
 		Attack, 1 Energy: 
 		Gain 1 Frail. Deal 4 (6) damage per Frail you have. 

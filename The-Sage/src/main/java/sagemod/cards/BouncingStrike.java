@@ -7,7 +7,9 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import com.megacrit.cardcrawl.powers.ArtifactPower;
 import com.megacrit.cardcrawl.powers.FrailPower;
+import com.megacrit.cardcrawl.powers.StrengthPower;
 import sagemod.actions.ExecuteLaterAction;
 import sagemod.powers.SageFlight;
 
@@ -64,8 +66,63 @@ public class BouncingStrike extends AbstractSageCard {
 					damageAmount += amount;
 				}
 			}
+			if (p.hasPower(StrengthPower.POWER_ID)) {
+				damageAmount += p.getPower(StrengthPower.POWER_ID).amount;
+			}
 			attack(m, AttackEffect.SMASH, damageAmount);
 		}));
+		rawDescription = upgraded ? cardStrings.UPGRADE_DESCRIPTION : DESCRIPTION;
+		initializeDescription();
+	}
+
+	private void updateExtendedDescription() {
+		int damageAmount = magicNumber;
+		if (player().hasPower(SageFlight.POWER_ID)) {
+			damageAmount += player().getPower(SageFlight.POWER_ID).amount;
+		}
+		int amount = 0;
+		if (!player().hasPower(ArtifactPower.POWER_ID)) {
+			amount += misc;
+		}
+		if (player().hasPower(FrailPower.POWER_ID)) {
+			amount += player().getPower(FrailPower.POWER_ID).amount;
+		}
+		if (upgraded) {
+			damageAmount *= amount;
+		} else {
+			damageAmount += amount;
+		}
+		if (player().hasPower(StrengthPower.POWER_ID)) {
+			damageAmount += player().getPower(StrengthPower.POWER_ID).amount;
+		}
+		rawDescription = upgraded ? cardStrings.UPGRADE_DESCRIPTION : DESCRIPTION;
+		rawDescription = rawDescription + cardStrings.EXTENDED_DESCRIPTION[0] + damageAmount
+				+ cardStrings.EXTENDED_DESCRIPTION[1];
+		initializeDescription();
+	}
+
+	@Override
+	public void applyPowers() {
+		super.applyPowers();
+		updateExtendedDescription();
+	}
+
+	@Override
+	public void calculateCardDamage(AbstractMonster mo) {
+		super.calculateCardDamage(mo);
+		updateExtendedDescription();
+	}
+
+	@Override
+	public void atTurnStart() {
+		super.atTurnStart();
+		updateExtendedDescription();
+	}
+
+	@Override
+	public void triggerWhenDrawn() {
+		updateExtendedDescription();
+		super.triggerWhenDrawn();
 	}
 
 	@Override

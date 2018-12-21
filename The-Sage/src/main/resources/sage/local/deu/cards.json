@@ -56,7 +56,11 @@
   "Bouncing_Strike": {
     "NAME": "Sprungschlag",
     "DESCRIPTION": "Erhalte !MISC! Gebrechlich. NL Erhalte !M! Flug. Füge soviel Schaden wie die Summe deines Flugs und Gebrechlich zu.",
-    "UPGRADE_DESCRIPTION": "Erhalte !MISC! Gebrechlich. NL Erhalte !M! Flug. Füge soviel Schaden wie das Produkt deines Flugs und Gebrechlich zu."
+    "UPGRADE_DESCRIPTION": "Erhalte !MISC! Gebrechlich. NL Erhalte !M! Flug. Füge soviel Schaden wie das Produkt deines Flugs und Gebrechlich zu.",
+    "EXTENDED_DESCRIPTION": [
+      " NL (Fügt ",
+      " Schaden zu)"
+    ]
   },
   "Brewmaster": {
     "NAME": "Braumeisterin",

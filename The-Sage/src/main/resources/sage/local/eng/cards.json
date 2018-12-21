@@ -56,7 +56,11 @@
   "Bouncing_Strike": {
     "NAME": "Bouncing Strike",
     "DESCRIPTION": "Gain !MISC! Frail. NL Gain !M! Flight. Deal damage equal to the sum of your Frail and Flight.",
-    "UPGRADE_DESCRIPTION": "Gain !MISC! Frail. NL Gain !M! Flight. Deal damage equal to the product of your Frail and Flight."
+    "UPGRADE_DESCRIPTION": "Gain !MISC! Frail. NL Gain !M! Flight. Deal damage equal to the product of your Frail and Flight.",
+    "EXTENDED_DESCRIPTION": [
+      " NL (Deals ",
+      " damage)"
+    ]
   },
   "Brewmaster": {
     "NAME": "Brewmaster",
