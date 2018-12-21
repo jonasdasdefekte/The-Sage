@@ -49,7 +49,7 @@ public class FireBrew extends AbstractSageCard {
 	public void use(AbstractPlayer p, AbstractMonster m) {
 		AbstractPotion potion = new FirePotion();
 		if (upgraded) {
-			potion = new UpgradedPotion(potion);
+			potion = UpgradedPotion.getUpgradeIfAvailable(potion);
 		}
 		attack(m, AttackEffect.BLUNT_LIGHT);
 		Brew.addPotion(brewIn, potion, p);

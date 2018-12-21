@@ -96,7 +96,8 @@
   },
   "Energetic_Brew": {
     "NAME": "Energiegebräu",
-    "DESCRIPTION": "Füge !D! Schaden zu. NL Braue einen Energietrank NL in !BRW! Zügen."
+    "DESCRIPTION": "Füge !D! Schaden zu. NL Braue einen Energietrank NL in !BRW! Zügen.",
+    "UPGRADE_DESCRIPTION": "Füge !D! Schaden zu. NL Braue einen verbesserten Energietrank NL in !BRW! Zügen."
   },
   "Escape": {
     "NAME": "Entfliehen",

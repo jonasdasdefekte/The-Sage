@@ -36,7 +36,7 @@ public class UpgradedPotion extends CustomPotion {
 	private AbstractPotion potion;
 	private Texture outlineImg;
 
-	public UpgradedPotion(AbstractPotion potion) {
+	private UpgradedPotion(AbstractPotion potion) {
 		super(loadName(potion), potion.ID, potion.rarity, potion.size, potion.color);
 		this.potion = potion;
 
@@ -116,6 +116,7 @@ public class UpgradedPotion extends CustomPotion {
 
 	@Override
 	public void use(AbstractCreature c) {
+		ReflectionHacks.setPrivate(potion, AbstractPotion.class, "potency", potency);
 		potion.use(c);
 		if (isDoubledPotion()) {
 			potion.use(c);
