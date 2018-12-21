@@ -5,8 +5,9 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import com.megacrit.cardcrawl.potions.AbstractPotion;
 import com.megacrit.cardcrawl.potions.ExplosivePotion;
-
+import sagemod.potions.UpgradedPotion;
 import sagemod.powers.Brew;
 
 public class HowToWarmElephants extends AbstractSageCard {
@@ -21,7 +22,6 @@ public class HowToWarmElephants extends AbstractSageCard {
 	private static final CardTarget TARGET = CardTarget.SELF;
 
 	private static final int TURNS = 4;
-	private static final int UPGRADE_TURNS = -1;
 
 	public HowToWarmElephants() {
 		super(ID, NAME, COST, DESCRIPTION, TYPE, RARITY, TARGET);
@@ -32,7 +32,8 @@ public class HowToWarmElephants extends AbstractSageCard {
 	public void upgrade() {
 		if (!upgraded) {
 			upgradeName();
-			upgradeBrewIn(UPGRADE_TURNS);
+			rawDescription = cardStrings.UPGRADE_DESCRIPTION;
+			initializeDescription();
 		}
 	}
 
@@ -43,16 +44,20 @@ public class HowToWarmElephants extends AbstractSageCard {
 
 	@Override
 	public void use(AbstractPlayer p, AbstractMonster m) {
+		AbstractPotion potion = new ExplosivePotion();
+		if (upgraded) {
+			potion = UpgradedPotion.getUpgradeIfAvailable(potion);
+		}
 		int turns = Math.max(0, brewIn - getXEffect());
 
-		Brew.addPotion(turns, new ExplosivePotion(), p);
+		Brew.addPotion(turns, potion, p);
 
 		useXEnergy();
 	}
 
 	@Override
 	public String getLoadedDescription() {
-		return DESCRIPTION;
+		return upgraded ? cardStrings.UPGRADE_DESCRIPTION : DESCRIPTION;
 	}
 
 }

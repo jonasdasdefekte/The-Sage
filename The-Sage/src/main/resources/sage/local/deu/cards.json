@@ -181,7 +181,8 @@
   },
   "How_To_Warm_Elephants": {
     "NAME": "Wie man Elefanten wärmt",
-    "DESCRIPTION": "Braue einen NL Explosivtrank NL in !BRW! -X Zügen."
+    "DESCRIPTION": "Braue einen NL Explosivtrank NL in !BRW! -X Zügen.",
+    "UPGRADE_DESCRIPTION": "Braue einen NL verbesserten Explosivtrank NL in !BRW! -X Zügen."
   },
   "Light_Weighted": {
     "NAME": "Leichtgewicht",
