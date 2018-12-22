@@ -38,7 +38,7 @@
   },
   "Anti_Ancient_Attack": {
     "NAME": "Anti Ancient Attack",
-    "DESCRIPTION": "Deal !D! damage per Artifact the enemy has."
+    "DESCRIPTION": "Double the enemy's Artifact. NL Then deal !D! damage per Artifact."
   },
   "Armor_Brew": {
     "NAME": "Armor Brew",

@@ -1,12 +1,17 @@
 package sagemod.cards;
 
 import com.megacrit.cardcrawl.actions.AbstractGameAction.AttackEffect;
+import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
+import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
+import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
+import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.ArtifactPower;
+import sagemod.actions.ExecuteLaterAction;
 
 public class AntiAncientAttack extends AbstractSageCard {
 
@@ -19,8 +24,8 @@ public class AntiAncientAttack extends AbstractSageCard {
 	private static final CardRarity RARITY = CardRarity.RARE;
 	private static final CardTarget TARGET = CardTarget.ENEMY;
 
-	private static final int ATTACK_DMG = 18;
-	private static final int UPGRADE_ATTACK_DMG = 7;
+	private static final int ATTACK_DMG = 10;
+	private static final int UPGRADE_ATTACK_DMG = 5;
 
 	public AntiAncientAttack() {
 		super(ID, NAME, COST, DESCRIPTION, TYPE, RARITY, TARGET);
@@ -42,13 +47,27 @@ public class AntiAncientAttack extends AbstractSageCard {
 
 	@Override
 	public void use(AbstractPlayer p, AbstractMonster m) {
-		int times = 0;
 		if (m.hasPower(ArtifactPower.POWER_ID)) {
-			times += m.getPower(ArtifactPower.POWER_ID).amount;
+			applyPower(new ArtifactPower(m, artifactAmount(m)), m);
 		}
-		for (int i = 0; i < times; i++) {
-			attack(m, AttackEffect.SMASH);
+		AbstractDungeon.actionManager.addToBottom(new ExecuteLaterAction(() -> {
+			int times = artifactAmount(p);
+			for (AbstractMonster mo : AbstractDungeon.getCurrRoom().monsters.monsters) {
+				times += artifactAmount(mo);
+			}
+			for (int i = 0; i < times; i++) {
+				AbstractDungeon.actionManager.addToBottom(new DamageAction(m,
+						new DamageInfo(player(), damage, damageTypeForTurn), AttackEffect.SMASH,
+						true));
+			}
+		}));
+	}
+
+	private int artifactAmount(AbstractCreature c) {
+		if (c.hasPower(ArtifactPower.POWER_ID)) {
+			return c.getPower(ArtifactPower.POWER_ID).amount;
 		}
+		return 0;
 	}
 
 	@Override
