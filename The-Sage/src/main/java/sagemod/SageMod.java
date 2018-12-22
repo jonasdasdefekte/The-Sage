@@ -451,6 +451,7 @@ PostBattleSubscriber, OnStartBattleSubscriber {
 		initEvents();
 		initFonts();
 		UpgradedPotion.initTextures();
+		UpgradedPotion.initLists();
 	}
 
 
@@ -471,7 +472,6 @@ PostBattleSubscriber, OnStartBattleSubscriber {
 	}
 
 	private void initFonts() {
-		// Console font
 		FreeTypeFontGenerator generator =
 				new FreeTypeFontGenerator(Gdx.files.internal("font/04b03.ttf"));
 		FreeTypeFontParameter parameter = new FreeTypeFontParameter();

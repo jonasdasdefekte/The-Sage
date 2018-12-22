@@ -1,5 +1,7 @@
 package sagemod.potions;
 
+import java.util.ArrayList;
+import java.util.List;
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
@@ -20,6 +22,10 @@ import basemod.abstracts.CustomPotion;
 public class UpgradedPotion extends CustomPotion {
 
 	public static final String SAVE_POSTFIX = "+SAGE+";
+
+	public static final List<String> BLACKLIST = new ArrayList<>();
+	public static final List<String> DOUBLE_USE_WHITELIST = new ArrayList<>();
+	public static final List<String> DOUBLE_DESC_WHITELIST = new ArrayList<>();
 
 
 	public static final float CHANCE = 0.12f;
@@ -58,6 +64,7 @@ public class UpgradedPotion extends CustomPotion {
 
 	}
 
+
 	public static AbstractPotion forceUpgrade(AbstractPotion potion) {
 		return new UpgradedPotion(potion);
 	}
@@ -66,12 +73,33 @@ public class UpgradedPotion extends CustomPotion {
 		if (potion == null) {
 			return new FirePotion();
 		}
-		if (potion.ID.equals(EntropicBrew.POTION_ID) || potion.ID.equals(SmokeBomb.POTION_ID)
-				|| potion instanceof UpgradedPotion) {
+		if (BLACKLIST.contains(potion.ID) || potion instanceof UpgradedPotion) {
 			return potion;
 		} else {
 			return new UpgradedPotion(potion);
 		}
+	}
+
+	public static void initLists() {
+		BLACKLIST.add(EntropicBrew.POTION_ID);
+		BLACKLIST.add(SmokeBomb.POTION_ID);
+		BLACKLIST.add("Elixir");
+		BLACKLIST.add("conspire:TimeTravelPotion");
+		BLACKLIST.add("jedi:holywater");
+		BLACKLIST.add("HastePotion");
+
+		DOUBLE_USE_WHITELIST.add(AttackPotion.POTION_ID);
+		DOUBLE_USE_WHITELIST.add(PowerPotion.POTION_ID);
+		DOUBLE_USE_WHITELIST.add(SkillPotion.POTION_ID);
+		DOUBLE_USE_WHITELIST.add(GamblersBrew.POTION_ID);
+		DOUBLE_USE_WHITELIST.add("Flashbang");
+		DOUBLE_USE_WHITELIST.add("infinitespire:BlackPotion");
+		DOUBLE_USE_WHITELIST.add("WardPotion");
+
+		DOUBLE_DESC_WHITELIST.addAll(DOUBLE_USE_WHITELIST);
+		DOUBLE_DESC_WHITELIST.add("conspire:EchoDraught");
+
+		DOUBLE_USE_WHITELIST.add(FairyPotion.POTION_ID);
 	}
 
 	public static void initTextures() {
@@ -86,26 +114,22 @@ public class UpgradedPotion extends CustomPotion {
 	}
 
 	private int loadPotency() {
-		if (potion instanceof UpgradedPotion) {
+		if (potion instanceof UpgradedPotion || DOUBLE_DESC_WHITELIST.contains(potion.ID)) {
 			return potion.getPotency();
+		} else if (potion.ID.equals("Doom Potion")) {
+			return (int) (potion.getPotency() * 0.75f);
 		}
 		return (int) (potion.getPotency() * POTENCY_MULTIPLIER);
 
 	}
 
 	private String loadDescription() {
-		if (isDoubledPotion() && !potion.ID.equals(FairyPotion.POTION_ID)) {
+		if (DOUBLE_DESC_WHITELIST.contains(potion.ID)) {
 			return TWICE + potion.description;
 		}
+
 		return potion.description.replaceAll(String.valueOf(potion.getPotency()),
 				String.valueOf(potency));
-	}
-
-	private boolean isDoubledPotion() {
-		return potion.ID.equals(AttackPotion.POTION_ID) || potion.ID.equals(PowerPotion.POTION_ID)
-				|| potion.ID.equals(SkillPotion.POTION_ID)
-				|| potion.ID.equals(FairyPotion.POTION_ID)
-				|| potion.ID.equals(GamblersBrew.POTION_ID);
 	}
 
 	@Override
@@ -122,7 +146,7 @@ public class UpgradedPotion extends CustomPotion {
 	public void use(AbstractCreature c) {
 		ReflectionHacks.setPrivate(potion, AbstractPotion.class, "potency", potency);
 		potion.use(c);
-		if (isDoubledPotion()) {
+		if (DOUBLE_USE_WHITELIST.contains(potion.ID)) {
 			potion.use(c);
 		}
 	}
