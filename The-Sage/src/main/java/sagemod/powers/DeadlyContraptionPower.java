@@ -39,9 +39,8 @@ public class DeadlyContraptionPower extends AbstractSagePower {
 		for (AbstractMonster mo : AbstractDungeon.getCurrRoom().monsters.monsters) {
 			if (mo.hasPower(ArtifactPower.POWER_ID)) {
 				didSomething = true;
-				AbstractDungeon.actionManager
-				.addToBottom(new DamageAction(mo, new DamageInfo(owner,
-						amount * mo.getPower(ArtifactPower.POWER_ID).amount, DamageType.HP_LOSS),
+				AbstractDungeon.actionManager.addToBottom(new DamageAction(mo, new DamageInfo(owner,
+						amount * mo.getPower(ArtifactPower.POWER_ID).amount, DamageType.THORNS),
 						AttackEffect.FIRE));
 			}
 		}

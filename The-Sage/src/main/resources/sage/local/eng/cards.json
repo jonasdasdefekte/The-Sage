@@ -89,7 +89,7 @@
   },
   "Deadly_Contraption": {
     "NAME": "Deadly Contraption",
-    "DESCRIPTION": "At the end of your turn, enemies are dealt !M! damage per Artifact on them."
+    "DESCRIPTION": "ALL enemies gain !M! Artifact. At the end of your turn, enemies are dealt !MISC! damage per Artifact on them."
   },
   "Defend_Sage": {
     "NAME": "Defend",

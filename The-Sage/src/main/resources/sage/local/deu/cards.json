@@ -89,7 +89,7 @@
   },
   "Deadly_Contraption": {
     "NAME": "Tödlicher Apparat",
-    "DESCRIPTION": "Am Ende deines Zuges erhalten Gegner !M! Schaden zu pro Artefakt auf ihnen."
+    "DESCRIPTION": "ALLE Gegner erhalten !M! Artefakt. Am Ende deines Zuges erhalten Gegner !MISC! Schaden pro Artefakt auf ihnen."
   },
   "Defend_Sage": {
     "NAME": "Verteidigen",

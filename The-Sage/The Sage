@@ -183,7 +183,7 @@ NEW:	Undermine
 	Brewmaster
 		Power, 2 (1) Energy:
 		Gain 1 Brewing.
-TODO:	Deadly Contraption
+	Deadly Contraption
 		Power, 1 Energy: 
 		Apply 3 (5) Artifact to ALL enemies. At the end of your turn, enemies are dealt 1 damage per Artifact on them.
 NEW:	Rickety Defense
