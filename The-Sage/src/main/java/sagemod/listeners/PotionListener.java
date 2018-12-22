@@ -19,7 +19,6 @@ import basemod.ReflectionHacks;
 import basemod.interfaces.PostPotionUseSubscriber;
 import basemod.interfaces.PrePotionUseSubscriber;
 import sagemod.actions.ExecuteLaterAction;
-import sagemod.potions.UpgradedPotion;
 import sagemod.powers.AlchemyExpertPower;
 import sagemod.powers.EndlessFearPower;
 import sagemod.powers.ExtraPortionPower;
@@ -36,13 +35,14 @@ public class PotionListener implements PrePotionUseSubscriber, PostPotionUseSubs
 	}
 
 	private void multiplyPotencyBy(AbstractPotion p, float multiplier) {
-		if (p instanceof UpgradedPotion) {
-			((UpgradedPotion) p).multiplyPotencyBy(multiplier);
-			return;
-		}
 		int potency = (int) ReflectionHacks.getPrivate(p, AbstractPotion.class, "potency");
-		ReflectionHacks.setPrivate(p, AbstractPotion.class,
-				"potency", (int) (potency * multiplier));
+		if (p.ID.equals("Doom Potion")) {
+			ReflectionHacks.setPrivate(p, AbstractPotion.class,
+					"potency", (int) (potency / multiplier));
+		} else {
+			ReflectionHacks.setPrivate(p, AbstractPotion.class,
+					"potency", (int) (potency * multiplier));
+		}
 	}
 
 	@Override

@@ -156,11 +156,6 @@ public class UpgradedPotion extends CustomPotion {
 		return (int) (potion.getPrice() * PRICE_MULTIPLIER);
 	}
 
-	public void multiplyPotencyBy(float f) {
-		potency *= f;
-		ReflectionHacks.setPrivate(potion, AbstractPotion.class, "potency", potency);
-	}
-
 	private float getAngle() {
 		return (Float) ReflectionHacks.getPrivate(this, AbstractPotion.class, "angle");
 	}
