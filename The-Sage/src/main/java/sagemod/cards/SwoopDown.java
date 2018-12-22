@@ -7,7 +7,6 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-
 import sagemod.actions.ReduceFlightBlockableByArtifactAction;
 import sagemod.powers.SageFlight;
 
@@ -38,6 +37,8 @@ public class SwoopDown extends AbstractSageCard {
 		if (!upgraded) {
 			upgradeName();
 			upgradeDamage(UPGRADE_ATTACK_DMG);
+			rawDescription = cardStrings.UPGRADE_DESCRIPTION;
+			initializeDescription();
 		}
 	}
 
@@ -63,7 +64,7 @@ public class SwoopDown extends AbstractSageCard {
 		if (player().hasPower(SageFlight.POWER_ID)) {
 			count = player().getPower(SageFlight.POWER_ID).amount;
 		}
-		rawDescription = DESCRIPTION;
+		rawDescription = getLoadedDescription();
 		rawDescription = rawDescription + EXTENDED_DESCRIPTION[0] + damage * count + EXTENDED_DESCRIPTION[1];
 		initializeDescription();
 	}
@@ -77,20 +78,22 @@ public class SwoopDown extends AbstractSageCard {
 		for (int i = 0; i < times; i++) {
 			attack(m, AttackEffect.SLASH_VERTICAL);
 		}
-		AbstractDungeon.actionManager.addToBottom(new ReduceFlightBlockableByArtifactAction(magicNumber, p));
-		rawDescription = DESCRIPTION;
+		if (!upgraded) {
+			AbstractDungeon.actionManager.addToBottom(new ReduceFlightBlockableByArtifactAction(magicNumber, p));
+		}
+		rawDescription = getLoadedDescription();
 		initializeDescription();
 	}
 
 	@Override
 	public void onMoveToDiscard() {
-		rawDescription = DESCRIPTION;
+		rawDescription = getLoadedDescription();
 		initializeDescription();
 	}
 
 	@Override
 	public String getLoadedDescription() {
-		return DESCRIPTION;
+		return upgraded ? cardStrings.UPGRADE_DESCRIPTION : DESCRIPTION;
 	}
 
 }

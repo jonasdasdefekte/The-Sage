@@ -278,7 +278,8 @@
   },
   "Swoop_Down": {
     "NAME": "Swoop Down",
-    "DESCRIPTION": "Deal !D! damage per Flight you have. NL Lose !M! Flight.",
+    "DESCRIPTION": "Deal !D! damage per Flight you have. NL Then lose !M! Flight.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage per Flight you have.",
     "EXTENDED_DESCRIPTION": [
       " NL (Deals ",
       " damage)"

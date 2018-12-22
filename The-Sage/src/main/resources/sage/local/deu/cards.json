@@ -278,7 +278,8 @@
   },
   "Swoop_Down": {
     "NAME": "Herabsausen",
-    "DESCRIPTION": "Füge !D! Schaden zu pro Flug, den du hast. NL Verliere !M! Flug.",
+    "DESCRIPTION": "Füge !D! Schaden zu pro Flug, den du hast. NL Dann verliere !M! Flug.",
+    "UPGRADE_DESCRIPTION": "Füge !D! Schaden zu pro Flug, den du hast.",
     "EXTENDED_DESCRIPTION": [
       " NL (Fügt ",
       " Schaden zu)"

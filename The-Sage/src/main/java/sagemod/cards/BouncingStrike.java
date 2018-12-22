@@ -71,7 +71,7 @@ public class BouncingStrike extends AbstractSageCard {
 			}
 			attack(m, AttackEffect.SMASH, damageAmount);
 		}));
-		rawDescription = upgraded ? cardStrings.UPGRADE_DESCRIPTION : DESCRIPTION;
+		rawDescription = getLoadedDescription();
 		initializeDescription();
 	}
 
@@ -95,7 +95,7 @@ public class BouncingStrike extends AbstractSageCard {
 		if (player().hasPower(StrengthPower.POWER_ID)) {
 			damageAmount += player().getPower(StrengthPower.POWER_ID).amount;
 		}
-		rawDescription = upgraded ? cardStrings.UPGRADE_DESCRIPTION : DESCRIPTION;
+		rawDescription = getLoadedDescription();
 		rawDescription = rawDescription + cardStrings.EXTENDED_DESCRIPTION[0] + damageAmount
 				+ cardStrings.EXTENDED_DESCRIPTION[1];
 		initializeDescription();
@@ -126,8 +126,14 @@ public class BouncingStrike extends AbstractSageCard {
 	}
 
 	@Override
+	public void onMoveToDiscard() {
+		rawDescription = getLoadedDescription();
+		initializeDescription();
+	}
+
+	@Override
 	public String getLoadedDescription() {
-		return DESCRIPTION;
+		return upgraded ? cardStrings.UPGRADE_DESCRIPTION : DESCRIPTION;
 	}
 
 }
