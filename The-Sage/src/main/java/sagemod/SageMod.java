@@ -109,6 +109,8 @@ import sagemod.cards.ToxicChains;
 import sagemod.cards.TurnAround;
 import sagemod.cards.VigorousBody;
 import sagemod.cards.ViralStrike;
+import sagemod.cards.debug.AvailablePotionUpgrade;
+import sagemod.cards.debug.ForcePotionUpgrade;
 import sagemod.character.SageCharEnum;
 import sagemod.character.SageColorEnum;
 import sagemod.character.TheSage;
@@ -276,6 +278,10 @@ PostBattleSubscriber, OnStartBattleSubscriber {
 		BaseMod.addCard(new AncientPoison());
 		BaseMod.addCard(new VigorousBody());
 		BaseMod.addCard(new EndlessFear());
+
+		// Debug
+		BaseMod.addCard(new AvailablePotionUpgrade());
+		BaseMod.addCard(new ForcePotionUpgrade());
 
 		registerPowers();
 	}

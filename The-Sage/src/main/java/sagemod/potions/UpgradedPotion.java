@@ -58,6 +58,10 @@ public class UpgradedPotion extends CustomPotion {
 
 	}
 
+	public static AbstractPotion forceUpgrade(AbstractPotion potion) {
+		return new UpgradedPotion(potion);
+	}
+
 	public static AbstractPotion getUpgradeIfAvailable(AbstractPotion potion) {
 		if (potion == null) {
 			return new FirePotion();
