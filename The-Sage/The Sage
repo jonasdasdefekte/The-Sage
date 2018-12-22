@@ -210,7 +210,7 @@ STSLIB:	Prey
 	Extra Portion
 		Skill, 1 Energy: 
 		The next potion is (the next 2 potions are) applied twice this turn.
-TODO:	Folded Carpet
+	Folded Carpet
 		Skill, 2 Energy:
 		Gain 6 (9) Block per Flight you have.
 	Light-weighted
