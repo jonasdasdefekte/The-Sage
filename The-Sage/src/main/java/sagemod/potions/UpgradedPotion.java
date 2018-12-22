@@ -166,6 +166,14 @@ public class UpgradedPotion extends CustomPotion {
 	}
 
 	@Override
+	public void shopRender(SpriteBatch sb) {
+		super.shopRender(sb);
+		sb.setColor(Color.WHITE);
+		sb.draw(plusImg, posX - 32.0F, posY - 32.0F, 32.0F, 32.0F, 64.0F, 64.0F, scale, scale,
+				getAngle(), 0, 0, 64, 64, false, false);
+	}
+
+	@Override
 	public void render(SpriteBatch sb) {
 		super.render(sb);
 		sb.setColor(Color.WHITE);
