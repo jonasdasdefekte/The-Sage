@@ -1,8 +1,12 @@
 package sagemod.listeners;
 
+import com.megacrit.cardcrawl.actions.AbstractGameAction.AttackEffect;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
+import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.actions.common.DrawCardAction;
 import com.megacrit.cardcrawl.actions.common.ReducePowerAction;
+import com.megacrit.cardcrawl.cards.DamageInfo;
+import com.megacrit.cardcrawl.cards.DamageInfo.DamageType;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.potions.AbstractPotion;
@@ -10,7 +14,6 @@ import com.megacrit.cardcrawl.potions.ExplosivePotion;
 import com.megacrit.cardcrawl.potions.FearPotion;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 import com.megacrit.cardcrawl.powers.ArtifactPower;
-import com.megacrit.cardcrawl.powers.PoisonPower;
 import com.megacrit.cardcrawl.ui.panels.PotionPopUp;
 import basemod.ReflectionHacks;
 import basemod.interfaces.PostPotionUseSubscriber;
@@ -92,9 +95,9 @@ public class PotionListener implements PrePotionUseSubscriber, PostPotionUseSubs
 
 			if (!m.isDying && m.currentHealth > 0 && !m.isEscaping) {
 
-				AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(m, AbstractDungeon.player,
-						new PoisonPower(m, AbstractDungeon.player, power.amount), power.amount));
-
+				AbstractDungeon.actionManager.addToBottom(new DamageAction(m,
+						new DamageInfo(AbstractDungeon.player, power.amount, DamageType.THORNS),
+						AttackEffect.NONE));
 				power.flash();
 			}
 

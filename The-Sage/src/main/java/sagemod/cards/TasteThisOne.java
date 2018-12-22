@@ -5,7 +5,6 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-
 import sagemod.powers.TasteThisOnePower;
 
 public class TasteThisOne extends AbstractSageCard {
@@ -19,19 +18,19 @@ public class TasteThisOne extends AbstractSageCard {
 	private static final CardRarity RARITY = CardRarity.UNCOMMON;
 	private static final CardTarget TARGET = CardTarget.SELF;
 
-	private static final int POISON_AMT = 4;
-	private static final int UPGRADE_POISON_AMT = 2;
+	private static final int DAMAGE_AMT = 10;
+	private static final int UPGRADE_DAMAGE_AMT = 5;
 
 	public TasteThisOne() {
 		super(ID, NAME, COST, DESCRIPTION, TYPE, RARITY, TARGET);
-		baseMagicNumber = magicNumber = POISON_AMT;
+		baseMagicNumber = magicNumber = DAMAGE_AMT;
 	}
 
 	@Override
 	public void upgrade() {
 		if (!upgraded) {
 			upgradeName();
-			upgradeMagicNumber(UPGRADE_POISON_AMT);
+			upgradeMagicNumber(UPGRADE_DAMAGE_AMT);
 		}
 	}
 
