@@ -129,7 +129,8 @@
   },
   "Flying_Cauldron": {
     "NAME": "Flying Cauldron",
-    "DESCRIPTION": "If you are flying: NL Gain !M! Brewing. NL Otherwise: NL Gain !M! Flight. NL Exhaust."
+    "DESCRIPTION": "Air. NL Gain !M! Brewing. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "If you are flying: NL Gain !M! Brewing. NL Otherwise: NL Gain !M! Flight. NL Exhaust."
   },
   "Folded_Carpet": {
     "NAME": "Folded Carpet",
@@ -285,7 +286,7 @@
   },
   "Taste_This_One": {
     "NAME": "Taste This One",
-    "DESCRIPTION": "Whenever you use a potion, apply !M! Poison to a random enemy."
+    "DESCRIPTION": "Whenever you use a potion, deal !M! damage to a random enemy."
   },
   "Toxic_Chains": {
     "NAME": "Toxic Chains",

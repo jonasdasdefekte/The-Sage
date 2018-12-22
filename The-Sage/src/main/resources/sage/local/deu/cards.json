@@ -129,7 +129,8 @@
   },
   "Flying_Cauldron": {
     "NAME": "Fliegender Kessel",
-    "DESCRIPTION": "Falls du fliegst: NL Erhalte !M! Brauen. NL Ansonsten: NL Erhalte !M! Flug. NL Erschöpft."
+    "DESCRIPTION": "Luft. NL Erhalte !M! Brauen. NL Erschöpft.",
+    "UPGRADE_DESCRIPTION": "Falls du fliegst: NL Erhalte !M! Brauen. NL Ansonsten: NL Erhalte !M! Flug. NL Erschöpft."
   },
   "Folded_Carpet": {
     "NAME": "Gefalteter Teppich",
@@ -285,7 +286,7 @@
   },
   "Taste_This_One": {
     "NAME": "Probier das mal",
-    "DESCRIPTION": "Immer wenn du einen Trank benutzt, wende !M! Gift an einem zufälligen Gegner an."
+    "DESCRIPTION": "Immer wenn du einen Trank benutzt, füge einem zufälligen Gegner !M! Schaden zu."
   },
   "Toxic_Chains": {
     "NAME": "Giftige Ketten",
