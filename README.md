@@ -8,7 +8,7 @@ Jump to: **[Content](#content) - [Gameplay](#gameplay) - [Our Plans](#our-plans-
 
 ## Content
 
-This mod for the brilliant game Slay the Sprire is currently under development.  
+This mod for the brilliant game Slay the Spire is currently under development.  
 At the moment the Sage Mod introduces:
 
 | For all Runs      | For Sage Runs      |
@@ -35,7 +35,7 @@ The Sage's starting Relic is the **Flying Carpet**.
 
 *At the start of your second turn, gain 1 Flight.*
 
-Flight is the same buff that we all know from our beloved Byrd friends. This changes the gameplay quite drastically, since the enemies' attacks are altered: As long as you have Flight, you will take 50% less attack damage. But beware, for each time you take unblocked attack damage, you will lose one charge! And surviving without Flight can be -- tough, especially because you don't start with the healthiest amount of max HP.
+Flight is the same buff that we all know from our beloved Byrd friends. This changes the gameplay quite drastically, since the enemies' attacks are altered: As long as you have Flight, you will take 50% less attack damage. But beware, for each time you take unblocked attack damage, you will lose one charge! If you lose the last charge, you will take double damage of all attacks, also in the same round. Surviving without Flight can be -- rough, especially because you don't start with the healthiest amount of max HP.
 
 #### Brewing
 
@@ -76,7 +76,6 @@ There are more effects and mini-Archetypes. Although we better leave them for yo
 - **Balance** (we have been playtesting since end of 09/2018, most things should be reasonable by now but we are still tweaking here and there, feedback is welcome);
 - growing the card set to **full size** of 75 (feel free to share your ideas if you like to);
 - card **art** will be added in slow pace (Jonas made all of it so far, we would be glad for anyone who contributes);
-- **Upgradable Potions**;
 - maybe we'll come up with some more suprises...?
 
 ## How To Mod The Spire
