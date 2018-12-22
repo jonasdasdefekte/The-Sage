@@ -43,10 +43,15 @@ public class Brew extends AbstractSagePower {
 
 	@Override
 	public void atStartOfTurn() {
+		advancePotionQueue(1);
+	}
+
+	public void advancePotionQueue(int turns) {
 		ArrayList<Potion> toRemove = new ArrayList<>();
 		removePotionsFromRewards();
 		potions.forEach(p -> {
-			if (p.turns-- <= 1) {
+			p.turns -= turns;
+			if (p.turns < 1) {
 				toRemove.add(p);
 			}
 		});

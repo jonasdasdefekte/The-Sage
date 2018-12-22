@@ -30,4 +30,23 @@ public class Brewing extends AbstractSagePower {
 		}
 	}
 
+	@Override
+	public void onInitialApplication() {
+		super.onInitialApplication();
+		advancePotionQueue(amount);
+	}
+
+	@Override
+	public void stackPower(int stackAmount) {
+		super.stackPower(stackAmount);
+		advancePotionQueue(stackAmount);
+	}
+
+	private void advancePotionQueue(int turns) {
+		if (owner.hasPower(Brew.POWER_ID)) {
+			Brew brew = (Brew) owner.getPower(Brew.POWER_ID);
+			brew.advancePotionQueue(turns);
+		}
+	}
+
 }
