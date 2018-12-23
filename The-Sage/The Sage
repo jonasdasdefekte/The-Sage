@@ -249,7 +249,9 @@ DEPRECATED: 	Ancient Poison
 	Vigorous Body
 		Power, 1 Energy:
 		Whenever an Artifact of you (or an enemy) gets triggered, gain 1 Strength.
-TODO:	Endless Fear
+DEPRECATED:	Endless Fear
+		--
+	Riches!!!
 		Power, 1 (0) Energy:
 		Whenever you use an upgraded potion, obtain a random unupgraded potion. // No healing Potions (like Quackster)
 
@@ -303,7 +305,7 @@ STSLIB:	The Guidebook Guide
 	Creepy Carousel
 		Rare relic:
 		Every 5 turns, apply 1 Disoriented to a random enemy.
-NEW:	Singing Vial
+	Singing Vial
 		Uncommon relic:
 		When adding cards into your deck, you may upgrade a random Potion instead. // Could there be another button next to Singing Bowl's? (Probably Yes)
 

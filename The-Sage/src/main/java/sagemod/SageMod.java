@@ -63,7 +63,6 @@ import sagemod.cards.Crank;
 import sagemod.cards.CultistForm;
 import sagemod.cards.DeadlyContraption;
 import sagemod.cards.DefendSage;
-import sagemod.cards.EndlessFear;
 import sagemod.cards.EnergeticBrew;
 import sagemod.cards.Escape;
 import sagemod.cards.ExtraPortion;
@@ -97,6 +96,7 @@ import sagemod.cards.PincerRepair;
 import sagemod.cards.PotionTrance;
 import sagemod.cards.PourTarPitch;
 import sagemod.cards.Quackster;
+import sagemod.cards.Riches;
 import sagemod.cards.SaltyStrike;
 import sagemod.cards.Slalom;
 import sagemod.cards.SpoiledFood;
@@ -111,6 +111,7 @@ import sagemod.cards.VigorousBody;
 import sagemod.cards.ViralStrike;
 import sagemod.cards.debug.AvailablePotionUpgrade;
 import sagemod.cards.debug.ForcePotionUpgrade;
+import sagemod.cards.deprecated.EndlessFear;
 import sagemod.character.SageCharEnum;
 import sagemod.character.SageColorEnum;
 import sagemod.character.TheSage;
@@ -129,17 +130,18 @@ import sagemod.powers.Brew;
 import sagemod.powers.Brewing;
 import sagemod.powers.DeadlyContraptionPower;
 import sagemod.powers.Disoriented;
-import sagemod.powers.EndlessFearPower;
 import sagemod.powers.ExtraPortionPower;
 import sagemod.powers.LoseFlightNextTurn;
 import sagemod.powers.NoEnergyPower;
 import sagemod.powers.OnFirePower;
 import sagemod.powers.PotionTrancePower;
+import sagemod.powers.RichesPower;
 import sagemod.powers.SageFlight;
 import sagemod.powers.TasteThisOnePower;
 import sagemod.powers.Thirsty;
 import sagemod.powers.VigorousBodyPower;
 import sagemod.powers.Virus;
+import sagemod.powers.deprecated.EndlessFearPower;
 import sagemod.relics.AncientMagnet;
 import sagemod.relics.BalloonAnimal;
 import sagemod.relics.Blowpipe;
@@ -150,6 +152,7 @@ import sagemod.relics.CreepyCarousel;
 import sagemod.relics.FalmelsAmulet;
 import sagemod.relics.FlyingCarpet;
 import sagemod.relics.RedBeastStatue;
+import sagemod.relics.SingingVial;
 import sagemod.relics.ThunderCarpet;
 import sagemod.relics.deprecated.ByrdCarpet;
 import sagemod.variables.BrewingDynamicVariable;
@@ -283,6 +286,9 @@ PostBattleSubscriber, OnStartBattleSubscriber {
 		BaseMod.addCard(new AlchemyExpert());
 		BaseMod.addCard(new AncientPoison());
 		BaseMod.addCard(new VigorousBody());
+		BaseMod.addCard(new Riches());
+
+		// Deprecated
 		BaseMod.addCard(new EndlessFear());
 
 		// Debug
@@ -302,17 +308,20 @@ PostBattleSubscriber, OnStartBattleSubscriber {
 		BaseMod.addPower(Brewing.class, Brewing.POWER_ID);
 		BaseMod.addPower(DeadlyContraptionPower.class, DeadlyContraptionPower.POWER_ID);
 		BaseMod.addPower(Disoriented.class, Disoriented.POWER_ID);
-		BaseMod.addPower(EndlessFearPower.class, EndlessFearPower.POWER_ID);
 		BaseMod.addPower(ExtraPortionPower.class, ExtraPortionPower.POWER_ID);
 		BaseMod.addPower(LoseFlightNextTurn.class, LoseFlightNextTurn.POWER_ID);
 		BaseMod.addPower(NoEnergyPower.class, NoEnergyPower.POWER_ID);
 		BaseMod.addPower(OnFirePower.class, OnFirePower.POWER_ID);
 		BaseMod.addPower(PotionTrancePower.class, PotionTrancePower.POWER_ID);
+		BaseMod.addPower(RichesPower.class, RichesPower.POWER_ID);
 		BaseMod.addPower(SageFlight.class, SageFlight.POWER_ID);
 		BaseMod.addPower(TasteThisOnePower.class, TasteThisOnePower.POWER_ID);
 		BaseMod.addPower(Thirsty.class, Thirsty.POWER_ID);
 		BaseMod.addPower(VigorousBodyPower.class, VigorousBodyPower.POWER_ID);
 		BaseMod.addPower(Virus.class, Virus.POWER_ID);
+
+		// Deprecated
+		BaseMod.addPower(EndlessFearPower.class, EndlessFearPower.POWER_ID);
 
 	}
 
@@ -331,6 +340,7 @@ PostBattleSubscriber, OnStartBattleSubscriber {
 		BaseMod.addRelicToCustomPool(new AncientMagnet(), SageColorEnum.THE_SAGE);
 		BaseMod.addRelicToCustomPool(new BalloonAnimal(), SageColorEnum.THE_SAGE);
 		BaseMod.addRelic(new RedBeastStatue(), RelicType.SHARED);
+		BaseMod.addRelic(new SingingVial(), RelicType.SHARED);
 
 		// Rare
 		BaseMod.addRelic(new Blowpipe(), RelicType.SHARED);

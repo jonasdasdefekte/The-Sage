@@ -100,6 +100,14 @@
       " TP."
     ]
   },
+  "Singing_Vial": {
+    "NAME": "Singfläschchen",
+    "FLAVOR": "Ein Fläschchen, dass singt.",
+    "DESCRIPTIONS": [
+      "Statt eine Karte deinem Deck hinzuzufügen kannst du einen zufälligen Trank verbessern.",
+      "Trank verbessern"
+    ]
+  },
   "Thunder_Carpet": {
     "NAME": "Donnernder Teppich",
     "FLAVOR": "Ein uralter Teppich, von dunklen Kultisten gewoben und mit seltsamer Magie versetzt.",

@@ -100,6 +100,14 @@
       " HP."
     ]
   },
+  "Singing_Vial": {
+    "NAME": "Singing Vial",
+    "FLAVOR": "A vial that sings.",
+    "DESCRIPTIONS": [
+      "When adding cards into your deck, you may upgrade a random Potion instead.",
+      "Upgrade Potion"
+    ]
+  },
   "Thunder_Carpet": {
     "NAME": "Thunder Carpet",
     "FLAVOR": "An ancient carpet, woven by eery cultists and infused with strange magic.",
