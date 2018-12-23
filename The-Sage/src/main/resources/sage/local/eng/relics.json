@@ -59,6 +59,13 @@
       " #yBrewing."
     ]
   },
+  "Falmels_Amulet": {
+    "NAME": "Falmel's Amulet",
+    "FLAVOR": "Falmel's Amulet",
+    "DESCRIPTIONS": [
+      "Gain [E] at the start of your turn. Enemies attack an additional time on the first turn."
+    ]
+  },
   "Flying_Carpet": {
     "NAME": "Flying Carpet",
     "FLAVOR": "An old carpet, similar to those used by the Slavers of the far east.",

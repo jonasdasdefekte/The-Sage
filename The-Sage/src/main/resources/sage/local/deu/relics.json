@@ -59,6 +59,13 @@
       " #yBrauen."
     ]
   },
+  "Falmels_Amulet": {
+    "NAME": "Falmels Amulett",
+    "FLAVOR": "Falmels Amulett",
+    "DESCRIPTIONS": [
+      "Erhalte [E] zu Beginn deines Zuges. Gegner greifen in der ersten Runde einmal mehr an."
+    ]
+  },
   "Flying_Carpet": {
     "NAME": "Fliegender Teppich",
     "FLAVOR": "Ein alter Teppich, ähnlich wie die der Sklavenhändler aus den östlichen Gefilden.",
