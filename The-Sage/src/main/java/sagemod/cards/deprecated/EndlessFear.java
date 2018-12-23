@@ -6,6 +6,7 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import sagemod.cards.AbstractSageCard;
+import sagemod.character.SageColorEnum;
 import sagemod.powers.deprecated.EndlessFearPower;
 
 @Deprecated
@@ -23,7 +24,7 @@ public class EndlessFear extends AbstractSageCard {
 	private static final int UPGRADE_COST_TO = 0;
 
 	public EndlessFear() {
-		super(ID, NAME, COST, DESCRIPTION, TYPE, RARITY, TARGET);
+		super(ID, NAME, COST, DESCRIPTION, TYPE, RARITY, TARGET, SageColorEnum.THE_SAGE, true);
 	}
 
 	@Override

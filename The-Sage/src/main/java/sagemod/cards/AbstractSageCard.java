@@ -43,6 +43,8 @@ public abstract class AbstractSageCard extends CustomCard {
 	private static final String PREFIX = "sage/cards/";
 	private static final String POSTFIX = ".png";
 
+	private static final String DEPRECATED_ID = "Deprecated";
+
 	public int baseBrewIn = 0;
 	public int brewIn = 0;
 	public boolean upgradedBrewIn;
@@ -51,13 +53,15 @@ public abstract class AbstractSageCard extends CustomCard {
 
 	public AbstractSageCard(String id, String name, int cost, String rawDescription, CardType type, CardRarity rarity,
 			CardTarget target) {
-		this(id, name, cost, rawDescription, type, rarity, target, SageColorEnum.THE_SAGE);
+		this(id, name, cost, rawDescription, type, rarity, target, SageColorEnum.THE_SAGE, false);
 	}
 
 	public AbstractSageCard(String id, String name, int cost, String rawDescription, CardType type,
-			CardRarity rarity,
-			CardTarget target, CardColor color) {
-		super(id, name, SageMod.getExistingOrPlaceholder(getPrefix(type), id, POSTFIX), cost,
+			CardRarity rarity, CardTarget target, CardColor color, boolean deprecated) {
+		super(id, name,
+				SageMod.getExistingOrPlaceholder(getPrefix(type), deprecated ? DEPRECATED_ID : id,
+						POSTFIX),
+				cost,
 				rawDescription, type,
 				color, rarity, target);
 	}

@@ -23,7 +23,7 @@ public class PerplexingGlare extends AbstractSageCard {
 	private static final int UPGRADE_DISORIENTED_AMT = 1;
 
 	public PerplexingGlare() {
-		super(ID, NAME, COST, DESCRIPTION, TYPE, RARITY, TARGET, CardColor.COLORLESS);
+		super(ID, NAME, COST, DESCRIPTION, TYPE, RARITY, TARGET, CardColor.COLORLESS, false);
 		baseMagicNumber = magicNumber = DISORIENTED_AMT;
 		exhaust = true;
 	}
