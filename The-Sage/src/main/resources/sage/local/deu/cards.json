@@ -270,6 +270,10 @@
     "NAME": "Reichtümer!!!",
     "DESCRIPTION": "Immer wenn du einen verbesserten Trank benutzt, erhälst du einen zufälligen Trank, der nicht verbessert ist."
   },
+  "Rickety_Defense": {
+    "NAME": "Klappriger Schild",
+    "DESCRIPTION": "Immer wenn du Gebrechlich erhälst, erhälst du !M! Block pro neuem Stack."
+  },
   "Salty_Strike": {
     "NAME": "Salty Strike",
     "DESCRIPTION": "Füge !D! Schaden zu. NL Wende !M! Durstig an."

@@ -131,6 +131,13 @@
       "  zufällige Tränke, die nicht verbessert sind."
     ]
   },
+  "Rickety_Defense": {
+    "NAME": "Klappriger Schild",
+    "DESCRIPTIONS": [
+      "Immer wenn du Gebrechlich erhälst, erhälst du #b",
+      " Block pro neuem Stack."
+    ]
+  },
   "Sage_Flight": {
     "NAME": "Flug",
     "DESCRIPTIONS": [

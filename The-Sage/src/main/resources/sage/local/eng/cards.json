@@ -270,6 +270,10 @@
     "NAME": "Riches!!!",
     "DESCRIPTION": "Whenever you use an upgraded potion, obtain a random unupgraded potion."
   },
+  "Rickety_Defense": {
+    "NAME": "Rickety Defense",
+    "DESCRIPTION": "Whenever you gain Frail, gain !M! Block per new stack."
+  },
   "Salty_Strike": {
     "NAME": "Salty Strike",
     "DESCRIPTION": "Deal !D! damage. NL Apply !M! Thirsty."

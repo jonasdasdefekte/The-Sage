@@ -131,6 +131,13 @@
       " random unupgraded potions."
     ]
   },
+  "Rickety_Defense": {
+    "NAME": "Rickety Defense",
+    "DESCRIPTIONS": [
+      "Whenever you gain Frail, gain #b",
+      " Block per new stack."
+    ]
+  },
   "Sage_Flight": {
     "NAME": "Flight",
     "DESCRIPTIONS": [

@@ -99,6 +99,7 @@ import sagemod.cards.PourTarPitch;
 import sagemod.cards.Quackster;
 import sagemod.cards.Refine;
 import sagemod.cards.Riches;
+import sagemod.cards.RicketyDefense;
 import sagemod.cards.SaltyStrike;
 import sagemod.cards.Slalom;
 import sagemod.cards.SpoiledFood;
@@ -140,6 +141,7 @@ import sagemod.powers.NoEnergyPower;
 import sagemod.powers.OnFirePower;
 import sagemod.powers.PotionTrancePower;
 import sagemod.powers.RichesPower;
+import sagemod.powers.RicketyDefensePower;
 import sagemod.powers.SageFlight;
 import sagemod.powers.TasteThisOnePower;
 import sagemod.powers.Thirsty;
@@ -276,6 +278,7 @@ PostBattleSubscriber, OnStartBattleSubscriber {
 		BaseMod.addCard(new HowToAmuseSneckos());
 		BaseMod.addCard(new PotionTrance());
 		BaseMod.addCard(new NoxiousWave());
+		BaseMod.addCard(new RicketyDefense());
 
 		// Rare
 		BaseMod.addCard(new Bookworm());
@@ -324,6 +327,7 @@ PostBattleSubscriber, OnStartBattleSubscriber {
 		BaseMod.addPower(OnFirePower.class, OnFirePower.POWER_ID);
 		BaseMod.addPower(PotionTrancePower.class, PotionTrancePower.POWER_ID);
 		BaseMod.addPower(RichesPower.class, RichesPower.POWER_ID);
+		BaseMod.addPower(RicketyDefensePower.class, RicketyDefensePower.POWER_ID);
 		BaseMod.addPower(SageFlight.class, SageFlight.POWER_ID);
 		BaseMod.addPower(TasteThisOnePower.class, TasteThisOnePower.POWER_ID);
 		BaseMod.addPower(Thirsty.class, Thirsty.POWER_ID);
