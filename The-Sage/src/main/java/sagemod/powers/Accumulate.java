@@ -5,6 +5,7 @@ import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.PowerStrings;
+import sagemod.actions.ReduceFlightBlockableByArtifactAction;
 
 public class Accumulate extends AbstractSagePower {
 
@@ -13,9 +14,17 @@ public class Accumulate extends AbstractSagePower {
 	public static final String NAME = powerStrings.NAME;
 	public static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;
 
+	private static int nextFlightLoss;
+
+	private int flightLoss;
+
 	public Accumulate(AbstractCreature owner, int amount) {
 		super(POWER_ID, NAME, owner, amount);
 		updateDescription();
+	}
+
+	public static void setNext(int flightLoss) {
+		nextFlightLoss = flightLoss;
 	}
 
 	@Override
@@ -26,12 +35,40 @@ public class Accumulate extends AbstractSagePower {
 			sb.append("[E] ");
 		}
 		sb.append(DESCRIPTIONS[1]);
+		sb.append(flightLoss);
+		sb.append(DESCRIPTIONS[2]);
 		description = sb.toString();
+	}
+
+	@Override
+	public void onInitialApplication() {
+		super.onInitialApplication();
+		flightLoss += nextFlightLoss;
+		nextFlightLoss = 0;
+		updateDescription();
+	}
+
+	@Override
+	public void stackPower(int stackAmount) {
+		super.stackPower(stackAmount);
+		flightLoss += nextFlightLoss;
+		nextFlightLoss = 0;
+	}
+
+	@Override
+	public void reducePower(int reduceAmount) {
+		super.reducePower(reduceAmount);
+		flightLoss -= nextFlightLoss;
+		nextFlightLoss = 0;
 	}
 
 	@Override
 	public void atStartOfTurn() {
 		AbstractDungeon.actionManager.addToBottom(new GainEnergyAction(amount));
+		if (owner.hasPower(SageFlight.POWER_ID)) {
+			AbstractDungeon.actionManager.addToBottom(
+					new ReduceFlightBlockableByArtifactAction(flightLoss, AbstractDungeon.player));
+		}
 		flash();
 	}
 

@@ -234,7 +234,7 @@ NEW:	Refine
 	Cultist form
 		Power, 3 Energy: 
 		Lose 2 Flight. Apply 1 Disoriented to a random enemy 4 (5) times.
-TODO:	Accumulation
+	Accumulation
 		Power, 1 Energy: 
 		Air. At the start of each turn, gain 1 Energy and lose 2 (1) Flight.
 STSLIB:	Bookworm

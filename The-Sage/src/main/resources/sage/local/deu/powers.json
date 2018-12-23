@@ -3,7 +3,8 @@
     "NAME": "Akkumulation",
     "DESCRIPTIONS": [
       "Erhalte ",
-      " zu Beginn deines Zuges."
+      " und verliere #b",
+      " Flug zu Beginn deines Zuges."
     ]
   },
   "Airborne": {

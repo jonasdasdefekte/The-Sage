@@ -3,7 +3,8 @@
     "NAME": "Accumulate",
     "DESCRIPTIONS": [
       "Gain ",
-      " at the start of your turn."
+      " and lose #b",
+      " Flight at the start of your turn."
     ]
   },
   "Airborne": {

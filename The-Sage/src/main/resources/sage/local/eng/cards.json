@@ -16,7 +16,7 @@
   },
   "Accumulation": {
     "NAME": "Accumulation",
-    "DESCRIPTION": "Air. NL Lose !M! Flight once and NL gain [E] at the start of each turn."
+    "DESCRIPTION": "Air. NL gain [E] and lose !M! Flight at the start of each turn."
   },
   "Alchemy_Expert": {
     "NAME": "Alchemy Expert",
