@@ -33,6 +33,16 @@
       "."
     ]
   },
+  "Byrd_Feather": {
+    "NAME": "Foglfeder",
+    "FLAVOR": "Du kannst gar nicht warten, noch mehr auszurupfen.",
+    "DESCRIPTIONS": [
+      "Falls du zu Beginn deines Zuges #b",
+      " oder #b",
+      " #yFlug hast, setze ihn auf #b",
+      "."
+    ]
+  },
   "Cookbook": {
     "NAME": "Kochbuch",
     "FLAVOR": "Diese Lektüre macht dich hungrig. Allerdings solltest du manche dieser Gerichte wohl besser nicht essen.",
@@ -55,6 +65,14 @@
     "DESCRIPTIONS": [
       "Zufällige #yTränke sind #b",
       "% wahrscheinlicher ungewöhnlich oder selten."
+    ]
+  },
+  "Thunder_Carpet": {
+    "NAME": "Donnernder Teppich",
+    "FLAVOR": "Ein uralter Teppich, von dunklen Kultisten gewoben und mit seltsamer Magie versetzt.",
+    "DESCRIPTIONS": [
+      "Ersetzt Fliegender Teppich. Beginne jeden Kampf mit #b",
+      " Flug."
     ]
   }
 }

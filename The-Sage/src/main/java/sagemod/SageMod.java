@@ -143,13 +143,16 @@ import sagemod.powers.Virus;
 import sagemod.relics.AncientMagnet;
 import sagemod.relics.BalloonAnimal;
 import sagemod.relics.Blowpipe;
-import sagemod.relics.ByrdCarpet;
+import sagemod.relics.ByrdFeather;
 import sagemod.relics.Cookbook;
 import sagemod.relics.FlyingCarpet;
 import sagemod.relics.RedBeastStatue;
+import sagemod.relics.ThunderCarpet;
+import sagemod.relics.deprecated.ByrdCarpet;
 import sagemod.variables.BrewingDynamicVariable;
 import sagemod.variables.MiscDynamicVariable;
 
+@SuppressWarnings("deprecation")
 @SpireInitializer
 public class SageMod implements EditCharactersSubscriber, EditCardsSubscriber, EditRelicsSubscriber,
 EditStringsSubscriber, PostInitializeSubscriber, EditKeywordsSubscriber,
@@ -321,14 +324,20 @@ PostBattleSubscriber, OnStartBattleSubscriber {
 
 		// Uncommon
 		BaseMod.addRelicToCustomPool(new Cookbook(), SageColorEnum.THE_SAGE);
-		BaseMod.addRelic(new RedBeastStatue(), RelicType.SHARED);
 		BaseMod.addRelicToCustomPool(new AncientMagnet(), SageColorEnum.THE_SAGE);
 		BaseMod.addRelicToCustomPool(new BalloonAnimal(), SageColorEnum.THE_SAGE);
+		BaseMod.addRelic(new RedBeastStatue(), RelicType.SHARED);
 
 		// Rare
 		BaseMod.addRelic(new Blowpipe(), RelicType.SHARED);
 
 		// Boss
+		BaseMod.addRelicToCustomPool(new ThunderCarpet(), SageColorEnum.THE_SAGE);
+
+		// Special
+		BaseMod.addRelicToCustomPool(new ByrdFeather(), SageColorEnum.THE_SAGE);
+
+		// Deprecated
 		BaseMod.addRelicToCustomPool(new ByrdCarpet(), SageColorEnum.THE_SAGE);
 
 		// Add Silent's poison relics
@@ -467,7 +476,6 @@ PostBattleSubscriber, OnStartBattleSubscriber {
 	}
 
 	private void initEvents() {
-		// excludes The Sage see PatchForCarpetTrader
 		BaseMod.addEvent(CarpetTrader.ID, CarpetTrader.class, TheCity.ID);
 	}
 

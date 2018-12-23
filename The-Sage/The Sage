@@ -264,7 +264,7 @@ STSLIB:	Trixter
 
 	
 **6+3 CHARACTER-SPECIFIC RELICS (Sage only)**
-TODO:	Thunder Carpet
+	Thunder Carpet
 		Boss relic: 
 		Replaces Flying carpet. Start each combat with 3 Flight.
 	Cook Book
@@ -279,7 +279,7 @@ TODO:	Thunder Carpet
 TODO:	Cabbage Head
 		Common relic:
 		While you are Frail, gain 2 Dexterity.
-TODO:	Byrd Feather
+	Byrd Feather
 		Event relic:
 		If you have 1 or 2 Flight at the start of your turn, set it to 3.
 TODO:	Toy Ornithopter 
@@ -305,7 +305,7 @@ NEW:	Creepy Carousel
 		Every 5 turns, apply 1 Disoriented to a random enemy.
 NEW:	Singing Vial
 		Uncommon relic:
-		When adding cards into your deck, you may upgrade a random Potion instead. // Could there be another button next to Singing Bowl's? 
+		When adding cards into your deck, you may upgrade a random Potion instead. // Could there be another button next to Singing Bowl's? (Probably Yes)
 
 
 **2 POTIONS**
@@ -321,7 +321,7 @@ NEW:	Singing Vial
 	Droprate: 12%
 
 **1 EVENT**
-TODO:	Carpet trader
+	Carpet trader
 		Akt 2
 		Option 1: #rLose #r30% #rmax. #rHP. 
 			(For The Sage:) #gObtain #gthe #gByrd #gfeather. 

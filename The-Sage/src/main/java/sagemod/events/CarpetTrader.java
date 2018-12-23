@@ -8,6 +8,8 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.events.AbstractImageEvent;
 import com.megacrit.cardcrawl.helpers.RelicLibrary;
 import com.megacrit.cardcrawl.localization.EventStrings;
+import sagemod.character.TheSage;
+import sagemod.relics.ByrdFeather;
 import sagemod.relics.FlyingCarpet;
 
 public class CarpetTrader extends AbstractImageEvent {
@@ -34,8 +36,13 @@ public class CarpetTrader extends AbstractImageEvent {
 		AbstractPlayer player = AbstractDungeon.player;
 		switch (curScreen) {
 			case INTRO:
-				imageEventText.updateBodyText(DESCRIPTIONS[1]);
-				imageEventText.updateDialogOption(0, OPTIONS[2]);
+				if (AbstractDungeon.player instanceof TheSage) {
+					imageEventText.updateBodyText(DESCRIPTIONS[2]);
+					imageEventText.updateDialogOption(0, OPTIONS[3]);
+				} else {
+					imageEventText.updateBodyText(DESCRIPTIONS[1]);
+					imageEventText.updateDialogOption(0, OPTIONS[2]);
+				}
 				imageEventText.setDialogOption(OPTIONS[1]);
 				curScreen = CurrentScreen.MAIN;
 				break;
@@ -51,17 +58,21 @@ public class CarpetTrader extends AbstractImageEvent {
 						if (player.currentHealth > player.maxHealth) {
 							player.currentHealth = player.maxHealth;
 						}
-
-						RelicLibrary.getRelic(FlyingCarpet.ID).instantObtain();
-						imageEventText.updateBodyText(DESCRIPTIONS[3]);
+						if (AbstractDungeon.player instanceof TheSage) {
+							RelicLibrary.getRelic(ByrdFeather.ID).instantObtain();
+							imageEventText.updateBodyText(DESCRIPTIONS[5]);
+						} else {
+							RelicLibrary.getRelic(FlyingCarpet.ID).instantObtain();
+							imageEventText.updateBodyText(DESCRIPTIONS[4]);
+						}
 						imageEventText.clearAllDialogs();
-						imageEventText.setDialogOption(OPTIONS[3]);
+						imageEventText.setDialogOption(OPTIONS[4]);
 						break;
 					case 1:
 					default:
-						imageEventText.updateBodyText(DESCRIPTIONS[2]);
+						imageEventText.updateBodyText(DESCRIPTIONS[3]);
 						imageEventText.clearAllDialogs();
-						imageEventText.setDialogOption(OPTIONS[3]);
+						imageEventText.setDialogOption(OPTIONS[4]);
 						break;
 				}
 				curScreen = CurrentScreen.DONE;

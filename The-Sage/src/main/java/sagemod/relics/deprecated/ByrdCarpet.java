@@ -1,15 +1,17 @@
-package sagemod.relics;
+package sagemod.relics.deprecated;
 
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
-
 import sagemod.powers.SageFlight;
+import sagemod.relics.AbstractSageRelic;
+import sagemod.relics.FlyingCarpet;
 
+@Deprecated
 public class ByrdCarpet extends AbstractSageRelic {
 
 	public static final String ID = "Byrd_Carpet";
-	public static final RelicTier TIER = RelicTier.BOSS;
+	public static final RelicTier TIER = RelicTier.DEPRECATED;
 	public static final LandingSound SOUND = LandingSound.MAGICAL;
 	private static final int FLY_AMT = 3;
 	private static final int SET_TO_FLY_AMT_WHEN1 = 1;

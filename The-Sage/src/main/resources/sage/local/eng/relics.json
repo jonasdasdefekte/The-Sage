@@ -33,6 +33,16 @@
       "."
     ]
   },
+  "Byrd_Feather": {
+    "NAME": "Byrd Feather",
+    "FLAVOR": "You can't wait to pluck out some more.",
+    "DESCRIPTIONS": [
+      "If you have #b",
+      " or #b",
+      " #yFlight at the start of your turn, set it to #b",
+      "."
+    ]
+  },
   "Cookbook": {
     "NAME": "Cookbook",
     "FLAVOR": "Reading this makes you hungry. Although probably you better should abstain from some of these dishes.",
@@ -55,6 +65,14 @@
     "DESCRIPTIONS": [
       "#yPotions are #b",
       "% more likely to be uncommon or rare."
+    ]
+  },
+  "Thunder_Carpet": {
+    "NAME": "Thunder Carpet",
+    "FLAVOR": "An ancient carpet, woven by eery cultists and infused with strange magic.",
+    "DESCRIPTIONS": [
+      "Replaces Flying Carpet. Start each combat with #b",
+      " Flight."
     ]
   }
 }
