@@ -106,8 +106,12 @@
     "NAME": "Feuer",
     "DESCRIPTIONS": [
       "Spiele #b",
-      " weitere Karten in diesem Zug, um einen Feuertrank zu erhalten.",
-      " weitere Karte in diesem Zug, um einen Feuertrank zu erhalten."
+      " weitere Karten in diesem Zug, um #b",
+      " weitere Karte in diesem Zug, um #b",
+      " verbesserte Feuertränke",
+      " und #b",
+      " Feuertränke",
+      " zu erhalten."
     ]
   },
   "Potion_Trance": {

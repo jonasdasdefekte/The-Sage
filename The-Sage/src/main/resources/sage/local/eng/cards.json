@@ -215,7 +215,7 @@
   "On_Fire": {
     "NAME": "On Fire",
     "DESCRIPTION": "Whenever you play !M! cards in a single turn, obtain a Fire Potion.",
-    "UPGRADE_DESCRIPTION": "Innate. NL Whenever you play !M! cards in a single turn, obtain a Fire Potion."
+    "UPGRADE_DESCRIPTION": "Whenever you play !M! cards in a single turn, obtain an upgraded Fire Potion."
   },
   "On_The_Head": {
     "NAME": "On The Head",

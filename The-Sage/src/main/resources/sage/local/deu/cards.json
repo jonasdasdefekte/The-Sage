@@ -215,7 +215,7 @@
   "On_Fire": {
     "NAME": "Feuer",
     "DESCRIPTION": "Immer wenn du !M! Karten in einem Zug spielst, erhalte einen Feuertrank.",
-    "UPGRADE_DESCRIPTION": "Angeboren. NL Immer wenn du !M! Karten in einem Zug spielst, erhalte einen Feuertrank."
+    "UPGRADE_DESCRIPTION": "Immer wenn du !M! Karten in einem Zug spielst, erhalte einen verbesserten Feuertrank."
   },
   "On_The_Head": {
     "NAME": "Auf den Kopf",

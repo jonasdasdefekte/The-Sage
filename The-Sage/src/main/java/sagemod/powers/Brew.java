@@ -119,7 +119,7 @@ public class Brew extends AbstractSagePower {
 		description = builder.toString();
 	}
 
-	private static void obtain(Collection<Potion> collection) {
+	public static void obtain(Collection<Potion> collection) {
 		int freeSlots = 0;
 		for (AbstractPotion p : AbstractDungeon.player.potions) {
 			if (p instanceof PotionSlot) {

@@ -106,8 +106,12 @@
     "NAME": "On Fire",
     "DESCRIPTIONS": [
       "Play #b",
-      " more cards this turn to obtain a Fire Potion.",
-      " more card this turn to obtain a Fire Potion."
+      " more cards this turn to obtain #b",
+      " more card this turn to obtain #b",
+      " upgraded Fire Potions",
+      " and #b",
+      " Fire Potions",
+      "."
     ]
   },
   "Potion_Trance": {
