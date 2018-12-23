@@ -14,7 +14,6 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.monsters.AbstractMonster.Intent;
 import com.megacrit.cardcrawl.monsters.EnemyMoveInfo;
 import com.megacrit.cardcrawl.powers.AbstractPower;
-
 import basemod.ReflectionHacks;
 
 public class Disoriented extends AbstractSagePower {
@@ -72,6 +71,9 @@ public class Disoriented extends AbstractSagePower {
 					changedIntent = true;
 					// remove 1 multiplier
 					move.multiplier--;
+					if (move.multiplier == 1) {
+						move.isMultiDamage = false;
+					}
 					// update display
 					monster.createIntent();
 				} else {

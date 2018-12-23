@@ -14,6 +14,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster.Intent;
 import com.megacrit.cardcrawl.monsters.EnemyMoveInfo;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
 import basemod.ReflectionHacks;
+import sagemod.powers.Disoriented;
 
 public class FalmelsAmulet extends AbstractSageRelic {
 
@@ -62,9 +63,11 @@ public class FalmelsAmulet extends AbstractSageRelic {
 		if (turn == 1) {
 			if (!alreadyDone.contains(info.owner) && info.type == DamageType.NORMAL) {
 				alreadyDone.add(info.owner);
-				AbstractDungeon.actionManager.addToTop(new DamageAction(AbstractDungeon.player,
-						new DamageInfo(info.owner, info.base, info.type),
-						AttackEffect.NONE));
+				if (!info.owner.hasPower(Disoriented.POWER_ID)) {
+					AbstractDungeon.actionManager.addToTop(new DamageAction(AbstractDungeon.player,
+							new DamageInfo(info.owner, info.base, info.type),
+							AttackEffect.NONE));
+				}
 			}
 		}
 		return damageAmount;
