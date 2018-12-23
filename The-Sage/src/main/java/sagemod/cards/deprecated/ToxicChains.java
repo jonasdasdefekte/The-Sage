@@ -1,4 +1,4 @@
-package sagemod.cards;
+package sagemod.cards.deprecated;
 
 import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
@@ -9,7 +9,10 @@ import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.FrailPower;
 import com.megacrit.cardcrawl.powers.PoisonPower;
+import sagemod.cards.AbstractSageCard;
+import sagemod.character.SageColorEnum;
 
+@Deprecated
 public class ToxicChains extends AbstractSageCard {
 
 	public static final String ID = "Toxic_Chains";
@@ -18,14 +21,14 @@ public class ToxicChains extends AbstractSageCard {
 	private static final int COST = 1;
 	public static final String DESCRIPTION = cardStrings.DESCRIPTION;
 	private static final CardType TYPE = CardType.SKILL;
-	private static final CardRarity RARITY = CardRarity.UNCOMMON;
+	private static final CardRarity RARITY = CardRarity.SPECIAL;
 	private static final CardTarget TARGET = CardTarget.ALL;
 
 	private static final int ADDITIONAL_POISON = 0;
 	private static final int UPGRADE_ADDITIONAL_POISON = 3;
 
 	public ToxicChains() {
-		super(ID, NAME, COST, DESCRIPTION, TYPE, RARITY, TARGET);
+		super(ID, NAME, COST, DESCRIPTION, TYPE, RARITY, TARGET, SageColorEnum.THE_SAGE, true);
 		baseMagicNumber = magicNumber = ADDITIONAL_POISON;
 	}
 

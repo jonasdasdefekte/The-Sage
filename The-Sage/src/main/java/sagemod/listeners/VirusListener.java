@@ -8,8 +8,9 @@ import com.megacrit.cardcrawl.powers.AbstractPower;
 import com.megacrit.cardcrawl.powers.PoisonPower;
 import basemod.interfaces.PostPowerApplySubscriber;
 import sagemod.patches.PatchesForVirus;
-import sagemod.powers.Virus;
+import sagemod.powers.deprecated.Virus;
 
+@Deprecated
 public class VirusListener implements PostPowerApplySubscriber {
 
 	@Override

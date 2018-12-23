@@ -1,10 +1,12 @@
-package sagemod.powers;
+package sagemod.powers.deprecated;
 
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
+import sagemod.powers.AbstractSagePower;
 
+@Deprecated
 public class AncientPoisonPower extends AbstractSagePower {
 
 	public static final String POWER_ID = "Ancient_Poison";

@@ -21,7 +21,6 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.dungeons.TheCity;
-import com.megacrit.cardcrawl.helpers.RelicLibrary;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.localization.CharacterStrings;
 import com.megacrit.cardcrawl.localization.EventStrings;
@@ -29,9 +28,6 @@ import com.megacrit.cardcrawl.localization.Keyword;
 import com.megacrit.cardcrawl.localization.PotionStrings;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.localization.RelicStrings;
-import com.megacrit.cardcrawl.relics.SneckoSkull;
-import com.megacrit.cardcrawl.relics.TheSpecimen;
-import com.megacrit.cardcrawl.relics.TwistedFunnel;
 import com.megacrit.cardcrawl.rooms.AbstractRoom;
 import basemod.BaseMod;
 import basemod.ModButton;
@@ -49,7 +45,6 @@ import sagemod.cards.Accumulation;
 import sagemod.cards.AlchemyExpert;
 import sagemod.cards.Altitude;
 import sagemod.cards.Ambition;
-import sagemod.cards.AncientPoison;
 import sagemod.cards.AntiAncientAttack;
 import sagemod.cards.ArmorBrew;
 import sagemod.cards.BoldMove;
@@ -80,7 +75,6 @@ import sagemod.cards.HowToFeedApes;
 import sagemod.cards.HowToGreetByrds;
 import sagemod.cards.HowToMurderAnts;
 import sagemod.cards.HowToPokeAtSlimes;
-import sagemod.cards.HowToTalkToSpiders;
 import sagemod.cards.HowToWakeLyons;
 import sagemod.cards.HowToWarmElephants;
 import sagemod.cards.Lecture;
@@ -88,7 +82,6 @@ import sagemod.cards.LightWeighted;
 import sagemod.cards.Lunchtime;
 import sagemod.cards.MechanicsBreak;
 import sagemod.cards.Meditation;
-import sagemod.cards.NoxiousWave;
 import sagemod.cards.OnFire;
 import sagemod.cards.OnTheHead;
 import sagemod.cards.PerpetuumMobile;
@@ -108,14 +101,17 @@ import sagemod.cards.StrikeSage;
 import sagemod.cards.Study;
 import sagemod.cards.SwoopDown;
 import sagemod.cards.TasteThisOne;
-import sagemod.cards.ToxicChains;
 import sagemod.cards.TurnAround;
 import sagemod.cards.VigorousBody;
-import sagemod.cards.ViralStrike;
 import sagemod.cards.colorless.PerplexingGlare;
 import sagemod.cards.debug.AvailablePotionUpgrade;
 import sagemod.cards.debug.ForcePotionUpgrade;
+import sagemod.cards.deprecated.AncientPoison;
 import sagemod.cards.deprecated.EndlessFear;
+import sagemod.cards.deprecated.HowToTalkToSpiders;
+import sagemod.cards.deprecated.NoxiousWave;
+import sagemod.cards.deprecated.ToxicChains;
+import sagemod.cards.deprecated.ViralStrike;
 import sagemod.character.SageCharEnum;
 import sagemod.character.SageColorEnum;
 import sagemod.character.TheSage;
@@ -129,7 +125,6 @@ import sagemod.potions.UpgradedPotion;
 import sagemod.powers.Accumulate;
 import sagemod.powers.Airborne;
 import sagemod.powers.AlchemyExpertPower;
-import sagemod.powers.AncientPoisonPower;
 import sagemod.powers.BookwormPower;
 import sagemod.powers.Brew;
 import sagemod.powers.Brewing;
@@ -146,8 +141,9 @@ import sagemod.powers.SageFlight;
 import sagemod.powers.TasteThisOnePower;
 import sagemod.powers.Thirsty;
 import sagemod.powers.VigorousBodyPower;
-import sagemod.powers.Virus;
+import sagemod.powers.deprecated.AncientPoisonPower;
 import sagemod.powers.deprecated.EndlessFearPower;
+import sagemod.powers.deprecated.Virus;
 import sagemod.relics.AncientMagnet;
 import sagemod.relics.BalloonAnimal;
 import sagemod.relics.Blowpipe;
@@ -238,14 +234,12 @@ PostBattleSubscriber, OnStartBattleSubscriber {
 		BaseMod.addCard(new HowToBefriendATurtle());
 		BaseMod.addCard(new CatchMeIfYouCan());
 		BaseMod.addCard(new SaltyStrike());
-		BaseMod.addCard(new HowToTalkToSpiders());
 		BaseMod.addCard(new Ambition());
 		BaseMod.addCard(new StepBack());
 		BaseMod.addCard(new HowToPokeAtSlimes());
 		BaseMod.addCard(new Slalom());
 		BaseMod.addCard(new Crank());
 		BaseMod.addCard(new EnergeticBrew());
-		BaseMod.addCard(new ViralStrike());
 		BaseMod.addCard(new GroundedStrike());
 		BaseMod.addCard(new HowToCharmASentry());
 		BaseMod.addCard(new CaneStrike());
@@ -273,11 +267,9 @@ PostBattleSubscriber, OnStartBattleSubscriber {
 		BaseMod.addCard(new SpoiledFood());
 		BaseMod.addCard(new HowToGreetByrds());
 		BaseMod.addCard(new DeadlyContraption());
-		BaseMod.addCard(new ToxicChains());
 		BaseMod.addCard(new HowToMurderAnts());
 		BaseMod.addCard(new HowToAmuseSneckos());
 		BaseMod.addCard(new PotionTrance());
-		BaseMod.addCard(new NoxiousWave());
 		BaseMod.addCard(new RicketyDefense());
 
 		// Rare
@@ -292,7 +284,6 @@ PostBattleSubscriber, OnStartBattleSubscriber {
 		BaseMod.addCard(new CultistForm());
 		BaseMod.addCard(new OnFire());
 		BaseMod.addCard(new AlchemyExpert());
-		BaseMod.addCard(new AncientPoison());
 		BaseMod.addCard(new VigorousBody());
 		BaseMod.addCard(new Riches());
 		BaseMod.addCard(new Refine());
@@ -303,6 +294,11 @@ PostBattleSubscriber, OnStartBattleSubscriber {
 
 		// Deprecated
 		BaseMod.addCard(new EndlessFear());
+		BaseMod.addCard(new AncientPoison());
+		BaseMod.addCard(new NoxiousWave());
+		BaseMod.addCard(new ToxicChains());
+		BaseMod.addCard(new ViralStrike());
+		BaseMod.addCard(new HowToTalkToSpiders());
 
 		// Debug
 		BaseMod.addCard(new AvailablePotionUpgrade());
@@ -315,7 +311,6 @@ PostBattleSubscriber, OnStartBattleSubscriber {
 		BaseMod.addPower(Accumulate.class, Accumulate.POWER_ID);
 		BaseMod.addPower(Airborne.class, Airborne.POWER_ID);
 		BaseMod.addPower(AlchemyExpertPower.class, AlchemyExpertPower.POWER_ID);
-		BaseMod.addPower(AncientPoisonPower.class, AncientPoisonPower.POWER_ID);
 		BaseMod.addPower(BookwormPower.class, BookwormPower.POWER_ID);
 		BaseMod.addPower(Brew.class, Brew.POWER_ID);
 		BaseMod.addPower(Brewing.class, Brewing.POWER_ID);
@@ -332,10 +327,11 @@ PostBattleSubscriber, OnStartBattleSubscriber {
 		BaseMod.addPower(TasteThisOnePower.class, TasteThisOnePower.POWER_ID);
 		BaseMod.addPower(Thirsty.class, Thirsty.POWER_ID);
 		BaseMod.addPower(VigorousBodyPower.class, VigorousBodyPower.POWER_ID);
-		BaseMod.addPower(Virus.class, Virus.POWER_ID);
 
 		// Deprecated
 		BaseMod.addPower(EndlessFearPower.class, EndlessFearPower.POWER_ID);
+		BaseMod.addPower(Virus.class, Virus.POWER_ID);
+		BaseMod.addPower(AncientPoisonPower.class, AncientPoisonPower.POWER_ID);
 
 	}
 
@@ -369,17 +365,6 @@ PostBattleSubscriber, OnStartBattleSubscriber {
 
 		// Deprecated
 		BaseMod.addRelicToCustomPool(new ByrdCarpet(), SageColorEnum.THE_SAGE);
-
-		// Add Silent's poison relics
-		SneckoSkull sneckoSkull = new SneckoSkull();
-		BaseMod.addRelicToCustomPool(sneckoSkull, SageColorEnum.THE_SAGE);
-		RelicLibrary.commonList.remove(sneckoSkull);
-		TheSpecimen theSpecimen = new TheSpecimen();
-		BaseMod.addRelicToCustomPool(theSpecimen, SageColorEnum.THE_SAGE);
-		RelicLibrary.rareList.remove(theSpecimen);
-		TwistedFunnel twistedFunnel = new TwistedFunnel();
-		BaseMod.addRelicToCustomPool(twistedFunnel, SageColorEnum.THE_SAGE);
-		RelicLibrary.shopList.remove(twistedFunnel);
 	}
 
 	private void maybeLoadLanguage() {

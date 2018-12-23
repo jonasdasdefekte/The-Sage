@@ -8,13 +8,13 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 import com.megacrit.cardcrawl.powers.AbstractPower.PowerType;
 import com.megacrit.cardcrawl.powers.PoisonPower;
-
 import javassist.CannotCompileException;
 import javassist.expr.ExprEditor;
 import javassist.expr.FieldAccess;
 import javassist.expr.MethodCall;
-import sagemod.powers.AncientPoisonPower;
+import sagemod.powers.deprecated.AncientPoisonPower;
 
+@Deprecated
 public class PatchesForAncientPoison {
 	@SpirePatch(clz = ApplyPowerAction.class, method = "update")
 	public static class ApplyPowerActionPatch {
