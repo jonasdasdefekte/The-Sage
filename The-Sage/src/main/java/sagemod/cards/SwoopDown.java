@@ -7,7 +7,7 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import sagemod.actions.ReduceFlightBlockableByArtifactAction;
+import sagemod.actions.ReduceFlightBlockableAction;
 import sagemod.powers.SageFlight;
 
 public class SwoopDown extends AbstractSageCard {
@@ -79,7 +79,7 @@ public class SwoopDown extends AbstractSageCard {
 			attack(m, AttackEffect.SLASH_VERTICAL);
 		}
 		if (!upgraded) {
-			AbstractDungeon.actionManager.addToBottom(new ReduceFlightBlockableByArtifactAction(magicNumber, p));
+			AbstractDungeon.actionManager.addToBottom(new ReduceFlightBlockableAction(magicNumber, p));
 		}
 		rawDescription = getLoadedDescription();
 		initializeDescription();

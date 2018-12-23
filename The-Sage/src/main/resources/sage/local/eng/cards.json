@@ -76,7 +76,7 @@
   },
   "Catch_Me_If_You_Can": {
     "NAME": "Catch Me If You Can",
-    "DESCRIPTION": "Until your next turn, you don't lose Flight for the next !M! times you take attack damage."
+    "DESCRIPTION": "Air. Prevent the next !M! times you would lose Flight until the start of your next turn."
   },
   "Crank": {
     "NAME": "Crank",

@@ -19,6 +19,7 @@ public class Airborne extends AbstractSagePower {
 		super(POWER_ID, NAME, owner, amount);
 		updateDescription();
 		type = AbstractPower.PowerType.BUFF;
+		priority = 99;
 	}
 
 	@Override
@@ -30,12 +31,17 @@ public class Airborne extends AbstractSagePower {
 	// Actual implementation is in SageFlight
 	@Override
 	public void onSpecificTrigger() {
+		remove(1);
+	}
+
+	public void remove(int i) {
 		CardCrawlGame.sound.play("NULLIFY_SFX");
 		flashWithoutSound();
 		if (amount <= 0) {
 			AbstractDungeon.actionManager.addToTop(new RemoveSpecificPowerAction(owner, owner, POWER_ID));
 		} else {
-			AbstractDungeon.actionManager.addToTop(new ReducePowerAction(owner, owner, POWER_ID, 1));
+			AbstractDungeon.actionManager
+					.addToTop(new ReducePowerAction(owner, owner, POWER_ID, i));
 		}
 	}
 

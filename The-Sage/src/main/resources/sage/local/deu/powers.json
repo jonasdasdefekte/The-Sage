@@ -10,9 +10,9 @@
   "Airborne": {
     "NAME": "Fang mich doch",
     "DESCRIPTIONS": [
-      "Bis zu deinem nächsten Zug verlierst du keinen Flug bei den nächsten #b",
-      " Mal #yAngriffsschaden.",
-      "Bis zu deinem nächsten Zug verlierst du keinen Flug beim nächsten #yAngriffsschaden."
+      "Verhindert die nächsten #b ",
+      " Male bei denen du Flug verlieren würdest bis zu deinem nächsten Zug.",
+      "Verhindert das nächste Mal bei dem du Flug verlieren würdest bis zu deinem nächsten Zug."
     ]
   },
   "Alchemy_Expert": {

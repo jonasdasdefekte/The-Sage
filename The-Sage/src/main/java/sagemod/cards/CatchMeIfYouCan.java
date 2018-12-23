@@ -5,7 +5,6 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-
 import sagemod.powers.Airborne;
 
 public class CatchMeIfYouCan extends AbstractSageCard {
@@ -42,7 +41,14 @@ public class CatchMeIfYouCan extends AbstractSageCard {
 
 	@Override
 	public void use(AbstractPlayer p, AbstractMonster m) {
-		applyPowerToSelf(new Airborne(p, magicNumber));
+		if (isFlying()) {
+			applyPowerToSelf(new Airborne(p, magicNumber));
+		}
+	}
+
+	@Override
+	public boolean canUse(AbstractPlayer p, AbstractMonster m) {
+		return canOnlyUseWhileFlying(p, m);
 	}
 
 	@Override

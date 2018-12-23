@@ -76,7 +76,7 @@
   },
   "Catch_Me_If_You_Can": {
     "NAME": "Fang mich doch",
-    "DESCRIPTION": "Bis zu deinem nächsten Zug verlierst du !M! Mal keinen Flug, wenn du Angriffsschaden nimmst."
+    "DESCRIPTION": "Verhindert die nächsten !M! Male bei denen du Flug verlieren würdest bis zu deinem nächsten Zug."
   },
   "Crank": {
     "NAME": "Am Rad drehen",

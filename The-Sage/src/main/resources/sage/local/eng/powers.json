@@ -10,9 +10,9 @@
   "Airborne": {
     "NAME": "Airborne",
     "DESCRIPTIONS": [
-      "Until your next turn, you don't lose Flight for the next #b",
-      " times you take #yattack damage.",
-      "Until your next turn, you don't lose Flight for the next time you take #yattack damage."
+      "Prevent the next #b",
+      " times you would lose Flight until the start of your next turn.",
+      "Prevent the next time you would lose Flight until the start of your next turn."
     ]
   },
   "Alchemy_Expert": {

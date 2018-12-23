@@ -5,7 +5,7 @@ import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.PowerStrings;
-import sagemod.actions.ReduceFlightBlockableByArtifactAction;
+import sagemod.actions.ReduceFlightBlockableAction;
 
 public class Accumulate extends AbstractSagePower {
 
@@ -67,7 +67,7 @@ public class Accumulate extends AbstractSagePower {
 		AbstractDungeon.actionManager.addToBottom(new GainEnergyAction(amount));
 		if (owner.hasPower(SageFlight.POWER_ID)) {
 			AbstractDungeon.actionManager.addToBottom(
-					new ReduceFlightBlockableByArtifactAction(flightLoss, AbstractDungeon.player));
+					new ReduceFlightBlockableAction(flightLoss, AbstractDungeon.player));
 		}
 		flash();
 	}

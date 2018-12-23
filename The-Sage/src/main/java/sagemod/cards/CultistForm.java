@@ -7,7 +7,7 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import basemod.helpers.BaseModCardTags;
-import sagemod.actions.ReduceFlightBlockableByArtifactAction;
+import sagemod.actions.ReduceFlightBlockableAction;
 import sagemod.powers.Disoriented;
 
 public class CultistForm extends AbstractSageCard {
@@ -50,7 +50,7 @@ public class CultistForm extends AbstractSageCard {
 	@Override
 	public void use(AbstractPlayer p, AbstractMonster m) {
 		if (isFlying()) {
-			AbstractDungeon.actionManager.addToBottom(new ReduceFlightBlockableByArtifactAction(misc, p));
+			AbstractDungeon.actionManager.addToBottom(new ReduceFlightBlockableAction(misc, p));
 		}
 
 		for (int i = 0; i < magicNumber; i++) {

@@ -7,14 +7,14 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.powers.ArtifactPower;
-
+import sagemod.powers.Airborne;
 import sagemod.powers.SageFlight;
 
-public class ReduceFlightBlockableByArtifactAction extends AbstractGameAction {
+public class ReduceFlightBlockableAction extends AbstractGameAction {
 
 	private int amount;
 
-	public ReduceFlightBlockableByArtifactAction(int amount, AbstractPlayer p) {
+	public ReduceFlightBlockableAction(int amount, AbstractPlayer p) {
 		this.amount = amount;
 		target = p;
 		duration = Settings.ACTION_DUR_XFAST;
@@ -23,13 +23,36 @@ public class ReduceFlightBlockableByArtifactAction extends AbstractGameAction {
 
 	@Override
 	public void update() {
+		if (!target.hasPower(SageFlight.POWER_ID)) {
+			isDone = true;
+			return;
+		}
+		if (target.hasPower(Airborne.POWER_ID)) {
+			int tempAmount = amount;
+			Airborne power = (Airborne) target.getPower(Airborne.POWER_ID);
+			tempAmount -= power.amount;
+			if (tempAmount > 0) {
+				if (!target.hasPower(ArtifactPower.POWER_ID)) {
+					amount = tempAmount;
+					power.remove(power.amount);
+				}
+			} else if (tempAmount < 0) {
+				power.remove(amount);
+				isDone = true;
+				return;
+			} else {
+				power.remove(power.amount);
+				isDone = true;
+				return;
+			}
+		}
 		if (target.hasPower(ArtifactPower.POWER_ID)) {
 			CardCrawlGame.sound.play("NULLIFY_SFX");
 			target.getPower(ArtifactPower.POWER_ID).flashWithoutSound();
 			target.getPower(ArtifactPower.POWER_ID).onSpecificTrigger();
 		} else {
-			AbstractDungeon.actionManager
-					.addToBottom(new ReducePowerAction(target, target, SageFlight.POWER_ID, amount));
+			AbstractDungeon.actionManager.addToBottom(
+					new ReducePowerAction(target, target, SageFlight.POWER_ID, amount));
 		}
 		isDone = true;
 	}

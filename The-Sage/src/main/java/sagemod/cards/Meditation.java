@@ -1,13 +1,12 @@
 package sagemod.cards;
 
-import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-
+import sagemod.actions.ReduceFlightBlockableAction;
 import sagemod.powers.SageFlight;
 
 public class Meditation extends AbstractSageCard {
@@ -46,7 +45,7 @@ public class Meditation extends AbstractSageCard {
 	@Override
 	public void use(AbstractPlayer p, AbstractMonster m) {
 		if (p.hasPower(SageFlight.POWER_ID)) {
-			AbstractDungeon.actionManager.addToBottom(new RemoveSpecificPowerAction(p, p, SageFlight.POWER_ID));
+			AbstractDungeon.actionManager.addToBottom(new ReduceFlightBlockableAction(999, p));
 		}
 		draw(magicNumber);
 	}

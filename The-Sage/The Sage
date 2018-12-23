@@ -61,9 +61,9 @@ STSLIB:	How To Poke At Slimes
 STSLIB:	How To Befriend A Turtle
 		Skill, X Energy:
 		Gain X (+3) Temporary HP. Refund all.
-TODO:	Catch me if you can
+	Catch me if you can
 		Skill, 0 Energy
-		Air. Prevent the next 2 (4) times you would lose Flight until the enemy's turn. // (Should also work on Flight loss in your own turn. "Lose 2 Flight" will lose 2 stacks of Airborne instead and "Lose all Flight" will cancel Airborne and Flight completely. Artifact no longer negates Flight loss.)
+		Air. Prevent the next 2 (4) times you would lose Flight until the start of your next turn. // (Should also work on Flight loss in your own turn. "Lose 2 Flight" will lose 2 stacks of Airborne instead and "Lose all Flight" will cancel Airborne and Flight completely. Artifact no longer negates Flight loss.)
 DEPRECATED:	How To Talk To Spiders
 		Skill, X Energy: 
 		Apply X poison. Brew a Poison potion(+) in 4 -X turns.
@@ -225,7 +225,7 @@ STSLIB:	Read the riot act
 STSLIB:	Blurry
 		Skill, 1 Energy
 		Gain 4 (6) Temporary HP. Gain 2 (3) Temporary HP per Frail you have. Exhaust.
-NEW:	Refine
+NEW:	RefinAirbornee
 		Skill, 1 Energy
 		Upgrade a random unupgraded potion (all unupgraded potions) you are holding. // Upgrading a potion doubles its effect/ magic number.
 	Alchemy Expert
