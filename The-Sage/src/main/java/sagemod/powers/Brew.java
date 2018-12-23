@@ -223,7 +223,7 @@ public class Brew extends AbstractSagePower {
 		AbstractDungeon.actionManager.addToBottom(new RemoveSpecificPowerAction(power.owner, power.owner, power));
 	}
 
-	static class Potion implements Comparable<Potion> {
+	public static class Potion implements Comparable<Potion> {
 
 		int turns;
 		AbstractPotion potion;

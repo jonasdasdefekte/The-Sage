@@ -1,9 +1,11 @@
-package sagemod.powers;
+package sagemod.powers.deprecated;
 
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.PowerStrings;
+import sagemod.powers.AbstractSagePower;
 
+@Deprecated
 public class EndlessFearPower extends AbstractSagePower {
 
 	public static final String POWER_ID = "Endless_Fear";

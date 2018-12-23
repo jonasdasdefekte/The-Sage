@@ -1,5 +1,7 @@
 package sagemod.listeners;
 
+import java.util.ArrayList;
+import java.util.List;
 import com.megacrit.cardcrawl.actions.AbstractGameAction.AttackEffect;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
@@ -8,6 +10,7 @@ import com.megacrit.cardcrawl.actions.common.ReducePowerAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.cards.DamageInfo.DamageType;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
+import com.megacrit.cardcrawl.helpers.PotionHelper;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.potions.AbstractPotion;
 import com.megacrit.cardcrawl.potions.ExplosivePotion;
@@ -19,14 +22,19 @@ import basemod.ReflectionHacks;
 import basemod.interfaces.PostPotionUseSubscriber;
 import basemod.interfaces.PrePotionUseSubscriber;
 import sagemod.actions.ExecuteLaterAction;
+import sagemod.potions.UpgradedPotion;
 import sagemod.powers.AlchemyExpertPower;
-import sagemod.powers.EndlessFearPower;
+import sagemod.powers.Brew;
+import sagemod.powers.Brew.Potion;
 import sagemod.powers.ExtraPortionPower;
 import sagemod.powers.PotionTrancePower;
+import sagemod.powers.RichesPower;
 import sagemod.powers.TasteThisOnePower;
 import sagemod.powers.Thirsty;
+import sagemod.powers.deprecated.EndlessFearPower;
 import sagemod.relics.Blowpipe;
 
+@SuppressWarnings("deprecation")
 public class PotionListener implements PrePotionUseSubscriber, PostPotionUseSubscriber {
 
 	private AbstractMonster getHoveredMonster() {
@@ -66,6 +74,7 @@ public class PotionListener implements PrePotionUseSubscriber, PostPotionUseSubs
 		tasteThisOne(p);
 		potionTrance(p);
 		endlessFear(p);
+		riches(p);
 	}
 
 	private void usePotion(AbstractPotion p, AbstractMonster m) {
@@ -177,6 +186,25 @@ public class PotionListener implements PrePotionUseSubscriber, PostPotionUseSubs
 				AbstractDungeon.actionManager.addToBottom(new ExecuteLaterAction(() -> {
 					AbstractDungeon.player.obtainPotion(new FearPotion());
 					AbstractDungeon.player.getPower(EndlessFearPower.POWER_ID).flash();
+				}));
+			}
+		}
+
+	}
+
+	private void riches(AbstractPotion p) {
+		if (AbstractDungeon.player.hasPower(RichesPower.POWER_ID)) {
+			if (p instanceof UpgradedPotion) {
+				AbstractDungeon.actionManager.addToBottom(new ExecuteLaterAction(() -> {
+					List<Potion> list = new ArrayList<>();
+					int amount = AbstractDungeon.player.getPower(RichesPower.POWER_ID).amount;
+					for (int i = 0; i < amount; i++) {
+						list.add(new Potion(0, PotionHelper.getRandomPotion(RichesPower.EXCLUDED)));
+					}
+					if (!list.isEmpty()) {
+						Brew.obtain(list);
+						AbstractDungeon.player.getPower(RichesPower.POWER_ID).flash();
+					}
 				}));
 			}
 		}
