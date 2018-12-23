@@ -9,6 +9,7 @@ import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.helpers.PowerTip;
 import com.megacrit.cardcrawl.potions.AbstractPotion;
 import com.megacrit.cardcrawl.potions.AttackPotion;
+import com.megacrit.cardcrawl.potions.BloodPotion;
 import com.megacrit.cardcrawl.potions.EntropicBrew;
 import com.megacrit.cardcrawl.potions.FairyPotion;
 import com.megacrit.cardcrawl.potions.FirePotion;
@@ -91,6 +92,7 @@ public class UpgradedPotion extends CustomPotion {
 		DOUBLE_USE_WHITELIST.add(PowerPotion.POTION_ID);
 		DOUBLE_USE_WHITELIST.add(SkillPotion.POTION_ID);
 		DOUBLE_USE_WHITELIST.add(GamblersBrew.POTION_ID);
+		DOUBLE_USE_WHITELIST.add(BloodPotion.POTION_ID);
 		DOUBLE_USE_WHITELIST.add("Flashbang");
 		DOUBLE_USE_WHITELIST.add("infinitespire:BlackPotion");
 		DOUBLE_USE_WHITELIST.add("WardPotion");
