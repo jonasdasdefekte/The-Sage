@@ -225,7 +225,7 @@ STSLIB:	Read the riot act
 STSLIB:	Blurry
 		Skill, 1 Energy
 		Gain 4 (6) Temporary HP. Gain 2 (3) Temporary HP per Frail you have. Exhaust.
-NEW:	Refine
+	Refine
 		Skill, 1 Energy
 		Upgrade a random unupgraded potion (all unupgraded potions) you are holding. // Upgrading a potion doubles its effect/ magic number.
 	Alchemy Expert

@@ -252,6 +252,11 @@
     "DESCRIPTION": "Braue einen zufälligen Trank in !BRW! Zügen. NL Erschöpft.",
     "UPGRADE_DESCRIPTION": "Braue einen zufälligen Trank in !BRW! Zügen."
   },
+  "Refine": {
+    "NAME": "Verfeinern",
+    "DESCRIPTION": "Verbessere einen zufälligen deiner Tränke, die du trägst.",
+    "UPGRADE_DESCRIPTION": "Verbessere alle Tränke, die du trägst."
+  },
   "Riches": {
     "NAME": "Reichtümer!!!",
     "DESCRIPTION": "Immer wenn du einen verbesserten Trank benutzt, erhälst du einen zufälligen Trank, der nicht verbessert ist."

@@ -252,6 +252,11 @@
     "DESCRIPTION": "Brew a random Potion in !BRW! turns. NL Exhaust.",
     "UPGRADE_DESCRIPTION": "Brew a random Potion in !BRW! turns."
   },
+  "Refine": {
+    "NAME": "Refine",
+    "DESCRIPTION": "Upgrade a random unupgraded potion you are holding.",
+    "UPGRADE_DESCRIPTION": "Upgrade all unupgraded potions you are holding."
+  },
   "Riches": {
     "NAME": "Riches!!!",
     "DESCRIPTION": "Whenever you use an upgraded potion, obtain a random unupgraded potion."
