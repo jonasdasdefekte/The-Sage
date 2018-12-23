@@ -38,7 +38,7 @@
   },
   "Anti_Ancient_Attack": {
     "NAME": "Anti-Ahnen-Angriff",
-    "DESCRIPTION": "Verdoppele das Artefakt des Gegners. NL Dann füge pro Artefakt auf dem Feld !D! Schaden zu."
+    "DESCRIPTION": "Verdoppele das Artefakt des Gegners. NL Dann füge !D! Schaden pro Artefakt auf dem ganzen Feld zu."
   },
   "Armor_Brew": {
     "NAME": "Rüstungstrank",
