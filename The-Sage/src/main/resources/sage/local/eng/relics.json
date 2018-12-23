@@ -43,6 +43,14 @@
       "."
     ]
   },
+  "Cabbage_Head": {
+    "NAME": "Cabbage Head",
+    "FLAVOR": "Stinks.",
+    "DESCRIPTIONS": [
+      "Gain #b",
+      " #yDexterity while you are Frail."
+    ]
+  },
   "Cookbook": {
     "NAME": "Cookbook",
     "FLAVOR": "Reading this makes you hungry. Although probably you better should abstain from some of these dishes.",

@@ -43,6 +43,14 @@
       "."
     ]
   },
+  "Cabbage_Head": {
+    "NAME": "Kohlkopf",
+    "FLAVOR": "Stinkt.",
+    "DESCRIPTIONS": [
+      "Erhalte #b",
+      " #yGeschicklichkeit solange du Gebrechlich bist."
+    ]
+  },
   "Cookbook": {
     "NAME": "Kochbuch",
     "FLAVOR": "Diese Lektüre macht dich hungrig. Allerdings solltest du manche dieser Gerichte wohl besser nicht essen.",

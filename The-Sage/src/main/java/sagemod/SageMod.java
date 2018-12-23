@@ -144,6 +144,7 @@ import sagemod.relics.AncientMagnet;
 import sagemod.relics.BalloonAnimal;
 import sagemod.relics.Blowpipe;
 import sagemod.relics.ByrdFeather;
+import sagemod.relics.CabbageHead;
 import sagemod.relics.Cookbook;
 import sagemod.relics.FlyingCarpet;
 import sagemod.relics.RedBeastStatue;
@@ -321,6 +322,7 @@ PostBattleSubscriber, OnStartBattleSubscriber {
 		BaseMod.addRelicToCustomPool(new FlyingCarpet(), SageColorEnum.THE_SAGE);
 
 		// Common
+		BaseMod.addRelicToCustomPool(new CabbageHead(), SageColorEnum.THE_SAGE);
 
 		// Uncommon
 		BaseMod.addRelicToCustomPool(new Cookbook(), SageColorEnum.THE_SAGE);
