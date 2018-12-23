@@ -248,6 +248,10 @@
     "DESCRIPTION": "Braue einen zufälligen Trank in !BRW! Zügen. NL Erschöpft.",
     "UPGRADE_DESCRIPTION": "Braue einen zufälligen Trank in !BRW! Zügen."
   },
+  "Riches": {
+    "NAME": "Reichtümer!!!",
+    "DESCRIPTION": "Immer wenn du einen verbesserten Trank benutzt, erhälst du einen zufälligen Trank, der nicht verbessert ist."
+  },
   "Salty_Strike": {
     "NAME": "Salty Strike",
     "DESCRIPTION": "Füge !D! Schaden zu. NL Wende !M! Durstig an."

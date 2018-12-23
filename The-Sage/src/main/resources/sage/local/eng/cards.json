@@ -248,6 +248,10 @@
     "DESCRIPTION": "Brew a random Potion in !BRW! turns. NL Exhaust.",
     "UPGRADE_DESCRIPTION": "Brew a random Potion in !BRW! turns."
   },
+  "Riches": {
+    "NAME": "Riches!!!",
+    "DESCRIPTION": "Whenever you use an upgraded potion, obtain a random unupgraded potion."
+  },
   "Salty_Strike": {
     "NAME": "Salty Strike",
     "DESCRIPTION": "Deal !D! damage. NL Apply !M! Thirsty."

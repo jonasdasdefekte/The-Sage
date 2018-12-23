@@ -123,6 +123,14 @@
       " card whenever you use a #yPotion this turn."
     ]
   },
+  "Riches": {
+    "NAME": "Riches!!!",
+    "DESCRIPTIONS": [
+      "Whenever you use an upgraded potion, obtain a random unupgraded potion.",
+      "Whenever you use an upgraded potion, obtain #b",
+      " random unupgraded potions."
+    ]
+  },
   "Sage_Flight": {
     "NAME": "Flight",
     "DESCRIPTIONS": [

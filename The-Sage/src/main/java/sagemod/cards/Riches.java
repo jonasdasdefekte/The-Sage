@@ -5,6 +5,7 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import sagemod.powers.RichesPower;
 
 public class Riches extends AbstractSageCard {
 
@@ -40,6 +41,7 @@ public class Riches extends AbstractSageCard {
 
 	@Override
 	public void use(AbstractPlayer p, AbstractMonster m) {
+		applyPowerToSelf(new RichesPower(p, magicNumber));
 	}
 
 	@Override

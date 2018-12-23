@@ -21,7 +21,7 @@ public class RichesPower extends AbstractSagePower {
 
 	// actual implementation in PotionListener
 	public RichesPower(AbstractCreature owner, int amount) {
-		super(POWER_ID, NAME, owner, -1);
+		super(POWER_ID, NAME, owner, amount);
 		updateDescription();
 	}
 

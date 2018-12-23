@@ -123,6 +123,14 @@
       " Karte, wenn du in diesem Zug einen #yTrank benutzt."
     ]
   },
+  "Riches": {
+    "NAME": "Reichtümer!!!",
+    "DESCRIPTIONS": [
+      "Immer wenn du einen verbesserten Trank benutzt, erhälst du einen zufälligen Trank, der nicht verbessert ist.",
+      "Immer wenn du einen verbesserten Trank benutzt, erhälst du #b",
+      "  zufällige Tränke, die nicht verbessert sind."
+    ]
+  },
   "Sage_Flight": {
     "NAME": "Flug",
     "DESCRIPTIONS": [
