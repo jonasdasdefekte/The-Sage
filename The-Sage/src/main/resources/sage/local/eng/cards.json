@@ -190,6 +190,15 @@
     "DESCRIPTION": "Brew an NL Explosive Potion NL in !BRW! -X turns.",
     "UPGRADE_DESCRIPTION": "Brew an NL upgraded Explosive Potion NL in !BRW! -X turns."
   },
+  "Lecture": {
+    "NAME": "Lecture",
+    "DESCRIPTION": "Deal !D! damage per X cost card played this combat.",
+    "EXTENDED_DESCRIPTION": [
+      " NL (Attacks ",
+      " times.)",
+       " NL (Attacks once.)"
+    ]
+  },
   "Light_Weighted": {
     "NAME": "Light-Weighted",
     "DESCRIPTION": "Lose all Frail. NL Gain that much Flight. NL Exhaust.",

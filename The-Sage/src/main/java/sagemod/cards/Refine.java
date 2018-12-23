@@ -47,7 +47,7 @@ public class Refine extends AbstractSageCard {
 			for (int i = 0; i < p.potionSlots; i++) {
 				AbstractPotion po = p.potions.get(i);
 				if (canUpgrade(po)) {
-
+					p.obtainPotion(i, UpgradedPotion.getUpgradeIfAvailable(po));
 				}
 			}
 		} else {

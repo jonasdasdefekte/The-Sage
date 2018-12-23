@@ -190,6 +190,15 @@
     "DESCRIPTION": "Braue einen NL Explosivtrank NL in !BRW! -X Zügen.",
     "UPGRADE_DESCRIPTION": "Braue einen NL verbesserten Explosivtrank NL in !BRW! -X Zügen."
   },
+  "Lecture": {
+    "NAME": "Vorlesung",
+    "DESCRIPTION": "Füge !D! Schaden zu pro X-Karte, die du diesen Kampf gespielt hast.",
+    "EXTENDED_DESCRIPTION": [
+      " NL (Greift ",
+      " mal an.)",
+      " NL (Greift einmal an.)"
+    ]
+  },
   "Light_Weighted": {
     "NAME": "Leichtgewicht",
     "DESCRIPTION": "Verliere alles Gebrechlich. NL Erhalte ebensoviel Flug. NL Erschöpft.",

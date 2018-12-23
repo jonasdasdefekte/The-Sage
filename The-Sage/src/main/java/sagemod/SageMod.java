@@ -83,6 +83,7 @@ import sagemod.cards.HowToPokeAtSlimes;
 import sagemod.cards.HowToTalkToSpiders;
 import sagemod.cards.HowToWakeLyons;
 import sagemod.cards.HowToWarmElephants;
+import sagemod.cards.Lecture;
 import sagemod.cards.LightWeighted;
 import sagemod.cards.Lunchtime;
 import sagemod.cards.MechanicsBreak;
@@ -118,6 +119,7 @@ import sagemod.character.SageCharEnum;
 import sagemod.character.SageColorEnum;
 import sagemod.character.TheSage;
 import sagemod.events.CarpetTrader;
+import sagemod.listeners.LectureListener;
 import sagemod.listeners.PotionListener;
 import sagemod.listeners.VirusListener;
 import sagemod.potions.FataMorgana;
@@ -193,6 +195,7 @@ PostBattleSubscriber, OnStartBattleSubscriber {
 		BaseMod.subscribe(this);
 		BaseMod.subscribe(new PotionListener());
 		BaseMod.subscribe(new VirusListener());
+		BaseMod.subscribe(new LectureListener());
 	}
 
 	private void addColor() {
@@ -290,6 +293,7 @@ PostBattleSubscriber, OnStartBattleSubscriber {
 		BaseMod.addCard(new VigorousBody());
 		BaseMod.addCard(new Riches());
 		BaseMod.addCard(new Refine());
+		BaseMod.addCard(new Lecture());
 
 		// Colorless
 		BaseMod.addCard(new PerplexingGlare());

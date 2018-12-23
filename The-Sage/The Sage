@@ -198,7 +198,7 @@ NEW:	Rickety Defense
 	Anti Ancient Attack
 		Attack, 3 Energy: 
 		Double the enemy's Artifact. Then deal 10 (15) damage per Artifact on the field. 
-NEW:	Lecture
+	Lecture
 		Attack, 1 Energy
 		Deal 4 (6) damage per X cost card played this combat.
 STSLIB:	Prey
