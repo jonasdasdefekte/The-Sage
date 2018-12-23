@@ -64,7 +64,8 @@
     "FLAVOR": "You have never seen such a creature before, but this statue reminds you of something.",
     "DESCRIPTIONS": [
       "#yPotions are #b",
-      "% more likely to be uncommon or rare."
+      "% more likely to be uncommon or rare and #b",
+      "% more likely to upgraded."
     ]
   },
   "Thunder_Carpet": {

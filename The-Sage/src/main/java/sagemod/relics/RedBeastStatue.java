@@ -14,14 +14,15 @@ public class RedBeastStatue extends AbstractSageRelic {
 	private static final int POTION_RARE_CHANCE = 100
 			- (PotionHelper.POTION_COMMON_CHANCE + PotionHelper.POTION_UNCOMMON_CHANCE);
 
-	// actual Implementation in PatchForRedBeastStatue
+	// actual Implementation in PatchForRedBeastStatue and PatchesForUpgradedPotion
 	public RedBeastStatue() {
 		super(ID, TIER, SOUND);
 	}
 
 	@Override
 	public String getUpdatedDescription() {
-		return DESCRIPTIONS[0] + PERCENTAGE_INCREASE + DESCRIPTIONS[1];
+		return DESCRIPTIONS[0] + PERCENTAGE_INCREASE + DESCRIPTIONS[1] + PERCENTAGE_INCREASE
+				+ DESCRIPTIONS[2];
 	}
 
 	@Override

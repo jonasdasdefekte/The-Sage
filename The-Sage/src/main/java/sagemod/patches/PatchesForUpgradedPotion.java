@@ -16,6 +16,7 @@ import javassist.expr.ExprEditor;
 import javassist.expr.FieldAccess;
 import javassist.expr.MethodCall;
 import sagemod.potions.UpgradedPotion;
+import sagemod.relics.RedBeastStatue;
 
 
 public class PatchesForUpgradedPotion {
@@ -53,6 +54,10 @@ public class PatchesForUpgradedPotion {
 				return null;
 			}
 			float chance = Settings.isDebug ? UpgradedPotion.DEBUG_CHANCE : UpgradedPotion.CHANCE;
+			if (AbstractDungeon.player != null
+					&& AbstractDungeon.player.hasRelic(RedBeastStatue.ID)) {
+				chance *= (1 + RedBeastStatue.toPercentage(RedBeastStatue.PERCENTAGE_INCREASE));
+			}
 			if (AbstractDungeon.potionRng.randomBoolean(chance)) {
 				return UpgradedPotion.getUpgradeIfAvailable(potion);
 			} else {

@@ -64,7 +64,8 @@
     "FLAVOR": "So eine Kreatur hast du noch nie zu Gesicht bekommen, aber diese Statue erinnert dich an etwas.",
     "DESCRIPTIONS": [
       "Zufällige #yTränke sind #b",
-      "% wahrscheinlicher ungewöhnlich oder selten."
+      "% wahrscheinlicher ungewöhnlich oder selten und #y",
+      "% wahrscheinlicher verbessert."
     ]
   },
   "Thunder_Carpet": {
