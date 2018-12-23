@@ -9,12 +9,12 @@ Jump to: **[Content](#content) - [Gameplay](#gameplay) - [Our Plans](#our-plans-
 ## Content
 
 This mod for the brilliant game Slay the Spire is currently under development.  
-At the moment the Sage Mod introduces:
+At the moment, the Sage Mod introduces:
 
 | For all Runs      | For Sage Runs      |
 |:-----------------:|:------------------:|
-|                   | 64 Cards           |
-| 2 Relics          | 4 Relics           |
+| 1 Card            | 63 Cards           |
+| 5 Relics          | 7 Relics           |
 | 1 Potion          | 1 Potion           |
 | 1 Event           |                    |
 
