@@ -76,6 +76,14 @@
       "% more likely to upgraded."
     ]
   },
+  "sagemod:Toy_Ornithopter": {
+    "NAME": "",
+    "FLAVOR": "",
+    "DESCRIPTIONS": [
+      "Whenever you discard a potion, heal #b",
+      " HP."
+    ]
+  },
   "Thunder_Carpet": {
     "NAME": "Thunder Carpet",
     "FLAVOR": "An ancient carpet, woven by eery cultists and infused with strange magic.",

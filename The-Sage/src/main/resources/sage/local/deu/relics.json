@@ -76,6 +76,14 @@
       "% wahrscheinlicher verbessert."
     ]
   },
+  "sagemod:Toy_Ornithopter": {
+    "NAME": "",
+    "FLAVOR": "",
+    "DESCRIPTIONS": [
+      "Jedes Mal, wenn du einen Trank abwirfst, heilst du #b",
+      " TP."
+    ]
+  },
   "Thunder_Carpet": {
     "NAME": "Donnernder Teppich",
     "FLAVOR": "Ein uralter Teppich, von dunklen Kultisten gewoben und mit seltsamer Magie versetzt.",
