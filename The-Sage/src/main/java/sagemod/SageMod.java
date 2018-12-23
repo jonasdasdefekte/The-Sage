@@ -109,6 +109,7 @@ import sagemod.cards.ToxicChains;
 import sagemod.cards.TurnAround;
 import sagemod.cards.VigorousBody;
 import sagemod.cards.ViralStrike;
+import sagemod.cards.colorless.PerplexingGlare;
 import sagemod.cards.debug.AvailablePotionUpgrade;
 import sagemod.cards.debug.ForcePotionUpgrade;
 import sagemod.cards.deprecated.EndlessFear;
@@ -287,6 +288,9 @@ PostBattleSubscriber, OnStartBattleSubscriber {
 		BaseMod.addCard(new AncientPoison());
 		BaseMod.addCard(new VigorousBody());
 		BaseMod.addCard(new Riches());
+
+		// Colorless
+		BaseMod.addCard(new PerplexingGlare());
 
 		// Deprecated
 		BaseMod.addCard(new EndlessFear());

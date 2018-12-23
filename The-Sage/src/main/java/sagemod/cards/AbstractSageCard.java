@@ -51,9 +51,15 @@ public abstract class AbstractSageCard extends CustomCard {
 
 	public AbstractSageCard(String id, String name, int cost, String rawDescription, CardType type, CardRarity rarity,
 			CardTarget target) {
+		this(id, name, cost, rawDescription, type, rarity, target, SageColorEnum.THE_SAGE);
+	}
+
+	public AbstractSageCard(String id, String name, int cost, String rawDescription, CardType type,
+			CardRarity rarity,
+			CardTarget target, CardColor color) {
 		super(id, name, SageMod.getExistingOrPlaceholder(getPrefix(type), id, POSTFIX), cost,
 				rawDescription, type,
-				SageColorEnum.THE_SAGE, rarity, target);
+				color, rarity, target);
 	}
 
 	private static String getPrefix(CardType type) {

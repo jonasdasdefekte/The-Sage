@@ -226,6 +226,10 @@
     "DESCRIPTION": "Draw !M! card. NL Play it if it costs !MISC!.",
     "UPGRADE_DESCRIPTION": "Draw !M! card. NL Play it if it costs !MISC! or X."
   },
+  "Perplexing_Glare": {
+    "NAME": "Perplexing Glare",
+    "DESCRIPTION": "Apply !M! Disoriented. NL Exhaust."
+  },
   "Pincer_Attack": {
     "NAME": "Pincer Attack",
     "DESCRIPTION": "Deal !D! damage. NL Deal !D! damage per Artifact the enemy has."
