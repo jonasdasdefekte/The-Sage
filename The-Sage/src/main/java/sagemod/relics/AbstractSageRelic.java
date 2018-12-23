@@ -25,7 +25,12 @@ public class AbstractSageRelic extends CustomRelic {
 	}
 
 	protected void applyPowerToSelf(AbstractPower power) {
-		AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(player(), player(), power, power.amount));
+		applyPower(power, player());
+	}
+
+	protected void applyPower(AbstractPower power, AbstractCreature target) {
+		AbstractDungeon.actionManager
+		.addToBottom(new ApplyPowerAction(target, player(), power, power.amount));
 	}
 
 	protected AbstractPlayer player() {

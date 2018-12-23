@@ -146,6 +146,7 @@ import sagemod.relics.Blowpipe;
 import sagemod.relics.ByrdFeather;
 import sagemod.relics.CabbageHead;
 import sagemod.relics.Cookbook;
+import sagemod.relics.CreepyCarousel;
 import sagemod.relics.FalmelsAmulet;
 import sagemod.relics.FlyingCarpet;
 import sagemod.relics.RedBeastStatue;
@@ -333,6 +334,7 @@ PostBattleSubscriber, OnStartBattleSubscriber {
 
 		// Rare
 		BaseMod.addRelic(new Blowpipe(), RelicType.SHARED);
+		BaseMod.addRelic(new CreepyCarousel(), RelicType.SHARED);
 
 		// Boss
 		BaseMod.addRelicToCustomPool(new ThunderCarpet(), SageColorEnum.THE_SAGE);

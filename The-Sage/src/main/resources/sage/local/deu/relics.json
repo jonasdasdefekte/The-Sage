@@ -51,6 +51,15 @@
       " #yGeschicklichkeit solange du Gebrechlich bist."
     ]
   },
+  "Creepy_Carousel": {
+    "NAME": "Gruseliges Karussell",
+    "FLAVOR": "Gruselig...",
+    "DESCRIPTIONS": [
+      "Alle #b",
+      " Runden, wende #b",
+      " #yDesorientiert auf einen zufälligen Gegner an."
+    ]
+  },
   "Cookbook": {
     "NAME": "Kochbuch",
     "FLAVOR": "Diese Lektüre macht dich hungrig. Allerdings solltest du manche dieser Gerichte wohl besser nicht essen.",

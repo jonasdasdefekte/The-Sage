@@ -59,6 +59,15 @@
       " #yBrewing."
     ]
   },
+  "Creepy_Carousel": {
+    "NAME": "Creepy Carousel",
+    "FLAVOR": "Creepy...",
+    "DESCRIPTIONS": [
+      "Every #b",
+      " turns, apply #b",
+      " #yDisoriented to a random enemy."
+    ]
+  },
   "Falmels_Amulet": {
     "NAME": "Falmel's Amulet",
     "FLAVOR": "Falmel's Amulet",
