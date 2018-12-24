@@ -147,8 +147,8 @@
   "Taste_This_One": {
     "NAME": "Probier das mal",
     "DESCRIPTIONS": [
-      "Immer wenn du einen Trank benutzt, wende #b",
-      " Gift an einem zufälligen Gegner an."
+      "Immer wenn du einen Trank benutzt, füge einem zufälligen Gegner #b",
+      " Schaden zu."
     ]
   },
   "Thirsty": {

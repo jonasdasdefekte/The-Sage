@@ -147,8 +147,8 @@
   "Taste_This_One": {
     "NAME": "Taste This One",
     "DESCRIPTIONS": [
-      "Whenever you use a potion, apply #b",
-      " Poison to a random enemy."
+      "Whenever you use a potion, deal #b",
+      " damagr to a random enemy."
     ]
   },
   "Thirsty": {
