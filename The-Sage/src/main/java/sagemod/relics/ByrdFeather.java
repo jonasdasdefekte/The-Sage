@@ -3,6 +3,7 @@ package sagemod.relics;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
+import sagemod.actions.ExecuteLaterAction;
 import sagemod.powers.SageFlight;
 
 public class ByrdFeather extends AbstractSageRelic {
@@ -20,6 +21,10 @@ public class ByrdFeather extends AbstractSageRelic {
 
 	@Override
 	public void atTurnStart() {
+		AbstractDungeon.actionManager.addToBottom(new ExecuteLaterAction(this::flightRestore));
+	}
+
+	private void flightRestore() {
 		if (player().hasPower(SageFlight.POWER_ID)) {
 			SageFlight power = (SageFlight) player().getPower(SageFlight.POWER_ID);
 			if (power.amount == SET_TO_FLY_AMT_WHEN1 || power.amount == SET_TO_FLY_AMT_WHEN2) {
