@@ -105,6 +105,7 @@ import sagemod.cards.TurnAround;
 import sagemod.cards.VigorousBody;
 import sagemod.cards.colorless.PerplexingGlare;
 import sagemod.cards.debug.AvailablePotionUpgrade;
+import sagemod.cards.debug.CyclePotions;
 import sagemod.cards.debug.ForcePotionUpgrade;
 import sagemod.cards.deprecated.AncientPoison;
 import sagemod.cards.deprecated.EndlessFear;
@@ -303,6 +304,7 @@ PostBattleSubscriber, OnStartBattleSubscriber {
 		// Debug
 		BaseMod.addCard(new AvailablePotionUpgrade());
 		BaseMod.addCard(new ForcePotionUpgrade());
+		BaseMod.addCard(new CyclePotions());
 
 		registerPowers();
 	}
