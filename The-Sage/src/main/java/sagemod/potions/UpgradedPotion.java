@@ -87,18 +87,25 @@ public class UpgradedPotion extends CustomPotion {
 		BLACKLIST.add("conspire:TimeTravelPotion");
 		BLACKLIST.add("jedi:holywater");
 		BLACKLIST.add("HastePotion");
+		BLACKLIST.add("Gelsemium Tea");
 
 		DOUBLE_USE_WHITELIST.add(AttackPotion.POTION_ID);
 		DOUBLE_USE_WHITELIST.add(PowerPotion.POTION_ID);
 		DOUBLE_USE_WHITELIST.add(SkillPotion.POTION_ID);
 		DOUBLE_USE_WHITELIST.add(GamblersBrew.POTION_ID);
 		DOUBLE_USE_WHITELIST.add(BloodPotion.POTION_ID);
+		DOUBLE_USE_WHITELIST.add("blackbeard:" + BloodPotion.POTION_ID);
 		DOUBLE_USE_WHITELIST.add("Flashbang");
 		DOUBLE_USE_WHITELIST.add("infinitespire:BlackPotion");
 		DOUBLE_USE_WHITELIST.add("WardPotion");
+		DOUBLE_USE_WHITELIST.add("ShroomBrew");
+		DOUBLE_USE_WHITELIST.add("Firefly");
+		DOUBLE_USE_WHITELIST.add("Pckles");
+		DOUBLE_USE_WHITELIST.add("Turbid Wine");
 
 		DOUBLE_DESC_WHITELIST.addAll(DOUBLE_USE_WHITELIST);
 		DOUBLE_DESC_WHITELIST.add("conspire:EchoDraught");
+		DOUBLE_DESC_WHITELIST.add("construct:MegaPotion");
 
 		DOUBLE_USE_WHITELIST.add(FairyPotion.POTION_ID);
 	}
@@ -115,7 +122,8 @@ public class UpgradedPotion extends CustomPotion {
 	}
 
 	private int loadPotency() {
-		if (potion instanceof UpgradedPotion || DOUBLE_DESC_WHITELIST.contains(potion.ID)) {
+		if (potion instanceof UpgradedPotion || (DOUBLE_DESC_WHITELIST.contains(potion.ID)
+				&& DOUBLE_USE_WHITELIST.contains(potion.ID))) {
 			return potion.getPotency();
 		} else if (potion.ID.equals("Doom Potion")) {
 			return (int) (potion.getPotency() * 0.75f);
