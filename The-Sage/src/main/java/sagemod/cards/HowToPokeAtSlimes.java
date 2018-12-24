@@ -28,7 +28,7 @@ public class HowToPokeAtSlimes extends AbstractSageCard {
 		super(ID, NAME, COST, DESCRIPTION, TYPE, RARITY, TARGET);
 		baseDamage = ATTACK_DMG;
 		baseMagicNumber = magicNumber = FRAIL_GAIN;
-
+		isMultiDamage = true;
 	}
 
 	@Override

@@ -174,7 +174,7 @@
   },
   "How_To_Poke_At_Slimes": {
     "NAME": "How To Poke At Slimes",
-    "DESCRIPTION": "Deal 5 damage to ALL enemies. NL Gain !M! -X Frail. NL Gain X [E]."
+    "DESCRIPTION": "Deal !D! damage to ALL enemies. NL Gain !M! -X Frail. NL Gain X [E]."
   },
   "How_To_Talk_To_Spiders": {
     "NAME": "How To Talk To Spiders",
