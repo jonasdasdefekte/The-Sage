@@ -24,7 +24,7 @@ public class CreepyCarousel extends AbstractSageRelic {
 		counter--;
 		if (counter <= 0) {
 			flash();
-			AbstractMonster mo = AbstractDungeon.getCurrRoom().monsters.getRandomMonster();
+			AbstractMonster mo = AbstractDungeon.getCurrRoom().monsters.getRandomMonster(true);
 			appearAbove(mo);
 			applyPower(new Disoriented(mo, DISORIENTED_GAIN), mo);
 			counter = TURNS_NEEDED;
