@@ -16,7 +16,7 @@
   },
   "Accumulation": {
     "NAME": "Accumulation",
-    "DESCRIPTION": "Air. NL gain [E] and lose !M! Flight at the start of each turn."
+    "DESCRIPTION": "Air. NL Gain [E] and lose !M! Flight at the start of each turn."
   },
   "Alchemy_Expert": {
     "NAME": "Alchemy Expert",
@@ -232,8 +232,8 @@
   },
   "Perpetuum_Mobile": {
     "NAME": "Perpetuum Mobile",
-    "DESCRIPTION": "Draw !M! card. NL Play it if it costs !MISC!.",
-    "UPGRADE_DESCRIPTION": "Draw !M! card. NL Play it if it costs !MISC! or X."
+    "DESCRIPTION": "Draw !M! card. NL Play it for free if it costs !MISC!.",
+    "UPGRADE_DESCRIPTION": "Draw !M! card. NL Play it for free if it costs !MISC! or X."
   },
   "Perplexing_Glare": {
     "NAME": "Perplexing Glare",
@@ -288,7 +288,7 @@
   },
   "Step_Back": {
     "NAME": "Step Back",
-    "DESCRIPTION": "Gain !B! Block. If you are flying: Gain [E] [E] . NL Otherwise: NL Gain !M! Flight."
+    "DESCRIPTION": "Gain !B! Block. NL If you are flying: Gain [E] [E] . NL Otherwise: NL Gain !M! Flight."
   },
   "Strike_Sage": {
     "NAME": "Strike",

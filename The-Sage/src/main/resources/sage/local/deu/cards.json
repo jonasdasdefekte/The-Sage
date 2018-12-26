@@ -232,8 +232,8 @@
   },
   "Perpetuum_Mobile": {
     "NAME": "Perpetuum Mobile",
-    "DESCRIPTION": "Ziehe !M! Karte. NL Spiele sie, falls sie !MISC! kostet.",
-    "UPGRADE_DESCRIPTION": "Ziehe !M! Karte. NL Spiele sie, falls sie !MISC! oder X kostet."
+    "DESCRIPTION": "Ziehe !M! Karte. NL Spiele sie kostenlos, falls sie !MISC! kostet.",
+    "UPGRADE_DESCRIPTION": "Ziehe !M! Karte. NL Spiele sie kostenlos, falls sie !MISC! oder X kostet."
   },
   "Perplexing_Glare": {
     "NAME": "Starren",
@@ -288,7 +288,7 @@
   },
   "Step_Back": {
     "NAME": "Schritt zurück",
-    "DESCRIPTION": "Erhalte !B! Block. Falls du fliegst: Erhalte [E] [E] . NL Ansonsten: NL Erhalte !M! Flug."
+    "DESCRIPTION": "Erhalte !B! Block. NL Falls du fliegst: Erhalte [E] [E] . NL Ansonsten: NL Erhalte !M! Flug."
   },
   "Strike_Sage": {
     "NAME": "Schlag",

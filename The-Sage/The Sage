@@ -64,9 +64,6 @@ STSLIB:	How To Befriend A Turtle
 	Catch me if you can
 		Skill, 0 Energy
 		Air. Prevent the next 2 (4) times you would lose Flight until the start of your next turn. // (Should also work on Flight loss in your own turn. "Lose 2 Flight" will lose 2 stacks of Airborne instead and "Lose all Flight" will cancel Airborne and Flight completely. Artifact no longer negates Flight loss.)
-DEPRECATED:	How To Talk To Spiders
-		Skill, X Energy: 
-		Apply X poison. Brew a Poison potion(+) in 4 -X turns.
 	Step Back 
 		Skill, 2 Energy:
 		Gain 5 (8) Block. If you are flying, gain 2 Energy. Otherwise, gain 1 Flight.
@@ -105,18 +102,12 @@ DEPRECATED:	How To Talk To Spiders
 	Turn Around
 		Attack, 1 Energy: 
 		Gain 1 Frail. Deal 4 (6) damage per Frail you have. 
-DEPRECATED:	Viral Strike
-		Attack, 2 (1) Energy:
-		Deal 6 damage. Apply Virus and 7 Poison. (Virus: Poison applied to this enemy other than by Virus spreads to all other enemies instantly.)
 NEW:	Potion Explosion
 		Attack, 1 Energy:
 		Deal 6 (8) damage to ALL enemies once per potion you used this turn.
 NEW:	About Clark
 		Attack, 5 (4) Energy:
 		Deal 8 (10) damage two times. Costs 1 [E] less per Frail you have.
-DEPRECATED:	Noxious Wave
-		Attack, 1 Energy
-		Deal 6 damage. Trigger Poison on this enemy (twice).
 	Gearwheel Master
 		Skill, 0 Energy: 
 		EVERYBODY gains 1(2/3/...) Artifact. Exhaust. Can be upgraded any number of times.
@@ -147,9 +138,6 @@ DEPRECATED:	Noxious Wave
 	How To Greet Byrds
 		Skill, X Energy:
 		Innate. Set your Flight to X. (Gain X Flight.) Exhaust.
-DEPRECATED:	Toxic Chains
-		Skill, 1 Energy:
-		Lose all Frail. Apply that much Poison (+3) to ALL enemies.
 	Potion Trance
 		Skill, 1 Energy:
 		Draw 1 card (2 cards) whenever you use a Potion this turn. You cannot gain energy this turn.
@@ -243,14 +231,9 @@ STSLIB:	Bookworm
 	On Fire
 		Power, 1 Energy:
 		Whenever you play 5 cards in a single turn, obtain a Fire Potion(+).
-DEPRECATED: 	Ancient Poison
-		Power, 1 Energy:
-		--
 	Vigorous Body
 		Power, 1 Energy:
 		Whenever an Artifact of you (or an enemy) gets triggered, gain 1 Strength.
-DEPRECATED:	Endless Fear
-		--
 	Riches!!!
 		Power, 1 (0) Energy:
 		Whenever you use an upgraded potion, obtain a random unupgraded potion. // No healing Potions (like Quackster)
@@ -265,7 +248,7 @@ STSLIB:	Trixter
 		Refund all Energy used when playing your next card.
 
 	
-**6+3 CHARACTER-SPECIFIC RELICS (Sage only)**
+**7 CHARACTER-SPECIFIC RELICS (Sage only)**
 	Thunder Carpet
 		Boss relic: 
 		Replaces Flying carpet. Start each combat with 3 Flight.
