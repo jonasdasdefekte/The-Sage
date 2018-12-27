@@ -96,7 +96,7 @@
     "NAME": "",
     "FLAVOR": "",
     "DESCRIPTIONS": [
-      "Whenever you discard a potion, heal #b",
+      "Whenever you DISCARD a potion, heal #b",
       " HP."
     ]
   },
