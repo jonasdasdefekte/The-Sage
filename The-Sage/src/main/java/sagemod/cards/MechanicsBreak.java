@@ -18,8 +18,8 @@ public class MechanicsBreak extends AbstractSageCard {
 	private static final CardRarity RARITY = CardRarity.UNCOMMON;
 	private static final CardTarget TARGET = CardTarget.ENEMY;
 
-	private static final int BLOCK_AMT = 10;
-	private static final int UPGRADE_BLOCK_AMT = 5;
+	private static final int BLOCK_AMT = 7;
+	private static final int UPGRADE_BLOCK_AMT = 3;
 	private static final int ARTIFACT_GAIN = 2;
 	private static final int UPGRADE_ARTIFACT_GAIN = 2;
 
