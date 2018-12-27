@@ -75,7 +75,7 @@ STSLIB:	How To Befriend A Turtle
 		Gain 10 (13) Block. Gain 2 Frail. 
 	Mechanics Break
 		Skill, 1 Energy:
-		Gain 10 (15) Block. Target enemy gains 2 (4) Artifact.
+		Gain 7 (10) Block. Target enemy gains 2 (4) Artifact.
 
 **33 UNCOMMON CARDS (blue)**
 	On the Head
@@ -171,12 +171,12 @@ NEW:	Undermine
 	Brewmaster
 		Power, 2 (1) Energy:
 		Gain 1 Brewing.
-	Deadly Contraption
+STSLIB:	Deadly Contraption
 		Power, 1 Energy: 
-		Apply 3 (5) Artifact to ALL enemies. At the end of your turn, enemies are dealt 1 damage per Artifact on them.
-	Rickety Defense
+		Apply 3 (5) Artifact to ALL enemies. At the end of your turn, enemies are lose 1 HP per Artifact on them. // Health Bar visuals like for Poison (HealthBarRenderPower)
+TODO:	Rickety Defense
 		Power, 1 Energy:
-		Whenever you gain Frail, gain 4 (8) Block per new stack.
+		Whenever you gain Frail, gain 1 (2) Block per Frail you have.
 
 
 **19 RARE CARDS (gold)**
