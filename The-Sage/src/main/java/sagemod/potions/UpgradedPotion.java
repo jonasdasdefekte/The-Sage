@@ -30,7 +30,7 @@ public class UpgradedPotion extends CustomPotion {
 
 
 	public static final float CHANCE = 0.12f;
-	public static final float POTENCY_MULTIPLIER = 2f;
+	public static final float POTENCY_MULTIPLIER = 1.67f;
 	public static final float PRICE_MULTIPLIER = 1.75f;
 
 	public static final String TWICE = "2x: ";
