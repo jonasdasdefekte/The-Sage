@@ -351,6 +351,11 @@
     "DESCRIPTION": "Lose all Frail. NL Apply that much Poison to ALL enemies.",
     "UPGRADE_DESCRIPTION": "Lose all Frail. NL Apply that much Poison + !M! to ALL enemies."
   },
+  "Tinker": {
+    "NAME": "Tinker",
+    "DESCRIPTION": "Gain !B! Block. (Equal to ALL Artifact on the field + !MISC!)",
+    "UPGRADE_DESCRIPTION": "Gain !M! Artifact. Gain !B! Block. (Equal to ALL Artifact on the field + !MISC!)"
+  },
   "Turn_Around": {
     "NAME": "Turn Around",
     "DESCRIPTION": "Gain !M! Frail. NL Deal !D! damage per Frail you have."

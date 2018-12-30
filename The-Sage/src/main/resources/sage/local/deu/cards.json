@@ -351,6 +351,11 @@
     "DESCRIPTION": "Verliere alles Gebrechlich. NL Wende ALLEN Gegnern ebensoviel Gift an.",
     "UPGRADE_DESCRIPTION": "Verliere alles Gebrechlich. NL Wende ALLEN Gegnern ebensoviel Gift + !M! an."
   },
+  "Tinker": {
+    "NAME": "Basteln",
+    "DESCRIPTION": "Erhalte !B! Block. (ALLE Artefakte auf dem Feld + !MISC!)",
+    "UPGRADE_DESCRIPTION": "Erhalte !M! Artefakt. Erhalte !B! Block. (ALLE Artefakte auf dem Feld + !MISC!)"
+  },
   "Turn_Around": {
     "NAME": "Umkehren",
     "DESCRIPTION": "Erhalte !M! Gebrechlich. NL Füge !D! Schaden zu pro Gebrechlich, das du hast."

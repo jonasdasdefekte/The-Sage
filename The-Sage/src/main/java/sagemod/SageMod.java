@@ -105,6 +105,7 @@ import sagemod.cards.StrikeSage;
 import sagemod.cards.Study;
 import sagemod.cards.SwoopDown;
 import sagemod.cards.TasteThisOne;
+import sagemod.cards.Tinker;
 import sagemod.cards.TurnAround;
 import sagemod.cards.VigorousBody;
 import sagemod.cards.colorless.PerplexingGlare;
@@ -282,6 +283,7 @@ PostBattleSubscriber, OnStartBattleSubscriber {
 		BaseMod.addCard(new PotionExplosion());
 		BaseMod.addCard(new AboutClark());
 		BaseMod.addCard(new LetItGo());
+		BaseMod.addCard(new Tinker());
 
 		// Rare
 		BaseMod.addCard(new Bookworm());
