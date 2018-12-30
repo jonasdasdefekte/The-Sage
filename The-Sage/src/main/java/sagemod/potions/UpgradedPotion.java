@@ -119,7 +119,7 @@ public class UpgradedPotion extends CustomPotion {
 	}
 
 	private int loadPotency() {
-		if (potion instanceof UpgradedPotion && DOUBLE_USE_WHITELIST.contains(potion.ID)) {
+		if (potion instanceof UpgradedPotion || DOUBLE_USE_WHITELIST.contains(potion.ID)) {
 			return potion.getPotency();
 		} else if (potion.ID.equals("Doom Potion")) {
 			return (int) (potion.getPotency() * 0.75f);
