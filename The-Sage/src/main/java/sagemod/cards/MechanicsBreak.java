@@ -25,7 +25,7 @@ public class MechanicsBreak extends AbstractSageCard {
 	public MechanicsBreak() {
 		super(ID, NAME, COST, DESCRIPTION, TYPE, RARITY, TARGET);
 		baseBlock = BLOCK_AMT;
-		magicNumber = ARTIFACT_GAIN;
+		baseMagicNumber = magicNumber = ARTIFACT_GAIN;
 	}
 
 	@Override
