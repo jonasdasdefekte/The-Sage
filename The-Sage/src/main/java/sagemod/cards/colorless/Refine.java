@@ -26,6 +26,7 @@ public class Refine extends AbstractSageCard {
 
 	public Refine() {
 		super(ID, NAME, COST, DESCRIPTION, TYPE, RARITY, TARGET, CardColor.COLORLESS, false);
+		exhaust = true;
 	}
 
 	@Override

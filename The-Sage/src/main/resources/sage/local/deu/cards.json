@@ -299,8 +299,8 @@
   },
   "Refine": {
     "NAME": "Verfeinern",
-    "DESCRIPTION": "Verbessere einen zufälligen deiner Tränke, die du trägst.",
-    "UPGRADE_DESCRIPTION": "Verbessere alle Tränke, die du trägst."
+    "DESCRIPTION": "Verbessere einen zufälligen deiner Tränke, die du trägst. NL Erschöpft.",
+    "UPGRADE_DESCRIPTION": "Verbessere alle Tränke, die du trägst. NL Erschöpft."
   },
   "Riches": {
     "NAME": "Reichtümer!!!",

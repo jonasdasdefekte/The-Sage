@@ -299,8 +299,8 @@
   },
   "Refine": {
     "NAME": "Refine",
-    "DESCRIPTION": "Upgrade a random unupgraded potion you are holding.",
-    "UPGRADE_DESCRIPTION": "Upgrade all unupgraded potions you are holding."
+    "DESCRIPTION": "Upgrade a random unupgraded potion you are holding. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Upgrade all unupgraded potions you are holding. NL Exhaust."
   },
   "Riches": {
     "NAME": "Riches!!!",
