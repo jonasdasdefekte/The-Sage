@@ -318,6 +318,11 @@
     "NAME": "Salty Strike",
     "DESCRIPTION": "Deal !D! damage. NL Apply !M! Thirsty."
   },
+  "Shining_Powder": {
+    "NAME": "Shining Powder",
+    "DESCRIPTION": "Unplayable. NL Whenever you use a Potion while this card is in your hand, gain [E].",
+    "UPGRADE_DESCRIPTION": "Unplayable. NL Whenever you use a Potion while this card is in your hand, gain [E] [E]."
+  },
   "Slalom": {
     "NAME": "Slalom",
     "DESCRIPTION": "Gain !B! Block. NL Gain !M! Frail."

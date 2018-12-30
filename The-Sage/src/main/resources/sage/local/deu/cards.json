@@ -315,8 +315,13 @@
     "DESCRIPTION": "Unspielbar. NL Während diese Karte in deiner Hand ist erhälst du !B! Block, wenn du einen Trank benutzt."
   },
   "Salty_Strike": {
-    "NAME": "Salty Strike",
+    "NAME": "Salziger Schlag",
     "DESCRIPTION": "Füge !D! Schaden zu. NL Wende !M! Durstig an."
+  },
+  "Shining_Powder": {
+    "NAME": "Strahlendes Pulver",
+    "DESCRIPTION": "Unspielbar. NL Während diese Karte in deiner Hand ist erhälst du [E], wenn du einen Trank benutzt.",
+    "UPGRADE_DESCRIPTION": "Unspielbar. NL Während diese Karte in deiner Hand ist erhälst du [E] [E], wenn du einen Trank benutzt."
   },
   "Slalom": {
     "NAME": "Slalom",

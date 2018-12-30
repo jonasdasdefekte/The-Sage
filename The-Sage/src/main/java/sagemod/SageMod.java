@@ -100,6 +100,7 @@ import sagemod.cards.Riches;
 import sagemod.cards.RicketyDefense;
 import sagemod.cards.RockOil;
 import sagemod.cards.SaltyStrike;
+import sagemod.cards.ShiningPowder;
 import sagemod.cards.Slalom;
 import sagemod.cards.SpoiledFood;
 import sagemod.cards.StepBack;
@@ -288,6 +289,7 @@ PostBattleSubscriber, OnStartBattleSubscriber {
 		BaseMod.addCard(new Tinker());
 		BaseMod.addCard(new RockOil());
 		BaseMod.addCard(new Momentum());
+		BaseMod.addCard(new ShiningPowder());
 
 		// Rare
 		BaseMod.addCard(new Bookworm());

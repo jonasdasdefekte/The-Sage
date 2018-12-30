@@ -24,6 +24,7 @@ import basemod.interfaces.PostPotionUseSubscriber;
 import basemod.interfaces.PrePotionUseSubscriber;
 import sagemod.actions.ExecuteLaterAction;
 import sagemod.cards.RockOil;
+import sagemod.cards.ShiningPowder;
 import sagemod.potions.UpgradedPotion;
 import sagemod.powers.AlchemyExpertPower;
 import sagemod.powers.Brew;
@@ -220,7 +221,7 @@ public class PotionListener implements PrePotionUseSubscriber, PostPotionUseSubs
 	private void potionCards(AbstractPotion p) {
 		if (AbstractDungeon.player.hand != null) {
 			for (AbstractCard c : AbstractDungeon.player.hand.group) {
-				if (c.cardID.equals(RockOil.ID)) {
+				if (c.cardID.equals(RockOil.ID) || c.cardID.equals(ShiningPowder.ID)) {
 					c.flash();
 					c.use(AbstractDungeon.player, null);
 				}
