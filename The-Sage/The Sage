@@ -240,12 +240,12 @@ STSLIB:	Bookworm
 	Perplexing Glare
 		Uncommon Skill, 2 Energy:
 		Apply 1 (2) Disoriented. Exhaust.
+	Refine
+		Uncommon Skill, 1 Energy
+		Upgrade a random unupgraded potion (all unupgraded potions) you are holding. Exhaust.
 STSLIB:	Trixter
 		Rare Skill, 1 (0) Energy:
 		Refund all Energy used when playing your next card.
-	Refine
-		Rare Skill, 1 Energy
-		Upgrade a random unupgraded potion (all unupgraded potions) you are holding. // Upgrading a potion doubles its effect/ magic number.
 
 	
 **7 CHARACTER-SPECIFIC RELICS (Sage only)**
