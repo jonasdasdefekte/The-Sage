@@ -5,6 +5,7 @@ import java.util.List;
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
+import com.badlogic.gdx.math.MathUtils;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.helpers.PowerTip;
 import com.megacrit.cardcrawl.potions.AbstractPotion;
@@ -26,11 +27,10 @@ public class UpgradedPotion extends CustomPotion {
 
 	public static final List<String> BLACKLIST = new ArrayList<>();
 	public static final List<String> DOUBLE_USE_WHITELIST = new ArrayList<>();
-	public static final List<String> DOUBLE_DESC_WHITELIST = new ArrayList<>();
 
 
-	public static final float CHANCE = 0.12f;
-	public static final float POTENCY_MULTIPLIER = 1.67f;
+	public static final float CHANCE = 0.20f;
+	public static final float POTENCY_MULTIPLIER = 1.5f;
 	public static final float PRICE_MULTIPLIER = 1.75f;
 
 	public static final String TWICE = "2x: ";
@@ -102,11 +102,8 @@ public class UpgradedPotion extends CustomPotion {
 		DOUBLE_USE_WHITELIST.add("Firefly");
 		DOUBLE_USE_WHITELIST.add("Pckles");
 		DOUBLE_USE_WHITELIST.add("Turbid Wine");
-
-		DOUBLE_DESC_WHITELIST.addAll(DOUBLE_USE_WHITELIST);
-		DOUBLE_DESC_WHITELIST.add("conspire:EchoDraught");
-		DOUBLE_DESC_WHITELIST.add("construct:MegaPotion");
-
+		DOUBLE_USE_WHITELIST.add("conspire:EchoDraught");
+		DOUBLE_USE_WHITELIST.add("construct:MegaPotion");
 		DOUBLE_USE_WHITELIST.add(FairyPotion.POTION_ID);
 	}
 
@@ -122,18 +119,17 @@ public class UpgradedPotion extends CustomPotion {
 	}
 
 	private int loadPotency() {
-		if (potion instanceof UpgradedPotion || (DOUBLE_DESC_WHITELIST.contains(potion.ID)
-				&& DOUBLE_USE_WHITELIST.contains(potion.ID))) {
+		if (potion instanceof UpgradedPotion && DOUBLE_USE_WHITELIST.contains(potion.ID)) {
 			return potion.getPotency();
 		} else if (potion.ID.equals("Doom Potion")) {
 			return (int) (potion.getPotency() * 0.75f);
 		}
-		return (int) (potion.getPotency() * POTENCY_MULTIPLIER);
+		return MathUtils.ceil(potion.getPotency() * POTENCY_MULTIPLIER);
 
 	}
 
 	private String loadDescription() {
-		if (DOUBLE_DESC_WHITELIST.contains(potion.ID)) {
+		if (DOUBLE_USE_WHITELIST.contains(potion.ID)) {
 			return TWICE + potion.description;
 		}
 

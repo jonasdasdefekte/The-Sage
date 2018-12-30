@@ -290,7 +290,7 @@ STSLIB:	The Guidebook Guide
 		Every 5 turns, apply 1 Disoriented to a random enemy.
 	Singing Vial
 		Uncommon relic:
-		When adding cards into your deck, you may upgrade a random Potion instead. // Could there be another button next to Singing Bowl's? (Probably Yes)
+		When adding cards into your deck, you may upgrade a random Potion instead.
 
 
 **2 POTIONS**
@@ -302,8 +302,8 @@ STSLIB:	The Guidebook Guide
 		Apply 1 Disoriented.
 		
 **NEW FEATURE FOR POTIONS**
-	Potions that are number based can have an upgrade which doubles the number
-	Droprate: 12%
+	Potions that are number based can have an upgrade which makes the, 50% more potent (or 2x effective if the number can not be manipulated)
+	Droprate: 20%
 
 **1 EVENT**
 	Carpet trader
