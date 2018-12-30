@@ -1,4 +1,4 @@
-package sagemod.cards;
+package sagemod.cards.colorless;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -10,6 +10,7 @@ import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.potions.AbstractPotion;
 import com.megacrit.cardcrawl.potions.PotionSlot;
+import sagemod.cards.AbstractSageCard;
 import sagemod.potions.UpgradedPotion;
 
 public class Refine extends AbstractSageCard {
@@ -24,7 +25,7 @@ public class Refine extends AbstractSageCard {
 	private static final CardTarget TARGET = CardTarget.SELF;
 
 	public Refine() {
-		super(ID, NAME, COST, DESCRIPTION, TYPE, RARITY, TARGET);
+		super(ID, NAME, COST, DESCRIPTION, TYPE, RARITY, TARGET, CardColor.COLORLESS, false);
 	}
 
 	@Override

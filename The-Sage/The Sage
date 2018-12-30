@@ -179,7 +179,7 @@ STSLIB:	Deadly Contraption
 		Whenever you gain Frail, gain 1 (2) Block per Frail you have.
 
 
-**19 RARE CARDS (gold)**
+**18 RARE CARDS (gold)**
 	Swoop Down
 		Attack, 1 Energy: 
 		Deal 4 (6) damage per Flight you have. Then lose 1 Flight. (Upgrade: No Flight loss.)
@@ -213,9 +213,6 @@ STSLIB:	Read the riot act
 STSLIB:	Blurry
 		Skill, 1 Energy
 		Gain 4 (6) Temporary HP. Gain 2 (3) Temporary HP per Frail you have. Exhaust.
-	Refine
-		Skill, 1 Energy
-		Upgrade a random unupgraded potion (all unupgraded potions) you are holding. // Upgrading a potion doubles its effect/ magic number.
 	Alchemy Expert
 		Power, 1 Energy:
 		Whenever you use a potion, gain 1 Artifact. (Innate.)
@@ -239,13 +236,16 @@ STSLIB:	Bookworm
 		Whenever you use an upgraded potion, obtain a random unupgraded potion. // No healing Potions (like Quackster)
 
 
-**2 NEUTRAL CARDS (Shop)**
+**3 NEUTRAL CARDS (Shop)**
 	Perplexing Glare
 		Uncommon Skill, 2 Energy:
 		Apply 1 (2) Disoriented. Exhaust.
 STSLIB:	Trixter
 		Rare Skill, 1 (0) Energy:
 		Refund all Energy used when playing your next card.
+	Refine
+		Rare Skill, 1 Energy
+		Upgrade a random unupgraded potion (all unupgraded potions) you are holding. // Upgrading a potion doubles its effect/ magic number.
 
 	
 **7 CHARACTER-SPECIFIC RELICS (Sage only)**

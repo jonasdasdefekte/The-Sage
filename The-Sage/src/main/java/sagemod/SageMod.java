@@ -95,7 +95,6 @@ import sagemod.cards.PotionExplosion;
 import sagemod.cards.PotionTrance;
 import sagemod.cards.PourTarPitch;
 import sagemod.cards.Quackster;
-import sagemod.cards.Refine;
 import sagemod.cards.Riches;
 import sagemod.cards.RicketyDefense;
 import sagemod.cards.RockOil;
@@ -112,6 +111,7 @@ import sagemod.cards.Tinker;
 import sagemod.cards.TurnAround;
 import sagemod.cards.VigorousBody;
 import sagemod.cards.colorless.PerplexingGlare;
+import sagemod.cards.colorless.Refine;
 import sagemod.cards.debug.AvailablePotionUpgrade;
 import sagemod.cards.debug.ConsolePotion;
 import sagemod.cards.debug.CyclePotions;
@@ -305,11 +305,11 @@ PostBattleSubscriber, OnStartBattleSubscriber {
 		BaseMod.addCard(new AlchemyExpert());
 		BaseMod.addCard(new VigorousBody());
 		BaseMod.addCard(new Riches());
-		BaseMod.addCard(new Refine());
 		BaseMod.addCard(new Lecture());
 
 		// Colorless
 		BaseMod.addCard(new PerplexingGlare());
+		BaseMod.addCard(new Refine());
 
 		// Deprecated
 		BaseMod.addCard(new EndlessFear());
