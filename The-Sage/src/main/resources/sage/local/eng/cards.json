@@ -260,6 +260,15 @@
     "NAME": "Pincer Repair",
     "DESCRIPTION": "Deal !D! damage. NL The enemy gains NL !M! Artifact."
   },
+  "Potion_Explosion": {
+    "NAME": "Potion Explosion",
+    "DESCRIPTION": "Deal !D! damage to ALL enemies per potion you used this turn.",
+    "EXTENDED_DESCRIPTION": [
+      " NL (Attacks once.)",
+      " NL (Attacks ",
+      " times.)"
+    ]
+  },
   "Potion_Trance": {
     "NAME": "Potion Trance",
     "DESCRIPTION": "Draw !M! card whenever you use a potion this turn. You cannot gain energy this turn.",

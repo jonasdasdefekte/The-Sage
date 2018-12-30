@@ -88,6 +88,7 @@ import sagemod.cards.OnTheHead;
 import sagemod.cards.PerpetuumMobile;
 import sagemod.cards.PincerAttack;
 import sagemod.cards.PincerRepair;
+import sagemod.cards.PotionExplosion;
 import sagemod.cards.PotionTrance;
 import sagemod.cards.PourTarPitch;
 import sagemod.cards.Quackster;
@@ -276,6 +277,7 @@ PostBattleSubscriber, OnStartBattleSubscriber {
 		BaseMod.addCard(new HowToAmuseSneckos());
 		BaseMod.addCard(new PotionTrance());
 		BaseMod.addCard(new RicketyDefense());
+		BaseMod.addCard(new PotionExplosion());
 
 		// Rare
 		BaseMod.addCard(new Bookworm());

@@ -260,6 +260,15 @@
     "NAME": "Reparaturzange",
     "DESCRIPTION": "Füge !D! Schaden zu. NL Der Gegner erhält NL !M! Artefakt."
   },
+  "Potion_Explosion": {
+    "NAME": "Trankexplosion",
+    "DESCRIPTION": "Füge ALLEN Gegnern !D! Schaden zu pro Trank den du in dieser Runde benutzt hast.",
+    "EXTENDED_DESCRIPTION": [
+      " NL (Trifft einmal.)",
+      " NL (Trifft ",
+      " mal.)"
+    ]
+  },
   "Potion_Trance": {
     "NAME": "Tranktrance",
     "DESCRIPTION": "Ziehe !M! Karte, wenn du in diesem Zug einen Trank benutzt. NL Du kannst in diesem Zug keine Energie erhalten.",

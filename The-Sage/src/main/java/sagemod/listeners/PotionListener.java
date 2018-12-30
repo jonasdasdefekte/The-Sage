@@ -37,6 +37,8 @@ import sagemod.relics.Blowpipe;
 @SuppressWarnings("deprecation")
 public class PotionListener implements PrePotionUseSubscriber, PostPotionUseSubscriber {
 
+	public static int potionsUsed = 0;
+
 	private AbstractMonster getHoveredMonster() {
 		return (AbstractMonster) ReflectionHacks.getPrivate(AbstractDungeon.topPanel.potionUi,
 				PotionPopUp.class, "hoveredMonster");
@@ -75,6 +77,7 @@ public class PotionListener implements PrePotionUseSubscriber, PostPotionUseSubs
 		potionTrance(p);
 		endlessFear(p);
 		riches(p);
+		potionsUsed++;
 	}
 
 	private void usePotion(AbstractPotion p, AbstractMonster m) {
