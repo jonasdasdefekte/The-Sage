@@ -88,7 +88,6 @@ public class Disoriented extends AbstractSagePower {
 	@Override
 	public void onAttack(DamageInfo info, int damageAmount, AbstractCreature target) {
 		if (!blocked1FromMultiAttack && !isAlmostRemoved) {
-			blocked1FromMultiAttack = true;
 			AbstractGameAction removeLater = null;
 
 			// remove 1 DamageAction where the source is the owner of this power and the
@@ -108,6 +107,7 @@ public class Disoriented extends AbstractSagePower {
 			}
 
 			if (removeLater != null) {
+				blocked1FromMultiAttack = true;
 				AbstractDungeon.actionManager.actions.remove(removeLater);
 			}
 
