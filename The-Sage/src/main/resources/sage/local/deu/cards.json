@@ -1,4 +1,8 @@
 {
+  "About_Clark": {
+    "NAME": "Über Clark",
+    "DESCRIPTION": "Füge zweimal !D! Schaden zu. Kostet 1 [E] weniger pro Gebrechlich, dass du hast."
+  },
   "AbstractSageCard": {
     "NAME": "Abstract Sage Card",
     "DESCRIPTION": "ABSTRACT CLASS! THIS SHOULD NEVER BE DISPLAYED!",

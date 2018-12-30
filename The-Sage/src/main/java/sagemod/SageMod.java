@@ -42,6 +42,7 @@ import basemod.interfaces.EditStringsSubscriber;
 import basemod.interfaces.OnStartBattleSubscriber;
 import basemod.interfaces.PostBattleSubscriber;
 import basemod.interfaces.PostInitializeSubscriber;
+import sagemod.cards.AboutClark;
 import sagemod.cards.Accumulation;
 import sagemod.cards.AlchemyExpert;
 import sagemod.cards.Altitude;
@@ -278,6 +279,7 @@ PostBattleSubscriber, OnStartBattleSubscriber {
 		BaseMod.addCard(new PotionTrance());
 		BaseMod.addCard(new RicketyDefense());
 		BaseMod.addCard(new PotionExplosion());
+		BaseMod.addCard(new AboutClark());
 
 		// Rare
 		BaseMod.addCard(new Bookworm());

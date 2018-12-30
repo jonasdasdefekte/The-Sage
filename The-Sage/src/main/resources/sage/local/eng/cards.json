@@ -1,4 +1,8 @@
 {
+  "About_Clark": {
+    "NAME": "About Clark",
+    "DESCRIPTION": "Deal !D! damage two times. Costs 1 less [E] per Frail you have."
+  },
   "AbstractSageCard": {
     "NAME": "Abstract Sage Card",
     "DESCRIPTION": "ABSTRACT CLASS! THIS SHOULD NEVER BE DISPLAYED!",

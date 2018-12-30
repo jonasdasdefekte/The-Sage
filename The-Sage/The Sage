@@ -105,7 +105,7 @@ STSLIB:	How To Befriend A Turtle
 	Potion Explosion
 		Attack, 1 Energy:
 		Deal 6 (8) damage to ALL enemies once per potion you used this turn.
-NEW:	About Clark
+	About Clark
 		Attack, 5 (4) Energy:
 		Deal 8 (10) damage two times. Costs 1 [E] less per Frail you have.
 	Gearwheel Master
