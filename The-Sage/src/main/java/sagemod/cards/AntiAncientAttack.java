@@ -70,6 +70,55 @@ public class AntiAncientAttack extends AbstractSageCard {
 		return 0;
 	}
 
+	private void updateExtendedDescription(AbstractMonster m) {
+		int times = artifactAmount(AbstractDungeon.player);
+		for (AbstractMonster mo : AbstractDungeon.getCurrRoom().monsters.monsters) {
+			int amt = artifactAmount(mo);
+			if (mo == m) {
+				amt *= 2;
+			}
+			times += amt;
+		}
+		rawDescription = getLoadedDescription();
+		if (times == 1) {
+			rawDescription += cardStrings.EXTENDED_DESCRIPTION[0];
+		} else {
+			rawDescription += cardStrings.EXTENDED_DESCRIPTION[1] + times
+					+ cardStrings.EXTENDED_DESCRIPTION[2];
+		}
+		initializeDescription();
+	}
+
+	@Override
+	public void applyPowers() {
+		super.applyPowers();
+		updateExtendedDescription(null);
+	}
+
+	@Override
+	public void calculateCardDamage(AbstractMonster mo) {
+		super.calculateCardDamage(mo);
+		updateExtendedDescription(mo);
+	}
+
+	@Override
+	public void atTurnStart() {
+		super.atTurnStart();
+		updateExtendedDescription(null);
+	}
+
+	@Override
+	public void triggerWhenDrawn() {
+		super.triggerWhenDrawn();
+		updateExtendedDescription(null);
+	}
+
+	@Override
+	public void onMoveToDiscard() {
+		rawDescription = getLoadedDescription();
+		initializeDescription();
+	}
+
 	@Override
 	public String getLoadedDescription() {
 		return DESCRIPTION;
