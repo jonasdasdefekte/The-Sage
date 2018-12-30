@@ -8,7 +8,7 @@ public class FlyingCarpet extends AbstractSageRelic {
 	public static final String ID = "Flying_Carpet";
 	public static final RelicTier TIER = RelicTier.STARTER;
 	public static final LandingSound SOUND = LandingSound.MAGICAL;
-	private static final int FLY_AMT = 1;
+	public static final int FLY_AMT = 1;
 	private static final int GAIN_FLIGHT_TURN = 2;
 
 	private static int turns;

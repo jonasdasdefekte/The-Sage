@@ -11,7 +11,7 @@ public class ByrdFeather extends AbstractSageRelic {
 	public static final String ID = "Byrd_Feather";
 	public static final RelicTier TIER = RelicTier.SPECIAL;
 	public static final LandingSound SOUND = LandingSound.MAGICAL;
-	private static final int FLY_AMT = 3;
+	public static final int FLY_AMT = 3;
 	private static final int SET_TO_FLY_AMT_WHEN1 = 1;
 	private static final int SET_TO_FLY_AMT_WHEN2 = 2;
 

@@ -75,6 +75,10 @@
     "NAME": "Brennende Flasche",
     "DESCRIPTION": "Füge ALLEN Gegnern !D! Schaden zu. Wenn du Tränke hast, wirf einen zufälligen ab und füge !M! zusätzlichen Schaden zu. "
   },
+  "Byrd_Feather_Preview": {
+    "NAME": "Foglfeder",
+    "DESCRIPTION": "RELIKT! NL Falls du zu Beginn deines Zuges 1 oder 2 Flug hast, setze ihn auf !M!."
+  },
   "Cane_Strike": {
     "NAME": "Stockschlag",
     "DESCRIPTION": "Füge !D! Schaden zu. Fügt doppelten Schaden zu, wenn du Gebrechlich bist."
@@ -131,6 +135,10 @@
   "Fly": {
     "NAME": "Fliegen",
     "DESCRIPTION": "Falls du fliegst: NL Erhalte !B! Block. NL Ansonsten: NL Erhalte !M! Flug."
+  },
+  "Flying_Carpet_Preview": {
+    "NAME": "Fliegender Teppich",
+    "DESCRIPTION": "RELIKT! Erhalte !M! Flug am Beginn deines zweiten Zuges."
   },
   "Flying_Cauldron": {
     "NAME": "Fliegender Kessel",
