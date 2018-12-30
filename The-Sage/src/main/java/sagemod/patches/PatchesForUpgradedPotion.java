@@ -55,7 +55,8 @@ public class PatchesForUpgradedPotion {
 			float chance = UpgradedPotion.CHANCE;
 			if (AbstractDungeon.player != null
 					&& AbstractDungeon.player.hasRelic(RedBeastStatue.ID)) {
-				chance *= (1 + RedBeastStatue.toPercentage(RedBeastStatue.PERCENTAGE_INCREASE));
+				chance *= (1
+						+ RedBeastStatue.toPercentage(RedBeastStatue.PERCENTAGE_INCREASE_UPGRADED));
 			}
 			if (AbstractDungeon.potionRng.randomBoolean(chance)) {
 				return UpgradedPotion.getUpgradeIfAvailable(potion);

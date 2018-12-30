@@ -28,7 +28,7 @@ public class PatchForRedBeastStatue {
 	public static int getCommonChance() {
 		int originalChance = PotionHelper.POTION_COMMON_CHANCE;
 		if (AbstractDungeon.player != null && AbstractDungeon.player.hasRelic(RedBeastStatue.ID)) {
-			float rareAndUncommonIncrease = RedBeastStatue.toPercentage(100 + RedBeastStatue.PERCENTAGE_INCREASE);
+			float rareAndUncommonIncrease = RedBeastStatue.toPercentage(100 + RedBeastStatue.PERCENTAGE_INCREASE_RARITY);
 			float modifier = RedBeastStatue.getCommonChanceModifier(rareAndUncommonIncrease);
 			int chance = Math.round(originalChance * modifier);
 			return chance;
@@ -40,7 +40,7 @@ public class PatchForRedBeastStatue {
 	public static int getUncommonChance() {
 		int originalChance = PotionHelper.POTION_UNCOMMON_CHANCE;
 		if (AbstractDungeon.player != null && AbstractDungeon.player.hasRelic(RedBeastStatue.ID)) {
-			float modifier = RedBeastStatue.toPercentage(100 + RedBeastStatue.PERCENTAGE_INCREASE);
+			float modifier = RedBeastStatue.toPercentage(100 + RedBeastStatue.PERCENTAGE_INCREASE_RARITY);
 			int chance = Math.round(originalChance * modifier);
 			return chance;
 		} else {

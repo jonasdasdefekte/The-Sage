@@ -9,7 +9,8 @@ public class RedBeastStatue extends AbstractSageRelic {
 	public static final RelicTier TIER = RelicTier.UNCOMMON;
 	public static final LandingSound SOUND = LandingSound.SOLID;
 
-	public static final int PERCENTAGE_INCREASE = 50;
+	public static final int PERCENTAGE_INCREASE_RARITY = 50;
+	public static final int PERCENTAGE_INCREASE_UPGRADED = 100;
 
 	private static final int POTION_RARE_CHANCE = 100
 			- (PotionHelper.POTION_COMMON_CHANCE + PotionHelper.POTION_UNCOMMON_CHANCE);
@@ -21,7 +22,8 @@ public class RedBeastStatue extends AbstractSageRelic {
 
 	@Override
 	public String getUpdatedDescription() {
-		return DESCRIPTIONS[0] + PERCENTAGE_INCREASE + DESCRIPTIONS[1] + PERCENTAGE_INCREASE
+		return DESCRIPTIONS[0] + PERCENTAGE_INCREASE_RARITY + DESCRIPTIONS[1]
+				+ PERCENTAGE_INCREASE_UPGRADED
 				+ DESCRIPTIONS[2];
 	}
 
