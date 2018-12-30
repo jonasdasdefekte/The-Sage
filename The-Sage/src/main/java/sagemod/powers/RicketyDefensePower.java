@@ -7,6 +7,7 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 import com.megacrit.cardcrawl.powers.FrailPower;
+import sagemod.actions.ExecuteLaterAction;
 
 public class RicketyDefensePower extends AbstractSagePower {
 
@@ -26,7 +27,16 @@ public class RicketyDefensePower extends AbstractSagePower {
 			AbstractCreature source) {
 		if (power.ID.equals(FrailPower.POWER_ID) && target == AbstractDungeon.player) {
 			AbstractDungeon.actionManager
-					.addToBottom(new GainBlockAction(target, source, amount * power.amount));
+			.addToBottom(new ExecuteLaterAction(() -> gainBlock(target, source)));
+		}
+	}
+
+	private void gainBlock(AbstractCreature target, AbstractCreature source) {
+		if (target.hasPower(FrailPower.POWER_ID)) {
+			int powerAmount = target.getPower(FrailPower.POWER_ID).amount;
+			AbstractDungeon.actionManager
+			.addToBottom(new GainBlockAction(target, source, amount * powerAmount));
+			flash();
 		}
 	}
 

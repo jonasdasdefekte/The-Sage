@@ -135,7 +135,7 @@
     "NAME": "Rickety Defense",
     "DESCRIPTIONS": [
       "Whenever you gain Frail, gain #b",
-      " Block per new stack."
+      " Block per Frail you have."
     ]
   },
   "Sage_Flight": {
@@ -148,7 +148,7 @@
     "NAME": "Taste This One",
     "DESCRIPTIONS": [
       "Whenever you use a potion, deal #b",
-      " damagr to a random enemy."
+      " damage to a random enemy."
     ]
   },
   "Thirsty": {

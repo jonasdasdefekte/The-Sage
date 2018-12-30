@@ -18,8 +18,8 @@ public class RicketyDefense extends AbstractSageCard {
 	private static final CardRarity RARITY = CardRarity.UNCOMMON;
 	private static final CardTarget TARGET = CardTarget.SELF;
 
-	private static final int POWER_AMT = 4;
-	private static final int UPGRADE_POWER_AMT = 4;
+	private static final int POWER_AMT = 1;
+	private static final int UPGRADE_POWER_AMT = 1;
 
 	public RicketyDefense() {
 		super(ID, NAME, COST, DESCRIPTION, TYPE, RARITY, TARGET);

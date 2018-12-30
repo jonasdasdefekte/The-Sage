@@ -285,7 +285,7 @@
   },
   "Rickety_Defense": {
     "NAME": "Rickety Defense",
-    "DESCRIPTION": "Whenever you gain Frail, gain !M! Block per new stack."
+    "DESCRIPTION": "Whenever you gain Frail, gain !M! Block per Frail you have."
   },
   "Salty_Strike": {
     "NAME": "Salty Strike",
