@@ -150,9 +150,9 @@ STSLIB:	How To Amuse Sneckos
 	Tinker
 		Skill, 1 Energy:
 		(Gain 1 Artifact.) Gain Block equal to all Artifact on the field + 5.
-NEW:	Rock Oil
+	Rock Oil
 		Skill, Unplayable:
-		Whenever you use a Potion while this card in your hand, gain 5 (7) Block.
+		Whenever you use a Potion while this card is in your hand, gain 5 (7) Block.
 NEW:	Momentum
 		Skill, 0 Energy:
 		Brew a (an upgraded) Swift potion in 4 turns.

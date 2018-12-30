@@ -7,6 +7,7 @@ import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.actions.common.DrawCardAction;
 import com.megacrit.cardcrawl.actions.common.ReducePowerAction;
+import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.cards.DamageInfo.DamageType;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
@@ -22,6 +23,7 @@ import basemod.ReflectionHacks;
 import basemod.interfaces.PostPotionUseSubscriber;
 import basemod.interfaces.PrePotionUseSubscriber;
 import sagemod.actions.ExecuteLaterAction;
+import sagemod.cards.RockOil;
 import sagemod.potions.UpgradedPotion;
 import sagemod.powers.AlchemyExpertPower;
 import sagemod.powers.Brew;
@@ -77,6 +79,7 @@ public class PotionListener implements PrePotionUseSubscriber, PostPotionUseSubs
 		potionTrance(p);
 		endlessFear(p);
 		riches(p);
+		potionCards(p);
 		potionsUsed++;
 	}
 
@@ -212,5 +215,16 @@ public class PotionListener implements PrePotionUseSubscriber, PostPotionUseSubs
 			}
 		}
 
+	}
+
+	private void potionCards(AbstractPotion p) {
+		if (AbstractDungeon.player.hand != null) {
+			for (AbstractCard c : AbstractDungeon.player.hand.group) {
+				if (c.cardID.equals(RockOil.ID)) {
+					c.flash();
+					c.use(AbstractDungeon.player, null);
+				}
+			}
+		}
 	}
 }

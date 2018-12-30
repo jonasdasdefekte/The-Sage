@@ -305,6 +305,10 @@
     "NAME": "Rickety Defense",
     "DESCRIPTION": "Whenever you gain Frail, gain !M! Block per Frail you have."
   },
+  "Rock_Oil": {
+    "NAME": "Rock Oil",
+    "DESCRIPTION": "Unplayable. NL Whenever you use a Potion while this card is in your hand, gain !B! Block."
+  },
   "Salty_Strike": {
     "NAME": "Salty Strike",
     "DESCRIPTION": "Deal !D! damage. NL Apply !M! Thirsty."

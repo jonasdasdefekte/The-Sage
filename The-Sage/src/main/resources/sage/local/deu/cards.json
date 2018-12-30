@@ -305,6 +305,10 @@
     "NAME": "Klappriger Schild",
     "DESCRIPTION": "Immer wenn du Gebrechlich erhälst, erhälst du !M! Block pro Gebrechlich, dass du hast."
   },
+  "Rock_Oil": {
+    "NAME": "Felsöl",
+    "DESCRIPTION": "Unspielbar. NL Während diese Karte in deiner Hand ist erhälst du !B! Block, wenn du einen Trank benutzt."
+  },
   "Salty_Strike": {
     "NAME": "Salty Strike",
     "DESCRIPTION": "Füge !D! Schaden zu. NL Wende !M! Durstig an."

@@ -97,6 +97,7 @@ import sagemod.cards.Quackster;
 import sagemod.cards.Refine;
 import sagemod.cards.Riches;
 import sagemod.cards.RicketyDefense;
+import sagemod.cards.RockOil;
 import sagemod.cards.SaltyStrike;
 import sagemod.cards.Slalom;
 import sagemod.cards.SpoiledFood;
@@ -284,6 +285,7 @@ PostBattleSubscriber, OnStartBattleSubscriber {
 		BaseMod.addCard(new AboutClark());
 		BaseMod.addCard(new LetItGo());
 		BaseMod.addCard(new Tinker());
+		BaseMod.addCard(new RockOil());
 
 		// Rare
 		BaseMod.addCard(new Bookworm());
