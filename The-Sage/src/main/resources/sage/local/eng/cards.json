@@ -374,6 +374,10 @@
     "NAME": "Turn Around",
     "DESCRIPTION": "Gain !M! Frail. NL Deal !D! damage per Frail you have."
   },
+  "Undermine": {
+    "NAME": "Undermine",
+    "DESCRIPTION": "Apply !M! Artifact. When you attack an enemy this turn, they take extra damage equal to the Artifact on them."
+  },
   "Vigorous_Body": {
     "NAME": "Vigorous Body",
     "DESCRIPTION": "Whenever an Artifact of you gets triggered, gain !M! Strength.",

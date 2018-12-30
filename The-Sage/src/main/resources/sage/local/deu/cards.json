@@ -374,6 +374,10 @@
     "NAME": "Umkehren",
     "DESCRIPTION": "Erhalte !M! Gebrechlich. NL Füge !D! Schaden zu pro Gebrechlich, das du hast."
   },
+  "Undermine": {
+    "NAME": "Untergraben",
+    "DESCRIPTION": "Wennde !M! Artefakt an. Wenn du einen Gegner diese Runde angreifst, erhält er soviel zusätzlichen Schaden, wieviel Artefakt er hat."
+  },
   "Vigorous_Body": {
     "NAME": "Energischer Körper",
     "DESCRIPTION": "Immer wenn ein Artefakt bei dir genutzt wird, erhalte !M! Stärke.",

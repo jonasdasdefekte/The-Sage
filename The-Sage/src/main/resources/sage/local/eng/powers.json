@@ -159,6 +159,14 @@
       " turn."
     ]
   },
+  "Undermine": {
+    "NAME": "Undermine",
+    "DESCRIPTIONS": [
+      "When you attack an enemy this turn, they take extra damage equal to the Artifact on them.",
+      "When you attack an enemy for the next #b",
+      " turns, they take extra damage equal to the Artifact on them. "
+    ]
+  },
   "Vigorous_Body": {
     "NAME": "Vigorous Body",
     "DESCRIPTIONS": [

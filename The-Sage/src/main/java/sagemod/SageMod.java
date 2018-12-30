@@ -109,6 +109,7 @@ import sagemod.cards.SwoopDown;
 import sagemod.cards.TasteThisOne;
 import sagemod.cards.Tinker;
 import sagemod.cards.TurnAround;
+import sagemod.cards.Undermine;
 import sagemod.cards.VigorousBody;
 import sagemod.cards.colorless.PerplexingGlare;
 import sagemod.cards.colorless.Refine;
@@ -152,6 +153,7 @@ import sagemod.powers.RicketyDefensePower;
 import sagemod.powers.SageFlight;
 import sagemod.powers.TasteThisOnePower;
 import sagemod.powers.Thirsty;
+import sagemod.powers.UnderminePower;
 import sagemod.powers.VigorousBodyPower;
 import sagemod.powers.deprecated.AncientPoisonPower;
 import sagemod.powers.deprecated.EndlessFearPower;
@@ -290,6 +292,7 @@ PostBattleSubscriber, OnStartBattleSubscriber {
 		BaseMod.addCard(new RockOil());
 		BaseMod.addCard(new Momentum());
 		BaseMod.addCard(new ShiningPowder());
+		BaseMod.addCard(new Undermine());
 
 		// Rare
 		BaseMod.addCard(new Bookworm());
@@ -351,6 +354,7 @@ PostBattleSubscriber, OnStartBattleSubscriber {
 		BaseMod.addPower(SageFlight.class, SageFlight.POWER_ID);
 		BaseMod.addPower(TasteThisOnePower.class, TasteThisOnePower.POWER_ID);
 		BaseMod.addPower(Thirsty.class, Thirsty.POWER_ID);
+		BaseMod.addPower(UnderminePower.class, UnderminePower.POWER_ID);
 		BaseMod.addPower(VigorousBodyPower.class, VigorousBodyPower.POWER_ID);
 
 		// Deprecated

@@ -159,7 +159,7 @@ STSLIB:	How To Amuse Sneckos
 	Shining Powder
 		Skill, Unplayable:
 		Whenever you use a Potion while this card in your hand, gain 1 (2) Energy.
-NEW:	Undermine
+	Undermine
 		Skill, 1 Energy:
 		Apply 5 (8) Artifact. When you attack an enemy this turn, they take extra damage equal to the Artifact on them. // Works on multi Attacks. Multiple copies of this stack for the amount of turns.
 	Altitude
