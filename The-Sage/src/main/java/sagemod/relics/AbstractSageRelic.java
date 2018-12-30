@@ -11,17 +11,23 @@ import com.megacrit.cardcrawl.powers.AbstractPower;
 import basemod.abstracts.CustomRelic;
 import sagemod.SageMod;
 
-public class AbstractSageRelic extends CustomRelic {
+public abstract class AbstractSageRelic extends CustomRelic {
 
 	private static final String PREFIX = "sage/relics/";
+	private static final String OUTLINE_PREFIX = "sage/relics/outline/";
 	private static final String POSTFIX = ".png";
 
 	public AbstractSageRelic(String id, RelicTier tier, LandingSound sfx) {
-		super(id, getImg(id), tier, sfx);
+		super(id, getImg(id), getOutline(id),
+				tier, sfx);
 	}
 
 	private static Texture getImg(String id) {
 		return ImageMaster.loadImage(SageMod.getExistingOrPlaceholder(PREFIX, id, POSTFIX));
+	}
+
+	private static Texture getOutline(String id) {
+		return ImageMaster.loadImage(SageMod.getExistingOrPlaceholder(OUTLINE_PREFIX, id, POSTFIX));
 	}
 
 	protected void applyPowerToSelf(AbstractPower power) {

@@ -21,6 +21,7 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.dungeons.TheCity;
+import com.megacrit.cardcrawl.helpers.CardHelper;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.localization.CharacterStrings;
 import com.megacrit.cardcrawl.localization.EventStrings;
@@ -172,7 +173,7 @@ PostBattleSubscriber, OnStartBattleSubscriber {
 	public static final String AUTHORS = "jonasdasdefekte, Skrelpoid";
 
 	public static final String PLACEHOLDER = "Placeholder";
-	public static final Color COLOR = new Color(0xc65e03);
+	public static final Color COLOR = CardHelper.getColor(198f, 94f, 3f);
 	public static String LOCALIZATION_FOLDER = "sage/local/";
 
 	public static final String EVENT_FOLDER = "sage/events/";
