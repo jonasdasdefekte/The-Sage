@@ -216,6 +216,11 @@
       " NL (Greift einmal an.)"
     ]
   },
+  "Let_It_Go": {
+    "NAME": "Lass Es Los",
+    "DESCRIPTION": "Erschöpfe eine Karte aus deiner Hand. Erhalte soviel Flug, wie sie kostet. NL Erschöpft.",
+    "UPGRADE_DESCRIPTION": "Erschöpfe bis zu !M! Karten aus deiner Hand. Erhalte soviel Flug, wie sie kosten. NL Erschöpft."
+  },
   "Light_Weighted": {
     "NAME": "Leichtgewicht",
     "DESCRIPTION": "Verliere alles Gebrechlich. NL Erhalte ebensoviel Flug. NL Erschöpft.",

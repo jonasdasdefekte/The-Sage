@@ -216,6 +216,11 @@
        " NL (Attacks once.)"
     ]
   },
+  "Let_It_Go": {
+    "NAME": "Let It Go",
+    "DESCRIPTION": "Exhaust a card from your hand. Gain Flight equal to its cost. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Exhaust up to !M! cards from your hand. Gain Flight equal to their costs. NL Exhaust."
+  },
   "Light_Weighted": {
     "NAME": "Light-Weighted",
     "DESCRIPTION": "Lose all Frail. NL Gain that much Flight. NL Exhaust.",

@@ -144,7 +144,7 @@ STSLIB:	How To Befriend A Turtle
 STSLIB:	How To Amuse Sneckos
 		Skill, X Energy:
 		Draw X cards. (Refund 1.)
-NEW:	Let it go
+	Let it go
 		Skill, 1 Energy:
 		Exhaust a card (up to 2 cards) from your hand. Gain Flight equal to its (their) cost. Exhaust.
 NEW:	Tinker

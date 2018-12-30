@@ -80,6 +80,7 @@ import sagemod.cards.HowToPokeAtSlimes;
 import sagemod.cards.HowToWakeLyons;
 import sagemod.cards.HowToWarmElephants;
 import sagemod.cards.Lecture;
+import sagemod.cards.LetItGo;
 import sagemod.cards.LightWeighted;
 import sagemod.cards.Lunchtime;
 import sagemod.cards.MechanicsBreak;
@@ -280,6 +281,7 @@ PostBattleSubscriber, OnStartBattleSubscriber {
 		BaseMod.addCard(new RicketyDefense());
 		BaseMod.addCard(new PotionExplosion());
 		BaseMod.addCard(new AboutClark());
+		BaseMod.addCard(new LetItGo());
 
 		// Rare
 		BaseMod.addCard(new Bookworm());
