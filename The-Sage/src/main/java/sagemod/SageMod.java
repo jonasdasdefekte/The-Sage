@@ -85,6 +85,7 @@ import sagemod.cards.LightWeighted;
 import sagemod.cards.Lunchtime;
 import sagemod.cards.MechanicsBreak;
 import sagemod.cards.Meditation;
+import sagemod.cards.Momentum;
 import sagemod.cards.OnFire;
 import sagemod.cards.OnTheHead;
 import sagemod.cards.PerpetuumMobile;
@@ -286,6 +287,7 @@ PostBattleSubscriber, OnStartBattleSubscriber {
 		BaseMod.addCard(new LetItGo());
 		BaseMod.addCard(new Tinker());
 		BaseMod.addCard(new RockOil());
+		BaseMod.addCard(new Momentum());
 
 		// Rare
 		BaseMod.addCard(new Bookworm());

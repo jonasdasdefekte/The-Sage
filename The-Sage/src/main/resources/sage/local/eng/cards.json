@@ -238,6 +238,11 @@
     "NAME": "Meditation",
     "DESCRIPTION": "Lose all Flight. NL Draw !M! cards. NL Exhaust."
   },
+  "Momentum": {
+    "NAME": "Momentum",
+    "DESCRIPTION": "Brew a Swift Potion in !BRW! turns.",
+    "UPGRADE_DESCRIPTION": "Brew an upgraded Swift Potion in !BRW! turns."
+  },
   "Noxious_Wave": {
     "NAME": "Noxious Wave",
     "DESCRIPTION": "Deal !D! damage. Trigger Poison on this enemy.",

@@ -238,6 +238,11 @@
     "NAME": "Meditation",
     "DESCRIPTION": "Verliere allen Flug. NL Ziehe !M! Karten. NL Erschöpft."
   },
+  "Momentum": {
+    "NAME": "Momentum",
+    "DESCRIPTION": "Braue einen Schnelligkeitstrank in !BRW! Runden.",
+    "UPGRADE_DESCRIPTION": "Braue einen verbesserten Schnelligkeitstrank in !BRW! Runden."
+  },
   "Noxious_Wave": {
     "NAME": "Giftige Welle",
     "DESCRIPTION": "Füge !D! Schaden zu. Gift des Gegners wird ausgelöst.",
