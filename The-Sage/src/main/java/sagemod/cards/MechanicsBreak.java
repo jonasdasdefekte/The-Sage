@@ -21,12 +21,11 @@ public class MechanicsBreak extends AbstractSageCard {
 	private static final int BLOCK_AMT = 7;
 	private static final int UPGRADE_BLOCK_AMT = 3;
 	private static final int ARTIFACT_GAIN = 2;
-	private static final int UPGRADE_ARTIFACT_GAIN = 2;
 
 	public MechanicsBreak() {
 		super(ID, NAME, COST, DESCRIPTION, TYPE, RARITY, TARGET);
 		baseBlock = BLOCK_AMT;
-		baseMagicNumber = magicNumber = ARTIFACT_GAIN;
+		magicNumber = ARTIFACT_GAIN;
 	}
 
 	@Override
@@ -34,7 +33,6 @@ public class MechanicsBreak extends AbstractSageCard {
 		if (!upgraded) {
 			upgradeName();
 			upgradeBlock(UPGRADE_BLOCK_AMT);
-			upgradeMagicNumber(UPGRADE_ARTIFACT_GAIN);
 		}
 	}
 
