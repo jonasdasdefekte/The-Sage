@@ -1,7 +1,7 @@
 {
   "About_Clark": {
     "NAME": "Über Clark",
-    "DESCRIPTION": "Füge zweimal !D! Schaden zu. Kostet 1 [E] weniger pro Gebrechlich, dass du hast."
+    "DESCRIPTION": "Füge zweimal !D! Schaden zu. Kostet 1 [E] weniger pro Gebrechlich, das du hast."
   },
   "AbstractSageCard": {
     "NAME": "Abstract Sage Card",
@@ -276,7 +276,7 @@
   },
   "Potion_Explosion": {
     "NAME": "Trankexplosion",
-    "DESCRIPTION": "Füge ALLEN Gegnern !D! Schaden zu pro Trank den du in dieser Runde benutzt hast.",
+    "DESCRIPTION": "Füge ALLEN Gegnern !D! Schaden zu pro Trank, den du in diesem Zug benutzt hast.",
     "EXTENDED_DESCRIPTION": [
       " NL (Trifft einmal.)",
       " NL (Trifft ",
@@ -308,7 +308,7 @@
   },
   "Rickety_Defense": {
     "NAME": "Klappriger Schild",
-    "DESCRIPTION": "Immer wenn du Gebrechlich erhälst, erhälst du !M! Block pro Gebrechlich, dass du hast."
+    "DESCRIPTION": "Immer wenn du Gebrechlich erhälst, erhälst du !M! Block pro Gebrechlich, das du hast."
   },
   "Rock_Oil": {
     "NAME": "Felsöl",

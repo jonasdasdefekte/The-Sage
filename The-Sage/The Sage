@@ -93,9 +93,9 @@ STSLIB:	How To Befriend A Turtle
 	Burning Flask
 		Attack, 1 Energy: 
 		Deal 8 damage to ALL enemies. If you carry potions, discard one randomly to deal 12 (22) extra damage.
-	Pincer Attack
+TODO:	Pincer Attack
 		Attack, 1 Energy: 
-		Deal 6 (8) damage. Deal 6 (8) damage per Artifact the enemy has.
+		Deal 6 (8) damage. Damage is increased by the number of Artifacts on the enemy.
 	Bouncing Strike
 		Attack, 2 Energy: 
 		Gain 2 Frail. Gain 1 Flight. Deal damage equal to the sum (product) of your Frail and Flight.
@@ -174,18 +174,18 @@ STSLIB:	How To Amuse Sneckos
 STSLIB:	Deadly Contraption
 		Power, 1 Energy: 
 		Apply 3 (5) Artifact to ALL enemies. At the end of your turn, enemies are lose 1 HP per Artifact on them. Taxing. // Health Bar visuals like for Poison (HealthBarRenderPower) Taxing: This costs 1 more Energy per copy of Deadly Contraption you have in play.
-	Rickety Defense
+TODO:	Rickety Defense
 		Power, 1 Energy:
-		Whenever you gain Frail, gain 1 (2) Block per Frail you have.
+		At the end of your turn, set your Block to the amount of your Frail (if you have less Block than Frail).
 
 
 **18 RARE CARDS (gold)**
 	Swoop Down
 		Attack, 1 Energy: 
 		Deal 4 (6) damage per Flight you have. Then lose 1 Flight. (Upgrade: No Flight loss.)
-	Anti Ancient Attack
-		Attack, 3 Energy: 
-		Double the enemy's Artifact. Then deal 10 (15) damage per Artifact on the field. 
+TODO:	Anti Ancient Attack
+		Attack, 1 Energy: 
+		Apply 1 Artifact. Deal 6 (8) damage per Artifact the enemy has.
 	Lecture
 		Attack, 1 Energy
 		Deal 4 (6) damage per X cost card played this combat.
