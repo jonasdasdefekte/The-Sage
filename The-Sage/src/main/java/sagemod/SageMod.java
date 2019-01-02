@@ -97,6 +97,7 @@ import sagemod.cards.PotionTrance;
 import sagemod.cards.PourTarPitch;
 import sagemod.cards.Prey;
 import sagemod.cards.Quackster;
+import sagemod.cards.ReadTheRiotAct;
 import sagemod.cards.Riches;
 import sagemod.cards.RicketyDefense;
 import sagemod.cards.RockOil;
@@ -313,6 +314,7 @@ PostBattleSubscriber, OnStartBattleSubscriber {
 		BaseMod.addCard(new Lecture());
 		BaseMod.addCard(new Prey());
 		BaseMod.addCard(new Blurry());
+		BaseMod.addCard(new ReadTheRiotAct());
 
 		// Colorless
 		BaseMod.addCard(new PerplexingGlare());

@@ -207,10 +207,10 @@ Starts with 50 HP, 169 gold
 	Meditation
 		Skill, 0 Energy:
 		Lose all Flight. Draw 3 (5) cards. Exhaust.
-STSLIB:	Read the riot act
+	Read the riot act
 		Skill, 1 Energy
-		Fetch an X cost card from your draw pile. Play it and Refund all Energy. Exhaust. (No Exhaust.)
-STSLIB:	Blurry
+		Choose an X cost card from your draw pile and play it. Exhaust. (No Exhaust.)
+	Blurry
 		Skill, 1 Energy
 		Gain 4 (6) Temporary HP. Gain 2 (3) Temporary HP per Frail you have. Exhaust.
 	Alchemy Expert
@@ -223,8 +223,9 @@ STSLIB:	Blurry
 		Power, 1 Energy: 
 		Air. At the start of each turn, gain 1 Energy and lose 2 (1) Flight.
 STSLIB:	Bookworm
-		Power, 1 Energy: 
-		Whenever you play an X cost card, Refund (gain) 1 Energy.
+		Power, 1 Energy:
+		Whenever you play an X cost card, Refund 1 
+		(Upgrades to: Whenever you play an X cost card, Gain 1 Energy.)
 	On Fire
 		Power, 1 Energy:
 		Whenever you play 5 cards in a single turn, obtain a Fire Potion(+).

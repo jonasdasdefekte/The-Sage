@@ -310,6 +310,14 @@
     "DESCRIPTION": "Braue einen zufälligen Trank in !BRW! Zügen. NL Erschöpft.",
     "UPGRADE_DESCRIPTION": "Braue einen zufälligen Trank in !BRW! Zügen."
   },
+  "Read_The_Riot_Act": {
+    "NAME": "Lies den Krawallen-Akt",
+    "DESCRIPTION": "Wähle eine Karte, die X kostet, aus deinem Nachziehstapel und spiele sie. NL Erschöpft.",
+    "UPGRADE_DESCRIPTION": "Wähle eine Karte, die X kostet, aus deinem Nachziehstapel und spiele sie.",
+    "EXTENDED_DESCRIPTION": [
+      "Wähle eine Karte, die X kostet, um sie zu spielen."
+    ]
+  },
   "Refine": {
     "NAME": "Verfeinern",
     "DESCRIPTION": "Verbessere einen zufälligen deiner Tränke, die du trägst. NL Erschöpft.",

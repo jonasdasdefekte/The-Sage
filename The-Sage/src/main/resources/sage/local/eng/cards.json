@@ -310,6 +310,14 @@
     "DESCRIPTION": "Brew a random Potion in !BRW! turns. NL Exhaust.",
     "UPGRADE_DESCRIPTION": "Brew a random Potion in !BRW! turns."
   },
+  "Read_The_Riot_Act": {
+    "NAME": "Read The Riot Act",
+    "DESCRIPTION": "Choose an X cost card from your draw pile and play it. NL Exhaust",
+    "UPGRADE_DESCRIPTION": "Choose an X cost card from your draw pile and play it.",
+    "EXTENDED_DESCRIPTION": [
+      "Choose an X cost card to play."
+    ]
+  },
   "Refine": {
     "NAME": "Refine",
     "DESCRIPTION": "Upgrade a random unupgraded potion you are holding. NL Exhaust.",
