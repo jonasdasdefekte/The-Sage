@@ -1,23 +1,26 @@
 package sagemod.powers;
 
+import com.badlogic.gdx.graphics.Color;
+import com.evacipated.cardcrawl.mod.stslib.powers.interfaces.HealthBarRenderPower;
 import com.megacrit.cardcrawl.actions.AbstractGameAction.AttackEffect;
-import com.megacrit.cardcrawl.actions.common.DamageAction;
-import com.megacrit.cardcrawl.cards.DamageInfo;
-import com.megacrit.cardcrawl.cards.DamageInfo.DamageType;
+import com.megacrit.cardcrawl.actions.common.LoseHPAction;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.PowerStrings;
-import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 import com.megacrit.cardcrawl.powers.ArtifactPower;
+import com.megacrit.cardcrawl.rooms.AbstractRoom.RoomPhase;
+import sagemod.actions.ExecuteLaterAction;
 
-public class DeadlyContraptionPower extends AbstractSagePower {
+public class DeadlyContraptionPower extends AbstractSagePower implements HealthBarRenderPower {
 
 	public static final String POWER_ID = "Deadly_Contraption";
 	private static final PowerStrings powerStrings = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
 	public static final String NAME = powerStrings.NAME;
 	public static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;
+
+	public static final Color HEALTH_BAR_RENDER_COLOR = new Color(0.765f, 0.671f, 0.4f, 1.0f);
 
 	public DeadlyContraptionPower(AbstractCreature owner, int amount) {
 		super(POWER_ID, NAME, owner, amount);
@@ -30,23 +33,34 @@ public class DeadlyContraptionPower extends AbstractSagePower {
 		description = DESCRIPTIONS[0] + amount + DESCRIPTIONS[1];
 	}
 
+
 	@Override
-	public void atEndOfTurn(boolean isPlayer) {
-		if (!isPlayer) {
-			return;
-		}
-		boolean didSomething = false;
-		for (AbstractMonster mo : AbstractDungeon.getCurrRoom().monsters.monsters) {
-			if (mo.hasPower(ArtifactPower.POWER_ID)) {
-				didSomething = true;
-				AbstractDungeon.actionManager.addToBottom(new DamageAction(mo, new DamageInfo(owner,
-						amount * mo.getPower(ArtifactPower.POWER_ID).amount, DamageType.THORNS),
-						AttackEffect.FIRE));
+	public void atStartOfTurn() {
+		super.atStartOfTurn();
+		if (AbstractDungeon.getCurrRoom().phase == RoomPhase.COMBAT
+				&& !AbstractDungeon.getMonsters().areMonstersBasicallyDead()) {
+			if (owner.hasPower(ArtifactPower.POWER_ID)) {
+				int artifact = owner.getPower(ArtifactPower.POWER_ID).amount;
+				AbstractDungeon.actionManager
+						.addToBottom(new ExecuteLaterAction(this::flashWithoutSound));
+				AbstractDungeon.actionManager
+				.addToBottom(new LoseHPAction(owner, owner, artifact * amount,
+						AttackEffect.NONE));
 			}
 		}
-		if (didSomething) {
-			flash();
+	}
+
+	@Override
+	public int getHealthBarAmount() {
+		if (owner.hasPower(ArtifactPower.POWER_ID)) {
+			return owner.getPower(ArtifactPower.POWER_ID).amount * amount;
 		}
+		return 0;
+	}
+
+	@Override
+	public Color getColor() {
+		return HEALTH_BAR_RENDER_COLOR;
 	}
 
 }

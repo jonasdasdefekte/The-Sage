@@ -36,6 +36,12 @@
     ],
     "DESCRIPTION": "Reduziert Angriffsschaden, den du nimmst, um 50%. Sinkt um 1, wenn du Angriffsschaden nimmst."
   },
+  "TAXING": {
+    "NAMES": [
+      "versteuert"
+    ],
+    "DESCRIPTION": "Kostet 1 Energie mehr für jedes mal, das diese Karte in diesem Kampf gespielt worden ist."
+  },
   "THIRSTY": {
     "NAMES": [
       "durstig"

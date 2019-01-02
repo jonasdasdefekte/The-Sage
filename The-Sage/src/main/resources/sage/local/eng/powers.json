@@ -64,8 +64,8 @@
   "Deadly_Contraption": {
     "NAME": "Deadly Contraption",
     "DESCRIPTIONS": [
-      "At the end of your turn, enemies are dealt #b",
-      " damage per Artifact on them."
+      "At the end of their turn, the enemy loses #b",
+      " HP per Artifact on them."
     ]
   },
   "Disoriented": {

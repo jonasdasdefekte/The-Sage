@@ -64,8 +64,8 @@
   "Deadly_Contraption": {
     "NAME": "Tödlicher Apparat",
     "DESCRIPTIONS": [
-      "Am Ende deines Zuges erhalten Gegner #b",
-      " Schaden pro Artefakt auf ihnen."
+      "Am Ende des Zuges verliert der Gegner #b",
+      " TP pro Artefakt auf ihm."
     ]
   },
   "Disoriented": {
