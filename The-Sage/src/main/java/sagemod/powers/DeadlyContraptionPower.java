@@ -20,7 +20,7 @@ public class DeadlyContraptionPower extends AbstractSagePower implements HealthB
 	public static final String NAME = powerStrings.NAME;
 	public static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;
 
-	public static final Color HEALTH_BAR_RENDER_COLOR = new Color(0.765f, 0.671f, 0.4f, 1.0f);
+	public static final Color HEALTH_BAR_RENDER_COLOR = new Color(0xEAD290FF);
 
 	public DeadlyContraptionPower(AbstractCreature owner, int amount) {
 		super(POWER_ID, NAME, owner, amount);
@@ -42,7 +42,7 @@ public class DeadlyContraptionPower extends AbstractSagePower implements HealthB
 			if (owner.hasPower(ArtifactPower.POWER_ID)) {
 				int artifact = owner.getPower(ArtifactPower.POWER_ID).amount;
 				AbstractDungeon.actionManager
-						.addToBottom(new ExecuteLaterAction(this::flashWithoutSound));
+				.addToBottom(new ExecuteLaterAction(this::flashWithoutSound));
 				AbstractDungeon.actionManager
 				.addToBottom(new LoseHPAction(owner, owner, artifact * amount,
 						AttackEffect.NONE));
