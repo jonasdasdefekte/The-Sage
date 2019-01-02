@@ -222,9 +222,9 @@ Starts with 50 HP, 169 gold
 	Accumulation
 		Power, 1 Energy: 
 		Air. At the start of each turn, gain 1 Energy and lose 2 (1) Flight.
-STSLIB:	Bookworm
+	Bookworm
 		Power, 1 Energy:
-		Whenever you play an X cost card, Refund 1 
+		Whenever you play an X cost card, Refund 1 Energy.
 		(Upgrades to: Whenever you play an X cost card, Gain 1 Energy.)
 	On Fire
 		Power, 1 Energy:

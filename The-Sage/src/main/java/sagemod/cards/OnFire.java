@@ -18,6 +18,8 @@ public class OnFire extends AbstractSageCard {
 	private static final CardRarity RARITY = CardRarity.RARE;
 	private static final CardTarget TARGET = CardTarget.SELF;
 
+	private static final int POWER_AMT = 1;
+
 	public OnFire() {
 		super(ID, NAME, COST, DESCRIPTION, TYPE, RARITY, TARGET);
 		baseMagicNumber = magicNumber = OnFirePower.CARDS_NEEDED;
@@ -42,7 +44,7 @@ public class OnFire extends AbstractSageCard {
 		if (upgraded) {
 			OnFirePower.upgradeNext();
 		}
-		applyPowerToSelf(new OnFirePower(p, 1));
+		applyPowerToSelf(new OnFirePower(p, POWER_AMT));
 	}
 
 	@Override

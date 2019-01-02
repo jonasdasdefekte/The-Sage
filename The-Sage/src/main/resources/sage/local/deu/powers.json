@@ -31,8 +31,12 @@
   "Bookworm": {
     "NAME": "Bücherwurm",
     "DESCRIPTIONS": [
-      "Erhalte ",
-      " , wenn du eine Karte spielst, die X kostet."
+      "Wenn du eine Karte spielst, die X kostet",
+      " erstattet sie #b",
+      " Energie",
+      " und du erhälst ",
+      " erhälst du ",
+      "."
     ]
   },
   "Brew": {

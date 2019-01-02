@@ -68,7 +68,8 @@
   },
   "Bookworm": {
     "NAME": "Bookworm",
-    "DESCRIPTION": "Gain [E] every time NL you play a card NL that costs X."
+    "DESCRIPTION": "Whenever you play an X cost card, Refund 1 Energy.",
+    "UPGRADE_DESCRIPTION": "Whenever you play an X cost card, gain [E] ."
   },
   "Bouncing_Strike": {
     "NAME": "Bouncing Strike",

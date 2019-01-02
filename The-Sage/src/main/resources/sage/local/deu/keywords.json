@@ -38,7 +38,9 @@
   },
   "REFUND": {
     "NAMES": [
-      "erstattung"
+      "erstattung",
+      "erstatte",
+      "erstattet"
     ],
     "DESCRIPTION": "Gibt Energie zurück, die diese Karte gekostet hat, aber maximal den Erstattungswert."
   },

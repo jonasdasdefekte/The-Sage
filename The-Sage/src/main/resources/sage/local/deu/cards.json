@@ -68,7 +68,8 @@
   },
   "Bookworm": {
     "NAME": "Bücherwurm",
-    "DESCRIPTION": "Erhalte jedes Mal [E] , wenn du eine Karte spielst, die X kostet."
+    "DESCRIPTION": "Jedes Mal, wenn du eine Karte spielst, die X kostet, erstattet diese !M! Energie.",
+    "UPGRADE_DESCRIPTION": "Jedes Mal, wenn du eine Karte spielst, die X kostet, erhalte [E] ."
   },
   "Bouncing_Strike": {
     "NAME": "Sprungschlag",

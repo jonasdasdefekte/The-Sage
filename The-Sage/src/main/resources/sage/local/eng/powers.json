@@ -31,8 +31,12 @@
   "Bookworm": {
     "NAME": "Bookworm",
     "DESCRIPTIONS": [
-      "Gain ",
-      " every time you play a card that costs X."
+      "When you play an X cost card",
+      ", Refund #b",
+      " energy",
+      " and you gain ",
+      " you gain ",
+      "."
     ]
   },
   "Brew": {
