@@ -183,9 +183,9 @@ TODO:	Rickety Defense
 	Swoop Down
 		Attack, 1 Energy: 
 		Deal 4 (6) damage per Flight you have. Then lose 1 Flight. (Upgrade: No Flight loss.)
-TODO:	Anti Ancient Attack
+	Anti Ancient Attack
 		Attack, 1 Energy: 
-		Apply 1 Artifact. Deal 6 (8) damage per Artifact the enemy has.
+		Apply 1 (2) Artifact. Deal 6 (8) damage per Artifact the enemy has.
 	Lecture
 		Attack, 1 Energy
 		Deal 4 (6) damage per X cost card played this combat.

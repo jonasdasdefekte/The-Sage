@@ -42,7 +42,7 @@
   },
   "Anti_Ancient_Attack": {
     "NAME": "Anti-Ahnen-Angriff",
-    "DESCRIPTION": "Verdoppele das Artefakt des Gegners. NL Dann füge !D! Schaden pro Artefakt auf dem ganzen Feld zu.",
+    "DESCRIPTION": "Wende !M! Artefakt an. NL Dann füge !D! Schaden pro Artefakt des Gegners zu.",
     "EXTENDED_DESCRIPTION": [
       " NL (Trifft einmal)",
       " NL (Trifft ",

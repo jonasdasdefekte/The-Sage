@@ -42,7 +42,7 @@
   },
   "Anti_Ancient_Attack": {
     "NAME": "Anti Ancient Attack",
-    "DESCRIPTION": "Double the enemy's Artifact. NL Then deal !D! damage per Artifact on the field.",
+    "DESCRIPTION": "Apply !M! Artifact. NL Then deal !D! damage per Artifact the enemy has.",
     "EXTENDED_DESCRIPTION": [
       " NL (Attacks once)",
       " NL (Attacks ",
