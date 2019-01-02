@@ -58,7 +58,7 @@ Starts with 50 HP, 169 gold
 	Armor Brew
 		Skill, 1 Energy: 
 		Gain 5 (8) Block. Brew a Block potion(+) in 4 turns.
-STSLIB:	How To Befriend A Turtle
+	How To Befriend A Turtle
 		Skill, X Energy:
 		Gain X (+3) Temporary HP. Refund all.
 	Catch me if you can

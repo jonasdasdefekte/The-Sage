@@ -1,12 +1,14 @@
 package sagemod.cards;
 
+import com.evacipated.cardcrawl.mod.stslib.actions.tempHp.AddTemporaryHPAction;
+import com.evacipated.cardcrawl.mod.stslib.fields.cards.AbstractCard.RefundFields;
+import com.evacipated.cardcrawl.mod.stslib.variables.RefundVariable;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
+import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.relics.ChemicalX;
-import com.megacrit.cardcrawl.ui.panels.EnergyPanel;
 
 public class HowToBefriendATurtle extends AbstractSageCard {
 
@@ -19,19 +21,20 @@ public class HowToBefriendATurtle extends AbstractSageCard {
 	private static final CardRarity RARITY = CardRarity.COMMON;
 	private static final CardTarget TARGET = CardTarget.SELF;
 
-	private static final int EXTRA_BLOCK = 0;
-	private static final int UPGRADE_EXTRA_BLOCK = 3;
+	private static final int EXTRA_TEMP_HP = 0;
+	private static final int UPGRADE_EXTRA_TEMP_HP = 3;
 
 	public HowToBefriendATurtle() {
 		super(ID, NAME, COST, DESCRIPTION, TYPE, RARITY, TARGET);
-		baseBlock = EXTRA_BLOCK;
+		baseMagicNumber = magicNumber = EXTRA_TEMP_HP;
+		RefundVariable.setBaseValue(this, 0);
 	}
 
 	@Override
 	public void upgrade() {
 		if (!upgraded) {
 			upgradeName();
-			upgradeBlock(UPGRADE_EXTRA_BLOCK);
+			upgradeMagicNumber(UPGRADE_EXTRA_TEMP_HP);
 			rawDescription = cardStrings.UPGRADE_DESCRIPTION;
 			initializeDescription();
 		}
@@ -44,36 +47,22 @@ public class HowToBefriendATurtle extends AbstractSageCard {
 
 	@Override
 	public void use(AbstractPlayer p, AbstractMonster m) {
-		if (energyOnUse < EnergyPanel.totalCount) {
-			energyOnUse = EnergyPanel.totalCount;
+		int effect = getXEffect();
+
+		// Refund all
+		RefundFields.refund.set(this, effect);
+
+		int tempHp = effect + magicNumber;
+		if (tempHp > 0) {
+			AbstractDungeon.actionManager.addToBottom(new AddTemporaryHPAction(p, p, tempHp));
 		}
 
-		int effect = EnergyPanel.totalCount;
-		if (energyOnUse != -1) {
-			effect = energyOnUse;
-		}
-		if (player().hasRelic(ChemicalX.ID)) {
-			effect += ChemicalX.BOOST;
-			player().getRelic(ChemicalX.ID).flash();
-		}
-
-		int blockGain = effect + block;
-		if (blockGain > 0) {
-			block(blockGain);
-		}
-
-		if (effect > 0) {
-			gainEnergy(effect);
-		}
-
-		if (!freeToPlayOnce) {
-			player().energy.use(EnergyPanel.totalCount);
-		}
+		useXEnergy();
 	}
 
 	@Override
 	public String getLoadedDescription() {
-		return DESCRIPTION;
+		return upgraded ? cardStrings.UPGRADE_DESCRIPTION : DESCRIPTION;
 	}
 
 }

@@ -169,8 +169,8 @@
   },
   "How_To_Befriend_A_Turtle": {
     "NAME": "How To Befriend A Turtle",
-    "DESCRIPTION": "Gain X Block. NL Gain X [E].",
-    "UPGRADE_DESCRIPTION": "Gain X + !B! Block. NL Gain X [E]."
+    "DESCRIPTION": "Gain X Temporary_HP. NL Refund all.",
+    "UPGRADE_DESCRIPTION": "Gain X + !M! Temporary_HP. NL Refund All."
   },
   "How_To_Charm_A_Sentry": {
     "NAME": "How To Charm A Sentry",

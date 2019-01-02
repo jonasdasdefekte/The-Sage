@@ -169,8 +169,8 @@
   },
   "How_To_Befriend_A_Turtle": {
     "NAME": "Wie man sich einpanzert",
-    "DESCRIPTION": "Erhalte X Block. NL Erhalte X [E].",
-    "UPGRADE_DESCRIPTION": "Erhalte X + !B! Block. NL Erhalte X [E]."
+    "DESCRIPTION": "Erhalte X Temporary_HP. NL Refund alles.",
+    "UPGRADE_DESCRIPTION": "Erhalte X + !M! Temporary_HP. NL Refund alles."
   },
   "How_To_Charm_A_Sentry": {
     "NAME": "Wie man Wachen betört",
