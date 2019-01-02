@@ -1,5 +1,6 @@
 package sagemod.ui;
 
+import java.lang.reflect.InvocationTargetException;
 import java.util.ArrayList;
 import java.util.List;
 import com.badlogic.gdx.Gdx;
@@ -19,6 +20,7 @@ import com.megacrit.cardcrawl.localization.RelicStrings;
 import com.megacrit.cardcrawl.potions.AbstractPotion;
 import com.megacrit.cardcrawl.potions.PotionSlot;
 import com.megacrit.cardcrawl.rewards.RewardItem;
+import sagemod.SageMod;
 import sagemod.potions.UpgradedPotion;
 import sagemod.relics.SingingVial;
 
@@ -75,7 +77,7 @@ public class SingingVialButton {
 			}
 
 			if (current_x != target_x) {
-				current_x = MathUtils.lerp(current_x, target_x, Gdx.graphics.getDeltaTime() * 9.0F);
+				current_x = getX();
 				if (Math.abs(current_x - target_x) < Settings.UI_SNAP_THRESHOLD) {
 					current_x = target_x;
 					hb.move(current_x, TAKE_Y);
@@ -83,6 +85,24 @@ public class SingingVialButton {
 			}
 			textColor.a = MathHelper.fadeLerpSnap(textColor.a, 1.0F);
 			btnColor.a = textColor.a;
+		}
+	}
+
+	private float getX() {
+		if (!SageMod.isSuperFastModeLoaded) {
+			return MathUtils.lerp(current_x, target_x, Gdx.graphics.getDeltaTime() * 9.0F);
+		} else {
+			float delta;
+			try {
+				Class<?> clazz = Class.forName("skrelpoid.superfastmode.SuperFastMode");
+				delta = (float) clazz.getDeclaredMethod("getDelta", new Class<?>[] {}).invoke(null,
+						new Object[] {});
+			} catch (IllegalAccessException | IllegalArgumentException | InvocationTargetException
+					| NoSuchMethodException | SecurityException | ClassNotFoundException ex) {
+				ex.printStackTrace();
+				delta = Gdx.graphics.getDeltaTime();
+			}
+			return MathUtils.lerp(current_x, target_x, delta * 9.0F);
 		}
 	}
 

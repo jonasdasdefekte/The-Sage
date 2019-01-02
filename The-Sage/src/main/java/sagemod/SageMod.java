@@ -193,6 +193,12 @@ PostBattleSubscriber, OnStartBattleSubscriber {
 
 	private static String localLanguage;
 
+	public static boolean isSuperFastModeLoaded = false;
+	static {
+		isSuperFastModeLoaded = Loader.isModLoaded("superfastmode");
+		logger.info("SuperFastMode is loaded");
+	}
+
 	/**
 	 * The initializing method for ModTheSpire. This gets called before the game is
 	 * loaded.
