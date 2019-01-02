@@ -93,7 +93,7 @@ STSLIB:	How To Befriend A Turtle
 	Burning Flask
 		Attack, 1 Energy: 
 		Deal 8 damage to ALL enemies. If you carry potions, discard one randomly to deal 12 (22) extra damage.
-TODO:	Pincer Attack
+	Pincer Attack
 		Attack, 1 Energy: 
 		Deal 6 (8) damage. Damage is increased by the number of Artifacts on the enemy.
 	Bouncing Strike

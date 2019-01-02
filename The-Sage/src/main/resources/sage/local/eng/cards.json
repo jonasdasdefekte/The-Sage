@@ -268,7 +268,11 @@
   },
   "Pincer_Attack": {
     "NAME": "Pincer Attack",
-    "DESCRIPTION": "Deal !D! damage. NL Deal !D! damage per Artifact the enemy has."
+    "DESCRIPTION": "Deal !D! damage. NL Damage is increased per Artifact the enemy has.",
+    "EXTENDED_DESCRIPTION": [
+      " NL (Deals ",
+      " extra damage.)"
+    ]
   },
   "Pincer_Repair": {
     "NAME": "Pincer Repair",

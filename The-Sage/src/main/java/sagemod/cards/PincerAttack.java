@@ -42,14 +42,28 @@ public class PincerAttack extends AbstractSageCard {
 
 	@Override
 	public void use(AbstractPlayer p, AbstractMonster m) {
-		int times = 1;
+		int extraDamage = 0;
 		if (m.hasPower(ArtifactPower.POWER_ID)) {
-			times += m.getPower(ArtifactPower.POWER_ID).amount;
+			extraDamage += m.getPower(ArtifactPower.POWER_ID).amount;
 		}
-		for (int i = 0; i < times; i++) {
-			attack(m, AttackEffect.SMASH);
-		}
+		attack(m, AttackEffect.SMASH, damage + extraDamage);
+		rawDescription = getLoadedDescription();
+		initializeDescription();
 	}
+
+	@Override
+	public void calculateCardDamage(AbstractMonster mo) {
+		super.calculateCardDamage(mo);
+		int extraDamage = 0;
+		if (mo != null && mo.hasPower(ArtifactPower.POWER_ID)) {
+			extraDamage += mo.getPower(ArtifactPower.POWER_ID).amount;
+		}
+		rawDescription = getLoadedDescription();
+		rawDescription += cardStrings.EXTENDED_DESCRIPTION[0] + extraDamage
+				+ cardStrings.EXTENDED_DESCRIPTION[1];
+		initializeDescription();
+	}
+
 
 	@Override
 	public String getLoadedDescription() {

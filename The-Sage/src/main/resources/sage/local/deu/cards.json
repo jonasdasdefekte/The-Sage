@@ -268,7 +268,11 @@
   },
   "Pincer_Attack": {
     "NAME": "Zangenangriff",
-    "DESCRIPTION": "Füge !D! Schaden zu. NL Füge pro Artefakt auf dem Gegner !D! Schaden zu."
+    "DESCRIPTION": "Füge !D! Schaden zu. NL Schaden erhöht sich pro Artefakt des Gegners.",
+    "EXTENDED_DESCRIPTION": [
+      " NL (Fügt ",
+      " zusätzlichen Schaden zu.)"
+    ]
   },
   "Pincer_Repair": {
     "NAME": "Reparaturzange",
