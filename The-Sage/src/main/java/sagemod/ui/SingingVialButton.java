@@ -56,20 +56,16 @@ public class SingingVialButton {
 
 	public void update() {
 		if (!isHidden) {
-
-
 			hb.update();
 
-			if (hb.justHovered)
-
-			{
+			if (hb.justHovered) {
 				CardCrawlGame.sound.play("UI_HOVER");
 			}
 			if (hb.hovered && InputHelper.justClickedLeft) {
 				hb.clickStarted = true;
 				CardCrawlGame.sound.play("UI_CLICK_1");
 			}
-			if (hb.clicked || CInputActionSet.proceed.isJustPressed()) {
+			if (hb.clicked || CInputActionSet.altDown.isJustPressed()) {
 				CInputActionSet.proceed.unpress();
 				hb.clicked = false;
 				onClick();
@@ -85,12 +81,9 @@ public class SingingVialButton {
 					hb.move(current_x, TAKE_Y);
 				}
 			}
-
 			textColor.a = MathHelper.fadeLerpSnap(textColor.a, 1.0F);
 			btnColor.a = textColor.a;
 		}
-
-
 	}
 
 	public void onClick() {
@@ -167,7 +160,8 @@ public class SingingVialButton {
 
 		if (Settings.isControllerMode) {
 			sb.setColor(Color.WHITE);
-			sb.draw(CInputActionSet.proceed.getKeyImg(), current_x - 32.0F - 80.0F * Settings.scale,
+			sb.draw(CInputActionSet.altDown.getKeyImg(),
+					current_x - 32.0F - 140.0F * Settings.scale,
 					TAKE_Y - 32.0F, 32.0F, 32.0F, 64.0F, 64.0F, Settings.scale, Settings.scale,
 					0.0F, 0, 0, 64, 64, false, false);
 
