@@ -165,12 +165,12 @@
   "How_To_Amuse_Sneckos": {
     "NAME": "Wie man Sneckos erfreut",
     "DESCRIPTION": "Ziehe X Karten.",
-    "UPGRADE_DESCRIPTION": "Ziehe X Karten. NL Refund !stslib:refund!."
+    "UPGRADE_DESCRIPTION": "Ziehe X Karten. NL Erstattung !stslib:refund!."
   },
   "How_To_Befriend_A_Turtle": {
     "NAME": "Wie man sich einpanzert",
-    "DESCRIPTION": "Erhalte X Temporary_HP. NL Refund alles.",
-    "UPGRADE_DESCRIPTION": "Erhalte X + !M! Temporary_HP. NL Refund alles."
+    "DESCRIPTION": "Erhalte X temporäre_TP. NL Erstattung: alles.",
+    "UPGRADE_DESCRIPTION": "Erhalte X + !M! temporäre_TP. NL Erstattung: alles."
   },
   "How_To_Charm_A_Sentry": {
     "NAME": "Wie man Wachen betört",
@@ -191,8 +191,8 @@
   },
   "How_To_Poke_At_Slimes": {
     "NAME": "Wie man Schleime sticht",
-    "DESCRIPTION": "Füge ALLEN Gegnern X Schaden zu. NL Erhalte !M! Gebrechlich. NL Refund !stslib:refund!.",
-    "UPGRADE_DESCRIPTION": "Füge ALLEN Gegnern X + !D! Schaden zu. NL Erhalte !M! Gebrechlich. NL Refund alles."
+    "DESCRIPTION": "Füge ALLEN Gegnern X Schaden zu. NL Erhalte !M! Gebrechlich. NL Erstattung !stslib:refund!.",
+    "UPGRADE_DESCRIPTION": "Füge ALLEN Gegnern X + !D! Schaden zu. NL Erhalte !M! Gebrechlich. NL Erstattung: alles."
   },
   "How_To_Talk_To_Spiders": {
     "NAME": "Wie man mit Spinnen redet",
@@ -295,7 +295,7 @@
   },
   "Prey": {
     "NAME": "Beute",
-    "DESCRIPTION": "Füge !D! Schaden zu. Falls du hiermit einen Gegner, der mehr max. TP als du hast, tötest, erhälst du !M! max. TP und diese Karte verschwindet aus deinem Deck."
+    "DESCRIPTION": "Füge !D! Schaden zu. Falls du hiermit einen Gegner, der mehr max. TP als du hast, tötest, erhälst du !M! max. TP und entferne diese Karte aus deinem Deck."
   },
   "Quackster": {
     "NAME": "Quacksalber",

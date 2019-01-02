@@ -36,11 +36,29 @@
     ],
     "DESCRIPTION": "Reduziert Angriffsschaden, den du nimmst, um 50%. Sinkt um 1, wenn du Angriffsschaden nimmst."
   },
+  "REFUND": {
+    "NAMES": [
+      "erstattung"
+    ],
+    "DESCRIPTION": "Gibt Energie zurück, die diese Karte gekostet hat, aber maximal den Erstattungswert."
+  },
   "TAXING": {
     "NAMES": [
       "versteuert"
     ],
     "DESCRIPTION": "Kostet 1 Energie mehr für jedes mal, das diese Karte in diesem Kampf gespielt worden ist."
+  },
+  "TEMPORARY_HP1": {
+    "PROPER_NAME": "Temporäre TP",
+    "NAMES": [
+      "temporäre tp",
+      "temporäre_tp",
+      "temporärer tp",
+      "temporärer_tp",
+      "temporären tp",
+      "temporären_tp"
+    ],
+    "DESCRIPTION": "Temporäre TP verschwinden am Ende des Kampfs."
   },
   "THIRSTY": {
     "NAMES": [
