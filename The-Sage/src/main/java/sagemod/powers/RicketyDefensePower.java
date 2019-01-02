@@ -1,13 +1,13 @@
 package sagemod.powers;
 
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
+import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 import com.megacrit.cardcrawl.powers.FrailPower;
-import sagemod.actions.ExecuteLaterAction;
 
 public class RicketyDefensePower extends AbstractSagePower {
 
@@ -17,32 +17,32 @@ public class RicketyDefensePower extends AbstractSagePower {
 	public static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;
 
 	public RicketyDefensePower(AbstractCreature owner, int amount) {
-		super(POWER_ID, NAME, owner, amount);
+		super(POWER_ID, NAME, owner, -1);
 		updateDescription();
 		type = AbstractPower.PowerType.BUFF;
+		priority = 99;
 	}
 
 	@Override
-	public void onApplyPower(AbstractPower power, AbstractCreature target,
-			AbstractCreature source) {
-		if (power.ID.equals(FrailPower.POWER_ID) && target == AbstractDungeon.player) {
-			AbstractDungeon.actionManager
-			.addToBottom(new ExecuteLaterAction(() -> gainBlock(target, source)));
-		}
-	}
-
-	private void gainBlock(AbstractCreature target, AbstractCreature source) {
-		if (target.hasPower(FrailPower.POWER_ID)) {
-			int powerAmount = target.getPower(FrailPower.POWER_ID).amount;
-			AbstractDungeon.actionManager
-			.addToBottom(new GainBlockAction(target, source, amount * powerAmount));
-			flash();
+	public void atEndOfTurn(boolean isPlayer) {
+		super.atEndOfTurn(isPlayer);
+		if (isPlayer) {
+			AbstractPlayer player = AbstractDungeon.player;
+			if (player.hasPower(FrailPower.POWER_ID)) {
+				int frail = player.getPower(FrailPower.POWER_ID).amount;
+				int block = player.currentBlock;
+				if (frail > block) {
+					AbstractDungeon.actionManager
+					.addToBottom(new GainBlockAction(player, player, frail - block));
+					flash();
+				}
+			}
 		}
 	}
 
 	@Override
 	public void updateDescription() {
-		description = DESCRIPTIONS[0] + amount + DESCRIPTIONS[1];
+		description = DESCRIPTIONS[0];
 	}
 
 }

@@ -174,10 +174,9 @@ STSLIB:	How To Amuse Sneckos
 STSLIB:	Deadly Contraption
 		Power, 1 Energy: 
 		Apply 3 (5) Artifact to ALL enemies. At the end of your turn, enemies are lose 1 HP per Artifact on them. Taxing. // Health Bar visuals like for Poison (HealthBarRenderPower) Taxing: This costs 1 more Energy per copy of Deadly Contraption you have in play.
-TODO:	Rickety Defense
+	Rickety Defense
 		Power, 1 Energy:
-		At the end of your turn, set your Block to the amount of your Frail (if you have less Block than Frail).
-
+		(Upgrade: Innate) At the end of your turn, set your Block to your Frail if you have more Frail than Block.
 
 **18 RARE CARDS (gold)**
 	Swoop Down

@@ -312,7 +312,8 @@
   },
   "Rickety_Defense": {
     "NAME": "Rickety Defense",
-    "DESCRIPTION": "Whenever you gain Frail, gain !M! Block per Frail you have."
+    "DESCRIPTION": "At the end of your turn, set your Block to your Frail if you have more Frail than Block.",
+    "UPGRADE_DESCRIPTION": "Innate. NL At the end of your turn, set your Block to your Frail if you have more Frail than Block."
   },
   "Rock_Oil": {
     "NAME": "Rock Oil",

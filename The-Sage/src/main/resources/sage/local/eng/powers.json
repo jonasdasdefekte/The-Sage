@@ -134,8 +134,7 @@
   "Rickety_Defense": {
     "NAME": "Rickety Defense",
     "DESCRIPTIONS": [
-      "Whenever you gain Frail, gain #b",
-      " Block per Frail you have."
+      "At the end of your turn, set your Block to your Frail if you have more Frail than Block."
     ]
   },
   "Sage_Flight": {

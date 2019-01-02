@@ -312,7 +312,8 @@
   },
   "Rickety_Defense": {
     "NAME": "Klappriger Schild",
-    "DESCRIPTION": "Immer wenn du Gebrechlich erhälst, erhälst du !M! Block pro Gebrechlich, das du hast."
+    "DESCRIPTION": "Am Ende deiner Runde, setze deinen Block deinem Gebrechlich gleich, wenn du mehr Gebrechlich als Block hast.",
+    "UPGRADE_DESCRIPTION": "Angeboren. NL Am Ende deiner Runde, setze deinen Block deinem Gebrechlich gleich, wenn du mehr Gebrechlich als Block hast."
   },
   "Rock_Oil": {
     "NAME": "Felsöl",

@@ -134,8 +134,7 @@
   "Rickety_Defense": {
     "NAME": "Klappriger Schild",
     "DESCRIPTIONS": [
-      "Immer wenn du Gebrechlich erhälst, erhälst du #b",
-      " Block pro Gebrechlich, dass du hast."
+      "Am Ende deiner Runde, setze deinen Block deinem Gebrechlich gleich, wenn du mehr Gebrechlich als Block hast."
     ]
   },
   "Sage_Flight": {
