@@ -189,9 +189,9 @@ Starts with 50 HP, 169 gold
 	Lecture
 		Attack, 1 Energy
 		Deal 4 (6) damage per X cost card played this combat.
-STSLIB:	Prey
+	Prey
 		Attack, 1 Energy
-		Deal 10 (14) damage. If this kills an enemy with more max HP than you, gain 10 (14) max HP and Fleeting.
+		Deal 10 (14) damage. If this kills an enemy with more max HP than you, gain 10 (14) max HP and remove this card from your deck.
 	Escape
 		Skill, 1 Energy: 
 		Double your Flight. Exhaust. (Upgrade: No Exhaust.)

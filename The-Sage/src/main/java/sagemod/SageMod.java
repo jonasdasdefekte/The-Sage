@@ -94,6 +94,7 @@ import sagemod.cards.PincerRepair;
 import sagemod.cards.PotionExplosion;
 import sagemod.cards.PotionTrance;
 import sagemod.cards.PourTarPitch;
+import sagemod.cards.Prey;
 import sagemod.cards.Quackster;
 import sagemod.cards.Riches;
 import sagemod.cards.RicketyDefense;
@@ -309,6 +310,7 @@ PostBattleSubscriber, OnStartBattleSubscriber {
 		BaseMod.addCard(new VigorousBody());
 		BaseMod.addCard(new Riches());
 		BaseMod.addCard(new Lecture());
+		BaseMod.addCard(new Prey());
 
 		// Colorless
 		BaseMod.addCard(new PerplexingGlare());

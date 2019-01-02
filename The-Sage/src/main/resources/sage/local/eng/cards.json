@@ -293,6 +293,10 @@
     "NAME": "Pour Tar Pitch",
     "DESCRIPTION": "Deal !D! damage. NL If you are flying, this affects ALL enemies."
   },
+  "Prey": {
+    "NAME": "Prey",
+    "DESCRIPTION": "Deal !D! damage. If this kills an enemy with more max HP than you, gain !M! max HP and remove tis card from your deck."
+  },
   "Quackster": {
     "NAME": "Quackster",
     "DESCRIPTION": "Brew a random Potion in !BRW! turns. NL Exhaust.",
