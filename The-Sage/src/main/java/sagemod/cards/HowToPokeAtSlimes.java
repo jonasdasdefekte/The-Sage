@@ -1,5 +1,7 @@
 package sagemod.cards;
 
+import com.evacipated.cardcrawl.mod.stslib.fields.cards.AbstractCard.RefundFields;
+import com.evacipated.cardcrawl.mod.stslib.variables.RefundVariable;
 import com.megacrit.cardcrawl.actions.AbstractGameAction.AttackEffect;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -19,15 +21,15 @@ public class HowToPokeAtSlimes extends AbstractSageCard {
 	private static final CardRarity RARITY = CardRarity.COMMON;
 	private static final CardTarget TARGET = CardTarget.ALL_ENEMY;
 
-	private static final int ATTACK_DMG = 5;
-	private static final int UPGRADE_ATTACK_DMG = 2;
-	private static final int FRAIL_GAIN = 4;
-	private static final int UPGRADE_FRAIL_GAIN = -1;
+	private static final int UPGRADE_ATTACK_DMG = 3;
+	private static final int FRAIL_GAIN = 2;
+	private static final int REFUND_AMOUNT = 3;
 
 	public HowToPokeAtSlimes() {
 		super(ID, NAME, COST, DESCRIPTION, TYPE, RARITY, TARGET);
-		baseDamage = ATTACK_DMG;
+		baseDamage = 0;
 		baseMagicNumber = magicNumber = FRAIL_GAIN;
+		RefundVariable.setBaseValue(this, REFUND_AMOUNT);
 		isMultiDamage = true;
 	}
 
@@ -36,7 +38,8 @@ public class HowToPokeAtSlimes extends AbstractSageCard {
 		if (!upgraded) {
 			upgradeName();
 			upgradeDamage(UPGRADE_ATTACK_DMG);
-			upgradeMagicNumber(UPGRADE_FRAIL_GAIN);
+			rawDescription = cardStrings.UPGRADE_DESCRIPTION;
+			initializeDescription();
 		}
 	}
 
@@ -48,21 +51,23 @@ public class HowToPokeAtSlimes extends AbstractSageCard {
 	@Override
 	public void use(AbstractPlayer p, AbstractMonster m) {
 		int effect = getXEffect();
-		int frail = Math.max(0, magicNumber - effect);
-
-		if (frail > 0) {
-			applyPowerToSelf(new FrailPower(p, frail, false));
+		// Deal X damage
+		for (int i = 0; i < multiDamage.length; i++) {
+			multiDamage[i] += effect;
 		}
-		if (effect > 0) {
-			gainEnergy(effect);
+		// Refund All
+		if (upgraded) {
+			RefundFields.refund.set(this, effect);
 		}
+		applyPowerToSelf(new FrailPower(p, magicNumber, false));
 		attackAllEnemies(AttackEffect.SLASH_HORIZONTAL);
+
 		useXEnergy();
 	}
 
 	@Override
 	public String getLoadedDescription() {
-		return DESCRIPTION;
+		return upgraded ? cardStrings.UPGRADE_DESCRIPTION : DESCRIPTION;
 	}
 
 }

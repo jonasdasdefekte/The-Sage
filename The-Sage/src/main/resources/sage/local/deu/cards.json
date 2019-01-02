@@ -191,7 +191,8 @@
   },
   "How_To_Poke_At_Slimes": {
     "NAME": "Wie man Schleime sticht",
-    "DESCRIPTION": "Füge ALLEN Gegnern !D! Schaden zu. NL Erhalte !M! -X Gebrechlich. NL Erhalte X [E]."
+    "DESCRIPTION": "Füge ALLEN Gegnern X Schaden zu. NL Erhalte !M! Gebrechlich. NL Refund !stslib:refund!.",
+    "UPGRADE_DESCRIPTION": "Füge ALLEN Gegnern X + !D! Schaden zu. NL Erhalte !M! Gebrechlich. NL Refund alles."
   },
   "How_To_Talk_To_Spiders": {
     "NAME": "Wie man mit Spinnen redet",
