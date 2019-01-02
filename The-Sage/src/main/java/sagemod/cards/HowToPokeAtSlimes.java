@@ -1,6 +1,5 @@
 package sagemod.cards;
 
-import com.evacipated.cardcrawl.mod.stslib.fields.cards.AbstractCard.RefundFields;
 import com.evacipated.cardcrawl.mod.stslib.variables.RefundVariable;
 import com.megacrit.cardcrawl.actions.AbstractGameAction.AttackEffect;
 import com.megacrit.cardcrawl.cards.AbstractCard;
@@ -38,6 +37,8 @@ public class HowToPokeAtSlimes extends AbstractSageCard {
 		if (!upgraded) {
 			upgradeName();
 			upgradeDamage(UPGRADE_ATTACK_DMG);
+			// Refund ALL
+			RefundVariable.upgrade(this, 999);
 			rawDescription = cardStrings.UPGRADE_DESCRIPTION;
 			initializeDescription();
 		}
@@ -54,10 +55,6 @@ public class HowToPokeAtSlimes extends AbstractSageCard {
 		// Deal X damage
 		for (int i = 0; i < multiDamage.length; i++) {
 			multiDamage[i] += effect;
-		}
-		// Refund All
-		if (upgraded) {
-			RefundFields.refund.set(this, effect);
 		}
 		applyPowerToSelf(new FrailPower(p, magicNumber, false));
 		attackAllEnemies(AttackEffect.SLASH_HORIZONTAL);

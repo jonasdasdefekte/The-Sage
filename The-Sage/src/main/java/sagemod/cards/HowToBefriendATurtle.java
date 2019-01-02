@@ -1,7 +1,6 @@
 package sagemod.cards;
 
 import com.evacipated.cardcrawl.mod.stslib.actions.tempHp.AddTemporaryHPAction;
-import com.evacipated.cardcrawl.mod.stslib.fields.cards.AbstractCard.RefundFields;
 import com.evacipated.cardcrawl.mod.stslib.variables.RefundVariable;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -27,7 +26,8 @@ public class HowToBefriendATurtle extends AbstractSageCard {
 	public HowToBefriendATurtle() {
 		super(ID, NAME, COST, DESCRIPTION, TYPE, RARITY, TARGET);
 		baseMagicNumber = magicNumber = EXTRA_TEMP_HP;
-		RefundVariable.setBaseValue(this, 0);
+		// Refund all
+		RefundVariable.setBaseValue(this, 999);
 	}
 
 	@Override
@@ -48,9 +48,6 @@ public class HowToBefriendATurtle extends AbstractSageCard {
 	@Override
 	public void use(AbstractPlayer p, AbstractMonster m) {
 		int effect = getXEffect();
-
-		// Refund all
-		RefundFields.refund.set(this, effect);
 
 		int tempHp = effect + magicNumber;
 		if (tempHp > 0) {
