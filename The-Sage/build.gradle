@@ -23,6 +23,8 @@ eclipse {
         file {
             whenMerged { 
             	try {
+            	    def stslib = entries.find { it.path.contains 'StSLib.jar' }
+            	    stslib.sourcePath = fileReference(file('../../lib/StSLib.zip'))
             	    def basemod = entries.find { it.path.contains 'BaseMod.jar' }
             	    basemod.sourcePath = fileReference(file('../../lib/BaseMod.zip'))
            	 	    def modthespire = entries.find { it.path.contains 'ModTheSpire.jar' }
