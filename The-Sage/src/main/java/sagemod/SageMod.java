@@ -49,6 +49,7 @@ import sagemod.cards.Altitude;
 import sagemod.cards.Ambition;
 import sagemod.cards.AntiAncientAttack;
 import sagemod.cards.ArmorBrew;
+import sagemod.cards.Blurry;
 import sagemod.cards.BoldMove;
 import sagemod.cards.Bookworm;
 import sagemod.cards.BouncingStrike;
@@ -311,6 +312,7 @@ PostBattleSubscriber, OnStartBattleSubscriber {
 		BaseMod.addCard(new Riches());
 		BaseMod.addCard(new Lecture());
 		BaseMod.addCard(new Prey());
+		BaseMod.addCard(new Blurry());
 
 		// Colorless
 		BaseMod.addCard(new PerplexingGlare());

@@ -54,6 +54,14 @@
     "DESCRIPTION": "Gain !B! Block. NL Brew a Block Potion NL in !BRW! turns.",
     "UPGRADE_DESCRIPTION": "Gain !B! Block. NL Brew an upgraded Block Potion NL in !BRW! turns."
   },
+  "Blurry": {
+    "NAME": "Blurry",
+    "DESCRIPTION": "Gain !MISC! Temporary_HP. Gain !M! Temporary_HP per Frail you have. NL Exhaust.",
+    "EXTENDED_DESCRIPTION": [
+      " NL (Gives a total of ",
+      " Temporary_HP. )"
+    ]
+  },
   "Bold_Move": {
     "NAME": "Bold Move",
     "DESCRIPTION": "Deal !D! damage. NL Gain !M! Frail."

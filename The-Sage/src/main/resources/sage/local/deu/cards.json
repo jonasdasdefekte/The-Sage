@@ -54,6 +54,14 @@
     "DESCRIPTION": "Erhalte !B! Block. NL Braue einen Blocktrank NL in !BRW! Zügen.",
     "UPGRADE_DESCRIPTION": "Erhalte !B! Block. NL Braue einen verbesserten Blocktrank NL in !BRW! Zügen."
   },
+  "Blurry": {
+    "NAME": "Verschwommen",
+    "DESCRIPTION": "Erhalte !MISC! temporäre_TP. Erhalte !M! temporäre_TP pro Gebrechlich, das du hast. NL Erschöpft.",
+    "EXTENDED_DESCRIPTION": [
+      " NL (Gibt insgesamt ",
+      " temporäre_TP. )"
+    ]
+  },
   "Bold_Move": {
     "NAME": "Mutiger Schritt",
     "DESCRIPTION": "Füge !D! Schaden zu. NL Erhalte !M! Gebrechlich."
