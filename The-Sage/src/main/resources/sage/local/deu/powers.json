@@ -130,7 +130,7 @@
       "Am Ende deiner Runde, setze deinen Block deinem Gebrechlich gleich, wenn du mehr Gebrechlich als Block hast."
     ]
   },
-  "sagemod:Sage_Flight": {
+  "sagemod:Flight": {
     "NAME": "Flug",
     "DESCRIPTIONS": [
       "Reduziere #yAngriffsschaden, den du nimmst, um #b50%. Sinkt um 1, wenn du #yAngriffsschaden nimmst."
