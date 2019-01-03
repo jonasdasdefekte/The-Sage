@@ -35,11 +35,6 @@
     "NAME": "Ambition",
     "DESCRIPTION": "Gain !M! Frail. NL Gain [E] [E]."
   },
-  "sagemod:Ancient_Poison": {
-    "NAME": "Ancient Poison",
-    "DESCRIPTION": "Artifact no longer negates Poison NL for this combat. NL Each enemy gains Poison equal to their Artifact.",
-    "UPGRADE_DESCRIPTION": "Artifact no longer negates Poison NL for this combat. NL Each enemy gains Poison equal to their Artifact + !M!."
-  },
   "sagemod:Anti_Ancient_Attack": {
     "NAME": "Anti Ancient Attack",
     "DESCRIPTION": "Apply !M! Artifact. NL Then deal !D! damage per Artifact the enemy has.",
@@ -116,10 +111,6 @@
   "sagemod:Defend": {
     "NAME": "Defend",
     "DESCRIPTION": "Gain !B! Block."
-  },
-  "sagemod:Endless_Fear": {
-    "NAME": "Endless Fear",
-    "DESCRIPTION": "Whenever you use a non-Fear Potion, obtain a Fear Potion."
   },
   "sagemod:Energetic_Brew": {
     "NAME": "Energetic Brew",
@@ -206,10 +197,6 @@
     "DESCRIPTION": "Deal X damage to ALL enemies. NL Gain !M! Frail. NL Refund !stslib:refund!.",
     "UPGRADE_DESCRIPTION": "Deal X + !D! damage to ALL enemies. NL Gain !M! Frail. NL Refund all."
   },
-  "sagemod:How_To_Talk_To_Spiders": {
-    "NAME": "How To Talk To Spiders",
-    "DESCRIPTION": "Apply X Poison. NL Brew a Poison Potion NL in !sagemod:BRW! -X turns."
-  },
   "sagemod:How_To_Wake_Lyons": {
     "NAME": "How To Wake Lyons",
     "DESCRIPTION": "Brew a NL Steroid Potion NL in !sagemod:BRW! -X turns. NL Exhaust.",
@@ -255,11 +242,6 @@
     "NAME": "Momentum",
     "DESCRIPTION": "Brew a Swift Potion in !sagemod:BRW! turns.",
     "UPGRADE_DESCRIPTION": "Brew an upgraded Swift Potion in !sagemod:BRW! turns."
-  },
-  "sagemod:Noxious_Wave": {
-    "NAME": "Noxious Wave",
-    "DESCRIPTION": "Deal !D! damage. Trigger Poison on this enemy.",
-    "UPGRADE_DESCRIPTION": "Deal !D! damage. Trigger Poison on this enemy twice."
   },
   "sagemod:On_Fire": {
     "NAME": "On Fire",
@@ -390,11 +372,6 @@
     "NAME": "Taste This One",
     "DESCRIPTION": "Whenever you use a potion, deal !M! damage to a random enemy."
   },
-  "sagemod:Toxic_Chains": {
-    "NAME": "Toxic Chains",
-    "DESCRIPTION": "Lose all Frail. NL Apply that much Poison to ALL enemies.",
-    "UPGRADE_DESCRIPTION": "Lose all Frail. NL Apply that much Poison + !M! to ALL enemies."
-  },
   "sagemod:Tinker": {
     "NAME": "Tinker",
     "DESCRIPTION": "Gain !B! Block. (Equal to ALL Artifact on the field + !sagemod:MISC!)",
@@ -416,9 +393,5 @@
     "NAME": "Vigorous Body",
     "DESCRIPTION": "Whenever an Artifact of you gets triggered, gain !M! Strength.",
     "UPGRADE_DESCRIPTION": "Whenever an Artifact of you or an enemy gets triggered, gain !M! Strength."
-  },
-  "sagemod:Viral_Strike": {
-    "NAME": "Viral Strike",
-    "DESCRIPTION": "Deal !D! damage. Apply Virus and !M! Poison."
   }
 }

@@ -35,11 +35,6 @@
     "NAME": "Ambition",
     "DESCRIPTION": "Erhalte !M! Gebrechlich. NL Erhalte [E] [E]."
   },
-  "sagemod:Ancient_Poison": {
-    "NAME": "Uraltes Gift",
-    "DESCRIPTION": "Artefakt negiert in diesem Kampf kein Gift mehr. NL Jeder Gegner erhält soviel Gift, wie er Artefakt hat.",
-    "UPGRADE_DESCRIPTION": "Artefakt negiert in diesem Kampf kein Gift mehr. NL Jeder Gegner erhält soviel Gift, wie er Artefakt hat + !M!."
-  },
   "sagemod:Anti_Ancient_Attack": {
     "NAME": "Anti-Ahnen-Angriff",
     "DESCRIPTION": "Wende !M! Artefakt an. NL Dann füge !D! Schaden pro Artefakt des Gegners zu.",
@@ -116,10 +111,6 @@
   "sagemod:Defend": {
     "NAME": "Verteidigen",
     "DESCRIPTION": "Erhalte !B! Block."
-  },
-  "sagemod:Endless_Fear": {
-    "NAME": "Endlose Furcht",
-    "DESCRIPTION": "Immer wenn du einen Trank außer Furchttrank benutzt, erhalte einen Furchttrank."
   },
   "sagemod:Energetic_Brew": {
     "NAME": "Energiegebräu",
@@ -206,10 +197,6 @@
     "DESCRIPTION": "Füge ALLEN Gegnern X Schaden zu. NL Erhalte !M! Gebrechlich. NL Erstattung !stslib:refund!.",
     "UPGRADE_DESCRIPTION": "Füge ALLEN Gegnern X + !D! Schaden zu. NL Erhalte !M! Gebrechlich. NL Erstattung: alles."
   },
-  "sagemod:How_To_Talk_To_Spiders": {
-    "NAME": "Wie man mit Spinnen redet",
-    "DESCRIPTION": "Wende X Gift an. NL Braue einen Gifttrank NL in !sagemod:BRW! -X Zügen."
-  },
   "sagemod:How_To_Wake_Lyons": {
     "NAME": "Wie man Lywen aufweckt",
     "DESCRIPTION": "Braue einen NL Steroidetrank NL in !sagemod:BRW! -X Zügen. NL Erschöpft.",
@@ -255,11 +242,6 @@
     "NAME": "Momentum",
     "DESCRIPTION": "Braue einen Schnelligkeitstrank in !sagemod:BRW! Runden.",
     "UPGRADE_DESCRIPTION": "Braue einen verbesserten Schnelligkeitstrank in !sagemod:BRW! Runden."
-  },
-  "sagemod:Noxious_Wave": {
-    "NAME": "Giftige Welle",
-    "DESCRIPTION": "Füge !D! Schaden zu. Gift des Gegners wird ausgelöst.",
-    "UPGRADE_DESCRIPTION": "Füge !D! Schaden zu. Gift des Gegners wird zweimal ausgelöst."
   },
   "sagemod:On_Fire": {
     "NAME": "Feuer",
@@ -390,11 +372,6 @@
     "NAME": "Probier das mal",
     "DESCRIPTION": "Immer wenn du einen Trank benutzt, füge einem zufälligen Gegner !M! Schaden zu."
   },
-  "sagemod:Toxic_Chains": {
-    "NAME": "Giftige Ketten",
-    "DESCRIPTION": "Verliere alles Gebrechlich. NL Wende ALLEN Gegnern ebensoviel Gift an.",
-    "UPGRADE_DESCRIPTION": "Verliere alles Gebrechlich. NL Wende ALLEN Gegnern ebensoviel Gift + !M! an."
-  },
   "sagemod:Tinker": {
     "NAME": "Basteln",
     "DESCRIPTION": "Erhalte !B! Block. (ALLE Artefakte auf dem Feld + !sagemod:MISC!)",
@@ -416,9 +393,5 @@
     "NAME": "Energischer Körper",
     "DESCRIPTION": "Immer wenn ein Artefakt bei dir genutzt wird, erhalte !M! Stärke.",
     "UPGRADE_DESCRIPTION": "Immer wenn ein Artefakt bei dir oder einem Gegner genutzt wird, erhalte !M! Stärke."
-  },
-  "sagemod:Viral_Strike": {
-    "NAME": "Viraler Schlag",
-    "DESCRIPTION": "Füge !D! Schaden zu. Wende Virus und !M! Gift an."
   }
 }

@@ -22,12 +22,6 @@
       " Artefakt."
     ]
   },
-  "sagemod:Ancient_Poison": {
-    "NAME": "Uraltes Gift",
-    "DESCRIPTIONS": [
-      "Artefakt negiert in diesem Kampf kein Gift."
-    ]
-  },
   "sagemod:Bookworm": {
     "NAME": "Bücherwurm",
     "DESCRIPTIONS": [
@@ -78,12 +72,6 @@
       "Der erste Angriff dieses Gegners hat keinen Effekt - für #b",
       " Züge.",
       "Der erste Angriff dieses Gegners hat in diesem Zug keinen Effekt."
-    ]
-  },
-  "sagemod:Endless_Fear": {
-    "NAME": "Endlose Furcht",
-    "DESCRIPTIONS": [
-      "Immer wenn du einen Trank außer Furchttrank benutzt, erhalte einen Furchttrank."
     ]
   },
   "sagemod:Extra_Portion": {
@@ -185,12 +173,6 @@
       "Immer wenn ein #yArtefakt bei einem Gegner genutzt wird, erhalte #b",
       " #yStärke.",
       " NL "
-    ]
-  },
-  "sagemod:Virus": {
-    "NAME": "Virus",
-    "DESCRIPTIONS": [
-      "Gift, dass auf diesen Gegner außer durch Virus selber angewendet wird, wird auch auf alle anderen Gegner angewendet."
     ]
   }
 }

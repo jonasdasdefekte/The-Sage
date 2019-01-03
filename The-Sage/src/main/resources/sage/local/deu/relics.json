@@ -22,17 +22,6 @@
       "Immer wenn du einen Trank auf einen Gegner wirfst, trifft er auch die anderen Gegner."
     ]
   },
-  "sagemod:Byrd_Carpet": {
-    "NAME": "Foglteppich",
-    "FLAVOR": "Ein uralter Teppich, von dunklen Kultisten gewoben und mit seltsamer Magie versetzt.",
-    "DESCRIPTIONS": [
-      "Beginne jeden Kampf mit #b",
-      " #yFlug. Falls du zu Beginn deines Zuges #b",
-      " oder #b",
-      " #yFlug hast, setze ihn auf #b",
-      "."
-    ]
-  },
   "sagemod:Byrd_Feather": {
     "NAME": "Foglfeder",
     "FLAVOR": "Du kannst gar nicht warten, noch mehr auszurupfen.",

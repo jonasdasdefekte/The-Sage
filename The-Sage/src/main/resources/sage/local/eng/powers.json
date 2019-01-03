@@ -22,12 +22,6 @@
       " Artifact"
     ]
   },
-  "sagemod:Ancient_Poison": {
-    "NAME": "Ancient Posion",
-    "DESCRIPTIONS": [
-      "Artifact no longer negates Poison for this combat."
-    ]
-  },
   "sagemod:Bookworm": {
     "NAME": "Bookworm",
     "DESCRIPTIONS": [
@@ -78,12 +72,6 @@
       "The first attack of this enemy has no effect, for #b",
       " turns.",
       "The first attack of this enemy has no effect for this turn."
-    ]
-  },
-  "sagemod:Endless_Fear": {
-    "NAME": "Endless Fear",
-    "DESCRIPTIONS": [
-      "Whenever you use a non-Fear Potion, obtain a Fear Potion."
     ]
   },
   "sagemod:Extra_Portion": {
@@ -185,12 +173,6 @@
       "Whenever an #yArtifact of an enemy gets triggered, gain #b",
       " #yStrength.",
       " NL "
-    ]
-  },
-  "sagemod:Virus": {
-    "NAME": "Virus",
-    "DESCRIPTIONS": [
-      "Poison applied to this enemy other than by Virus spreads to all other enemies instantly."
     ]
   }
 }
