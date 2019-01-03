@@ -25,7 +25,7 @@ public class Tinker extends AbstractSageCard {
 
 	public Tinker() {
 		super(ID, NAME, COST, DESCRIPTION, TYPE, RARITY, TARGET);
-		misc = ADDITIONAL_BLOCK;
+		initSageMisc(ADDITIONAL_BLOCK);
 		baseMagicNumber = magicNumber = ARTIFACT_GAIN;
 	}
 
@@ -53,7 +53,7 @@ public class Tinker extends AbstractSageCard {
 
 	@Override
 	public void applyPowers() {
-		int amt = misc;
+		int amt = sageMisc;
 		if (upgraded) {
 			amt += magicNumber;
 		}

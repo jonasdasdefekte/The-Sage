@@ -29,7 +29,7 @@ public class CultistForm extends AbstractSageCard {
 	public CultistForm() {
 		super(ID, NAME, COST, DESCRIPTION, TYPE, RARITY, TARGET);
 		baseMagicNumber = magicNumber = DISORIENTED_TIMES;
-		misc = LOSE_FLIGHT;
+		initSageMisc(LOSE_FLIGHT);
 
 		tags.add(BaseModCardTags.FORM);
 	}
@@ -50,7 +50,7 @@ public class CultistForm extends AbstractSageCard {
 	@Override
 	public void use(AbstractPlayer p, AbstractMonster m) {
 		if (isFlying()) {
-			AbstractDungeon.actionManager.addToBottom(new ReduceFlightBlockableAction(misc, p));
+			AbstractDungeon.actionManager.addToBottom(new ReduceFlightBlockableAction(sageMisc, p));
 		}
 
 		for (int i = 0; i < magicNumber; i++) {

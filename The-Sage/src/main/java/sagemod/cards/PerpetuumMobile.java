@@ -25,7 +25,7 @@ public class PerpetuumMobile extends AbstractSageCard {
 	public PerpetuumMobile() {
 		super(ID, NAME, COST, DESCRIPTION, TYPE, RARITY, TARGET);
 		baseMagicNumber = magicNumber = DRAW_AMT;
-		misc = FOR_COST;
+		initSageMisc(FOR_COST);
 	}
 
 	@Override
@@ -45,7 +45,9 @@ public class PerpetuumMobile extends AbstractSageCard {
 	@Override
 	public void use(AbstractPlayer p, AbstractMonster m) {
 		AbstractDungeon.actionManager.addToBottom(new PerpetuumMobileAction(
-				AbstractDungeon.getCurrRoom().monsters.getRandomMonster(null, true, AbstractDungeon.cardRng), misc,
+				AbstractDungeon.getCurrRoom().monsters.getRandomMonster(null, true,
+						AbstractDungeon.cardRng),
+				sageMisc,
 				upgraded));
 	}
 

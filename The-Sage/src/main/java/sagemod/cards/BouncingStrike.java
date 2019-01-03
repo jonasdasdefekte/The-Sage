@@ -30,7 +30,7 @@ public class BouncingStrike extends AbstractSageCard {
 	public BouncingStrike() {
 		super(ID, NAME, COST, DESCRIPTION, TYPE, RARITY, TARGET);
 		baseMagicNumber = magicNumber = FLIGHT_GAIN;
-		misc = FRAIL_GAIN;
+		initSageMisc(FRAIL_GAIN);
 
 		tags.add(CardTags.STRIKE);
 	}
@@ -51,7 +51,7 @@ public class BouncingStrike extends AbstractSageCard {
 
 	@Override
 	public void use(AbstractPlayer p, AbstractMonster m) {
-		applyPowerToSelf(new FrailPower(p, misc, false));
+		applyPowerToSelf(new FrailPower(p, sageMisc, false));
 		applyPowerToSelf(new Flight(p, magicNumber));
 		AbstractDungeon.actionManager.addToBottom(new ExecuteLaterAction(() -> {
 			int damageAmount = 0;
@@ -82,7 +82,7 @@ public class BouncingStrike extends AbstractSageCard {
 		}
 		int amount = 0;
 		if (!player().hasPower(ArtifactPower.POWER_ID)) {
-			amount += misc;
+			amount += sageMisc;
 		}
 		if (player().hasPower(FrailPower.POWER_ID)) {
 			amount += player().getPower(FrailPower.POWER_ID).amount;

@@ -27,7 +27,7 @@ public class Blurry extends AbstractSageCard {
 
 	public Blurry() {
 		super(ID, NAME, COST, DESCRIPTION, TYPE, RARITY, TARGET);
-		misc = TEMP_HP_AMT;
+		initSageMisc(TEMP_HP_AMT);
 		baseMagicNumber = magicNumber = FRAIL_TEMP_HP_AMT;
 		exhaust = true;
 	}
@@ -35,7 +35,7 @@ public class Blurry extends AbstractSageCard {
 	@Override
 	public void upgrade() {
 		if (!upgraded) {
-			misc += UPGRADE_TEMP_HP_AMT;
+			upgradeSageMisc(UPGRADE_TEMP_HP_AMT);
 			upgradeMagicNumber(UPGRADE_FRAIL_TEMP_HP_AMT);
 			upgradeName();
 		}
@@ -57,7 +57,7 @@ public class Blurry extends AbstractSageCard {
 	}
 
 	private int getTempHpGain() {
-		int tempHP = misc;
+		int tempHP = sageMisc;
 		AbstractPlayer p = player();
 		if (p.hasPower(FrailPower.POWER_ID)) {
 			tempHP += p.getPower(FrailPower.POWER_ID).amount * magicNumber;

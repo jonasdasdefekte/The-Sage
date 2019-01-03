@@ -29,7 +29,7 @@ public class Study extends AbstractSageCard {
 	public Study() {
 		super(ID, NAME, COST, DESCRIPTION, TYPE, RARITY, TARGET);
 		baseMagicNumber = magicNumber = DRAW_AMT;
-		misc = PUT_ON_TOP_MAX;
+		initSageMisc(PUT_ON_TOP_MAX);
 		min = PUT_ON_TOP_MIN;
 	}
 
@@ -51,7 +51,8 @@ public class Study extends AbstractSageCard {
 	@Override
 	public void use(AbstractPlayer p, AbstractMonster m) {
 		draw(magicNumber);
-		AbstractDungeon.actionManager.addToBottom(new HandToTopOfDrawPileAction(min, misc, false,
+		AbstractDungeon.actionManager
+				.addToBottom(new HandToTopOfDrawPileAction(min, sageMisc, false,
 				cardStrings.EXTENDED_DESCRIPTION[0]));
 	}
 

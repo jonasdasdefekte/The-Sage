@@ -51,6 +51,9 @@ public abstract class AbstractSageCard extends CustomCard {
 	public boolean upgradedBrewIn;
 	public boolean isBrewInModified;
 	public boolean usesBrewIn;
+	public int baseSageMisc = 0;
+	public int sageMisc = 0;
+	public boolean upgradedSageMisc;
 	private boolean isTaxing;
 
 	public AbstractSageCard(String id, String name, int cost, String rawDescription, CardType type, CardRarity rarity,
@@ -82,8 +85,19 @@ public abstract class AbstractSageCard extends CustomCard {
 
 	public void upgradeBrewIn(int by) {
 		baseBrewIn += by;
-		brewIn = baseBrewIn;
+		brewIn = +by;
 		upgradedBrewIn = true;
+	}
+
+	public void initSageMisc(int value) {
+		baseSageMisc = value;
+		sageMisc = value;
+	}
+
+	public void upgradeSageMisc(int by) {
+		baseSageMisc += by;
+		sageMisc += by;
+		upgradedSageMisc = true;
 	}
 
 	public void initTaxingCard() {
