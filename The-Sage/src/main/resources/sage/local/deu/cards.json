@@ -54,13 +54,22 @@
     "DESCRIPTION": "Erhalte !B! Block. NL Braue einen Blocktrank NL in !BRW! Zügen.",
     "UPGRADE_DESCRIPTION": "Erhalte !B! Block. NL Braue einen verbesserten Blocktrank NL in !BRW! Zügen."
   },
+  "Blurry": {
+    "NAME": "Verschwommen",
+    "DESCRIPTION": "Erhalte !MISC! temporäre_TP. Erhalte !M! temporäre_TP pro Gebrechlich, das du hast. NL Erschöpft.",
+    "EXTENDED_DESCRIPTION": [
+      " NL (Gibt insgesamt ",
+      " temporäre_TP. )"
+    ]
+  },
   "Bold_Move": {
     "NAME": "Mutiger Schritt",
     "DESCRIPTION": "Füge !D! Schaden zu. NL Erhalte !M! Gebrechlich."
   },
   "Bookworm": {
     "NAME": "Bücherwurm",
-    "DESCRIPTION": "Erhalte jedes Mal [E] , wenn du eine Karte spielst, die X kostet."
+    "DESCRIPTION": "Jedes Mal, wenn du eine Karte spielst, die X kostet, erstattet diese !M! Energie.",
+    "UPGRADE_DESCRIPTION": "Jedes Mal, wenn du eine Karte spielst, die X kostet, erhalte [E] ."
   },
   "Bouncing_Strike": {
     "NAME": "Sprungschlag",
@@ -102,7 +111,7 @@
   },
   "Deadly_Contraption": {
     "NAME": "Tödlicher Apparat",
-    "DESCRIPTION": "ALLE Gegner erhalten !M! Artefakt. Am Ende deines Zuges erhalten Gegner !MISC! Schaden pro Artefakt auf ihnen."
+    "DESCRIPTION": "ALLE Gegner erhalten !M! Artefakt. Am Ende ihres Zuges verlieren Gegner !MISC! TP pro Artefakt auf ihnen. NL Versteuert."
   },
   "Defend_Sage": {
     "NAME": "Verteidigen",
@@ -165,12 +174,12 @@
   "How_To_Amuse_Sneckos": {
     "NAME": "Wie man Sneckos erfreut",
     "DESCRIPTION": "Ziehe X Karten.",
-    "UPGRADE_DESCRIPTION": "Ziehe X Karten. NL Erhalte [E]."
+    "UPGRADE_DESCRIPTION": "Ziehe X Karten. NL Erstattung !stslib:refund!."
   },
   "How_To_Befriend_A_Turtle": {
     "NAME": "Wie man sich einpanzert",
-    "DESCRIPTION": "Erhalte X Block. NL Erhalte X [E].",
-    "UPGRADE_DESCRIPTION": "Erhalte X + !B! Block. NL Erhalte X [E]."
+    "DESCRIPTION": "Erhalte X temporäre_TP. NL Erstattung: alles.",
+    "UPGRADE_DESCRIPTION": "Erhalte X + !M! temporäre_TP. NL Erstattung: alles."
   },
   "How_To_Charm_A_Sentry": {
     "NAME": "Wie man Wachen betört",
@@ -191,7 +200,8 @@
   },
   "How_To_Poke_At_Slimes": {
     "NAME": "Wie man Schleime sticht",
-    "DESCRIPTION": "Füge ALLEN Gegnern !D! Schaden zu. NL Erhalte !M! -X Gebrechlich. NL Erhalte X [E]."
+    "DESCRIPTION": "Füge ALLEN Gegnern X Schaden zu. NL Erhalte !M! Gebrechlich. NL Erstattung !stslib:refund!.",
+    "UPGRADE_DESCRIPTION": "Füge ALLEN Gegnern X + !D! Schaden zu. NL Erhalte !M! Gebrechlich. NL Erstattung: alles."
   },
   "How_To_Talk_To_Spiders": {
     "NAME": "Wie man mit Spinnen redet",
@@ -296,10 +306,22 @@
     "NAME": "Pech schütten",
     "DESCRIPTION": "Füge !D! Schaden zu. NL Falls du fliegst: Trifft ALLE Gegner."
   },
+  "Prey": {
+    "NAME": "Beute",
+    "DESCRIPTION": "Füge !D! Schaden zu. Falls du hiermit einen Gegner, der mehr max. TP als du hast, tötest, erhälst du !M! max. TP und entferne diese Karte aus deinem Deck."
+  },
   "Quackster": {
     "NAME": "Quacksalber",
     "DESCRIPTION": "Braue einen zufälligen Trank in !BRW! Zügen. NL Erschöpft.",
     "UPGRADE_DESCRIPTION": "Braue einen zufälligen Trank in !BRW! Zügen."
+  },
+  "Read_The_Riot_Act": {
+    "NAME": "Lies den Krawallen-Akt",
+    "DESCRIPTION": "Wähle eine Karte, die X kostet, aus deinem Nachziehstapel und spiele sie. NL Erschöpft.",
+    "UPGRADE_DESCRIPTION": "Wähle eine Karte, die X kostet, aus deinem Nachziehstapel und spiele sie.",
+    "EXTENDED_DESCRIPTION": [
+      "Wähle eine Karte, die X kostet, um sie zu spielen."
+    ]
   },
   "Refine": {
     "NAME": "Verfeinern",
@@ -374,6 +396,10 @@
     "NAME": "Basteln",
     "DESCRIPTION": "Erhalte !B! Block. (ALLE Artefakte auf dem Feld + !MISC!)",
     "UPGRADE_DESCRIPTION": "Erhalte !M! Artefakt. Erhalte !B! Block. (ALLE Artefakte auf dem Feld + !MISC!)"
+  },
+  "Trixter": {
+    "NAME": "Trixter",
+    "DESCRIPTION": "Erstatte die gesamte Energie für die nächste Karte, die du spielst."
   },
   "Turn_Around": {
     "NAME": "Umkehren",

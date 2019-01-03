@@ -17,6 +17,7 @@ public class Keywords {
 	public static final String BREWING = "brewing";
 	public static final String DISORIENTED = "disoriented";
 	public static final String FLIGHT = "flight";
+	public static final String TAXING = "taxing";
 	public static final String THIRSTY = "thirsty";
 	public static final String VIRUS = "virus";
 

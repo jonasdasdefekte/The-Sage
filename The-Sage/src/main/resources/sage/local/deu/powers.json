@@ -31,8 +31,12 @@
   "Bookworm": {
     "NAME": "Bücherwurm",
     "DESCRIPTIONS": [
-      "Erhalte ",
-      " , wenn du eine Karte spielst, die X kostet."
+      "Wenn du eine Karte spielst, die X kostet",
+      " erstattet sie #b",
+      " Energie",
+      " und du erhälst ",
+      " erhälst du ",
+      "."
     ]
   },
   "Brew": {
@@ -64,8 +68,8 @@
   "Deadly_Contraption": {
     "NAME": "Tödlicher Apparat",
     "DESCRIPTIONS": [
-      "Am Ende deines Zuges erhalten Gegner #b",
-      " Schaden pro Artefakt auf ihnen."
+      "Am Ende des Zuges verliert der Gegner #b",
+      " TP pro Artefakt auf ihm."
     ]
   },
   "Disoriented": {
@@ -156,6 +160,14 @@
       "#yTränke sind gegen diesen Gegner #y50% effektiver - für #b",
       " Züge.",
       " Zug."
+    ]
+  },
+  "Trixter": {
+    "NAME": "Trixter",
+    "DESCRIPTIONS": [
+      "#yErstatte die gesamte Energie für die nächste Karte, die du spielst.",
+      "#yErstatte die gesamte Energie für die nächsten #b",
+      "  Karten, die du spielst."
     ]
   },
   "Undermine": {

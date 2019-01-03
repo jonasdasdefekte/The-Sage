@@ -1,5 +1,6 @@
 package sagemod.cards;
 
+import com.evacipated.cardcrawl.mod.stslib.variables.RefundVariable;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -17,11 +18,12 @@ public class HowToAmuseSneckos extends AbstractSageCard {
 	private static final CardRarity RARITY = CardRarity.UNCOMMON;
 	private static final CardTarget TARGET = CardTarget.SELF;
 
-	private static final int UPGRADED_ENERGY_GAIN = 1;
+	private static final int REFUND_AMT = 0;
+	private static final int UPGRADED_REFUND_AMT = 1;
 
 	public HowToAmuseSneckos() {
 		super(ID, NAME, COST, DESCRIPTION, TYPE, RARITY, TARGET);
-
+		RefundVariable.setBaseValue(this, REFUND_AMT);
 	}
 
 	@Override
@@ -29,6 +31,7 @@ public class HowToAmuseSneckos extends AbstractSageCard {
 		if (!upgraded) {
 			upgradeName();
 
+			RefundVariable.upgrade(this, UPGRADED_REFUND_AMT);
 			rawDescription = cardStrings.UPGRADE_DESCRIPTION;
 			initializeDescription();
 		}
@@ -46,10 +49,6 @@ public class HowToAmuseSneckos extends AbstractSageCard {
 		int draw = effect;
 		if (draw > 0) {
 			draw(draw);
-		}
-
-		if (upgraded) {
-			gainEnergy(UPGRADED_ENERGY_GAIN);
 		}
 
 		useXEnergy();

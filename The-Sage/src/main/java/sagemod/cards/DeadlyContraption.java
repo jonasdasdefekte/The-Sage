@@ -18,7 +18,7 @@ public class DeadlyContraption extends AbstractSageCard {
 	public static final String DESCRIPTION = cardStrings.DESCRIPTION;
 	private static final CardType TYPE = CardType.POWER;
 	private static final CardRarity RARITY = CardRarity.UNCOMMON;
-	private static final CardTarget TARGET = CardTarget.ALL;
+	private static final CardTarget TARGET = CardTarget.ALL_ENEMY;
 
 	private static final int POWER_AMT = 1;
 	private static final int ARTIFACT_AMT = 3;
@@ -28,6 +28,7 @@ public class DeadlyContraption extends AbstractSageCard {
 		super(ID, NAME, COST, DESCRIPTION, TYPE, RARITY, TARGET);
 		baseMagicNumber = magicNumber = ARTIFACT_AMT;
 		misc = POWER_AMT;
+		initTaxingCard();
 	}
 
 	@Override
@@ -47,8 +48,8 @@ public class DeadlyContraption extends AbstractSageCard {
 	public void use(AbstractPlayer p, AbstractMonster m) {
 		for (AbstractMonster mo : AbstractDungeon.getCurrRoom().monsters.monsters) {
 			applyPower(new ArtifactPower(mo, magicNumber), mo);
+			applyPower(new DeadlyContraptionPower(mo, misc), mo);
 		}
-		applyPowerToSelf(new DeadlyContraptionPower(p, misc));
 	}
 
 	@Override

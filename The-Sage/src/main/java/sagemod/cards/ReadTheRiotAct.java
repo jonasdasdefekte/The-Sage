@@ -1,60 +1,49 @@
 package sagemod.cards;
 
-import com.evacipated.cardcrawl.mod.stslib.actions.tempHp.AddTemporaryHPAction;
-import com.evacipated.cardcrawl.mod.stslib.variables.RefundVariable;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import sagemod.actions.RiotAction;
 
-public class HowToBefriendATurtle extends AbstractSageCard {
+public class ReadTheRiotAct extends AbstractSageCard {
 
-	public static final String ID = "How_To_Befriend_A_Turtle";
+	public static final String ID = "Read_The_Riot_Act";
 	private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
 	public static final String NAME = cardStrings.NAME;
-	private static final int COST = -1;
+	private static final int COST = 1;
 	public static final String DESCRIPTION = cardStrings.DESCRIPTION;
 	private static final CardType TYPE = CardType.SKILL;
-	private static final CardRarity RARITY = CardRarity.COMMON;
+	private static final CardRarity RARITY = CardRarity.RARE;
 	private static final CardTarget TARGET = CardTarget.SELF;
 
-	private static final int EXTRA_TEMP_HP = 0;
-	private static final int UPGRADE_EXTRA_TEMP_HP = 3;
+	private static final int CARD_AMOUNT = 1;
 
-	public HowToBefriendATurtle() {
+	public ReadTheRiotAct() {
 		super(ID, NAME, COST, DESCRIPTION, TYPE, RARITY, TARGET);
-		baseMagicNumber = magicNumber = EXTRA_TEMP_HP;
-		// Refund all
-		RefundVariable.setBaseValue(this, 999);
+		exhaust = true;
 	}
 
 	@Override
 	public void upgrade() {
 		if (!upgraded) {
 			upgradeName();
-			upgradeMagicNumber(UPGRADE_EXTRA_TEMP_HP);
+			exhaust = false;
 			rawDescription = cardStrings.UPGRADE_DESCRIPTION;
-			initializeDescription();
 		}
 	}
 
 	@Override
 	public AbstractCard makeCopy() {
-		return new HowToBefriendATurtle();
+		return new ReadTheRiotAct();
 	}
 
 	@Override
 	public void use(AbstractPlayer p, AbstractMonster m) {
-		int effect = getXEffect();
-
-		int tempHp = effect + magicNumber;
-		if (tempHp > 0) {
-			AbstractDungeon.actionManager.addToBottom(new AddTemporaryHPAction(p, p, tempHp));
-		}
-
-		useXEnergy();
+		AbstractDungeon.actionManager
+		.addToBottom(new RiotAction(CARD_AMOUNT, m, false));
 	}
 
 	@Override

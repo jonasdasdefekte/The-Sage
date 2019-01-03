@@ -54,13 +54,22 @@
     "DESCRIPTION": "Gain !B! Block. NL Brew a Block Potion NL in !BRW! turns.",
     "UPGRADE_DESCRIPTION": "Gain !B! Block. NL Brew an upgraded Block Potion NL in !BRW! turns."
   },
+  "Blurry": {
+    "NAME": "Blurry",
+    "DESCRIPTION": "Gain !MISC! Temporary_HP. Gain !M! Temporary_HP per Frail you have. NL Exhaust.",
+    "EXTENDED_DESCRIPTION": [
+      " NL (Gives a total of ",
+      " Temporary_HP. )"
+    ]
+  },
   "Bold_Move": {
     "NAME": "Bold Move",
     "DESCRIPTION": "Deal !D! damage. NL Gain !M! Frail."
   },
   "Bookworm": {
     "NAME": "Bookworm",
-    "DESCRIPTION": "Gain [E] every time NL you play a card NL that costs X."
+    "DESCRIPTION": "Whenever you play an X cost card, Refund 1 Energy.",
+    "UPGRADE_DESCRIPTION": "Whenever you play an X cost card, gain [E] ."
   },
   "Bouncing_Strike": {
     "NAME": "Bouncing Strike",
@@ -102,7 +111,7 @@
   },
   "Deadly_Contraption": {
     "NAME": "Deadly Contraption",
-    "DESCRIPTION": "ALL enemies gain !M! Artifact. At the end of your turn, enemies are dealt !MISC! damage per Artifact on them."
+    "DESCRIPTION": "ALL enemies gain !M! Artifact. At the end of their turn, enemies lose !MISC! damage per Artifact on them. NL Taxing."
   },
   "Defend_Sage": {
     "NAME": "Defend",
@@ -165,12 +174,12 @@
   "How_To_Amuse_Sneckos": {
     "NAME": "How To Amuse Sneckos",
     "DESCRIPTION": "Draw X cards.",
-    "UPGRADE_DESCRIPTION": "Draw X cards. NL Gain [E]."
+    "UPGRADE_DESCRIPTION": "Draw X cards. NL Refund !stslib:refund!."
   },
   "How_To_Befriend_A_Turtle": {
     "NAME": "How To Befriend A Turtle",
-    "DESCRIPTION": "Gain X Block. NL Gain X [E].",
-    "UPGRADE_DESCRIPTION": "Gain X + !B! Block. NL Gain X [E]."
+    "DESCRIPTION": "Gain X Temporary_HP. NL Refund all.",
+    "UPGRADE_DESCRIPTION": "Gain X + !M! Temporary_HP. NL Refund All."
   },
   "How_To_Charm_A_Sentry": {
     "NAME": "How To Charm A Sentry",
@@ -191,7 +200,8 @@
   },
   "How_To_Poke_At_Slimes": {
     "NAME": "How To Poke At Slimes",
-    "DESCRIPTION": "Deal !D! damage to ALL enemies. NL Gain !M! -X Frail. NL Gain X [E]."
+    "DESCRIPTION": "Deal X damage to ALL enemies. NL Gain !M! Frail. NL Refund !stslib:refund!.",
+    "UPGRADE_DESCRIPTION": "Deal X + !D! damage to ALL enemies. NL Gain !M! Frail. NL Refund all."
   },
   "How_To_Talk_To_Spiders": {
     "NAME": "How To Talk To Spiders",
@@ -296,10 +306,22 @@
     "NAME": "Pour Tar Pitch",
     "DESCRIPTION": "Deal !D! damage. NL If you are flying, this affects ALL enemies."
   },
+  "Prey": {
+    "NAME": "Prey",
+    "DESCRIPTION": "Deal !D! damage. If this kills an enemy with more max HP than you, gain !M! max HP and remove this card from your deck."
+  },
   "Quackster": {
     "NAME": "Quackster",
     "DESCRIPTION": "Brew a random Potion in !BRW! turns. NL Exhaust.",
     "UPGRADE_DESCRIPTION": "Brew a random Potion in !BRW! turns."
+  },
+  "Read_The_Riot_Act": {
+    "NAME": "Read The Riot Act",
+    "DESCRIPTION": "Choose an X cost card from your draw pile and play it. NL Exhaust",
+    "UPGRADE_DESCRIPTION": "Choose an X cost card from your draw pile and play it.",
+    "EXTENDED_DESCRIPTION": [
+      "Choose an X cost card to play."
+    ]
   },
   "Refine": {
     "NAME": "Refine",
@@ -374,6 +396,10 @@
     "NAME": "Tinker",
     "DESCRIPTION": "Gain !B! Block. (Equal to ALL Artifact on the field + !MISC!)",
     "UPGRADE_DESCRIPTION": "Gain !M! Artifact. Gain !B! Block. (Equal to ALL Artifact on the field + !MISC!)"
+  },
+  "Trixter": {
+    "NAME": "Trixter",
+    "DESCRIPTION": "Refund all energy used when playing your next card."
   },
   "Turn_Around": {
     "NAME": "Turn Around",

@@ -23,6 +23,7 @@ import com.megacrit.cardcrawl.relics.ChemicalX;
 import com.megacrit.cardcrawl.ui.panels.EnergyPanel;
 import basemod.abstracts.CustomCard;
 import sagemod.SageMod;
+import sagemod.actions.ExecuteLaterAction;
 import sagemod.actions.LoseXEnergyAction;
 import sagemod.character.SageColorEnum;
 import sagemod.powers.Brewing;
@@ -50,6 +51,7 @@ public abstract class AbstractSageCard extends CustomCard {
 	public boolean upgradedBrewIn;
 	public boolean isBrewInModified;
 	public boolean usesBrewIn;
+	private boolean isTaxing;
 
 	public AbstractSageCard(String id, String name, int cost, String rawDescription, CardType type, CardRarity rarity,
 			CardTarget target) {
@@ -82,6 +84,25 @@ public abstract class AbstractSageCard extends CustomCard {
 		baseBrewIn += by;
 		brewIn = baseBrewIn;
 		upgradedBrewIn = true;
+	}
+
+	public void initTaxingCard() {
+		isTaxing = true;
+		if (CardCrawlGame.dungeon != null) {
+			for (AbstractCard c : AbstractDungeon.actionManager.cardsPlayedThisCombat) {
+				if (c.cardID.equals(cardID)) {
+					updateCost(1);
+				}
+			}
+		}
+	}
+
+	@Override
+	public void triggerOnCardPlayed(AbstractCard cardPlayed) {
+		super.triggerOnCardPlayed(cardPlayed);
+		if (isTaxing && cardPlayed.cardID.equals(cardID)) {
+			AbstractDungeon.actionManager.addToBottom(new ExecuteLaterAction(() -> updateCost(1)));
+		}
 	}
 
 	@Override

@@ -108,6 +108,13 @@
       "Upgrade Potion"
     ]
   },
+  "The_Guidebook_Guide": {
+    "NAME": "The Guidebook Guide",
+    "FLAVOR": "It knows everything.",
+    "DESCRIPTIONS": [
+      "Whenever you play an X cost card, exhaust it and refund all energy."
+    ]
+  },
   "Thunder_Carpet": {
     "NAME": "Thunder Carpet",
     "FLAVOR": "An ancient carpet, woven by eery cultists and infused with strange magic.",

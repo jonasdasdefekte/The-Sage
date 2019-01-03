@@ -49,6 +49,7 @@ import sagemod.cards.Altitude;
 import sagemod.cards.Ambition;
 import sagemod.cards.AntiAncientAttack;
 import sagemod.cards.ArmorBrew;
+import sagemod.cards.Blurry;
 import sagemod.cards.BoldMove;
 import sagemod.cards.Bookworm;
 import sagemod.cards.BouncingStrike;
@@ -94,7 +95,9 @@ import sagemod.cards.PincerRepair;
 import sagemod.cards.PotionExplosion;
 import sagemod.cards.PotionTrance;
 import sagemod.cards.PourTarPitch;
+import sagemod.cards.Prey;
 import sagemod.cards.Quackster;
+import sagemod.cards.ReadTheRiotAct;
 import sagemod.cards.Riches;
 import sagemod.cards.RicketyDefense;
 import sagemod.cards.RockOil;
@@ -113,6 +116,7 @@ import sagemod.cards.Undermine;
 import sagemod.cards.VigorousBody;
 import sagemod.cards.colorless.PerplexingGlare;
 import sagemod.cards.colorless.Refine;
+import sagemod.cards.colorless.Trixter;
 import sagemod.cards.debug.AvailablePotionUpgrade;
 import sagemod.cards.debug.ConsolePotion;
 import sagemod.cards.debug.CyclePotions;
@@ -153,6 +157,7 @@ import sagemod.powers.RicketyDefensePower;
 import sagemod.powers.SageFlight;
 import sagemod.powers.TasteThisOnePower;
 import sagemod.powers.Thirsty;
+import sagemod.powers.TrixterPower;
 import sagemod.powers.UnderminePower;
 import sagemod.powers.VigorousBodyPower;
 import sagemod.powers.deprecated.AncientPoisonPower;
@@ -169,6 +174,7 @@ import sagemod.relics.FalmelsAmulet;
 import sagemod.relics.FlyingCarpet;
 import sagemod.relics.RedBeastStatue;
 import sagemod.relics.SingingVial;
+import sagemod.relics.TheGuidebookGuide;
 import sagemod.relics.ThunderCarpet;
 import sagemod.relics.deprecated.ByrdCarpet;
 import sagemod.variables.BrewingDynamicVariable;
@@ -315,10 +321,14 @@ PostBattleSubscriber, OnStartBattleSubscriber {
 		BaseMod.addCard(new VigorousBody());
 		BaseMod.addCard(new Riches());
 		BaseMod.addCard(new Lecture());
+		BaseMod.addCard(new Prey());
+		BaseMod.addCard(new Blurry());
+		BaseMod.addCard(new ReadTheRiotAct());
 
 		// Colorless
 		BaseMod.addCard(new PerplexingGlare());
 		BaseMod.addCard(new Refine());
+		BaseMod.addCard(new Trixter());
 
 		// Deprecated
 		BaseMod.addCard(new EndlessFear());
@@ -360,6 +370,7 @@ PostBattleSubscriber, OnStartBattleSubscriber {
 		BaseMod.addPower(SageFlight.class, SageFlight.POWER_ID);
 		BaseMod.addPower(TasteThisOnePower.class, TasteThisOnePower.POWER_ID);
 		BaseMod.addPower(Thirsty.class, Thirsty.POWER_ID);
+		BaseMod.addPower(TrixterPower.class, TrixterPower.POWER_ID);
 		BaseMod.addPower(UnderminePower.class, UnderminePower.POWER_ID);
 		BaseMod.addPower(VigorousBodyPower.class, VigorousBodyPower.POWER_ID);
 
@@ -397,6 +408,9 @@ PostBattleSubscriber, OnStartBattleSubscriber {
 
 		// Special
 		BaseMod.addRelicToCustomPool(new ByrdFeather(), SageColorEnum.THE_SAGE);
+
+		// Shop
+		BaseMod.addRelic(new TheGuidebookGuide(), RelicType.SHARED);
 
 		// Deprecated
 		BaseMod.addRelicToCustomPool(new ByrdCarpet(), SageColorEnum.THE_SAGE);

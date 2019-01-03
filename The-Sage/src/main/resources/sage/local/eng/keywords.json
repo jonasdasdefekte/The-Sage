@@ -35,6 +35,12 @@
     ],
     "DESCRIPTION": "Reduce attack damage taken by 50%. Reduced by one if you take attack damage."
   },
+  "TAXING": {
+    "NAMES": [
+      "taxing"
+    ],
+    "DESCRIPTION": "Costs 1 more energy for every time you played this card for this combat."
+  },
   "THIRSTY": {
     "NAMES": [
       "thirsty"
