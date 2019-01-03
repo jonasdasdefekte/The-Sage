@@ -23,7 +23,7 @@ import sagemod.SageMod;
 
 public class Brew extends AbstractSagePower {
 
-	public static final String POWER_ID = "Brew";
+	public static final String POWER_ID = "sagemod:Brew";
 	private static final PowerStrings powerStrings = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
 	public static final String NAME = powerStrings.NAME;
 	public static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;

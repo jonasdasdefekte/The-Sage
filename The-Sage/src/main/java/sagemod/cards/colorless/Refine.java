@@ -15,7 +15,7 @@ import sagemod.potions.UpgradedPotion;
 
 public class Refine extends AbstractSageCard {
 
-	public static final String ID = "Refine";
+	public static final String ID = "sagemod:Refine";
 	private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
 	public static final String NAME = cardStrings.NAME;
 	private static final int COST = 1;

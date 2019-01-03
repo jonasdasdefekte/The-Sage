@@ -10,7 +10,7 @@ import com.megacrit.cardcrawl.powers.ArtifactPower;
 
 public class PincerAttack extends AbstractSageCard {
 
-	public static final String ID = "Pincer_Attack";
+	public static final String ID = "sagemod:Pincer_Attack";
 	private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
 	public static final String NAME = cardStrings.NAME;
 	private static final int COST = 1;

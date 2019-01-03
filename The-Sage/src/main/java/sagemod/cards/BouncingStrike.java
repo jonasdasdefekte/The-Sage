@@ -11,11 +11,11 @@ import com.megacrit.cardcrawl.powers.ArtifactPower;
 import com.megacrit.cardcrawl.powers.FrailPower;
 import com.megacrit.cardcrawl.powers.StrengthPower;
 import sagemod.actions.ExecuteLaterAction;
-import sagemod.powers.SageFlight;
+import sagemod.powers.Flight;
 
 public class BouncingStrike extends AbstractSageCard {
 
-	public static final String ID = "Bouncing_Strike";
+	public static final String ID = "sagemod:Bouncing_Strike";
 	private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
 	public static final String NAME = cardStrings.NAME;
 	private static final int COST = 2;
@@ -52,14 +52,14 @@ public class BouncingStrike extends AbstractSageCard {
 	@Override
 	public void use(AbstractPlayer p, AbstractMonster m) {
 		applyPowerToSelf(new FrailPower(p, misc, false));
-		applyPowerToSelf(new SageFlight(p, magicNumber));
+		applyPowerToSelf(new Flight(p, magicNumber));
 		AbstractDungeon.actionManager.addToBottom(new ExecuteLaterAction(() -> {
 			int damageAmount = 0;
 			if (p.hasPower(FrailPower.POWER_ID)) {
 				damageAmount = p.getPower(FrailPower.POWER_ID).amount;
 			}
-			if (p.hasPower(SageFlight.POWER_ID)) {
-				int amount = p.getPower(SageFlight.POWER_ID).amount;
+			if (p.hasPower(Flight.POWER_ID)) {
+				int amount = p.getPower(Flight.POWER_ID).amount;
 				if (upgraded) {
 					damageAmount *= amount;
 				} else {
@@ -77,8 +77,8 @@ public class BouncingStrike extends AbstractSageCard {
 
 	private void updateExtendedDescription() {
 		int damageAmount = magicNumber;
-		if (player().hasPower(SageFlight.POWER_ID)) {
-			damageAmount += player().getPower(SageFlight.POWER_ID).amount;
+		if (player().hasPower(Flight.POWER_ID)) {
+			damageAmount += player().getPower(Flight.POWER_ID).amount;
 		}
 		int amount = 0;
 		if (!player().hasPower(ArtifactPower.POWER_ID)) {

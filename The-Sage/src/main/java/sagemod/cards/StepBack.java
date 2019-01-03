@@ -5,11 +5,11 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import sagemod.powers.SageFlight;
+import sagemod.powers.Flight;
 
 public class StepBack extends AbstractSageCard {
 
-	public static final String ID = "Step_Back";
+	public static final String ID = "sagemod:Step_Back";
 	private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
 	public static final String NAME = cardStrings.NAME;
 	private static final int COST = 2;
@@ -48,7 +48,7 @@ public class StepBack extends AbstractSageCard {
 		if (isFlying()) {
 			gainEnergy(ENERGY_GAIN);
 		} else {
-			applyPowerToSelf(new SageFlight(p, magicNumber));
+			applyPowerToSelf(new Flight(p, magicNumber));
 		}
 	}
 

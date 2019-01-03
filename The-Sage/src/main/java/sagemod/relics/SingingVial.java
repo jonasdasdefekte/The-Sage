@@ -4,7 +4,7 @@ import com.megacrit.cardcrawl.relics.AbstractRelic;
 
 public class SingingVial extends AbstractSageRelic {
 
-	public static final String ID = "Singing_Vial";
+	public static final String ID = "sagemod:Singing_Vial";
 	public static final RelicTier TIER = RelicTier.UNCOMMON;
 	public static final LandingSound SOUND = LandingSound.MAGICAL;
 

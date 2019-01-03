@@ -18,7 +18,7 @@ import sagemod.powers.Disoriented;
 
 public class FalmelsAmulet extends AbstractSageRelic {
 
-	public static final String ID = "Falmels_Amulet";
+	public static final String ID = "sagemod:Falmels_Amulet";
 	public static final RelicTier TIER = RelicTier.BOSS;
 	public static final LandingSound SOUND = LandingSound.CLINK;
 	private static final int ENERGY_GAIN = 1;

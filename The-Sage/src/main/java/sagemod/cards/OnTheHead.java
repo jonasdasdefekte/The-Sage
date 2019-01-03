@@ -9,7 +9,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
 public class OnTheHead extends AbstractSageCard {
 
-	public static final String ID = "On_The_Head";
+	public static final String ID = "sagemod:On_The_Head";
 	private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
 	public static final String NAME = cardStrings.NAME;
 	private static final int COST = 1;

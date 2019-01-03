@@ -14,7 +14,7 @@ import sagemod.powers.Disoriented;
 
 public class FataMorgana extends CustomPotion {
 
-	public static final String POTION_ID = "Fata_Morgana";
+	public static final String POTION_ID = "sagemod:Fata_Morgana";
 	public static final PotionStrings potionStrings =
 			CardCrawlGame.languagePack.getPotionString(POTION_ID);
 	public static final String NAME = potionStrings.NAME;

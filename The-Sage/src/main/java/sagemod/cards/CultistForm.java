@@ -12,7 +12,7 @@ import sagemod.powers.Disoriented;
 
 public class CultistForm extends AbstractSageCard {
 
-	public static final String ID = "Cultist_Form";
+	public static final String ID = "sagemod:Cultist_Form";
 	private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
 	public static final String NAME = cardStrings.NAME;
 	private static final int COST = 3;

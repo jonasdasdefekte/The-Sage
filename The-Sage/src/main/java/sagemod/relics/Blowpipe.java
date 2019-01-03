@@ -4,7 +4,7 @@ import com.megacrit.cardcrawl.relics.AbstractRelic;
 
 public class Blowpipe extends AbstractSageRelic {
 
-	public static final String ID = "Blowpipe";
+	public static final String ID = "sagemod:Blowpipe";
 	public static final RelicTier TIER = RelicTier.RARE;
 	public static final LandingSound SOUND = LandingSound.MAGICAL;
 

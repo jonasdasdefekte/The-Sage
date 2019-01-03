@@ -9,7 +9,7 @@ import com.megacrit.cardcrawl.powers.FrailPower;
 
 public class Slalom extends AbstractSageCard {
 
-	public static final String ID = "Slalom";
+	public static final String ID = "sagemod:Slalom";
 	private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
 	public static final String NAME = cardStrings.NAME;
 	private static final int COST = 1;

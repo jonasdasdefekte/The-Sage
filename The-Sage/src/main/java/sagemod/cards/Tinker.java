@@ -11,7 +11,7 @@ import com.megacrit.cardcrawl.powers.ArtifactPower;
 
 public class Tinker extends AbstractSageCard {
 
-	public static final String ID = "Tinker";
+	public static final String ID = "sagemod:Tinker";
 	private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
 	public static final String NAME = cardStrings.NAME;
 	private static final int COST = 1;

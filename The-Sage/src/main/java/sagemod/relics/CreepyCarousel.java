@@ -7,7 +7,7 @@ import sagemod.powers.Disoriented;
 
 public class CreepyCarousel extends AbstractSageRelic {
 
-	public static final String ID = "Creepy_Carousel";
+	public static final String ID = "sagemod:Creepy_Carousel";
 	public static final RelicTier TIER = RelicTier.RARE;
 	public static final LandingSound SOUND = LandingSound.HEAVY;
 	private static final int TURNS_NEEDED = 5;

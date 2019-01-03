@@ -11,7 +11,7 @@ import sagemod.potions.UpgradedPotion;
 
 public class ConsolePotion extends AbstractSageCard {
 
-	public static final String ID = "Console_Potion";
+	public static final String ID = "sagemod:Console_Potion";
 	public static final String NAME = "Console Potion";
 	private static final int COST = 0;
 	public static final String DESCRIPTION =

@@ -15,7 +15,7 @@ import sagemod.actions.ExecuteLaterAction;
 
 public class DeadlyContraptionPower extends AbstractSagePower implements HealthBarRenderPower {
 
-	public static final String POWER_ID = "Deadly_Contraption";
+	public static final String POWER_ID = "sagemod:Deadly_Contraption";
 	private static final PowerStrings powerStrings = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
 	public static final String NAME = powerStrings.NAME;
 	public static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;

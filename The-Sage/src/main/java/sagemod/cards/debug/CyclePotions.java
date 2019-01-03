@@ -17,7 +17,7 @@ import sagemod.potions.UpgradedPotion;
 
 public class CyclePotions extends AbstractSageCard {
 
-	public static final String ID = "Cycle_Potions";
+	public static final String ID = "sagemod:Cycle_Potions";
 	public static final String NAME = "Cycle Potions";
 	private static final int COST = 0;
 	public static final String DESCRIPTION =

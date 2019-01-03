@@ -10,7 +10,7 @@ import sagemod.actions.ExecuteLaterAction;
 
 public class TheGuidebookGuide extends AbstractSageRelic implements OnAfterUseCardRelic {
 
-	public static final String ID = "The_Guidebook_Guide";
+	public static final String ID = "sagemod:The_Guidebook_Guide";
 	public static final RelicTier TIER = RelicTier.SHOP;
 	public static final LandingSound SOUND = LandingSound.MAGICAL;
 

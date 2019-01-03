@@ -9,7 +9,7 @@ import sagemod.actions.ReduceFlightBlockableAction;
 
 public class Accumulate extends AbstractSagePower {
 
-	public static final String POWER_ID = "Accumulate";
+	public static final String POWER_ID = "sagemod:Accumulate";
 	private static final PowerStrings powerStrings = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
 	public static final String NAME = powerStrings.NAME;
 	public static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;
@@ -65,7 +65,7 @@ public class Accumulate extends AbstractSagePower {
 	@Override
 	public void atStartOfTurn() {
 		AbstractDungeon.actionManager.addToBottom(new GainEnergyAction(amount));
-		if (owner.hasPower(SageFlight.POWER_ID)) {
+		if (owner.hasPower(Flight.POWER_ID)) {
 			AbstractDungeon.actionManager.addToBottom(
 					new ReduceFlightBlockableAction(flightLoss, AbstractDungeon.player));
 		}

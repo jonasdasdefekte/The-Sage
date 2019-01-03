@@ -16,7 +16,7 @@ import sagemod.relics.FlyingCarpet;
 
 public class CarpetTrader extends AbstractImageEvent {
 
-	public static final String ID = "Carpet_Trader";
+	public static final String ID = "sagemod:Carpet_Trader";
 	private static final EventStrings eventStrings = CardCrawlGame.languagePack.getEventString(ID);
 	private static final String NAME = eventStrings.NAME;
 	private static final String[] DESCRIPTIONS = eventStrings.DESCRIPTIONS;

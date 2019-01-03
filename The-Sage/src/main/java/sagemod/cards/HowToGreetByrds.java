@@ -8,12 +8,11 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.AbstractPower;
-
-import sagemod.powers.SageFlight;
+import sagemod.powers.Flight;
 
 public class HowToGreetByrds extends AbstractSageCard {
 
-	public static final String ID = "How_To_Greet_Byrds";
+	public static final String ID = "sagemod:How_To_Greet_Byrds";
 	private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
 	public static final String NAME = cardStrings.NAME;
 	private static final int COST = -1;
@@ -50,11 +49,11 @@ public class HowToGreetByrds extends AbstractSageCard {
 
 		if (upgraded) {
 			if (effect > 0) {
-				applyPowerToSelf(new SageFlight(p, effect));
+				applyPowerToSelf(new Flight(p, effect));
 			}
 		} else {
-			if (p.hasPower(SageFlight.POWER_ID)) {
-				AbstractPower power = p.getPower(SageFlight.POWER_ID);
+			if (p.hasPower(Flight.POWER_ID)) {
+				AbstractPower power = p.getPower(Flight.POWER_ID);
 				if (effect <= 0) {
 					AbstractDungeon.actionManager
 					.addToBottom(new RemoveSpecificPowerAction(p, p, power));
@@ -63,7 +62,7 @@ public class HowToGreetByrds extends AbstractSageCard {
 					power.flash();
 				}
 			} else if (effect > 0) {
-				applyPowerToSelf(new SageFlight(p, effect));
+				applyPowerToSelf(new Flight(p, effect));
 			}
 		}
 

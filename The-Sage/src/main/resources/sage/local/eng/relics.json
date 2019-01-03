@@ -1,5 +1,5 @@
 {
-  "Ancient_Magnet": {
+  "sagemod:Ancient_Magnet": {
     "NAME": "Ancient Magnet",
     "FLAVOR": "It reacts on any technology of the Ancients.",
     "DESCRIPTIONS": [
@@ -7,7 +7,7 @@
       " less #yStrength per #yArtifact on them."
     ]
   },
-  "Balloon_Animal": {
+  "sagemod:Balloon_Animal": {
     "NAME": "Balloon Animal",
     "FLAVOR": "This cute figure almost pulls you upwards.",
     "DESCRIPTIONS": [
@@ -15,14 +15,14 @@
       " card at the start of your turn if you have no #yFlight."
     ]
   },
-  "Blowpipe": {
+  "sagemod:Blowpipe": {
     "NAME": "Blowpipe",
     "FLAVOR": "This hunting tool can apply any liquid on distant targets in the twinkling of an eye.",
     "DESCRIPTIONS": [
       "Whenever you throw a potion at an enemy, it also affects the other enemies."
     ]
   },
-  "Byrd_Carpet": {
+  "sagemod:Byrd_Carpet": {
     "NAME": "Byrd Carpet",
     "FLAVOR": "An ancient carpet, woven by eery cultists and infused with strange magic.",
     "DESCRIPTIONS": [
@@ -33,7 +33,7 @@
       "."
     ]
   },
-  "Byrd_Feather": {
+  "sagemod:Byrd_Feather": {
     "NAME": "Byrd Feather",
     "FLAVOR": "You can't wait to pluck out some more.",
     "DESCRIPTIONS": [
@@ -43,7 +43,7 @@
       "."
     ]
   },
-  "Cabbage_Head": {
+  "sagemod:Cabbage_Head": {
     "NAME": "Cabbage Head",
     "FLAVOR": "Stinks.",
     "DESCRIPTIONS": [
@@ -51,7 +51,7 @@
       " #yDexterity while you are Frail."
     ]
   },
-  "Cookbook": {
+  "sagemod:Cookbook": {
     "NAME": "Cookbook",
     "FLAVOR": "Reading this makes you hungry. Although probably you better should abstain from some of these dishes.",
     "DESCRIPTIONS": [
@@ -59,7 +59,7 @@
       " #yBrewing."
     ]
   },
-  "Creepy_Carousel": {
+  "sagemod:Creepy_Carousel": {
     "NAME": "Creepy Carousel",
     "FLAVOR": "Creepy...",
     "DESCRIPTIONS": [
@@ -68,14 +68,14 @@
       " #yDisoriented to a random enemy."
     ]
   },
-  "Falmels_Amulet": {
+  "sagemod:Falmels_Amulet": {
     "NAME": "Falmel's Amulet",
     "FLAVOR": "Falmel's Amulet",
     "DESCRIPTIONS": [
       "Gain [E] at the start of your turn. Enemies attack an additional time on the first turn."
     ]
   },
-  "Flying_Carpet": {
+  "sagemod:Flying_Carpet": {
     "NAME": "Flying Carpet",
     "FLAVOR": "An old carpet, similar to those used by the Slavers of the far east.",
     "DESCRIPTIONS": [
@@ -83,7 +83,7 @@
       " #yFlight at the start of your second turn."
     ]
   },
-  "Red_Beast_Statue": {
+  "sagemod:Red_Beast_Statue": {
     "NAME": "Red Beast Statue",
     "FLAVOR": "You have never seen such a creature before, but this statue reminds you of something.",
     "DESCRIPTIONS": [
@@ -92,15 +92,7 @@
       "% more likely to be upgraded."
     ]
   },
-  "sagemod:Toy_Ornithopter": {
-    "NAME": "",
-    "FLAVOR": "",
-    "DESCRIPTIONS": [
-      "Whenever you DISCARD a potion, heal #b",
-      " HP."
-    ]
-  },
-  "Singing_Vial": {
+  "sagemod:Singing_Vial": {
     "NAME": "Singing Vial",
     "FLAVOR": "A vial that sings.",
     "DESCRIPTIONS": [
@@ -108,19 +100,27 @@
       "Upgrade Potion"
     ]
   },
-  "The_Guidebook_Guide": {
+  "sagemod:The_Guidebook_Guide": {
     "NAME": "The Guidebook Guide",
     "FLAVOR": "It knows everything.",
     "DESCRIPTIONS": [
       "Whenever you play an X cost card, exhaust it and refund all energy."
     ]
   },
-  "Thunder_Carpet": {
+  "sagemod:Thunder_Carpet": {
     "NAME": "Thunder Carpet",
     "FLAVOR": "An ancient carpet, woven by eery cultists and infused with strange magic.",
     "DESCRIPTIONS": [
       "Replaces Flying Carpet. Start each combat with #b",
       " Flight."
+    ]
+  },
+  "sagemod:Toy_Ornithopter": {
+    "NAME": "",
+    "FLAVOR": "",
+    "DESCRIPTIONS": [
+      "Whenever you DISCARD a potion, heal #b",
+      " HP."
     ]
   }
 }

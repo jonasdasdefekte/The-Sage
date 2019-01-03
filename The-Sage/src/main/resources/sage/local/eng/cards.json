@@ -1,9 +1,9 @@
 {
-  "About_Clark": {
+  "sagemod:About_Clark": {
     "NAME": "About Clark",
     "DESCRIPTION": "Deal !D! damage two times. Costs 1 less [E] per Frail you have."
   },
-  "AbstractSageCard": {
+  "sagemod:AbstractSageCard": {
     "NAME": "Abstract Sage Card",
     "DESCRIPTION": "ABSTRACT CLASS! THIS SHOULD NEVER BE DISPLAYED!",
     "UPGRADE_DESCRIPTION": "These values are for speech bubbles and updating the brew variable",
@@ -13,34 +13,34 @@
       "I can only play this if I have a potion!",
       ".",
       " next turn.",
-      "[(NL) ]*in[(NL) ]*!BRW![(NL) ]*-[(NL) ]*X*.*[(NL) ]*turns*\\.",
-      "[(NL) ]*in[(NL) ]*!BRW![(NL) ]*turns*\\.",
-      " *in[(NL) ]*!BRW![(NL) ]*turns*\\.*"
+      "[(NL) ]*in[(NL) ]*!sagemod:BRW![(NL) ]*-[(NL) ]*X*.*[(NL) ]*turns*\\.",
+      "[(NL) ]*in[(NL) ]*!sagemod:BRW![(NL) ]*turns*\\.",
+      " *in[(NL) ]*!sagemod:BRW![(NL) ]*turns*\\.*"
     ]
   },
-  "Accumulation": {
+  "sagemod:Accumulation": {
     "NAME": "Accumulation",
     "DESCRIPTION": "Air. NL Gain [E] and lose !M! Flight at the start of each turn."
   },
-  "Alchemy_Expert": {
+  "sagemod:Alchemy_Expert": {
     "NAME": "Alchemy Expert",
     "DESCRIPTION": "Whenever you use a potion, gain !M! Artifact.",
     "UPGRADE_DESCRIPTION": "Innate. NL Whenever you use a potion, gain !M! Artifact."
   },
-  "Altitude": {
+  "sagemod:Altitude": {
     "NAME": "Altitude",
     "DESCRIPTION": "Gain !M! Flight."
   },
-  "Ambition": {
+  "sagemod:Ambition": {
     "NAME": "Ambition",
     "DESCRIPTION": "Gain !M! Frail. NL Gain [E] [E]."
   },
-  "Ancient_Poison": {
+  "sagemod:Ancient_Poison": {
     "NAME": "Ancient Poison",
     "DESCRIPTION": "Artifact no longer negates Poison NL for this combat. NL Each enemy gains Poison equal to their Artifact.",
     "UPGRADE_DESCRIPTION": "Artifact no longer negates Poison NL for this combat. NL Each enemy gains Poison equal to their Artifact + !M!."
   },
-  "Anti_Ancient_Attack": {
+  "sagemod:Anti_Ancient_Attack": {
     "NAME": "Anti Ancient Attack",
     "DESCRIPTION": "Apply !M! Artifact. NL Then deal !D! damage per Artifact the enemy has.",
     "EXTENDED_DESCRIPTION": [
@@ -49,178 +49,178 @@
       " times)"
     ]
   },
-  "Armor_Brew": {
+  "sagemod:Armor_Brew": {
     "NAME": "Armor Brew",
-    "DESCRIPTION": "Gain !B! Block. NL Brew a Block Potion NL in !BRW! turns.",
-    "UPGRADE_DESCRIPTION": "Gain !B! Block. NL Brew an upgraded Block Potion NL in !BRW! turns."
+    "DESCRIPTION": "Gain !B! Block. NL Brew a Block Potion NL in !sagemod:BRW! turns.",
+    "UPGRADE_DESCRIPTION": "Gain !B! Block. NL Brew an upgraded Block Potion NL in !sagemod:BRW! turns."
   },
-  "Blurry": {
+  "sagemod:Blurry": {
     "NAME": "Blurry",
-    "DESCRIPTION": "Gain !MISC! Temporary_HP. Gain !M! Temporary_HP per Frail you have. NL Exhaust.",
+    "DESCRIPTION": "Gain !sagemod:MISC! Temporary_HP. Gain !M! Temporary_HP per Frail you have. NL Exhaust.",
     "EXTENDED_DESCRIPTION": [
       " NL (Gives a total of ",
       " Temporary_HP. )"
     ]
   },
-  "Bold_Move": {
+  "sagemod:Bold_Move": {
     "NAME": "Bold Move",
     "DESCRIPTION": "Deal !D! damage. NL Gain !M! Frail."
   },
-  "Bookworm": {
+  "sagemod:Bookworm": {
     "NAME": "Bookworm",
     "DESCRIPTION": "Whenever you play an X cost card, Refund 1 Energy.",
     "UPGRADE_DESCRIPTION": "Whenever you play an X cost card, gain [E] ."
   },
-  "Bouncing_Strike": {
+  "sagemod:Bouncing_Strike": {
     "NAME": "Bouncing Strike",
-    "DESCRIPTION": "Gain !MISC! Frail. NL Gain !M! Flight. Deal damage equal to the sum of your Frail and Flight.",
-    "UPGRADE_DESCRIPTION": "Gain !MISC! Frail. NL Gain !M! Flight. Deal damage equal to the product of your Frail and Flight.",
+    "DESCRIPTION": "Gain !sagemod:MISC! Frail. NL Gain !M! Flight. Deal damage equal to the sum of your Frail and Flight.",
+    "UPGRADE_DESCRIPTION": "Gain !sagemod:MISC! Frail. NL Gain !M! Flight. Deal damage equal to the product of your Frail and Flight.",
     "EXTENDED_DESCRIPTION": [
       " NL (Deals ",
       " damage)"
     ]
   },
-  "Brewmaster": {
+  "sagemod:Brewmaster": {
     "NAME": "Brewmaster",
     "DESCRIPTION": "Gain !M! Brewing. "
   },
-  "Burning_Flask": {
+  "sagemod:Burning_Flask": {
     "NAME": "Burning Flask",
     "DESCRIPTION": "Deal !D! damage to ALL enemies. If you carry potions, discard one at random and deal !M! extra damage."
   },
-  "Byrd_Feather_Preview": {
+  "sagemod:Byrd_Feather_Preview": {
     "NAME": "Byrd Feather",
     "DESCRIPTION": "RELIC! NL If you have 1 or 2 Flight at the start of your turn, set it to !M!."
   },
-  "Cane_Strike": {
+  "sagemod:Cane_Strike": {
     "NAME": "Cane Strike",
     "DESCRIPTION": "Deal !D! damage. Deals double damage if you are Frail."
   },
-  "Catch_Me_If_You_Can": {
+  "sagemod:Catch_Me_If_You_Can": {
     "NAME": "Catch Me If You Can",
     "DESCRIPTION": "Air. Prevent the next !M! times you would lose Flight until the start of your next turn."
   },
-  "Crank": {
+  "sagemod:Crank": {
     "NAME": "Crank",
     "DESCRIPTION": "Deal !D! damage. NL If the enemy has Artifact, draw !M! card.",
     "UPGRADE_DESCRIPTION": "Deal !D! damage. NL If the enemy has Artifact, draw cards equal to the enemies Artifact."
   },
-  "Cultist_Form": {
+  "sagemod:Cultist_Form": {
     "NAME": "Cultist Form",
-    "DESCRIPTION": "Lose !MISC! Flight. NL Apply 1 Disoriented to a random enemy !M! times."
+    "DESCRIPTION": "Lose !sagemod:MISC! Flight. NL Apply 1 Disoriented to a random enemy !M! times."
   },
-  "Deadly_Contraption": {
+  "sagemod:Deadly_Contraption": {
     "NAME": "Deadly Contraption",
-    "DESCRIPTION": "ALL enemies gain !M! Artifact. At the end of their turn, enemies lose !MISC! damage per Artifact on them. NL Taxing."
+    "DESCRIPTION": "ALL enemies gain !M! Artifact. At the end of their turn, enemies lose !sagemod:MISC! damage per Artifact on them. NL Taxing."
   },
-  "Defend_Sage": {
+  "sagemod:Defend": {
     "NAME": "Defend",
     "DESCRIPTION": "Gain !B! Block."
   },
-  "Endless_Fear": {
+  "sagemod:Endless_Fear": {
     "NAME": "Endless Fear",
     "DESCRIPTION": "Whenever you use a non-Fear Potion, obtain a Fear Potion."
   },
-  "Energetic_Brew": {
+  "sagemod:Energetic_Brew": {
     "NAME": "Energetic Brew",
-    "DESCRIPTION": "Deal !D! damage. NL Brew an Energy Potion NL in !BRW! turns.",
-    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Brew an upgraded Energy Potion NL in !BRW! turns."
+    "DESCRIPTION": "Deal !D! damage. NL Brew an Energy Potion NL in !sagemod:BRW! turns.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Brew an upgraded Energy Potion NL in !sagemod:BRW! turns."
   },
-  "Escape": {
+  "sagemod:Escape": {
     "NAME": "Escape",
     "DESCRIPTION": "Double your Flight. NL Exhaust.",
     "UPGRADE_DESCRIPTION": "Double your Flight."
   },
-  "Extra_Portion": {
+  "sagemod:Extra_Portion": {
     "NAME": "Extra Portion",
     "DESCRIPTION": "The next potion is applied twice this turn.",
     "UPGRADE_DESCRIPTION": "The next !M! potions are applied twice this turn."
   },
-  "Fire_Brew": {
+  "sagemod:Fire_Brew": {
     "NAME": "Fire Brew",
-    "DESCRIPTION": "Deal !D! damage. NL Brew a Fire Potion NL in !BRW! turns.",
-    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Brew an upgraded Fire Potion NL in !BRW! turns."
+    "DESCRIPTION": "Deal !D! damage. NL Brew a Fire Potion NL in !sagemod:BRW! turns.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Brew an upgraded Fire Potion NL in !sagemod:BRW! turns."
   },
-  "Flight_Feint": {
+  "sagemod:Flight_Feint": {
     "NAME": "Flight Feint",
     "DESCRIPTION": "Deal !D! damage. NL Apply !M! Disoriented."
   },
-  "Fly": {
+  "sagemod:Fly": {
     "NAME": "Fly",
     "DESCRIPTION": "If you are flying: NL Gain !B! Block. NL Otherwise: NL Gain !M! Flight."
   },
-  "Flying_Carpet_Preview": {
+  "sagemod:Flying_Carpet_Preview": {
     "NAME": "Flying Carpet",
     "DESCRIPTION": "RELIC! NL Gain !M! Flight at the start of your second turn."
   },
-  "Flying_Cauldron": {
+  "sagemod:Flying_Cauldron": {
     "NAME": "Flying Cauldron",
     "DESCRIPTION": "Air. NL Gain !M! Brewing. NL Exhaust.",
     "UPGRADE_DESCRIPTION": "If you are flying: NL Gain !M! Brewing. NL Otherwise: NL Gain !M! Flight. NL Exhaust."
   },
-  "Folded_Carpet": {
+  "sagemod:Folded_Carpet": {
     "NAME": "Folded Carpet",
     "DESCRIPTION": "Gain !B! Block per Flight you have."
   },
-  "Gearwheel_Master": {
+  "sagemod:Gearwheel_Master": {
     "NAME": "Gearwheel Master",
     "DESCRIPTION": "EVERYBODY gains !M! Artifact. NL Exhaust. NL Can be upgraded any number of times."
   },
-  "Grounded_Strike": {
+  "sagemod:Grounded_Strike": {
     "NAME": "Grounded Strike",
     "DESCRIPTION": "Lose all Flight. NL Deal !D! damage.",
     "UPGRADE_DESCRIPTION": "Lose !M! Flight. NL Deal !D! damage."
   },
-  "How_To_Amuse_Sneckos": {
+  "sagemod:How_To_Amuse_Sneckos": {
     "NAME": "How To Amuse Sneckos",
     "DESCRIPTION": "Draw X cards.",
     "UPGRADE_DESCRIPTION": "Draw X cards. NL Refund !stslib:refund!."
   },
-  "How_To_Befriend_A_Turtle": {
+  "sagemod:How_To_Befriend_A_Turtle": {
     "NAME": "How To Befriend A Turtle",
     "DESCRIPTION": "Gain X Temporary_HP. NL Refund all.",
     "UPGRADE_DESCRIPTION": "Gain X + !M! Temporary_HP. NL Refund All."
   },
-  "How_To_Charm_A_Sentry": {
+  "sagemod:How_To_Charm_A_Sentry": {
     "NAME": "How To Charm A Sentry",
     "DESCRIPTION": "Deal X times !D! damage. The enemy gains X Artifact."
   },
-  "How_To_Feed_Apes": {
+  "sagemod:How_To_Feed_Apes": {
     "NAME": "How To Feed Apes",
-    "DESCRIPTION": "Brew one of the NL possible Potions NL in !BRW! -X turns. NL Exhaust.",
+    "DESCRIPTION": "Brew one of the NL possible Potions NL in !sagemod:BRW! -X turns. NL Exhaust.",
     "EXTENDED_DESCRIPTION": [
       "Possible Potions"
     ]
   },
-  "How_To_Greet_Byrds": {
+  "sagemod:How_To_Greet_Byrds": {
     "NAME": "How To Greet Byrds",
     "DESCRIPTION": "Innate. NL Set your Flight to X. NL Exhaust.",
     "UPGRADE_DESCRIPTION": "Innate. NL Gain X Flight. NL Exhaust."
   },
-  "How_To_Murder_Ants": {
+  "sagemod:How_To_Murder_Ants": {
     "NAME": "How To Murder Ants",
     "DESCRIPTION": "Air. NL Deal X damage to a random enemy !M! times."
   },
-  "How_To_Poke_At_Slimes": {
+  "sagemod:How_To_Poke_At_Slimes": {
     "NAME": "How To Poke At Slimes",
     "DESCRIPTION": "Deal X damage to ALL enemies. NL Gain !M! Frail. NL Refund !stslib:refund!.",
     "UPGRADE_DESCRIPTION": "Deal X + !D! damage to ALL enemies. NL Gain !M! Frail. NL Refund all."
   },
-  "How_To_Talk_To_Spiders": {
+  "sagemod:How_To_Talk_To_Spiders": {
     "NAME": "How To Talk To Spiders",
-    "DESCRIPTION": "Apply X Poison. NL Brew a Poison Potion NL in !BRW! -X turns."
+    "DESCRIPTION": "Apply X Poison. NL Brew a Poison Potion NL in !sagemod:BRW! -X turns."
   },
-  "How_To_Wake_Lyons": {
+  "sagemod:How_To_Wake_Lyons": {
     "NAME": "How To Wake Lyons",
-    "DESCRIPTION": "Brew a NL Steroid Potion NL in !BRW! -X turns. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Brew a NL Steroid Potion NL in !BRW! -X turns."
+    "DESCRIPTION": "Brew a NL Steroid Potion NL in !sagemod:BRW! -X turns. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Brew a NL Steroid Potion NL in !sagemod:BRW! -X turns."
   },
-  "How_To_Warm_Elephants": {
+  "sagemod:How_To_Warm_Elephants": {
     "NAME": "How To Warm Elephants",
-    "DESCRIPTION": "Brew an NL Explosive Potion NL in !BRW! -X turns.",
-    "UPGRADE_DESCRIPTION": "Brew an NL upgraded Explosive Potion NL in !BRW! -X turns."
+    "DESCRIPTION": "Brew an NL Explosive Potion NL in !sagemod:BRW! -X turns.",
+    "UPGRADE_DESCRIPTION": "Brew an NL upgraded Explosive Potion NL in !sagemod:BRW! -X turns."
   },
-  "Lecture": {
+  "sagemod:Lecture": {
     "NAME": "Lecture",
     "DESCRIPTION": "Deal !D! damage per X cost card played this combat.",
     "EXTENDED_DESCRIPTION": [
@@ -229,57 +229,57 @@
        " NL (Attacks once.)"
     ]
   },
-  "Let_It_Go": {
+  "sagemod:Let_It_Go": {
     "NAME": "Let It Go",
     "DESCRIPTION": "Exhaust a card from your hand. Gain Flight equal to its cost. NL Exhaust.",
     "UPGRADE_DESCRIPTION": "Exhaust up to !M! cards from your hand. Gain Flight equal to their costs. NL Exhaust."
   },
-  "Light_Weighted": {
+  "sagemod:Light_Weighted": {
     "NAME": "Light-Weighted",
     "DESCRIPTION": "Lose all Frail. NL Gain that much Flight. NL Exhaust.",
     "UPGRADE_DESCRIPTION": "Lose all Frail. NL Gain that much NL Flight + !M!. NL Exhaust."
   },
-  "Lunchtime": {
+  "sagemod:Lunchtime": {
     "NAME": "Lunchtime!",
     "DESCRIPTION": "Air. Lose !M! Flight and brew all potions immediately."
   },
-  "Mechanics_Break": {
+  "sagemod:Mechanics_Break": {
     "NAME": "Mechanics Break!",
     "DESCRIPTION": "Gain !B! Block. NL The target enemy gains !M! Artifact."
   },
-  "Meditation": {
+  "sagemod:Meditation": {
     "NAME": "Meditation",
     "DESCRIPTION": "Lose all Flight. NL Draw !M! cards. NL Exhaust."
   },
-  "Momentum": {
+  "sagemod:Momentum": {
     "NAME": "Momentum",
-    "DESCRIPTION": "Brew a Swift Potion in !BRW! turns.",
-    "UPGRADE_DESCRIPTION": "Brew an upgraded Swift Potion in !BRW! turns."
+    "DESCRIPTION": "Brew a Swift Potion in !sagemod:BRW! turns.",
+    "UPGRADE_DESCRIPTION": "Brew an upgraded Swift Potion in !sagemod:BRW! turns."
   },
-  "Noxious_Wave": {
+  "sagemod:Noxious_Wave": {
     "NAME": "Noxious Wave",
     "DESCRIPTION": "Deal !D! damage. Trigger Poison on this enemy.",
     "UPGRADE_DESCRIPTION": "Deal !D! damage. Trigger Poison on this enemy twice."
   },
-  "On_Fire": {
+  "sagemod:On_Fire": {
     "NAME": "On Fire",
     "DESCRIPTION": "Whenever you play !M! cards in a single turn, obtain a Fire Potion.",
     "UPGRADE_DESCRIPTION": "Whenever you play !M! cards in a single turn, obtain an upgraded Fire Potion."
   },
-  "On_The_Head": {
+  "sagemod:On_The_Head": {
     "NAME": "On The Head",
     "DESCRIPTION": "Deal !D! damage. NL If you are flying: NL Draw !M! card NL and gain [E]."
   },
-  "Perpetuum_Mobile": {
+  "sagemod:Perpetuum_Mobile": {
     "NAME": "Perpetuum Mobile",
-    "DESCRIPTION": "Draw !M! card. NL Play it for free if it costs !MISC!.",
-    "UPGRADE_DESCRIPTION": "Draw !M! card. NL Play it for free if it costs !MISC! or X."
+    "DESCRIPTION": "Draw !M! card. NL Play it for free if it costs !sagemod:MISC!.",
+    "UPGRADE_DESCRIPTION": "Draw !M! card. NL Play it for free if it costs !sagemod:MISC! or X."
   },
-  "Perplexing_Glare": {
+  "sagemod:Perplexing_Glare": {
     "NAME": "Perplexing Glare",
     "DESCRIPTION": "Apply !M! Disoriented. NL Exhaust."
   },
-  "Pincer_Attack": {
+  "sagemod:Pincer_Attack": {
     "NAME": "Pincer Attack",
     "DESCRIPTION": "Deal !D! damage. NL Damage is increased per Artifact the enemy has.",
     "EXTENDED_DESCRIPTION": [
@@ -287,11 +287,11 @@
       " extra damage.)"
     ]
   },
-  "Pincer_Repair": {
+  "sagemod:Pincer_Repair": {
     "NAME": "Pincer Repair",
     "DESCRIPTION": "Deal !D! damage. NL The enemy gains NL !M! Artifact."
   },
-  "Potion_Explosion": {
+  "sagemod:Potion_Explosion": {
     "NAME": "Potion Explosion",
     "DESCRIPTION": "Deal !D! damage to ALL enemies per potion you used this turn.",
     "EXTENDED_DESCRIPTION": [
@@ -300,25 +300,25 @@
       " times.)"
     ]
   },
-  "Potion_Trance": {
+  "sagemod:Potion_Trance": {
     "NAME": "Potion Trance",
     "DESCRIPTION": "Draw !M! card whenever you use a potion this turn. You cannot gain energy this turn.",
     "UPGRADE_DESCRIPTION": "Draw !M! cards whenever you use a potion this turn. You cannot gain energy this turn."
   },
-  "Pour_Tar_Pitch": {
+  "sagemod:Pour_Tar_Pitch": {
     "NAME": "Pour Tar Pitch",
     "DESCRIPTION": "Deal !D! damage. NL If you are flying, this affects ALL enemies."
   },
-  "Prey": {
+  "sagemod:Prey": {
     "NAME": "Prey",
     "DESCRIPTION": "Deal !D! damage. If this kills an enemy with more max HP than you, gain !M! max HP and remove this card from your deck."
   },
-  "Quackster": {
+  "sagemod:Quackster": {
     "NAME": "Quackster",
-    "DESCRIPTION": "Brew a random Potion in !BRW! turns. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Brew a random Potion in !BRW! turns."
+    "DESCRIPTION": "Brew a random Potion in !sagemod:BRW! turns. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Brew a random Potion in !sagemod:BRW! turns."
   },
-  "Read_The_Riot_Act": {
+  "sagemod:Read_The_Riot_Act": {
     "NAME": "Read The Riot Act",
     "DESCRIPTION": "Choose an X cost card from your draw pile and play it. NL Exhaust",
     "UPGRADE_DESCRIPTION": "Choose an X cost card from your draw pile and play it.",
@@ -326,58 +326,58 @@
       "Choose an X cost card to play."
     ]
   },
-  "Refine": {
+  "sagemod:Refine": {
     "NAME": "Refine",
     "DESCRIPTION": "Upgrade a random unupgraded potion you are holding. NL Exhaust.",
     "UPGRADE_DESCRIPTION": "Upgrade all unupgraded potions you are holding. NL Exhaust."
   },
-  "Riches": {
+  "sagemod:Riches": {
     "NAME": "Riches!!!",
     "DESCRIPTION": "Whenever you use an upgraded potion, obtain a random unupgraded potion."
   },
-  "Rickety_Defense": {
+  "sagemod:Rickety_Defense": {
     "NAME": "Rickety Defense",
     "DESCRIPTION": "At the end of your turn, set your Block to your Frail if you have more Frail than Block.",
     "UPGRADE_DESCRIPTION": "Innate. NL At the end of your turn, set your Block to your Frail if you have more Frail than Block."
   },
-  "Rock_Oil": {
+  "sagemod:Rock_Oil": {
     "NAME": "Rock Oil",
     "DESCRIPTION": "Unplayable. NL Whenever you use a Potion while this card is in your hand, gain !B! Block."
   },
-  "Salty_Strike": {
+  "sagemod:Salty_Strike": {
     "NAME": "Salty Strike",
     "DESCRIPTION": "Deal !D! damage. NL Apply !M! Thirsty."
   },
-  "Shining_Powder": {
+  "sagemod:Shining_Powder": {
     "NAME": "Shining Powder",
     "DESCRIPTION": "Unplayable. NL Whenever you use a Potion while this card is in your hand, gain [E].",
     "UPGRADE_DESCRIPTION": "Unplayable. NL Whenever you use a Potion while this card is in your hand, gain [E] [E]."
   },
-  "Slalom": {
+  "sagemod:Slalom": {
     "NAME": "Slalom",
     "DESCRIPTION": "Gain !B! Block. NL Gain !M! Frail."
   },
-  "Spoiled_Food": {
+  "sagemod:Spoiled_Food": {
     "NAME": "Spoiled Food",
     "DESCRIPTION": "Apply !M! Thirsty. NL Exhaust."
   },
-  "Step_Back": {
+  "sagemod:Step_Back": {
     "NAME": "Step Back",
     "DESCRIPTION": "Gain !B! Block. NL If you are flying: NL Gain [E] [E] . NL Otherwise: NL Gain !M! Flight."
   },
-  "Strike_Sage": {
+  "sagemod:Strike": {
     "NAME": "Strike",
     "DESCRIPTION": "Deal !D! damage."
   },
-  "Study": {
+  "sagemod:Study": {
     "NAME": "Study",
-    "DESCRIPTION": "Draw !M! cards. NL Put !MISC! card from your hand on top of your draw pile.",
-    "UPGRADE_DESCRIPTION": "Draw !M! cards. NL You may put !MISC! card from your hand on top of your draw pile.",
+    "DESCRIPTION": "Draw !M! cards. NL Put !sagemod:MISC! card from your hand on top of your draw pile.",
+    "UPGRADE_DESCRIPTION": "Draw !M! cards. NL You may put !sagemod:MISC! card from your hand on top of your draw pile.",
     "EXTENDED_DESCRIPTION": [
       "put on top of your draw pile."
     ]
   },
-  "Swoop_Down": {
+  "sagemod:Swoop_Down": {
     "NAME": "Swoop Down",
     "DESCRIPTION": "Deal !D! damage per Flight you have. NL Then lose !M! Flight.",
     "UPGRADE_DESCRIPTION": "Deal !D! damage per Flight you have.",
@@ -386,38 +386,38 @@
       " damage)"
     ]
   },
-  "Taste_This_One": {
+  "sagemod:Taste_This_One": {
     "NAME": "Taste This One",
     "DESCRIPTION": "Whenever you use a potion, deal !M! damage to a random enemy."
   },
-  "Toxic_Chains": {
+  "sagemod:Toxic_Chains": {
     "NAME": "Toxic Chains",
     "DESCRIPTION": "Lose all Frail. NL Apply that much Poison to ALL enemies.",
     "UPGRADE_DESCRIPTION": "Lose all Frail. NL Apply that much Poison + !M! to ALL enemies."
   },
-  "Tinker": {
+  "sagemod:Tinker": {
     "NAME": "Tinker",
-    "DESCRIPTION": "Gain !B! Block. (Equal to ALL Artifact on the field + !MISC!)",
-    "UPGRADE_DESCRIPTION": "Gain !M! Artifact. Gain !B! Block. (Equal to ALL Artifact on the field + !MISC!)"
+    "DESCRIPTION": "Gain !B! Block. (Equal to ALL Artifact on the field + !sagemod:MISC!)",
+    "UPGRADE_DESCRIPTION": "Gain !M! Artifact. Gain !B! Block. (Equal to ALL Artifact on the field + !sagemod:MISC!)"
   },
-  "Trixter": {
+  "sagemod:Trixter": {
     "NAME": "Trixter",
     "DESCRIPTION": "Refund all energy used when playing your next card."
   },
-  "Turn_Around": {
+  "sagemod:Turn_Around": {
     "NAME": "Turn Around",
     "DESCRIPTION": "Gain !M! Frail. NL Deal !D! damage per Frail you have."
   },
-  "Undermine": {
+  "sagemod:Undermine": {
     "NAME": "Undermine",
     "DESCRIPTION": "Apply !M! Artifact. When you attack an enemy this turn, they take extra damage equal to the Artifact on them."
   },
-  "Vigorous_Body": {
+  "sagemod:Vigorous_Body": {
     "NAME": "Vigorous Body",
     "DESCRIPTION": "Whenever an Artifact of you gets triggered, gain !M! Strength.",
     "UPGRADE_DESCRIPTION": "Whenever an Artifact of you or an enemy gets triggered, gain !M! Strength."
   },
-  "Viral_Strike": {
+  "sagemod:Viral_Strike": {
     "NAME": "Viral Strike",
     "DESCRIPTION": "Deal !D! damage. Apply Virus and !M! Poison."
   }

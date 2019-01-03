@@ -60,7 +60,7 @@ import sagemod.cards.CatchMeIfYouCan;
 import sagemod.cards.Crank;
 import sagemod.cards.CultistForm;
 import sagemod.cards.DeadlyContraption;
-import sagemod.cards.DefendSage;
+import sagemod.cards.Defend;
 import sagemod.cards.EnergeticBrew;
 import sagemod.cards.Escape;
 import sagemod.cards.ExtraPortion;
@@ -106,7 +106,7 @@ import sagemod.cards.ShiningPowder;
 import sagemod.cards.Slalom;
 import sagemod.cards.SpoiledFood;
 import sagemod.cards.StepBack;
-import sagemod.cards.StrikeSage;
+import sagemod.cards.Strike;
 import sagemod.cards.Study;
 import sagemod.cards.SwoopDown;
 import sagemod.cards.TasteThisOne;
@@ -141,13 +141,13 @@ import sagemod.powers.Brewing;
 import sagemod.powers.DeadlyContraptionPower;
 import sagemod.powers.Disoriented;
 import sagemod.powers.ExtraPortionPower;
+import sagemod.powers.Flight;
 import sagemod.powers.LoseFlightNextTurn;
 import sagemod.powers.NoEnergyPower;
 import sagemod.powers.OnFirePower;
 import sagemod.powers.PotionTrancePower;
 import sagemod.powers.RichesPower;
 import sagemod.powers.RicketyDefensePower;
-import sagemod.powers.SageFlight;
 import sagemod.powers.TasteThisOnePower;
 import sagemod.powers.Thirsty;
 import sagemod.powers.TrixterPower;
@@ -182,6 +182,7 @@ PostBattleSubscriber, OnStartBattleSubscriber {
 	public static String LOCALIZATION_FOLDER = "sage/local/";
 
 	public static final String EVENT_FOLDER = "sage/events/";
+	public static final String MOD_ID_PREFIX = "sagemod:";
 
 	public static BitmapFont brewFont;
 
@@ -233,8 +234,8 @@ PostBattleSubscriber, OnStartBattleSubscriber {
 		logger.info("Adding Cards for TheSage");
 
 		// Basic
-		BaseMod.addCard(new StrikeSage());
-		BaseMod.addCard(new DefendSage());
+		BaseMod.addCard(new Strike());
+		BaseMod.addCard(new Defend());
 		BaseMod.addCard(new Fly());
 		BaseMod.addCard(new BoldMove());
 
@@ -346,7 +347,7 @@ PostBattleSubscriber, OnStartBattleSubscriber {
 		BaseMod.addPower(PotionTrancePower.class, PotionTrancePower.POWER_ID);
 		BaseMod.addPower(RichesPower.class, RichesPower.POWER_ID);
 		BaseMod.addPower(RicketyDefensePower.class, RicketyDefensePower.POWER_ID);
-		BaseMod.addPower(SageFlight.class, SageFlight.POWER_ID);
+		BaseMod.addPower(Flight.class, Flight.POWER_ID);
 		BaseMod.addPower(TasteThisOnePower.class, TasteThisOnePower.POWER_ID);
 		BaseMod.addPower(Thirsty.class, Thirsty.POWER_ID);
 		BaseMod.addPower(TrixterPower.class, TrixterPower.POWER_ID);
@@ -469,7 +470,8 @@ PostBattleSubscriber, OnStartBattleSubscriber {
 	}
 
 	public static String getExistingOrPlaceholder(String prefix, String id, String postfix) {
-		String maybeExisting = prefix + id + postfix;
+		String idWithoutModName = id.replaceAll(MOD_ID_PREFIX, "");
+		String maybeExisting = prefix + idWithoutModName + postfix;
 		if (Gdx.files.internal(maybeExisting).exists()) {
 			return maybeExisting;
 		} else {

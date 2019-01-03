@@ -6,12 +6,11 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-
 import sagemod.actions.PerpetuumMobileAction;
 
 public class PerpetuumMobile extends AbstractSageCard {
 
-	public static final String ID = "Perpetuum_Mobile";
+	public static final String ID = "sagemod:Perpetuum_Mobile";
 	private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
 	public static final String NAME = cardStrings.NAME;
 	private static final int COST = 0;

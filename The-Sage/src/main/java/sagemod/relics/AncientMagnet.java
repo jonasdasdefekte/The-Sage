@@ -10,7 +10,7 @@ import com.megacrit.cardcrawl.relics.AbstractRelic;
 
 public class AncientMagnet extends AbstractSageRelic {
 
-	public static final String ID = "Ancient_Magnet";
+	public static final String ID = "sagemod:Ancient_Magnet";
 	public static final RelicTier TIER = RelicTier.UNCOMMON;
 	public static final LandingSound SOUND = LandingSound.CLINK;
 	private static final int STRENGTH_LOSS_PER_ARTIFACT = 1;

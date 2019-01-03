@@ -10,7 +10,7 @@ import com.megacrit.cardcrawl.powers.ArtifactPower;
 
 public class GearwheelMaster extends AbstractSageCard {
 
-	public static final String ID = "Gearwheel_Master";
+	public static final String ID = "sagemod:Gearwheel_Master";
 	private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
 	public static final String NAME = cardStrings.NAME;
 	private static final int COST = 0;

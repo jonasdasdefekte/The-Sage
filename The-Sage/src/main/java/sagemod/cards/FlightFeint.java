@@ -6,12 +6,11 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-
 import sagemod.powers.Disoriented;
 
 public class FlightFeint extends AbstractSageCard {
 
-	public static final String ID = "Flight_Feint";
+	public static final String ID = "sagemod:Flight_Feint";
 	private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
 	public static final String NAME = cardStrings.NAME;
 	private static final int COST = 2;

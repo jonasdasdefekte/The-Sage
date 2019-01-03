@@ -5,11 +5,11 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import sagemod.powers.SageFlight;
+import sagemod.powers.Flight;
 
 public class FoldedCarpet extends AbstractSageCard {
 
-	public static final String ID = "Folded_Carpet";
+	public static final String ID = "sagemod:Folded_Carpet";
 	private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
 	public static final String NAME = cardStrings.NAME;
 	private static final int COST = 2;
@@ -41,8 +41,8 @@ public class FoldedCarpet extends AbstractSageCard {
 
 	@Override
 	public void use(AbstractPlayer p, AbstractMonster m) {
-		if (p.hasPower(SageFlight.POWER_ID)) {
-			int amount = p.getPower(SageFlight.POWER_ID).amount;
+		if (p.hasPower(Flight.POWER_ID)) {
+			int amount = p.getPower(Flight.POWER_ID).amount;
 			for (int i = 0; i < amount; i++) {
 				block();
 			}

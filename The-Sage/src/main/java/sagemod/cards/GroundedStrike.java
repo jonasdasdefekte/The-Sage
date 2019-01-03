@@ -11,7 +11,7 @@ import sagemod.actions.ReduceFlightBlockableAction;
 
 public class GroundedStrike extends AbstractSageCard {
 
-	public static final String ID = "Grounded_Strike";
+	public static final String ID = "sagemod:Grounded_Strike";
 	private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
 	public static final String NAME = cardStrings.NAME;
 	private static final int COST = 1;

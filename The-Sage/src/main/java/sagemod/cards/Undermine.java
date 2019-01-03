@@ -10,7 +10,7 @@ import sagemod.powers.UnderminePower;
 
 public class Undermine extends AbstractSageCard {
 
-	public static final String ID = "Undermine";
+	public static final String ID = "sagemod:Undermine";
 	private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
 	public static final String NAME = cardStrings.NAME;
 	private static final int COST = 1;

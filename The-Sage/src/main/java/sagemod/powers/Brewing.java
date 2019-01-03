@@ -7,7 +7,7 @@ import com.megacrit.cardcrawl.powers.AbstractPower;
 
 public class Brewing extends AbstractSagePower {
 
-	public static final String POWER_ID = "Brewing";
+	public static final String POWER_ID = "sagemod:Brewing";
 	private static final PowerStrings powerStrings = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
 	public static final String NAME = powerStrings.NAME;
 	public static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;

@@ -13,7 +13,7 @@ import sagemod.powers.Brew;
 
 public class FireBrew extends AbstractSageCard {
 
-	public static final String ID = "Fire_Brew";
+	public static final String ID = "sagemod:Fire_Brew";
 	private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
 	public static final String NAME = cardStrings.NAME;
 	private static final int COST = 1;

@@ -10,7 +10,7 @@ import sagemod.actions.HandToTopOfDrawPileAction;
 
 public class Study extends AbstractSageCard {
 
-	public static final String ID = "Study";
+	public static final String ID = "sagemod:Study";
 	private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
 	public static final String NAME = cardStrings.NAME;
 	private static final int COST = 1;

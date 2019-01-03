@@ -6,7 +6,7 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import sagemod.powers.Airborne;
-import sagemod.powers.SageFlight;
+import sagemod.powers.Flight;
 
 public class ReduceFlightBlockableAction extends AbstractGameAction {
 
@@ -21,7 +21,7 @@ public class ReduceFlightBlockableAction extends AbstractGameAction {
 
 	@Override
 	public void update() {
-		if (!target.hasPower(SageFlight.POWER_ID)) {
+		if (!target.hasPower(Flight.POWER_ID)) {
 			isDone = true;
 			return;
 		}
@@ -44,7 +44,7 @@ public class ReduceFlightBlockableAction extends AbstractGameAction {
 		}
 		if (amount > 0) {
 			AbstractDungeon.actionManager.addToBottom(
-					new ReducePowerAction(target, target, SageFlight.POWER_ID, amount));
+					new ReducePowerAction(target, target, Flight.POWER_ID, amount));
 		}
 		isDone = true;
 	}

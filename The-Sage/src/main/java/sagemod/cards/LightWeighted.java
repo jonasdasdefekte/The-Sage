@@ -8,12 +8,11 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.FrailPower;
-
-import sagemod.powers.SageFlight;
+import sagemod.powers.Flight;
 
 public class LightWeighted extends AbstractSageCard {
 
-	public static final String ID = "Light_Weighted";
+	public static final String ID = "sagemod:Light_Weighted";
 	private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
 	public static final String NAME = cardStrings.NAME;
 	private static final int COST = 0;
@@ -54,7 +53,7 @@ public class LightWeighted extends AbstractSageCard {
 			AbstractDungeon.actionManager.addToBottom(new RemoveSpecificPowerAction(p, p, FrailPower.POWER_ID));
 		}
 		if (flightGain > 0) {
-			applyPowerToSelf(new SageFlight(p, flightGain));
+			applyPowerToSelf(new Flight(p, flightGain));
 		}
 	}
 

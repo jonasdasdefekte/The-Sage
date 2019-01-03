@@ -1,5 +1,5 @@
 {
-  "Ancient_Magnet": {
+  "sagemod:Ancient_Magnet": {
     "NAME": "Uralter Magnet",
     "FLAVOR": "Er reagiert auf die Technologie der Ahnen.",
     "DESCRIPTIONS": [
@@ -7,7 +7,7 @@
       " weniger #yStärke pro #yArtefakt auf ihnen."
     ]
   },
-  "Balloon_Animal": {
+  "sagemod:Balloon_Animal": {
     "NAME": "Ballontier",
     "FLAVOR": "Diese süße Figur zieht dich beinahe aufwärts.",
     "DESCRIPTIONS": [
@@ -15,14 +15,14 @@
       " Karte zu Beginn deines Zuges, wenn du keinen #yFlug hast."
     ]
   },
-  "Blowpipe": {
+  "sagemod:Blowpipe": {
     "NAME": "Blasrohr",
     "FLAVOR": "Dieses Jagdgerät kann jegliche Flüssigkeit im Handumdrehen auf ferne Ziele anwenden.",
     "DESCRIPTIONS": [
       "Immer wenn du einen Trank auf einen Gegner wirfst, trifft er auch die anderen Gegner."
     ]
   },
-  "Byrd_Carpet": {
+  "sagemod:Byrd_Carpet": {
     "NAME": "Foglteppich",
     "FLAVOR": "Ein uralter Teppich, von dunklen Kultisten gewoben und mit seltsamer Magie versetzt.",
     "DESCRIPTIONS": [
@@ -33,7 +33,7 @@
       "."
     ]
   },
-  "Byrd_Feather": {
+  "sagemod:Byrd_Feather": {
     "NAME": "Foglfeder",
     "FLAVOR": "Du kannst gar nicht warten, noch mehr auszurupfen.",
     "DESCRIPTIONS": [
@@ -43,7 +43,7 @@
       "."
     ]
   },
-  "Cabbage_Head": {
+  "sagemod:Cabbage_Head": {
     "NAME": "Kohlkopf",
     "FLAVOR": "Stinkt.",
     "DESCRIPTIONS": [
@@ -51,7 +51,7 @@
       " #yGeschicklichkeit solange du Gebrechlich bist."
     ]
   },
-  "Creepy_Carousel": {
+  "sagemod:Creepy_Carousel": {
     "NAME": "Gruseliges Karussell",
     "FLAVOR": "Gruselig...",
     "DESCRIPTIONS": [
@@ -60,7 +60,7 @@
       " #yDesorientiert auf einen zufälligen Gegner an."
     ]
   },
-  "Cookbook": {
+  "sagemod:Cookbook": {
     "NAME": "Kochbuch",
     "FLAVOR": "Diese Lektüre macht dich hungrig. Allerdings solltest du manche dieser Gerichte wohl besser nicht essen.",
     "DESCRIPTIONS": [
@@ -68,14 +68,14 @@
       " #yBrauen."
     ]
   },
-  "Falmels_Amulet": {
+  "sagemod:Falmels_Amulet": {
     "NAME": "Falmels Amulett",
     "FLAVOR": "Falmels Amulett",
     "DESCRIPTIONS": [
       "Erhalte [E] zu Beginn deines Zuges. Gegner greifen in der ersten Runde einmal mehr an."
     ]
   },
-  "Flying_Carpet": {
+  "sagemod:Flying_Carpet": {
     "NAME": "Fliegender Teppich",
     "FLAVOR": "Ein alter Teppich, ähnlich wie die der Sklavenhändler aus den östlichen Gefilden.",
     "DESCRIPTIONS": [
@@ -83,7 +83,7 @@
       " #yFlug am Beginn deines zweiten Zuges."
     ]
   },
-  "Red_Beast_Statue": {
+  "sagemod:Red_Beast_Statue": {
     "NAME": "Rote Bestienstatue",
     "FLAVOR": "So eine Kreatur hast du noch nie zu Gesicht bekommen, aber diese Statue erinnert dich an etwas.",
     "DESCRIPTIONS": [
@@ -92,15 +92,7 @@
       "% wahrscheinlicher verbessert."
     ]
   },
-  "sagemod:Toy_Ornithopter": {
-    "NAME": "",
-    "FLAVOR": "",
-    "DESCRIPTIONS": [
-      "Jedes Mal, wenn du einen Trank ABWIRFST, heilst du #b",
-      " TP."
-    ]
-  },
-  "Singing_Vial": {
+  "sagemod:Singing_Vial": {
     "NAME": "Singfläschchen",
     "FLAVOR": "Ein Fläschchen, dass singt.",
     "DESCRIPTIONS": [
@@ -108,19 +100,27 @@
       "Trank verbessern"
     ]
   },
-  "The_Guidebook_Guide": {
+  "sagemod:The_Guidebook_Guide": {
     "NAME": "Das Handbuch",
     "FLAVOR": "Es weiß alles.",
     "DESCRIPTIONS": [
       "Wenn du eine Karte spielst, die X kostet, erschöpfe sie und erstatte ihre gesamten Kosten."
     ]
   },
-  "Thunder_Carpet": {
+  "sagemod:Thunder_Carpet": {
     "NAME": "Donnernder Teppich",
     "FLAVOR": "Ein uralter Teppich, von dunklen Kultisten gewoben und mit seltsamer Magie versetzt.",
     "DESCRIPTIONS": [
       "Ersetzt Fliegender Teppich. Beginne jeden Kampf mit #b",
       " Flug."
+    ]
+  },
+  "sagemod:Toy_Ornithopter": {
+    "NAME": "",
+    "FLAVOR": "",
+    "DESCRIPTIONS": [
+      "Jedes Mal, wenn du einen Trank ABWIRFST, heilst du #b",
+      " TP."
     ]
   }
 }

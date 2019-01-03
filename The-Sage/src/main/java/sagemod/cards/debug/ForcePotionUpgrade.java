@@ -10,7 +10,7 @@ import sagemod.potions.UpgradedPotion;
 
 public class ForcePotionUpgrade extends AbstractSageCard {
 
-	public static final String ID = "Force_Potion_Upgrade";
+	public static final String ID = "sagemod:Force_Potion_Upgrade";
 	public static final String NAME = "Force Potion Upgrade";
 	private static final int COST = 0;
 	public static final String DESCRIPTION =

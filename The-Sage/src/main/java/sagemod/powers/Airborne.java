@@ -10,7 +10,7 @@ import com.megacrit.cardcrawl.powers.AbstractPower;
 
 public class Airborne extends AbstractSagePower {
 
-	public static final String POWER_ID = "Airborne";
+	public static final String POWER_ID = "sagemod:Airborne";
 	private static final PowerStrings powerStrings = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
 	public static final String NAME = powerStrings.NAME;
 	public static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;
@@ -41,7 +41,7 @@ public class Airborne extends AbstractSagePower {
 			AbstractDungeon.actionManager.addToTop(new RemoveSpecificPowerAction(owner, owner, POWER_ID));
 		} else {
 			AbstractDungeon.actionManager
-					.addToTop(new ReducePowerAction(owner, owner, POWER_ID, i));
+			.addToTop(new ReducePowerAction(owner, owner, POWER_ID, i));
 		}
 	}
 

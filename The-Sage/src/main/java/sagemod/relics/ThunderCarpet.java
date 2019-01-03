@@ -1,11 +1,11 @@
 package sagemod.relics;
 
 import com.megacrit.cardcrawl.relics.AbstractRelic;
-import sagemod.powers.SageFlight;
+import sagemod.powers.Flight;
 
 public class ThunderCarpet extends AbstractSageRelic {
 
-	public static final String ID = "Thunder_Carpet";
+	public static final String ID = "sagemod:Thunder_Carpet";
 	public static final RelicTier TIER = RelicTier.BOSS;
 	public static final LandingSound SOUND = LandingSound.MAGICAL;
 	private static final int FLY_AMT = 3;
@@ -29,7 +29,7 @@ public class ThunderCarpet extends AbstractSageRelic {
 	public void atBattleStartPreDraw() {
 		flash();
 		appearAbove(player());
-		applyPowerToSelf(new SageFlight(player(), FLY_AMT));
+		applyPowerToSelf(new Flight(player(), FLY_AMT));
 	}
 
 	@Override

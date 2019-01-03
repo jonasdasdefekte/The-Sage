@@ -9,7 +9,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
 public class HowToAmuseSneckos extends AbstractSageCard {
 
-	public static final String ID = "How_To_Amuse_Sneckos";
+	public static final String ID = "sagemod:How_To_Amuse_Sneckos";
 	private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
 	public static final String NAME = cardStrings.NAME;
 	private static final int COST = -1;

@@ -27,14 +27,14 @@ import sagemod.actions.ExecuteLaterAction;
 import sagemod.actions.LoseXEnergyAction;
 import sagemod.character.SageColorEnum;
 import sagemod.powers.Brewing;
-import sagemod.powers.SageFlight;
+import sagemod.powers.Flight;
 
 public abstract class AbstractSageCard extends CustomCard {
 
 	private static Logger logger = LogManager.getLogger(AbstractSageCard.class);
 
 	public static final CardStrings cardStrings =
-			CardCrawlGame.languagePack.getCardStrings("AbstractSageCard");
+			CardCrawlGame.languagePack.getCardStrings("sagemod:AbstractSageCard");
 	public static final String[] TEXT = cardStrings.EXTENDED_DESCRIPTION;
 
 	private static final String NO_FLIGHT = TEXT[0];
@@ -225,7 +225,7 @@ public abstract class AbstractSageCard extends CustomCard {
 	}
 
 	protected boolean isFlying() {
-		return player().hasPower(SageFlight.POWER_ID);
+		return player().hasPower(Flight.POWER_ID);
 	}
 
 	protected int getXEffect() {

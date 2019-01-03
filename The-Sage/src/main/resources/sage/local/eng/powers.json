@@ -1,5 +1,5 @@
 {
-  "Accumulate": {
+  "sagemod:Accumulate": {
     "NAME": "Accumulate",
     "DESCRIPTIONS": [
       "Gain ",
@@ -7,7 +7,7 @@
       " Flight at the start of your turn."
     ]
   },
-  "Airborne": {
+  "sagemod:Airborne": {
     "NAME": "Airborne",
     "DESCRIPTIONS": [
       "Prevent the next #b",
@@ -15,20 +15,20 @@
       "Prevent the next time you would lose Flight until the start of your next turn."
     ]
   },
-  "Alchemy_Expert": {
+  "sagemod:Alchemy_Expert": {
     "NAME": "Alchemy Expert",
     "DESCRIPTIONS": [
       "Whenever you use a potion, gain #b",
       " Artifact"
     ]
   },
-  "Ancient_Poison": {
+  "sagemod:Ancient_Poison": {
     "NAME": "Ancient Posion",
     "DESCRIPTIONS": [
       "Artifact no longer negates Poison for this combat."
     ]
   },
-  "Bookworm": {
+  "sagemod:Bookworm": {
     "NAME": "Bookworm",
     "DESCRIPTIONS": [
       "When you play an X cost card",
@@ -39,7 +39,7 @@
       "."
     ]
   },
-  "Brew": {
+  "sagemod:Brew": {
     "NAME": "Brew",
     "DESCRIPTIONS": [
       "Obtain a #r",
@@ -57,7 +57,7 @@
       "You brewed some potions!"
     ]
   },
-  "Brewing": {
+  "sagemod:Brewing": {
     "NAME": "Brewing",
     "DESCRIPTIONS": [
       "You brew potions #b",
@@ -65,14 +65,14 @@
       " turn quicker."
     ]
   },
-  "Deadly_Contraption": {
+  "sagemod:Deadly_Contraption": {
     "NAME": "Deadly Contraption",
     "DESCRIPTIONS": [
       "At the end of their turn, the enemy loses #b",
       " HP per Artifact on them."
     ]
   },
-  "Disoriented": {
+  "sagemod:Disoriented": {
     "NAME": "Disoriented",
     "DESCRIPTIONS": [
       "The first attack of this enemy has no effect, for #b",
@@ -80,13 +80,13 @@
       "The first attack of this enemy has no effect for this turn."
     ]
   },
-  "Endless_Fear": {
+  "sagemod:Endless_Fear": {
     "NAME": "Endless Fear",
     "DESCRIPTIONS": [
       "Whenever you use a non-Fear Potion, obtain a Fear Potion."
     ]
   },
-  "Extra_Portion": {
+  "sagemod:Extra_Portion": {
     "NAME": "Extra Portion",
     "DESCRIPTIONS": [
       "The next #b",
@@ -94,20 +94,20 @@
       "The next potion is applied twice this turn."
     ]
   },
-  "Lose_Flight_Next_Turn": {
+  "sagemod:Lose_Flight_Next_Turn": {
     "NAME": "Lose Flight",
     "DESCRIPTIONS": [
       "At the start of your next turn, lose #b",
       " Flight."
     ]
   },
-  "No_Energy": {
+  "sagemod:No_Energy": {
     "NAME": "No Energy",
     "DESCRIPTIONS": [
       "You cannot gain energy this turn."
     ]
   },
-  "On_Fire": {
+  "sagemod:On_Fire": {
     "NAME": "On Fire",
     "DESCRIPTIONS": [
       "Play #b",
@@ -119,7 +119,7 @@
       "."
     ]
   },
-  "Potion_Trance": {
+  "sagemod:Potion_Trance": {
     "NAME": "Potion Trance",
     "DESCRIPTIONS": [
       "Draw #b",
@@ -127,7 +127,7 @@
       " card whenever you use a #yPotion this turn."
     ]
   },
-  "Riches": {
+  "sagemod:Riches": {
     "NAME": "Riches!!!",
     "DESCRIPTIONS": [
       "Whenever you use an upgraded potion, obtain a random unupgraded potion.",
@@ -135,26 +135,26 @@
       " random unupgraded potions."
     ]
   },
-  "Rickety_Defense": {
+  "sagemod:Rickety_Defense": {
     "NAME": "Rickety Defense",
     "DESCRIPTIONS": [
       "At the end of your turn, set your Block to your Frail if you have more Frail than Block."
     ]
   },
-  "Sage_Flight": {
+  "sagemod:Flight": {
     "NAME": "Flight",
     "DESCRIPTIONS": [
       "Reduce #yattack damage taken by #b50%. Reduced by one if you take #yattack damage."
     ]
   },
-  "Taste_This_One": {
+  "sagemod:Taste_This_One": {
     "NAME": "Taste This One",
     "DESCRIPTIONS": [
       "Whenever you use a potion, deal #b",
       " damage to a random enemy."
     ]
   },
-  "Thirsty": {
+  "sagemod:Thirsty": {
     "NAME": "Thirsty",
     "DESCRIPTIONS": [
       "#yPotions used against this enemy are #y50% more effective, for #b",
@@ -162,7 +162,7 @@
       " turn."
     ]
   },
-  "Trixter": {
+  "sagemod:Trixter": {
     "NAME": "Trixter",
     "DESCRIPTIONS": [
       "#yRefund all energy used when playing your next card.",
@@ -170,7 +170,7 @@
       " cards."
     ]
   },
-  "Undermine": {
+  "sagemod:Undermine": {
     "NAME": "Undermine",
     "DESCRIPTIONS": [
       "When you attack an enemy this turn, they take extra damage equal to the Artifact on them.",
@@ -178,7 +178,7 @@
       " turns, they take extra damage equal to the Artifact on them. "
     ]
   },
-  "Vigorous_Body": {
+  "sagemod:Vigorous_Body": {
     "NAME": "Vigorous Body",
     "DESCRIPTIONS": [
       "Whenever an #yArtifact of you gets triggered, gain #b",
@@ -187,7 +187,7 @@
       " NL "
     ]
   },
-  "Virus": {
+  "sagemod:Virus": {
     "NAME": "Virus",
     "DESCRIPTIONS": [
       "Poison applied to this enemy other than by Virus spreads to all other enemies instantly."

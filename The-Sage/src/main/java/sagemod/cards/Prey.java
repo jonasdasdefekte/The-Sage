@@ -18,7 +18,7 @@ import sagemod.actions.ExecuteLaterAction;
 
 public class Prey extends AbstractSageCard {
 
-	public static final String ID = "Prey";
+	public static final String ID = "sagemod:Prey";
 	private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
 	public static final String NAME = cardStrings.NAME;
 	private static final int COST = 1;
@@ -76,7 +76,7 @@ public class Prey extends AbstractSageCard {
 			p.increaseMaxHp(magicNumber, false);
 			AbstractDungeon.actionManager.addToTop(new ShowCardAndPoofAction(this));
 			AbstractDungeon.actionManager
-					.addToBottom(new ExecuteLaterAction(() -> p.discardPile.removeCard(this)));
+			.addToBottom(new ExecuteLaterAction(() -> p.discardPile.removeCard(this)));
 			AbstractCard c = StSLib.getMasterDeckEquivalent(this);
 			if (c != null) {
 				AbstractDungeon.player.masterDeck.removeCard(c);

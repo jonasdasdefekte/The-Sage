@@ -13,7 +13,7 @@ import sagemod.actions.ExecuteLaterAction;
 
 public class BookwormPower extends AbstractSagePower {
 
-	public static final String POWER_ID = "Bookworm";
+	public static final String POWER_ID = "sagemod:Bookworm";
 	private static final PowerStrings powerStrings = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
 	public static final String NAME = powerStrings.NAME;
 	public static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;

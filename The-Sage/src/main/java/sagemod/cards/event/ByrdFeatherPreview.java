@@ -10,7 +10,7 @@ import sagemod.relics.ByrdFeather;
 
 public class ByrdFeatherPreview extends AbstractSageCard {
 
-	public static final String ID = "Byrd_Feather_Preview";
+	public static final String ID = "sagemod:Byrd_Feather_Preview";
 	private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
 	public static final String NAME = cardStrings.NAME;
 	private static final int COST = -2;

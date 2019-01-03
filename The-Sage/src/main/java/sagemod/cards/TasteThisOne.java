@@ -9,7 +9,7 @@ import sagemod.powers.TasteThisOnePower;
 
 public class TasteThisOne extends AbstractSageCard {
 
-	public static final String ID = "Taste_This_One";
+	public static final String ID = "sagemod:Taste_This_One";
 	private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
 	public static final String NAME = cardStrings.NAME;
 	private static final int COST = 1;

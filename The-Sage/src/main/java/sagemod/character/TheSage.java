@@ -23,9 +23,9 @@ import basemod.abstracts.CustomPlayer;
 import basemod.animations.SpriterAnimation;
 import sagemod.SageMod;
 import sagemod.cards.BoldMove;
-import sagemod.cards.DefendSage;
+import sagemod.cards.Defend;
 import sagemod.cards.Fly;
-import sagemod.cards.StrikeSage;
+import sagemod.cards.Strike;
 import sagemod.relics.FlyingCarpet;
 
 /**
@@ -107,16 +107,16 @@ public class TheSage extends CustomPlayer {
 	public ArrayList<String> getStartingDeck() {
 		ArrayList<String> cards = new ArrayList<>();
 		// 4x Strike
-		cards.add(StrikeSage.ID);
-		cards.add(StrikeSage.ID);
-		cards.add(StrikeSage.ID);
-		cards.add(StrikeSage.ID);
+		cards.add(Strike.ID);
+		cards.add(Strike.ID);
+		cards.add(Strike.ID);
+		cards.add(Strike.ID);
 
 		// 4x Defend
-		cards.add(DefendSage.ID);
-		cards.add(DefendSage.ID);
-		cards.add(DefendSage.ID);
-		cards.add(DefendSage.ID);
+		cards.add(Defend.ID);
+		cards.add(Defend.ID);
+		cards.add(Defend.ID);
+		cards.add(Defend.ID);
 
 		// 1x Fly
 		cards.add(Fly.ID);

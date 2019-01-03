@@ -1,56 +1,54 @@
 package sagemod.cards;
 
-import com.megacrit.cardcrawl.actions.AbstractGameAction.AttackEffect;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-
 import basemod.helpers.BaseModCardTags;
 
-public class StrikeSage extends AbstractSageCard {
+public class Defend extends AbstractSageCard {
 
-	public static final String ID = "Strike_Sage";
+	public static final String ID = "sagemod:Defend";
 	private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
 	public static final String NAME = cardStrings.NAME;
 	private static final int COST = 1;
 	public static final String DESCRIPTION = cardStrings.DESCRIPTION;
-	private static final CardType TYPE = CardType.ATTACK;
+	private static final CardType TYPE = CardType.SKILL;
 	private static final CardRarity RARITY = CardRarity.BASIC;
-	private static final CardTarget TARGET = CardTarget.ENEMY;
+	private static final CardTarget TARGET = CardTarget.SELF;
 
-	private static final int ATTACK_DMG = 6;
-	private static final int UPGRADE_ATTACK_DMG = 3;
+	private static final int BLOCK_AMT = 5;
+	private static final int UPGRADE_BLOCK_AMT = 3;
 
-	public StrikeSage() {
+	public Defend() {
 		super(ID, NAME, COST, DESCRIPTION, TYPE, RARITY, TARGET);
-		baseDamage = ATTACK_DMG;
+		baseBlock = BLOCK_AMT;
 
-		tags.add(CardTags.STRIKE);
-		tags.add(BaseModCardTags.BASIC_STRIKE);
+		tags.add(BaseModCardTags.BASIC_DEFEND);
 	}
 
 	@Override
 	public void upgrade() {
 		if (!upgraded) {
 			upgradeName();
-			upgradeDamage(UPGRADE_ATTACK_DMG);
+			upgradeBlock(UPGRADE_BLOCK_AMT);
 		}
 	}
 
 	@Override
 	public AbstractCard makeCopy() {
-		return new StrikeSage();
+		return new Defend();
 	}
 
 	@Override
 	public void use(AbstractPlayer p, AbstractMonster m) {
-		attack(m, AttackEffect.SLASH_DIAGONAL);
+		block();
 	}
 
 	@Override
 	public String getLoadedDescription() {
 		return DESCRIPTION;
 	}
+
 }

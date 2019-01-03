@@ -13,7 +13,7 @@ import com.megacrit.cardcrawl.potions.PotionSlot;
 
 public class BurningFlask extends AbstractSageCard {
 
-	public static final String ID = "Burning_Flask";
+	public static final String ID = "sagemod:Burning_Flask";
 	private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
 	public static final String NAME = cardStrings.NAME;
 	private static final int COST = 1;

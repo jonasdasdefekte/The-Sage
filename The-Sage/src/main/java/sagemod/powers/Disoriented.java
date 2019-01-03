@@ -18,7 +18,7 @@ import basemod.ReflectionHacks;
 
 public class Disoriented extends AbstractSagePower {
 
-	public static final String POWER_ID = "Disoriented";
+	public static final String POWER_ID = "sagemod:Disoriented";
 	private static final PowerStrings powerStrings = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
 	public static final String NAME = powerStrings.NAME;
 	public static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;

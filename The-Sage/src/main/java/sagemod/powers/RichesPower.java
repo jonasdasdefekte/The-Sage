@@ -11,7 +11,7 @@ import com.megacrit.cardcrawl.potions.RegenPotion;
 
 public class RichesPower extends AbstractSagePower {
 
-	public static final String POWER_ID = "Riches";
+	public static final String POWER_ID = "sagemod:Riches";
 	private static final PowerStrings powerStrings = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
 	public static final String NAME = powerStrings.NAME;
 	public static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;

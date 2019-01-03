@@ -13,7 +13,7 @@ import sagemod.powers.Brew;
 
 public class EnergeticBrew extends AbstractSageCard {
 
-	public static final String ID = "Energetic_Brew";
+	public static final String ID = "sagemod:Energetic_Brew";
 	private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
 	public static final String NAME = cardStrings.NAME;
 	private static final int COST = 1;

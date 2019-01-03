@@ -7,11 +7,11 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import sagemod.actions.ReduceFlightBlockableAction;
-import sagemod.powers.SageFlight;
+import sagemod.powers.Flight;
 
 public class Meditation extends AbstractSageCard {
 
-	public static final String ID = "Meditation";
+	public static final String ID = "sagemod:Meditation";
 	private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
 	public static final String NAME = cardStrings.NAME;
 	private static final int COST = 0;
@@ -44,7 +44,7 @@ public class Meditation extends AbstractSageCard {
 
 	@Override
 	public void use(AbstractPlayer p, AbstractMonster m) {
-		if (p.hasPower(SageFlight.POWER_ID)) {
+		if (p.hasPower(Flight.POWER_ID)) {
 			AbstractDungeon.actionManager.addToBottom(new ReduceFlightBlockableAction(999, p));
 		}
 		draw(magicNumber);

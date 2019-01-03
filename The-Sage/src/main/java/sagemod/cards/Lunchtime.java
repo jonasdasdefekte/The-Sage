@@ -6,14 +6,13 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-
 import sagemod.actions.ReduceFlightBlockableAction;
 import sagemod.powers.Brew;
-import sagemod.powers.SageFlight;
+import sagemod.powers.Flight;
 
 public class Lunchtime extends AbstractSageCard {
 
-	public static final String ID = "Lunchtime";
+	public static final String ID = "sagemod:Lunchtime";
 	private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
 	public static final String NAME = cardStrings.NAME;
 	private static final int COST = 1;
@@ -45,7 +44,7 @@ public class Lunchtime extends AbstractSageCard {
 
 	@Override
 	public void use(AbstractPlayer p, AbstractMonster m) {
-		if (p.hasPower(SageFlight.POWER_ID)) {
+		if (p.hasPower(Flight.POWER_ID)) {
 			AbstractDungeon.actionManager.addToBottom(new ReduceFlightBlockableAction(magicNumber, p));
 			Brew.brewAllPotions();
 		}

@@ -6,11 +6,11 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import sagemod.powers.Brewing;
-import sagemod.powers.SageFlight;
+import sagemod.powers.Flight;
 
 public class FlyingCauldron extends AbstractSageCard {
 
-	public static final String ID = "Flying_Cauldron";
+	public static final String ID = "sagemod:Flying_Cauldron";
 	private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
 	public static final String NAME = cardStrings.NAME;
 	private static final int COST = 1;
@@ -43,10 +43,10 @@ public class FlyingCauldron extends AbstractSageCard {
 
 	@Override
 	public void use(AbstractPlayer p, AbstractMonster m) {
-		if (p.hasPower(SageFlight.POWER_ID)) {
+		if (p.hasPower(Flight.POWER_ID)) {
 			applyPowerToSelf(new Brewing(p, magicNumber));
 		} else if (upgraded) {
-			applyPowerToSelf(new SageFlight(p, magicNumber));
+			applyPowerToSelf(new Flight(p, magicNumber));
 		}
 	}
 

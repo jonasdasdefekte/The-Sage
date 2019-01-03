@@ -9,7 +9,7 @@ import sagemod.powers.Airborne;
 
 public class CatchMeIfYouCan extends AbstractSageCard {
 
-	public static final String ID = "Catch_Me_If_You_Can";
+	public static final String ID = "sagemod:Catch_Me_If_You_Can";
 	private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
 	public static final String NAME = cardStrings.NAME;
 	private static final int COST = 0;

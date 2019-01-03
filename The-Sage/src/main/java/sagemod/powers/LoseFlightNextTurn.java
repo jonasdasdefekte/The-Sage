@@ -6,12 +6,11 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
-
 import sagemod.actions.ReduceFlightBlockableAction;
 
 public class LoseFlightNextTurn extends AbstractSagePower {
 
-	public static final String POWER_ID = "Lose_Flight_Next_Turn";
+	public static final String POWER_ID = "sagemod:Lose_Flight_Next_Turn";
 	private static final PowerStrings powerStrings = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
 	public static final String NAME = powerStrings.NAME;
 	public static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;
@@ -27,7 +26,7 @@ public class LoseFlightNextTurn extends AbstractSagePower {
 	public void atStartOfTurn() {
 		flash();
 		AbstractDungeon.actionManager
-				.addToBottom(new ReduceFlightBlockableAction(amount, AbstractDungeon.player));
+		.addToBottom(new ReduceFlightBlockableAction(amount, AbstractDungeon.player));
 		AbstractDungeon.actionManager.addToBottom(new RemoveSpecificPowerAction(owner, owner, POWER_ID));
 
 	}

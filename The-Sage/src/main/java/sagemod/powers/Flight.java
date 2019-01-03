@@ -10,14 +10,14 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 
-public class SageFlight extends AbstractSagePower {
+public class Flight extends AbstractSagePower {
 
-	public static final String POWER_ID = "Sage_Flight";
+	public static final String POWER_ID = "sagemod:Flight";
 	private static final PowerStrings powerStrings = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
 	public static final String NAME = powerStrings.NAME;
 	public static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;
 
-	public SageFlight(AbstractCreature owner, int amount) {
+	public Flight(AbstractCreature owner, int amount) {
 		super(POWER_ID, NAME, owner, amount);
 		updateDescription();
 		priority = 50;
@@ -64,7 +64,7 @@ public class SageFlight extends AbstractSagePower {
 			// Airborne prevents Flight loss
 			if (!owner.hasPower(Airborne.POWER_ID)) {
 				AbstractDungeon.actionManager
-						.addToTop(new ReducePowerAction(owner, info.owner, this, 1));
+				.addToTop(new ReducePowerAction(owner, info.owner, this, 1));
 			} else {
 				// will reduce Airborne and play a sound
 				owner.getPower(Airborne.POWER_ID).onSpecificTrigger();

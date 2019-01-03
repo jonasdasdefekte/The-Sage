@@ -9,7 +9,7 @@ import sagemod.powers.Accumulate;
 
 public class Accumulation extends AbstractSageCard {
 
-	public static final String ID = "Accumulation";
+	public static final String ID = "sagemod:Accumulation";
 	private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
 	public static final String NAME = cardStrings.NAME;
 	private static final int COST = 1;

@@ -12,7 +12,7 @@ import sagemod.powers.Brew;
 
 public class Momentum extends AbstractSageCard {
 
-	public static final String ID = "Momentum";
+	public static final String ID = "sagemod:Momentum";
 	private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
 	public static final String NAME = cardStrings.NAME;
 	private static final int COST = 0;

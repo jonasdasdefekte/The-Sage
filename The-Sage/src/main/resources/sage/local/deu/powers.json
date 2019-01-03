@@ -1,5 +1,5 @@
 {
-  "Accumulate": {
+  "sagemod:Accumulate": {
     "NAME": "Akkumulation",
     "DESCRIPTIONS": [
       "Erhalte ",
@@ -7,7 +7,7 @@
       " Flug zu Beginn deines Zuges."
     ]
   },
-  "Airborne": {
+  "sagemod:Airborne": {
     "NAME": "Fang mich doch",
     "DESCRIPTIONS": [
       "Verhindert die nächsten #b ",
@@ -15,20 +15,20 @@
       "Verhindert das nächste Mal bei dem du Flug verlieren würdest bis zu deinem nächsten Zug."
     ]
   },
-  "Alchemy_Expert": {
+  "sagemod:Alchemy_Expert": {
     "NAME": "Alchemistin",
     "DESCRIPTIONS": [
       "Immer wenn du einen Trank benutzt, erhalte #b",
       " Artefakt."
     ]
   },
-  "Ancient_Poison": {
+  "sagemod:Ancient_Poison": {
     "NAME": "Uraltes Gift",
     "DESCRIPTIONS": [
       "Artefakt negiert in diesem Kampf kein Gift."
     ]
   },
-  "Bookworm": {
+  "sagemod:Bookworm": {
     "NAME": "Bücherwurm",
     "DESCRIPTIONS": [
       "Wenn du eine Karte spielst, die X kostet",
@@ -39,7 +39,7 @@
       "."
     ]
   },
-  "Brew": {
+  "sagemod:Brew": {
     "NAME": "Braue",
     "DESCRIPTIONS": [
       "Erhalte einen #r",
@@ -57,7 +57,7 @@
       "Du hast Tränke gebraut!"
     ]
   },
-  "Brewing": {
+  "sagemod:Brewing": {
     "NAME": "Brauen",
     "DESCRIPTIONS": [
       "Du braust Tränke #b",
@@ -65,14 +65,14 @@
       " Zug schneller."
     ]
   },
-  "Deadly_Contraption": {
+  "sagemod:Deadly_Contraption": {
     "NAME": "Tödlicher Apparat",
     "DESCRIPTIONS": [
       "Am Ende des Zuges verliert der Gegner #b",
       " TP pro Artefakt auf ihm."
     ]
   },
-  "Disoriented": {
+  "sagemod:Disoriented": {
     "NAME": "Desorientiert",
     "DESCRIPTIONS": [
       "Der erste Angriff dieses Gegners hat keinen Effekt - für #b",
@@ -80,13 +80,13 @@
       "Der erste Angriff dieses Gegners hat in diesem Zug keinen Effekt."
     ]
   },
-  "Endless_Fear": {
+  "sagemod:Endless_Fear": {
     "NAME": "Endlose Furcht",
     "DESCRIPTIONS": [
       "Immer wenn du einen Trank außer Furchttrank benutzt, erhalte einen Furchttrank."
     ]
   },
-  "Extra_Portion": {
+  "sagemod:Extra_Portion": {
     "NAME": "Extraportion",
     "DESCRIPTIONS": [
       "Die nächsten #b",
@@ -94,20 +94,20 @@
       "Der nächste Trank in diesem Zug wird zweimal angewendet"
     ]
   },
-  "Lose_Flight_Next_Turn": {
+  "sagemod:Lose_Flight_Next_Turn": {
     "NAME": "Flug verlieren",
     "DESCRIPTIONS": [
       "Verliere zu Beginn deines nächsten Zuges #b",
       " Flug."
     ]
   },
-  "No_Energy": {
+  "sagemod:No_Energy": {
     "NAME": "Keine Energie",
     "DESCRIPTIONS": [
       "Du kannst in diesem Zug keine Energie erhalten."
     ]
   },
-  "On_Fire": {
+  "sagemod:On_Fire": {
     "NAME": "Feuer",
     "DESCRIPTIONS": [
       "Spiele #b",
@@ -119,7 +119,7 @@
       " zu erhalten."
     ]
   },
-  "Potion_Trance": {
+  "sagemod:Potion_Trance": {
     "NAME": "Tranktrance",
     "DESCRIPTIONS": [
       "Ziehe #b",
@@ -127,7 +127,7 @@
       " Karte, wenn du in diesem Zug einen #yTrank benutzt."
     ]
   },
-  "Riches": {
+  "sagemod:Riches": {
     "NAME": "Reichtümer!!!",
     "DESCRIPTIONS": [
       "Immer wenn du einen verbesserten Trank benutzt, erhälst du einen zufälligen Trank, der nicht verbessert ist.",
@@ -135,26 +135,26 @@
       "  zufällige Tränke, die nicht verbessert sind."
     ]
   },
-  "Rickety_Defense": {
+  "sagemod:Rickety_Defense": {
     "NAME": "Klappriger Schild",
     "DESCRIPTIONS": [
       "Am Ende deiner Runde, setze deinen Block deinem Gebrechlich gleich, wenn du mehr Gebrechlich als Block hast."
     ]
   },
-  "Sage_Flight": {
+  "sagemod:Sage_Flight": {
     "NAME": "Flug",
     "DESCRIPTIONS": [
       "Reduziere #yAngriffsschaden, den du nimmst, um #b50%. Sinkt um 1, wenn du #yAngriffsschaden nimmst."
     ]
   },
-  "Taste_This_One": {
+  "sagemod:Taste_This_One": {
     "NAME": "Probier das mal",
     "DESCRIPTIONS": [
       "Immer wenn du einen Trank benutzt, füge einem zufälligen Gegner #b",
       " Schaden zu."
     ]
   },
-  "Thirsty": {
+  "sagemod:Thirsty": {
     "NAME": "Durstig",
     "DESCRIPTIONS": [
       "#yTränke sind gegen diesen Gegner #y50% effektiver - für #b",
@@ -162,7 +162,7 @@
       " Zug."
     ]
   },
-  "Trixter": {
+  "sagemod:Trixter": {
     "NAME": "Trixter",
     "DESCRIPTIONS": [
       "#yErstatte die gesamte Energie für die nächste Karte, die du spielst.",
@@ -170,7 +170,7 @@
       "  Karten, die du spielst."
     ]
   },
-  "Undermine": {
+  "sagemod:Undermine": {
     "NAME": "Untergraben",
     "DESCRIPTIONS": [
       "Wenn du einen Gegner diese Runde angreifst, erhält er soviel zusätzlichen Schaden, wieviel Artefakt er hat.",
@@ -178,7 +178,7 @@
       " Runden angreifst, erhält er soviel zusätzlichen Schaden, wieviel Artefakt er hat."
     ]
   },
-  "Vigorous_Body": {
+  "sagemod:Vigorous_Body": {
     "NAME": "Energischer Körper",
     "DESCRIPTIONS": [
       "Immer wenn ein #yArtefakt bei dir genutzt wird, erhalte #b",
@@ -187,7 +187,7 @@
       " NL "
     ]
   },
-  "Virus": {
+  "sagemod:Virus": {
     "NAME": "Virus",
     "DESCRIPTIONS": [
       "Gift, dass auf diesen Gegner außer durch Virus selber angewendet wird, wird auch auf alle anderen Gegner angewendet."

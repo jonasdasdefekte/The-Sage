@@ -10,7 +10,7 @@ import sagemod.powers.Disoriented;
 
 public class PerplexingGlare extends AbstractSageCard {
 
-	public static final String ID = "Perplexing_Glare";
+	public static final String ID = "sagemod:Perplexing_Glare";
 	private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
 	public static final String NAME = cardStrings.NAME;
 	private static final int COST = 2;

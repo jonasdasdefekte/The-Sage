@@ -11,11 +11,11 @@ import com.megacrit.cardcrawl.potions.AbstractPotion;
 import com.megacrit.cardcrawl.rooms.AbstractRoom.RoomPhase;
 import basemod.abstracts.CustomPotion;
 import sagemod.Keywords;
-import sagemod.powers.SageFlight;
+import sagemod.powers.Flight;
 
 public class FlightPotion extends CustomPotion {
 
-	public static final String POTION_ID = "Flight_Potion";
+	public static final String POTION_ID = "sagemod:Flight_Potion";
 	public static final PotionStrings potionStrings =
 			CardCrawlGame.languagePack.getPotionString(POTION_ID);
 	public static final String NAME = potionStrings.NAME;
@@ -52,7 +52,7 @@ public class FlightPotion extends CustomPotion {
 		target = AbstractDungeon.player;
 		if (AbstractDungeon.getCurrRoom().phase == RoomPhase.COMBAT) {
 			AbstractDungeon.actionManager
-			.addToBottom(new ApplyPowerAction(target, target, new SageFlight(target, potency), potency));
+			.addToBottom(new ApplyPowerAction(target, target, new Flight(target, potency), potency));
 		}
 	}
 

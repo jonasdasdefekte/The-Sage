@@ -9,7 +9,7 @@ import sagemod.powers.OnFirePower;
 
 public class OnFire extends AbstractSageCard {
 
-	public static final String ID = "On_Fire";
+	public static final String ID = "sagemod:On_Fire";
 	private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
 	public static final String NAME = cardStrings.NAME;
 	private static final int COST = 1;

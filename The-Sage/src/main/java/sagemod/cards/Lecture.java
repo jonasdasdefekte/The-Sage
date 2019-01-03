@@ -12,7 +12,7 @@ import sagemod.listeners.LectureListener;
 
 public class Lecture extends AbstractSageCard {
 
-	public static final String ID = "Lecture";
+	public static final String ID = "sagemod:Lecture";
 	private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
 	public static final String NAME = cardStrings.NAME;
 	private static final int COST = 1;

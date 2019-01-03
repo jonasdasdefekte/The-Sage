@@ -10,7 +10,7 @@ import sagemod.potions.UpgradedPotion;
 
 public class AvailablePotionUpgrade extends AbstractSageCard {
 
-	public static final String ID = "Available_Potion_Upgrade";
+	public static final String ID = "sagemod:Available_Potion_Upgrade";
 	public static final String NAME = "Available Potion Upgrade";
 	private static final int COST = 0;
 	public static final String DESCRIPTION =

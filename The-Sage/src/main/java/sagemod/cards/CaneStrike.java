@@ -10,7 +10,7 @@ import com.megacrit.cardcrawl.powers.FrailPower;
 
 public class CaneStrike extends AbstractSageCard {
 
-	public static final String ID = "Cane_Strike";
+	public static final String ID = "sagemod:Cane_Strike";
 	private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
 	public static final String NAME = cardStrings.NAME;
 	private static final int COST = 1;

@@ -5,12 +5,11 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-
 import sagemod.powers.ExtraPortionPower;
 
 public class ExtraPortion extends AbstractSageCard {
 
-	public static final String ID = "Extra_Portion";
+	public static final String ID = "sagemod:Extra_Portion";
 	private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
 	public static final String NAME = cardStrings.NAME;
 	private static final int COST = 1;

@@ -4,11 +4,11 @@ import com.megacrit.cardcrawl.actions.common.DrawCardAction;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
 import sagemod.actions.ExecuteLaterAction;
-import sagemod.powers.SageFlight;
+import sagemod.powers.Flight;
 
 public class BalloonAnimal extends AbstractSageRelic {
 
-	public static final String ID = "Balloon_Animal";
+	public static final String ID = "sagemod:Balloon_Animal";
 	public static final RelicTier TIER = RelicTier.UNCOMMON;
 	public static final LandingSound SOUND = LandingSound.MAGICAL;
 	private static final int DRAW_AMT = 1;
@@ -27,14 +27,14 @@ public class BalloonAnimal extends AbstractSageRelic {
 	private void maybeDraw() {
 		if (playerHasNoFlight()) {
 			AbstractDungeon.actionManager
-					.addToBottom(new DrawCardAction(AbstractDungeon.player, DRAW_AMT));
+			.addToBottom(new DrawCardAction(AbstractDungeon.player, DRAW_AMT));
 			flash();
 			appearAbove(AbstractDungeon.player);
 		}
 	}
 
 	private boolean playerHasNoFlight() {
-		return !AbstractDungeon.player.hasPower(SageFlight.POWER_ID);
+		return !AbstractDungeon.player.hasPower(Flight.POWER_ID);
 	}
 
 	@Override

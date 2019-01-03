@@ -10,7 +10,7 @@ import com.megacrit.cardcrawl.powers.StrengthPower;
 
 public class VigorousBodyPower extends AbstractSagePower {
 
-	public static final String POWER_ID = "Vigorous_Body";
+	public static final String POWER_ID = "sagemod:Vigorous_Body";
 	private static final PowerStrings powerStrings = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
 	public static final String NAME = powerStrings.NAME;
 	public static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;

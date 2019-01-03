@@ -11,7 +11,7 @@ import com.megacrit.cardcrawl.powers.FrailPower;
 
 public class RicketyDefensePower extends AbstractSagePower {
 
-	public static final String POWER_ID = "Rickety_Defense";
+	public static final String POWER_ID = "sagemod:Rickety_Defense";
 	private static final PowerStrings powerStrings = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
 	public static final String NAME = powerStrings.NAME;
 	public static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;

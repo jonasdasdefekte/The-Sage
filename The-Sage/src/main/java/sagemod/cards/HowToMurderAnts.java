@@ -11,7 +11,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
 public class HowToMurderAnts extends AbstractSageCard {
 
-	public static final String ID = "How_To_Murder_Ants";
+	public static final String ID = "sagemod:How_To_Murder_Ants";
 	private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
 	public static final String NAME = cardStrings.NAME;
 	private static final int COST = -1;

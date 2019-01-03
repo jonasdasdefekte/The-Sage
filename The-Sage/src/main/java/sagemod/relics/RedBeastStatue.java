@@ -5,7 +5,7 @@ import com.megacrit.cardcrawl.relics.AbstractRelic;
 
 public class RedBeastStatue extends AbstractSageRelic {
 
-	public static final String ID = "Red_Beast_Statue";
+	public static final String ID = "sagemod:Red_Beast_Statue";
 	public static final RelicTier TIER = RelicTier.UNCOMMON;
 	public static final LandingSound SOUND = LandingSound.SOLID;
 

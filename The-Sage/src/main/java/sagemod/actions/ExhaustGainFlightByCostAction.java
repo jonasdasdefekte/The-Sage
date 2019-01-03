@@ -10,7 +10,7 @@ import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.UIStrings;
 import com.megacrit.cardcrawl.ui.panels.EnergyPanel;
-import sagemod.powers.SageFlight;
+import sagemod.powers.Flight;
 
 public class ExhaustGainFlightByCostAction
 extends AbstractGameAction {
@@ -63,7 +63,7 @@ extends AbstractGameAction {
 				if (flightGain != 0) {
 					AbstractDungeon.actionManager.addToBottom(
 							new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player,
-									new SageFlight(AbstractDungeon.player, flightGain),
+									new Flight(AbstractDungeon.player, flightGain),
 									flightGain));
 				}
 				CardCrawlGame.dungeon.checkForPactAchievement();
@@ -79,7 +79,7 @@ extends AbstractGameAction {
 				if (flightGain != 0) {
 					AbstractDungeon.actionManager.addToBottom(
 							new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player,
-									new SageFlight(AbstractDungeon.player, flightGain),
+									new Flight(AbstractDungeon.player, flightGain),
 									flightGain));
 				}
 				CardCrawlGame.dungeon.checkForPactAchievement();
@@ -99,7 +99,7 @@ extends AbstractGameAction {
 			if (flightGain != 0) {
 				AbstractDungeon.actionManager.addToBottom(
 						new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player,
-								new SageFlight(AbstractDungeon.player, flightGain), flightGain));
+								new Flight(AbstractDungeon.player, flightGain), flightGain));
 			}
 			CardCrawlGame.dungeon.checkForPactAchievement();
 			AbstractDungeon.handCardSelectScreen.wereCardsRetrieved = true;

@@ -10,7 +10,7 @@ import sagemod.powers.PotionTrancePower;
 
 public class PotionTrance extends AbstractSageCard {
 
-	public static final String ID = "Potion_Trance";
+	public static final String ID = "sagemod:Potion_Trance";
 	private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
 	public static final String NAME = cardStrings.NAME;
 	private static final int COST = 1;

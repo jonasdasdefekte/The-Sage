@@ -10,7 +10,7 @@ import sagemod.relics.FlyingCarpet;
 
 public class FlyingCarpetPreview extends AbstractSageCard {
 
-	public static final String ID = "Flying_Carpet_Preview";
+	public static final String ID = "sagemod:Flying_Carpet_Preview";
 	private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
 	public static final String NAME = cardStrings.NAME;
 	private static final int COST = -2;

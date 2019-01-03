@@ -9,7 +9,7 @@ import sagemod.powers.BookwormPower;
 
 public class Bookworm extends AbstractSageCard {
 
-	public static final String ID = "Bookworm";
+	public static final String ID = "sagemod:Bookworm";
 	private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
 	public static final String NAME = cardStrings.NAME;
 	private static final int COST = 1;

@@ -10,7 +10,7 @@ import com.megacrit.cardcrawl.powers.FrailPower;
 
 public class BoldMove extends AbstractSageCard {
 
-	public static final String ID = "Bold_Move";
+	public static final String ID = "sagemod:Bold_Move";
 	private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
 	public static final String NAME = cardStrings.NAME;
 	private static final int COST = 1;

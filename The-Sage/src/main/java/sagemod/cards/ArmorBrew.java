@@ -12,7 +12,7 @@ import sagemod.powers.Brew;
 
 public class ArmorBrew extends AbstractSageCard {
 
-	public static final String ID = "Armor_Brew";
+	public static final String ID = "sagemod:Armor_Brew";
 	private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
 	public static final String NAME = cardStrings.NAME;
 	private static final int COST = 1;

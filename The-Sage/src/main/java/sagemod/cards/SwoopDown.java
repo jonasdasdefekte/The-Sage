@@ -8,11 +8,11 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import sagemod.actions.ReduceFlightBlockableAction;
-import sagemod.powers.SageFlight;
+import sagemod.powers.Flight;
 
 public class SwoopDown extends AbstractSageCard {
 
-	public static final String ID = "Swoop_Down";
+	public static final String ID = "sagemod:Swoop_Down";
 	private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
 	public static final String NAME = cardStrings.NAME;
 	private static final int COST = 1;
@@ -61,8 +61,8 @@ public class SwoopDown extends AbstractSageCard {
 
 	private void updateExtendedDescription() {
 		int count = 0;
-		if (player().hasPower(SageFlight.POWER_ID)) {
-			count = player().getPower(SageFlight.POWER_ID).amount;
+		if (player().hasPower(Flight.POWER_ID)) {
+			count = player().getPower(Flight.POWER_ID).amount;
 		}
 		rawDescription = getLoadedDescription();
 		rawDescription = rawDescription + EXTENDED_DESCRIPTION[0] + damage * count + EXTENDED_DESCRIPTION[1];
@@ -73,7 +73,7 @@ public class SwoopDown extends AbstractSageCard {
 	public void use(AbstractPlayer p, AbstractMonster m) {
 		int times = 0;
 		if (isFlying()) {
-			times = player().getPower(SageFlight.POWER_ID).amount;
+			times = player().getPower(Flight.POWER_ID).amount;
 		}
 		for (int i = 0; i < times; i++) {
 			attack(m, AttackEffect.SLASH_VERTICAL);

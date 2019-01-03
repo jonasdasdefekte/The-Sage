@@ -8,7 +8,7 @@ import com.megacrit.cardcrawl.relics.AbstractRelic;
 
 public class CabbageHead extends AbstractSageRelic {
 
-	public static final String ID = "Cabbage_Head";
+	public static final String ID = "sagemod:Cabbage_Head";
 	public static final RelicTier TIER = RelicTier.COMMON;
 	public static final LandingSound SOUND = LandingSound.FLAT;
 	private static final int DEXTERITY_AMT = 2;

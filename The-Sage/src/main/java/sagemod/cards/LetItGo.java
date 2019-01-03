@@ -10,7 +10,7 @@ import sagemod.actions.ExhaustGainFlightByCostAction;
 
 public class LetItGo extends AbstractSageCard {
 
-	public static final String ID = "Let_It_Go";
+	public static final String ID = "sagemod:Let_It_Go";
 	private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
 	public static final String NAME = cardStrings.NAME;
 	private static final int COST = 1;

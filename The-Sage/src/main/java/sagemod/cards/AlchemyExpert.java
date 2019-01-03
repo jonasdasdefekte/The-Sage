@@ -5,12 +5,11 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-
 import sagemod.powers.AlchemyExpertPower;
 
 public class AlchemyExpert extends AbstractSageCard {
 
-	public static final String ID = "Alchemy_Expert";
+	public static final String ID = "sagemod:Alchemy_Expert";
 	private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
 	public static final String NAME = cardStrings.NAME;
 	private static final int COST = 1;

@@ -10,7 +10,7 @@ import sagemod.powers.TrixterPower;
 
 public class Trixter extends AbstractSageCard {
 
-	public static final String ID = "Trixter";
+	public static final String ID = "sagemod:Trixter";
 	private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
 	public static final String NAME = cardStrings.NAME;
 	private static final int COST = 1;

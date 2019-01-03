@@ -10,7 +10,7 @@ import sagemod.listeners.PotionListener;
 
 public class PotionExplosion extends AbstractSageCard {
 
-	public static final String ID = "Potion_Explosion";
+	public static final String ID = "sagemod:Potion_Explosion";
 	private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
 	public static final String NAME = cardStrings.NAME;
 	private static final int COST = 1;

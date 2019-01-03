@@ -6,12 +6,11 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.potions.SteroidPotion;
-
 import sagemod.powers.Brew;
 
 public class HowToWakeLyons extends AbstractSageCard {
 
-	public static final String ID = "How_To_Wake_Lyons";
+	public static final String ID = "sagemod:How_To_Wake_Lyons";
 	private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
 	public static final String NAME = cardStrings.NAME;
 	private static final int COST = -1;

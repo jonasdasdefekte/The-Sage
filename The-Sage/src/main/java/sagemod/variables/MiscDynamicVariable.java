@@ -1,14 +1,13 @@
 package sagemod.variables;
 
 import com.megacrit.cardcrawl.cards.AbstractCard;
-
 import basemod.abstracts.DynamicVariable;
 
 public class MiscDynamicVariable extends DynamicVariable {
 
 	@Override
 	public String key() {
-		return "MISC";
+		return "sagemod:MISC";
 	}
 
 	@Override

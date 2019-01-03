@@ -6,12 +6,11 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-
-import sagemod.powers.SageFlight;
+import sagemod.powers.Flight;
 
 public class PourTarPitch extends AbstractSageCard {
 
-	public static final String ID = "Pour_Tar_Pitch";
+	public static final String ID = "sagemod:Pour_Tar_Pitch";
 	private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
 	public static final String NAME = cardStrings.NAME;
 	private static final int COST = 3;
@@ -41,7 +40,7 @@ public class PourTarPitch extends AbstractSageCard {
 	@Override
 	public void applyPowers() {
 		super.applyPowers();
-		if (hasPower(SageFlight.POWER_ID)) {
+		if (hasPower(Flight.POWER_ID)) {
 			target = CardTarget.ALL_ENEMY;
 		} else {
 			target = CardTarget.ENEMY;

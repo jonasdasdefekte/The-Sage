@@ -7,12 +7,11 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-
-import sagemod.powers.SageFlight;
+import sagemod.powers.Flight;
 
 public class Escape extends AbstractSageCard {
 
-	public static final String ID = "Escape";
+	public static final String ID = "sagemod:Escape";
 	private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
 	public static final String NAME = cardStrings.NAME;
 	private static final int COST = 1;
@@ -44,9 +43,9 @@ public class Escape extends AbstractSageCard {
 	@Override
 	public void use(AbstractPlayer p, AbstractMonster m) {
 		if (isFlying()) {
-			int flightAmount = p.getPower(SageFlight.POWER_ID).amount;
+			int flightAmount = p.getPower(Flight.POWER_ID).amount;
 			AbstractDungeon.actionManager
-			.addToTop(new ApplyPowerAction(p, p, new SageFlight(p, flightAmount), flightAmount));
+			.addToTop(new ApplyPowerAction(p, p, new Flight(p, flightAmount), flightAmount));
 		}
 	}
 

@@ -3,7 +3,6 @@ package sagemod.variables;
 import com.badlogic.gdx.graphics.Color;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.core.Settings;
-
 import basemod.abstracts.DynamicVariable;
 import sagemod.cards.AbstractSageCard;
 
@@ -11,7 +10,7 @@ public class BrewingDynamicVariable extends DynamicVariable {
 
 	@Override
 	public String key() {
-		return "BRW";
+		return "sagemod:BRW";
 	}
 
 	@Override
@@ -46,14 +45,17 @@ public class BrewingDynamicVariable extends DynamicVariable {
 		return false;
 	}
 
+	@Override
 	public Color getUpgradedColor() {
 		return Settings.GREEN_TEXT_COLOR;
 	}
 
+	@Override
 	public Color getIncreasedValueColor() {
 		return Settings.RED_TEXT_COLOR;
 	}
 
+	@Override
 	public Color getDecreasedValueColor() {
 		return Settings.GREEN_TEXT_COLOR;
 	}
