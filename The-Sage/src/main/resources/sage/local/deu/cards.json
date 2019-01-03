@@ -187,7 +187,10 @@
   },
   "How_To_Feed_Apes": {
     "NAME": "Wie man Affen füttert",
-    "DESCRIPTION": "Braue einen der NL möglichen Tränke NL in !BRW! -X Zügen. NL Erschöpft."
+    "DESCRIPTION": "Braue einen der NL möglichen Tränke NL in !BRW! -X Zügen. NL Erschöpft.",
+    "EXTENDED_DESCRIPTION": [
+      "Mögliche Tränke"
+    ]
   },
   "How_To_Greet_Byrds": {
     "NAME": "Wie man Fögl grüßt",

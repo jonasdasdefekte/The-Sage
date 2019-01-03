@@ -187,7 +187,10 @@
   },
   "How_To_Feed_Apes": {
     "NAME": "How To Feed Apes",
-    "DESCRIPTION": "Brew one of the NL possible Potions NL in !BRW! -X turns. NL Exhaust."
+    "DESCRIPTION": "Brew one of the NL possible Potions NL in !BRW! -X turns. NL Exhaust.",
+    "EXTENDED_DESCRIPTION": [
+      "Possible Potions"
+    ]
   },
   "How_To_Greet_Byrds": {
     "NAME": "How To Greet Byrds",

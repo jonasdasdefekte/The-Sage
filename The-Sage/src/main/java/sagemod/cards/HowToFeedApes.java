@@ -4,7 +4,6 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.function.Supplier;
 import java.util.stream.Collectors;
-
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -15,7 +14,6 @@ import com.megacrit.cardcrawl.potions.AbstractPotion;
 import com.megacrit.cardcrawl.potions.BloodPotion;
 import com.megacrit.cardcrawl.potions.FruitJuice;
 import com.megacrit.cardcrawl.potions.RegenPotion;
-
 import basemod.helpers.TooltipInfo;
 import sagemod.potions.FlightPotion;
 import sagemod.powers.Brew;
@@ -33,7 +31,7 @@ public class HowToFeedApes extends AbstractSageCard {
 
 	public static final List<Supplier<? extends AbstractPotion>> POSSIBLE_POTIONS = Arrays.asList(FlightPotion::new,
 			BloodPotion::new, RegenPotion::new, FruitJuice::new);
-	public static final String TITLE = "Possible Potions";
+	public static final String TITLE = cardStrings.EXTENDED_DESCRIPTION[0];
 	public static final String POTION_NAMES = getPotionNames();
 
 	private static String getPotionNames() {
@@ -48,7 +46,6 @@ public class HowToFeedApes extends AbstractSageCard {
 		initBrewIn(TURNS);
 		exhaust = true;
 	}
-
 
 	@Override
 	public List<TooltipInfo> getCustomTooltips() {
