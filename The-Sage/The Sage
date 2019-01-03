@@ -244,7 +244,7 @@ Starts with 50 HP, 169 gold
 	Refine
 		Uncommon Skill, 1 Energy
 		Upgrade a random unupgraded potion (all unupgraded potions) you are holding. Exhaust.
-STSLIB:	Trixter
+	Trixter
 		Rare Skill, 1 (0) Energy:
 		Refund all Energy used when playing your next card.
 
@@ -285,7 +285,7 @@ STSLIB:	Trixter
 		Gain [E] at the start of your turn. Enemies attack 1 additional time on their first turn.
 STSLIB:	The Guidebook Guide
 		Shop relic:
-		Whenever you play a card costing X, exhaust it and refund the energy.
+		Whenever you play an X cost card, exhaust it and refund all energy.
 	Creepy Carousel
 		Rare relic:
 		Every 5 turns, apply 1 Disoriented to a random enemy.

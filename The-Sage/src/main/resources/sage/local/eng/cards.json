@@ -392,6 +392,10 @@
     "DESCRIPTION": "Gain !B! Block. (Equal to ALL Artifact on the field + !MISC!)",
     "UPGRADE_DESCRIPTION": "Gain !M! Artifact. Gain !B! Block. (Equal to ALL Artifact on the field + !MISC!)"
   },
+  "Trixter": {
+    "NAME": "Trixter",
+    "DESCRIPTION": "Refund all energy used when playing your next card."
+  },
   "Turn_Around": {
     "NAME": "Turn Around",
     "DESCRIPTION": "Gain !M! Frail. NL Deal !D! damage per Frail you have."

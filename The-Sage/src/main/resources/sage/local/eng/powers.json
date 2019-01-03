@@ -163,6 +163,14 @@
       " turn."
     ]
   },
+  "Trixter": {
+    "NAME": "Trixter",
+    "DESCRIPTIONS": [
+      "#yRefund all energy used when playing your next card.",
+      "#yRefund all energy used when playing your next #b",
+      " cards."
+    ]
+  },
   "Undermine": {
     "NAME": "Undermine",
     "DESCRIPTIONS": [

@@ -125,9 +125,10 @@ public class BookwormPower extends AbstractSagePower {
 		}
 		if (lastCard != null) {
 			final AbstractCard cardToRefund = lastCard;
+			final int refBefore = refundBefore;
 			AbstractDungeon.actionManager.addToBottom(
 					new ExecuteLaterAction(
-							() -> RefundFields.refund.set(cardToRefund, refundBefore)));
+							() -> RefundFields.refund.set(cardToRefund, refBefore)));
 		}
 		lastCard = null;
 		refundBefore = -1;
