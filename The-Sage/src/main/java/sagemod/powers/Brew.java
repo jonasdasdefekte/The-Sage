@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
 import java.util.Collections;
+import java.util.stream.Collectors;
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
@@ -13,6 +14,9 @@ import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
+import com.megacrit.cardcrawl.helpers.PowerTip;
+import com.megacrit.cardcrawl.helpers.TipHelper;
+import com.megacrit.cardcrawl.helpers.input.InputHelper;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.potions.AbstractPotion;
 import com.megacrit.cardcrawl.potions.PotionSlot;
@@ -266,15 +270,29 @@ public class Brew extends AbstractSagePower {
 		super.renderIcons(sb, x, y, c);
 		int lastTurns = -1;
 		int xOffset = 1;
+		int hovered = -1;
 		for (Potion p : potions) {
-			float yPos = Y - p.turns * p.potion.hb.height * 0.75f;
+			float size = p.potion.hb.width * 0.75f;
+			float width = p.potion.hb.width;
+			float halfWidth = width * 0.5f;
+			float height = p.potion.hb.height * 0.85f;
+			float halfHeight = height * 0.5f;
+			float yPos = Y - p.turns * size;
 			if (lastTurns != p.turns) {
 				xOffset = 1;
 				super.renderIcons(sb, X, yPos, c);
 				SageMod.brewFont.draw(sb, String.valueOf(p.turns), X, yPos);
+				if (isHovered(X - halfWidth, yPos - halfHeight,
+						width, height)) {
+					hovered = p.turns;
+				}
 			}
-			float xPos = X + xOffset * p.potion.hb.width * 0.75f;
+			float xPos = X + xOffset * size;
 			p.potion.scale = Settings.scale * 0.75f;
+			if (isHovered(xPos - halfWidth, yPos - halfHeight,
+					width, height)) {
+				hovered = p.turns;
+			}
 			p.potion.move(xPos, yPos);
 			p.potion.renderOutline(sb);
 			p.potion.render(sb);
@@ -282,6 +300,40 @@ public class Brew extends AbstractSagePower {
 			lastTurns = p.turns;
 		}
 
+		if (hovered != -1) {
+			ArrayList<PowerTip> tips = new ArrayList<>(1);
+			String header = DESCRIPTIONS[13] + hovered;
+			if (hovered == 1) {
+				header += DESCRIPTIONS[5];
+			} else {
+				header += DESCRIPTIONS[7];
+			}
+			final int filter = hovered;
+			String body = potions.stream()
+					.filter(p -> p.turns == filter)
+					.map(p -> p.potion.name)
+					.collect(Collectors.joining(" NL "));
+			tips.add(new PowerTip(header, body));
+			renderTip(sb, tips);
+		}
+
+	}
+
+	private void renderTip(SpriteBatch sb, ArrayList<PowerTip> tips) {
+		if (InputHelper.mX < 1400.0F * Settings.scale) {
+			TipHelper.queuePowerTips(InputHelper.mX + 60.0F * Settings.scale,
+					InputHelper.mY - 30.0F * Settings.scale,
+					tips);
+		} else {
+			TipHelper.queuePowerTips(InputHelper.mX - 350.0F * Settings.scale,
+					InputHelper.mY - 50.0F * Settings.scale,
+					tips);
+		}
+	}
+
+	private boolean isHovered(float x, float y, float width, float height) {
+		return ((InputHelper.mX > x) && (InputHelper.mX < x + width) && (InputHelper.mY > y)
+				&& (InputHelper.mY < y + height));
 	}
 
 }

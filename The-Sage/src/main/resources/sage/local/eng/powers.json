@@ -48,7 +48,8 @@
       " NL ",
       "Sozu prevents brewing potions!",
       "You brewed a potion!",
-      "You brewed some potions!"
+      "You brewed some potions!",
+      "Obtain in "
     ]
   },
   "sagemod:Brewing": {

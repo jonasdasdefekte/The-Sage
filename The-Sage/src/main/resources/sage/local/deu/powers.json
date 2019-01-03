@@ -48,7 +48,8 @@
       " NL ",
       "Mit Sozu kann ich nicht brauen!",
       "Du hast einen Trank gebraut!",
-      "Du hast Tränke gebraut!"
+      "Du hast Tränke gebraut!",
+      "Erhalte in "
     ]
   },
   "sagemod:Brewing": {
