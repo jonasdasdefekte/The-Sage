@@ -108,6 +108,13 @@
       "Trank verbessern"
     ]
   },
+  "The_Guidebook_Guide": {
+    "NAME": "Das Handbuch",
+    "FLAVOR": "Es weiß alles.",
+    "DESCRIPTIONS": [
+      "Wenn du eine Karte spielst, die X kostet, erschöpfe sie und erstatte ihre gesamten Kosten."
+    ]
+  },
   "Thunder_Carpet": {
     "NAME": "Donnernder Teppich",
     "FLAVOR": "Ein uralter Teppich, von dunklen Kultisten gewoben und mit seltsamer Magie versetzt.",

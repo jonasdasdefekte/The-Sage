@@ -174,6 +174,7 @@ import sagemod.relics.FalmelsAmulet;
 import sagemod.relics.FlyingCarpet;
 import sagemod.relics.RedBeastStatue;
 import sagemod.relics.SingingVial;
+import sagemod.relics.TheGuidebookGuide;
 import sagemod.relics.ThunderCarpet;
 import sagemod.relics.deprecated.ByrdCarpet;
 import sagemod.variables.BrewingDynamicVariable;
@@ -401,6 +402,9 @@ PostBattleSubscriber, OnStartBattleSubscriber {
 
 		// Special
 		BaseMod.addRelicToCustomPool(new ByrdFeather(), SageColorEnum.THE_SAGE);
+
+		// Shop
+		BaseMod.addRelic(new TheGuidebookGuide(), RelicType.SHARED);
 
 		// Deprecated
 		BaseMod.addRelicToCustomPool(new ByrdCarpet(), SageColorEnum.THE_SAGE);
