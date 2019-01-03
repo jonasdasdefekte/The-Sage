@@ -121,12 +121,6 @@ import sagemod.cards.debug.AvailablePotionUpgrade;
 import sagemod.cards.debug.ConsolePotion;
 import sagemod.cards.debug.CyclePotions;
 import sagemod.cards.debug.ForcePotionUpgrade;
-import sagemod.cards.deprecated.AncientPoison;
-import sagemod.cards.deprecated.EndlessFear;
-import sagemod.cards.deprecated.HowToTalkToSpiders;
-import sagemod.cards.deprecated.NoxiousWave;
-import sagemod.cards.deprecated.ToxicChains;
-import sagemod.cards.deprecated.ViralStrike;
 import sagemod.cards.event.ByrdFeatherPreview;
 import sagemod.cards.event.FlyingCarpetPreview;
 import sagemod.character.SageCharEnum;
@@ -135,7 +129,6 @@ import sagemod.character.TheSage;
 import sagemod.events.CarpetTrader;
 import sagemod.listeners.LectureListener;
 import sagemod.listeners.PotionListener;
-import sagemod.listeners.VirusListener;
 import sagemod.potions.FataMorgana;
 import sagemod.potions.FlightPotion;
 import sagemod.potions.UpgradedPotion;
@@ -160,9 +153,6 @@ import sagemod.powers.Thirsty;
 import sagemod.powers.TrixterPower;
 import sagemod.powers.UnderminePower;
 import sagemod.powers.VigorousBodyPower;
-import sagemod.powers.deprecated.AncientPoisonPower;
-import sagemod.powers.deprecated.EndlessFearPower;
-import sagemod.powers.deprecated.Virus;
 import sagemod.relics.AncientMagnet;
 import sagemod.relics.BalloonAnimal;
 import sagemod.relics.Blowpipe;
@@ -176,11 +166,9 @@ import sagemod.relics.RedBeastStatue;
 import sagemod.relics.SingingVial;
 import sagemod.relics.TheGuidebookGuide;
 import sagemod.relics.ThunderCarpet;
-import sagemod.relics.deprecated.ByrdCarpet;
 import sagemod.variables.BrewingDynamicVariable;
 import sagemod.variables.MiscDynamicVariable;
 
-@SuppressWarnings("deprecation")
 @SpireInitializer
 public class SageMod implements EditCharactersSubscriber, EditCardsSubscriber, EditRelicsSubscriber,
 EditStringsSubscriber, PostInitializeSubscriber, EditKeywordsSubscriber,
@@ -218,7 +206,6 @@ PostBattleSubscriber, OnStartBattleSubscriber {
 		addColor();
 		BaseMod.subscribe(this);
 		BaseMod.subscribe(new PotionListener());
-		BaseMod.subscribe(new VirusListener());
 		BaseMod.subscribe(new LectureListener());
 	}
 
@@ -330,14 +317,6 @@ PostBattleSubscriber, OnStartBattleSubscriber {
 		BaseMod.addCard(new Refine());
 		BaseMod.addCard(new Trixter());
 
-		// Deprecated
-		BaseMod.addCard(new EndlessFear());
-		BaseMod.addCard(new AncientPoison());
-		BaseMod.addCard(new NoxiousWave());
-		BaseMod.addCard(new ToxicChains());
-		BaseMod.addCard(new ViralStrike());
-		BaseMod.addCard(new HowToTalkToSpiders());
-
 		// Debug
 		BaseMod.addCard(new AvailablePotionUpgrade());
 		BaseMod.addCard(new ConsolePotion());
@@ -373,12 +352,6 @@ PostBattleSubscriber, OnStartBattleSubscriber {
 		BaseMod.addPower(TrixterPower.class, TrixterPower.POWER_ID);
 		BaseMod.addPower(UnderminePower.class, UnderminePower.POWER_ID);
 		BaseMod.addPower(VigorousBodyPower.class, VigorousBodyPower.POWER_ID);
-
-		// Deprecated
-		BaseMod.addPower(EndlessFearPower.class, EndlessFearPower.POWER_ID);
-		BaseMod.addPower(Virus.class, Virus.POWER_ID);
-		BaseMod.addPower(AncientPoisonPower.class, AncientPoisonPower.POWER_ID);
-
 	}
 
 	@Override
@@ -411,9 +384,6 @@ PostBattleSubscriber, OnStartBattleSubscriber {
 
 		// Shop
 		BaseMod.addRelic(new TheGuidebookGuide(), RelicType.SHARED);
-
-		// Deprecated
-		BaseMod.addRelicToCustomPool(new ByrdCarpet(), SageColorEnum.THE_SAGE);
 	}
 
 	private void maybeLoadLanguage() {

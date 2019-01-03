@@ -15,7 +15,6 @@ import com.megacrit.cardcrawl.helpers.PotionHelper;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.potions.AbstractPotion;
 import com.megacrit.cardcrawl.potions.ExplosivePotion;
-import com.megacrit.cardcrawl.potions.FearPotion;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 import com.megacrit.cardcrawl.powers.ArtifactPower;
 import com.megacrit.cardcrawl.ui.panels.PotionPopUp;
@@ -34,10 +33,8 @@ import sagemod.powers.PotionTrancePower;
 import sagemod.powers.RichesPower;
 import sagemod.powers.TasteThisOnePower;
 import sagemod.powers.Thirsty;
-import sagemod.powers.deprecated.EndlessFearPower;
 import sagemod.relics.Blowpipe;
 
-@SuppressWarnings("deprecation")
 public class PotionListener implements PrePotionUseSubscriber, PostPotionUseSubscriber {
 
 	public static int potionsUsed = 0;
@@ -78,7 +75,6 @@ public class PotionListener implements PrePotionUseSubscriber, PostPotionUseSubs
 	public void postRealPotionUse(AbstractPotion p) {
 		tasteThisOne(p);
 		potionTrance(p);
-		endlessFear(p);
 		riches(p);
 		potionCards(p);
 		potionsUsed++;
@@ -185,18 +181,6 @@ public class PotionListener implements PrePotionUseSubscriber, PostPotionUseSubs
 				}
 			}
 		}
-	}
-
-	private void endlessFear(AbstractPotion p) {
-		if (AbstractDungeon.player.hasPower(EndlessFearPower.POWER_ID)) {
-			if (!p.ID.equals(FearPotion.POTION_ID)) {
-				AbstractDungeon.actionManager.addToBottom(new ExecuteLaterAction(() -> {
-					AbstractDungeon.player.obtainPotion(new FearPotion());
-					AbstractDungeon.player.getPower(EndlessFearPower.POWER_ID).flash();
-				}));
-			}
-		}
-
 	}
 
 	private void riches(AbstractPotion p) {
