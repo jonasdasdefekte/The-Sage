@@ -4,8 +4,10 @@ import com.megacrit.cardcrawl.actions.AbstractGameAction.AttackEffect;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
+import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import com.megacrit.cardcrawl.powers.ConfusionPower;
 import com.megacrit.cardcrawl.powers.FrailPower;
 
 public class AboutClark extends AbstractSageCard {
@@ -38,6 +40,20 @@ public class AboutClark extends AbstractSageCard {
 			upgradeDamage(UPGRADE_ATTACK_DMG);
 			upgradeBaseCost(UPGRADE_COST_TO);
 			curCost = UPGRADE_COST_TO;
+		}
+	}
+
+	@Override
+	public void triggerWhenDrawn() {
+		super.triggerWhenDrawn();
+		if (player().hasPower(ConfusionPower.POWER_ID) && cost >= 0) {
+			int newCost = AbstractDungeon.cardRandomRng.random(3);
+			curCost = newCost;
+			if (cost != newCost) {
+				cost = newCost;
+				costForTurn = cost;
+				isCostModified = true;
+			}
 		}
 	}
 
