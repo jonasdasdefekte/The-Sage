@@ -132,6 +132,7 @@ import sagemod.listeners.PotionListener;
 import sagemod.potions.FataMorgana;
 import sagemod.potions.FlightPotion;
 import sagemod.potions.UpgradedPotion;
+import sagemod.potions.UpgradedPotion.UpgradedPotionSave;
 import sagemod.powers.Accumulate;
 import sagemod.powers.Airborne;
 import sagemod.powers.AlchemyExpertPower;
@@ -208,6 +209,7 @@ PostBattleSubscriber, OnStartBattleSubscriber {
 		BaseMod.subscribe(this);
 		BaseMod.subscribe(new PotionListener());
 		BaseMod.subscribe(new LectureListener());
+		BaseMod.addSaveField("sage:upgraded_potions", new UpgradedPotionSave());
 	}
 
 	private void addColor() {

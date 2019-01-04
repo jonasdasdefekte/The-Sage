@@ -2,11 +2,15 @@ package sagemod.potions;
 
 import java.util.ArrayList;
 import java.util.List;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.math.MathUtils;
+import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.AbstractCreature;
+import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.helpers.PowerTip;
 import com.megacrit.cardcrawl.potions.AbstractPotion;
 import com.megacrit.cardcrawl.potions.AttackPotion;
@@ -20,10 +24,9 @@ import com.megacrit.cardcrawl.potions.SkillPotion;
 import com.megacrit.cardcrawl.potions.SmokeBomb;
 import basemod.ReflectionHacks;
 import basemod.abstracts.CustomPotion;
+import basemod.abstracts.CustomSavable;
 
 public class UpgradedPotion extends CustomPotion {
-
-	public static final String SAVE_POSTFIX = "+SAGE+";
 
 	public static final List<String> BLACKLIST = new ArrayList<>();
 	public static final List<String> DOUBLE_USE_WHITELIST = new ArrayList<>();
@@ -193,6 +196,50 @@ public class UpgradedPotion extends CustomPotion {
 		sb.setColor(LIGHT_OUTLINE_COLOR);
 		sb.draw(outlineImg, posX - 32.0F, posY - 32.0F, 32.0F, 32.0F, 64.0F, 64.0F, scale, scale,
 				getAngle(), 0, 0, 64, 64, false, false);
+	}
+
+	public static class UpgradedPotionSave implements CustomSavable<boolean[]> {
+
+		public static final Logger logger =
+				LogManager.getLogger(UpgradedPotionSave.class.getName());
+
+		@Override
+		public boolean[] onSave() {
+			logger.info("Saving upgraded Potions");
+			AbstractPlayer p = AbstractDungeon.player;
+			boolean[] save = new boolean[p.potionSlots];
+			for (int i = 0; i < p.potionSlots; i++) {
+				AbstractPotion potion = p.potions.get(i);
+				if (potion instanceof UpgradedPotion) {
+					logger.info("Potion in Slot " + i + " is upgraded: " + potion.name);
+					save[i] = true;
+				} else {
+					save[i] = false;
+				}
+			}
+			return save;
+		}
+
+		@Override
+		public void onLoad(boolean[] array) {
+			logger.info("Loading upgraded Potions");
+			if (array != null) {
+				AbstractPlayer p = AbstractDungeon.player;
+				for (int i = 0; i < array.length; i++) {
+					if (i >= p.potionSlots) {
+						break;
+					}
+					if (array[i]) {
+						AbstractPotion old = p.potions.get(i);
+						logger.info("Potion in Slot " + i + " will be upgraded: " + old.name);
+						p.obtainPotion(i, new UpgradedPotion(old));
+					}
+				}
+			} else {
+
+			}
+		}
+
 	}
 
 }
