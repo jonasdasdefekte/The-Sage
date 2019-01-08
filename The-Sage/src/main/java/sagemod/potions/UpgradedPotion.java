@@ -19,6 +19,7 @@ import com.megacrit.cardcrawl.potions.EntropicBrew;
 import com.megacrit.cardcrawl.potions.FairyPotion;
 import com.megacrit.cardcrawl.potions.FirePotion;
 import com.megacrit.cardcrawl.potions.GamblersBrew;
+import com.megacrit.cardcrawl.potions.PotionSlot;
 import com.megacrit.cardcrawl.potions.PowerPotion;
 import com.megacrit.cardcrawl.potions.SkillPotion;
 import com.megacrit.cardcrawl.potions.SmokeBomb;
@@ -76,7 +77,8 @@ public class UpgradedPotion extends CustomPotion {
 		if (potion == null) {
 			return new FirePotion();
 		}
-		if (BLACKLIST.contains(potion.ID) || potion instanceof UpgradedPotion) {
+		if (BLACKLIST.contains(potion.ID) || potion instanceof UpgradedPotion
+				|| potion instanceof PotionSlot) {
 			return potion;
 		} else {
 			return new UpgradedPotion(potion);
@@ -232,7 +234,7 @@ public class UpgradedPotion extends CustomPotion {
 					if (array[i]) {
 						AbstractPotion old = p.potions.get(i);
 						logger.info("Potion in Slot " + i + " will be upgraded: " + old.name);
-						p.obtainPotion(i, new UpgradedPotion(old));
+						p.obtainPotion(i, UpgradedPotion.getUpgradeIfAvailable(old));
 					}
 				}
 			} else {
