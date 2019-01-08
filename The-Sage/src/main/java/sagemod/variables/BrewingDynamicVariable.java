@@ -16,7 +16,8 @@ public class BrewingDynamicVariable extends DynamicVariable {
 	@Override
 	public boolean isModified(AbstractCard card) {
 		if (card instanceof AbstractSageCard) {
-			return ((AbstractSageCard) card).isBrewInModified;
+			return ((AbstractSageCard) card).isBrewInModified
+					|| ((AbstractSageCard) card).showBrewInAsModified;
 		}
 		return false;
 	}
@@ -43,6 +44,13 @@ public class BrewingDynamicVariable extends DynamicVariable {
 			return ((AbstractSageCard) card).upgradedBrewIn;
 		}
 		return false;
+	}
+
+	@Override
+	public void setIsModified(AbstractCard card, boolean v) {
+		if (card instanceof AbstractSageCard) {
+			((AbstractSageCard) card).showBrewInAsModified = v;
+		}
 	}
 
 	@Override

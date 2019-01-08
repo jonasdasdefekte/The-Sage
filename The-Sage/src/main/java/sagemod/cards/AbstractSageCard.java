@@ -51,9 +51,11 @@ public abstract class AbstractSageCard extends CustomCard {
 	public boolean upgradedBrewIn;
 	public boolean isBrewInModified;
 	public boolean usesBrewIn;
+	public boolean showBrewInAsModified;
 	public int baseSageMisc = 0;
 	public int sageMisc = 0;
 	public boolean upgradedSageMisc;
+	public boolean showSageMiscAsModified;
 	private boolean isTaxing;
 
 	public AbstractSageCard(String id, String name, int cost, String rawDescription, CardType type, CardRarity rarity,

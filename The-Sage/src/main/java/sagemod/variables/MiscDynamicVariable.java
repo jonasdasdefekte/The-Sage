@@ -20,7 +20,7 @@ public class MiscDynamicVariable extends DynamicVariable {
 	}
 
 	private boolean isModifiedSage(AbstractSageCard card) {
-		return card.sageMisc != card.baseSageMisc;
+		return card.showSageMiscAsModified || card.sageMisc != card.baseSageMisc;
 	}
 
 	@Override
@@ -48,8 +48,14 @@ public class MiscDynamicVariable extends DynamicVariable {
 	}
 
 	@Override
+	public void setIsModified(AbstractCard card, boolean v) {
+		if (card instanceof AbstractSageCard) {
+			((AbstractSageCard) card).showSageMiscAsModified = v;
+		}
+	}
+
+	@Override
 	public boolean upgraded(AbstractCard card) {
-		System.out.println("MiscDynamicVariable.upgraded()");
 		if (card instanceof AbstractSageCard) {
 			return upgradedSage((AbstractSageCard) card);
 		}
@@ -57,7 +63,6 @@ public class MiscDynamicVariable extends DynamicVariable {
 	}
 
 	private boolean upgradedSage(AbstractSageCard card) {
-		System.out.println("card " + card.name + " upgradedSageMisc " + card.upgradedSageMisc);
 		return card.upgradedSageMisc;
 	}
 
