@@ -7,13 +7,25 @@ import com.megacrit.cardcrawl.actions.common.ReducePowerAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
+import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.PowerStrings;
+import com.megacrit.cardcrawl.localization.TutorialStrings;
+import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import com.megacrit.cardcrawl.monsters.AbstractMonster.Intent;
+import com.megacrit.cardcrawl.monsters.EnemyMoveInfo;
+import com.megacrit.cardcrawl.ui.FtueTip;
+import com.megacrit.cardcrawl.ui.FtueTip.TipType;
+import basemod.ReflectionHacks;
+import sagemod.actions.ExecuteLaterAction;
+import sagemod.tips.SageTipTracker;
 
 public class Flight extends AbstractSagePower {
 
 	public static final String POWER_ID = "sagemod:Flight";
 	private static final PowerStrings powerStrings = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
+	private static final TutorialStrings tutStrings =
+			CardCrawlGame.languagePack.getTutorialString(SageTipTracker.FLIGHT_REDUCTION);
 	public static final String NAME = powerStrings.NAME;
 	public static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;
 
@@ -31,6 +43,52 @@ public class Flight extends AbstractSagePower {
 	@Override
 	public void onInitialApplication() {
 		setSageAnimation(GROUND, FLIGHT);
+		checkTip();
+	}
+
+	private void checkTip() {
+		AbstractDungeon.actionManager.addToBottom(new ExecuteLaterAction(() -> {
+			if (amount < timesAttacked()
+					&& !SageTipTracker.hasShown(SageTipTracker.FLIGHT_REDUCTION)) {
+				SageTipTracker.neverShowAgain(SageTipTracker.FLIGHT_REDUCTION);
+				AbstractDungeon.ftue = new FtueTip(tutStrings.LABEL[0], tutStrings.TEXT[0],
+						Settings.WIDTH / 2.0F, Settings.HEIGHT / 2.0F, TipType.COMBAT);
+			}
+		}));
+	}
+
+	@Override
+	public void atStartOfTurn() {
+		super.atStartOfTurn();
+		checkTip();
+	}
+
+	@Override
+	public void stackPower(int stackAmount) {
+		super.stackPower(stackAmount);
+		checkTip();
+	}
+
+	private int timesAttacked() {
+		int times = 0;
+		for (AbstractMonster mo : AbstractDungeon.getCurrRoom().monsters.monsters) {
+			EnemyMoveInfo move =
+					(EnemyMoveInfo) ReflectionHacks.getPrivate(mo, AbstractMonster.class, "move");
+			if (isAttack(move.intent)) {
+				if (move.isMultiDamage) {
+					times += move.multiplier;
+				} else {
+					times++;
+				}
+			}
+		}
+		return times;
+	}
+
+	private boolean isAttack(Intent intent) {
+		return intent == Intent.ATTACK || intent == Intent.ATTACK_BUFF
+				|| intent == Intent.ATTACK_DEBUFF
+				|| intent == Intent.ATTACK_DEFEND;
 	}
 
 	@Override

@@ -18,17 +18,23 @@ import com.megacrit.cardcrawl.helpers.PowerTip;
 import com.megacrit.cardcrawl.helpers.TipHelper;
 import com.megacrit.cardcrawl.helpers.input.InputHelper;
 import com.megacrit.cardcrawl.localization.PowerStrings;
+import com.megacrit.cardcrawl.localization.TutorialStrings;
 import com.megacrit.cardcrawl.potions.AbstractPotion;
 import com.megacrit.cardcrawl.potions.PotionSlot;
 import com.megacrit.cardcrawl.relics.Sozu;
 import com.megacrit.cardcrawl.rewards.RewardItem.RewardType;
+import com.megacrit.cardcrawl.ui.FtueTip;
+import com.megacrit.cardcrawl.ui.FtueTip.TipType;
 import com.megacrit.cardcrawl.vfx.SpeechBubble;
 import sagemod.SageMod;
+import sagemod.tips.SageTipTracker;
 
 public class Brew extends AbstractSagePower {
 
 	public static final String POWER_ID = "sagemod:Brew";
 	private static final PowerStrings powerStrings = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
+	private static final TutorialStrings tutStrings =
+			CardCrawlGame.languagePack.getTutorialString(SageTipTracker.OVER_BREW);
 	public static final String NAME = powerStrings.NAME;
 	public static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;
 
@@ -208,7 +214,27 @@ public class Brew extends AbstractSagePower {
 				AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(owner, owner, power, turns));
 				power.addPotionToQueue(turns, potion);
 			}
+
+			// tutorial tip
+			int emptyPotionSlots = emptyPotionSlots();
+			if (power.potions.size() > emptyPotionSlots
+					&& !SageTipTracker.hasShown(SageTipTracker.OVER_BREW)) {
+				SageTipTracker.neverShowAgain(SageTipTracker.OVER_BREW);
+				String text = emptyPotionSlots == AbstractDungeon.player.potionSlots ? tutStrings.TEXT[1]: tutStrings.TEXT[0];
+				AbstractDungeon.ftue = new FtueTip(tutStrings.LABEL[0], text,
+						Settings.WIDTH / 2.0F, Settings.HEIGHT / 2.0F, TipType.COMBAT);
+			}
 		}
+	}
+
+	private static int emptyPotionSlots() {
+		int slots = 0;
+		for (int i = 0; i < AbstractDungeon.player.potionSlots; i++) {
+			if (AbstractDungeon.player.potions.get(i) instanceof PotionSlot) {
+				slots++;
+			}
+		}
+		return slots;
 	}
 
 	public static void brewAllPotions() {

@@ -14,6 +14,7 @@ import com.badlogic.gdx.graphics.g2d.BitmapFont;
 import com.badlogic.gdx.graphics.g2d.freetype.FreeTypeFontGenerator;
 import com.badlogic.gdx.graphics.g2d.freetype.FreeTypeFontGenerator.FreeTypeFontParameter;
 import com.evacipated.cardcrawl.modthespire.Loader;
+import com.evacipated.cardcrawl.modthespire.lib.SpireConfig;
 import com.evacipated.cardcrawl.modthespire.lib.SpireInitializer;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
@@ -29,6 +30,7 @@ import com.megacrit.cardcrawl.localization.Keyword;
 import com.megacrit.cardcrawl.localization.PotionStrings;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.localization.RelicStrings;
+import com.megacrit.cardcrawl.localization.TutorialStrings;
 import com.megacrit.cardcrawl.rooms.AbstractRoom;
 import basemod.BaseMod;
 import basemod.ModButton;
@@ -167,6 +169,7 @@ import sagemod.relics.RedBeastStatue;
 import sagemod.relics.SingingVial;
 import sagemod.relics.TheGuidebookGuide;
 import sagemod.relics.ThunderCarpet;
+import sagemod.tips.SageTipTracker;
 import sagemod.variables.BrewingDynamicVariable;
 import sagemod.variables.MiscDynamicVariable;
 
@@ -184,10 +187,14 @@ PostBattleSubscriber, OnStartBattleSubscriber {
 
 	public static final String EVENT_FOLDER = "sage/events/";
 	public static final String MOD_ID_PREFIX = "sagemod:";
+	public static final String MOD_NAME = "sagemod";
+	public static final String MOD_CONFIG = "sagemod.config";
 
 	public static BitmapFont brewFont;
 
 	private static String localLanguage;
+
+	public static SpireConfig config;
 
 	public static boolean isSuperFastModeLoaded = false;
 	static {
@@ -445,6 +452,8 @@ PostBattleSubscriber, OnStartBattleSubscriber {
 				loadJson(LOCALIZATION_FOLDER + localLanguage + "characters.json"));
 		BaseMod.loadCustomStrings(EventStrings.class,
 				loadJson(LOCALIZATION_FOLDER + localLanguage + "events.json"));
+		BaseMod.loadCustomStrings(TutorialStrings.class,
+				loadJson(LOCALIZATION_FOLDER + localLanguage + "tutorials.json"));
 	}
 
 	@Override
@@ -499,9 +508,8 @@ PostBattleSubscriber, OnStartBattleSubscriber {
 		initFonts();
 		UpgradedPotion.initTextures();
 		UpgradedPotion.initLists();
+		loadConfig();
 	}
-
-
 
 	private void initPotions() {
 		SageMod.logger.info("Adding Potions for TheSage");
@@ -524,6 +532,16 @@ PostBattleSubscriber, OnStartBattleSubscriber {
 		parameter.size = Math.round(16 * Settings.scale);
 		brewFont = generator.generateFont(parameter);
 		generator.dispose();
+	}
+
+	private void loadConfig() {
+		try {
+			config = new SpireConfig(MOD_NAME, MOD_CONFIG);
+			config.load();
+			SageTipTracker.initialize();
+		} catch (Exception ex) {
+			logger.catching(ex);
+		}
 	}
 
 	@Override
