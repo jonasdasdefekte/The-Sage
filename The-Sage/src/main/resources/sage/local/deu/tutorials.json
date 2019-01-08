@@ -1,8 +1,7 @@
 {
   "sagemod:Over_Brew": {
     "TEXT": [
-      "Wenn du in diesem Zug keine Tränke benutzt, musst du zu Beginn deines nächsten Zuges Tränke abwerfen, wenn du den gebrauten Trank erhältst. Den überschüssigen Trank kannst du nicht für seinen Effekt nutzen!",
-      "Du braust mehr Tränke als du Platz hast. Du wirst zu Beginn deines nächsten Zuges Tränke abwerfen müssen, wenn du den gebrauten Trank erhältst. Den überschüssigen Trank kannst du nicht für seinen Effekt nutzen!"
+      "Wenn du in diesem Zug keine Tränke benutzt, musst du zu Beginn deines nächsten Zuges Tränke abwerfen, wenn du den gebrauten Trank erhältst. Den überschüssigen Trank kannst du nicht für seinen Effekt nutzen!"
     ],
     "LABEL": [
       "Zu viele Tränke brauen"

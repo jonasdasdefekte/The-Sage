@@ -27,6 +27,7 @@ import com.megacrit.cardcrawl.ui.FtueTip;
 import com.megacrit.cardcrawl.ui.FtueTip.TipType;
 import com.megacrit.cardcrawl.vfx.SpeechBubble;
 import sagemod.SageMod;
+import sagemod.actions.ExecuteLaterAction;
 import sagemod.tips.SageTipTracker;
 
 public class Brew extends AbstractSagePower {
@@ -76,6 +77,7 @@ public class Brew extends AbstractSagePower {
 			amount = potions.get(0).turns;
 		}
 		updateDescription();
+		AbstractDungeon.actionManager.addToBottom(new ExecuteLaterAction(Brew::checkTip));
 	}
 
 	public static void removePotionsFromRewards() {
@@ -157,6 +159,7 @@ public class Brew extends AbstractSagePower {
 		if (AbstractDungeon.player.hasPower(Brew.POWER_ID)) {
 			AbstractDungeon.player.getPower(Brew.POWER_ID).flash();
 		}
+		AbstractDungeon.actionManager.addToBottom(new ExecuteLaterAction(Brew::checkTip));
 	}
 
 	private String getNameInRed(String name) {
@@ -215,13 +218,19 @@ public class Brew extends AbstractSagePower {
 				power.addPotionToQueue(turns, potion);
 			}
 
-			// tutorial tip
+			AbstractDungeon.actionManager.addToBottom(new ExecuteLaterAction(Brew::checkTip));
+		}
+	}
+
+	private static void checkTip() {
+		if (AbstractDungeon.player.hasPower(Brew.POWER_ID)) {
+			Brew power = (Brew) AbstractDungeon.player.getPower(POWER_ID);
 			int emptyPotionSlots = emptyPotionSlots();
-			if (power.potions.size() > emptyPotionSlots
+			int potionsBrewedNext = (int) power.potions.stream().filter(p -> p.turns <= 1).count();
+			if (potionsBrewedNext > emptyPotionSlots && AbstractDungeon.player.hasAnyPotions()
 					&& !SageTipTracker.hasShown(SageTipTracker.OVER_BREW)) {
 				SageTipTracker.neverShowAgain(SageTipTracker.OVER_BREW);
-				String text = emptyPotionSlots == AbstractDungeon.player.potionSlots ? tutStrings.TEXT[1]: tutStrings.TEXT[0];
-				AbstractDungeon.ftue = new FtueTip(tutStrings.LABEL[0], text,
+				AbstractDungeon.ftue = new FtueTip(tutStrings.LABEL[0], tutStrings.TEXT[0],
 						Settings.WIDTH / 2.0F, Settings.HEIGHT / 2.0F, TipType.COMBAT);
 			}
 		}
