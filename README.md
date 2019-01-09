@@ -106,6 +106,7 @@ git (or wherever you store your git projects)
         \_ModTheSpire.jar
           BaseMod.jar
           desktop1.0.jar
+          StSLib.jar
 ```
 You can run "./gradlew listJars" (without the ") to see which jars are found in your 
 libs folder. If there are no jars listed, you probably haven't configured it correctly
