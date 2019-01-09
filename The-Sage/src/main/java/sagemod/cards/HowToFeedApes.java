@@ -29,13 +29,15 @@ public class HowToFeedApes extends AbstractSageCard {
 	private static final CardRarity RARITY = CardRarity.UNCOMMON;
 	private static final CardTarget TARGET = CardTarget.SELF;
 
-	public static final List<Supplier<? extends AbstractPotion>> POSSIBLE_POTIONS = Arrays.asList(FlightPotion::new,
-			BloodPotion::new, RegenPotion::new, FruitJuice::new);
+	public static final List<Supplier<? extends AbstractPotion>> POSSIBLE_POTIONS =
+			Arrays.asList(FlightPotion::new,
+					BloodPotion::new, RegenPotion::new, FruitJuice::new);
 	public static final String TITLE = cardStrings.EXTENDED_DESCRIPTION[0];
 	public static final String POTION_NAMES = getPotionNames();
 
 	private static String getPotionNames() {
-		return POSSIBLE_POTIONS.stream().map(s -> s.get().name).collect(Collectors.joining(" NL ")).toString();
+		return POSSIBLE_POTIONS.stream().map(s -> s.get().name).collect(Collectors.joining(" NL "))
+				.toString();
 	}
 
 	private static final int TURNS = 4;
@@ -69,7 +71,8 @@ public class HowToFeedApes extends AbstractSageCard {
 	public void use(AbstractPlayer p, AbstractMonster m) {
 		int turns = Math.max(0, brewIn - getXEffect());
 
-		AbstractPotion potion = POSSIBLE_POTIONS.get(AbstractDungeon.potionRng.random(0, POSSIBLE_POTIONS.size() - 1))
+		AbstractPotion potion = POSSIBLE_POTIONS
+				.get(AbstractDungeon.potionRng.random(0, POSSIBLE_POTIONS.size() - 1))
 				.get();
 
 		Brew.addPotion(turns, potion, p);

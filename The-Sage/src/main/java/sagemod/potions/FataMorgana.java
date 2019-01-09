@@ -50,7 +50,8 @@ public class FataMorgana extends CustomPotion {
 	@Override
 	public void use(AbstractCreature target) {
 		AbstractDungeon.actionManager.addToBottom(
-				new ApplyPowerAction(target, AbstractDungeon.player, new Disoriented(target, potency), potency));
+				new ApplyPowerAction(target, AbstractDungeon.player,
+						new Disoriented(target, potency), potency));
 	}
 
 }

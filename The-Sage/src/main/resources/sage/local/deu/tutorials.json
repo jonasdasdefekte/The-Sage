@@ -1,26 +1,26 @@
 {
-  "sagemod:Over_Brew": {
-    "TEXT": [
-      "Wenn du in diesem Zug keine Tränke benutzt, musst du zu Beginn deines nächsten Zuges Tränke abwerfen, wenn du den gebrauten Trank erhältst. Den überschüssigen Trank kannst du nicht für seinen Effekt nutzen!"
-    ],
-    "LABEL": [
-      "Zu viele Tränke brauen"
-    ]
-  },
-  "sagemod:Promo": {
-  "TEXT": [
-      "Falls es dir gefallen hat, die Gelehrte zu spielen - wie wäre es, anderen auf Steam Workshop davon zu erzählen? Wir freuen uns über deine Bewertung oder deinen Kommentar!"
-    ],
-    "LABEL": [
-      "Steam Workshop"
-    ]
-  },
-  "sagemod:Flight_Reduction": {
-  "TEXT": [
-      "Wenn du in diesem Zug einen Angriff nicht blockst, hörst du auf zu fliegen. Das bedeutet, dass alle weiteren Angriffe dir doppelt so viel Schaden wie angezeigt zufügen!"
-    ],
-    "LABEL": [
-      "Zu Boden geworfen"
-    ]
-  }
+	"sagemod:Over_Brew": {
+		"TEXT": [
+			"Wenn du in diesem Zug keine Tränke benutzt, musst du zu Beginn deines nächsten Zuges Tränke abwerfen, wenn du den gebrauten Trank erhältst. Den überschüssigen Trank kannst du nicht für seinen Effekt nutzen!"
+		],
+		"LABEL": [
+			"Zu viele Tränke brauen"
+		]
+	},
+	"sagemod:Promo": {
+		"TEXT": [
+			"Falls es dir gefallen hat, die Gelehrte zu spielen - wie wäre es, anderen auf Steam Workshop davon zu erzählen? Wir freuen uns über deine Bewertung oder deinen Kommentar!"
+		],
+		"LABEL": [
+			"Steam Workshop"
+		]
+	},
+	"sagemod:Flight_Reduction": {
+		"TEXT": [
+			"Wenn du in diesem Zug einen Angriff nicht blockst, hörst du auf zu fliegen. Das bedeutet, dass alle weiteren Angriffe dir doppelt so viel Schaden wie angezeigt zufügen!"
+		],
+		"LABEL": [
+			"Zu Boden geworfen"
+		]
+	}
 }

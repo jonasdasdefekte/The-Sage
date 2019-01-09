@@ -23,7 +23,8 @@ import sagemod.tips.SageTipTracker;
 public class Flight extends AbstractSagePower {
 
 	public static final String POWER_ID = "sagemod:Flight";
-	private static final PowerStrings powerStrings = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
+	private static final PowerStrings powerStrings =
+			CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
 	private static final TutorialStrings tutStrings =
 			CardCrawlGame.languagePack.getTutorialString(SageTipTracker.FLIGHT_REDUCTION);
 	public static final String NAME = powerStrings.NAME;
@@ -115,14 +116,15 @@ public class Flight extends AbstractSagePower {
 
 	@Override
 	public int onAttacked(DamageInfo info, int damageAmount) {
-		boolean willLive = calculateDamageTakenAmount(damageAmount, info.type) < owner.currentHealth;
+		boolean willLive =
+				calculateDamageTakenAmount(damageAmount, info.type) < owner.currentHealth;
 		if (info.owner != null && info.type != DamageInfo.DamageType.HP_LOSS
 				&& info.type != DamageInfo.DamageType.THORNS && damageAmount > 0 && willLive) {
 			flash();
 			// Airborne prevents Flight loss
 			if (!owner.hasPower(Airborne.POWER_ID)) {
 				AbstractDungeon.actionManager
-				.addToTop(new ReducePowerAction(owner, info.owner, this, 1));
+						.addToTop(new ReducePowerAction(owner, info.owner, this, 1));
 			} else {
 				// will reduce Airborne and play a sound
 				owner.getPower(Airborne.POWER_ID).onSpecificTrigger();

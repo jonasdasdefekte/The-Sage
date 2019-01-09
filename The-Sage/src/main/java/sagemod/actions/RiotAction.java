@@ -66,10 +66,10 @@ public class RiotAction extends AbstractGameAction {
 						AbstractDungeon.actionManager.addToTop(new UnlimboAction(chosenCard));
 						if (!Settings.FAST_MODE) {
 							AbstractDungeon.actionManager
-							.addToTop(new WaitAction(Settings.ACTION_DUR_MED));
+									.addToTop(new WaitAction(Settings.ACTION_DUR_MED));
 						} else {
 							AbstractDungeon.actionManager
-							.addToTop(new WaitAction(Settings.ACTION_DUR_FASTER));
+									.addToTop(new WaitAction(Settings.ACTION_DUR_FASTER));
 						}
 					}
 				}
@@ -121,7 +121,7 @@ public class RiotAction extends AbstractGameAction {
 					AbstractDungeon.actionManager.addToTop(new WaitAction(Settings.ACTION_DUR_MED));
 				} else {
 					AbstractDungeon.actionManager
-					.addToTop(new WaitAction(Settings.ACTION_DUR_FASTER));
+							.addToTop(new WaitAction(Settings.ACTION_DUR_FASTER));
 				}
 			}
 			isDone = true;

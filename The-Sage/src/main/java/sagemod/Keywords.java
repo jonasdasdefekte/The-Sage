@@ -7,8 +7,7 @@ import com.megacrit.cardcrawl.helpers.PowerTip;
 import com.megacrit.cardcrawl.helpers.TipHelper;
 
 /**
- * helper class for keywords. contains constants and a method to get a power tip
- * (for potions)
+ * helper class for keywords. contains constants and a method to get a power tip (for potions)
  */
 public class Keywords {
 	public static final String AIR = "air";
@@ -25,6 +24,7 @@ public class Keywords {
 
 	public static PowerTip makePowerTip(String keyword) {
 		String translated = langMap.get(keyword);
-		return new PowerTip(TipHelper.capitalize(translated), GameDictionary.keywords.get(translated));
+		return new PowerTip(TipHelper.capitalize(translated),
+				GameDictionary.keywords.get(translated));
 	}
 }

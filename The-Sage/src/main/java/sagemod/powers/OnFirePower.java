@@ -15,7 +15,8 @@ import sagemod.powers.Brew.Potion;
 public class OnFirePower extends AbstractSagePower {
 
 	public static final String POWER_ID = "sagemod:On_Fire";
-	private static final PowerStrings powerStrings = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
+	private static final PowerStrings powerStrings =
+			CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
 	public static final String NAME = powerStrings.NAME;
 	public static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;
 

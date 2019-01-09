@@ -4,7 +4,6 @@ import com.badlogic.gdx.graphics.Texture;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.helpers.ImageMaster;
 import com.megacrit.cardcrawl.powers.AbstractPower;
-
 import sagemod.SageMod;
 
 public abstract class AbstractSagePower extends AbstractPower {

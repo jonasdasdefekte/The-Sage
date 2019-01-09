@@ -45,7 +45,8 @@ public class Lunchtime extends AbstractSageCard {
 	@Override
 	public void use(AbstractPlayer p, AbstractMonster m) {
 		if (p.hasPower(Flight.POWER_ID)) {
-			AbstractDungeon.actionManager.addToBottom(new ReduceFlightBlockableAction(magicNumber, p));
+			AbstractDungeon.actionManager
+					.addToBottom(new ReduceFlightBlockableAction(magicNumber, p));
 			Brew.brewAllPotions();
 		}
 	}

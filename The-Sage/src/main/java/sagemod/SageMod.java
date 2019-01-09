@@ -175,8 +175,8 @@ import sagemod.variables.MiscDynamicVariable;
 
 @SpireInitializer
 public class SageMod implements EditCharactersSubscriber, EditCardsSubscriber, EditRelicsSubscriber,
-EditStringsSubscriber, PostInitializeSubscriber, EditKeywordsSubscriber,
-PostBattleSubscriber, OnStartBattleSubscriber {
+		EditStringsSubscriber, PostInitializeSubscriber, EditKeywordsSubscriber,
+		PostBattleSubscriber, OnStartBattleSubscriber {
 
 	public static final Logger logger = LogManager.getLogger(SageMod.class.getName());
 	public static final String AUTHORS = "jonasdasdefekte, Skrelpoid";
@@ -203,8 +203,7 @@ PostBattleSubscriber, OnStartBattleSubscriber {
 	}
 
 	/**
-	 * The initializing method for ModTheSpire. This gets called before the game is
-	 * loaded.
+	 * The initializing method for ModTheSpire. This gets called before the game is loaded.
 	 */
 	public static void initialize() {
 		logger.info("Initializing TheSage");
@@ -220,9 +219,12 @@ PostBattleSubscriber, OnStartBattleSubscriber {
 	}
 
 	private void addColor() {
-		BaseMod.addColor(SageColorEnum.THE_SAGE, COLOR, "sage/cards/512/bg_attack.png", "sage/cards/512/bg_skill.png",
-				"sage/cards/512/bg_power.png", "sage/cards/512/orb.png", "sage/cards/1024/bg_attack.png",
-				"sage/cards/1024/bg_skill.png", "sage/cards/1024/bg_power.png", "sage/cards/1024/orb.png",
+		BaseMod.addColor(SageColorEnum.THE_SAGE, COLOR, "sage/cards/512/bg_attack.png",
+				"sage/cards/512/bg_skill.png",
+				"sage/cards/512/bg_power.png", "sage/cards/512/orb.png",
+				"sage/cards/1024/bg_attack.png",
+				"sage/cards/1024/bg_skill.png", "sage/cards/1024/bg_power.png",
+				"sage/cards/1024/orb.png",
 				"sage/cards/orb/desc_orb.png");
 	}
 
@@ -487,7 +489,8 @@ PostBattleSubscriber, OnStartBattleSubscriber {
 			return maybeExisting;
 		} else {
 			SageMod.logger.debug(
-					id + " has no image configured. Defaulting to placeholder image (should be in " + prefix + ")");
+					id + " has no image configured. Defaulting to placeholder image (should be in "
+							+ prefix + ")");
 			return prefix + PLACEHOLDER + postfix;
 		}
 	}

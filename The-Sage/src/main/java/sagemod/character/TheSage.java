@@ -41,11 +41,14 @@ public class TheSage extends CustomPlayer {
 	public static final String BUTTON = "sage/character/button.png";
 	public static final String PORTRAIT = "sage/character/portrait.jpg";
 
-	public static final String[] ORB_TEXTURES = new String[] { "sage/character/orb/layer1.png",
-			"sage/character/orb/layer2.png", "sage/character/orb/layer3.png", "sage/character/orb/layer4.png",
-			"sage/character/orb/layer5.png", "sage/character/orb/layer6.png", "sage/character/orb/layer1d.png",
-			"sage/character/orb/layer2d.png", "sage/character/orb/layer3d.png", "sage/character/orb/layer4d.png",
-			"sage/character/orb/layer5d.png", };
+	public static final String[] ORB_TEXTURES = new String[] {"sage/character/orb/layer1.png",
+			"sage/character/orb/layer2.png", "sage/character/orb/layer3.png",
+			"sage/character/orb/layer4.png",
+			"sage/character/orb/layer5.png", "sage/character/orb/layer6.png",
+			"sage/character/orb/layer1d.png",
+			"sage/character/orb/layer2d.png", "sage/character/orb/layer3d.png",
+			"sage/character/orb/layer4d.png",
+			"sage/character/orb/layer5d.png",};
 
 	public static final int START_HP = 50;
 	public static final int CARD_DRAW = 5;
@@ -71,8 +74,10 @@ public class TheSage extends CustomPlayer {
 		dialogX = drawX + 0.0F * Settings.scale; // set location for text bubbles
 		dialogY = drawY + GROUND_DIALOG_Y_OFFSET * Settings.scale;
 		initializeClass(null, "sage/character/shoulder2.png", "sage/character/shoulder.png",
-				"sage/character/corpse.png", getLoadout(), 20.0f, -10.0f, 220.0f, 290.0f, new EnergyManager(ENERGY));
-		if (ModHelper.enabledMods.size() > 0 && (ModHelper.isModEnabled("Diverse") || ModHelper.isModEnabled("Chimera"))
+				"sage/character/corpse.png", getLoadout(), 20.0f, -10.0f, 220.0f, 290.0f,
+				new EnergyManager(ENERGY));
+		if (ModHelper.enabledMods.size() > 0
+				&& (ModHelper.isModEnabled("Diverse") || ModHelper.isModEnabled("Chimera"))
 				|| Settings.isTrial && customMods != null && customMods.contains("Blue Cards")) {
 			masterMaxOrbs = 1;
 		}
@@ -99,7 +104,8 @@ public class TheSage extends CustomPlayer {
 
 	@Override
 	public CharSelectInfo getLoadout() {
-		return new CharSelectInfo(NAME, DESC, START_HP, START_HP, MAX_ORBS, START_GOLD, CARD_DRAW, this,
+		return new CharSelectInfo(NAME, DESC, START_HP, START_HP, MAX_ORBS, START_GOLD, CARD_DRAW,
+				this,
 				getStartingRelics(), getStartingDeck(), false);
 	}
 
@@ -170,7 +176,8 @@ public class TheSage extends CustomPlayer {
 	@Override
 	public void doCharSelectScreenSelectEffect() {
 		CardCrawlGame.sound.playA(CHAR_SOUND, MathUtils.random(-0.2f, 0.2f));
-		CardCrawlGame.screenShake.shake(ScreenShake.ShakeIntensity.MED, ScreenShake.ShakeDur.SHORT, false);
+		CardCrawlGame.screenShake.shake(ScreenShake.ShakeIntensity.MED, ScreenShake.ShakeDur.SHORT,
+				false);
 	}
 
 	@Override
@@ -205,8 +212,9 @@ public class TheSage extends CustomPlayer {
 
 	@Override
 	public AttackEffect[] getSpireHeartSlashEffect() {
-		return new AttackEffect[] { AttackEffect.SMASH, AttackEffect.FIRE, AttackEffect.POISON, AttackEffect.SMASH,
-				AttackEffect.FIRE, AttackEffect.POISON };
+		return new AttackEffect[] {AttackEffect.SMASH, AttackEffect.FIRE, AttackEffect.POISON,
+				AttackEffect.SMASH,
+				AttackEffect.FIRE, AttackEffect.POISON};
 	}
 
 	@Override

@@ -19,7 +19,8 @@ import basemod.ReflectionHacks;
 public class Disoriented extends AbstractSagePower {
 
 	public static final String POWER_ID = "sagemod:Disoriented";
-	private static final PowerStrings powerStrings = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
+	private static final PowerStrings powerStrings =
+			CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
 	public static final String NAME = powerStrings.NAME;
 	public static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;
 
@@ -43,9 +44,11 @@ public class Disoriented extends AbstractSagePower {
 		changedIntent = false;
 		isAlmostRemoved = false;
 		if (amount == 0) {
-			AbstractDungeon.actionManager.addToBottom(new RemoveSpecificPowerAction(owner, owner, POWER_ID));
+			AbstractDungeon.actionManager
+					.addToBottom(new RemoveSpecificPowerAction(owner, owner, POWER_ID));
 		} else {
-			AbstractDungeon.actionManager.addToBottom(new ReducePowerAction(owner, owner, POWER_ID, 1));
+			AbstractDungeon.actionManager
+					.addToBottom(new ReducePowerAction(owner, owner, POWER_ID, 1));
 		}
 		if (amount == 1) {
 			isAlmostRemoved = true;
@@ -63,9 +66,11 @@ public class Disoriented extends AbstractSagePower {
 
 	@Override
 	public float atDamageFinalGive(float damage, DamageType type) {
-		if (type == DamageType.NORMAL && owner instanceof AbstractMonster && !changedIntent && !isAlmostRemoved) {
+		if (type == DamageType.NORMAL && owner instanceof AbstractMonster && !changedIntent
+				&& !isAlmostRemoved) {
 			AbstractMonster monster = (AbstractMonster) owner;
-			EnemyMoveInfo move = (EnemyMoveInfo) ReflectionHacks.getPrivate(monster, AbstractMonster.class, "move");
+			EnemyMoveInfo move = (EnemyMoveInfo) ReflectionHacks.getPrivate(monster,
+					AbstractMonster.class, "move");
 			if (isAttack(move.intent)) {
 				if (move.isMultiDamage) {
 					changedIntent = true;
@@ -97,7 +102,8 @@ public class Disoriented extends AbstractSagePower {
 				if (a instanceof DamageAction) {
 
 					DamageAction d = (DamageAction) a;
-					DamageInfo dInfo = (DamageInfo) ReflectionHacks.getPrivate(d, DamageAction.class, "info");
+					DamageInfo dInfo =
+							(DamageInfo) ReflectionHacks.getPrivate(d, DamageAction.class, "info");
 
 					if (dInfo.owner == owner && dInfo.type == DamageType.NORMAL) {
 						removeLater = a;
@@ -115,7 +121,8 @@ public class Disoriented extends AbstractSagePower {
 	}
 
 	private boolean isAttack(Intent intent) {
-		return intent == Intent.ATTACK || intent == Intent.ATTACK_BUFF || intent == Intent.ATTACK_DEBUFF
+		return intent == Intent.ATTACK || intent == Intent.ATTACK_BUFF
+				|| intent == Intent.ATTACK_DEBUFF
 				|| intent == Intent.ATTACK_DEFEND;
 	}
 

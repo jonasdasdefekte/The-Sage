@@ -58,7 +58,8 @@ public abstract class AbstractSageCard extends CustomCard {
 	public boolean showSageMiscAsModified;
 	private boolean isTaxing;
 
-	public AbstractSageCard(String id, String name, int cost, String rawDescription, CardType type, CardRarity rarity,
+	public AbstractSageCard(String id, String name, int cost, String rawDescription, CardType type,
+			CardRarity rarity,
 			CardTarget target) {
 		this(id, name, cost, rawDescription, type, rarity, target, SageColorEnum.THE_SAGE, false);
 	}
@@ -229,7 +230,8 @@ public abstract class AbstractSageCard extends CustomCard {
 	}
 
 	protected void applyPower(AbstractPower power, AbstractCreature target) {
-		AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(target, player(), power, power.amount));
+		AbstractDungeon.actionManager
+				.addToBottom(new ApplyPowerAction(target, player(), power, power.amount));
 	}
 
 	protected boolean hasPower(String power) {

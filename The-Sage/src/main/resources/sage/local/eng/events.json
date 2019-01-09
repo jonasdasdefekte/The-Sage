@@ -1,20 +1,20 @@
 {
-  "sagemod:Carpet_Trader": {
-    "NAME": "Carpet Trader",
-    "DESCRIPTIONS": [
-      "This city is a peculiar place. Sneaking around the corner, you directly run into a #rhooded #rfigure lurking at a house entrance. NL NL You see carpets all over the place. Even that man seems to wear one.",
-      "As you approach, the figure quickly grabs a #rred #rcarpet. Staring down to it, the carpet-wearing man yells with a screechy voice: NL \"Are you ready? The carpet is. @For@ @you@ !\"",
-      "As you approach, the figure quickly grabs a #rpale #rfeather. Staring down to it, the carpet-wearing man yells with a screechy voice: NL \"Are you ready? The feather is. @For@ @you@ !\"",
-      "You ran away as fast as you could.",
-      "You accept the offer. NL NL Taking the #rred #rcarpet, you feel some of your strength leaving your body. At the same time, you feel how the carpet can carry you. NL While hearing a derisive laughter from that strange man, you fly away with the carpet under your feet. You are not sure if this flying masterpiece will help or kill you...",
-      "You accept the offer. NL NL Taking the #rpale #rfeather, you feel some of your strength leaving your body. At the same time, you are feeling lucky. NL While hearing a derisive laughter from that strange man, you fly away with the feather in your pocket. You are not sure if this flying masterpiece will help or kill you..."
-    ],
-    "OPTIONS": [
-      "[Approach]",
-      "[Run]",
-      "[Agree] #rLose #r30% #rMax #rHP. #gObtain #gthe #gFlying #gCarpet.",
-      "[Agree] #rLose #r30% #rMax #rHP. #gObtain #gthe #gByrd #gFeather.",
-      "[Leave]"
-    ]
-  }
+	"sagemod:Carpet_Trader": {
+		"NAME": "Carpet Trader",
+		"DESCRIPTIONS": [
+			"This city is a peculiar place. Sneaking around the corner, you directly run into a #rhooded #rfigure lurking at a house entrance. NL NL You see carpets all over the place. Even that man seems to wear one.",
+			"As you approach, the figure quickly grabs a #rred #rcarpet. Staring down to it, the carpet-wearing man yells with a screechy voice: NL \"Are you ready? The carpet is. @For@ @you@ !\"",
+			"As you approach, the figure quickly grabs a #rpale #rfeather. Staring down to it, the carpet-wearing man yells with a screechy voice: NL \"Are you ready? The feather is. @For@ @you@ !\"",
+			"You ran away as fast as you could.",
+			"You accept the offer. NL NL Taking the #rred #rcarpet, you feel some of your strength leaving your body. At the same time, you feel how the carpet can carry you. NL While hearing a derisive laughter from that strange man, you fly away with the carpet under your feet. You are not sure if this flying masterpiece will help or kill you...",
+			"You accept the offer. NL NL Taking the #rpale #rfeather, you feel some of your strength leaving your body. At the same time, you are feeling lucky. NL While hearing a derisive laughter from that strange man, you fly away with the feather in your pocket. You are not sure if this flying masterpiece will help or kill you..."
+		],
+		"OPTIONS": [
+			"[Approach]",
+			"[Run]",
+			"[Agree] #rLose #r30% #rMax #rHP. #gObtain #gthe #gFlying #gCarpet.",
+			"[Agree] #rLose #r30% #rMax #rHP. #gObtain #gthe #gByrd #gFeather.",
+			"[Leave]"
+		]
+	}
 }

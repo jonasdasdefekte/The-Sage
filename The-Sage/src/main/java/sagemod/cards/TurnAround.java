@@ -48,7 +48,8 @@ public class TurnAround extends AbstractSageCard {
 	public void use(AbstractPlayer p, AbstractMonster m) {
 		applyPowerToSelf(new FrailPower(p, magicNumber, false));
 		AbstractDungeon.actionManager.addToBottom(
-				new AttackForEveryStackOfPowerAction(p, m, FrailPower.POWER_ID, AttackEffect.BLUNT_HEAVY, damage,
+				new AttackForEveryStackOfPowerAction(p, m, FrailPower.POWER_ID,
+						AttackEffect.BLUNT_HEAVY, damage,
 						damageTypeForTurn));
 	}
 

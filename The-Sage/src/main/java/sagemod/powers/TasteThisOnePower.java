@@ -8,7 +8,8 @@ import com.megacrit.cardcrawl.powers.AbstractPower;
 public class TasteThisOnePower extends AbstractSagePower {
 
 	public static final String POWER_ID = "sagemod:Taste_This_One";
-	private static final PowerStrings powerStrings = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
+	private static final PowerStrings powerStrings =
+			CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
 	public static final String NAME = powerStrings.NAME;
 	public static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;
 

@@ -16,7 +16,8 @@ public class AttackForEveryStackOfPowerAction extends AbstractGameAction {
 	AttackEffect effect;
 	int baseDamage;
 
-	public AttackForEveryStackOfPowerAction(AbstractCreature source, AbstractCreature target, String powerId,
+	public AttackForEveryStackOfPowerAction(AbstractCreature source, AbstractCreature target,
+			String powerId,
 			AttackEffect effect, int damage, DamageType type) {
 		duration = Settings.ACTION_DUR_FAST;
 		this.source = source;
@@ -27,7 +28,8 @@ public class AttackForEveryStackOfPowerAction extends AbstractGameAction {
 		baseDamage = damage;
 	}
 
-	public AttackForEveryStackOfPowerAction(AbstractCreature source, AbstractCreature target, String powerId,
+	public AttackForEveryStackOfPowerAction(AbstractCreature source, AbstractCreature target,
+			String powerId,
 			int damage, DamageType type) {
 		this(source, target, powerId, AttackEffect.SLASH_HORIZONTAL, damage, type);
 	}
@@ -40,7 +42,8 @@ public class AttackForEveryStackOfPowerAction extends AbstractGameAction {
 				int times = source.getPower(powerId).amount;
 				for (int i = 0; i < times; i++) {
 					AbstractDungeon.actionManager
-					.addToTop(new DamageAction(target, new DamageInfo(source, baseDamage, damageType), effect));
+							.addToTop(new DamageAction(target,
+									new DamageInfo(source, baseDamage, damageType), effect));
 				}
 			}
 		}

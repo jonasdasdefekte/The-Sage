@@ -33,7 +33,7 @@ public class ToyOrnithopterPatches {
 			if (!(AbstractDungeon.player instanceof TheSage)) {
 				relic.flash();
 				AbstractDungeon.actionManager
-				.addToBottom(new RelicAboveCreatureAction(AbstractDungeon.player, relic));
+						.addToBottom(new RelicAboveCreatureAction(AbstractDungeon.player, relic));
 				AbstractDungeon.actionManager.addToBottom(
 						new HealAction(AbstractDungeon.player, AbstractDungeon.player,
 								ToyOrnithopter.HEAL_AMT));
@@ -51,7 +51,7 @@ public class ToyOrnithopterPatches {
 						(ToyOrnithopter) AbstractDungeon.player.getRelic(ToyOrnithopter.ID);
 				relic.flash();
 				AbstractDungeon.actionManager
-				.addToBottom(new RelicAboveCreatureAction(AbstractDungeon.player, relic));
+						.addToBottom(new RelicAboveCreatureAction(AbstractDungeon.player, relic));
 				AbstractDungeon.actionManager.addToBottom(
 						new HealAction(AbstractDungeon.player, AbstractDungeon.player,
 								ToyOrnithopter.HEAL_AMT));

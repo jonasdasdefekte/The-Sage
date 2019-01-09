@@ -1,397 +1,397 @@
 {
-  "sagemod:About_Clark": {
-    "NAME": "Über Clark",
-    "DESCRIPTION": "Füge zweimal !D! Schaden zu. Kostet 1 [E] weniger pro Gebrechlich, das du hast."
-  },
-  "sagemod:AbstractSageCard": {
-    "NAME": "Abstract Sage Card",
-    "DESCRIPTION": "ABSTRACT CLASS! THIS SHOULD NEVER BE DISPLAYED!",
-    "UPGRADE_DESCRIPTION": "These values are for speech bubbles and updating the brew variable",
-    "EXTENDED_DESCRIPTION": [
-      "Das kann ich nicht spielen, wenn ich fliege!",
-      "Das kann ich nur spielen, wenn ich fliege!",
-      "Dafür brauche ich einen Trank!",
-      ".",
-      " im nächsten Zug.",
-      "[(NL) ]*in[(NL) ]*!sagemod:BRW![(NL) ]*-[(NL) ]*X*.*[(NL) ]*Zügen*\\.",
-      "[(NL) ]*in[(NL) ]*!sagemod:BRW![(NL) ]*Zügen*\\.",
-      " *in[(NL) ]*!sagemod:BRW![(NL) ]*Zügen*\\.*"
-    ]
-  },
-  "sagemod:Accumulation": {
-    "NAME": "Akkumulation",
-    "DESCRIPTION": "Luft. NL Erhalte [E] und verliere !M! Flug zu Beginn jedes Zuges."
-  },
-  "sagemod:Alchemy_Expert": {
-    "NAME": "Alchemistin",
-    "DESCRIPTION": "Immer wenn du einen Trank nutzt, erhalte !M! Artefakt.",
-    "UPGRADE_DESCRIPTION": "Angeboren. NL Immer wenn du einen Trank nutzt, erhalte !M! Artefakt."
-  },
-  "sagemod:Altitude": {
-    "NAME": "Flughöhe",
-    "DESCRIPTION": "Erhalte !M! Flug."
-  },
-  "sagemod:Ambition": {
-    "NAME": "Ambition",
-    "DESCRIPTION": "Erhalte !M! Gebrechlich. NL Erhalte [E] [E]."
-  },
-  "sagemod:Anti_Ancient_Attack": {
-    "NAME": "Anti-Ahnen-Angriff",
-    "DESCRIPTION": "Wende !M! Artefakt an. NL Dann füge !D! Schaden pro Artefakt des Gegners zu.",
-    "EXTENDED_DESCRIPTION": [
-      " NL (Trifft einmal)",
-      " NL (Trifft ",
-      " mal)"
-    ]
-  },
-  "sagemod:Armor_Brew": {
-    "NAME": "Rüstungstrank",
-    "DESCRIPTION": "Erhalte !B! Block. NL Braue einen Blocktrank NL in !sagemod:BRW! Zügen.",
-    "UPGRADE_DESCRIPTION": "Erhalte !B! Block. NL Braue einen verbesserten Blocktrank NL in !sagemod:BRW! Zügen."
-  },
-  "sagemod:Blurry": {
-    "NAME": "Verschwommen",
-    "DESCRIPTION": "Erhalte !sagemod:MISC! temporäre_TP. Erhalte !M! temporäre_TP pro Gebrechlich, das du hast. NL Erschöpft.",
-    "EXTENDED_DESCRIPTION": [
-      " NL (Gibt insgesamt ",
-      " temporäre_TP. )"
-    ]
-  },
-  "sagemod:Bold_Move": {
-    "NAME": "Mutiger Schritt",
-    "DESCRIPTION": "Füge !D! Schaden zu. NL Erhalte !M! Gebrechlich."
-  },
-  "sagemod:Bookworm": {
-    "NAME": "Bücherwurm",
-    "DESCRIPTION": "Jedes Mal, wenn du eine Karte spielst, die X kostet, erstattet diese !M! Energie.",
-    "UPGRADE_DESCRIPTION": "Jedes Mal, wenn du eine Karte spielst, die X kostet, erhalte [E] ."
-  },
-  "sagemod:Bouncing_Strike": {
-    "NAME": "Sprungschlag",
-    "DESCRIPTION": "Erhalte !sagemod:MISC! Gebrechlich. NL Erhalte !M! Flug. Füge soviel Schaden wie die Summe deines Flugs und Gebrechlich zu.",
-    "UPGRADE_DESCRIPTION": "Erhalte !sagemod:MISC! Gebrechlich. NL Erhalte !M! Flug. Füge soviel Schaden wie das Produkt deines Flugs und Gebrechlich zu.",
-    "EXTENDED_DESCRIPTION": [
-      " NL (Fügt ",
-      " Schaden zu)"
-    ]
-  },
-  "sagemod:Brewmaster": {
-    "NAME": "Braumeisterin",
-    "DESCRIPTION": "Erhalte !M! Brauen. "
-  },
-  "sagemod:Burning_Flask": {
-    "NAME": "Brennende Flasche",
-    "DESCRIPTION": "Füge ALLEN Gegnern !D! Schaden zu. Wenn du Tränke hast, wirf einen zufälligen ab und füge !M! zusätzlichen Schaden zu. "
-  },
-  "sagemod:Byrd_Feather_Preview": {
-    "NAME": "Foglfeder",
-    "DESCRIPTION": "RELIKT! NL Falls du zu Beginn deines Zuges 1 oder 2 Flug hast, setze ihn auf !M!."
-  },
-  "sagemod:Cane_Strike": {
-    "NAME": "Stockschlag",
-    "DESCRIPTION": "Füge !D! Schaden zu. Fügt doppelten Schaden zu, wenn du Gebrechlich bist."
-  },
-  "sagemod:Catch_Me_If_You_Can": {
-    "NAME": "Fang mich doch",
-    "DESCRIPTION": "Verhindert die nächsten !M! Male bei denen du Flug verlieren würdest bis zu deinem nächsten Zug."
-  },
-  "sagemod:Crank": {
-    "NAME": "Am Rad drehen",
-    "DESCRIPTION": "Füge !D! Schaden zu. NL Falls der Gegner Artefakt hat, ziehe !M! Karte.",
-    "UPGRADE_DESCRIPTION": "Füge !D! Schaden zu. NL Falls der Gegner Artefakt hat, ziehe soviele Karten, wie er Artefakt hat."
-  },
-  "sagemod:Cultist_Form": {
-    "NAME": "Kultistenform",
-    "DESCRIPTION": "Verliere !sagemod:MISC! Flug. NL Wende !M! mal 1 Desorientiert an einem zufälligen Gegner an."
-  },
-  "sagemod:Deadly_Contraption": {
-    "NAME": "Tödlicher Apparat",
-    "DESCRIPTION": "ALLE Gegner erhalten !M! Artefakt. Am Ende ihres Zuges verlieren Gegner !sagemod:MISC! TP pro Artefakt auf ihnen. NL Versteuert."
-  },
-  "sagemod:Defend": {
-    "NAME": "Verteidigen",
-    "DESCRIPTION": "Erhalte !B! Block."
-  },
-  "sagemod:Energetic_Brew": {
-    "NAME": "Energiegebräu",
-    "DESCRIPTION": "Füge !D! Schaden zu. NL Braue einen Energietrank NL in !sagemod:BRW! Zügen.",
-    "UPGRADE_DESCRIPTION": "Füge !D! Schaden zu. NL Braue einen verbesserten Energietrank NL in !sagemod:BRW! Zügen."
-  },
-  "sagemod:Escape": {
-    "NAME": "Entfliehen",
-    "DESCRIPTION": "Verdopple deinen Flug. NL Erschöpft.",
-    "UPGRADE_DESCRIPTION": "Verdopple deinen Flug."
-  },
-  "sagemod:Extra_Portion": {
-    "NAME": "Extraportion",
-    "DESCRIPTION": "Der nächste Trank in diesem Zug wird zweimal angewendet.",
-    "UPGRADE_DESCRIPTION": "Die nächsten !M! Tränke in diesem Zug werden zweimal angewendet."
-  },
-  "sagemod:Fire_Brew": {
-    "NAME": "Feuergebräu",
-    "DESCRIPTION": "Füge !D! Schaden zu. NL Braue einen Feuertrank NL in !sagemod:BRW! Zügen.",
-    "UPGRADE_DESCRIPTION": "Füge !D! Schaden zu. NL Braue einen verbesserten Feuertrank NL in !sagemod:BRW! Zügen."
-  },
-  "sagemod:Flight_Feint": {
-    "NAME": "Flugfinte",
-    "DESCRIPTION": "Füge !D! Schaden zu. NL Wende !M! Desorientiert an."
-  },
-  "sagemod:Fly": {
-    "NAME": "Fliegen",
-    "DESCRIPTION": "Falls du fliegst: NL Erhalte !B! Block. NL Ansonsten: NL Erhalte !M! Flug."
-  },
-  "sagemod:Flying_Carpet_Preview": {
-    "NAME": "Fliegender Teppich",
-    "DESCRIPTION": "RELIKT! Erhalte !M! Flug am Beginn deines zweiten Zuges."
-  },
-  "sagemod:Flying_Cauldron": {
-    "NAME": "Fliegender Kessel",
-    "DESCRIPTION": "Luft. NL Erhalte !M! Brauen. NL Erschöpft.",
-    "UPGRADE_DESCRIPTION": "Falls du fliegst: NL Erhalte !M! Brauen. NL Ansonsten: NL Erhalte !M! Flug. NL Erschöpft."
-  },
-  "sagemod:Folded_Carpet": {
-    "NAME": "Gefalteter Teppich",
-    "DESCRIPTION": "Erhalte !B! Block pro Flug, den du hast."
-  },
-  "sagemod:Gearwheel_Master": {
-    "NAME": "Zahnradkünstlerin",
-    "DESCRIPTION": "ALLE erhalten !M! Artefakt. NL Erschöpft. NL Kann beliebig oft verbessert werden."
-  },
-  "sagemod:Grounded_Strike": {
-    "NAME": "Bodenschlag",
-    "DESCRIPTION": "Verliere allen Flug. NL Füge !D! Schaden zu.",
-    "UPGRADE_DESCRIPTION": "Verliere !M! Flug. NL Füge !D! Schaden zu."
-  },
-  "sagemod:How_To_Amuse_Sneckos": {
-    "NAME": "Wie man Sneckos erfreut",
-    "DESCRIPTION": "Ziehe X Karten.",
-    "UPGRADE_DESCRIPTION": "Ziehe X Karten. NL Erstattung !stslib:refund!."
-  },
-  "sagemod:How_To_Befriend_A_Turtle": {
-    "NAME": "Wie man sich einpanzert",
-    "DESCRIPTION": "Erhalte X temporäre_TP. NL Erstattung: alles.",
-    "UPGRADE_DESCRIPTION": "Erhalte X + !M! temporäre_TP. NL Erstattung: alles."
-  },
-  "sagemod:How_To_Charm_A_Sentry": {
-    "NAME": "Wie man Wachen betört",
-    "DESCRIPTION": "Füge X mal !D! Schaden zu. Der Gegner erhält X Artefakt."
-  },
-  "sagemod:How_To_Feed_Apes": {
-    "NAME": "Wie man Affen füttert",
-    "DESCRIPTION": "Braue einen der NL möglichen Tränke NL in !sagemod:BRW! -X Zügen. NL Erschöpft.",
-    "EXTENDED_DESCRIPTION": [
-      "Mögliche Tränke"
-    ]
-  },
-  "sagemod:How_To_Greet_Byrds": {
-    "NAME": "Wie man Fögl grüßt",
-    "DESCRIPTION": "Angeboren. NL Setze deinen Flug auf X. NL Erschöpft.",
-    "UPGRADE_DESCRIPTION": "Angeboren. NL Erhalte X Flug. NL Erschöpft."
-  },
-  "sagemod:How_To_Murder_Ants": {
-    "NAME": "Wie man Ameisen mordet",
-    "DESCRIPTION": "Luft. NL Füge !M! mal einem zufälligen Gegner X Schaden zu."
-  },
-  "sagemod:How_To_Poke_At_Slimes": {
-    "NAME": "Wie man Schleime sticht",
-    "DESCRIPTION": "Füge ALLEN Gegnern X Schaden zu. NL Erhalte !M! Gebrechlich. NL Erstattung !stslib:refund!.",
-    "UPGRADE_DESCRIPTION": "Füge ALLEN Gegnern X + !D! Schaden zu. NL Erhalte !M! Gebrechlich. NL Erstattung: alles."
-  },
-  "sagemod:How_To_Wake_Lyons": {
-    "NAME": "Wie man Lywen aufweckt",
-    "DESCRIPTION": "Braue einen NL Steroidetrank NL in !sagemod:BRW! -X Zügen. NL Erschöpft.",
-    "UPGRADE_DESCRIPTION": "Braue einen NL Steroidetrank NL in !sagemod:BRW! -X Zügen."
-  },
-  "sagemod:How_To_Warm_Elephants": {
-    "NAME": "Wie man Elefanten wärmt",
-    "DESCRIPTION": "Braue einen NL Explosivtrank NL in !sagemod:BRW! -X Zügen.",
-    "UPGRADE_DESCRIPTION": "Braue einen NL verbesserten Explosivtrank NL in !sagemod:BRW! -X Zügen."
-  },
-  "sagemod:Lecture": {
-    "NAME": "Vorlesung",
-    "DESCRIPTION": "Füge !D! Schaden zu pro X-Karte, die du diesen Kampf gespielt hast.",
-    "EXTENDED_DESCRIPTION": [
-      " NL (Greift ",
-      " mal an.)",
-      " NL (Greift einmal an.)"
-    ]
-  },
-  "sagemod:Let_It_Go": {
-    "NAME": "Lass Es Los",
-    "DESCRIPTION": "Erschöpfe eine Karte aus deiner Hand. Erhalte soviel Flug, wie sie kostet. NL Erschöpft.",
-    "UPGRADE_DESCRIPTION": "Erschöpfe bis zu !M! Karten aus deiner Hand. Erhalte soviel Flug, wie sie kosten. NL Erschöpft."
-  },
-  "sagemod:Light_Weighted": {
-    "NAME": "Leichtgewicht",
-    "DESCRIPTION": "Verliere alles Gebrechlich. NL Erhalte ebensoviel Flug. NL Erschöpft.",
-    "UPGRADE_DESCRIPTION": "Verliere alles Gebrechlich. NL Erhalte ebensoviel NL Flug + !M!. NL Erschöpft."
-  },
-  "sagemod:Lunchtime": {
-    "NAME": "Essenszeit!",
-    "DESCRIPTION": "Luft. Verliere !M! Flug und braue sofort alle Tränke."
-  },
-  "sagemod:Mechanics_Break": {
-    "NAME": "Mechanik zerbricht!",
-    "DESCRIPTION": "Erhalte !B! Block. NL Der Gegner erhält !M! Artefakt."
-  },
-  "sagemod:Meditation": {
-    "NAME": "Meditation",
-    "DESCRIPTION": "Verliere allen Flug. NL Ziehe !M! Karten. NL Erschöpft."
-  },
-  "sagemod:Momentum": {
-    "NAME": "Momentum",
-    "DESCRIPTION": "Braue einen Schnelligkeitstrank in !sagemod:BRW! Runden.",
-    "UPGRADE_DESCRIPTION": "Braue einen verbesserten Schnelligkeitstrank in !sagemod:BRW! Runden."
-  },
-  "sagemod:On_Fire": {
-    "NAME": "Feuer",
-    "DESCRIPTION": "Immer wenn du !M! Karten in einem Zug spielst, erhalte einen Feuertrank.",
-    "UPGRADE_DESCRIPTION": "Immer wenn du !M! Karten in einem Zug spielst, erhalte einen verbesserten Feuertrank."
-  },
-  "sagemod:On_The_Head": {
-    "NAME": "Auf den Kopf",
-    "DESCRIPTION": "Füge !D! Schaden zu. NL Falls du fliegst: NL Ziehe !M! Karte NL und erhalte [E]."
-  },
-  "sagemod:Perpetuum_Mobile": {
-    "NAME": "Perpetuum Mobile",
-    "DESCRIPTION": "Ziehe !M! Karte. NL Spiele sie kostenlos, falls sie !sagemod:MISC! kostet.",
-    "UPGRADE_DESCRIPTION": "Ziehe !M! Karte. NL Spiele sie kostenlos, falls sie !sagemod:MISC! oder X kostet."
-  },
-  "sagemod:Perplexing_Glare": {
-    "NAME": "Starren",
-    "DESCRIPTION": "Wende !M! Desorientiert an. NL Erschöpft."
-  },
-  "sagemod:Pincer_Attack": {
-    "NAME": "Zangenangriff",
-    "DESCRIPTION": "Füge !D! Schaden zu. NL Schaden erhöht sich pro Artefakt des Gegners.",
-    "EXTENDED_DESCRIPTION": [
-      " NL (Fügt ",
-      " zusätzlichen Schaden zu.)"
-    ]
-  },
-  "sagemod:Pincer_Repair": {
-    "NAME": "Reparaturzange",
-    "DESCRIPTION": "Füge !D! Schaden zu. NL Der Gegner erhält NL !M! Artefakt."
-  },
-  "sagemod:Potion_Explosion": {
-    "NAME": "Trankexplosion",
-    "DESCRIPTION": "Füge ALLEN Gegnern !D! Schaden zu pro Trank, den du in diesem Zug benutzt hast.",
-    "EXTENDED_DESCRIPTION": [
-      " NL (Trifft einmal.)",
-      " NL (Trifft ",
-      " mal.)"
-    ]
-  },
-  "sagemod:Potion_Trance": {
-    "NAME": "Tranktrance",
-    "DESCRIPTION": "Ziehe !M! Karte, wenn du in diesem Zug einen Trank benutzt. NL Du kannst in diesem Zug keine Energie erhalten.",
-    "UPGRADE_DESCRIPTION": "Ziehe !M! Karten, wenn du in diesem Zug einen Trank benutzt. NL Du kannst in diesem Zug keine Energie erhalten."
-  },
-  "sagemod:Pour_Tar_Pitch": {
-    "NAME": "Pech schütten",
-    "DESCRIPTION": "Füge !D! Schaden zu. NL Falls du fliegst: Trifft ALLE Gegner."
-  },
-  "sagemod:Prey": {
-    "NAME": "Beute",
-    "DESCRIPTION": "Füge !D! Schaden zu. Falls du hiermit einen Gegner, der mehr max. TP als du hast, tötest, erhälst du !M! max. TP und entferne diese Karte aus deinem Deck."
-  },
-  "sagemod:Quackster": {
-    "NAME": "Quacksalber",
-    "DESCRIPTION": "Braue einen zufälligen Trank in !sagemod:BRW! Zügen. NL Erschöpft.",
-    "UPGRADE_DESCRIPTION": "Braue einen zufälligen Trank in !sagemod:BRW! Zügen."
-  },
-  "sagemod:Read_The_Riot_Act": {
-    "NAME": "Lies den Krawallen-Akt",
-    "DESCRIPTION": "Wähle eine Karte, die X kostet, aus deinem Nachziehstapel und spiele sie. NL Erschöpft.",
-    "UPGRADE_DESCRIPTION": "Wähle eine Karte, die X kostet, aus deinem Nachziehstapel und spiele sie.",
-    "EXTENDED_DESCRIPTION": [
-      "Wähle eine Karte, die X kostet, um sie zu spielen."
-    ]
-  },
-  "sagemod:Refine": {
-    "NAME": "Verfeinern",
-    "DESCRIPTION": "Verbessere einen zufälligen deiner Tränke, die du trägst. NL Erschöpft.",
-    "UPGRADE_DESCRIPTION": "Verbessere alle Tränke, die du trägst. NL Erschöpft."
-  },
-  "sagemod:Riches": {
-    "NAME": "Reichtümer!!!",
-    "DESCRIPTION": "Immer wenn du einen verbesserten Trank benutzt, erhälst du einen zufälligen Trank, der nicht verbessert ist."
-  },
-  "sagemod:Rickety_Defense": {
-    "NAME": "Klappriger Schild",
-    "DESCRIPTION": "Am Ende deiner Runde, setze deinen Block deinem Gebrechlich gleich, wenn du mehr Gebrechlich als Block hast.",
-    "UPGRADE_DESCRIPTION": "Angeboren. NL Am Ende deiner Runde, setze deinen Block deinem Gebrechlich gleich, wenn du mehr Gebrechlich als Block hast."
-  },
-  "sagemod:Rock_Oil": {
-    "NAME": "Felsöl",
-    "DESCRIPTION": "Unspielbar. NL Während diese Karte in deiner Hand ist erhälst du !B! Block, wenn du einen Trank benutzt."
-  },
-  "sagemod:Salty_Strike": {
-    "NAME": "Salziger Schlag",
-    "DESCRIPTION": "Füge !D! Schaden zu. NL Wende !M! Durstig an."
-  },
-  "sagemod:Shining_Powder": {
-    "NAME": "Strahlendes Pulver",
-    "DESCRIPTION": "Unspielbar. NL Während diese Karte in deiner Hand ist erhälst du [E], wenn du einen Trank benutzt.",
-    "UPGRADE_DESCRIPTION": "Unspielbar. NL Während diese Karte in deiner Hand ist erhälst du [E] [E], wenn du einen Trank benutzt."
-  },
-  "sagemod:Slalom": {
-    "NAME": "Slalom",
-    "DESCRIPTION": "Erhalte !B! Block. NL Erhalte !M! Gebrechlich."
-  },
-  "sagemod:Spoiled_Food": {
-    "NAME": "Verdorbenes Essen",
-    "DESCRIPTION": "Wende !M! Durstig an. NL Erschöpft."
-  },
-  "sagemod:Step_Back": {
-    "NAME": "Schritt zurück",
-    "DESCRIPTION": "Erhalte !B! Block. NL Falls du fliegst: NL Erhalte [E] [E] . NL Ansonsten: NL Erhalte !M! Flug."
-  },
-  "sagemod:Strike": {
-    "NAME": "Schlag",
-    "DESCRIPTION": "Füge !D! Schaden zu."
-  },
-  "sagemod:Study": {
-    "NAME": "Studieren",
-    "DESCRIPTION": "Ziehe !M! Karten. Lege !sagemod:MISC! Handkarte auf deinen Nachziehstapel.",
-    "UPGRADE_DESCRIPTION": "Ziehe !M! Karten. Du darfst !sagemod:MISC! Handkarte auf deinen Nachziehstapel legen.",
-    "EXTENDED_DESCRIPTION": [
-      "auf deinen Nachziehstapel legst."
-    ]
-  },
-  "sagemod:Swoop_Down": {
-    "NAME": "Herabsausen",
-    "DESCRIPTION": "Füge !D! Schaden zu pro Flug, den du hast. NL Dann verliere !M! Flug.",
-    "UPGRADE_DESCRIPTION": "Füge !D! Schaden zu pro Flug, den du hast.",
-    "EXTENDED_DESCRIPTION": [
-      " NL (Fügt ",
-      " Schaden zu)"
-    ]
-  },
-  "sagemod:Taste_This_One": {
-    "NAME": "Probier das mal",
-    "DESCRIPTION": "Immer wenn du einen Trank benutzt, füge einem zufälligen Gegner !M! Schaden zu."
-  },
-  "sagemod:Tinker": {
-    "NAME": "Basteln",
-    "DESCRIPTION": "Erhalte !B! Block. (ALLE Artefakte auf dem Feld + !sagemod:MISC!)",
-    "UPGRADE_DESCRIPTION": "Erhalte !M! Artefakt. Erhalte !B! Block. (ALLE Artefakte auf dem Feld + !sagemod:MISC!)"
-  },
-  "sagemod:Trixter": {
-    "NAME": "Trixter",
-    "DESCRIPTION": "Erstatte die gesamte Energie für die nächste Karte, die du spielst."
-  },
-  "sagemod:Turn_Around": {
-    "NAME": "Umkehren",
-    "DESCRIPTION": "Erhalte !M! Gebrechlich. NL Füge !D! Schaden zu pro Gebrechlich, das du hast."
-  },
-  "sagemod:Undermine": {
-    "NAME": "Untergraben",
-    "DESCRIPTION": "Wennde !M! Artefakt an. Wenn du einen Gegner diese Runde angreifst, erhält er soviel zusätzlichen Schaden, wieviel Artefakt er hat."
-  },
-  "sagemod:Vigorous_Body": {
-    "NAME": "Energischer Körper",
-    "DESCRIPTION": "Immer wenn ein Artefakt bei dir genutzt wird, erhalte !M! Stärke.",
-    "UPGRADE_DESCRIPTION": "Immer wenn ein Artefakt bei dir oder einem Gegner genutzt wird, erhalte !M! Stärke."
-  }
+	"sagemod:About_Clark": {
+		"NAME": "Über Clark",
+		"DESCRIPTION": "Füge zweimal !D! Schaden zu. Kostet 1 [E] weniger pro Gebrechlich, das du hast."
+	},
+	"sagemod:AbstractSageCard": {
+		"NAME": "Abstract Sage Card",
+		"DESCRIPTION": "ABSTRACT CLASS! THIS SHOULD NEVER BE DISPLAYED!",
+		"UPGRADE_DESCRIPTION": "These values are for speech bubbles and updating the brew variable",
+		"EXTENDED_DESCRIPTION": [
+			"Das kann ich nicht spielen, wenn ich fliege!",
+			"Das kann ich nur spielen, wenn ich fliege!",
+			"Dafür brauche ich einen Trank!",
+			".",
+			" im nächsten Zug.",
+			"[(NL) ]*in[(NL) ]*!sagemod:BRW![(NL) ]*-[(NL) ]*X*.*[(NL) ]*Zügen*\\.",
+			"[(NL) ]*in[(NL) ]*!sagemod:BRW![(NL) ]*Zügen*\\.",
+			" *in[(NL) ]*!sagemod:BRW![(NL) ]*Zügen*\\.*"
+		]
+	},
+	"sagemod:Accumulation": {
+		"NAME": "Akkumulation",
+		"DESCRIPTION": "Luft. NL Erhalte [E] und verliere !M! Flug zu Beginn jedes Zuges."
+	},
+	"sagemod:Alchemy_Expert": {
+		"NAME": "Alchemistin",
+		"DESCRIPTION": "Immer wenn du einen Trank nutzt, erhalte !M! Artefakt.",
+		"UPGRADE_DESCRIPTION": "Angeboren. NL Immer wenn du einen Trank nutzt, erhalte !M! Artefakt."
+	},
+	"sagemod:Altitude": {
+		"NAME": "Flughöhe",
+		"DESCRIPTION": "Erhalte !M! Flug."
+	},
+	"sagemod:Ambition": {
+		"NAME": "Ambition",
+		"DESCRIPTION": "Erhalte !M! Gebrechlich. NL Erhalte [E] [E]."
+	},
+	"sagemod:Anti_Ancient_Attack": {
+		"NAME": "Anti-Ahnen-Angriff",
+		"DESCRIPTION": "Wende !M! Artefakt an. NL Dann füge !D! Schaden pro Artefakt des Gegners zu.",
+		"EXTENDED_DESCRIPTION": [
+			" NL (Trifft einmal)",
+			" NL (Trifft ",
+			" mal)"
+		]
+	},
+	"sagemod:Armor_Brew": {
+		"NAME": "Rüstungstrank",
+		"DESCRIPTION": "Erhalte !B! Block. NL Braue einen Blocktrank NL in !sagemod:BRW! Zügen.",
+		"UPGRADE_DESCRIPTION": "Erhalte !B! Block. NL Braue einen verbesserten Blocktrank NL in !sagemod:BRW! Zügen."
+	},
+	"sagemod:Blurry": {
+		"NAME": "Verschwommen",
+		"DESCRIPTION": "Erhalte !sagemod:MISC! temporäre_TP. Erhalte !M! temporäre_TP pro Gebrechlich, das du hast. NL Erschöpft.",
+		"EXTENDED_DESCRIPTION": [
+			" NL (Gibt insgesamt ",
+			" temporäre_TP. )"
+		]
+	},
+	"sagemod:Bold_Move": {
+		"NAME": "Mutiger Schritt",
+		"DESCRIPTION": "Füge !D! Schaden zu. NL Erhalte !M! Gebrechlich."
+	},
+	"sagemod:Bookworm": {
+		"NAME": "Bücherwurm",
+		"DESCRIPTION": "Jedes Mal, wenn du eine Karte spielst, die X kostet, erstattet diese !M! Energie.",
+		"UPGRADE_DESCRIPTION": "Jedes Mal, wenn du eine Karte spielst, die X kostet, erhalte [E] ."
+	},
+	"sagemod:Bouncing_Strike": {
+		"NAME": "Sprungschlag",
+		"DESCRIPTION": "Erhalte !sagemod:MISC! Gebrechlich. NL Erhalte !M! Flug. Füge soviel Schaden wie die Summe deines Flugs und Gebrechlich zu.",
+		"UPGRADE_DESCRIPTION": "Erhalte !sagemod:MISC! Gebrechlich. NL Erhalte !M! Flug. Füge soviel Schaden wie das Produkt deines Flugs und Gebrechlich zu.",
+		"EXTENDED_DESCRIPTION": [
+			" NL (Fügt ",
+			" Schaden zu)"
+		]
+	},
+	"sagemod:Brewmaster": {
+		"NAME": "Braumeisterin",
+		"DESCRIPTION": "Erhalte !M! Brauen. "
+	},
+	"sagemod:Burning_Flask": {
+		"NAME": "Brennende Flasche",
+		"DESCRIPTION": "Füge ALLEN Gegnern !D! Schaden zu. Wenn du Tränke hast, wirf einen zufälligen ab und füge !M! zusätzlichen Schaden zu. "
+	},
+	"sagemod:Byrd_Feather_Preview": {
+		"NAME": "Foglfeder",
+		"DESCRIPTION": "RELIKT! NL Falls du zu Beginn deines Zuges 1 oder 2 Flug hast, setze ihn auf !M!."
+	},
+	"sagemod:Cane_Strike": {
+		"NAME": "Stockschlag",
+		"DESCRIPTION": "Füge !D! Schaden zu. Fügt doppelten Schaden zu, wenn du Gebrechlich bist."
+	},
+	"sagemod:Catch_Me_If_You_Can": {
+		"NAME": "Fang mich doch",
+		"DESCRIPTION": "Verhindert die nächsten !M! Male bei denen du Flug verlieren würdest bis zu deinem nächsten Zug."
+	},
+	"sagemod:Crank": {
+		"NAME": "Am Rad drehen",
+		"DESCRIPTION": "Füge !D! Schaden zu. NL Falls der Gegner Artefakt hat, ziehe !M! Karte.",
+		"UPGRADE_DESCRIPTION": "Füge !D! Schaden zu. NL Falls der Gegner Artefakt hat, ziehe soviele Karten, wie er Artefakt hat."
+	},
+	"sagemod:Cultist_Form": {
+		"NAME": "Kultistenform",
+		"DESCRIPTION": "Verliere !sagemod:MISC! Flug. NL Wende !M! mal 1 Desorientiert an einem zufälligen Gegner an."
+	},
+	"sagemod:Deadly_Contraption": {
+		"NAME": "Tödlicher Apparat",
+		"DESCRIPTION": "ALLE Gegner erhalten !M! Artefakt. Am Ende ihres Zuges verlieren Gegner !sagemod:MISC! TP pro Artefakt auf ihnen. NL Versteuert."
+	},
+	"sagemod:Defend": {
+		"NAME": "Verteidigen",
+		"DESCRIPTION": "Erhalte !B! Block."
+	},
+	"sagemod:Energetic_Brew": {
+		"NAME": "Energiegebräu",
+		"DESCRIPTION": "Füge !D! Schaden zu. NL Braue einen Energietrank NL in !sagemod:BRW! Zügen.",
+		"UPGRADE_DESCRIPTION": "Füge !D! Schaden zu. NL Braue einen verbesserten Energietrank NL in !sagemod:BRW! Zügen."
+	},
+	"sagemod:Escape": {
+		"NAME": "Entfliehen",
+		"DESCRIPTION": "Verdopple deinen Flug. NL Erschöpft.",
+		"UPGRADE_DESCRIPTION": "Verdopple deinen Flug."
+	},
+	"sagemod:Extra_Portion": {
+		"NAME": "Extraportion",
+		"DESCRIPTION": "Der nächste Trank in diesem Zug wird zweimal angewendet.",
+		"UPGRADE_DESCRIPTION": "Die nächsten !M! Tränke in diesem Zug werden zweimal angewendet."
+	},
+	"sagemod:Fire_Brew": {
+		"NAME": "Feuergebräu",
+		"DESCRIPTION": "Füge !D! Schaden zu. NL Braue einen Feuertrank NL in !sagemod:BRW! Zügen.",
+		"UPGRADE_DESCRIPTION": "Füge !D! Schaden zu. NL Braue einen verbesserten Feuertrank NL in !sagemod:BRW! Zügen."
+	},
+	"sagemod:Flight_Feint": {
+		"NAME": "Flugfinte",
+		"DESCRIPTION": "Füge !D! Schaden zu. NL Wende !M! Desorientiert an."
+	},
+	"sagemod:Fly": {
+		"NAME": "Fliegen",
+		"DESCRIPTION": "Falls du fliegst: NL Erhalte !B! Block. NL Ansonsten: NL Erhalte !M! Flug."
+	},
+	"sagemod:Flying_Carpet_Preview": {
+		"NAME": "Fliegender Teppich",
+		"DESCRIPTION": "RELIKT! Erhalte !M! Flug am Beginn deines zweiten Zuges."
+	},
+	"sagemod:Flying_Cauldron": {
+		"NAME": "Fliegender Kessel",
+		"DESCRIPTION": "Luft. NL Erhalte !M! Brauen. NL Erschöpft.",
+		"UPGRADE_DESCRIPTION": "Falls du fliegst: NL Erhalte !M! Brauen. NL Ansonsten: NL Erhalte !M! Flug. NL Erschöpft."
+	},
+	"sagemod:Folded_Carpet": {
+		"NAME": "Gefalteter Teppich",
+		"DESCRIPTION": "Erhalte !B! Block pro Flug, den du hast."
+	},
+	"sagemod:Gearwheel_Master": {
+		"NAME": "Zahnradkünstlerin",
+		"DESCRIPTION": "ALLE erhalten !M! Artefakt. NL Erschöpft. NL Kann beliebig oft verbessert werden."
+	},
+	"sagemod:Grounded_Strike": {
+		"NAME": "Bodenschlag",
+		"DESCRIPTION": "Verliere allen Flug. NL Füge !D! Schaden zu.",
+		"UPGRADE_DESCRIPTION": "Verliere !M! Flug. NL Füge !D! Schaden zu."
+	},
+	"sagemod:How_To_Amuse_Sneckos": {
+		"NAME": "Wie man Sneckos erfreut",
+		"DESCRIPTION": "Ziehe X Karten.",
+		"UPGRADE_DESCRIPTION": "Ziehe X Karten. NL Erstattung !stslib:refund!."
+	},
+	"sagemod:How_To_Befriend_A_Turtle": {
+		"NAME": "Wie man sich einpanzert",
+		"DESCRIPTION": "Erhalte X temporäre_TP. NL Erstattung: alles.",
+		"UPGRADE_DESCRIPTION": "Erhalte X + !M! temporäre_TP. NL Erstattung: alles."
+	},
+	"sagemod:How_To_Charm_A_Sentry": {
+		"NAME": "Wie man Wachen betört",
+		"DESCRIPTION": "Füge X mal !D! Schaden zu. Der Gegner erhält X Artefakt."
+	},
+	"sagemod:How_To_Feed_Apes": {
+		"NAME": "Wie man Affen füttert",
+		"DESCRIPTION": "Braue einen der NL möglichen Tränke NL in !sagemod:BRW! -X Zügen. NL Erschöpft.",
+		"EXTENDED_DESCRIPTION": [
+			"Mögliche Tränke"
+		]
+	},
+	"sagemod:How_To_Greet_Byrds": {
+		"NAME": "Wie man Fögl grüßt",
+		"DESCRIPTION": "Angeboren. NL Setze deinen Flug auf X. NL Erschöpft.",
+		"UPGRADE_DESCRIPTION": "Angeboren. NL Erhalte X Flug. NL Erschöpft."
+	},
+	"sagemod:How_To_Murder_Ants": {
+		"NAME": "Wie man Ameisen mordet",
+		"DESCRIPTION": "Luft. NL Füge !M! mal einem zufälligen Gegner X Schaden zu."
+	},
+	"sagemod:How_To_Poke_At_Slimes": {
+		"NAME": "Wie man Schleime sticht",
+		"DESCRIPTION": "Füge ALLEN Gegnern X Schaden zu. NL Erhalte !M! Gebrechlich. NL Erstattung !stslib:refund!.",
+		"UPGRADE_DESCRIPTION": "Füge ALLEN Gegnern X + !D! Schaden zu. NL Erhalte !M! Gebrechlich. NL Erstattung: alles."
+	},
+	"sagemod:How_To_Wake_Lyons": {
+		"NAME": "Wie man Lywen aufweckt",
+		"DESCRIPTION": "Braue einen NL Steroidetrank NL in !sagemod:BRW! -X Zügen. NL Erschöpft.",
+		"UPGRADE_DESCRIPTION": "Braue einen NL Steroidetrank NL in !sagemod:BRW! -X Zügen."
+	},
+	"sagemod:How_To_Warm_Elephants": {
+		"NAME": "Wie man Elefanten wärmt",
+		"DESCRIPTION": "Braue einen NL Explosivtrank NL in !sagemod:BRW! -X Zügen.",
+		"UPGRADE_DESCRIPTION": "Braue einen NL verbesserten Explosivtrank NL in !sagemod:BRW! -X Zügen."
+	},
+	"sagemod:Lecture": {
+		"NAME": "Vorlesung",
+		"DESCRIPTION": "Füge !D! Schaden zu pro X-Karte, die du diesen Kampf gespielt hast.",
+		"EXTENDED_DESCRIPTION": [
+			" NL (Greift ",
+			" mal an.)",
+			" NL (Greift einmal an.)"
+		]
+	},
+	"sagemod:Let_It_Go": {
+		"NAME": "Lass Es Los",
+		"DESCRIPTION": "Erschöpfe eine Karte aus deiner Hand. Erhalte soviel Flug, wie sie kostet. NL Erschöpft.",
+		"UPGRADE_DESCRIPTION": "Erschöpfe bis zu !M! Karten aus deiner Hand. Erhalte soviel Flug, wie sie kosten. NL Erschöpft."
+	},
+	"sagemod:Light_Weighted": {
+		"NAME": "Leichtgewicht",
+		"DESCRIPTION": "Verliere alles Gebrechlich. NL Erhalte ebensoviel Flug. NL Erschöpft.",
+		"UPGRADE_DESCRIPTION": "Verliere alles Gebrechlich. NL Erhalte ebensoviel NL Flug + !M!. NL Erschöpft."
+	},
+	"sagemod:Lunchtime": {
+		"NAME": "Essenszeit!",
+		"DESCRIPTION": "Luft. Verliere !M! Flug und braue sofort alle Tränke."
+	},
+	"sagemod:Mechanics_Break": {
+		"NAME": "Mechanik zerbricht!",
+		"DESCRIPTION": "Erhalte !B! Block. NL Der Gegner erhält !M! Artefakt."
+	},
+	"sagemod:Meditation": {
+		"NAME": "Meditation",
+		"DESCRIPTION": "Verliere allen Flug. NL Ziehe !M! Karten. NL Erschöpft."
+	},
+	"sagemod:Momentum": {
+		"NAME": "Momentum",
+		"DESCRIPTION": "Braue einen Schnelligkeitstrank in !sagemod:BRW! Runden.",
+		"UPGRADE_DESCRIPTION": "Braue einen verbesserten Schnelligkeitstrank in !sagemod:BRW! Runden."
+	},
+	"sagemod:On_Fire": {
+		"NAME": "Feuer",
+		"DESCRIPTION": "Immer wenn du !M! Karten in einem Zug spielst, erhalte einen Feuertrank.",
+		"UPGRADE_DESCRIPTION": "Immer wenn du !M! Karten in einem Zug spielst, erhalte einen verbesserten Feuertrank."
+	},
+	"sagemod:On_The_Head": {
+		"NAME": "Auf den Kopf",
+		"DESCRIPTION": "Füge !D! Schaden zu. NL Falls du fliegst: NL Ziehe !M! Karte NL und erhalte [E]."
+	},
+	"sagemod:Perpetuum_Mobile": {
+		"NAME": "Perpetuum Mobile",
+		"DESCRIPTION": "Ziehe !M! Karte. NL Spiele sie kostenlos, falls sie !sagemod:MISC! kostet.",
+		"UPGRADE_DESCRIPTION": "Ziehe !M! Karte. NL Spiele sie kostenlos, falls sie !sagemod:MISC! oder X kostet."
+	},
+	"sagemod:Perplexing_Glare": {
+		"NAME": "Starren",
+		"DESCRIPTION": "Wende !M! Desorientiert an. NL Erschöpft."
+	},
+	"sagemod:Pincer_Attack": {
+		"NAME": "Zangenangriff",
+		"DESCRIPTION": "Füge !D! Schaden zu. NL Schaden erhöht sich pro Artefakt des Gegners.",
+		"EXTENDED_DESCRIPTION": [
+			" NL (Fügt ",
+			" zusätzlichen Schaden zu.)"
+		]
+	},
+	"sagemod:Pincer_Repair": {
+		"NAME": "Reparaturzange",
+		"DESCRIPTION": "Füge !D! Schaden zu. NL Der Gegner erhält NL !M! Artefakt."
+	},
+	"sagemod:Potion_Explosion": {
+		"NAME": "Trankexplosion",
+		"DESCRIPTION": "Füge ALLEN Gegnern !D! Schaden zu pro Trank, den du in diesem Zug benutzt hast.",
+		"EXTENDED_DESCRIPTION": [
+			" NL (Trifft einmal.)",
+			" NL (Trifft ",
+			" mal.)"
+		]
+	},
+	"sagemod:Potion_Trance": {
+		"NAME": "Tranktrance",
+		"DESCRIPTION": "Ziehe !M! Karte, wenn du in diesem Zug einen Trank benutzt. NL Du kannst in diesem Zug keine Energie erhalten.",
+		"UPGRADE_DESCRIPTION": "Ziehe !M! Karten, wenn du in diesem Zug einen Trank benutzt. NL Du kannst in diesem Zug keine Energie erhalten."
+	},
+	"sagemod:Pour_Tar_Pitch": {
+		"NAME": "Pech schütten",
+		"DESCRIPTION": "Füge !D! Schaden zu. NL Falls du fliegst: Trifft ALLE Gegner."
+	},
+	"sagemod:Prey": {
+		"NAME": "Beute",
+		"DESCRIPTION": "Füge !D! Schaden zu. Falls du hiermit einen Gegner, der mehr max. TP als du hast, tötest, erhälst du !M! max. TP und entferne diese Karte aus deinem Deck."
+	},
+	"sagemod:Quackster": {
+		"NAME": "Quacksalber",
+		"DESCRIPTION": "Braue einen zufälligen Trank in !sagemod:BRW! Zügen. NL Erschöpft.",
+		"UPGRADE_DESCRIPTION": "Braue einen zufälligen Trank in !sagemod:BRW! Zügen."
+	},
+	"sagemod:Read_The_Riot_Act": {
+		"NAME": "Lies den Krawallen-Akt",
+		"DESCRIPTION": "Wähle eine Karte, die X kostet, aus deinem Nachziehstapel und spiele sie. NL Erschöpft.",
+		"UPGRADE_DESCRIPTION": "Wähle eine Karte, die X kostet, aus deinem Nachziehstapel und spiele sie.",
+		"EXTENDED_DESCRIPTION": [
+			"Wähle eine Karte, die X kostet, um sie zu spielen."
+		]
+	},
+	"sagemod:Refine": {
+		"NAME": "Verfeinern",
+		"DESCRIPTION": "Verbessere einen zufälligen deiner Tränke, die du trägst. NL Erschöpft.",
+		"UPGRADE_DESCRIPTION": "Verbessere alle Tränke, die du trägst. NL Erschöpft."
+	},
+	"sagemod:Riches": {
+		"NAME": "Reichtümer!!!",
+		"DESCRIPTION": "Immer wenn du einen verbesserten Trank benutzt, erhälst du einen zufälligen Trank, der nicht verbessert ist."
+	},
+	"sagemod:Rickety_Defense": {
+		"NAME": "Klappriger Schild",
+		"DESCRIPTION": "Am Ende deiner Runde, setze deinen Block deinem Gebrechlich gleich, wenn du mehr Gebrechlich als Block hast.",
+		"UPGRADE_DESCRIPTION": "Angeboren. NL Am Ende deiner Runde, setze deinen Block deinem Gebrechlich gleich, wenn du mehr Gebrechlich als Block hast."
+	},
+	"sagemod:Rock_Oil": {
+		"NAME": "Felsöl",
+		"DESCRIPTION": "Unspielbar. NL Während diese Karte in deiner Hand ist erhälst du !B! Block, wenn du einen Trank benutzt."
+	},
+	"sagemod:Salty_Strike": {
+		"NAME": "Salziger Schlag",
+		"DESCRIPTION": "Füge !D! Schaden zu. NL Wende !M! Durstig an."
+	},
+	"sagemod:Shining_Powder": {
+		"NAME": "Strahlendes Pulver",
+		"DESCRIPTION": "Unspielbar. NL Während diese Karte in deiner Hand ist erhälst du [E], wenn du einen Trank benutzt.",
+		"UPGRADE_DESCRIPTION": "Unspielbar. NL Während diese Karte in deiner Hand ist erhälst du [E] [E], wenn du einen Trank benutzt."
+	},
+	"sagemod:Slalom": {
+		"NAME": "Slalom",
+		"DESCRIPTION": "Erhalte !B! Block. NL Erhalte !M! Gebrechlich."
+	},
+	"sagemod:Spoiled_Food": {
+		"NAME": "Verdorbenes Essen",
+		"DESCRIPTION": "Wende !M! Durstig an. NL Erschöpft."
+	},
+	"sagemod:Step_Back": {
+		"NAME": "Schritt zurück",
+		"DESCRIPTION": "Erhalte !B! Block. NL Falls du fliegst: NL Erhalte [E] [E] . NL Ansonsten: NL Erhalte !M! Flug."
+	},
+	"sagemod:Strike": {
+		"NAME": "Schlag",
+		"DESCRIPTION": "Füge !D! Schaden zu."
+	},
+	"sagemod:Study": {
+		"NAME": "Studieren",
+		"DESCRIPTION": "Ziehe !M! Karten. Lege !sagemod:MISC! Handkarte auf deinen Nachziehstapel.",
+		"UPGRADE_DESCRIPTION": "Ziehe !M! Karten. Du darfst !sagemod:MISC! Handkarte auf deinen Nachziehstapel legen.",
+		"EXTENDED_DESCRIPTION": [
+			"auf deinen Nachziehstapel legst."
+		]
+	},
+	"sagemod:Swoop_Down": {
+		"NAME": "Herabsausen",
+		"DESCRIPTION": "Füge !D! Schaden zu pro Flug, den du hast. NL Dann verliere !M! Flug.",
+		"UPGRADE_DESCRIPTION": "Füge !D! Schaden zu pro Flug, den du hast.",
+		"EXTENDED_DESCRIPTION": [
+			" NL (Fügt ",
+			" Schaden zu)"
+		]
+	},
+	"sagemod:Taste_This_One": {
+		"NAME": "Probier das mal",
+		"DESCRIPTION": "Immer wenn du einen Trank benutzt, füge einem zufälligen Gegner !M! Schaden zu."
+	},
+	"sagemod:Tinker": {
+		"NAME": "Basteln",
+		"DESCRIPTION": "Erhalte !B! Block. (ALLE Artefakte auf dem Feld + !sagemod:MISC!)",
+		"UPGRADE_DESCRIPTION": "Erhalte !M! Artefakt. Erhalte !B! Block. (ALLE Artefakte auf dem Feld + !sagemod:MISC!)"
+	},
+	"sagemod:Trixter": {
+		"NAME": "Trixter",
+		"DESCRIPTION": "Erstatte die gesamte Energie für die nächste Karte, die du spielst."
+	},
+	"sagemod:Turn_Around": {
+		"NAME": "Umkehren",
+		"DESCRIPTION": "Erhalte !M! Gebrechlich. NL Füge !D! Schaden zu pro Gebrechlich, das du hast."
+	},
+	"sagemod:Undermine": {
+		"NAME": "Untergraben",
+		"DESCRIPTION": "Wennde !M! Artefakt an. Wenn du einen Gegner diese Runde angreifst, erhält er soviel zusätzlichen Schaden, wieviel Artefakt er hat."
+	},
+	"sagemod:Vigorous_Body": {
+		"NAME": "Energischer Körper",
+		"DESCRIPTION": "Immer wenn ein Artefakt bei dir genutzt wird, erhalte !M! Stärke.",
+		"UPGRADE_DESCRIPTION": "Immer wenn ein Artefakt bei dir oder einem Gegner genutzt wird, erhalte !M! Stärke."
+	}
 }

@@ -52,7 +52,8 @@ public class FlightPotion extends CustomPotion {
 		target = AbstractDungeon.player;
 		if (AbstractDungeon.getCurrRoom().phase == RoomPhase.COMBAT) {
 			AbstractDungeon.actionManager
-			.addToBottom(new ApplyPowerAction(target, target, new Flight(target, potency), potency));
+					.addToBottom(new ApplyPowerAction(target, target, new Flight(target, potency),
+							potency));
 		}
 	}
 

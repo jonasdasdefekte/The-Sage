@@ -27,7 +27,7 @@ public class BalloonAnimal extends AbstractSageRelic {
 	private void maybeDraw() {
 		if (playerHasNoFlight()) {
 			AbstractDungeon.actionManager
-			.addToBottom(new DrawCardAction(AbstractDungeon.player, DRAW_AMT));
+					.addToBottom(new DrawCardAction(AbstractDungeon.player, DRAW_AMT));
 			flash();
 			appearAbove(AbstractDungeon.player);
 		}

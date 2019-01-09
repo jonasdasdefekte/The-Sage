@@ -11,7 +11,8 @@ import sagemod.actions.ReduceFlightBlockableAction;
 public class LoseFlightNextTurn extends AbstractSagePower {
 
 	public static final String POWER_ID = "sagemod:Lose_Flight_Next_Turn";
-	private static final PowerStrings powerStrings = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
+	private static final PowerStrings powerStrings =
+			CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
 	public static final String NAME = powerStrings.NAME;
 	public static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;
 
@@ -26,8 +27,9 @@ public class LoseFlightNextTurn extends AbstractSagePower {
 	public void atStartOfTurn() {
 		flash();
 		AbstractDungeon.actionManager
-		.addToBottom(new ReduceFlightBlockableAction(amount, AbstractDungeon.player));
-		AbstractDungeon.actionManager.addToBottom(new RemoveSpecificPowerAction(owner, owner, POWER_ID));
+				.addToBottom(new ReduceFlightBlockableAction(amount, AbstractDungeon.player));
+		AbstractDungeon.actionManager
+				.addToBottom(new RemoveSpecificPowerAction(owner, owner, POWER_ID));
 
 	}
 

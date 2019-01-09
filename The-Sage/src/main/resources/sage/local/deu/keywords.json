@@ -1,77 +1,77 @@
 {
-  "AIR": {
-    "NAMES": [
-      "luft"
-    ],
-    "DESCRIPTION": "Diese Karte kann nur gespielt werden, wenn du Flug hast."
-  },
-  "ARTIFACT": {
-    "NAMES": [
-      "artefakt"
-    ],
-    "DESCRIPTION": "Negiert einen Debuff."
-  },
-  "BREW": {
-    "NAMES": [
-      "braue"
-    ],
-    "DESCRIPTION": "Erhalte einen Trank in einer bestimmten Anzahl Runden."
-  },
-  "BREWING": {
-    "NAMES": [
-      "brauen"
-    ],
-    "DESCRIPTION": "Du brauchst weniger Züge, um Tränke zu brauen."
-  },
-  "DISORIENTED": {
-    "NAMES": [
-      "desorientiert"
-    ],
-    "DESCRIPTION": "Der erste Angriff des Gegners hat keinen Effekt."
-  },
-  "FLIGHT": {
-    "NAMES": [
-      "flug",
-      "flugs"
-    ],
-    "DESCRIPTION": "Reduziert Angriffsschaden, den du nimmst, um 50%. Sinkt um 1, wenn du Angriffsschaden nimmst."
-  },
-  "REFUND": {
-    "NAMES": [
-      "erstattung",
-      "erstatte",
-      "erstattet"
-    ],
-    "DESCRIPTION": "Gibt Energie zurück, die diese Karte gekostet hat, aber maximal den Erstattungswert."
-  },
-  "TAXING": {
-    "NAMES": [
-      "versteuert"
-    ],
-    "DESCRIPTION": "Kostet 1 Energie mehr für jedes mal, das diese Karte in diesem Kampf gespielt worden ist."
-  },
-  "TEMPORARY_HP1": {
-    "PROPER_NAME": "Temporäre TP",
-    "NAMES": [
-      "temporäre tp",
-      "temporäre_tp",
-      "temporärer tp",
-      "temporärer_tp",
-      "temporären tp",
-      "temporären_tp"
-    ],
-    "DESCRIPTION": "Temporäre TP verschwinden am Ende des Kampfs."
-  },
-  "THIRSTY": {
-    "NAMES": [
-      "durstig"
-    ],
-    "DESCRIPTION": "Tränke sind gegen diesen Gegner 50% effektiver."
-  },
-  "VIRUS": {
-    "NAMES": [
-      "virus" 
-    ],
-    "DESCRIPTION": "Gift, dass auf den Gegner außer durch Virus selber angewendet wird, wird auch auf alle anderen Gegner angewendet."
-  }
+	"AIR": {
+		"NAMES": [
+			"luft"
+		],
+		"DESCRIPTION": "Diese Karte kann nur gespielt werden, wenn du Flug hast."
+	},
+	"ARTIFACT": {
+		"NAMES": [
+			"artefakt"
+		],
+		"DESCRIPTION": "Negiert einen Debuff."
+	},
+	"BREW": {
+		"NAMES": [
+			"braue"
+		],
+		"DESCRIPTION": "Erhalte einen Trank in einer bestimmten Anzahl Runden."
+	},
+	"BREWING": {
+		"NAMES": [
+			"brauen"
+		],
+		"DESCRIPTION": "Du brauchst weniger Züge, um Tränke zu brauen."
+	},
+	"DISORIENTED": {
+		"NAMES": [
+			"desorientiert"
+		],
+		"DESCRIPTION": "Der erste Angriff des Gegners hat keinen Effekt."
+	},
+	"FLIGHT": {
+		"NAMES": [
+			"flug",
+			"flugs"
+		],
+		"DESCRIPTION": "Reduziert Angriffsschaden, den du nimmst, um 50%. Sinkt um 1, wenn du Angriffsschaden nimmst."
+	},
+	"REFUND": {
+		"NAMES": [
+			"erstattung",
+			"erstatte",
+			"erstattet"
+		],
+		"DESCRIPTION": "Gibt Energie zurück, die diese Karte gekostet hat, aber maximal den Erstattungswert."
+	},
+	"TAXING": {
+		"NAMES": [
+			"versteuert"
+		],
+		"DESCRIPTION": "Kostet 1 Energie mehr für jedes mal, das diese Karte in diesem Kampf gespielt worden ist."
+	},
+	"TEMPORARY_HP1": {
+		"PROPER_NAME": "Temporäre TP",
+		"NAMES": [
+			"temporäre tp",
+			"temporäre_tp",
+			"temporärer tp",
+			"temporärer_tp",
+			"temporären tp",
+			"temporären_tp"
+		],
+		"DESCRIPTION": "Temporäre TP verschwinden am Ende des Kampfs."
+	},
+	"THIRSTY": {
+		"NAMES": [
+			"durstig"
+		],
+		"DESCRIPTION": "Tränke sind gegen diesen Gegner 50% effektiver."
+	},
+	"VIRUS": {
+		"NAMES": [
+			"virus"
+		],
+		"DESCRIPTION": "Gift, dass auf den Gegner außer durch Virus selber angewendet wird, wird auch auf alle anderen Gegner angewendet."
+	}
 }

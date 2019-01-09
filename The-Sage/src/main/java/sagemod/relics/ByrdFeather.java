@@ -32,7 +32,8 @@ public class ByrdFeather extends AbstractSageRelic {
 				appearAbove(player());
 				int amount = FLY_AMT - power.amount;
 				AbstractDungeon.actionManager.addToBottom(
-						new ApplyPowerAction(player(), player(), new Flight(player(), amount), amount));
+						new ApplyPowerAction(player(), player(), new Flight(player(), amount),
+								amount));
 			}
 		}
 	}

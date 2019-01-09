@@ -16,7 +16,7 @@ import sagemod.ui.SingingVialButton;
 
 public class PatchesForSingingVial {
 
-	@SpirePatch(clz=CardRewardScreen.class, method = SpirePatch.CLASS)
+	@SpirePatch(clz = CardRewardScreen.class, method = SpirePatch.CLASS)
 	public static class ButtonField {
 		public static SpireField<SingingVialButton> button =
 				new SpireField<>(SingingVialButton::new);

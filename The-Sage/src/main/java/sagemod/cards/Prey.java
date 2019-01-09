@@ -57,13 +57,13 @@ public class Prey extends AbstractSageCard {
 	public void use(AbstractPlayer p, AbstractMonster m) {
 		if (m != null) {
 			AbstractDungeon.actionManager
-			.addToBottom(new VFXAction(
-					new BiteEffect(hb.cX,
-							hb.cY - 40.0F * com.megacrit.cardcrawl.core.Settings.scale,
-							Color.SCARLET.cpy()),
-					0.3F));
+					.addToBottom(new VFXAction(
+							new BiteEffect(hb.cX,
+									hb.cY - 40.0F * com.megacrit.cardcrawl.core.Settings.scale,
+									Color.SCARLET.cpy()),
+							0.3F));
 			AbstractDungeon.actionManager
-			.addToBottom(new ExecuteLaterAction(() -> attackAndMaybeGainMaxHP(p, m)));
+					.addToBottom(new ExecuteLaterAction(() -> attackAndMaybeGainMaxHP(p, m)));
 		}
 	}
 
@@ -76,7 +76,7 @@ public class Prey extends AbstractSageCard {
 			p.increaseMaxHp(magicNumber, false);
 			AbstractDungeon.actionManager.addToTop(new ShowCardAndPoofAction(this));
 			AbstractDungeon.actionManager
-			.addToBottom(new ExecuteLaterAction(() -> p.discardPile.removeCard(this)));
+					.addToBottom(new ExecuteLaterAction(() -> p.discardPile.removeCard(this)));
 			AbstractCard c = StSLib.getMasterDeckEquivalent(this);
 			if (c != null) {
 				AbstractDungeon.player.masterDeck.removeCard(c);

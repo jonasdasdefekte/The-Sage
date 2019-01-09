@@ -53,7 +53,7 @@ public class Study extends AbstractSageCard {
 		draw(magicNumber);
 		AbstractDungeon.actionManager
 				.addToBottom(new HandToTopOfDrawPileAction(min, sageMisc, false,
-				cardStrings.EXTENDED_DESCRIPTION[0]));
+						cardStrings.EXTENDED_DESCRIPTION[0]));
 	}
 
 	@Override

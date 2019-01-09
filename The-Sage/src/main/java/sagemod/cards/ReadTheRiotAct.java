@@ -43,7 +43,7 @@ public class ReadTheRiotAct extends AbstractSageCard {
 	@Override
 	public void use(AbstractPlayer p, AbstractMonster m) {
 		AbstractDungeon.actionManager
-		.addToBottom(new RiotAction(CARD_AMOUNT, m, false));
+				.addToBottom(new RiotAction(CARD_AMOUNT, m, false));
 	}
 
 	@Override

@@ -46,8 +46,8 @@ public class LetItGo extends AbstractSageCard {
 	@Override
 	public void use(AbstractPlayer p, AbstractMonster m) {
 		AbstractDungeon.actionManager
-		.addToBottom(new ExhaustGainFlightByCostAction(AbstractDungeon.player,
-				AbstractDungeon.player, magicNumber, false, upgraded, upgraded));
+				.addToBottom(new ExhaustGainFlightByCostAction(AbstractDungeon.player,
+						AbstractDungeon.player, magicNumber, false, upgraded, upgraded));
 	}
 
 	@Override

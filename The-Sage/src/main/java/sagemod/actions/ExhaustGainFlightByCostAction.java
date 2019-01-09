@@ -13,7 +13,7 @@ import com.megacrit.cardcrawl.ui.panels.EnergyPanel;
 import sagemod.powers.Flight;
 
 public class ExhaustGainFlightByCostAction
-extends AbstractGameAction {
+		extends AbstractGameAction {
 	private static final UIStrings uiStrings =
 			CardCrawlGame.languagePack.getUIString("ExhaustAction");
 	public static final String[] TEXT = ExhaustGainFlightByCostAction.uiStrings.TEXT;

@@ -65,7 +65,8 @@ public class SwoopDown extends AbstractSageCard {
 			count = player().getPower(Flight.POWER_ID).amount;
 		}
 		rawDescription = getLoadedDescription();
-		rawDescription = rawDescription + EXTENDED_DESCRIPTION[0] + damage * count + EXTENDED_DESCRIPTION[1];
+		rawDescription =
+				rawDescription + EXTENDED_DESCRIPTION[0] + damage * count + EXTENDED_DESCRIPTION[1];
 		initializeDescription();
 	}
 
@@ -79,7 +80,8 @@ public class SwoopDown extends AbstractSageCard {
 			attack(m, AttackEffect.SLASH_VERTICAL);
 		}
 		if (!upgraded) {
-			AbstractDungeon.actionManager.addToBottom(new ReduceFlightBlockableAction(magicNumber, p));
+			AbstractDungeon.actionManager
+					.addToBottom(new ReduceFlightBlockableAction(magicNumber, p));
 		}
 		rawDescription = getLoadedDescription();
 		initializeDescription();

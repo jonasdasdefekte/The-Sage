@@ -32,13 +32,15 @@ public class PerpetuumMobileAction extends AbstractGameAction {
 	public void update() {
 		// mostly copied from Havoc's PlayTopCardAction
 		if (duration == Settings.ACTION_DUR_FAST) {
-			if (AbstractDungeon.player.drawPile.size() + AbstractDungeon.player.discardPile.size() == 0) {
+			if (AbstractDungeon.player.drawPile.size()
+					+ AbstractDungeon.player.discardPile.size() == 0) {
 				isDone = true;
 				return;
 			}
 
 			if (AbstractDungeon.player.drawPile.isEmpty()) {
-				AbstractDungeon.actionManager.addToTop(new PerpetuumMobileAction(target, forCost, upgraded));
+				AbstractDungeon.actionManager
+						.addToTop(new PerpetuumMobileAction(target, forCost, upgraded));
 				AbstractDungeon.actionManager.addToTop(new EmptyDeckShuffleAction());
 				isDone = true;
 				return;
@@ -70,9 +72,11 @@ public class PerpetuumMobileAction extends AbstractGameAction {
 					AbstractDungeon.actionManager.addToTop(new QueueCardAction(card, target));
 					AbstractDungeon.actionManager.addToTop(new UnlimboAction(card));
 					if (!Settings.FAST_MODE) {
-						AbstractDungeon.actionManager.addToTop(new WaitAction(Settings.ACTION_DUR_MED));
+						AbstractDungeon.actionManager
+								.addToTop(new WaitAction(Settings.ACTION_DUR_MED));
 					} else {
-						AbstractDungeon.actionManager.addToTop(new WaitAction(Settings.ACTION_DUR_FASTER));
+						AbstractDungeon.actionManager
+								.addToTop(new WaitAction(Settings.ACTION_DUR_FASTER));
 					}
 				} else {
 					AbstractDungeon.actionManager.addToTop(new DrawCardAction(player, 1));

@@ -41,7 +41,7 @@ public class StatAnalyzer {
 		try {
 			REPORT_FILE = new File(
 					StatAnalyzer.class.getProtectionDomain().getCodeSource().getLocation().toURI())
-					.getPath();
+							.getPath();
 		} catch (URISyntaxException ex) {
 			REPORT_FILE = System.getProperty("user.home");
 			ex.printStackTrace();
@@ -104,8 +104,9 @@ public class StatAnalyzer {
 		printEmptyLine();
 		CardColor cardColor = player.getCardColor();
 		log("CardColor: " + cardColor.toString());
-		Set<AbstractCard> cards = CardLibrary.cards.values().stream().filter(card -> card.color == cardColor)
-				.collect(Collectors.toSet());
+		Set<AbstractCard> cards =
+				CardLibrary.cards.values().stream().filter(card -> card.color == cardColor)
+						.collect(Collectors.toSet());
 		log("Cards: " + cards.size());
 
 		printEmptyLine();
@@ -122,26 +123,32 @@ public class StatAnalyzer {
 		printEmptyLine();
 
 		log("Printing costs");
-		Map<Integer, List<AbstractCard>> costMap = cards.stream().collect(Collectors.groupingBy(c -> c.cost));
-		costMap.entrySet().stream().sorted((e1, e2) -> e1.getKey() - e2.getKey()).forEachOrdered(e -> {
-			String name = e.getKey().equals(-1) ? "X" : e.getKey().equals(-2) ? "Unplayable" : e.getKey().toString();
-			log(name + ": " + e.getValue().size());
-		});
+		Map<Integer, List<AbstractCard>> costMap =
+				cards.stream().collect(Collectors.groupingBy(c -> c.cost));
+		costMap.entrySet().stream().sorted((e1, e2) -> e1.getKey() - e2.getKey())
+				.forEachOrdered(e -> {
+					String name = e.getKey().equals(-1) ? "X"
+							: e.getKey().equals(-2) ? "Unplayable" : e.getKey().toString();
+					log(name + ": " + e.getValue().size());
+				});
 		printEmptyLine();
 
 		Set<AbstractRelic> relics = new HashSet<>();
 		switch (character) {
 			case IRONCLAD:
 				relics.addAll(
-						((HashMap<String, AbstractRelic>) ReflectionHacks.getPrivateStatic(RelicLibrary.class, "redRelics"))
-						.values());
+						((HashMap<String, AbstractRelic>) ReflectionHacks
+								.getPrivateStatic(RelicLibrary.class, "redRelics"))
+										.values());
 				break;
 			case THE_SILENT:
-				relics.addAll(((HashMap<String, AbstractRelic>) ReflectionHacks.getPrivateStatic(RelicLibrary.class,
+				relics.addAll(((HashMap<String, AbstractRelic>) ReflectionHacks.getPrivateStatic(
+						RelicLibrary.class,
 						"greenRelics")).values());
 				break;
 			case DEFECT:
-				relics.addAll(((HashMap<String, AbstractRelic>) ReflectionHacks.getPrivateStatic(RelicLibrary.class,
+				relics.addAll(((HashMap<String, AbstractRelic>) ReflectionHacks.getPrivateStatic(
+						RelicLibrary.class,
 						"blueRelics")).values());
 				break;
 			default:
@@ -164,8 +171,10 @@ public class StatAnalyzer {
 				potionCount = 1;
 				break;
 			default:
-				potionCount = ((HashMap<String, PlayerClass>) ReflectionHacks.getPrivateStatic(BaseMod.class,
-						"potionPlayerClassMap")).entrySet().stream().filter(e -> e.getValue() == character).count();
+				potionCount = ((HashMap<String, PlayerClass>) ReflectionHacks.getPrivateStatic(
+						BaseMod.class,
+						"potionPlayerClassMap")).entrySet().stream()
+								.filter(e -> e.getValue() == character).count();
 				break;
 		}
 
@@ -182,7 +191,8 @@ public class StatAnalyzer {
 		lines.add("\n");
 	}
 
-	private static <T> void printCountFor(Collection<T> collection, String name, Predicate<T> predicate) {
+	private static <T> void printCountFor(Collection<T> collection, String name,
+			Predicate<T> predicate) {
 		long count = collection.stream().filter(predicate).count();
 		if (count > 0) {
 			log(name + ": " + count);

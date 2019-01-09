@@ -37,8 +37,9 @@ public class RedBeastStatue extends AbstractSageRelic {
 	}
 
 	public static float getCommonChanceModifier(float percentage) {
-		return 100f / PotionHelper.POTION_COMMON_CHANCE - (PotionHelper.POTION_UNCOMMON_CHANCE + POTION_RARE_CHANCE)
-				* percentage / PotionHelper.POTION_COMMON_CHANCE;
+		return 100f / PotionHelper.POTION_COMMON_CHANCE
+				- (PotionHelper.POTION_UNCOMMON_CHANCE + POTION_RARE_CHANCE)
+						* percentage / PotionHelper.POTION_COMMON_CHANCE;
 	}
 
 }

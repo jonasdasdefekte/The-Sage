@@ -95,8 +95,8 @@ public class PotionListener implements PrePotionUseSubscriber, PostPotionUseSubs
 			power.flash();
 
 			AbstractDungeon.actionManager
-			.addToBottom(new ReducePowerAction(AbstractDungeon.player,
-					AbstractDungeon.player, power, 1));
+					.addToBottom(new ReducePowerAction(AbstractDungeon.player,
+							AbstractDungeon.player, power, 1));
 		}
 	}
 
@@ -150,7 +150,8 @@ public class PotionListener implements PrePotionUseSubscriber, PostPotionUseSubs
 			AbstractPower power = AbstractDungeon.player.getPower(AlchemyExpertPower.POWER_ID);
 			int amount = power.amount;
 			AbstractDungeon.actionManager.addToTop(new ApplyPowerAction(AbstractDungeon.player,
-					AbstractDungeon.player, new ArtifactPower(AbstractDungeon.player, amount), amount));
+					AbstractDungeon.player, new ArtifactPower(AbstractDungeon.player, amount),
+					amount));
 			power.flash();
 		}
 	}
@@ -159,7 +160,7 @@ public class PotionListener implements PrePotionUseSubscriber, PostPotionUseSubs
 		if (AbstractDungeon.player.hasPower(PotionTrancePower.POWER_ID)) {
 			AbstractPower power = AbstractDungeon.player.getPower(PotionTrancePower.POWER_ID);
 			AbstractDungeon.actionManager
-			.addToBottom(new DrawCardAction(AbstractDungeon.player, power.amount));
+					.addToBottom(new DrawCardAction(AbstractDungeon.player, power.amount));
 			power.flash();
 		}
 	}

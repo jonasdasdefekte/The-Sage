@@ -56,7 +56,7 @@ public class HowToGreetByrds extends AbstractSageCard {
 				AbstractPower power = p.getPower(Flight.POWER_ID);
 				if (effect <= 0) {
 					AbstractDungeon.actionManager
-					.addToBottom(new RemoveSpecificPowerAction(p, p, power));
+							.addToBottom(new RemoveSpecificPowerAction(p, p, power));
 				} else {
 					power.amount = effect;
 					power.flash();

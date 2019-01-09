@@ -11,7 +11,8 @@ import com.megacrit.cardcrawl.powers.AbstractPower;
 public class Airborne extends AbstractSagePower {
 
 	public static final String POWER_ID = "sagemod:Airborne";
-	private static final PowerStrings powerStrings = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
+	private static final PowerStrings powerStrings =
+			CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
 	public static final String NAME = powerStrings.NAME;
 	public static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;
 
@@ -25,7 +26,8 @@ public class Airborne extends AbstractSagePower {
 	@Override
 	public void atStartOfTurn() {
 		flash();
-		AbstractDungeon.actionManager.addToBottom(new RemoveSpecificPowerAction(owner, owner, POWER_ID));
+		AbstractDungeon.actionManager
+				.addToBottom(new RemoveSpecificPowerAction(owner, owner, POWER_ID));
 	}
 
 	// Actual implementation is in SageFlight
@@ -38,10 +40,11 @@ public class Airborne extends AbstractSagePower {
 		CardCrawlGame.sound.play("NULLIFY_SFX");
 		flashWithoutSound();
 		if (amount <= 0) {
-			AbstractDungeon.actionManager.addToTop(new RemoveSpecificPowerAction(owner, owner, POWER_ID));
+			AbstractDungeon.actionManager
+					.addToTop(new RemoveSpecificPowerAction(owner, owner, POWER_ID));
 		} else {
 			AbstractDungeon.actionManager
-			.addToTop(new ReducePowerAction(owner, owner, POWER_ID, i));
+					.addToTop(new ReducePowerAction(owner, owner, POWER_ID, i));
 		}
 	}
 

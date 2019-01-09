@@ -37,8 +37,7 @@ public class FlyingCarpetPreview extends AbstractSageCard {
 	}
 
 	@Override
-	public void use(AbstractPlayer p, AbstractMonster m) {
-	}
+	public void use(AbstractPlayer p, AbstractMonster m) {}
 
 	@Override
 	public String getLoadedDescription() {

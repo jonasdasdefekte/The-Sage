@@ -50,7 +50,8 @@ public class LightWeighted extends AbstractSageCard {
 		int flightGain = magicNumber;
 		if (p.hasPower(FrailPower.POWER_ID)) {
 			flightGain += p.getPower(FrailPower.POWER_ID).amount;
-			AbstractDungeon.actionManager.addToBottom(new RemoveSpecificPowerAction(p, p, FrailPower.POWER_ID));
+			AbstractDungeon.actionManager
+					.addToBottom(new RemoveSpecificPowerAction(p, p, FrailPower.POWER_ID));
 		}
 		if (flightGain > 0) {
 			applyPowerToSelf(new Flight(p, flightGain));

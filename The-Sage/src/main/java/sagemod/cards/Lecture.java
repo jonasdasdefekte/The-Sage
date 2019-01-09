@@ -76,7 +76,7 @@ public class Lecture extends AbstractSageCard {
 	public void onPlayCard(AbstractCard c, AbstractMonster m) {
 		super.onPlayCard(c, m);
 		AbstractDungeon.actionManager
-		.addToBottom(new ExecuteLaterAction(this::updateExtendedDescription));
+				.addToBottom(new ExecuteLaterAction(this::updateExtendedDescription));
 	}
 
 	@Override

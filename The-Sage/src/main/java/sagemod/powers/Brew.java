@@ -33,7 +33,8 @@ import sagemod.tips.SageTipTracker;
 public class Brew extends AbstractSagePower {
 
 	public static final String POWER_ID = "sagemod:Brew";
-	private static final PowerStrings powerStrings = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
+	private static final PowerStrings powerStrings =
+			CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
 	private static final TutorialStrings tutStrings =
 			CardCrawlGame.languagePack.getTutorialString(SageTipTracker.OVER_BREW);
 	public static final String NAME = powerStrings.NAME;
@@ -72,7 +73,8 @@ public class Brew extends AbstractSagePower {
 		potions.removeAll(toRemove);
 		Collections.sort(potions);
 		if (potions.isEmpty()) {
-			AbstractDungeon.actionManager.addToBottom(new RemoveSpecificPowerAction(owner, owner, this));
+			AbstractDungeon.actionManager
+					.addToBottom(new RemoveSpecificPowerAction(owner, owner, this));
 		} else {
 			amount = potions.get(0).turns;
 		}
@@ -214,7 +216,8 @@ public class Brew extends AbstractSagePower {
 				power.flash();
 			} else {
 				power = new Brew(owner, turns);
-				AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(owner, owner, power, turns));
+				AbstractDungeon.actionManager
+						.addToBottom(new ApplyPowerAction(owner, owner, power, turns));
 				power.addPotionToQueue(turns, potion);
 			}
 
@@ -259,7 +262,8 @@ public class Brew extends AbstractSagePower {
 
 		power.potions.clear();
 
-		AbstractDungeon.actionManager.addToBottom(new RemoveSpecificPowerAction(power.owner, power.owner, power));
+		AbstractDungeon.actionManager
+				.addToBottom(new RemoveSpecificPowerAction(power.owner, power.owner, power));
 	}
 
 	public static class Potion implements Comparable<Potion> {

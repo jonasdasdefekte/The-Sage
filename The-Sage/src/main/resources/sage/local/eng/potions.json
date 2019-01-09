@@ -1,16 +1,16 @@
 {
-  "sagemod:Fata_Morgana": {
-    "NAME": "Fata Morgana",
-    "DESCRIPTIONS": [
-      "Apply #b",
-      " #yDisoriented."
-    ]
-  },
-  "sagemod:Flight_Potion": {
-    "NAME": "Flight Potion",
-    "DESCRIPTIONS": [
-      "Gain #b",
-      " #yFlight."
-    ]
-  }
+	"sagemod:Fata_Morgana": {
+		"NAME": "Fata Morgana",
+		"DESCRIPTIONS": [
+			"Apply #b",
+			" #yDisoriented."
+		]
+	},
+	"sagemod:Flight_Potion": {
+		"NAME": "Flight Potion",
+		"DESCRIPTIONS": [
+			"Gain #b",
+			" #yFlight."
+		]
+	}
 }

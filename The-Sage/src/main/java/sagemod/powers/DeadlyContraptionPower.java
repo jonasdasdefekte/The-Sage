@@ -16,7 +16,8 @@ import sagemod.actions.ExecuteLaterAction;
 public class DeadlyContraptionPower extends AbstractSagePower implements HealthBarRenderPower {
 
 	public static final String POWER_ID = "sagemod:Deadly_Contraption";
-	private static final PowerStrings powerStrings = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
+	private static final PowerStrings powerStrings =
+			CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
 	public static final String NAME = powerStrings.NAME;
 	public static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;
 
@@ -42,10 +43,10 @@ public class DeadlyContraptionPower extends AbstractSagePower implements HealthB
 			if (owner.hasPower(ArtifactPower.POWER_ID)) {
 				int artifact = owner.getPower(ArtifactPower.POWER_ID).amount;
 				AbstractDungeon.actionManager
-				.addToBottom(new ExecuteLaterAction(this::flashWithoutSound));
+						.addToBottom(new ExecuteLaterAction(this::flashWithoutSound));
 				AbstractDungeon.actionManager
-				.addToBottom(new LoseHPAction(owner, owner, artifact * amount,
-						AttackEffect.NONE));
+						.addToBottom(new LoseHPAction(owner, owner, artifact * amount,
+								AttackEffect.NONE));
 			}
 		}
 	}

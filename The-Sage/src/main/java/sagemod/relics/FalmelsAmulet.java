@@ -25,6 +25,7 @@ public class FalmelsAmulet extends AbstractSageRelic {
 
 	private int turn;
 	private List<AbstractCreature> alreadyDone;
+
 	public FalmelsAmulet() {
 		super(ID, TIER, SOUND);
 		alreadyDone = new ArrayList<>();
