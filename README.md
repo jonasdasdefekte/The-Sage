@@ -78,7 +78,7 @@ There are more effects and mini-Archetypes. Although we better leave them for yo
 - **Balance** (we have been playtesting since end of 09/2018, most things should be reasonable by now but we are still tweaking here and there, feedback is welcome);
 - growing the card set to **full size** of 75 (feel free to share your ideas if you like to);
 - card **art** will be added in slow pace (Jonas made all of it so far, we would be glad for anyone who contributes);
-- functions from ![STSLib](https://github.com/kiooeht/StSLib).
+- functions from [STSLib](https://github.com/kiooeht/StSLib).
 - maybe we'll come up with some more suprises...?
 
 ## How To Mod The Spire
