@@ -159,9 +159,9 @@ Starts with 50 HP, 169 gold
 	Shining Powder
 		Skill, Unplayable:
 		Whenever you use a Potion while this card in your hand, gain 1 (2) Energy.
-	Undermine
+TODO:	Undermine
 		Skill, 1 Energy:
-		Apply 5 (8) Artifact. When you attack an enemy this turn, they take extra damage equal to the Artifact on them. // Works on multi Attacks. Multiple copies of this stack for the amount of turns.
+		Apply 2 Artifact. When you attack an enemy this turn (for 2 turns), they take extra damage equal to the Artifact on them. // Works on multi Attacks. Multiple copies of this stack for the amount of turns.
 	Altitude
 		Power, 1 Energy: 
 		Gain 2 (3) Flight.
@@ -173,7 +173,7 @@ Starts with 50 HP, 169 gold
 		Gain 1 Brewing.
 	Deadly Contraption
 		Power, 1 Energy: 
-		Apply 3 (5) Artifact to ALL enemies. At the end of their turn, enemies lose 1 HP per Artifact on them. Taxing. // Health Bar visuals like for Poison (HealthBarRenderPower) Taxing: This costs 1 more Energy for every time you played this card this combat.
+		Apply 1 (2) Artifact to ALL enemies. At the end of their turn, enemies lose 1 HP per Artifact on them. Taxing. // Health Bar visuals like for Poison (HealthBarRenderPower) Taxing: This costs 1 more Energy for every time you played this card this combat.
 	Rickety Defense
 		Power, 1 Energy:
 		(Upgrade: Innate) At the end of your turn, set your Block to your Frail if you have more Frail than Block.

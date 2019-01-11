@@ -19,7 +19,7 @@ public class Undermine extends AbstractSageCard {
 	private static final CardRarity RARITY = CardRarity.UNCOMMON;
 	private static final CardTarget TARGET = CardTarget.SELF_AND_ENEMY;
 
-	private static final int ARTIFACT_AMT = 5;
+	private static final int ARTIFACT_AMT = 3;
 	private static final int UPGRADE_ARTIFACT_AMT = 3;
 	private static final int POWER_GAIN = 1;
 

@@ -21,8 +21,8 @@ public class DeadlyContraption extends AbstractSageCard {
 	private static final CardTarget TARGET = CardTarget.ALL_ENEMY;
 
 	private static final int POWER_AMT = 1;
-	private static final int ARTIFACT_AMT = 3;
-	private static final int UPGRADE_ARTIFACT_AMT = 2;
+	private static final int ARTIFACT_AMT = 1;
+	private static final int UPGRADE_ARTIFACT_AMT = 1;
 
 	public DeadlyContraption() {
 		super(ID, NAME, COST, DESCRIPTION, TYPE, RARITY, TARGET);
