@@ -51,7 +51,7 @@
 	},
 	"sagemod:Blurry": {
 		"NAME": "Blurry",
-		"DESCRIPTION": "Gain !sagemod:MISC! Temporary_HP. Gain !M! Temporary_HP per Frail you have. NL Exhaust.",
+		"DESCRIPTION": "Gain !sagemod:MISC! Temporary_HP. NL Gain !M! Temporary_HP per Frail you have. NL Exhaust.",
 		"EXTENDED_DESCRIPTION": [
 			" NL (Gives a total of ",
 			" Temporary_HP. )"
@@ -98,7 +98,7 @@
 	"sagemod:Crank": {
 		"NAME": "Crank",
 		"DESCRIPTION": "Deal !D! damage. NL If the enemy has Artifact, draw !M! card.",
-		"UPGRADE_DESCRIPTION": "Deal !D! damage. NL If the enemy has Artifact, draw cards equal to the enemies Artifact."
+		"UPGRADE_DESCRIPTION": "Deal !D! damage. NL Draw cards equal to the enemy's Artifact."
 	},
 	"sagemod:Cultist_Form": {
 		"NAME": "Cultist Form",
