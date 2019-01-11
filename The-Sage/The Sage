@@ -159,7 +159,7 @@ Starts with 50 HP, 169 gold
 	Shining Powder
 		Skill, Unplayable:
 		Whenever you use a Potion while this card in your hand, gain 1 (2) Energy.
-TODO:	Undermine
+	Undermine
 		Skill, 1 Energy:
 		Apply 2 Artifact. When you attack an enemy this turn (for 2 turns), they take extra damage equal to the Artifact on them. // Works on multi Attacks. Multiple copies of this stack for the amount of turns.
 	Altitude

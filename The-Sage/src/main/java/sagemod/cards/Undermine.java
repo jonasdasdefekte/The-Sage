@@ -19,36 +19,39 @@ public class Undermine extends AbstractSageCard {
 	private static final CardRarity RARITY = CardRarity.UNCOMMON;
 	private static final CardTarget TARGET = CardTarget.SELF_AND_ENEMY;
 
-	private static final int ARTIFACT_AMT = 3;
-	private static final int UPGRADE_ARTIFACT_AMT = 3;
-	private static final int POWER_GAIN = 1;
+	private static final int ARTIFACT_AMT = 2;
+	private static final int TURNS = 1;
+	private static final int UPGRADE_TURNS = 1;
 
 	public Undermine() {
 		super(ID, NAME, COST, DESCRIPTION, TYPE, RARITY, TARGET);
-		baseMagicNumber = magicNumber = ARTIFACT_AMT;
+		baseMagicNumber = magicNumber = TURNS;
+		initSageMisc(ARTIFACT_AMT);
 	}
 
 	@Override
 	public void upgrade() {
 		if (!upgraded) {
 			upgradeName();
-			upgradeMagicNumber(UPGRADE_ARTIFACT_AMT);
+			upgradeMagicNumber(UPGRADE_TURNS);
+			rawDescription = cardStrings.UPGRADE_DESCRIPTION;
+			initializeDescription();
 		}
 	}
 
 	@Override
 	public AbstractCard makeCopy() {
-		return new Undermine();
-	}
+		return new Undermine();		
+	}			
 
 	@Override
 	public void use(AbstractPlayer p, AbstractMonster m) {
-		applyPower(new ArtifactPower(m, magicNumber), m);
-		applyPowerToSelf(new UnderminePower(p, POWER_GAIN));
+		applyPower(new ArtifactPower(m, sageMisc), m);
+		applyPowerToSelf(new UnderminePower(p, magicNumber));		
 	}
 
 	@Override
 	public String getLoadedDescription() {
-		return DESCRIPTION;
+		return upgraded ? cardStrings.UPGRADE_DESCRIPTION : DESCRIPTION;
 	}
 }

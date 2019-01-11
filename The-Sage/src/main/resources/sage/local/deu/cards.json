@@ -387,7 +387,8 @@
 	},
 	"sagemod:Undermine": {
 		"NAME": "Untergraben",
-		"DESCRIPTION": "Wennde !M! Artefakt an. Wenn du einen Gegner diese Runde angreifst, erhält er soviel zusätzlichen Schaden, wieviel Artefakt er hat."
+		"DESCRIPTION": "Wende !sagemod:MISC! Artefakt an. Wenn du einen Gegner diese Runde angreifst, erhält er soviel zusätzlichen Schaden, wieviel Artefakt er hat.",
+		"UPGRADE_DESCRIPTION": "Wende !sagemod:MISC! Artefakt an. Wenn du einen Gegner die nächsten !M! Runden angreifst, erhält er soviel zusätzlichen Schaden, wieviel Artefakt er hat."
 	},
 	"sagemod:Vigorous_Body": {
 		"NAME": "Energischer Körper",

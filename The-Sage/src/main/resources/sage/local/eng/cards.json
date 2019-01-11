@@ -387,7 +387,8 @@
 	},
 	"sagemod:Undermine": {
 		"NAME": "Undermine",
-		"DESCRIPTION": "Apply !M! Artifact. When you attack an enemy this turn, they take extra damage equal to the Artifact on them."
+		"DESCRIPTION": "Apply !sagemod:MISC! Artifact. When you attack an enemy this turn, they take extra damage equal to the Artifact on them.",
+		"UPGRADE_DESCRIPTION": "Apply !sagemod:MISC! Artifact. When you attack an enemy the next !M! turns, they take extra damage equal to the Artifact on them."
 	},
 	"sagemod:Vigorous_Body": {
 		"NAME": "Vigorous Body",
