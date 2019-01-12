@@ -1,7 +1,7 @@
 {
 	"sagemod:Over_Brew": {
 		"TEXT": [
-			"If you don't use potions this turn, you will have to discard potions at the start of your next turn, when you obtain the Brewed potion. You won't be able to use the surplus potion for its effect!"
+			"If you don't use potions this turn, at the start of your next turn, when you obtain the Brewed potions, you must discard potions without using their effect!"
 		],
 		"LABEL": [
 			"Brewing too many potions"
@@ -17,7 +17,7 @@
 	},
 	"sagemod:Flight_Reduction": {
 		"TEXT": [
-			"If you don't block an attack this turn, you will stop Flying. This means that all attacks in the same round after losing Flight deal double the displayed damage!"
+			"If you don't block an attack this turn, you will stop Flying. This means that all attacks in the same round after losing Flight deal double the damage displayed!"
 		],
 		"LABEL": [
 			"Knocked Down"
