@@ -32,6 +32,7 @@ public class ReadTheRiotAct extends AbstractSageCard {
 			upgradeName();
 			exhaust = false;
 			rawDescription = cardStrings.UPGRADE_DESCRIPTION;
+			initializeDescription();
 		}
 	}
 
