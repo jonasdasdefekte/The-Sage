@@ -378,8 +378,8 @@
 	},
 	"sagemod:Tinker": {
 		"NAME": "Tinker",
-		"DESCRIPTION": "Gain 1 Block per Artifact on the field + !sagemod:MISC! . NL (Gains !B! Block.)",
-		"UPGRADE_DESCRIPTION": "Gain 1 Block per Artifact on the field + !sagemod:MISC! . NL (Gains !B! Block.)"
+		"DESCRIPTION": "Gain 1 Block per Artifact on the field + !sagemod:MISC! NL (gains !B! Block).",
+		"UPGRADE_DESCRIPTION": "Gain 1 Artifact. NL Gain 1 Block per Artifact on the field + !sagemod:MISC! NL (gains !B! Block)."
 	},
 	"sagemod:Trixter": {
 		"NAME": "Trixter",

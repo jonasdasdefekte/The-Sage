@@ -305,7 +305,7 @@
 		"UPGRADE_DESCRIPTION": "Braue einen zufälligen Trank in !sagemod:BRW! Zügen."
 	},
 	"sagemod:Read_The_Riot_Act": {
-		"NAME": "Lies den Krawallen-Akt",
+		"NAME": "Die Leviten lesen",
 		"DESCRIPTION": "Wähle eine Karte, die X kostet, aus deinem Nachziehstapel und spiele sie. NL Erschöpft.",
 		"UPGRADE_DESCRIPTION": "Wähle eine Karte, die X kostet, aus deinem Nachziehstapel und spiele sie.",
 		"EXTENDED_DESCRIPTION": [
@@ -378,8 +378,8 @@
 	},
 	"sagemod:Tinker": {
 		"NAME": "Basteln",
-		"DESCRIPTION": "Erhalte 1 Block pro Artefakt auf dem Feld + !sagemod:MISC! . NL (Gibt !B! Block.)",
-		"UPGRADE_DESCRIPTION": "Erhalte 1 Block pro Artefakt auf dem Feld + !sagemod:MISC! . NL (Gibt !B! Block.)"
+		"DESCRIPTION": "Erhalte 1 Block pro Artefakt auf dem Feld + !sagemod:MISC! NL (gibt !B! Block).",
+		"UPGRADE_DESCRIPTION": "Erhalte 1 Artefakt. NL Erhalte 1 Block pro Artefakt auf dem Feld + !sagemod:MISC! NL (gibt !B! Block)."
 	},
 	"sagemod:Trixter": {
 		"NAME": "Trixter",
