@@ -255,9 +255,9 @@ Starts with 50 HP, 169 gold
 	Cook Book
 		Uncommon relic: 
 		Start each combat with 1 Brewing.
-	Ancient Magnet
+TODO:	Ancient Magnet
 		Uncommon relic: 
-		Enemies have 1 less Strength per Artifact on them.
+		You can debuff the enemy even if they have Artifact.
 	Balloon Animal
 		Uncommon relic:
 		Draw 1 card at the start of your turn if you have no Flight.
