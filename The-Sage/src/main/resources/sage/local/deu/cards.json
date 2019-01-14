@@ -190,7 +190,11 @@
 	},
 	"sagemod:How_To_Murder_Ants": {
 		"NAME": "Wie man Ameisen mordet",
-		"DESCRIPTION": "Luft. NL Füge !M! mal einem zufälligen Gegner X Schaden zu."
+		"DESCRIPTION": "Luft. NL Füge !M! mal einem zufälligen Gegner X Schaden zu.",
+		"EXTENDED_DESCRIPTION": [
+			" NL (Fügt !sagemod:MISC! Schaden ",
+			" mal.)"
+		]
 	},
 	"sagemod:How_To_Poke_At_Slimes": {
 		"NAME": "Wie man Schleime sticht",

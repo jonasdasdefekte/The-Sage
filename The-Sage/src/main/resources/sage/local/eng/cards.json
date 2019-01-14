@@ -190,7 +190,11 @@
 	},
 	"sagemod:How_To_Murder_Ants": {
 		"NAME": "How To Murder Ants",
-		"DESCRIPTION": "Air. NL Deal X damage to a random enemy !M! times."
+		"DESCRIPTION": "Air. NL Deal X damage to a random enemy !M! times.",
+		"EXTENDED_DESCRIPTION": [
+			" NL (Deals !sagemod:MISC! damage ",
+			" times.)"
+		]
 	},
 	"sagemod:How_To_Poke_At_Slimes": {
 		"NAME": "How To Poke At Slimes",
