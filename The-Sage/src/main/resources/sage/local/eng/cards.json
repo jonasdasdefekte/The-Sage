@@ -232,7 +232,7 @@
 	},
 	"sagemod:Lunchtime": {
 		"NAME": "Lunchtime!",
-		"DESCRIPTION": "Air. Lose !M! Flight and brew all potions immediately."
+		"DESCRIPTION": "Air. NL Lose !M! Flight and brew all potions immediately."
 	},
 	"sagemod:Mechanics_Break": {
 		"NAME": "Mechanics Break!",
@@ -378,8 +378,8 @@
 	},
 	"sagemod:Tinker": {
 		"NAME": "Tinker",
-		"DESCRIPTION": "Gain !B! Block. (Equal to ALL Artifact on the field + !sagemod:MISC!)",
-		"UPGRADE_DESCRIPTION": "Gain !M! Artifact. Gain !B! Block. (Equal to ALL Artifact on the field + !sagemod:MISC!)"
+		"DESCRIPTION": "Gain 1 Block per Artifact on the field + !sagemod:MISC! . NL (Gains !B! Block.)",
+		"UPGRADE_DESCRIPTION": "Gain 1 Block per Artifact on the field + !sagemod:MISC! . NL (Gains !B! Block.)"
 	},
 	"sagemod:Trixter": {
 		"NAME": "Trixter",

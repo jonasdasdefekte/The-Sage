@@ -232,7 +232,7 @@
 	},
 	"sagemod:Lunchtime": {
 		"NAME": "Essenszeit!",
-		"DESCRIPTION": "Luft. Verliere !M! Flug und braue sofort alle Tränke."
+		"DESCRIPTION": "Luft. NL Verliere !M! Flug und braue sofort alle Tränke."
 	},
 	"sagemod:Mechanics_Break": {
 		"NAME": "Mechanik zerbricht!",
@@ -378,8 +378,8 @@
 	},
 	"sagemod:Tinker": {
 		"NAME": "Basteln",
-		"DESCRIPTION": "Erhalte !B! Block. (ALLE Artefakte auf dem Feld + !sagemod:MISC!)",
-		"UPGRADE_DESCRIPTION": "Erhalte !M! Artefakt. Erhalte !B! Block. (ALLE Artefakte auf dem Feld + !sagemod:MISC!)"
+		"DESCRIPTION": "Erhalte 1 Block pro Artefakt auf dem Feld + !sagemod:MISC! . NL (Gibt !B! Block.)",
+		"UPGRADE_DESCRIPTION": "Erhalte 1 Block pro Artefakt auf dem Feld + !sagemod:MISC! . NL (Gibt !B! Block.)"
 	},
 	"sagemod:Trixter": {
 		"NAME": "Trixter",
