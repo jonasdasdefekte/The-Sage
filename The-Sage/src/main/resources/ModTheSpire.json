@@ -6,9 +6,9 @@
 		"Skrelpoid"
 	],
 	"description": "Adds a new character, The Sage (72 cards, 6 relics, 1 potion).\nAdds Upgraded potions to the game.\nCharacter neutral content: 3 colorless cards, 6 relics, 1 potion, 1 event.\n\nA mechanic who studied about the cult of a blue bird. She learned flying a carpet and brewing potions in order to stop its rise.\n\nSupported Languages: ENG, DEU.",
-	"version": "0.4.2",
-	"sts_version": "01-10-2019",
-	"mts_version": "3.7.5",
+	"version": "0.4.3",
+	"sts_version": "01-18-2019",
+	"mts_version": "3.8.0",
 	"dependencies": [
 		"basemod",
 		"stslib"
