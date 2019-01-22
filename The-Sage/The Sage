@@ -34,9 +34,9 @@ Starts with 50 HP, 169 gold
 	Salty Strike
 		Attack, 1 Energy:
 		Deal 6 (9) damage. The enemy gains 1 (2) Thirsty.
-	How To Poke At Slimes
+TODO:	How To Poke At Slimes
 		Attack, X Energy:
-		Deal X (+3) damage to ALL enemies. Gain 2 Frail. Refund 3 (all).
+		Deal X (+3) damage to ALL enemies. Gain 2 Frail. Refund 3 (6).
 	Energetic Brew
 		Attack, 1 Energy: 
 		Deal 6 damage. Brew an Energy potion(+) in 4 turns.
@@ -58,15 +58,15 @@ Starts with 50 HP, 169 gold
 	Armor Brew
 		Skill, 1 Energy: 
 		Gain 5 (8) Block. Brew a Block potion(+) in 4 turns.
-	How To Befriend A Turtle
+TODO:	How To Befriend A Turtle
 		Skill, X Energy:
-		Gain X (+3) Temporary HP. Refund all.
+		Gain X (+3) Temporary HP. Refund 3 (6).
 	Catch me if you can
 		Skill, 0 Energy
 		Air. Prevent the next 2 (4) times you would lose Flight until the start of your next turn. // (Should also work on Flight loss in your own turn. "Lose 2 Flight" will lose 2 stacks of Airborne instead and "Lose all Flight" will cancel Airborne and Flight completely. Artifact no longer negates Flight loss.)
-	Step Back 
+TODO:	Step Back 
 		Skill, 2 Energy:
-		Gain 5 (8) Block. If you are flying, gain 2 Energy. Otherwise, gain 1 Flight.
+		Gain 5 (8) Block. If you are flying, refund 2. Otherwise, gain 1 Flight.
 	Ambition
 		Skill, 1(0) Energy:
 		Gain 2 Frail. Gain [E][E].
@@ -141,9 +141,9 @@ Starts with 50 HP, 169 gold
 	Potion Trance
 		Skill, 1 Energy:
 		Draw 1 card (2 cards) whenever you use a Potion this turn. You cannot gain energy this turn.
-	How To Amuse Sneckos
+TODO:	How To Amuse Sneckos
 		Skill, X Energy:
-		Draw X cards. (Refund 1.)
+		Draw X cards. Refund 1 (2).
 	Let it go
 		Skill, 1 Energy:
 		Exhaust a card (up to 2 cards) from your hand. Gain Flight equal to its (their) cost. Exhaust.
