@@ -3,8 +3,7 @@
 		"NAME": "Uralter Magnet",
 		"FLAVOR": "Er reagiert auf die Technologie der Ahnen.",
 		"DESCRIPTIONS": [
-			"Gegner haben #b",
-			" weniger #yStärke pro #yArtefakt auf ihnen."
+			"Du kannst Gegner auch debuffen, wenn sie Artefakt haben."
 		]
 	},
 	"sagemod:Balloon_Animal": {

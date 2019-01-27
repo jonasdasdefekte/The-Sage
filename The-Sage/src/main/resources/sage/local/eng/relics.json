@@ -3,8 +3,7 @@
 		"NAME": "Ancient Magnet",
 		"FLAVOR": "It reacts on any technology of the Ancients.",
 		"DESCRIPTIONS": [
-			"Enemies have #b",
-			" less #yStrength per #yArtifact on them."
+			"You can debuff the enemy even if they have Artifact."
 		]
 	},
 	"sagemod:Balloon_Animal": {
