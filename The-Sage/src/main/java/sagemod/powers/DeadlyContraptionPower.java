@@ -2,6 +2,7 @@ package sagemod.powers;
 
 import com.badlogic.gdx.graphics.Color;
 import com.evacipated.cardcrawl.mod.stslib.powers.interfaces.HealthBarRenderPower;
+import com.evacipated.cardcrawl.mod.stslib.powers.interfaces.InvisiblePower;
 import com.megacrit.cardcrawl.actions.AbstractGameAction.AttackEffect;
 import com.megacrit.cardcrawl.actions.common.LoseHPAction;
 import com.megacrit.cardcrawl.core.AbstractCreature;
@@ -13,7 +14,7 @@ import com.megacrit.cardcrawl.powers.ArtifactPower;
 import com.megacrit.cardcrawl.rooms.AbstractRoom.RoomPhase;
 import sagemod.actions.ExecuteLaterAction;
 
-public class DeadlyContraptionPower extends AbstractSagePower implements HealthBarRenderPower {
+public class DeadlyContraptionPower extends AbstractSagePower implements HealthBarRenderPower, InvisiblePower {
 
 	public static final String POWER_ID = "sagemod:Deadly_Contraption";
 	private static final PowerStrings powerStrings =
@@ -24,7 +25,7 @@ public class DeadlyContraptionPower extends AbstractSagePower implements HealthB
 	public static final Color HEALTH_BAR_RENDER_COLOR = new Color(0xEAD290FF);
 
 	public DeadlyContraptionPower(AbstractCreature owner, int amount) {
-		super(POWER_ID, NAME, owner, amount);
+		super(POWER_ID, NAME, owner, -1);
 		updateDescription();
 		type = AbstractPower.PowerType.BUFF;
 	}
@@ -33,7 +34,6 @@ public class DeadlyContraptionPower extends AbstractSagePower implements HealthB
 	public void updateDescription() {
 		description = DESCRIPTIONS[0] + amount + DESCRIPTIONS[1];
 	}
-
 
 	@Override
 	public void atStartOfTurn() {
@@ -45,16 +45,24 @@ public class DeadlyContraptionPower extends AbstractSagePower implements HealthB
 				AbstractDungeon.actionManager
 						.addToBottom(new ExecuteLaterAction(this::flashWithoutSound));
 				AbstractDungeon.actionManager
-						.addToBottom(new LoseHPAction(owner, owner, artifact * amount,
+						.addToBottom(new LoseHPAction(owner, owner, artifact * times(),
 								AttackEffect.NONE));
 			}
+		}
+	}
+	
+	private int times() {
+		if (AbstractDungeon.player.hasPower(DeadlyContraptionPower.POWER_ID)) {
+			return AbstractDungeon.player.getPower(DeadlyContraptionPower.POWER_ID).amount;
+		} else {
+			return 0;
 		}
 	}
 
 	@Override
 	public int getHealthBarAmount() {
 		if (owner.hasPower(ArtifactPower.POWER_ID)) {
-			return owner.getPower(ArtifactPower.POWER_ID).amount * amount;
+			return owner.getPower(ArtifactPower.POWER_ID).amount * times();
 		}
 		return 0;
 	}

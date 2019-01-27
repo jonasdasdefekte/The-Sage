@@ -63,7 +63,7 @@
 	"sagemod:Deadly_Contraption": {
 		"NAME": "Deadly Contraption",
 		"DESCRIPTIONS": [
-			"At the end of their turn, the enemy loses #b",
+			"At the end of their turn, enemies lose #b",
 			" HP per Artifact on them."
 		]
 	},

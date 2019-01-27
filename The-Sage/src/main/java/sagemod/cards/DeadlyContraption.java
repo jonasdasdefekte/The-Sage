@@ -7,6 +7,7 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.ArtifactPower;
+import sagemod.powers.DeadlyContraptionPlayerPower;
 import sagemod.powers.DeadlyContraptionPower;
 
 public class DeadlyContraption extends AbstractSageCard {
@@ -46,9 +47,12 @@ public class DeadlyContraption extends AbstractSageCard {
 
 	@Override
 	public void use(AbstractPlayer p, AbstractMonster m) {
+		applyPower(new DeadlyContraptionPlayerPower(p, sageMisc), p);
 		for (AbstractMonster mo : AbstractDungeon.getCurrRoom().monsters.monsters) {
 			applyPower(new ArtifactPower(mo, magicNumber), mo);
-			applyPower(new DeadlyContraptionPower(mo, sageMisc), mo);
+			if (!mo.hasPower(DeadlyContraptionPower.POWER_ID)) {
+				applyPower(new DeadlyContraptionPower(mo, sageMisc), mo);
+			}
 		}
 	}
 

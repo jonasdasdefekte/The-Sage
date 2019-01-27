@@ -63,8 +63,8 @@
 	"sagemod:Deadly_Contraption": {
 		"NAME": "Tödlicher Apparat",
 		"DESCRIPTIONS": [
-			"Am Ende des Zuges verliert der Gegner #b",
-			" TP pro Artefakt auf ihm."
+			"Am Ende des Zuges verlieren alle Gegner #b",
+			" TP pro Artefakt auf ihnen."
 		]
 	},
 	"sagemod:Disoriented": {
