@@ -348,7 +348,7 @@
 	},
 	"sagemod:Step_Back": {
 		"NAME": "Schritt zurück",
-		"DESCRIPTION": "Erhalte !B! Block. NL Falls du fliegst: NL Erhalte [E] [E] . NL Ansonsten: NL Erhalte !M! Flug."
+		"DESCRIPTION": "Erhalte !B! Block. NL Falls du fliegst: NL Erstattung !sagemod:MISC!. NL Ansonsten: NL Erhalte !M! Flug."
 	},
 	"sagemod:Strike": {
 		"NAME": "Schlag",

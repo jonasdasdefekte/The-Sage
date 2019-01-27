@@ -64,7 +64,7 @@ Starts with 50 HP, 169 gold
 	Catch me if you can
 		Skill, 0 Energy
 		Air. Prevent the next 2 (4) times you would lose Flight until the start of your next turn. // (Should also work on Flight loss in your own turn. "Lose 2 Flight" will lose 2 stacks of Airborne instead and "Lose all Flight" will cancel Airborne and Flight completely. Artifact no longer negates Flight loss.)
-TODO:	Step Back 
+	Step Back 
 		Skill, 2 Energy:
 		Gain 5 (8) Block. If you are flying, refund 2. Otherwise, gain 1 Flight.
 	Ambition
