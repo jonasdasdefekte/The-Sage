@@ -23,6 +23,7 @@ public class HowToPokeAtSlimes extends AbstractSageCard {
 	private static final int UPGRADE_ATTACK_DMG = 3;
 	private static final int FRAIL_GAIN = 2;
 	private static final int REFUND_AMOUNT = 3;
+	private static final int UPGRADE_REFUND_AMOUNT = 3;
 
 	public HowToPokeAtSlimes() {
 		super(ID, NAME, COST, DESCRIPTION, TYPE, RARITY, TARGET);
@@ -37,10 +38,7 @@ public class HowToPokeAtSlimes extends AbstractSageCard {
 		if (!upgraded) {
 			upgradeName();
 			upgradeDamage(UPGRADE_ATTACK_DMG);
-			// Refund ALL
-			RefundVariable.upgrade(this, 999);
-			rawDescription = cardStrings.UPGRADE_DESCRIPTION;
-			initializeDescription();
+			RefundVariable.upgrade(this, UPGRADE_REFUND_AMOUNT);
 		}
 	}
 
@@ -64,7 +62,7 @@ public class HowToPokeAtSlimes extends AbstractSageCard {
 
 	@Override
 	public String getLoadedDescription() {
-		return upgraded ? cardStrings.UPGRADE_DESCRIPTION : DESCRIPTION;
+		return DESCRIPTION;
 	}
 
 }

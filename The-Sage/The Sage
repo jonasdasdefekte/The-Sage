@@ -34,7 +34,7 @@ Starts with 50 HP, 169 gold
 	Salty Strike
 		Attack, 1 Energy:
 		Deal 6 (9) damage. The enemy gains 1 (2) Thirsty.
-TODO:	How To Poke At Slimes
+	How To Poke At Slimes
 		Attack, X Energy:
 		Deal X (+3) damage to ALL enemies. Gain 2 Frail. Refund 3 (6).
 	Energetic Brew
