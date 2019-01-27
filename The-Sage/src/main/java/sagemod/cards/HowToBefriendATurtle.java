@@ -22,12 +22,13 @@ public class HowToBefriendATurtle extends AbstractSageCard {
 
 	private static final int EXTRA_TEMP_HP = 0;
 	private static final int UPGRADE_EXTRA_TEMP_HP = 3;
+	private static final int REFUND_AMOUNT = 3;
+	private static final int UPGRADE_REFUND_AMOUNT = 3;
 
 	public HowToBefriendATurtle() {
 		super(ID, NAME, COST, DESCRIPTION, TYPE, RARITY, TARGET);
 		baseMagicNumber = magicNumber = EXTRA_TEMP_HP;
-		// Refund all
-		RefundVariable.setBaseValue(this, 999);
+		RefundVariable.setBaseValue(this, REFUND_AMOUNT);
 	}
 
 	@Override
@@ -35,6 +36,7 @@ public class HowToBefriendATurtle extends AbstractSageCard {
 		if (!upgraded) {
 			upgradeName();
 			upgradeMagicNumber(UPGRADE_EXTRA_TEMP_HP);
+			RefundVariable.upgrade(this, UPGRADE_REFUND_AMOUNT);
 			rawDescription = cardStrings.UPGRADE_DESCRIPTION;
 			initializeDescription();
 		}

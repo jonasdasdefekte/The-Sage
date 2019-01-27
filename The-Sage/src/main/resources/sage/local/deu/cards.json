@@ -169,8 +169,8 @@
 	},
 	"sagemod:How_To_Befriend_A_Turtle": {
 		"NAME": "Wie man sich einpanzert",
-		"DESCRIPTION": "Erhalte X temporäre_TP. NL Erstattung: alles.",
-		"UPGRADE_DESCRIPTION": "Erhalte X + !M! temporäre_TP. NL Erstattung: alles."
+		"DESCRIPTION": "Erhalte X temporäre_TP. NL Erstattung !stslib:refund!.",
+		"UPGRADE_DESCRIPTION": "Erhalte X + !M! temporäre_TP. NL Erstattung !stslib:refund!."
 	},
 	"sagemod:How_To_Charm_A_Sentry": {
 		"NAME": "Wie man Wachen betört",
