@@ -164,8 +164,7 @@
 	},
 	"sagemod:How_To_Amuse_Sneckos": {
 		"NAME": "How To Amuse Sneckos",
-		"DESCRIPTION": "Draw X cards.",
-		"UPGRADE_DESCRIPTION": "Draw X cards. NL Refund !stslib:refund!."
+		"DESCRIPTION": "Draw X cards. NL Refund !stslib:refund!."
 	},
 	"sagemod:How_To_Befriend_A_Turtle": {
 		"NAME": "How To Befriend A Turtle",

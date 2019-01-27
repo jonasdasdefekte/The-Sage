@@ -18,8 +18,8 @@ public class HowToAmuseSneckos extends AbstractSageCard {
 	private static final CardRarity RARITY = CardRarity.UNCOMMON;
 	private static final CardTarget TARGET = CardTarget.SELF;
 
-	private static final int REFUND_AMT = 0;
-	private static final int UPGRADED_REFUND_AMT = 1;
+	private static final int REFUND_AMT = 1;
+	private static final int UPGRADE_REFUND_AMT = 1;
 
 	public HowToAmuseSneckos() {
 		super(ID, NAME, COST, DESCRIPTION, TYPE, RARITY, TARGET);
@@ -31,9 +31,7 @@ public class HowToAmuseSneckos extends AbstractSageCard {
 		if (!upgraded) {
 			upgradeName();
 
-			RefundVariable.upgrade(this, UPGRADED_REFUND_AMT);
-			rawDescription = cardStrings.UPGRADE_DESCRIPTION;
-			initializeDescription();
+			RefundVariable.upgrade(this, UPGRADE_REFUND_AMT);
 		}
 	}
 

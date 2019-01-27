@@ -164,8 +164,7 @@
 	},
 	"sagemod:How_To_Amuse_Sneckos": {
 		"NAME": "Wie man Sneckos erfreut",
-		"DESCRIPTION": "Ziehe X Karten.",
-		"UPGRADE_DESCRIPTION": "Ziehe X Karten. NL Erstattung !stslib:refund!."
+		"DESCRIPTION": "Ziehe X Karten. NL Erstattung !stslib:refund!."
 	},
 	"sagemod:How_To_Befriend_A_Turtle": {
 		"NAME": "Wie man sich einpanzert",
