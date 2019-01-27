@@ -277,7 +277,7 @@
 	},
 	"sagemod:Potion_Explosion": {
 		"NAME": "Trankexplosion",
-		"DESCRIPTION": "Füge ALLEN Gegnern !D! Schaden zu pro Trank, den du in diesem Zug benutzt hast.",
+		"DESCRIPTION": "Füge ALLEN Gegnern !D! Schaden zu. Wiederhole dies einmal pro Trank, den du in diesem Zug benutzt hast.",
 		"EXTENDED_DESCRIPTION": [
 			" NL (Trifft einmal.)",
 			" NL (Trifft ",

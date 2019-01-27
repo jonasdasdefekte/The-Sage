@@ -45,6 +45,9 @@ public class PotionExplosion extends AbstractSageCard {
 
 	@Override
 	public void use(AbstractPlayer p, AbstractMonster m) {
+		// once always
+		attackAllEnemies(AttackEffect.FIRE);
+		// and repeat for every potion used
 		for (int i = 0; i < PotionListener.potionsUsed; i++) {
 			attackAllEnemies(AttackEffect.FIRE);
 		}
@@ -52,10 +55,11 @@ public class PotionExplosion extends AbstractSageCard {
 
 	private void updateExtendedDescription() {
 		rawDescription = getLoadedDescription();
-		if (PotionListener.potionsUsed == 1) {
+		int times = PotionListener.potionsUsed + 1;
+		if (times == 1) {
 			rawDescription += cardStrings.EXTENDED_DESCRIPTION[0];
 		} else {
-			rawDescription += cardStrings.EXTENDED_DESCRIPTION[1] + PotionListener.potionsUsed
+			rawDescription += cardStrings.EXTENDED_DESCRIPTION[1] + times
 					+ cardStrings.EXTENDED_DESCRIPTION[2];
 		}
 		initializeDescription();

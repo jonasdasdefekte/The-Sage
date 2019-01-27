@@ -277,7 +277,7 @@
 	},
 	"sagemod:Potion_Explosion": {
 		"NAME": "Potion Explosion",
-		"DESCRIPTION": "Deal !D! damage to ALL enemies per potion you used this turn.",
+		"DESCRIPTION": "Deal !D! damage to ALL enemies. Repeat this once per potion you used this turn.",
 		"EXTENDED_DESCRIPTION": [
 			" NL (Attacks once.)",
 			" NL (Attacks ",
