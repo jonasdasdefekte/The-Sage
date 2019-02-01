@@ -1,7 +1,7 @@
 {
 	"sagemod:About_Clark": {
 		"NAME": "Über Clark",
-		"DESCRIPTION": "Füge zweimal !D! Schaden zu. Kostet 1 [E] weniger pro Gebrechlich, das du hast."
+		"DESCRIPTION": "Füge zweimal !D! Schaden zu. NL Kostet 1 [E] weniger pro Gebrechlich, das du hast."
 	},
 	"sagemod:AbstractSageCard": {
 		"NAME": "Abstract Sage Card",
@@ -39,9 +39,9 @@
 		"NAME": "Anti-Ahnen-Angriff",
 		"DESCRIPTION": "Wende !M! Artefakt an. NL Dann füge !D! Schaden pro Artefakt des Gegners zu.",
 		"EXTENDED_DESCRIPTION": [
-			" NL (Trifft einmal)",
+			" NL (Trifft einmal.)",
 			" NL (Trifft ",
-			" mal)"
+			" mal.)"
 		]
 	},
 	"sagemod:Armor_Brew": {
@@ -68,11 +68,11 @@
 	},
 	"sagemod:Bouncing_Strike": {
 		"NAME": "Sprungschlag",
-		"DESCRIPTION": "Erhalte !sagemod:MISC! Gebrechlich. NL Erhalte !M! Flug. Füge soviel Schaden wie die Summe deines Flugs und Gebrechlich zu.",
-		"UPGRADE_DESCRIPTION": "Erhalte !sagemod:MISC! Gebrechlich. NL Erhalte !M! Flug. Füge soviel Schaden wie das Produkt deines Flugs und Gebrechlich zu.",
+		"DESCRIPTION": "Erhalte !sagemod:MISC! Gebrechlich. NL Erhalte !M! Flug. Füge soviel Schaden zu wie die Summe deines Flugs und Gebrechlich.",
+		"UPGRADE_DESCRIPTION": "Erhalte !sagemod:MISC! Gebrechlich. NL Erhalte !M! Flug. Füge soviel Schaden zu wie das Produkt deines Flugs und Gebrechlich.",
 		"EXTENDED_DESCRIPTION": [
 			" NL (Fügt ",
-			" Schaden zu)"
+			" Schaden zu.)"
 		]
 	},
 	"sagemod:Brewmaster": {
@@ -164,12 +164,12 @@
 	},
 	"sagemod:How_To_Amuse_Sneckos": {
 		"NAME": "Wie man Sneckos erfreut",
-		"DESCRIPTION": "Ziehe X Karten. NL Erstattung !stslib:refund!."
+		"DESCRIPTION": "Ziehe X Karten. NL Erstatte !stslib:refund!."
 	},
 	"sagemod:How_To_Befriend_A_Turtle": {
 		"NAME": "Wie man sich einpanzert",
-		"DESCRIPTION": "Erhalte X temporäre_TP. NL Erstattung !stslib:refund!.",
-		"UPGRADE_DESCRIPTION": "Erhalte X + !M! temporäre_TP. NL Erstattung !stslib:refund!."
+		"DESCRIPTION": "Erhalte X temporäre_TP. NL Erstatte !stslib:refund!.",
+		"UPGRADE_DESCRIPTION": "Erhalte X + !M! temporäre_TP. NL Erstatte !stslib:refund!."
 	},
 	"sagemod:How_To_Charm_A_Sentry": {
 		"NAME": "Wie man Wachen betört",
@@ -197,7 +197,7 @@
 	},
 	"sagemod:How_To_Poke_At_Slimes": {
 		"NAME": "Wie man Schleime sticht",
-		"DESCRIPTION": "Füge ALLEN Gegnern X Schaden zu. NL Erhalte !M! Gebrechlich. NL Erstattung !stslib:refund!."
+		"DESCRIPTION": "Füge ALLEN Gegnern X Schaden zu. NL Erhalte !M! Gebrechlich. NL Erstatte !stslib:refund!."
 	},
 	"sagemod:How_To_Wake_Lyons": {
 		"NAME": "Wie man Lywen aufweckt",
@@ -286,8 +286,8 @@
 	},
 	"sagemod:Potion_Trance": {
 		"NAME": "Tranktrance",
-		"DESCRIPTION": "Ziehe !M! Karte, wenn du in diesem Zug einen Trank benutzt. NL Du kannst in diesem Zug keine Energie erhalten.",
-		"UPGRADE_DESCRIPTION": "Ziehe !M! Karten, wenn du in diesem Zug einen Trank benutzt. NL Du kannst in diesem Zug keine Energie erhalten."
+		"DESCRIPTION": "Wenn du in diesem Zug einen Trank benutzt, ziehe !M! Karte. NL Du kannst in diesem Zug keine Energie erhalten.",
+		"UPGRADE_DESCRIPTION": "Wenn du in diesem Zug einen Trank benutzt, ziehe !M! Karten. NL Du kannst in diesem Zug keine Energie erhalten."
 	},
 	"sagemod:Pour_Tar_Pitch": {
 		"NAME": "Pech schütten",
@@ -295,7 +295,7 @@
 	},
 	"sagemod:Prey": {
 		"NAME": "Beute",
-		"DESCRIPTION": "Füge !D! Schaden zu. Falls du hiermit einen Gegner, der mehr max. TP als du hast, tötest, erhälst du !M! max. TP und entferne diese Karte aus deinem Deck."
+		"DESCRIPTION": "Füge !D! Schaden zu. Tötet dies einen Gegner mit mehr max. TP als du, erhalte !M! max. TP und entferne diese Karte aus deinem Deck."
 	},
 	"sagemod:Quackster": {
 		"NAME": "Quacksalber",
@@ -317,7 +317,7 @@
 	},
 	"sagemod:Riches": {
 		"NAME": "Reichtümer!!!",
-		"DESCRIPTION": "Immer wenn du einen verbesserten Trank benutzt, erhälst du einen zufälligen Trank, der nicht verbessert ist."
+		"DESCRIPTION": "Immer wenn du einen verbesserten Trank benutzt, erhälst du einen zufälligen unverbesserten Trank."
 	},
 	"sagemod:Rickety_Defense": {
 		"NAME": "Klappriger Schild",
@@ -325,17 +325,17 @@
 		"UPGRADE_DESCRIPTION": "Angeboren. NL Am Ende deiner Runde, setze deinen Block deinem Gebrechlich gleich, wenn du mehr Gebrechlich als Block hast."
 	},
 	"sagemod:Rock_Oil": {
-		"NAME": "Felsöl",
+		"NAME": "Steinöl",
 		"DESCRIPTION": "Unspielbar. NL Während diese Karte in deiner Hand ist erhälst du !B! Block, wenn du einen Trank benutzt."
 	},
 	"sagemod:Salty_Strike": {
-		"NAME": "Salziger Schlag",
+		"NAME": "Gesalzener Schlag",
 		"DESCRIPTION": "Füge !D! Schaden zu. NL Wende !M! Durstig an."
 	},
 	"sagemod:Shining_Powder": {
 		"NAME": "Strahlendes Pulver",
-		"DESCRIPTION": "Unspielbar. NL Während diese Karte in deiner Hand ist erhälst du [E], wenn du einen Trank benutzt.",
-		"UPGRADE_DESCRIPTION": "Unspielbar. NL Während diese Karte in deiner Hand ist erhälst du [E] [E], wenn du einen Trank benutzt."
+		"DESCRIPTION": "Unspielbar. NL Während diese Karte in deiner Hand ist erhälst du [E] , wenn du einen Trank benutzt.",
+		"UPGRADE_DESCRIPTION": "Unspielbar. NL Während diese Karte in deiner Hand ist erhälst du [E] [E] , wenn du einen Trank benutzt."
 	},
 	"sagemod:Slalom": {
 		"NAME": "Slalom",
@@ -347,7 +347,7 @@
 	},
 	"sagemod:Step_Back": {
 		"NAME": "Schritt zurück",
-		"DESCRIPTION": "Erhalte !B! Block. NL Falls du fliegst: NL Erstattung !sagemod:MISC!. NL Ansonsten: NL Erhalte !M! Flug."
+		"DESCRIPTION": "Erhalte !B! Block. NL Falls du fliegst: NL Erstatte !sagemod:MISC!. NL Ansonsten: NL Erhalte !M! Flug."
 	},
 	"sagemod:Strike": {
 		"NAME": "Schlag",
@@ -367,7 +367,7 @@
 		"UPGRADE_DESCRIPTION": "Füge !D! Schaden zu pro Flug, den du hast.",
 		"EXTENDED_DESCRIPTION": [
 			" NL (Fügt ",
-			" Schaden zu)"
+			" Schaden zu.)"
 		]
 	},
 	"sagemod:Taste_This_One": {
