@@ -152,7 +152,7 @@ import sagemod.powers.RicketyDefensePower;
 import sagemod.powers.TasteThisOnePower;
 import sagemod.powers.Thirsty;
 import sagemod.powers.TrixterPower;
-import sagemod.powers.UnderminePower;
+import sagemod.powers.UnderminePlayerPower;
 import sagemod.powers.VigorousBodyPower;
 import sagemod.relics.AncientMagnet;
 import sagemod.relics.BalloonAnimal;
@@ -356,7 +356,7 @@ public class SageMod implements EditCharactersSubscriber, EditCardsSubscriber, E
 		BaseMod.addPower(TasteThisOnePower.class, TasteThisOnePower.POWER_ID);
 		BaseMod.addPower(Thirsty.class, Thirsty.POWER_ID);
 		BaseMod.addPower(TrixterPower.class, TrixterPower.POWER_ID);
-		BaseMod.addPower(UnderminePower.class, UnderminePower.POWER_ID);
+		BaseMod.addPower(UnderminePlayerPower.class, UnderminePlayerPower.POWER_ID);
 		BaseMod.addPower(VigorousBodyPower.class, VigorousBodyPower.POWER_ID);
 	}
 

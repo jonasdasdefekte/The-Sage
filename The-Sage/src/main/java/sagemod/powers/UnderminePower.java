@@ -1,19 +1,14 @@
 package sagemod.powers;
 
-import com.megacrit.cardcrawl.actions.AbstractGameAction.AttackEffect;
-import com.megacrit.cardcrawl.actions.common.DamageAction;
-import com.megacrit.cardcrawl.actions.common.ReducePowerAction;
-import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
+import com.evacipated.cardcrawl.mod.stslib.powers.interfaces.InvisiblePower;
 import com.megacrit.cardcrawl.cards.DamageInfo;
-import com.megacrit.cardcrawl.cards.DamageInfo.DamageType;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
-import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 import com.megacrit.cardcrawl.powers.ArtifactPower;
 
-public class UnderminePower extends AbstractSagePower {
+public class UnderminePower extends AbstractSagePower implements InvisiblePower {
 
 	public static final String POWER_ID = "sagemod:Undermine";
 	private static final PowerStrings powerStrings =
@@ -30,17 +25,6 @@ public class UnderminePower extends AbstractSagePower {
 	}
 
 	@Override
-	public void atEndOfRound() {
-		if (amount == 0) {
-			AbstractDungeon.actionManager
-					.addToBottom(new RemoveSpecificPowerAction(owner, owner, POWER_ID));
-		} else {
-			AbstractDungeon.actionManager
-					.addToBottom(new ReducePowerAction(owner, owner, POWER_ID, 1));
-		}
-	}
-
-	@Override
 	public void updateDescription() {
 		if (amount > 1) {
 			description = DESCRIPTIONS[1] + amount + DESCRIPTIONS[2];
@@ -50,16 +34,12 @@ public class UnderminePower extends AbstractSagePower {
 	}
 
 	@Override
-	public void onAttack(DamageInfo info, int damageAmount, AbstractCreature target) {
-		super.onAttack(info, damageAmount, target);
-		if (info.type == DamageType.NORMAL && target.hasPower(ArtifactPower.POWER_ID)) {
-			int amount = target.getPower(ArtifactPower.POWER_ID).amount;
-			AbstractDungeon.actionManager.addToTop(new DamageAction(target,
-					new DamageInfo(AbstractDungeon.player, amount, DamageType.THORNS),
-					AttackEffect.FIRE));
-			flash();
+	public float atDamageFinalReceive(float damage, DamageInfo.DamageType type) {
+		if (type == DamageInfo.DamageType.NORMAL && owner.hasPower(ArtifactPower.POWER_ID)) {
+			int artifact = owner.getPower(ArtifactPower.POWER_ID).amount;
+			return damage + artifact;
 		}
+		return damage;
 	}
-
 
 }

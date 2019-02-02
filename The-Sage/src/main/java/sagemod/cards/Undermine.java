@@ -6,7 +6,7 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.ArtifactPower;
-import sagemod.powers.UnderminePower;
+import sagemod.powers.UnderminePlayerPower;
 
 public class Undermine extends AbstractSageCard {
 
@@ -47,7 +47,7 @@ public class Undermine extends AbstractSageCard {
 	@Override
 	public void use(AbstractPlayer p, AbstractMonster m) {
 		applyPower(new ArtifactPower(m, sageMisc), m);
-		applyPowerToSelf(new UnderminePower(p, magicNumber));		
+		applyPowerToSelf(new UnderminePlayerPower(p, magicNumber));		
 	}
 
 	@Override
