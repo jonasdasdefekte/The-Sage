@@ -123,8 +123,6 @@ import sagemod.cards.debug.AvailablePotionUpgrade;
 import sagemod.cards.debug.ConsolePotion;
 import sagemod.cards.debug.CyclePotions;
 import sagemod.cards.debug.ForcePotionUpgrade;
-import sagemod.cards.event.ByrdFeatherPreview;
-import sagemod.cards.event.FlyingCarpetPreview;
 import sagemod.character.SageCharEnum;
 import sagemod.character.SageColorEnum;
 import sagemod.character.TheSage;
@@ -334,10 +332,6 @@ public class SageMod implements EditCharactersSubscriber, EditCardsSubscriber, E
 		BaseMod.addCard(new ConsolePotion());
 		BaseMod.addCard(new CyclePotions());
 		BaseMod.addCard(new ForcePotionUpgrade());
-
-		// Event
-		BaseMod.addCard(new ByrdFeatherPreview());
-		BaseMod.addCard(new FlyingCarpetPreview());
 
 		registerPowers();
 	}

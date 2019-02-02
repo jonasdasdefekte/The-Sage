@@ -8,8 +8,6 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.events.AbstractImageEvent;
 import com.megacrit.cardcrawl.helpers.RelicLibrary;
 import com.megacrit.cardcrawl.localization.EventStrings;
-import sagemod.cards.event.ByrdFeatherPreview;
-import sagemod.cards.event.FlyingCarpetPreview;
 import sagemod.character.TheSage;
 import sagemod.relics.ByrdFeather;
 import sagemod.relics.FlyingCarpet;
@@ -38,12 +36,15 @@ public class CarpetTrader extends AbstractImageEvent {
 		AbstractPlayer player = AbstractDungeon.player;
 		switch (curScreen) {
 			case INTRO:
+				imageEventText.clearAllDialogs();
 				if (AbstractDungeon.player instanceof TheSage) {
 					imageEventText.updateBodyText(DESCRIPTIONS[2]);
-					imageEventText.updateDialogOption(0, OPTIONS[3], new ByrdFeatherPreview());
+					imageEventText.optionList.add(
+							new RelicDialogOptionButton(0, OPTIONS[3], new ByrdFeather(), false));
 				} else {
 					imageEventText.updateBodyText(DESCRIPTIONS[1]);
-					imageEventText.updateDialogOption(0, OPTIONS[2], new FlyingCarpetPreview());
+					imageEventText.optionList.add(
+							new RelicDialogOptionButton(0, OPTIONS[2], new FlyingCarpet(), false));
 				}
 				imageEventText.setDialogOption(OPTIONS[1]);
 				curScreen = CurrentScreen.MAIN;

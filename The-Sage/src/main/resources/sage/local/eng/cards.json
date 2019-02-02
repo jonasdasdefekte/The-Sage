@@ -83,10 +83,6 @@
 		"NAME": "Burning Flask",
 		"DESCRIPTION": "Deal !D! damage to ALL enemies. If you carry potions, discard one at random and deal !M! extra damage."
 	},
-	"sagemod:Byrd_Feather_Preview": {
-		"NAME": "Byrd Feather",
-		"DESCRIPTION": "RELIC! NL If you have 1 or 2 Flight at the start of your turn, set it to !M!."
-	},
 	"sagemod:Cane_Strike": {
 		"NAME": "Cane Strike",
 		"DESCRIPTION": "Deal !D! damage. Deals double damage if you are Frail."
@@ -139,10 +135,6 @@
 	"sagemod:Fly": {
 		"NAME": "Fly",
 		"DESCRIPTION": "If you are flying: NL Gain !B! Block. NL Otherwise: NL Gain !M! Flight."
-	},
-	"sagemod:Flying_Carpet_Preview": {
-		"NAME": "Flying Carpet",
-		"DESCRIPTION": "RELIC! NL Gain !M! Flight at the start of your second turn."
 	},
 	"sagemod:Flying_Cauldron": {
 		"NAME": "Flying Cauldron",
