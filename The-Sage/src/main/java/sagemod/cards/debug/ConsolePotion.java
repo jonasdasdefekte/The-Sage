@@ -28,6 +28,7 @@ public class ConsolePotion extends AbstractSageCard {
 		super(ID, NAME, COST, DESCRIPTION, TYPE, RARITY, TARGET);
 		timesUpgraded = upgrades;
 		baseMagicNumber = magicNumber = 0;
+		shouldNotDisplayInScreen = true;
 	}
 
 	@Override

@@ -56,6 +56,7 @@ public abstract class AbstractSageCard extends CustomCard {
 	public int sageMisc = 0;
 	public boolean upgradedSageMisc;
 	public boolean showSageMiscAsModified;
+	public boolean shouldNotDisplayInScreen;
 	private boolean isTaxing;
 
 	public AbstractSageCard(String id, String name, int cost, String rawDescription, CardType type,

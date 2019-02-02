@@ -40,6 +40,7 @@ public class CyclePotions extends AbstractSageCard {
 		timesUpgraded = upgrades;
 		baseMagicNumber = magicNumber = 0;
 		currentPotion = 0;
+		shouldNotDisplayInScreen = true;
 	}
 
 	@Override
