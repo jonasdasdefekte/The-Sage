@@ -139,7 +139,7 @@ import sagemod.powers.AlchemyExpertPower;
 import sagemod.powers.BookwormPower;
 import sagemod.powers.Brew;
 import sagemod.powers.Brewing;
-import sagemod.powers.DeadlyContraptionPower;
+import sagemod.powers.DeadlyContraptionPlayerPower;
 import sagemod.powers.Disoriented;
 import sagemod.powers.ExtraPortionPower;
 import sagemod.powers.Flight;
@@ -343,7 +343,7 @@ public class SageMod implements EditCharactersSubscriber, EditCardsSubscriber, E
 		BaseMod.addPower(BookwormPower.class, BookwormPower.POWER_ID);
 		BaseMod.addPower(Brew.class, Brew.POWER_ID);
 		BaseMod.addPower(Brewing.class, Brewing.POWER_ID);
-		BaseMod.addPower(DeadlyContraptionPower.class, DeadlyContraptionPower.POWER_ID);
+		BaseMod.addPower(DeadlyContraptionPlayerPower.class, DeadlyContraptionPlayerPower.POWER_ID);
 		BaseMod.addPower(Disoriented.class, Disoriented.POWER_ID);
 		BaseMod.addPower(ExtraPortionPower.class, ExtraPortionPower.POWER_ID);
 		BaseMod.addPower(LoseFlightNextTurn.class, LoseFlightNextTurn.POWER_ID);
