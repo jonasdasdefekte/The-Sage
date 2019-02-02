@@ -26,6 +26,9 @@ public class RiotAction extends AbstractGameAction {
 	private static final String[] TEXT = strings.EXTENDED_DESCRIPTION;
 
 	public RiotAction(final int amount, final AbstractMonster target, final boolean exhausts) {
+		if (t == null) {
+			t = AbstractDungeon.getRandomMonster();
+		}
 		this.setValues(t = target, p = AbstractDungeon.player, amount);
 		actionType = ActionType.CARD_MANIPULATION;
 		duration = Settings.ACTION_DUR_MED;
