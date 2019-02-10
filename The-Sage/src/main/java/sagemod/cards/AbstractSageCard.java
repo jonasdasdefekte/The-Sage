@@ -1,8 +1,6 @@
 package sagemod.cards;
 
 import java.util.Locale;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 import com.megacrit.cardcrawl.actions.AbstractGameAction.AttackEffect;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
@@ -30,8 +28,6 @@ import sagemod.powers.Brewing;
 import sagemod.powers.Flight;
 
 public abstract class AbstractSageCard extends CustomCard {
-
-	private static Logger logger = LogManager.getLogger(AbstractSageCard.class);
 
 	public static final CardStrings cardStrings =
 			CardCrawlGame.languagePack.getCardStrings("sagemod:AbstractSageCard");
@@ -89,7 +85,7 @@ public abstract class AbstractSageCard extends CustomCard {
 
 	public void upgradeBrewIn(int by) {
 		baseBrewIn += by;
-		brewIn = +by;
+		brewIn += by;
 		upgradedBrewIn = true;
 	}
 
@@ -145,17 +141,14 @@ public abstract class AbstractSageCard extends CustomCard {
 						rawDescription = rawDescription.replaceAll(
 								TEXT[5],
 								TEXT[3]);
-						logger.debug("Changing Description for " + name + " (0 - X to .)");
 					}
 				} else {
 					if (brewIn == 0) {
 						rawDescription = rawDescription.replaceAll(TEXT[6],
 								TEXT[3]);
-						logger.debug("Changing Description for " + name + " (0 to .)");
 					} else if (brewIn == 1) {
 						rawDescription = rawDescription.replaceAll(TEXT[7],
 								TEXT[4]);
-						logger.debug("Changing Description for " + name + " (1 to next turn)");
 					}
 				}
 			}
@@ -174,6 +167,11 @@ public abstract class AbstractSageCard extends CustomCard {
 			sageCard.isBrewInModified = isBrewInModified;
 			sageCard.upgradedBrewIn = upgradedBrewIn;
 			sageCard.usesBrewIn = usesBrewIn;
+			sageCard.showBrewInAsModified = showBrewInAsModified;
+			sageCard.sageMisc = sageMisc;
+			sageCard.baseSageMisc = baseSageMisc;
+			sageCard.showSageMiscAsModified = showSageMiscAsModified;
+			sageCard.upgradedSageMisc = upgradedSageMisc;
 			return sageCard;
 		}
 		return card;
@@ -184,6 +182,7 @@ public abstract class AbstractSageCard extends CustomCard {
 		super.resetAttributes();
 		brewIn = baseBrewIn;
 		isBrewInModified = false;
+		sageMisc = baseSageMisc;
 	}
 
 	/**
