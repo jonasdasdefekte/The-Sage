@@ -32,6 +32,8 @@ public class PincerAttack extends AbstractSageCard {
 		if (!upgraded) {
 			upgradeName();
 			upgradeDamage(UPGRADE_ATTACK_DMG);
+			rawDescription = cardStrings.UPGRADE_DESCRIPTION;
+			initializeDescription();
 		}
 	}
 
@@ -42,31 +44,26 @@ public class PincerAttack extends AbstractSageCard {
 
 	@Override
 	public void use(AbstractPlayer p, AbstractMonster m) {
-		int extraDamage = 0;
-		if (m.hasPower(ArtifactPower.POWER_ID)) {
-			extraDamage += m.getPower(ArtifactPower.POWER_ID).amount;
-		}
-		attack(m, AttackEffect.SMASH, damage + extraDamage);
-		rawDescription = getLoadedDescription();
-		initializeDescription();
+		attack(m, AttackEffect.SMASH, damage);
 	}
 
 	@Override
 	public void calculateCardDamage(AbstractMonster mo) {
 		super.calculateCardDamage(mo);
-		int extraDamage = 0;
+		applyPowers();
 		if (mo != null && mo.hasPower(ArtifactPower.POWER_ID)) {
-			extraDamage += mo.getPower(ArtifactPower.POWER_ID).amount;
+			int multiplier = upgraded ? 2 : 1;
+			damage += multiplier * mo.getPower(ArtifactPower.POWER_ID).amount;
 		}
-		rawDescription = getLoadedDescription();
-		rawDescription += cardStrings.EXTENDED_DESCRIPTION[0] + extraDamage
-				+ cardStrings.EXTENDED_DESCRIPTION[1];
-		initializeDescription();
+		if (damage != baseDamage) {
+			isDamageModified = true;
+		} else {
+			isDamageModified = false;
+		}
 	}
-
 
 	@Override
 	public String getLoadedDescription() {
-		return DESCRIPTION;
+		return upgraded ? cardStrings.UPGRADE_DESCRIPTION : DESCRIPTION;
 	}
 }

@@ -93,7 +93,7 @@ Starts with 50 HP, 169 gold
 	Burning Flask
 		Attack, 1 Energy: 
 		Deal 8 damage to ALL enemies. If you carry potions, discard one randomly to deal 12 (22) extra damage.
-TODO:	Pincer Attack
+	Pincer Attack
 		Attack, 1 Energy: 
 		Deal 6 (8) damage. Damage is increased by the number of Artifacts on the enemy (twice). // Would ideally be displayed in the Attack damage, like with Undermine.
 	Bouncing Strike
@@ -159,7 +159,7 @@ TODO:	Pincer Attack
 	Shining Powder
 		Skill, Unplayable:
 		Whenever you use a Potion while this card in your hand, gain 1 (2) Energy.
-TODO:	Undermine
+	Undermine
 		Skill, 1 Energy:
 		Apply 2 Artifact. When you attack an enemy this turn (for 2 turns), they take extra damage equal to the Artifact on them. // Would be cool if this would change the damage value itself instead of being applied seperately after the attack.
 	Altitude

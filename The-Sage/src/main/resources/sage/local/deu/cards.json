@@ -258,10 +258,7 @@
 	"sagemod:Pincer_Attack": {
 		"NAME": "Zangenangriff",
 		"DESCRIPTION": "Füge !D! Schaden zu. NL Schaden erhöht sich pro Artefakt des Gegners.",
-		"EXTENDED_DESCRIPTION": [
-			" NL (Fügt ",
-			" zusätzlichen Schaden zu.)"
-		]
+		"UPGRADE_DESCRIPTION": "Füge !D! Schaden zu. NL Schaden erhöht sich pro Artefakt des Gegners um 2."
 	},
 	"sagemod:Pincer_Repair": {
 		"NAME": "Reparaturzange",

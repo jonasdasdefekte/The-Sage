@@ -258,10 +258,7 @@
 	"sagemod:Pincer_Attack": {
 		"NAME": "Pincer Attack",
 		"DESCRIPTION": "Deal !D! damage. NL Damage is increased per Artifact the enemy has.",
-		"EXTENDED_DESCRIPTION": [
-			" NL (Deals ",
-			" extra damage.)"
-		]
+		"UPGRADE_DESCRIPTION": "Deal !D! damage. NL Damage is increased twice per Artifact the enemy has."
 	},
 	"sagemod:Pincer_Repair": {
 		"NAME": "Pincer Repair",
