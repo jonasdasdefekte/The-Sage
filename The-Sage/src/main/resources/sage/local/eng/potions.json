@@ -12,5 +12,29 @@
 			"Gain #b",
 			" #yFlight."
 		]
-	}
+	},
+  "sagemod:UPGRADED:AttackPotion": {
+    "NAME": "Attack Potion",
+    "DESCRIPTIONS": [
+      "Choose #b1 of #b3 random upgraded #yAttack cards to add to your hand, it costs #b0 this turn."
+    ]
+  },
+	"sagemod:UPGRADED:infinitespire:BlackPotion": {
+		"NAME": "Black Potion",
+		"DESCRIPTIONS": [
+			"Choose #b1 of #b3 random upgraded [#3D00D6]Black[] cards to add to your hand, it costs #b0 this turn."
+		]
+	},
+  "sagemod:UPGRADED:PowerPotion": {
+    "NAME": "Power Potion",
+    "DESCRIPTIONS": [
+      "Choose #b1 of #b3 random upgraded #yPower cards to add to your hand, it costs #b0 this turn."
+    ]
+  },
+  "sagemod:UPGRADED:SkillPotion": {
+    "NAME": "Skill Potion",
+    "DESCRIPTIONS": [
+      "Choose #b1 of #b3 random upgraded #ySkill cards to add to your hand, it costs #b0 this turn."
+    ]
+  }
 }

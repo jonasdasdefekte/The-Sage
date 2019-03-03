@@ -12,5 +12,29 @@
 			"Erhalte #b",
 			" #yFlug."
 		]
+	},
+	"sagemod:UPGRADED:AttackPotion": {
+		"NAME": "Angriffstrank",
+		"DESCRIPTIONS": [
+			"Erhalte #b1 von #b3 zufälligen verbesserten #yAngriffskarten auf die Hand, die in diesem Zug #b0 kostet."
+		]
+	},
+	"sagemod:UPGRADED:infinitespire:BlackPotion": {
+		"NAME": "Black Potion",
+		"DESCRIPTIONS": [
+			"Choose #b1 of #b3 random upgraded [#3D00D6]Black[] cards to add to your hand, it costs #b0 this turn."
+		]
+	},
+	"sagemod:UPGRADED:PowerPotion": {
+		"NAME": "Machttrank",
+		"DESCRIPTIONS": [
+			"Erhalte #b1 von #b3 zufälligen #yMachtkarten auf die Hand, die in diesem Zug #b0 kostet."
+		]
+	},
+	"sagemod:UPGRADED:SkillPotion": {
+		"NAME": "Fertigkeitstrank",
+		"DESCRIPTIONS": [
+			"Erhalte #b1 von #b3 zufälligen verbesserten #yFertigkeitskarten auf die Hand, die in diesem Zug #b0 kostet."
+		]
 	}
 }

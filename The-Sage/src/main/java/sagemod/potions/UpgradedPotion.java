@@ -10,6 +10,7 @@ import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.math.MathUtils;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.AbstractCreature;
+import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.helpers.PowerTip;
 import com.megacrit.cardcrawl.potions.AbstractPotion;
@@ -26,12 +27,13 @@ import com.megacrit.cardcrawl.potions.SmokeBomb;
 import basemod.ReflectionHacks;
 import basemod.abstracts.CustomPotion;
 import basemod.abstracts.CustomSavable;
+import sagemod.SageMod;
 
 public class UpgradedPotion extends CustomPotion {
 
 	public static final List<String> BLACKLIST = new ArrayList<>();
 	public static final List<String> DOUBLE_USE_WHITELIST = new ArrayList<>();
-
+	public static final List<String> DISCOVERY_LIST = new ArrayList<>();
 
 	public static final float CHANCE = 0.20f;
 	public static final float POTENCY_MULTIPLIER = 1.5f;
@@ -40,6 +42,8 @@ public class UpgradedPotion extends CustomPotion {
 	public static final String TWICE = "2x: ";
 	private static final Color OUTLINE_COLOR = new Color(0xFFD70088);
 	private static final Color LIGHT_OUTLINE_COLOR = new Color(0xFFD70044);
+
+	public static int discoveryOpenUpgrades = 0;
 
 	private static Texture plusImg;
 
@@ -59,7 +63,6 @@ public class UpgradedPotion extends CustomPotion {
 		for (int i = 1; i < potion.tips.size(); i++) {
 			tips.add(potion.tips.get(i));
 		}
-
 
 		isThrown = potion.isThrown;
 		targetRequired = potion.targetRequired;
@@ -94,14 +97,15 @@ public class UpgradedPotion extends CustomPotion {
 		BLACKLIST.add("HastePotion");
 		BLACKLIST.add("Gelsemium Tea");
 
-		DOUBLE_USE_WHITELIST.add(AttackPotion.POTION_ID);
-		DOUBLE_USE_WHITELIST.add(PowerPotion.POTION_ID);
-		DOUBLE_USE_WHITELIST.add(SkillPotion.POTION_ID);
+		DISCOVERY_LIST.add(AttackPotion.POTION_ID);
+		DISCOVERY_LIST.add(PowerPotion.POTION_ID);
+		DISCOVERY_LIST.add(SkillPotion.POTION_ID);
+		DISCOVERY_LIST.add("infinitespire:BlackPotion");
+
 		DOUBLE_USE_WHITELIST.add(GamblersBrew.POTION_ID);
 		DOUBLE_USE_WHITELIST.add(BloodPotion.POTION_ID);
 		DOUBLE_USE_WHITELIST.add("blackbeard:" + BloodPotion.POTION_ID);
 		DOUBLE_USE_WHITELIST.add("Flashbang");
-		DOUBLE_USE_WHITELIST.add("infinitespire:BlackPotion");
 		DOUBLE_USE_WHITELIST.add("WardPotion");
 		DOUBLE_USE_WHITELIST.add("ShroomBrew");
 		DOUBLE_USE_WHITELIST.add("Firefly");
@@ -134,12 +138,21 @@ public class UpgradedPotion extends CustomPotion {
 	}
 
 	private String loadDescription() {
-		if (DOUBLE_USE_WHITELIST.contains(potion.ID)) {
-			return TWICE + potion.description;
-		}
+		try {
+			if (DOUBLE_USE_WHITELIST.contains(potion.ID)) {
+				return TWICE + potion.description;
+			}
 
-		return potion.description.replaceAll(String.valueOf(potion.getPotency()),
-				String.valueOf(potency));
+			if (DISCOVERY_LIST.contains(potion.ID)) {
+				return CardCrawlGame.languagePack.getPotionString("sagemod:UPGRADED:" + potion.ID).DESCRIPTIONS[0];
+			}
+
+			return potion.description.replaceAll(String.valueOf(potion.getPotency()),
+					String.valueOf(potency));
+		} catch (Exception ex) {
+			SageMod.logger.catching(ex);
+			return potion.description;
+		}
 	}
 
 	@Override
@@ -155,6 +168,9 @@ public class UpgradedPotion extends CustomPotion {
 	@Override
 	public void use(AbstractCreature c) {
 		ReflectionHacks.setPrivate(potion, AbstractPotion.class, "potency", potency);
+		if (DISCOVERY_LIST.contains(potion.ID)) {
+			discoveryOpenUpgrades++;
+		}
 		potion.use(c);
 		if (DOUBLE_USE_WHITELIST.contains(potion.ID)) {
 			potion.use(c);
