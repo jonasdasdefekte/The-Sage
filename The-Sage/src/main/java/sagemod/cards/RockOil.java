@@ -18,7 +18,7 @@ public class RockOil extends AbstractSageCard {
 	private static final CardTarget TARGET = CardTarget.NONE;
 
 	private static final int BLOCK_AMT = 5;
-	private static final int UPGRADE_BLOCK_AMT = 2;
+	private static final int UPGRADE_BLOCK_AMT = 5;
 
 	// Implementation in PotionListener
 	public RockOil() {

@@ -152,16 +152,16 @@ Starts with 50 HP, 169 gold
 		(Gain 1 Artifact.) Gain Block equal to all Artifact on the field + 5.
 	Rock Oil
 		Skill, Unplayable:
-		Whenever you use a Potion while this card is in your hand, gain 5 (7) Block.
+		Whenever you use a Potion while this card is in your hand, gain 5 (10) Block.
 	Momentum
 		Skill, 0 Energy:
 		Brew a (an upgraded) Swift potion in 4 turns.
 	Shining Powder
 		Skill, Unplayable:
 		Whenever you use a Potion while this card in your hand, gain 1 (2) Energy.
-	Undermine
-		Skill, 1 Energy:
-		Apply 2 Artifact. When you attack an enemy this turn (for 2 turns), they take extra damage equal to the Artifact on them. // Would be cool if this would change the damage value itself instead of being applied seperately after the attack.
+TODO:	Deadly Contraption
+		Skill, 1 Energy: 
+		Apply 1 (2) Artifact to ALL enemies. For 2 (3) turns, enemies lose 1 HP per Artifact on them. // Stacks for the amount of turns.
 	Altitude
 		Power, 1 Energy: 
 		Gain 2 (3) Flight.
@@ -171,9 +171,9 @@ Starts with 50 HP, 169 gold
 	Brewmaster
 		Power, 2 (1) Energy:
 		Gain 1 Brewing.
-	Deadly Contraption
-		Power, 1 Energy: 
-		Apply 1 (2) Artifact to ALL enemies. At the end of their turn, enemies lose 1 HP per Artifact on them. Taxing. // Taxing: This costs 1 more Energy for every time you played this card this combat.
+TODO:	Undermine
+		Power, 1 Energy:
+		Apply 1 Artifact to ALL enemies. Your Attack damage is increased by Artifact on the enemy. // Does not stack.
 	Rickety Defense
 		Power, 1 Energy:
 		(Upgrade: Innate) At the end of your turn, set your Block to your Frail if you have more Frail than Block.
@@ -213,7 +213,7 @@ Starts with 50 HP, 169 gold
 		Skill, 1 Energy
 		Gain 4 (6) Temporary HP. Gain 2 (3) Temporary HP per Frail you have. Exhaust.
 	Alchemy Expert
-		Power, 1 Energy:
+		Power, 2 Energy:
 		Whenever you use a potion, gain 1 Artifact. (Innate.)
 	Cultist form
 		Power, 3 Energy: 
@@ -272,7 +272,7 @@ Starts with 50 HP, 169 gold
 		Whenever you discard a potion, heal 5 HP.
 
 
-**5 OTHER RELICS (for all characters)**
+**6 OTHER RELICS (for all characters)**
 	Red Beast Statue
 		Uncommon relic:
 		Potions are 50% more likely to be uncommon or rare and 100% more likely to be upgraded.
@@ -300,6 +300,9 @@ Starts with 50 HP, 169 gold
 	Fata Morgana
 		Rare
 		Apply 1 Disoriented.
+NEW:	Wine
+		Uncommon
+		Reduce all prices in a shop by 20 Gold.
 		
 **NEW FEATURE FOR POTIONS**
 	Potions that are number based can have an upgrade which makes the, 50% more potent (or 2x effective if the number can not be manipulated)
