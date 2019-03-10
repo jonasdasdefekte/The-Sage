@@ -95,7 +95,7 @@ Starts with 50 HP, 169 gold
 		Deal 8 damage to ALL enemies. If you carry potions, discard one randomly to deal 12 (22) extra damage.
 	Pincer Attack
 		Attack, 1 Energy: 
-		Deal 6 (8) damage. Damage is increased by the number of Artifacts on the enemy (twice). // Would ideally be displayed in the Attack damage, like with Undermine.
+		Deal 6 (8) damage. Damage is increased by the number of Artifacts on the enemy (twice).
 	Bouncing Strike
 		Attack, 2 Energy: 
 		Gain 2 Frail. Gain 1 Flight. Deal damage equal to the sum (product) of your Frail and Flight.
@@ -141,9 +141,9 @@ Starts with 50 HP, 169 gold
 	Potion Trance
 		Skill, 1 Energy:
 		Draw 1 card (2 cards) whenever you use a Potion this turn. You cannot gain energy this turn.
-	How To Amuse Sneckos
+TODO:	How To Amuse Sneckos
 		Skill, X Energy:
-		Draw X cards. Refund 1 (2).
+		Lose all (1) Flight. Draw X cards. Refund 3 (6).
 	Let it go
 		Skill, 1 Energy:
 		Exhaust a card (up to 2 cards) from your hand. Gain Flight equal to its (their) cost. Exhaust.
@@ -161,24 +161,24 @@ Starts with 50 HP, 169 gold
 		Whenever you use a Potion while this card in your hand, gain 1 (2) Energy.
 TODO:	Deadly Contraption
 		Skill, 1 Energy: 
-		Apply 1 (2) Artifact to ALL enemies. For 2 (3) turns, enemies lose 1 HP per Artifact on them. // Stacks for the amount of turns.
+		Apply 3 Artifact to ALL enemies. For 2 (3) turns, enemies lose 1 HP per Artifact on them. // Stacks for the amount of turns.
 	Altitude
 		Power, 1 Energy: 
 		Gain 2 (3) Flight.
 	Taste this one
 		Power, 1 Energy:
-		Whenever you use a potion, deal 10 (15) damage to a random Enemy.
+		Whenever you use a potion, deal 10 (15) damage to a random enemy.
 	Brewmaster
 		Power, 2 (1) Energy:
 		Gain 1 Brewing.
 TODO:	Undermine
 		Power, 1 Energy:
-		Apply 1 Artifact to ALL enemies. Your Attack damage is increased by Artifact on the enemy. // Does not stack.
+		Apply 1 (2) Artifact to ALL enemies. Your Attack damage is increased by Artifact on the enemy. // Does not stack.
 	Rickety Defense
 		Power, 1 Energy:
 		(Upgrade: Innate) At the end of your turn, set your Block to your Frail if you have more Frail than Block.
 
-**18 RARE CARDS (gold)**
+**19 RARE CARDS (gold)**
 	Swoop Down
 		Attack, 1 Energy: 
 		Deal 4 (6) damage per Flight you have. Then lose 1 Flight. (Upgrade: No Flight loss.)
@@ -191,6 +191,9 @@ TODO:	Undermine
 	Prey
 		Attack, 1 Energy
 		Deal 10 (14) damage. If this kills an enemy with more max HP than you, gain 10 (14) max HP and remove this card from your deck.
+NEW:	Shatter
+		Attack, 3 Energy
+		Air. Lose all Flight. Deal damage equal to half your max HP (equal to your max HP).
 	Escape
 		Skill, 1 Energy: 
 		Double your Flight. Exhaust. (Upgrade: No Exhaust.)
@@ -203,9 +206,9 @@ TODO:	Undermine
 	Light-weighted
 		Skill, 0 Energy:
 		Lose all Frail. Gain that much Flight (+1). Exhaust.
-	Meditation
+TODO:	Meditation
 		Skill, 0 Energy:
-		Lose all Flight. Draw 3 (5) cards. Exhaust.
+		Lose all Flight. Gain [E] per Flight lost. Draw 2 (4) cards. Exhaust.
 	Read the riot act
 		Skill, 1 Energy
 		Choose an X cost card from your draw pile and play it. Exhaust. (No Exhaust.)
