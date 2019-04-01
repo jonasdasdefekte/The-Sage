@@ -18,7 +18,7 @@ public class UnderminePower extends AbstractSagePower implements InvisiblePower 
 
 
 	public UnderminePower(AbstractCreature owner, int amount) {
-		super(POWER_ID, NAME, owner, amount);
+		super(POWER_ID, NAME, owner, -1);
 		updateDescription();
 		type = AbstractPower.PowerType.BUFF;
 		isTurnBased = true;
@@ -26,11 +26,7 @@ public class UnderminePower extends AbstractSagePower implements InvisiblePower 
 
 	@Override
 	public void updateDescription() {
-		if (amount > 1) {
-			description = DESCRIPTIONS[1] + amount + DESCRIPTIONS[2];
-		} else {
-			description = DESCRIPTIONS[0];
-		}
+		description = DESCRIPTIONS[0];
 	}
 
 	@Override

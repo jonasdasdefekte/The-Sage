@@ -3,6 +3,7 @@ package sagemod.cards;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
+import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.ArtifactPower;
@@ -15,43 +16,43 @@ public class Undermine extends AbstractSageCard {
 	public static final String NAME = cardStrings.NAME;
 	private static final int COST = 1;
 	public static final String DESCRIPTION = cardStrings.DESCRIPTION;
-	private static final CardType TYPE = CardType.SKILL;
+	private static final CardType TYPE = CardType.POWER;
 	private static final CardRarity RARITY = CardRarity.UNCOMMON;
-	private static final CardTarget TARGET = CardTarget.SELF_AND_ENEMY;
+	private static final CardTarget TARGET = CardTarget.ALL;
 
-	private static final int ARTIFACT_AMT = 2;
-	private static final int TURNS = 1;
-	private static final int UPGRADE_TURNS = 1;
+	private static final int ARTIFACT_AMT = 1;
+	private static final int UPGRADE_ARTIFACT_AMT = 1;
 
 	public Undermine() {
 		super(ID, NAME, COST, DESCRIPTION, TYPE, RARITY, TARGET);
-		baseMagicNumber = magicNumber = TURNS;
-		initSageMisc(ARTIFACT_AMT);
+		baseMagicNumber = magicNumber = ARTIFACT_AMT;
 	}
 
 	@Override
 	public void upgrade() {
 		if (!upgraded) {
 			upgradeName();
-			upgradeMagicNumber(UPGRADE_TURNS);
-			rawDescription = cardStrings.UPGRADE_DESCRIPTION;
-			initializeDescription();
+			upgradeMagicNumber(UPGRADE_ARTIFACT_AMT);
 		}
 	}
 
 	@Override
 	public AbstractCard makeCopy() {
-		return new Undermine();		
-	}			
+		return new Undermine();
+	}
 
 	@Override
 	public void use(AbstractPlayer p, AbstractMonster m) {
-		applyPower(new ArtifactPower(m, sageMisc), m);
-		applyPowerToSelf(new UnderminePlayerPower(p, magicNumber));		
+		for (AbstractMonster mo : AbstractDungeon.getCurrRoom().monsters.monsters) {
+				applyPower(new ArtifactPower(mo, magicNumber), mo);
+		}
+		if (!p.hasPower(UnderminePlayerPower.POWER_ID)) {
+			applyPowerToSelf(new UnderminePlayerPower(p, -1));
+		}
 	}
 
 	@Override
 	public String getLoadedDescription() {
-		return upgraded ? cardStrings.UPGRADE_DESCRIPTION : DESCRIPTION;
+		return DESCRIPTION;
 	}
 }

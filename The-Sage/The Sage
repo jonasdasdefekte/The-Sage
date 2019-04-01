@@ -171,7 +171,7 @@ Starts with 50 HP, 169 gold
 	Brewmaster
 		Power, 2 (1) Energy:
 		Gain 1 Brewing.
-TODO:	Undermine
+	Undermine
 		Power, 1 Energy:
 		Apply 1 (2) Artifact to ALL enemies. Your Attack damage is increased by Artifact on the enemy. // Does not stack.
 	Rickety Defense

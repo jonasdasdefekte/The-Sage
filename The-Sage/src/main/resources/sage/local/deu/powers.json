@@ -163,9 +163,7 @@
 	"sagemod:Undermine": {
 		"NAME": "Untergraben",
 		"DESCRIPTIONS": [
-			"Wenn du einen Gegner diese Runde angreifst, erhält er soviel zusätzlichen Schaden, wieviel Artefakt er hat.",
-			"Wenn du einen Gegner die nächsten #b",
-			" Runden angreifst, erhält er soviel zusätzlichen Schaden, wieviel Artefakt er hat."
+			"Wenn du einen Gegner angreifst, erhält er soviel zusätzlichen Schaden, wie er Artefakt hat."
 		]
 	},
 	"sagemod:Vigorous_Body": {
