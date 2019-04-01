@@ -141,7 +141,7 @@ Starts with 50 HP, 169 gold
 	Potion Trance
 		Skill, 1 Energy:
 		Draw 1 card (2 cards) whenever you use a Potion this turn. You cannot gain energy this turn.
-TODO:	How To Amuse Sneckos
+	How To Amuse Sneckos
 		Skill, X Energy:
 		Lose all (1) Flight. Draw X cards. Refund 3 (6).
 	Let it go
