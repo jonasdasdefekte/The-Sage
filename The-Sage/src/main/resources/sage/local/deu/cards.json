@@ -102,7 +102,7 @@
 	},
 	"sagemod:Deadly_Contraption": {
 		"NAME": "Tödlicher Apparat",
-		"DESCRIPTION": "ALLE Gegner erhalten !M! Artefakt. Am Ende ihres Zuges verlieren Gegner !sagemod:MISC! TP pro Artefakt auf ihnen. NL Versteuert."
+		"DESCRIPTION": "ALLE Gegner erhalten !M! Artefakt. Für !sagemod:MISC! Züge verlieren Gegner 1 TP pro Artefakt auf ihnen."
 	},
 	"sagemod:Defend": {
 		"NAME": "Verteidigen",

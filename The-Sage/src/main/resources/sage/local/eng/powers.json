@@ -63,8 +63,9 @@
 	"sagemod:Deadly_Contraption": {
 		"NAME": "Deadly Contraption",
 		"DESCRIPTIONS": [
-			"At the end of their turn, enemies lose #b",
-			" HP per Artifact on them."
+			"For #b",
+			" turns, enemies lose 1 HP per Artifact on them.",
+			"This turn, enemies lose 1 HP per Artifact on them."
 		]
 	},
 	"sagemod:Disoriented": {

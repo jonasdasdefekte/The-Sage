@@ -32,7 +32,11 @@ public class DeadlyContraptionPower extends AbstractSagePower implements HealthB
 
 	@Override
 	public void updateDescription() {
-		description = DESCRIPTIONS[0] + amount + DESCRIPTIONS[1];
+		if (amount == 1) {
+			description = DESCRIPTIONS[2];
+		} else {
+			description = DESCRIPTIONS[0] + amount + DESCRIPTIONS[1];
+		}
 	}
 
 	@Override
@@ -45,24 +49,16 @@ public class DeadlyContraptionPower extends AbstractSagePower implements HealthB
 				AbstractDungeon.actionManager
 						.addToBottom(new ExecuteLaterAction(this::flashWithoutSound));
 				AbstractDungeon.actionManager
-						.addToBottom(new LoseHPAction(owner, owner, artifact * times(),
+						.addToBottom(new LoseHPAction(owner, owner, artifact,
 								AttackEffect.NONE));
 			}
 		}
 	}
 	
-	private int times() {
-		if (AbstractDungeon.player.hasPower(DeadlyContraptionPower.POWER_ID)) {
-			return AbstractDungeon.player.getPower(DeadlyContraptionPower.POWER_ID).amount;
-		} else {
-			return 0;
-		}
-	}
-
 	@Override
 	public int getHealthBarAmount() {
 		if (owner.hasPower(ArtifactPower.POWER_ID)) {
-			return owner.getPower(ArtifactPower.POWER_ID).amount * times();
+			return owner.getPower(ArtifactPower.POWER_ID).amount;
 		}
 		return 0;
 	}
