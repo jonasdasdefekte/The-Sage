@@ -345,8 +345,8 @@
 	},
 	"sagemod:Study": {
 		"NAME": "Studieren",
-		"DESCRIPTION": "Ziehe !M! Karten. Lege !sagemod:MISC! Handkarte auf deinen Nachziehstapel.",
-		"UPGRADE_DESCRIPTION": "Ziehe !M! Karten. Du darfst !sagemod:MISC! Handkarte auf deinen Nachziehstapel legen.",
+		"DESCRIPTION": "Ziehe !M! Karten. NL Lege !sagemod:MISC! Handkarte auf deinen Nachziehstapel.",
+		"UPGRADE_DESCRIPTION": "Ziehe !M! Karten. NL Du darfst !sagemod:MISC! Handkarte auf deinen Nachziehstapel legen.",
 		"EXTENDED_DESCRIPTION": [
 			"auf deinen Nachziehstapel legst."
 		]
@@ -379,7 +379,7 @@
 	},
 	"sagemod:Undermine": {
 		"NAME": "Untergraben",
-		"DESCRIPTION": "Wende !M! Artefakt auf ALLE Gegner an. Wenn du einen Gegner angreifst, erhält er soviel zusätzlichen Schaden, wie er Artefakt hat."
+		"DESCRIPTION": "Wende !M! Artefakt auf ALLE Gegner an. NL Wenn du einen Gegner angreifst, erhält er soviel zusätzlichen Schaden, wie er Artefakt hat."
 	},
 	"sagemod:Vigorous_Body": {
 		"NAME": "Energischer Körper",

@@ -379,7 +379,7 @@
 	},
 	"sagemod:Undermine": {
 		"NAME": "Undermine",
-		"DESCRIPTION": "Apply !M! Artifact to ALL enemies. When you attack an enemy, they take extra damage equal to the Artifact on them."
+		"DESCRIPTION": "Apply !M! Artifact to ALL enemies. NL When you attack an enemy, they take extra damage equal to the Artifact on them."
 	},
 	"sagemod:Vigorous_Body": {
 		"NAME": "Vigorous Body",
