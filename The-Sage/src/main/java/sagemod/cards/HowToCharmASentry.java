@@ -21,12 +21,17 @@ public class HowToCharmASentry extends AbstractSageCard {
 
 	private static final AttackEffect[] EFFECTS = {AttackEffect.SLASH_HORIZONTAL,
 			AttackEffect.SLASH_DIAGONAL, AttackEffect.SLASH_VERTICAL, AttackEffect.SLASH_HEAVY};
-	private static final int ATTACK_DMG = 2;
+	private static final int ATTACK_DMG = 4;
 	private static final int UPGRADE_ATTACK_DAMAGE = 2;
+	private static final int BLOCK_AMT = 4;
+	private static final int UPGRADE_BLOCK_AMT = 2;
+	private static final int ARTIFACT_GAIN = 1;
 
 	public HowToCharmASentry() {
 		super(ID, NAME, COST, DESCRIPTION, TYPE, RARITY, TARGET);
 		baseDamage = ATTACK_DMG;
+		baseBlock = BLOCK_AMT;
+		baseMagicNumber = magicNumber = ARTIFACT_GAIN;
 	}
 
 	@Override
@@ -34,6 +39,7 @@ public class HowToCharmASentry extends AbstractSageCard {
 		if (!upgraded) {
 			upgradeName();
 			upgradeDamage(UPGRADE_ATTACK_DAMAGE);
+			upgradeBlock(UPGRADE_BLOCK_AMT);
 		}
 	}
 
@@ -45,11 +51,10 @@ public class HowToCharmASentry extends AbstractSageCard {
 	@Override
 	public void use(AbstractPlayer p, AbstractMonster m) {
 		int effect = getXEffect();
-		if (effect > 0) {
-			for (int i = 0; i < effect; i++) {
-				attack(m, EFFECTS[i % EFFECTS.length]);
-			}
-			applyPower(new ArtifactPower(m, effect), m);
+		for (int i = 0; i < effect; i++) {
+			attack(m, EFFECTS[i % EFFECTS.length]);
+			block();
+			applyPower(new ArtifactPower(m, magicNumber), m);
 		}
 		useXEnergy();
 	}

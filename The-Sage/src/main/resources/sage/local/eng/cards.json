@@ -166,7 +166,7 @@
 	},
 	"sagemod:How_To_Charm_A_Sentry": {
 		"NAME": "How To Charm A Sentry",
-		"DESCRIPTION": "Deal X times !D! damage. The enemy gains X Artifact."
+		"DESCRIPTION": "Do X times: NL Gain !B! Block. NL Deal !D! damage. NL The enemy gains !M! Artifact."
 	},
 	"sagemod:How_To_Feed_Apes": {
 		"NAME": "How To Feed Apes",
