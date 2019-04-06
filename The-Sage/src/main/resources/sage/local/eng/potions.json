@@ -36,5 +36,12 @@
     "DESCRIPTIONS": [
       "Choose #b1 of #b3 random upgraded #ySkill cards to add to your hand, it costs #b0 this turn."
     ]
+  },
+  "sagemod:Wine": {
+    "NAME": "Wine",
+    "DESCRIPTIONS": [
+      "Reduce all prices in a shop by #b",
+      " Gold."
+    ]
   }
 }

@@ -133,6 +133,7 @@ import sagemod.potions.FataMorgana;
 import sagemod.potions.FlightPotion;
 import sagemod.potions.UpgradedPotion;
 import sagemod.potions.UpgradedPotion.UpgradedPotionSave;
+import sagemod.potions.Wine;
 import sagemod.powers.Accumulate;
 import sagemod.powers.Airborne;
 import sagemod.powers.AlchemyExpertPower;
@@ -516,6 +517,8 @@ public class SageMod implements EditCharactersSubscriber, EditCardsSubscriber, E
 		// all characters
 		BaseMod.addPotion(FataMorgana.class, FataMorgana.LIQUID_COLOR, FataMorgana.HYBRID_COLOR,
 				FataMorgana.SPOTS_COLOR, FataMorgana.POTION_ID);
+		BaseMod.addPotion(Wine.class, Wine.LIQUID_COLOR, Wine.HYBRID_COLOR,
+				Wine.SPOTS_COLOR, Wine.POTION_ID);
 	}
 
 	private void initEvents() {

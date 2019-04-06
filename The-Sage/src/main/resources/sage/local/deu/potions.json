@@ -36,5 +36,12 @@
 		"DESCRIPTIONS": [
 			"Erhalte #b1 von #b3 zufälligen verbesserten #yFertigkeitskarten auf die Hand, die in diesem Zug #b0 kostet."
 		]
-	}
+	},
+  "sagemod:Wine": {
+    "NAME": "Wein",
+    "DESCRIPTIONS": [
+      "Reduziere alle Preise in einem Shop um #b",
+      " Gold."
+    ]
+  }
 }
