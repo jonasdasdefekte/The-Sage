@@ -231,7 +231,7 @@
 	},
 	"sagemod:Meditation": {
 		"NAME": "Meditation",
-		"DESCRIPTION": "Lose all Flight. NL Draw !M! cards. NL Exhaust."
+		"DESCRIPTION": "Lose all Flight. NL Gain [E] per Flight lost. NL Draw !M! cards. NL Exhaust."
 	},
 	"sagemod:Momentum": {
 		"NAME": "Momentum",

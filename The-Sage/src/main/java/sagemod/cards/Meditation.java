@@ -20,7 +20,7 @@ public class Meditation extends AbstractSageCard {
 	private static final CardRarity RARITY = CardRarity.RARE;
 	private static final CardTarget TARGET = CardTarget.SELF;
 
-	private static final int CARD_DRAW = 3;
+	private static final int CARD_DRAW = 2;
 	private static final int UPGRADE_CARD_DRAW = 2;
 
 	public Meditation() {
@@ -45,7 +45,9 @@ public class Meditation extends AbstractSageCard {
 	@Override
 	public void use(AbstractPlayer p, AbstractMonster m) {
 		if (p.hasPower(Flight.POWER_ID)) {
+			int energyGain = p.getPower(Flight.POWER_ID).amount;
 			AbstractDungeon.actionManager.addToBottom(new ReduceFlightBlockableAction(999, p));
+			gainEnergy(energyGain);
 		}
 		draw(magicNumber);
 	}

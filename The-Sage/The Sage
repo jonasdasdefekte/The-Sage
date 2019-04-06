@@ -206,7 +206,7 @@ NEW:	Shatter
 	Light-weighted
 		Skill, 0 Energy:
 		Lose all Frail. Gain that much Flight (+1). Exhaust.
-TODO:	Meditation
+	Meditation
 		Skill, 0 Energy:
 		Lose all Flight. Gain [E] per Flight lost. Draw 2 (4) cards. Exhaust.
 TODO:	Read the riot act

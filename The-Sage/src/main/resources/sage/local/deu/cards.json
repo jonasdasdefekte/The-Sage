@@ -231,7 +231,7 @@
 	},
 	"sagemod:Meditation": {
 		"NAME": "Meditation",
-		"DESCRIPTION": "Verliere allen Flug. NL Ziehe !M! Karten. NL Erschöpft."
+		"DESCRIPTION": "Verliere allen Flug. NL Erhalte [E] pro verlorenem Flug. NL Ziehe !M! Karten. NL Erschöpft."
 	},
 	"sagemod:Momentum": {
 		"NAME": "Momentum",
