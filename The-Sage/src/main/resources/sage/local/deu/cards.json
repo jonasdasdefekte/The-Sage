@@ -294,11 +294,7 @@
 	},
 	"sagemod:Read_The_Riot_Act": {
 		"NAME": "Die Leviten lesen",
-		"DESCRIPTION": "Wähle eine Karte, die X kostet, aus deinem Nachziehstapel und spiele sie. NL Erschöpft.",
-		"UPGRADE_DESCRIPTION": "Wähle eine Karte, die X kostet, aus deinem Nachziehstapel und spiele sie.",
-		"EXTENDED_DESCRIPTION": [
-			"Wähle eine Karte, die X kostet, um sie zu spielen."
-		]
+		"DESCRIPTION": "Spiele eine Karte aus deinem Nachziehstapel, die X kostet, zweimal, ohne dass es dich Energie kostet."
 	},
 	"sagemod:Refine": {
 		"NAME": "Verfeinern",

@@ -294,11 +294,7 @@
 	},
 	"sagemod:Read_The_Riot_Act": {
 		"NAME": "Read The Riot Act",
-		"DESCRIPTION": "Choose an X cost card from your draw pile and play it. NL Exhaust",
-		"UPGRADE_DESCRIPTION": "Choose an X cost card from your draw pile and play it.",
-		"EXTENDED_DESCRIPTION": [
-			"Choose an X cost card to play."
-		]
+		"DESCRIPTION": "Play a random X cost card from your draw pile twice for free."
 	},
 	"sagemod:Refine": {
 		"NAME": "Refine",

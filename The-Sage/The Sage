@@ -209,9 +209,9 @@ Starts with 50 HP, 169 gold
 	Meditation
 		Skill, 0 Energy:
 		Lose all Flight. Gain [E] per Flight lost. Draw 2 (4) cards. Exhaust.
-TODO:	Read the riot act
+	Read the riot act
 		Skill, 1 (0) Energy
-		Play a random X cost card from your draw pile for twice your current [E].
+		Play a random X cost card from your draw pile twice for your current [E].
 	Blurry
 		Skill, 1 Energy
 		Gain 4 (6) Temporary HP. Gain 2 (3) Temporary HP per Frail you have. Exhaust.
