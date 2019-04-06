@@ -60,7 +60,7 @@
 		"NAME": "Falmel's Amulet",
 		"FLAVOR": "Falmel's Amulet",
 		"DESCRIPTIONS": [
-			"Gain [E] at the start of your turn. Enemies attack an additional time on the first turn."
+			"Gain [E] at the start of your turn. A random enemy attacks an additional time on the first turn."
 		]
 	},
 	"sagemod:Flying_Carpet": {

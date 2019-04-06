@@ -60,7 +60,7 @@
 		"NAME": "Falmels Amulett",
 		"FLAVOR": "Falmels Amulett",
 		"DESCRIPTIONS": [
-			"Erhalte [E] zu Beginn deines Zuges. Gegner greifen in der ersten Runde einmal mehr an."
+			"Erhalte [E] zu Beginn deines Zuges. Ein zufälliger Gegner greift in der ersten Runde einmal mehr an."
 		]
 	},
 	"sagemod:Flying_Carpet": {

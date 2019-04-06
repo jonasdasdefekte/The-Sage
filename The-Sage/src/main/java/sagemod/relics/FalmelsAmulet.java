@@ -1,13 +1,13 @@
 package sagemod.relics;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 import com.megacrit.cardcrawl.actions.AbstractGameAction.AttackEffect;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.actions.common.GainEnergyAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.cards.DamageInfo.DamageType;
-import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.monsters.AbstractMonster.Intent;
@@ -24,33 +24,40 @@ public class FalmelsAmulet extends AbstractSageRelic {
 	private static final int ENERGY_GAIN = 1;
 
 	private int turn;
-	private List<AbstractCreature> alreadyDone;
+	private AbstractMonster target;
 
 	public FalmelsAmulet() {
 		super(ID, TIER, SOUND);
-		alreadyDone = new ArrayList<>();
 	}
 
 	@Override
 	public void atBattleStartPreDraw() {
 		turn = 0;
-		alreadyDone.clear();
-		for (AbstractMonster mo : AbstractDungeon.getCurrRoom().monsters.monsters) {
+		target = null;
+		List<AbstractMonster> monsters = new ArrayList<>(AbstractDungeon.getCurrRoom().monsters.monsters);
+		Collections.shuffle(monsters);
+		for (AbstractMonster mo : monsters) {
 			EnemyMoveInfo move =
 					(EnemyMoveInfo) ReflectionHacks.getPrivate(mo, AbstractMonster.class, "move");
 			if (isAttack(move.intent)) {
-				if (move.isMultiDamage) {// add 1 multiplier
-					move.multiplier++;
-				} else {
-					move.multiplier = 2;
-					move.isMultiDamage = true;
-				}
-				// update display
-				mo.createIntent();
-				flash();
-				appearAbove(mo);
+				target = mo;
+				addAttack(mo, move);
+				break;
 			}
 		}
+	}
+
+	private void addAttack(AbstractMonster mo, EnemyMoveInfo move) {
+			if (move.isMultiDamage) {// add 1 multiplier
+				move.multiplier++;
+			} else {
+				move.multiplier = 2;
+				move.isMultiDamage = true;
+			}
+			// update display
+			mo.createIntent();
+			flash();
+			appearAbove(mo);
 	}
 
 	@Override
@@ -62,8 +69,8 @@ public class FalmelsAmulet extends AbstractSageRelic {
 	@Override
 	public int onAttacked(DamageInfo info, int damageAmount) {
 		if (turn == 1) {
-			if (!alreadyDone.contains(info.owner) && info.type == DamageType.NORMAL) {
-				alreadyDone.add(info.owner);
+			if (info.owner == target && info.type == DamageType.NORMAL) {
+				target = null;
 				if (!info.owner.hasPower(Disoriented.POWER_ID)) {
 					AbstractDungeon.actionManager.addToTop(new DamageAction(AbstractDungeon.player,
 							new DamageInfo(info.owner, info.base, info.type),
