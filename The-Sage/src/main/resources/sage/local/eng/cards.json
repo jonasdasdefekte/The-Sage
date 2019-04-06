@@ -322,6 +322,15 @@
 		"NAME": "Salty Strike",
 		"DESCRIPTION": "Deal !D! damage. NL Apply !M! Thirsty."
 	},
+	"sagemod:Shatter": {
+		"NAME": "Shatter",
+		"DESCRIPTION": "Air. NL Lose all Flight. NL Deal damage equal to half your max HP.",
+		"UPGRADE_DESCRIPTION": "Air. NL Lose all Flight. NL Deal damage equal to your max HP.",
+		"EXTENDED_DESCRIPTION": [
+			" NL (Deals ",
+			" damage.)"
+		]
+	},
 	"sagemod:Shining_Powder": {
 		"NAME": "Shining Powder",
 		"DESCRIPTION": "Unplayable. NL Whenever you use a Potion while this card is in your hand, gain [E].",

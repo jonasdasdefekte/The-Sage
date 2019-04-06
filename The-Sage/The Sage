@@ -191,7 +191,7 @@ Starts with 50 HP, 169 gold
 	Prey
 		Attack, 1 Energy
 		Deal 10 (14) damage. If this kills an enemy with more max HP than you, gain 10 (14) max HP and remove this card from your deck.
-NEW:	Shatter
+	Shatter
 		Attack, 3 Energy
 		Air. Lose all Flight. Deal damage equal to half your max HP (equal to your max HP).
 	Escape

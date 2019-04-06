@@ -104,6 +104,7 @@ import sagemod.cards.Riches;
 import sagemod.cards.RicketyDefense;
 import sagemod.cards.RockOil;
 import sagemod.cards.SaltyStrike;
+import sagemod.cards.Shatter;
 import sagemod.cards.ShiningPowder;
 import sagemod.cards.Slalom;
 import sagemod.cards.SpoiledFood;
@@ -322,6 +323,7 @@ public class SageMod implements EditCharactersSubscriber, EditCardsSubscriber, E
 		BaseMod.addCard(new Prey());
 		BaseMod.addCard(new Blurry());
 		BaseMod.addCard(new ReadTheRiotAct());
+		BaseMod.addCard(new Shatter());
 
 		// Colorless
 		BaseMod.addCard(new PerplexingGlare());

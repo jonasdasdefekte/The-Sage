@@ -322,6 +322,15 @@
 		"NAME": "Gesalzener Schlag",
 		"DESCRIPTION": "Füge !D! Schaden zu. NL Wende !M! Durstig an."
 	},
+	"sagemod:Shatter": {
+		"NAME": "Zerschmettern",
+		"DESCRIPTION": "Luft. NL Verliere allen Flug. NL Füge Schaden in Höhe der Hälfte deiner max. TP zu.",
+		"UPGRADE_DESCRIPTION": "Luft. Verliere allen Flug. Füge Schaden in Höhe deiner max. TP zu.",
+		"EXTENDED_DESCRIPTION": [
+			" NL (Fügt ",
+			" Schaden zu.)"
+		]
+	},
 	"sagemod:Shining_Powder": {
 		"NAME": "Strahlendes Pulver",
 		"DESCRIPTION": "Unspielbar. NL Während diese Karte in deiner Hand ist erhälst du [E] , wenn du einen Trank benutzt.",
