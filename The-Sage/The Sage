@@ -108,6 +108,9 @@ Starts with 50 HP, 169 gold
 	About Clark
 		Attack, 5 (4) Energy:
 		Deal 8 (10) damage two times. Costs 1 [E] less per Frail you have.
+TODO: Spoon Strike
+		Attack, 1 Energy:
+		Deal 8 (11) damage. Advance all potions that you are currently brewing by 1 turn.
 	Gearwheel Master
 		Skill, 0 Energy: 
 		EVERYBODY gains 1(2/3/...) Artifact. Exhaust. Can be upgraded any number of times.
