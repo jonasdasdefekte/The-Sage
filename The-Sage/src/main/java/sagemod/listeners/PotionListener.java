@@ -1,6 +1,7 @@
 package sagemod.listeners;
 
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.List;
 import com.megacrit.cardcrawl.actions.AbstractGameAction.AttackEffect;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
@@ -191,7 +192,7 @@ public class PotionListener implements PrePotionUseSubscriber, PostPotionUseSubs
 					List<Potion> list = new ArrayList<>();
 					int amount = AbstractDungeon.player.getPower(RichesPower.POWER_ID).amount;
 					for (int i = 0; i < amount; i++) {
-						list.add(new Potion(0, PotionHelper.getRandomPotion(RichesPower.EXCLUDED)));
+						list.add(new Potion(0, getRandomPotion(RichesPower.EXCLUDED)));
 					}
 					if (!list.isEmpty()) {
 						Brew.obtain(list);
@@ -212,5 +213,12 @@ public class PotionListener implements PrePotionUseSubscriber, PostPotionUseSubs
 				}
 			}
 		}
+	}
+	
+	public static AbstractPotion getRandomPotion(Collection<String> exceptions) {
+		List<String> possiblePotions = new ArrayList<>(PotionHelper.potions);
+		possiblePotions.removeAll(exceptions);
+		String randomKey = (String)possiblePotions.get(AbstractDungeon.potionRng.random(possiblePotions.size() - 1));
+		return PotionHelper.getPotion(randomKey);
 	}
 }
