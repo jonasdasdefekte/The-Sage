@@ -11,6 +11,7 @@ import com.evacipated.cardcrawl.modthespire.lib.SpirePatch;
 import com.evacipated.cardcrawl.modthespire.lib.SpirePrefixPatch;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.AbstractCard.CardType;
+import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.helpers.TipTracker;
 import com.megacrit.cardcrawl.rewards.RewardItem;
@@ -45,7 +46,7 @@ public class PatchesForSingingVial {
 			@Override
 			public int[] Locate(CtBehavior ctMethodToPatch) throws Exception {
 				return LineFinder.findInOrder(ctMethodToPatch, new ArrayList<Matcher>(),
-						new Matcher.FieldAccessMatcher(CardRewardScreen.class, "onCardSelect"));
+						new Matcher.MethodCallMatcher(AbstractPlayer.class, "hasRelic"));
 			}
 		}
 	}
@@ -67,68 +68,28 @@ public class PatchesForSingingVial {
 		}
 	}
 
-	@SpirePatch(clz = CardRewardScreen.class, method = "discoveryOpen", paramtypez = {})
-	public static class DiscoveryOpenHidePatch1 {
-		@SpireInsertPatch(locator = Locator.class)
-		public static void Insert(CardRewardScreen screen) {
-			ButtonField.button.get(screen).hide();
-		}
-
-		private static class Locator extends SpireInsertLocator {
-			@Override
-			public int[] Locate(CtBehavior ctMethodToPatch) throws Exception {
-				return LineFinder.findInOrder(ctMethodToPatch, new ArrayList<Matcher>(),
-						new Matcher.FieldAccessMatcher(CardRewardScreen.class, "onCardSelect"));
-			}
-		}
-	}
-
 	@SpirePatch(clz = CardRewardScreen.class, method = "discoveryOpen",
 			paramtypez = {CardType.class})
-	public static class DiscoveryOpenHidePatch2 {
-		@SpireInsertPatch(locator = Locator.class)
+	public static class DiscoveryOpenHidePatch {
+		@SpireInsertPatch(rloc = 1)
 		public static void Insert(CardRewardScreen screen, CardType type) {
 			ButtonField.button.get(screen).hide();
-		}
-
-		private static class Locator extends SpireInsertLocator {
-			@Override
-			public int[] Locate(CtBehavior ctMethodToPatch) throws Exception {
-				return LineFinder.findInOrder(ctMethodToPatch, new ArrayList<Matcher>(),
-						new Matcher.FieldAccessMatcher(CardRewardScreen.class, "onCardSelect"));
-			}
 		}
 	}
 
 	@SpirePatch(clz = CardRewardScreen.class, method = "codexOpen")
 	public static class CodexOpenHidePatch {
-		@SpireInsertPatch(locator = Locator.class)
+		@SpireInsertPatch(rloc = 1)
 		public static void Insert(CardRewardScreen screen) {
 			ButtonField.button.get(screen).hide();
-		}
-
-		private static class Locator extends SpireInsertLocator {
-			@Override
-			public int[] Locate(CtBehavior ctMethodToPatch) throws Exception {
-				return LineFinder.findInOrder(ctMethodToPatch, new ArrayList<Matcher>(),
-						new Matcher.FieldAccessMatcher(CardRewardScreen.class, "onCardSelect"));
-			}
 		}
 	}
 
 	@SpirePatch(clz = CardRewardScreen.class, method = "draftOpen")
 	public static class DraftOpenHidePatch {
-		@SpireInsertPatch(locator = Locator.class)
+		@SpireInsertPatch(rloc =  1)
 		public static void Insert(CardRewardScreen screen) {
 			ButtonField.button.get(screen).hide();
-		}
-
-		private static class Locator extends SpireInsertLocator {
-			@Override
-			public int[] Locate(CtBehavior ctMethodToPatch) throws Exception {
-				return LineFinder.findInOrder(ctMethodToPatch, new ArrayList<Matcher>(),
-						new Matcher.FieldAccessMatcher(CardRewardScreen.class, "onCardSelect"));
-			}
 		}
 	}
 
