@@ -312,7 +312,7 @@
 	},
 	"sagemod:Rock_Oil": {
 		"NAME": "Steinöl",
-		"DESCRIPTION": "Unspielbar. NL Während diese Karte in deiner Hand ist erhälst du !B! Block, wenn du einen Trank benutzt."
+		"DESCRIPTION": "Unspielbar. NL Erhalte !B! Block, wenn du mit dieser Karte auf der Hand einen Trank benutzt."
 	},
 	"sagemod:Salty_Strike": {
 		"NAME": "Gesalzener Schlag",
@@ -329,8 +329,8 @@
 	},
 	"sagemod:Shining_Powder": {
 		"NAME": "Strahlendes Pulver",
-		"DESCRIPTION": "Unspielbar. NL Während diese Karte in deiner Hand ist erhälst du [E] , wenn du einen Trank benutzt.",
-		"UPGRADE_DESCRIPTION": "Unspielbar. NL Während diese Karte in deiner Hand ist erhälst du [E] [E] , wenn du einen Trank benutzt."
+		"DESCRIPTION": "Unspielbar. NL Erhalte [E] , wenn du mit dieser Karte auf der Hand einen Trank benutzt.",
+		"UPGRADE_DESCRIPTION": "Unspielbar. NL Erhalte [E] [E] , wenn du mit dieser Karte auf der Hand einen Trank benutzt."
 	},
 	"sagemod:Slalom": {
 		"NAME": "Slalom",
