@@ -29,10 +29,17 @@ public class FataMorgana extends CustomPotion {
 
 	public FataMorgana() {
 		super(NAME, POTION_ID, RARITY, SIZE, COLOR);
-		potency = getPotency();
-		description = DESCRIPTIONS[0] + potency + DESCRIPTIONS[1];
+		
 		isThrown = true;
 		targetRequired = true;
+		
+	}
+	
+	@Override
+	public void initializeData() {
+		potency = getPotency();
+		description = DESCRIPTIONS[0] + potency + DESCRIPTIONS[1];
+		tips.clear();
 		tips.add(new PowerTip(name, description));
 		tips.add(Keywords.makePowerTip(Keywords.DISORIENTED));
 	}

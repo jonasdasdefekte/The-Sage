@@ -33,13 +33,17 @@ public class Wine extends CustomPotion {
 
 	public Wine() {
 		super(NAME, POTION_ID, RARITY, SIZE, COLOR);
-		potency = getPotency();
-		description = DESCRIPTIONS[0] + potency + DESCRIPTIONS[1];
 		isThrown = false;
-		tips.add(new PowerTip(name, description));
-		tips.add(new PowerTip(DESCRIPTIONS[2], DESCRIPTIONS[3]));
 	}
 
+	@Override
+	public void initializeData() {
+		potency = getPotency();
+		description = DESCRIPTIONS[0] + potency + DESCRIPTIONS[1];
+		tips.clear();
+		tips.add(new PowerTip(name, description));
+	}
+	
 	@Override
 	public int getPotency(int ascensionLevel) {
 		return POTENCY;

@@ -24,7 +24,6 @@ import com.megacrit.cardcrawl.potions.BottledMiracle;
 import com.megacrit.cardcrawl.potions.ColorlessPotion;
 import com.megacrit.cardcrawl.potions.Elixir;
 import com.megacrit.cardcrawl.potions.EntropicBrew;
-import com.megacrit.cardcrawl.potions.FairyPotion;
 import com.megacrit.cardcrawl.potions.FirePotion;
 import com.megacrit.cardcrawl.potions.GamblersBrew;
 import com.megacrit.cardcrawl.potions.PotionSlot;
@@ -140,7 +139,6 @@ public class UpgradedPotion extends CustomPotion {
 		DOUBLE_USE_WHITELIST.add("Turbid Wine");
 		DOUBLE_USE_WHITELIST.add("conspire:EchoDraught");
 		DOUBLE_USE_WHITELIST.add("construct:MegaPotion");
-		DOUBLE_USE_WHITELIST.add(FairyPotion.POTION_ID);
 	}
 
 	public static void initTextures() {
@@ -192,6 +190,16 @@ public class UpgradedPotion extends CustomPotion {
 	public AbstractPotion makeCopy() {
 		return new UpgradedPotion(potion.makeCopy());
 	}
+	
+	@Override
+	public boolean canUse() {
+		return potion.canUse();
+	}
+	
+	@Override
+	public boolean canDiscard() {
+		return potion.canDiscard();
+	}
 
 	@Override
 	public void use(AbstractCreature c) {
@@ -229,6 +237,8 @@ public class UpgradedPotion extends CustomPotion {
 	@Override
 	public void shopRender(SpriteBatch sb) {
 		potion.scale = scale;
+		potion.posX = posX;
+		potion.posY = posY;
 		potion.shopRender(sb);
 		sb.setColor(Color.WHITE);
 		sb.draw(plusImg, posX - 32.0F, posY - 32.0F, 32.0F, 32.0F, 64.0F, 64.0F, scale, scale,
@@ -238,6 +248,8 @@ public class UpgradedPotion extends CustomPotion {
 	@Override
 	public void render(SpriteBatch sb) {
 		potion.scale = scale;
+		potion.posX = posX;
+		potion.posY = posY;
 		potion.render(sb);
 		sb.setColor(Color.WHITE);
 		sb.draw(plusImg, posX - 32.0F, posY - 32.0F, 32.0F, 32.0F, 64.0F, 64.0F, scale, scale,

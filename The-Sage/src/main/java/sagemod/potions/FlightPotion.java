@@ -30,9 +30,14 @@ public class FlightPotion extends CustomPotion {
 
 	public FlightPotion() {
 		super(NAME, POTION_ID, RARITY, SIZE, COLOR);
+		isThrown = false;
+	}
+	
+	@Override
+	public void initializeData() {
 		potency = getPotency();
 		description = DESCRIPTIONS[0] + potency + DESCRIPTIONS[1];
-		isThrown = false;
+		tips.clear();
 		tips.add(new PowerTip(name, description));
 		tips.add(Keywords.makePowerTip(Keywords.FLIGHT));
 	}
