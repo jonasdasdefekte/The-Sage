@@ -17,14 +17,21 @@
 		"NAME": "Attack Potion",
 		"DESCRIPTIONS": [
 			"Choose #b1 of #b3 random upgraded #yAttack cards to add to your hand, it costs #b0 this turn.",
-			"Choose #b1 of #b3 random upgraded #yAttack cards and add #b2 copies to your hand that cost #b0 this turn."
+			"Choose #b1 of #b3 random upgraded #yAttack cards and add #b2 copies to your hand, they cost #b0 this turn."
 		]
 	},
+	"sagemod:UPGRADED:BottledMiracle": {
+    "NAME": "Bottled Miracle",
+    "DESCRIPTIONS": [
+      "Add #b2 #yMiracles+ to your hand.",
+      "Add #b4 #yMiracles+ to your hand."
+    ]
+  },
 	"sagemod:UPGRADED:ColorlessPotion": {
-		"NAME": "Attack Potion",
+		"NAME": "Colorless Potion",
 		"DESCRIPTIONS": [
 			"Choose #b1 of #b3 random upgraded #yColorless cards to add to your hand, it costs #b0 this turn.",
-			"Choose #b1 of #b3 random upgraded #yColorless cards and add #b2 copies to your hand that cost #b0 this turn."
+			"Choose #b1 of #b3 random upgraded #yColorless cards and add #b2 copies to your hand, they cost #b0 this turn."
 		]
 	},
 	"sagemod:UPGRADED:infinitespire:BlackPotion": {
@@ -38,14 +45,14 @@
 		"NAME": "Power Potion",
 		"DESCRIPTIONS": [
 			"Choose #b1 of #b3 random upgraded #yPower cards to add to your hand, it costs #b0 this turn.",
-			"Choose #b1 of #b3 random upgraded #yPower cards and add #b2 copies to your hand that cost #b0 this turn."
+			"Choose #b1 of #b3 random upgraded #yPower cards and add #b2 copies to your hand, they cost #b0 this turn."
 		]
 	},
 	"sagemod:UPGRADED:SkillPotion": {
 		"NAME": "Skill Potion",
 		"DESCRIPTIONS": [
 			"Choose #b1 of #b3 random upgraded #ySkill cards to add to your hand, it costs #b0 this turn.",
-			"Choose #b1 of #b3 random upgraded #ySkill cards and add #b2 copies to your hand that cost #b0 this turn."
+			"Choose #b1 of #b3 random upgraded #ySkill cards and add #b2 copies to your hand, they cost #b0 this turn."
 		]
 	},
 	"sagemod:Wine": {

@@ -16,15 +16,22 @@
 	"sagemod:UPGRADED:AttackPotion": {
 		"NAME": "Angriffstrank",
 		"DESCRIPTIONS": [
-			"Erhalte #b1 von #b3 zufälligen verbesserten #yAngriffskarten auf die Hand, die in diesem Zug #b0 kostet.",
-			"Erhalte #b1 von #b3 zufälligen verbesserten #yAngriffskarten zweimal auf die Hand, die in diesem Zug #b0 kosten."
+			"Wähle #b1 von #b3 zufälligen verbesserten #yAngriffskarten. Nimm sie auf die Hand, sie kostet für diesen Zug #b0.",
+			"Wähle #b1 von #b3 zufälligen verbesserten #yAngriffskarten. Nimm #b2 Kopien auf die Hand, sie kosten für diesen Zug #b0."
+		]
+	},
+	"sagemod:UPGRADED:BottledMiracle": {
+		"NAME": "Wunder in der Flasche",
+		"DESCRIPTIONS": [
+			"Erhalte #b2 #yWunder+ auf die Hand.",
+			"Erhalte #b4 #yWunder+ auf die Hand."
 		]
 	},
 	"sagemod:UPGRADED:ColorlessPotion": {
-		"NAME": "Angriffstrank",
+		"NAME": "Farbloser Trank",
 		"DESCRIPTIONS": [
-			"Erhalte #b1 von #b3 zufälligen verbesserten #yfarblosen #yKarten auf die Hand, die in diesem Zug #b0 kostet.",
-			"Erhalte #b1 von #b3 zufälligen verbesserten #yfarblosen #yKarten zweimal auf die Hand, die in diesem Zug #b0 kosten."
+			"Wähle #b1 von #b3 zufälligen verbesserten #yfarblosen Karten. Nimm sie auf die Hand, sie kostet für diesen Zug #b0.",
+			"Wähle #b1 von #b3 zufälligen verbesserten #yfarblosen Karten. Nimm #b2 Kopien auf die Hand, sie kosten für diesen Zug #b0."
 		]
 	},
 	"sagemod:UPGRADED:infinitespire:BlackPotion": {
@@ -37,22 +44,22 @@
 	"sagemod:UPGRADED:PowerPotion": {
 		"NAME": "Machttrank",
 		"DESCRIPTIONS": [
-			"Erhalte #b1 von #b3 zufälligen #yMachtkarten auf die Hand, die in diesem Zug #b0 kostet.",
-			"Erhalte #b1 von #b3 zufälligen verbesserten #yMachtkarten zweimal auf die Hand, die in diesem Zug #b0 kosten."
+			"Wähle #b1 von #b3 zufälligen verbesserten #yMachtkarten. Nimm sie auf die Hand, sie kostet für diesen Zug #b0.",
+			"Wähle #b1 von #b3 zufälligen verbesserten #yMachtkarten. Nimm #b2 Kopien auf die Hand, sie kosten für diesen Zug #b0."
 		]
 	},
 	"sagemod:UPGRADED:SkillPotion": {
 		"NAME": "Fertigkeitstrank",
 		"DESCRIPTIONS": [
-			"Erhalte #b1 von #b3 zufälligen verbesserten #yFertigkeitskarten auf die Hand, die in diesem Zug #b0 kostet.",
-			"Erhalte #b1 von #b3 zufälligen verbesserten #yFertigkeitskarten zweimal auf die Hand, die in diesem Zug #b0 kosten."
+			"Wähle #b1 von #b3 zufälligen verbesserten #yFertigkeitskarten. Nimm sie auf die Hand, sie kostet für diesen Zug #b0.",
+      "Wähle #b1 von #b3 zufälligen verbesserten #yFertigkeitskarten. Nimm #b2 Kopien auf die Hand, sie kosten für diesen Zug #b0."
 		]
 	},
-  "sagemod:Wine": {
-    "NAME": "Wein",
-    "DESCRIPTIONS": [
-      "Reduziere alle Preise in einem Shop um #b",
-      " Gold."
-    ]
-  }
+	"sagemod:Wine": {
+		"NAME": "Wein",
+		"DESCRIPTIONS": [
+			"Reduziere alle Preise in einem Shop um #b",
+			" Gold."
+		]
+	}
 }

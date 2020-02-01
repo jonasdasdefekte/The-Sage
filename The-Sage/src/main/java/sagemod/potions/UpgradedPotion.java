@@ -8,6 +8,8 @@ import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.math.MathUtils;
+import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
+import com.megacrit.cardcrawl.cards.tempCards.Miracle;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -18,6 +20,7 @@ import com.megacrit.cardcrawl.potions.Ambrosia;
 import com.megacrit.cardcrawl.potions.AttackPotion;
 import com.megacrit.cardcrawl.potions.BlessingOfTheForge;
 import com.megacrit.cardcrawl.potions.BloodPotion;
+import com.megacrit.cardcrawl.potions.BottledMiracle;
 import com.megacrit.cardcrawl.potions.ColorlessPotion;
 import com.megacrit.cardcrawl.potions.Elixir;
 import com.megacrit.cardcrawl.potions.EntropicBrew;
@@ -30,6 +33,7 @@ import com.megacrit.cardcrawl.potions.SkillPotion;
 import com.megacrit.cardcrawl.potions.SmokeBomb;
 import com.megacrit.cardcrawl.potions.StancePotion;
 import com.megacrit.cardcrawl.relics.SacredBark;
+import com.megacrit.cardcrawl.rooms.AbstractRoom;
 import basemod.ReflectionHacks;
 import basemod.abstracts.CustomPotion;
 import basemod.abstracts.CustomSavable;
@@ -151,7 +155,8 @@ public class UpgradedPotion extends CustomPotion {
 	}
 	
 	private int loadPotency() {
-		if (potion instanceof UpgradedPotion || DOUBLE_USE_WHITELIST.contains(potion.ID) || DISCOVERY_LIST.contains(potion.ID)) {
+		if (potion instanceof UpgradedPotion || DOUBLE_USE_WHITELIST.contains(potion.ID) 
+				|| DISCOVERY_LIST.contains(potion.ID) || BottledMiracle.POTION_ID.equals(potion.ID)) {
 			return potion.getPotency();
 		} else if (potion.ID.equals("Doom Potion")) {
 			return (int) (potion.getPotency() * 0.75f);
@@ -166,7 +171,7 @@ public class UpgradedPotion extends CustomPotion {
 				return TWICE + potion.description;
 			}
 
-			if (DISCOVERY_LIST.contains(potion.ID)) {
+			if (DISCOVERY_LIST.contains(potion.ID) || BottledMiracle.POTION_ID.equals(potion.ID)) {
 				int descIndex = (AbstractDungeon.player != null && AbstractDungeon.player.hasRelic(SacredBark.ID)) ? 1 : 0;
 				return CardCrawlGame.languagePack.getPotionString("sagemod:UPGRADED:" + potion.ID).DESCRIPTIONS[descIndex];
 			}
@@ -191,6 +196,10 @@ public class UpgradedPotion extends CustomPotion {
 	@Override
 	public void use(AbstractCreature c) {
 		ReflectionHacks.setPrivate(potion, AbstractPotion.class, "potency", potency);
+		if (BottledMiracle.POTION_ID.equals(potion.ID)) {
+			useBottledMiracle();
+			return;
+		}
 		if (DISCOVERY_LIST.contains(potion.ID)) {
 			discoveryOpenUpgrades++;
 		}
@@ -198,6 +207,14 @@ public class UpgradedPotion extends CustomPotion {
 		if (DOUBLE_USE_WHITELIST.contains(potion.ID)) {
 			potion.use(c);
 		}
+	}
+
+	private void useBottledMiracle() {
+		if (AbstractDungeon.getCurrRoom().phase == AbstractRoom.RoomPhase.COMBAT) {
+			Miracle miracle = new Miracle();
+			miracle.upgrade();
+            this.addToBot(new MakeTempCardInHandAction(miracle, this.potency));
+        }
 	}
 
 	@Override
