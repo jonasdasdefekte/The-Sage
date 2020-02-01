@@ -16,25 +16,36 @@
 	"sagemod:UPGRADED:AttackPotion": {
 		"NAME": "Angriffstrank",
 		"DESCRIPTIONS": [
-			"Erhalte #b1 von #b3 zufälligen verbesserten #yAngriffskarten auf die Hand, die in diesem Zug #b0 kostet."
+			"Erhalte #b1 von #b3 zufälligen verbesserten #yAngriffskarten auf die Hand, die in diesem Zug #b0 kostet.",
+			"Erhalte #b1 von #b3 zufälligen verbesserten #yAngriffskarten zweimal auf die Hand, die in diesem Zug #b0 kosten."
+		]
+	},
+	"sagemod:UPGRADED:ColorlessPotion": {
+		"NAME": "Angriffstrank",
+		"DESCRIPTIONS": [
+			"Erhalte #b1 von #b3 zufälligen verbesserten #yfarblosen #yKarten auf die Hand, die in diesem Zug #b0 kostet.",
+			"Erhalte #b1 von #b3 zufälligen verbesserten #yfarblosen #yKarten zweimal auf die Hand, die in diesem Zug #b0 kosten."
 		]
 	},
 	"sagemod:UPGRADED:infinitespire:BlackPotion": {
 		"NAME": "Black Potion",
 		"DESCRIPTIONS": [
+			"Choose #b1 of #b3 random upgraded [#3D00D6]Black[] cards to add to your hand, it costs #b0 this turn.",
 			"Choose #b1 of #b3 random upgraded [#3D00D6]Black[] cards to add to your hand, it costs #b0 this turn."
 		]
 	},
 	"sagemod:UPGRADED:PowerPotion": {
 		"NAME": "Machttrank",
 		"DESCRIPTIONS": [
-			"Erhalte #b1 von #b3 zufälligen #yMachtkarten auf die Hand, die in diesem Zug #b0 kostet."
+			"Erhalte #b1 von #b3 zufälligen #yMachtkarten auf die Hand, die in diesem Zug #b0 kostet.",
+			"Erhalte #b1 von #b3 zufälligen verbesserten #yMachtkarten zweimal auf die Hand, die in diesem Zug #b0 kosten."
 		]
 	},
 	"sagemod:UPGRADED:SkillPotion": {
 		"NAME": "Fertigkeitstrank",
 		"DESCRIPTIONS": [
-			"Erhalte #b1 von #b3 zufälligen verbesserten #yFertigkeitskarten auf die Hand, die in diesem Zug #b0 kostet."
+			"Erhalte #b1 von #b3 zufälligen verbesserten #yFertigkeitskarten auf die Hand, die in diesem Zug #b0 kostet.",
+			"Erhalte #b1 von #b3 zufälligen verbesserten #yFertigkeitskarten zweimal auf die Hand, die in diesem Zug #b0 kosten."
 		]
 	},
   "sagemod:Wine": {

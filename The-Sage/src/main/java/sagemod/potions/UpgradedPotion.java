@@ -14,8 +14,12 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.helpers.PowerTip;
 import com.megacrit.cardcrawl.potions.AbstractPotion;
+import com.megacrit.cardcrawl.potions.Ambrosia;
 import com.megacrit.cardcrawl.potions.AttackPotion;
+import com.megacrit.cardcrawl.potions.BlessingOfTheForge;
 import com.megacrit.cardcrawl.potions.BloodPotion;
+import com.megacrit.cardcrawl.potions.ColorlessPotion;
+import com.megacrit.cardcrawl.potions.Elixir;
 import com.megacrit.cardcrawl.potions.EntropicBrew;
 import com.megacrit.cardcrawl.potions.FairyPotion;
 import com.megacrit.cardcrawl.potions.FirePotion;
@@ -24,6 +28,8 @@ import com.megacrit.cardcrawl.potions.PotionSlot;
 import com.megacrit.cardcrawl.potions.PowerPotion;
 import com.megacrit.cardcrawl.potions.SkillPotion;
 import com.megacrit.cardcrawl.potions.SmokeBomb;
+import com.megacrit.cardcrawl.potions.StancePotion;
+import com.megacrit.cardcrawl.relics.SacredBark;
 import basemod.ReflectionHacks;
 import basemod.abstracts.CustomPotion;
 import basemod.abstracts.CustomSavable;
@@ -57,18 +63,32 @@ public class UpgradedPotion extends CustomPotion {
 		potency = loadPotency();
 		ReflectionHacks.setPrivate(potion, AbstractPotion.class, "potency", potency);
 
-		description = loadDescription();
-
-		tips.add(new PowerTip(name, description));
-		for (int i = 1; i < potion.tips.size(); i++) {
-			tips.add(potion.tips.get(i));
-		}
-
+		reloadDescription();
+		
 		isThrown = potion.isThrown;
 		targetRequired = potion.targetRequired;
 
 		outlineImg = (Texture) ReflectionHacks.getPrivate(this, AbstractPotion.class, "outlineImg");
 
+	}
+	
+	@Override
+	public void initializeData() {
+		super.initializeData();
+		if (potion != null) {
+			potion.initializeData();
+			potency = loadPotency();
+			reloadDescription();
+		}
+	}
+	
+	private void reloadDescription() {
+		tips.clear();
+		description = loadDescription();
+		tips.add(new PowerTip(name, description));
+		for (int i = 1; i < potion.tips.size(); i++) {
+			tips.add(potion.tips.get(i));
+		}
 	}
 
 	public static AbstractPotion forceUpgrade(AbstractPotion potion) {
@@ -90,6 +110,10 @@ public class UpgradedPotion extends CustomPotion {
 	public static void initLists() {
 		BLACKLIST.add(EntropicBrew.POTION_ID);
 		BLACKLIST.add(SmokeBomb.POTION_ID);
+		BLACKLIST.add(Ambrosia.POTION_ID);
+		BLACKLIST.add(Elixir.POTION_ID);
+		BLACKLIST.add(BlessingOfTheForge.POTION_ID);
+		BLACKLIST.add(StancePotion.POTION_ID);
 		BLACKLIST.add("Elixir");
 		BLACKLIST.add("conspire:TimeTravelPotion");
 		BLACKLIST.add("jedi:holywater");
@@ -99,6 +123,7 @@ public class UpgradedPotion extends CustomPotion {
 		DISCOVERY_LIST.add(AttackPotion.POTION_ID);
 		DISCOVERY_LIST.add(PowerPotion.POTION_ID);
 		DISCOVERY_LIST.add(SkillPotion.POTION_ID);
+		DISCOVERY_LIST.add(ColorlessPotion.POTION_ID);
 		DISCOVERY_LIST.add("infinitespire:BlackPotion");
 
 		DOUBLE_USE_WHITELIST.add(GamblersBrew.POTION_ID);
@@ -125,9 +150,9 @@ public class UpgradedPotion extends CustomPotion {
 		}
 		return p.name + "+";
 	}
-
+	
 	private int loadPotency() {
-		if (potion instanceof UpgradedPotion || DOUBLE_USE_WHITELIST.contains(potion.ID)) {
+		if (potion instanceof UpgradedPotion || DOUBLE_USE_WHITELIST.contains(potion.ID) || DISCOVERY_LIST.contains(potion.ID)) {
 			return potion.getPotency();
 		} else if (potion.ID.equals("Doom Potion")) {
 			return (int) (potion.getPotency() * 0.75f);
@@ -143,11 +168,11 @@ public class UpgradedPotion extends CustomPotion {
 			}
 
 			if (DISCOVERY_LIST.contains(potion.ID)) {
-				return CardCrawlGame.languagePack.getPotionString("sagemod:UPGRADED:" + potion.ID).DESCRIPTIONS[0];
+				int descIndex = (AbstractDungeon.player != null && AbstractDungeon.player.hasRelic(SacredBark.ID)) ? 1 : 0;
+				return CardCrawlGame.languagePack.getPotionString("sagemod:UPGRADED:" + potion.ID).DESCRIPTIONS[descIndex];
 			}
 
-			return potion.description.replaceAll(String.valueOf(potion.getPotency()),
-					String.valueOf(potency));
+			return potion.description.replaceAll(String.valueOf(potion.getPotency()), String.valueOf(potency));
 		} catch (Exception ex) {
 			SageMod.logger.catching(ex);
 			return potion.description;
