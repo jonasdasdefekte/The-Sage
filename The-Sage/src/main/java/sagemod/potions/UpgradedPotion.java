@@ -127,7 +127,6 @@ public class UpgradedPotion extends CustomPotion {
 		DISCOVERY_LIST.add("infinitespire:BlackPotion");
 
 		DOUBLE_USE_WHITELIST.add(GamblersBrew.POTION_ID);
-		DOUBLE_USE_WHITELIST.add(BloodPotion.POTION_ID);
 		DOUBLE_USE_WHITELIST.add("blackbeard:" + BloodPotion.POTION_ID);
 		DOUBLE_USE_WHITELIST.add("Flashbang");
 		DOUBLE_USE_WHITELIST.add("WardPotion");
