@@ -71,7 +71,6 @@ public class UpgradedPotion extends CustomPotion {
 
 	}
 
-
 	public static AbstractPotion forceUpgrade(AbstractPotion potion) {
 		return new UpgradedPotion(potion);
 	}
@@ -188,7 +187,8 @@ public class UpgradedPotion extends CustomPotion {
 
 	@Override
 	public void shopRender(SpriteBatch sb) {
-		super.shopRender(sb);
+		potion.scale = scale;
+		potion.shopRender(sb);
 		sb.setColor(Color.WHITE);
 		sb.draw(plusImg, posX - 32.0F, posY - 32.0F, 32.0F, 32.0F, 64.0F, 64.0F, scale, scale,
 				getAngle(), 0, 0, 64, 64, false, false);
@@ -196,7 +196,8 @@ public class UpgradedPotion extends CustomPotion {
 
 	@Override
 	public void render(SpriteBatch sb) {
-		super.render(sb);
+		potion.scale = scale;
+		potion.render(sb);
 		sb.setColor(Color.WHITE);
 		sb.draw(plusImg, posX - 32.0F, posY - 32.0F, 32.0F, 32.0F, 64.0F, 64.0F, scale, scale,
 				getAngle(), 0, 0, 64, 64, false, false);
