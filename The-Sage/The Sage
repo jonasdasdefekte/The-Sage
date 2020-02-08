@@ -8,7 +8,7 @@ Starts with 50 HP, 169 gold
 
 **STARTING RELIC**
 	Flying Carpet
-		At the start of your second turn, 1 Flight. 
+		At the start of your second turn, gain 1 Flight. 
 
 **STARTING DECK**
     4x Strike
@@ -17,15 +17,15 @@ Starts with 50 HP, 169 gold
 	3x Defend
 		Skill, 1 Energy: 
 		Gain 5 (8) Block.
-	1x Bold move
+	1x Swipe
 		Attack, 1 Energy:
-		If you fly, deal 10 (14) damage. Otherwise gain 1 Flight.
+		Air. Deal 7 (10) damage to ALL enemies.
 	1x Fly
 		Skill, 1 Energy: 
 		If you fly, gain 7 (10) Block. Otherwise gain 1 Flight.
 	1x Upwards
 		Skill, 2 (1) Energy:
-		If you fly, gain 1 Flight. Otherwise gain 2 Flight.
+		Gain 1 Flight.
 
 **17 COMMON CARDS (grey)**
 	Pincer Repair
@@ -102,16 +102,16 @@ CHANGED:	Slalom
 CHANGED:	Bouncing Strike
 		Attack, 1 Energy: 
 		Gain 1 Flight. Deal damage equal to 3x (5x) your Flight.
-XXX:	Turn Around
+CHANGED:	Turn Around
 		Attack, 1 Energy: 
-		Gain 1 Frail. Deal 4 (6) damage per Frail you have. 
+		Deal 10 (15) damage. This deals less damage per Flight you have. 
 	Potion Explosion
 		Attack, 1 Energy:
 		Deal 6 (8) damage to ALL enemies. Repeat this once per potion you used this turn.
-XXX:	About Clark
-		Attack, 5 (4) Energy:
-		Deal 8 (10) damage two times. Costs 1 [E] less per Frail you have.
-TODO: Spoon Strike
+CHANGED:	About Clark
+		Attack, 2 (1) Energy:
+		Deal 8 (10) damage two times. Costs 1 [E] more per Flight you have.
+NEW: Spoon Strike
 		Attack, 1 Energy:
 		Deal 8 (11) damage. Advance all potions that you are currently brewing by 1 turn.
 	Gearwheel Master
@@ -168,6 +168,9 @@ TODO: Spoon Strike
 	Deadly Contraption
 		Skill, 1 Energy: 
 		Apply 3 Artifact to ALL enemies. For 2 (3) turns, enemies lose 1 HP per Artifact on them. // Stacks for the amount of turns.
+NEW:	Poem
+		Skill, X Energy:
+		Draw 1 card. Gain X+3 (4) Energy. Lose 3 Energy after playing the next card.
 	Altitude
 		Power, 1 Energy: 
 		Gain 2 (3) Flight.
@@ -180,9 +183,9 @@ TODO: Spoon Strike
 	Undermine
 		Power, 1 Energy:
 		Apply 1 (2) Artifact to ALL enemies. Your Attack damage is increased by Artifact on the enemy. // Does not stack.
-XXX:	Rickety Defense
+CHANGED: Rickety Defense
 		Power, 1 Energy:
-		(Upgrade: Innate) At the end of your turn, set your Block to your Frail if you have more Frail than Block.
+		Whenever you lose all Flight, gain 6 (8) Block. // (=Whenever you lose the Flight power.)
 
 **19 RARE CARDS (gold)**
 CHANGED:	Swoop Down
@@ -209,18 +212,18 @@ CHANGED:	Swoop Down
 	Folded Carpet
 		Skill, 2 Energy:
 		Gain 6 (9) Block per Flight you have.
-XXX:	Light-weighted
+CHANGED:	Light-weighted
 		Skill, 0 Energy:
-		Lose all Frail. Gain that much Flight (+1). Exhaust.
+		Lose all Block. Gain (half) that much Flight. Exhaust. // Upgrade removes "half".
 	Meditation
 		Skill, 0 Energy:
 		Lose all Flight. Gain [E] per Flight lost. Draw 2 (4) cards. Exhaust.
 	Read the riot act
 		Skill, 1 (0) Energy
 		Play a random X cost card from your draw pile twice for your current [E].
-XXX:	Blurry
+CHANGED:	Blurry
 		Skill, 1 Energy
-		Gain 4 (6) Temporary HP. Gain 2 (3) Temporary HP per Frail you have. Exhaust.
+		Gain 8 (12) Temporary HP. This is reduced by your current Flight. Exhaust.
 	Alchemy Expert
 		Power, 2 Energy:
 		Whenever you use a potion, gain 1 Artifact. (Innate.)
@@ -270,9 +273,9 @@ XXX:	Blurry
 	Balloon Animal
 		Uncommon relic:
 		Draw 1 card at the start of your turn if you have no Flight.
-XXX:	Cabbage Head
+CHANGED:	Cabbage Head
 		Common relic:
-		While you are Frail, gain 2 Dexterity.
+		While you are not Flying, gain 2 Dexterity.
 	Byrd Feather
 		Event relic:
 		If you have 1 or 2 Flight at the start of your turn, set it to 3.
