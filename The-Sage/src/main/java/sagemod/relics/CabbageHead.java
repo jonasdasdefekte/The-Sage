@@ -3,8 +3,8 @@ package sagemod.relics;
 import com.megacrit.cardcrawl.actions.common.ReducePowerAction;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.powers.DexterityPower;
-import com.megacrit.cardcrawl.powers.FrailPower;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
+import sagemod.powers.Flight;
 
 public class CabbageHead extends AbstractSageRelic {
 
@@ -13,14 +13,14 @@ public class CabbageHead extends AbstractSageRelic {
 	public static final LandingSound SOUND = LandingSound.FLAT;
 	private static final int DEXTERITY_AMT = 2;
 
-	// Actual Implementation in PatchesForCabbageHead
+	// Actual Implementation in sagemod.powers.Flight onRemove and onInitialApplication
 	public CabbageHead() {
 		super(ID, TIER, SOUND);
 	}
 
 	@Override
 	public void onEquip() {
-		if (AbstractDungeon.player.hasPower(FrailPower.POWER_ID)) {
+		if (!AbstractDungeon.player.hasPower(Flight.POWER_ID)) {
 			gainDexterity();
 		}
 	}

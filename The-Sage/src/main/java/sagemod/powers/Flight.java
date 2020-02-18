@@ -18,6 +18,7 @@ import com.megacrit.cardcrawl.ui.FtueTip;
 import com.megacrit.cardcrawl.ui.FtueTip.TipType;
 import basemod.ReflectionHacks;
 import sagemod.actions.ExecuteLaterAction;
+import sagemod.relics.CabbageHead;
 import sagemod.tips.SageTipTracker;
 
 public class Flight extends AbstractSagePower {
@@ -45,6 +46,9 @@ public class Flight extends AbstractSagePower {
 	public void onInitialApplication() {
 		setSageAnimation(GROUND, FLIGHT);
 		checkTip();
+		if (AbstractDungeon.player.hasRelic(CabbageHead.ID) && owner == AbstractDungeon.player) {
+			((CabbageHead) AbstractDungeon.player.getRelic(CabbageHead.ID)).loseDexterity();
+		}
 	}
 
 	private void checkTip() {
@@ -95,6 +99,9 @@ public class Flight extends AbstractSagePower {
 	@Override
 	public void onRemove() {
 		setSageAnimation(FLIGHT, GROUND);
+		if (AbstractDungeon.player.hasRelic(CabbageHead.ID) && owner == AbstractDungeon.player) {
+			((CabbageHead) AbstractDungeon.player.getRelic(CabbageHead.ID)).gainDexterity();;
+		}
 	}
 
 	@Override
@@ -132,5 +139,5 @@ public class Flight extends AbstractSagePower {
 		}
 		return damageAmount;
 	}
-
+	
 }
