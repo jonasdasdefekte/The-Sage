@@ -303,8 +303,7 @@
 	},
 	"sagemod:Rickety_Defense": {
 		"NAME": "Rickety Defense",
-		"DESCRIPTION": "At the end of your turn, set your Block to your Frail if you have more Frail than Block.",
-		"UPGRADE_DESCRIPTION": "Innate. NL At the end of your turn, set your Block to your Frail if you have more Frail than Block."
+		"DESCRIPTION": "Whenever you lose all Flight, gain !M! Block."
 	},
 	"sagemod:Rock_Oil": {
 		"NAME": "Rock Oil",

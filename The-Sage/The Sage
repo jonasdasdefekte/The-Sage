@@ -183,7 +183,7 @@ NEW:	Poem
 	Undermine
 		Power, 1 Energy:
 		Apply 1 (2) Artifact to ALL enemies. Your Attack damage is increased by Artifact on the enemy. // Does not stack.
-CHANGED: Rickety Defense
+ Rickety Defense
 		Power, 1 Energy:
 		Whenever you lose all Flight, gain 6 (8) Block. // (=Whenever you lose the Flight power.)
 

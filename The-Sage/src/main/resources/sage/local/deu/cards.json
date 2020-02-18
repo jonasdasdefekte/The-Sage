@@ -303,8 +303,7 @@
 	},
 	"sagemod:Rickety_Defense": {
 		"NAME": "Klappriger Schild",
-		"DESCRIPTION": "Am Ende deiner Runde, setze deinen Block deinem Gebrechlich gleich, wenn du mehr Gebrechlich als Block hast.",
-		"UPGRADE_DESCRIPTION": "Angeboren. NL Am Ende deiner Runde, setze deinen Block deinem Gebrechlich gleich, wenn du mehr Gebrechlich als Block hast."
+		"DESCRIPTION": "Erhalte !M! Block, wenn du all deinen Flug verlierst."
 	},
 	"sagemod:Rock_Oil": {
 		"NAME": "Steinöl",

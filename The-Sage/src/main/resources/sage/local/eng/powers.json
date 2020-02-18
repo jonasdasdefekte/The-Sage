@@ -128,7 +128,8 @@
 	"sagemod:Rickety_Defense": {
 		"NAME": "Rickety Defense",
 		"DESCRIPTIONS": [
-			"At the end of your turn, set your Block to your Frail if you have more Frail than Block."
+			"Whenever you lose all #yFlight, gain #b",
+			" #yBlock."
 		]
 	},
 	"sagemod:Flight": {

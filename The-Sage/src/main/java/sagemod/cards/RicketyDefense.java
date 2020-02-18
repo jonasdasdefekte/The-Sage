@@ -18,19 +18,19 @@ public class RicketyDefense extends AbstractSageCard {
 	private static final CardRarity RARITY = CardRarity.UNCOMMON;
 	private static final CardTarget TARGET = CardTarget.SELF;
 
-	private static final int POWER_AMT = 1;
+	private static final int BASE_POWER_AMT = 6;
+	private static final int UPGRADE_POWER_AMT = 2;
 
 	public RicketyDefense() {
 		super(ID, NAME, COST, DESCRIPTION, TYPE, RARITY, TARGET);
+		baseMagicNumber = magicNumber = BASE_POWER_AMT;
 	}
 
 	@Override
 	public void upgrade() {
 		if (!upgraded) {
 			upgradeName();
-			isInnate = true;
-			rawDescription = cardStrings.UPGRADE_DESCRIPTION;
-			initializeDescription();
+			upgradeMagicNumber(UPGRADE_POWER_AMT);
 		}
 	}
 
@@ -41,16 +41,12 @@ public class RicketyDefense extends AbstractSageCard {
 
 	@Override
 	public void use(AbstractPlayer p, AbstractMonster m) {
-		if (p.hasPower(RicketyDefensePower.POWER_ID)) {
-			p.getPower(RicketyDefensePower.POWER_ID).flash();
-		} else {
-			applyPowerToSelf(new RicketyDefensePower(p, POWER_AMT));
-		}
+		applyPowerToSelf(new RicketyDefensePower(p, magicNumber));
 	}
 
 	@Override
 	public String getLoadedDescription() {
-		return upgraded ? cardStrings.UPGRADE_DESCRIPTION : DESCRIPTION;
+		return DESCRIPTION;
 	}
 
 }

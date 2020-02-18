@@ -128,7 +128,8 @@
 	"sagemod:Rickety_Defense": {
 		"NAME": "Klappriger Schild",
 		"DESCRIPTIONS": [
-			"Am Ende deiner Runde, setze deinen Block deinem Gebrechlich gleich, wenn du mehr Gebrechlich als Block hast."
+			"Erhalte #b",
+			" #yBlock, wenn du all deinen Flug verlierst."
 		]
 	},
 	"sagemod:Flight": {

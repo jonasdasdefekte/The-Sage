@@ -99,8 +99,13 @@ public class Flight extends AbstractSagePower {
 	@Override
 	public void onRemove() {
 		setSageAnimation(FLIGHT, GROUND);
-		if (AbstractDungeon.player.hasRelic(CabbageHead.ID) && owner == AbstractDungeon.player) {
-			((CabbageHead) AbstractDungeon.player.getRelic(CabbageHead.ID)).gainDexterity();;
+		if (owner == AbstractDungeon.player) {
+			if (AbstractDungeon.player.hasRelic(CabbageHead.ID)) {
+				((CabbageHead) AbstractDungeon.player.getRelic(CabbageHead.ID)).gainDexterity();;
+			}
+			if (AbstractDungeon.player.hasPower(RicketyDefensePower.POWER_ID)) {
+				 AbstractDungeon.player.getPower(RicketyDefensePower.POWER_ID).onSpecificTrigger(); //Gain Block
+			}
 		}
 	}
 
