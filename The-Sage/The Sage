@@ -70,7 +70,7 @@ Starts with 50 HP, 169 gold
 	Step Back 
 		Skill, 2 Energy:
 		Gain 5 (8) Block. If you are flying, refund 2. Otherwise, gain 1 Flight.
-CHANGED:	Ambition
+	Ambition
 		Skill, 1(0) Energy:
 		Lose your Flight. Gain [E][E].
 CHANGED:	Slalom
