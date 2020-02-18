@@ -51,7 +51,7 @@
 	},
 	"sagemod:Blurry": {
 		"NAME": "Verschwommen",
-		"DESCRIPTION": "Erhalte !sagemod:MISC! temporäre_TP. NL Erhalte !M! temporäre_TP pro Gebrechlich, das du hast. NL Erschöpft.",
+		"DESCRIPTION": "Erhalte !M! temporäre_TP. NL Die Zahl ist um deinen aktuellen Flug reduziert. NL Erschöpft.",
 		"EXTENDED_DESCRIPTION": [
 			" NL (Gibt insgesamt ",
 			" temporäre_TP. )"

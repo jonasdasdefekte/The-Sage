@@ -51,7 +51,7 @@
 	},
 	"sagemod:Blurry": {
 		"NAME": "Blurry",
-		"DESCRIPTION": "Gain !sagemod:MISC! Temporary_HP. NL Gain !M! Temporary_HP per Frail you have. NL Exhaust.",
+		"DESCRIPTION": "Gain !M! Temporary_HP. NL This is reduced by your current Flight. NL Exhaust.",
 		"EXTENDED_DESCRIPTION": [
 			" NL (Gives a total of ",
 			" Temporary_HP. )"

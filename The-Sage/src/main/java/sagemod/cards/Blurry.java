@@ -7,7 +7,7 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.powers.FrailPower;
+import sagemod.powers.Flight;
 
 public class Blurry extends AbstractSageCard {
 
@@ -20,23 +20,19 @@ public class Blurry extends AbstractSageCard {
 	private static final CardRarity RARITY = CardRarity.RARE;
 	private static final CardTarget TARGET = CardTarget.SELF;
 
-	private static final int TEMP_HP_AMT = 4;
-	private static final int UPGRADE_TEMP_HP_AMT = 2;
-	private static final int FRAIL_TEMP_HP_AMT = 2;
-	private static final int UPGRADE_FRAIL_TEMP_HP_AMT = 1;
+	private static final int TEMP_HP_AMT = 8;
+	private static final int UPGRADE_TEMP_HP_AMT = 4;
 
 	public Blurry() {
 		super(ID, NAME, COST, DESCRIPTION, TYPE, RARITY, TARGET);
-		initSageMisc(TEMP_HP_AMT);
-		baseMagicNumber = magicNumber = FRAIL_TEMP_HP_AMT;
+		baseMagicNumber = magicNumber = TEMP_HP_AMT;
 		exhaust = true;
 	}
 
 	@Override
 	public void upgrade() {
 		if (!upgraded) {
-			upgradeSageMisc(UPGRADE_TEMP_HP_AMT);
-			upgradeMagicNumber(UPGRADE_FRAIL_TEMP_HP_AMT);
+			upgradeMagicNumber(UPGRADE_TEMP_HP_AMT);
 			upgradeName();
 		}
 	}
@@ -57,10 +53,10 @@ public class Blurry extends AbstractSageCard {
 	}
 
 	private int getTempHpGain() {
-		int tempHP = sageMisc;
+		int tempHP = magicNumber;
 		AbstractPlayer p = player();
-		if (p.hasPower(FrailPower.POWER_ID)) {
-			tempHP += p.getPower(FrailPower.POWER_ID).amount * magicNumber;
+		if (p.hasPower(Flight.POWER_ID)) {
+			tempHP -= p.getPower(Flight.POWER_ID).amount;
 		}
 		return tempHP;
 	}
