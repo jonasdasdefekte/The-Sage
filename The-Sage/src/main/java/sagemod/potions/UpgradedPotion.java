@@ -122,6 +122,7 @@ public class UpgradedPotion extends CustomPotion {
 		BLACKLIST.add("jedi:holywater");
 		BLACKLIST.add("HastePotion");
 		BLACKLIST.add("Gelsemium Tea");
+		BLACKLIST.add("qcfpunch:Challenger_Coin");
 
 		DISCOVERY_LIST.add(AttackPotion.POTION_ID);
 		DISCOVERY_LIST.add(PowerPotion.POTION_ID);
