@@ -1,7 +1,7 @@
 {
 	"sagemod:About_Clark": {
 		"NAME": "Über Clark",
-		"DESCRIPTION": "Füge zweimal !D! Schaden zu. NL Kostet 1 [E] weniger pro Gebrechlich, das du hast."
+		"DESCRIPTION": "Füge zweimal !D! Schaden zu. NL Kostet 1 [E] mehr pro Flug, den du hast."
 	},
 	"sagemod:AbstractSageCard": {
 		"NAME": "Abstract Sage Card",
