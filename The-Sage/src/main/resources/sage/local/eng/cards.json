@@ -214,8 +214,8 @@
 	},
 	"sagemod:Light_Weighted": {
 		"NAME": "Light-Weighted",
-		"DESCRIPTION": "Lose all Frail. NL Gain that much Flight. NL Exhaust.",
-		"UPGRADE_DESCRIPTION": "Lose all Frail. NL Gain that much NL Flight + !M!. NL Exhaust."
+		"DESCRIPTION": "Lose all Block. NL Gain half that much Flight. NL Exhaust.",
+		"UPGRADE_DESCRIPTION": "Lose all Block. NL Gain that much NL Flight. NL Exhaust."
 	},
 	"sagemod:Lunchtime": {
 		"NAME": "Lunchtime!",

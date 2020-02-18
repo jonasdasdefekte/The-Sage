@@ -212,7 +212,7 @@ CHANGED: Rickety Defense
 	Folded Carpet
 		Skill, 2 Energy:
 		Gain 6 (9) Block per Flight you have.
-CHANGED:	Light-weighted
+	Light-weighted
 		Skill, 0 Energy:
 		Lose all Block. Gain (half) that much Flight. Exhaust. // Upgrade removes "half".
 	Meditation

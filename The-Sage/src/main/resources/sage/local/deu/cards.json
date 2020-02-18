@@ -214,8 +214,8 @@
 	},
 	"sagemod:Light_Weighted": {
 		"NAME": "Leichtgewicht",
-		"DESCRIPTION": "Verliere alles Gebrechlich. NL Erhalte ebensoviel Flug. NL Erschöpft.",
-		"UPGRADE_DESCRIPTION": "Verliere alles Gebrechlich. NL Erhalte ebensoviel NL Flug + !M!. NL Erschöpft."
+		"DESCRIPTION": "Verliere deinen Block. NL Erhalte halbsoviel Flug. NL Erschöpft.",
+		"UPGRADE_DESCRIPTION": "Verliere deinen Block. NL Erhalte ebensoviel Flug. NL Erschöpft."
 	},
 	"sagemod:Lunchtime": {
 		"NAME": "Essenszeit!",
