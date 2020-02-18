@@ -371,7 +371,7 @@
 	},
 	"sagemod:Turn_Around": {
 		"NAME": "Turn Around",
-		"DESCRIPTION": "Gain !M! Frail. NL Deal !D! damage per Frail you have."
+		"DESCRIPTION": "Deal !D! damage. NL This deals !M! less damage per Flight you have."
 	},
 	"sagemod:Undermine": {
 		"NAME": "Undermine",

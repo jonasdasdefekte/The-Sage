@@ -4,11 +4,9 @@ import com.megacrit.cardcrawl.actions.AbstractGameAction.AttackEffect;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
-import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.powers.FrailPower;
-import sagemod.actions.AttackForEveryStackOfPowerAction;
+import sagemod.powers.Flight;
 
 public class TurnAround extends AbstractSageCard {
 
@@ -21,14 +19,14 @@ public class TurnAround extends AbstractSageCard {
 	private static final CardRarity RARITY = CardRarity.UNCOMMON;
 	private static final CardTarget TARGET = CardTarget.ENEMY;
 
-	private static final int ATTACK_DMG = 4;
-	private static final int UPGRADE_ATTACK_DMG = 2;
-	private static final int FRAIL_GAIN = 1;
+	private static final int ATTACK_DMG = 13;
+	private static final int UPGRADE_ATTACK_DMG = 6;
+	private static final int DMG_REDUCTION_PER_FLIGHT = 2;
 
 	public TurnAround() {
 		super(ID, NAME, COST, DESCRIPTION, TYPE, RARITY, TARGET);
 		baseDamage = ATTACK_DMG;
-		baseMagicNumber = magicNumber = FRAIL_GAIN;
+		baseMagicNumber = magicNumber = DMG_REDUCTION_PER_FLIGHT;
 	}
 
 	@Override
@@ -46,11 +44,16 @@ public class TurnAround extends AbstractSageCard {
 
 	@Override
 	public void use(AbstractPlayer p, AbstractMonster m) {
-		applyPowerToSelf(new FrailPower(p, magicNumber, false));
-		AbstractDungeon.actionManager.addToBottom(
-				new AttackForEveryStackOfPowerAction(p, m, FrailPower.POWER_ID,
-						AttackEffect.BLUNT_HEAVY, damage,
-						damageTypeForTurn));
+		attack(m, AttackEffect.SLASH_HEAVY);
+	}
+	
+	@Override
+	public void applyPowers() {
+		super.applyPowers();
+		if (isFlying()) {
+			damage -= player().getPower(Flight.POWER_ID).amount;
+			isDamageModified = true;
+		}
 	}
 
 	@Override

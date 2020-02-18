@@ -371,7 +371,7 @@
 	},
 	"sagemod:Turn_Around": {
 		"NAME": "Umkehren",
-		"DESCRIPTION": "Erhalte !M! Gebrechlich. NL Füge !D! Schaden zu pro Gebrechlich, das du hast."
+		"DESCRIPTION": "Füge !D! Schaden zu. Diese Karte fügt !M! Schaden weniger zu pro Flug, den du hast."
 	},
 	"sagemod:Undermine": {
 		"NAME": "Untergraben",
