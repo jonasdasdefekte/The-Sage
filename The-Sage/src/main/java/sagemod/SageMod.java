@@ -94,6 +94,7 @@ import sagemod.cards.OnTheHead;
 import sagemod.cards.PerpetuumMobile;
 import sagemod.cards.PincerAttack;
 import sagemod.cards.PincerRepair;
+import sagemod.cards.Poem;
 import sagemod.cards.PotionExplosion;
 import sagemod.cards.PotionTrance;
 import sagemod.cards.PourTarPitch;
@@ -149,6 +150,7 @@ import sagemod.powers.Flight;
 import sagemod.powers.LoseFlightNextTurn;
 import sagemod.powers.NoEnergyPower;
 import sagemod.powers.OnFirePower;
+import sagemod.powers.PoemPower;
 import sagemod.powers.PotionTrancePower;
 import sagemod.powers.RichesPower;
 import sagemod.powers.RicketyDefensePower;
@@ -306,6 +308,7 @@ public class SageMod implements EditCharactersSubscriber, EditCardsSubscriber, E
 		BaseMod.addCard(new ShiningPowder());
 		BaseMod.addCard(new Undermine());
 		BaseMod.addCard(new SpoonStrike());
+		BaseMod.addCard(new Poem());
 
 		// Rare
 		BaseMod.addCard(new Bookworm());
@@ -355,6 +358,7 @@ public class SageMod implements EditCharactersSubscriber, EditCardsSubscriber, E
 		BaseMod.addPower(NoEnergyPower.class, NoEnergyPower.POWER_ID);
 		BaseMod.addPower(OnFirePower.class, OnFirePower.POWER_ID);
 		BaseMod.addPower(PotionTrancePower.class, PotionTrancePower.POWER_ID);
+		BaseMod.addPower(PoemPower.class, PoemPower.POWER_ID);
 		BaseMod.addPower(RichesPower.class, RichesPower.POWER_ID);
 		BaseMod.addPower(RicketyDefensePower.class, RicketyDefensePower.POWER_ID);
 		BaseMod.addPower(Flight.class, Flight.POWER_ID);

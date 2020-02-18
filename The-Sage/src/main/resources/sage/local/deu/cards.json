@@ -261,6 +261,10 @@
 		"NAME": "Reparaturzange",
 		"DESCRIPTION": "Füge !D! Schaden zu. NL Der Gegner erhält NL !M! Artefakt."
 	},
+	"sagemod:Poem": {
+		"NAME": "Gedicht",
+		"DESCRIPTION": "Ziehe !sagemod:MISC! Karte. NL Erhalte X + !M! [E] . NL Nachdem du die nächste Karte in diesem Zug spielst, verlierst du !M! [E]."
+	},
 	"sagemod:Potion_Explosion": {
 		"NAME": "Trankexplosion",
 		"DESCRIPTION": "Füge ALLEN Gegnern !D! Schaden zu. Wiederhole dies einmal pro Trank, den du in diesem Zug benutzt hast.",

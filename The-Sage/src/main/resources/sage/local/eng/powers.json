@@ -109,6 +109,13 @@
 			"."
 		]
 	},
+	"sagemod:Poem": {
+		"NAME": "Poem",
+		"DESCRIPTIONS": [
+			"Lose #b",
+			" [E] after you played the next card this turn."
+		]
+	},
 	"sagemod:Potion_Trance": {
 		"NAME": "Potion Trance",
 		"DESCRIPTIONS": [

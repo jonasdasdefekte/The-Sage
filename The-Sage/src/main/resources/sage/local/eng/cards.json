@@ -261,6 +261,10 @@
 		"NAME": "Pincer Repair",
 		"DESCRIPTION": "Deal !D! damage. NL The enemy gains NL !M! Artifact."
 	},
+	"sagemod:Poem": {
+		"NAME": "Poem",
+		"DESCRIPTION": "Draw !sagemod:MISC! Card. NL Gain X + !M! [E] . NL Lose !M! [E] after you played the next card this turn."
+	},
 	"sagemod:Potion_Explosion": {
 		"NAME": "Potion Explosion",
 		"DESCRIPTION": "Deal !D! damage to ALL enemies. Repeat this once per potion you used this turn.",

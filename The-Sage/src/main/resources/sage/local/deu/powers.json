@@ -109,6 +109,13 @@
 			" zu erhalten."
 		]
 	},
+	"sagemod:Poem": {
+		"NAME": "Gedicht",
+		"DESCRIPTIONS": [
+			"Verliere #b",
+			" [E] nachdem du deine nächste Karte in diesem Zug spielst."
+		]
+	},
 	"sagemod:Potion_Trance": {
 		"NAME": "Tranktrance",
 		"DESCRIPTIONS": [
