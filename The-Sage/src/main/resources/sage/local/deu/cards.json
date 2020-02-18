@@ -335,6 +335,10 @@
 		"NAME": "Verdorbenes Essen",
 		"DESCRIPTION": "Wende !M! Durstig an. NL Erschöpft."
 	},
+	"sagemod:Spoon_Strike": {
+		"NAME": "Löffelschlag",
+		"DESCRIPTION": "Füge !D! Schaden zu. NL Alle Tränke, die du gerade braust, brauchen !M! Zug weniger."
+	},
 	"sagemod:Step_Back": {
 		"NAME": "Schritt zurück",
 		"DESCRIPTION": "Erhalte !B! Block. NL Falls du fliegst: NL Erstatte !sagemod:MISC!. NL Ansonsten: NL Erhalte !M! Flug."

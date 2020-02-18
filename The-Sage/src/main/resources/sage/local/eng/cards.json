@@ -335,6 +335,10 @@
 		"NAME": "Spoiled Food",
 		"DESCRIPTION": "Apply !M! Thirsty. NL Exhaust."
 	},
+	"sagemod:Spoon_Strike": {
+		"NAME": "Spoon Strike",
+		"DESCRIPTION": "Deal !D! damage. NL Advance all potions you are currently brewing by !M! turn."
+	},
 	"sagemod:Step_Back": {
 		"NAME": "Step Back",
 		"DESCRIPTION": "Gain !B! Block. NL If you are flying: NL Refund !sagemod:MISC!. NL Otherwise: NL Gain !M! Flight."

@@ -108,6 +108,7 @@ import sagemod.cards.Shatter;
 import sagemod.cards.ShiningPowder;
 import sagemod.cards.Slalom;
 import sagemod.cards.SpoiledFood;
+import sagemod.cards.SpoonStrike;
 import sagemod.cards.StepBack;
 import sagemod.cards.Strike;
 import sagemod.cards.Study;
@@ -304,6 +305,7 @@ public class SageMod implements EditCharactersSubscriber, EditCardsSubscriber, E
 		BaseMod.addCard(new Momentum());
 		BaseMod.addCard(new ShiningPowder());
 		BaseMod.addCard(new Undermine());
+		BaseMod.addCard(new SpoonStrike());
 
 		// Rare
 		BaseMod.addCard(new Bookworm());
