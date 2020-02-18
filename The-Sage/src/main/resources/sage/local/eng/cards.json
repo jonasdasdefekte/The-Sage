@@ -354,12 +354,7 @@
 	},
 	"sagemod:Swoop_Down": {
 		"NAME": "Swoop Down",
-		"DESCRIPTION": "Deal !D! damage per Flight you have. NL Then lose !M! Flight.",
-		"UPGRADE_DESCRIPTION": "Deal !D! damage per Flight you have.",
-		"EXTENDED_DESCRIPTION": [
-			" NL (Deals ",
-			" damage.)"
-		]
+		"DESCRIPTION": "Deal !D! damage to a random enemy for every Flight you have. NL Then lose your Flight."
 	},
 	"sagemod:Taste_This_One": {
 		"NAME": "Taste This One",

@@ -354,12 +354,7 @@
 	},
 	"sagemod:Swoop_Down": {
 		"NAME": "Herabsausen",
-		"DESCRIPTION": "Füge !D! Schaden zu pro Flug, den du hast. NL Dann verliere !M! Flug.",
-		"UPGRADE_DESCRIPTION": "Füge !D! Schaden zu pro Flug, den du hast.",
-		"EXTENDED_DESCRIPTION": [
-			" NL (Fügt ",
-			" Schaden zu.)"
-		]
+		"DESCRIPTION": "Füge einem zufälligen Monster !D! Schaden zu pro Flug, den du hast. NL Dann verliere deinen Flug."
 	},
 	"sagemod:Taste_This_One": {
 		"NAME": "Probier das mal",
