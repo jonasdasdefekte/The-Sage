@@ -335,7 +335,7 @@
 	},
 	"sagemod:Slalom": {
 		"NAME": "Slalom",
-		"DESCRIPTION": "Gain !B! Block. NL Gain !M! Frail."
+		"DESCRIPTION": "Set your Flight to !M!."
 	},
 	"sagemod:Spoiled_Food": {
 		"NAME": "Spoiled Food",
