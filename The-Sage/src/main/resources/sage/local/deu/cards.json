@@ -190,7 +190,8 @@
 	},
 	"sagemod:How_To_Poke_At_Slimes": {
 		"NAME": "Wie man Schleime sticht",
-		"DESCRIPTION": "Füge ALLEN Gegnern X Schaden zu. NL Erhalte !M! Gebrechlich. NL Erstatte !stslib:refund!."
+		"DESCRIPTION": "Füge ALLEN Gegnern X Schaden zu. NL Erstatte !stslib:refund!.",
+		"UPGRADE_DESCRIPTION": "Füge ALLEN Gegnern X + !D! Schaden zu. NL Erstatte !stslib:refund!."
 	},
 	"sagemod:How_To_Wake_Lyons": {
 		"NAME": "Wie man Lywen aufweckt",

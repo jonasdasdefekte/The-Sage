@@ -190,7 +190,8 @@
 	},
 	"sagemod:How_To_Poke_At_Slimes": {
 		"NAME": "How To Poke At Slimes",
-		"DESCRIPTION": "Deal X damage to ALL enemies. NL Gain !M! Frail. NL Refund !stslib:refund!."
+		"DESCRIPTION": "Deal X damage to ALL enemies. NL Refund !stslib:refund!.",
+		"UPGRADE_DESCRIPTION": "Deal X + !D! damage to ALL enemies. NL Refund !stslib:refund!."
 	},
 	"sagemod:How_To_Wake_Lyons": {
 		"NAME": "How To Wake Lyons",

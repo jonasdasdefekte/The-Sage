@@ -21,14 +21,12 @@ public class HowToPokeAtSlimes extends AbstractSageCard {
 	private static final CardTarget TARGET = CardTarget.ALL_ENEMY;
 
 	private static final int UPGRADE_ATTACK_DMG = 3;
-	private static final int FRAIL_GAIN = 2;
 	private static final int REFUND_AMOUNT = 3;
 	private static final int UPGRADE_REFUND_AMOUNT = 3;
 
 	public HowToPokeAtSlimes() {
 		super(ID, NAME, COST, DESCRIPTION, TYPE, RARITY, TARGET);
 		baseDamage = 0;
-		baseMagicNumber = magicNumber = FRAIL_GAIN;
 		RefundVariable.setBaseValue(this, REFUND_AMOUNT);
 		isMultiDamage = true;
 	}
@@ -39,6 +37,8 @@ public class HowToPokeAtSlimes extends AbstractSageCard {
 			upgradeName();
 			upgradeDamage(UPGRADE_ATTACK_DMG);
 			RefundVariable.upgrade(this, UPGRADE_REFUND_AMOUNT);
+			rawDescription = cardStrings.UPGRADE_DESCRIPTION;
+			initializeDescription();
 		}
 	}
 
@@ -52,9 +52,8 @@ public class HowToPokeAtSlimes extends AbstractSageCard {
 		int effect = getXEffect();
 		// Deal X damage
 		for (int i = 0; i < multiDamage.length; i++) {
-			multiDamage[i] += effect;
+			multiDamage[i] += effect + damage;
 		}
-		applyPowerToSelf(new FrailPower(p, magicNumber, false));
 		attackAllEnemies(AttackEffect.SLASH_HORIZONTAL);
 
 		useXEnergy();
