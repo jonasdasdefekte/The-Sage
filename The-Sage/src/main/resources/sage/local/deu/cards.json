@@ -85,7 +85,7 @@
 	},
 	"sagemod:Cane_Strike": {
 		"NAME": "Stockschlag",
-		"DESCRIPTION": "Füge !D! Schaden zu. Fügt doppelten Schaden zu, wenn du Gebrechlich bist."
+		"DESCRIPTION": "Füge !D! Schaden zu. Fügt doppelten Schaden zu, wenn du gerade fliegst."
 	},
 	"sagemod:Catch_Me_If_You_Can": {
 		"NAME": "Fang mich doch",

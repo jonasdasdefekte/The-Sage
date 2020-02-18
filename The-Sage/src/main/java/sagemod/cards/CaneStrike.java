@@ -6,7 +6,6 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.powers.FrailPower;
 
 public class CaneStrike extends AbstractSageCard {
 
@@ -47,7 +46,7 @@ public class CaneStrike extends AbstractSageCard {
 	@Override
 	public void applyPowers() {
 		super.applyPowers();
-		if (player().hasPower(FrailPower.POWER_ID)) {
+		if (isFlying()) {
 			if (!isAttackDoubled) {
 				isAttackDoubled = true;
 				damage *= 2;
@@ -65,7 +64,7 @@ public class CaneStrike extends AbstractSageCard {
 
 	@Override
 	public void use(AbstractPlayer p, AbstractMonster m) {
-		if (p.hasPower(FrailPower.POWER_ID)) {
+		if (isFlying()) {
 			attack(m, AttackEffect.BLUNT_HEAVY);
 		} else {
 			attack(m, AttackEffect.BLUNT_LIGHT);

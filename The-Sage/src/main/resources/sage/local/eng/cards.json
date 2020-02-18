@@ -85,7 +85,7 @@
 	},
 	"sagemod:Cane_Strike": {
 		"NAME": "Cane Strike",
-		"DESCRIPTION": "Deal !D! damage. Deals double damage if you are Frail."
+		"DESCRIPTION": "Deal !D! damage. Deals double damage if you are flying."
 	},
 	"sagemod:Catch_Me_If_You_Can": {
 		"NAME": "Catch Me If You Can",
