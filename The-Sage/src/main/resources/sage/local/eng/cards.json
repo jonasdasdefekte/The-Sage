@@ -68,12 +68,7 @@
 	},
 	"sagemod:Bouncing_Strike": {
 		"NAME": "Bouncing Strike",
-		"DESCRIPTION": "Gain !sagemod:MISC! Frail. NL Gain !M! Flight. Deal damage equal to the sum of your Frail and Flight.",
-		"UPGRADE_DESCRIPTION": "Gain !sagemod:MISC! Frail. NL Gain !M! Flight. Deal damage equal to the product of your Frail and Flight.",
-		"EXTENDED_DESCRIPTION": [
-			" NL (Deals ",
-			" damage.)"
-		]
+		"DESCRIPTION": "Gain !M! Flight. Deal damage equal to !sagemod:MISC!x your Flight. NL (Deals !D! damage.)"
 	},
 	"sagemod:Brewmaster": {
 		"NAME": "Brewmaster",

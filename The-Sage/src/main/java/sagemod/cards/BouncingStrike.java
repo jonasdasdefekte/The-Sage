@@ -7,9 +7,6 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.powers.ArtifactPower;
-import com.megacrit.cardcrawl.powers.FrailPower;
-import com.megacrit.cardcrawl.powers.StrengthPower;
 import sagemod.actions.ExecuteLaterAction;
 import sagemod.powers.Flight;
 
@@ -24,13 +21,15 @@ public class BouncingStrike extends AbstractSageCard {
 	private static final CardRarity RARITY = CardRarity.UNCOMMON;
 	private static final CardTarget TARGET = CardTarget.ENEMY;
 
-	private static final int FRAIL_GAIN = 2;
 	private static final int FLIGHT_GAIN = 1;
+	private static final int BASE_DMG_TIMES = 3;
+	private static final int UPGRADE_DMG_TIMES = 2;
 
 	public BouncingStrike() {
 		super(ID, NAME, COST, DESCRIPTION, TYPE, RARITY, TARGET);
 		baseMagicNumber = magicNumber = FLIGHT_GAIN;
-		initSageMisc(FRAIL_GAIN);
+		initSageMisc(BASE_DMG_TIMES);
+		baseDamage = 0;
 
 		tags.add(CardTags.STRIKE);
 	}
@@ -39,8 +38,8 @@ public class BouncingStrike extends AbstractSageCard {
 	public void upgrade() {
 		if (!upgraded) {
 			upgradeName();
-			rawDescription = cardStrings.UPGRADE_DESCRIPTION;
-			initializeDescription();
+			upgradeSageMisc(UPGRADE_DMG_TIMES);
+			updateDamage(null);
 		}
 	}
 
@@ -51,82 +50,20 @@ public class BouncingStrike extends AbstractSageCard {
 
 	@Override
 	public void use(AbstractPlayer p, AbstractMonster m) {
-		applyPowerToSelf(new FrailPower(p, sageMisc, false));
 		applyPowerToSelf(new Flight(p, magicNumber));
 		AbstractDungeon.actionManager.addToBottom(new ExecuteLaterAction(() -> {
-			int damageAmount = 0;
-			if (p.hasPower(FrailPower.POWER_ID)) {
-				damageAmount = p.getPower(FrailPower.POWER_ID).amount;
-			}
-			if (p.hasPower(Flight.POWER_ID)) {
-				int amount = p.getPower(Flight.POWER_ID).amount;
-				if (upgraded) {
-					damageAmount *= amount;
-				} else {
-					damageAmount += amount;
-				}
-			}
-			if (p.hasPower(StrengthPower.POWER_ID)) {
-				damageAmount += p.getPower(StrengthPower.POWER_ID).amount;
-			}
-			attack(m, AttackEffect.SMASH, damageAmount);
+			updateDamage(m);
+			attack(m, AttackEffect.SMASH);
 		}));
-		rawDescription = getLoadedDescription();
-		initializeDescription();
 	}
 
-	private void updateExtendedDescription() {
-		int damageAmount = magicNumber;
+	private void updateDamage(AbstractMonster m) {
+		int damageAmount = sageMisc;
 		if (player().hasPower(Flight.POWER_ID)) {
-			damageAmount += player().getPower(Flight.POWER_ID).amount;
+			damageAmount *= player().getPower(Flight.POWER_ID).amount;
 		}
-		int amount = 0;
-		if (!player().hasPower(ArtifactPower.POWER_ID)) {
-			amount += sageMisc;
-		}
-		if (player().hasPower(FrailPower.POWER_ID)) {
-			amount += player().getPower(FrailPower.POWER_ID).amount;
-		}
-		if (upgraded) {
-			damageAmount *= amount;
-		} else {
-			damageAmount += amount;
-		}
-		if (player().hasPower(StrengthPower.POWER_ID)) {
-			damageAmount += player().getPower(StrengthPower.POWER_ID).amount;
-		}
-		rawDescription = getLoadedDescription();
-		rawDescription = rawDescription + cardStrings.EXTENDED_DESCRIPTION[0] + damageAmount
-				+ cardStrings.EXTENDED_DESCRIPTION[1];
-		initializeDescription();
-	}
-
-	@Override
-	public void applyPowers() {
-		super.applyPowers();
-		updateExtendedDescription();
-	}
-
-	@Override
-	public void calculateCardDamage(AbstractMonster mo) {
-		super.calculateCardDamage(mo);
-		updateExtendedDescription();
-	}
-
-	@Override
-	public void atTurnStart() {
-		super.atTurnStart();
-		updateExtendedDescription();
-	}
-
-	@Override
-	public void triggerWhenDrawn() {
-		updateExtendedDescription();
-		super.triggerWhenDrawn();
-	}
-
-	@Override
-	public void onMoveToDiscard() {
+		baseDamage = damageAmount;
+		calculateCardDamage(m);
 		rawDescription = getLoadedDescription();
 		initializeDescription();
 	}

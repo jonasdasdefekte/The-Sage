@@ -99,7 +99,7 @@ Starts with 50 HP, 169 gold
 	Pincer Attack
 		Attack, 1 Energy: 
 		Deal 6 (8) damage. Damage is increased by the number of Artifacts on the enemy (twice).
-CHANGED:	Bouncing Strike
+	Bouncing Strike
 		Attack, 1 Energy: 
 		Gain 1 Flight. Deal damage equal to 3x (5x) your Flight.
 CHANGED:	Turn Around

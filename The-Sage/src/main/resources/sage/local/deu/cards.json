@@ -68,12 +68,7 @@
 	},
 	"sagemod:Bouncing_Strike": {
 		"NAME": "Sprungschlag",
-		"DESCRIPTION": "Erhalte !sagemod:MISC! Gebrechlich. NL Erhalte !M! Flug. Füge soviel Schaden zu wie die Summe deines Flugs und Gebrechlich.",
-		"UPGRADE_DESCRIPTION": "Erhalte !sagemod:MISC! Gebrechlich. NL Erhalte !M! Flug. Füge soviel Schaden zu wie das Produkt deines Flugs und Gebrechlich.",
-		"EXTENDED_DESCRIPTION": [
-			" NL (Fügt ",
-			" Schaden zu.)"
-		]
+		"DESCRIPTION": "Erhalte !M! Flug. Füge Schaden in Höhe deines Flugs mal !sagemod:MISC! zu. NL (Fügt !D! Schaden zu.)"
 	},
 	"sagemod:Brewmaster": {
 		"NAME": "Braumeisterin",
