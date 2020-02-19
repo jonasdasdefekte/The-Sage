@@ -6,6 +6,10 @@ She learned flying a carpet and brewing potions in order to stop its rise.
 
 Starts with 50 HP, 169 gold	
 
+
+TODO: Flight is now also reduced when you block a hit!
+
+
 **STARTING RELIC**
 	Flying Carpet
 		At the start of your second turn, gain 1 Flight. 
@@ -14,16 +18,16 @@ Starts with 50 HP, 169 gold
     4x Strike
 		Attack, 1 Energy: 
 		Deal 6 (9) damage.
-	3x Defend
+CHANGED AMOUNT:	3x Defend
 		Skill, 1 Energy: 
 		Gain 5 (8) Block.
-	1x Swipe
+TODO:	1x Swipe
 		Attack, 1 Energy:
 		Air. Deal 7 (10) damage to ALL enemies.
-	1x Fly
+CHANGED:	1x Fly
 		Skill, 1 Energy: 
 		If you fly, gain 7 (10) Block. Otherwise gain 1 Flight.
-	1x Upwards
+TODO:	1x Upwards
 		Skill, 2 (1) Energy:
 		Gain 1 Flight.
 
