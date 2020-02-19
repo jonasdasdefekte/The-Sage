@@ -20,7 +20,7 @@ public class SwoopDown extends AbstractSageCard {
 	public static final String[] EXTENDED_DESCRIPTION = cardStrings.EXTENDED_DESCRIPTION;
 	private static final CardType TYPE = CardType.ATTACK;
 	private static final CardRarity RARITY = CardRarity.RARE;
-	private static final CardTarget TARGET = CardTarget.ENEMY;
+	private static final CardTarget TARGET = CardTarget.ALL_ENEMY;
 
 	private static final int ATTACK_DMG = 7;
 	private static final int UPGRADE_ATTACK_DMG = 3;
@@ -35,8 +35,6 @@ public class SwoopDown extends AbstractSageCard {
 		if (!upgraded) {
 			upgradeName();
 			upgradeDamage(UPGRADE_ATTACK_DMG);
-			rawDescription = cardStrings.UPGRADE_DESCRIPTION;
-			initializeDescription();
 		}
 	}
 
