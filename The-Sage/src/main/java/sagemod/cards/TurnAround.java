@@ -51,7 +51,7 @@ public class TurnAround extends AbstractSageCard {
 	public void applyPowers() {
 		super.applyPowers();
 		if (isFlying()) {
-			damage -= player().getPower(Flight.POWER_ID).amount;
+			damage -= player().getPower(Flight.POWER_ID).amount * magicNumber;
 			isDamageModified = true;
 		}
 	}
