@@ -25,6 +25,7 @@ public class RicketyDefensePower extends AbstractSagePower {
 	
 	@Override
 	public void onSpecificTrigger() {
+		flash();
 		addToBot(new GainBlockAction(owner, amount));
 	}
 
