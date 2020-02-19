@@ -48,7 +48,9 @@ public class SpoonStrike extends AbstractSageCard {
 	public void use(AbstractPlayer p, AbstractMonster m) {
 		attack(m, AttackEffect.SLASH_DIAGONAL);
 		if (player().hasPower(Brew.POWER_ID)) {
-			((Brew) player().getPower(Brew.POWER_ID)).advancePotionQueue(magicNumber);
+			Brew brew = (Brew) player().getPower(Brew.POWER_ID);
+			brew.advancePotionQueue(magicNumber);
+			brew.flash();
 		}
 	}
 
