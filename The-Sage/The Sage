@@ -151,9 +151,9 @@ TODO:	How To Befriend A Turtle
 	Potion Trance
 		Skill, 1 Energy:
 		Draw 1 card (2 cards) whenever you use a Potion this turn. You cannot gain energy this turn.
-	How To Amuse Sneckos
+TODO:	How To Amuse Sneckos
 		Skill, X Energy:
-		Lose 3 (1) Flight. Draw X cards. Refund 1.
+		Lose 3 (1) Flight. Draw X +1 cards. Refund 1.
 	Let it go
 		Skill, 1 Energy:
 		Exhaust a card (up to 2 cards) from your hand. Gain Flight equal to its (their) cost. Exhaust.
