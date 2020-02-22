@@ -41,9 +41,9 @@ TODO:	1x Upwards
 	Salty Strike
 		Attack, 1 Energy:
 		Deal 6 (9) damage. The enemy gains 1 (2) Thirsty.
-	How To Poke At Slimes
+TODO:	How To Poke At Slimes
 		Attack, X Energy:
-		Deal X (+3) damage to ALL enemies. Refund 3 (6).
+		Deal X +1 (+2) times 3 damage to ALL enemies.
 	Energetic Brew
 		Attack, 1 Energy: 
 		Deal 6 damage. Brew an Energy potion(+) in 4 turns.
@@ -65,9 +65,9 @@ TODO:	1x Upwards
 	Armor Brew
 		Skill, 1 Energy: 
 		Gain 5 (8) Block. Brew a Block potion(+) in 4 turns.
-	How To Befriend A Turtle
+TODO:	How To Befriend A Turtle
 		Skill, X Energy:
-		Gain X (+3) Temporary HP. Refund 3 (6).
+		Gain X times 2 (3) Plated Armor.
 	Catch me if you can
 		Skill, 0 Energy
 		Air. Prevent the next 2 (4) times you would lose Flight until the start of your next turn. // (Should also work on Flight loss in your own turn. "Lose 2 Flight" will lose 2 stacks of Airborne instead and "Lose all Flight" will cancel Airborne and Flight completely. Artifact no longer negates Flight loss.)
