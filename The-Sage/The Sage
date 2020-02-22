@@ -153,7 +153,7 @@ TODO:	How To Befriend A Turtle
 		Draw 1 card (2 cards) whenever you use a Potion this turn. You cannot gain energy this turn.
 	How To Amuse Sneckos
 		Skill, X Energy:
-		Lose all (1) Flight. Draw X cards. Refund 3 (6).
+		Lose 3 (1) Flight. Draw X cards. Refund 1.
 	Let it go
 		Skill, 1 Energy:
 		Exhaust a card (up to 2 cards) from your hand. Gain Flight equal to its (their) cost. Exhaust.
@@ -239,7 +239,7 @@ TODO:	How To Befriend A Turtle
 		Air. At the start of each turn, gain 1 Energy and lose 2 (1) Flight.
 TODO:	Bookworm
 		Power, 1 Energy:
-		Whenever you play an X cost card, Refund 1 (2) Energy.
+		All X cost cards Refund 1 (2) Energy. // Could the Text be added to the cards?
 	On Fire
 		Power, 1 Energy:
 		Whenever you play 5 cards in a single turn, obtain a Fire Potion(+).
