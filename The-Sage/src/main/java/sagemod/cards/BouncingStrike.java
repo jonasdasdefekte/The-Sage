@@ -70,7 +70,7 @@ public class BouncingStrike extends AbstractSageCard {
 
 	@Override
 	public String getLoadedDescription() {
-		return upgraded ? cardStrings.UPGRADE_DESCRIPTION : DESCRIPTION;
+		return DESCRIPTION;
 	}
 
 }
