@@ -22,25 +22,23 @@ public class HowToAmuseSneckos extends AbstractSageCard {
 	private static final CardRarity RARITY = CardRarity.UNCOMMON;
 	private static final CardTarget TARGET = CardTarget.SELF;
 
-	private static final int REFUND_AMT = 3;
-	private static final int UPGRADE_REFUND_AMT = 3;
-	private static final int FLIGHT_LOSS = 999;
-	private static final int UPGRADE_FLIGHT_LOSS = -998;
+	private static final int REFUND_AMT = 1;
+	private static final int FLIGHT_LOSS = 3;
+	private static final int UPGRADE_FLIGHT_LOSS = -2;
+	private static final int ADDED_DRAW = 1;
 
 	public HowToAmuseSneckos() {
 		super(ID, NAME, COST, DESCRIPTION, TYPE, RARITY, TARGET);
 		RefundVariable.setBaseValue(this, REFUND_AMT);
 		baseMagicNumber = magicNumber = FLIGHT_LOSS;
+		initSageMisc(ADDED_DRAW);
 	}
 
 	@Override
 	public void upgrade() {
 		if (!upgraded) {
 			upgradeName();
-			RefundVariable.upgrade(this, UPGRADE_REFUND_AMT);
 			upgradeMagicNumber(UPGRADE_FLIGHT_LOSS);
-			rawDescription = cardStrings.UPGRADE_DESCRIPTION;
-			initializeDescription();
 		}
 	}
 
@@ -58,7 +56,7 @@ public class HowToAmuseSneckos extends AbstractSageCard {
 					new ReduceFlightBlockableAction(magicNumber, AbstractDungeon.player));
 		}
 
-		int draw = effect;
+		int draw = effect + sageMisc;
 		if (draw > 0) {
 			draw(draw);
 		}
@@ -68,7 +66,7 @@ public class HowToAmuseSneckos extends AbstractSageCard {
 
 	@Override
 	public String getLoadedDescription() {
-		return upgraded ? cardStrings.UPGRADE_DESCRIPTION : DESCRIPTION;
+		return DESCRIPTION;
 	}
 
 }
