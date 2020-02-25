@@ -129,9 +129,6 @@ public class TheSage extends CustomPlayer {
 
 		// 1x Fly
 		cards.add(Fly.ID);
-
-		// 1x Bold Move
-		cards.add(BoldMove.ID);
 		return cards;
 	}
 
