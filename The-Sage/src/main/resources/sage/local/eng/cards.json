@@ -151,8 +151,7 @@
 	},
 	"sagemod:How_To_Befriend_A_Turtle": {
 		"NAME": "How To Befriend A Turtle",
-		"DESCRIPTION": "Gain X Temporary_HP. NL Refund !stslib:refund!.",
-		"UPGRADE_DESCRIPTION": "Gain X + !M! Temporary_HP. NL Refund !stslib:refund!."
+		"DESCRIPTION": "Gain X times !M! Plated Armor."
 	},
 	"sagemod:How_To_Charm_A_Sentry": {
 		"NAME": "How To Charm A Sentry",
