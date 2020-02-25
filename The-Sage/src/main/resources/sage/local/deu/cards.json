@@ -388,6 +388,10 @@
 		"NAME": "Untergraben",
 		"DESCRIPTION": "Wende !M! Artefakt auf ALLE Gegner an. NL Wenn du einen Gegner angreifst, erhält er soviel zusätzlichen Schaden, wie er Artefakt hat."
 	},
+	"sagemod:Upwards": {
+		"NAME": "Aufwärts",
+		"DESCRIPTION": "Erhalte !M! Flug."
+	},
 	"sagemod:Vigorous_Body": {
 		"NAME": "Energischer Körper",
 		"DESCRIPTION": "Immer wenn ein Artefakt bei dir genutzt wird, erhalte !M! Stärke.",

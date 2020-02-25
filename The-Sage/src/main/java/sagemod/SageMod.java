@@ -119,6 +119,7 @@ import sagemod.cards.TasteThisOne;
 import sagemod.cards.Tinker;
 import sagemod.cards.TurnAround;
 import sagemod.cards.Undermine;
+import sagemod.cards.Upwards;
 import sagemod.cards.VigorousBody;
 import sagemod.cards.colorless.PerplexingGlare;
 import sagemod.cards.colorless.Refine;
@@ -253,6 +254,7 @@ public class SageMod implements EditCharactersSubscriber, EditCardsSubscriber, E
 		BaseMod.addCard(new Defend());
 		BaseMod.addCard(new Swipe());
 		BaseMod.addCard(new Fly());
+		BaseMod.addCard(new Upwards());
 		BaseMod.addCard(new BoldMove());
 
 		// Common

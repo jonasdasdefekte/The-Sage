@@ -388,6 +388,10 @@
 		"NAME": "Undermine",
 		"DESCRIPTION": "Apply !M! Artifact to ALL enemies. NL When you attack an enemy, they take extra damage equal to the Artifact on them."
 	},
+	"sagemod:Upwards": {
+		"NAME": "Upwards",
+		"DESCRIPTION": "Gain !M! Flight."
+	},
 	"sagemod:Vigorous_Body": {
 		"NAME": "Vigorous Body",
 		"DESCRIPTION": "Whenever an Artifact of you gets triggered, gain !M! Strength.",

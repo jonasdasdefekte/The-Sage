@@ -27,6 +27,7 @@ import sagemod.cards.Defend;
 import sagemod.cards.Fly;
 import sagemod.cards.Strike;
 import sagemod.cards.Swipe;
+import sagemod.cards.Upwards;
 import sagemod.relics.FlyingCarpet;
 
 /**
@@ -129,6 +130,9 @@ public class TheSage extends CustomPlayer {
 
 		// 1x Fly
 		cards.add(Fly.ID);
+		
+		// 1x Upwards
+		cards.add(Upwards.ID);
 		return cards;
 	}
 
