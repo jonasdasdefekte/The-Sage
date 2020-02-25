@@ -142,7 +142,7 @@
 	"sagemod:Flight": {
 		"NAME": "Flight",
 		"DESCRIPTIONS": [
-			"Reduce #yattack damage taken by #b50%. Reduced by one if you take #yattack damage."
+			"Reduce #yattack damage taken by #b50%. Reduced by one if you get attacked."
 		]
 	},
 	"sagemod:Taste_This_One": {

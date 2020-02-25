@@ -33,7 +33,7 @@
 		"NAMES": [
 			"flight"
 		],
-		"DESCRIPTION": "Reduce attack damage taken by 50%. Reduced by one if you take attack damage."
+		"DESCRIPTION": "Reduce attack damage taken by 50%. Reduced by one if you get attacked."
 	},
 	"TAXING": {
 		"NAMES": [

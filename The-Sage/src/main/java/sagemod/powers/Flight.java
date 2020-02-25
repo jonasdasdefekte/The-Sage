@@ -131,7 +131,7 @@ public class Flight extends AbstractSagePower {
 		boolean willLive =
 				calculateDamageTakenAmount(damageAmount, info.type) < owner.currentHealth;
 		if (info.owner != null && info.type != DamageInfo.DamageType.HP_LOSS
-				&& info.type != DamageInfo.DamageType.THORNS && damageAmount > 0 && willLive) {
+				&& info.type != DamageInfo.DamageType.THORNS && willLive) {
 			flash();
 			// Airborne prevents Flight loss
 			if (!owner.hasPower(Airborne.POWER_ID)) {

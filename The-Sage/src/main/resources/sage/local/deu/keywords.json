@@ -34,7 +34,7 @@
 			"flug",
 			"flugs"
 		],
-		"DESCRIPTION": "Reduziert Angriffsschaden, den du nimmst, um 50%. Sinkt um 1, wenn du Angriffsschaden nimmst."
+		"DESCRIPTION": "Reduziert Angriffsschaden, den du nimmst, um 50%. Sinkt um 1, wenn du angegriffen wirst."
 	},
 	"REFUND": {
 		"NAMES": [

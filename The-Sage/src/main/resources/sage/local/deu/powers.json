@@ -142,7 +142,7 @@
 	"sagemod:Flight": {
 		"NAME": "Flug",
 		"DESCRIPTIONS": [
-			"Reduziere #yAngriffsschaden, den du nimmst, um #b50%. Sinkt um 1, wenn du #yAngriffsschaden nimmst."
+			"Reduziere #yAngriffsschaden, den du nimmst, um #b50%. Sinkt um 1, wenn du angegriffen wirst."
 		]
 	},
 	"sagemod:Taste_This_One": {
