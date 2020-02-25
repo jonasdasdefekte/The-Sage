@@ -6,6 +6,7 @@ She learned flying a carpet and brewing potions in order to stop its rise.
 
 Starts with 50 HP, 169 gold	
 
+TODO: investigate upgraded potion shop render
 
 TODO: Flight is now also reduced when you block a hit!
 Idea: It would be cool if we could have "true" intent display. If you don't have enough Flight, the rear enemies should have their regular Attack damage displayed instead of half (to avoid bad surprises). The displayed value only needs to change when Flight changes, since it doesn't have anything to do anymore with Block.
