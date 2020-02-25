@@ -51,7 +51,7 @@ TODO:	How To Poke At Slimes
 	Crank
 		Attack, 1 Energy:
 		Deal 8 (12) damage. If the enemy has Artifact, draw 1 card. (Draw cards equal to the enemy's Artifact.)
-	Grounded Strike
+TODO:	Grounded Strike
 		Attack, 1 Energy:
 		Lose 3 (1) Flight. Deal 10 (13) damage.
 	How To Charm a Sentry
@@ -104,7 +104,7 @@ TODO:	How To Befriend A Turtle
 	Pincer Attack
 		Attack, 1 Energy: 
 		Deal 6 (8) damage. Damage is increased by the number of Artifacts on the enemy (twice).
-	Bouncing Strike
+	TODO: Bouncing Strike // Needs better implementation
 		Attack, 1 Energy: 
 		Gain 1 Flight. Deal damage equal to 3x (5x) your Flight.
 	Turn Around
