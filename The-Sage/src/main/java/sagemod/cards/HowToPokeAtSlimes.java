@@ -1,6 +1,5 @@
 package sagemod.cards;
 
-import com.evacipated.cardcrawl.mod.stslib.variables.RefundVariable;
 import com.megacrit.cardcrawl.actions.AbstractGameAction.AttackEffect;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -19,14 +18,14 @@ public class HowToPokeAtSlimes extends AbstractSageCard {
 	private static final CardRarity RARITY = CardRarity.COMMON;
 	private static final CardTarget TARGET = CardTarget.ALL_ENEMY;
 
-	private static final int UPGRADE_ATTACK_DMG = 3;
-	private static final int REFUND_AMOUNT = 3;
-	private static final int UPGRADE_REFUND_AMOUNT = 3;
+	private static final int BASE_ATTACK_DMG = 3;
+	private static final int BASE_ADDED_TIMES = 1;
+	private static final int UPGRADE_ADDED_TIMES = 1;
 
 	public HowToPokeAtSlimes() {
 		super(ID, NAME, COST, DESCRIPTION, TYPE, RARITY, TARGET);
-		baseDamage = 0;
-		RefundVariable.setBaseValue(this, REFUND_AMOUNT);
+		baseDamage = BASE_ATTACK_DMG;
+		baseMagicNumber = magicNumber = BASE_ADDED_TIMES;
 		isMultiDamage = true;
 	}
 
@@ -34,10 +33,7 @@ public class HowToPokeAtSlimes extends AbstractSageCard {
 	public void upgrade() {
 		if (!upgraded) {
 			upgradeName();
-			upgradeDamage(UPGRADE_ATTACK_DMG);
-			RefundVariable.upgrade(this, UPGRADE_REFUND_AMOUNT);
-			rawDescription = cardStrings.UPGRADE_DESCRIPTION;
-			initializeDescription();
+			upgradeMagicNumber(UPGRADE_ADDED_TIMES);
 		}
 	}
 
@@ -49,18 +45,18 @@ public class HowToPokeAtSlimes extends AbstractSageCard {
 	@Override
 	public void use(AbstractPlayer p, AbstractMonster m) {
 		int effect = getXEffect();
-		// Deal X damage
-		for (int i = 0; i < multiDamage.length; i++) {
-			multiDamage[i] += effect;
+		int times = effect + magicNumber;
+		
+		for (int i = 0; i < times; i++) {
+			attackAllEnemies(AttackEffect.SLASH_HORIZONTAL);
 		}
-		attackAllEnemies(AttackEffect.SLASH_HORIZONTAL);
 
 		useXEnergy();
 	}
 
 	@Override
 	public String getLoadedDescription() {
-		return upgraded ? cardStrings.UPGRADE_DESCRIPTION : DESCRIPTION;
+		return DESCRIPTION;
 	}
 
 }

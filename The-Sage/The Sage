@@ -42,9 +42,9 @@ Idea: It would be cool if we could have "true" intent display. If you don't have
 	Salty Strike
 		Attack, 1 Energy:
 		Deal 6 (9) damage. The enemy gains 1 (2) Thirsty.
-TODO:	How To Poke At Slimes
+	How To Poke At Slimes
 		Attack, X Energy:
-		Deal X +1 (+2) times 3 damage to ALL enemies.
+		Deal 3 damage X +1 (+2) times to ALL enemies.
 	Energetic Brew
 		Attack, 1 Energy: 
 		Deal 6 damage. Brew an Energy potion(+) in 4 turns.
