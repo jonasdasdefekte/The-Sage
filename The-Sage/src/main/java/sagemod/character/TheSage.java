@@ -118,8 +118,7 @@ public class TheSage extends CustomPlayer {
 		cards.add(Strike.ID);
 		cards.add(Strike.ID);
 
-		// 4x Defend
-		cards.add(Defend.ID);
+		// 3x Defend
 		cards.add(Defend.ID);
 		cards.add(Defend.ID);
 		cards.add(Defend.ID);
