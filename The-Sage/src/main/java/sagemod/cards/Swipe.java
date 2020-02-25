@@ -24,6 +24,7 @@ public class Swipe extends AbstractSageCard {
 	public Swipe() {
 		super(ID, NAME, COST, DESCRIPTION, TYPE, RARITY, TARGET);
 		baseDamage = ATTACK_DMG;
+		isMultiDamage = true;
 	}
 
 	@Override
