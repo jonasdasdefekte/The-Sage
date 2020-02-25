@@ -22,7 +22,8 @@ public class GroundedStrike extends AbstractSageCard {
 
 	private static final int ATTACK_DMG = 10;
 	private static final int UPGRADE_ATTACK_DMG = 3;
-	private static final int FLIGHT_LOSS = 1;
+	private static final int FLIGHT_LOSS = 3;
+	private static final int UPGRADE_FLIGHT_LOSS = -2;
 
 	public GroundedStrike() {
 		super(ID, NAME, COST, DESCRIPTION, TYPE, RARITY, TARGET);
@@ -37,8 +38,7 @@ public class GroundedStrike extends AbstractSageCard {
 		if (!upgraded) {
 			upgradeName();
 			upgradeDamage(UPGRADE_ATTACK_DMG);
-			rawDescription = cardStrings.UPGRADE_DESCRIPTION;
-			initializeDescription();
+			upgradeMagicNumber(UPGRADE_FLIGHT_LOSS);
 		}
 	}
 
@@ -50,8 +50,7 @@ public class GroundedStrike extends AbstractSageCard {
 	@Override
 	public void use(AbstractPlayer p, AbstractMonster m) {
 		attack(m, AttackEffect.SLASH_HORIZONTAL);
-		int flightLoss = upgraded ? magicNumber : 999;
-		AbstractDungeon.actionManager.addToBottom(new ReduceFlightBlockableAction(flightLoss, p));
+		AbstractDungeon.actionManager.addToBottom(new ReduceFlightBlockableAction(magicNumber, p));
 	}
 
 	@Override

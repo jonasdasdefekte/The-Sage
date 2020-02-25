@@ -142,8 +142,7 @@
 	},
 	"sagemod:Grounded_Strike": {
 		"NAME": "Bodenschlag",
-		"DESCRIPTION": "Verliere allen Flug. NL Füge !D! Schaden zu.",
-		"UPGRADE_DESCRIPTION": "Verliere !M! Flug. NL Füge !D! Schaden zu."
+		"DESCRIPTION": "Verliere !M! Flug. NL Füge !D! Schaden zu."
 	},
 	"sagemod:How_To_Amuse_Sneckos": {
 		"NAME": "Wie man Sneckos erfreut",
