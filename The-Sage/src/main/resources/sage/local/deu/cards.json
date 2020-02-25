@@ -359,6 +359,10 @@
 			"auf deinen Nachziehstapel legst."
 		]
 	},
+	"sagemod:Swipe": {
+		"NAME": "Wischen",
+		"DESCRIPTION": "Luft. Füge ALLEN Gegnern !D! Schaden zu."
+	},
 	"sagemod:Swoop_Down": {
 		"NAME": "Herabsausen",
 		"DESCRIPTION": "Füge einem zufälligen Monster !D! Schaden zu pro Flug, den du hast. NL Dann verliere deinen Flug."

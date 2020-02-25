@@ -359,6 +359,10 @@
 			"put on top of your draw pile."
 		]
 	},
+	"sagemod:Swipe": {
+		"NAME": "Swipe",
+		"DESCRIPTION": "Air. Deal !D! damage to ALL enemies."
+	},
 	"sagemod:Swoop_Down": {
 		"NAME": "Swoop Down",
 		"DESCRIPTION": "Deal !D! damage to a random enemy for every Flight you have. NL Then lose your Flight."
