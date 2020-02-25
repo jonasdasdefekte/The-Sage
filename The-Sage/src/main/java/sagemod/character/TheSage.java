@@ -22,7 +22,6 @@ import com.megacrit.cardcrawl.screens.CharSelectInfo;
 import basemod.abstracts.CustomPlayer;
 import basemod.animations.SpriterAnimation;
 import sagemod.SageMod;
-import sagemod.cards.BoldMove;
 import sagemod.cards.Defend;
 import sagemod.cards.Fly;
 import sagemod.cards.Strike;
@@ -158,8 +157,15 @@ public class TheSage extends CustomPlayer {
 
 	@Override
 	public AbstractCard getStartCardForEvent() {
-		// either Fly or BoldMove
-		return AbstractDungeon.cardRandomRng.randomBoolean() ? new Fly() : new BoldMove();
+		// either Fly or Swipe or Upwards
+		int chance = AbstractDungeon.cardRandomRng.random(1, 100);
+		if (chance < 34) {
+			return new Fly();
+		} else if (chance < 67) {
+			return new Swipe();
+		} else {
+			return new Upwards();
+		}
 	}
 
 	@Override
