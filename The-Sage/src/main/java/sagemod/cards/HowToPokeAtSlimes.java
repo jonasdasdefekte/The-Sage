@@ -7,7 +7,6 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.powers.FrailPower;
 
 public class HowToPokeAtSlimes extends AbstractSageCard {
 
@@ -52,7 +51,7 @@ public class HowToPokeAtSlimes extends AbstractSageCard {
 		int effect = getXEffect();
 		// Deal X damage
 		for (int i = 0; i < multiDamage.length; i++) {
-			multiDamage[i] += effect + damage;
+			multiDamage[i] += effect;
 		}
 		attackAllEnemies(AttackEffect.SLASH_HORIZONTAL);
 
@@ -61,7 +60,7 @@ public class HowToPokeAtSlimes extends AbstractSageCard {
 
 	@Override
 	public String getLoadedDescription() {
-		return DESCRIPTION;
+		return upgraded ? cardStrings.UPGRADE_DESCRIPTION : DESCRIPTION;
 	}
 
 }
