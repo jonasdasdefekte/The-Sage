@@ -52,7 +52,6 @@ import sagemod.cards.Ambition;
 import sagemod.cards.AntiAncientAttack;
 import sagemod.cards.ArmorBrew;
 import sagemod.cards.Blurry;
-import sagemod.cards.BoldMove;
 import sagemod.cards.Bookworm;
 import sagemod.cards.BouncingStrike;
 import sagemod.cards.Brewmaster;
@@ -255,7 +254,6 @@ public class SageMod implements EditCharactersSubscriber, EditCardsSubscriber, E
 		BaseMod.addCard(new Swipe());
 		BaseMod.addCard(new Fly());
 		BaseMod.addCard(new Upwards());
-		BaseMod.addCard(new BoldMove());
 
 		// Common
 		BaseMod.addCard(new HowToWarmElephants());

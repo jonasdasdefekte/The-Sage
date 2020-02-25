@@ -57,10 +57,6 @@
 			" temporäre_TP. )"
 		]
 	},
-	"sagemod:Bold_Move": {
-		"NAME": "Mutiger Schritt",
-		"DESCRIPTION": "Füge !D! Schaden zu. NL Erhalte !M! Gebrechlich."
-	},
 	"sagemod:Bookworm": {
 		"NAME": "Bücherwurm",
 		"DESCRIPTION": "Jedes Mal, wenn du eine Karte spielst, die X kostet, erstattet diese !M! Energie.",

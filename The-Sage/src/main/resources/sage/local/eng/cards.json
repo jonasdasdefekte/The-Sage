@@ -57,10 +57,6 @@
 			" Temporary_HP. )"
 		]
 	},
-	"sagemod:Bold_Move": {
-		"NAME": "Bold Move",
-		"DESCRIPTION": "Deal !D! damage. NL Gain !M! Frail."
-	},
 	"sagemod:Bookworm": {
 		"NAME": "Bookworm",
 		"DESCRIPTION": "Whenever you play an X cost card, Refund 1 Energy.",
