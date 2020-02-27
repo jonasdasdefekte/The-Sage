@@ -129,9 +129,6 @@ Idea: It would be cool if we could have "true" intent display. If you don't have
 	How to Wake Lyons
 		Skill, X Energy: 
 		Brew a Steroid potion in 4 (3) - X turns. Exhaust. (No Exhaust.)
-	How to feed Apes
-		Skill, X Energy: 
-		Randomly brew one of these potions in 4 (3)-X turns: Flight Potion, Blood Potion, Regen Potion or Fruit Juice. Exhaust.
 	Perpetuum Mobile
 		Skill, 0 Energy: 
 		Draw 1 card. Play it if it costs 1 (or X).
@@ -230,6 +227,9 @@ Idea: It would be cool if we could have "true" intent display. If you don't have
 	Blurry
 		Skill, 1 Energy
 		Gain 8 (12) Temporary HP. This is reduced by your current Flight. Exhaust.
+	How to feed Apes
+		Skill, X Energy: 
+		Randomly brew one of these potions in 4 (3)-X turns: Flight Potion, Blood Potion, Regen Potion or Fruit Juice. Exhaust.
 	Alchemy Expert
 		Power, 2 Energy:
 		Whenever you use a potion, gain 1 Artifact. (Innate.)
@@ -324,6 +324,52 @@ TODO:	Bookworm
 **NEW FEATURE FOR POTIONS**
 	Potions that are number based can have an upgrade which makes the, 50% more potent (or 2x effective if the number can not be manipulated)
 	Droprate: 20%
+
+Cross mod issues:
+For the following potions, the displayed potency variable is changed, but the effect doesn't change (but they also don't really work with Sacred Bark so I'm not sure if we should care anyways):
+	"BottledKami:Reimu" 
+		- Advent 1 random Kami.
+	"GrandPatriotsElixir:ReiMu" 
+		- Gain 13 Vigor.
+	"HakureiPotion:ReiMu" 
+		- Add 1 to all stackable buffs (e.g. Strength, Dex) on you.
+	"JyouchiReiPotion" (KomeijiMod) 
+		- Apply 3 Bound Spirit to an enemy.
+	"LiquidFlight:ReiMu" 
+		- Gain 2 Flight.
+	"PPointPotion" (KomeijiMod) 
+		- Gain 3 P point (can't exceed limit).
+	"MagicPotion:ReiMu" 
+		- Set your [E] to the amount it was at the start of this turn. Gain 1 energy at the start of the next 3 turns. (here, the number of turns is the magic number)
+	"ZuzhouPotion:ReiMu"
+		- Add 1 to all stackable debuffs (e.g. Weak, Vuln) on the target. 
+
+Blacklist:
+	"RedTea" (KomeijiMod) 
+		- Red tea is good for sleep (stun-like effect for 3 turns). I don't think the sleep effect can be stacked, so this should go to the blacklist.
+	"SCP261:BostonMolassesPotion" 
+		- Apply Slow. (Slow cannot be stacked. Alternatively "...to all enemies"? But this would intersect with our Blowpipe relic)
+	"UndeadPotion"
+		- Lose 10 Max HP, this combat your HP cannot go below 1. (Can't use in Boss combat.)
+	"jedi:holywater"
+		- Remove ALL debuffs from yourself.
+	"jedi:mysterypotion"
+		- The next room you can go to, other than bosses, becomes a ? room. Cannot be used in The Ending. (could be a 2x potion, but it also doesn't work with Sacred Bark)
+	"jedi:wingpotion"
+		- You may ignore paths when choosing the next room to travel to once. (could be a 2x potion, but it also doesn't work with Sacred Bark)
+
+Card Potions:
+	"PinkPotion:ReiMu" 
+		- This is a Discovery potion for pink (reimu) cards, should work like other Discovery potions.
+	"jedi:hoardpotion"
+		- Add all cards from current card reward screen to your deck. (In Jedimod, this upgrades all cards if you have Sacred Bark. Maybe the upgraded potion could just do the same?)
+
+other issues:
+	"SCP261:BlastolaColaPotion"
+		- Gain 1 orb slots. Channel 5 Frost. (Upgrade only changes the first number, but also gives 10 Frost despite saying 5. Probably hardcoded for Sacred Bark?)
+	"SCP261:ThunderBarPotion"
+		- Gain 1 orb slots. Channel 5 Lightning. (same issue here)
+
 
 **1 EVENT**
 	Carpet trader
