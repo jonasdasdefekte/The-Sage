@@ -288,7 +288,6 @@ public class SageMod implements EditCharactersSubscriber, EditCardsSubscriber, E
 		BaseMod.addCard(new BouncingStrike());
 		BaseMod.addCard(new TurnAround());
 		BaseMod.addCard(new HowToWakeLyons());
-		BaseMod.addCard(new HowToFeedApes());
 		BaseMod.addCard(new PerpetuumMobile());
 		BaseMod.addCard(new Study());
 		BaseMod.addCard(new FlyingCauldron());
@@ -331,6 +330,7 @@ public class SageMod implements EditCharactersSubscriber, EditCardsSubscriber, E
 		BaseMod.addCard(new Blurry());
 		BaseMod.addCard(new ReadTheRiotAct());
 		BaseMod.addCard(new Shatter());
+		BaseMod.addCard(new HowToFeedApes());
 
 		// Colorless
 		BaseMod.addCard(new PerplexingGlare());
