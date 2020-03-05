@@ -20,18 +20,15 @@ Idea: It would be cool if we could have "true" intent display. If you don't have
     4x Strike
 		Attack, 1 Energy: 
 		Deal 6 (9) damage.
-	3x Defend
+	4x Defend
 		Skill, 1 Energy: 
 		Gain 5 (8) Block.
-	1x Swipe
-		Attack, 1 Energy:
-		Air. Deal 7 (10) damage to ALL enemies.
 	1x Fly
 		Skill, 1 Energy: 
-		If you fly, gain 7 (10) Block. Otherwise gain 1 Flight.
+		If you fly, gain 5 (8) Block. Otherwise gain 1 Flight.
 	1x Upwards
-		Skill, 2 (1) Energy:
-		Gain 1 Flight.
+		Skill, 1 Energy:
+		Gain 1 (2) Flight.
 
 **17 COMMON CARDS (grey)**
 	Pincer Repair
@@ -43,9 +40,9 @@ Idea: It would be cool if we could have "true" intent display. If you don't have
 	Salty Strike
 		Attack, 1 Energy:
 		Deal 6 (9) damage. The enemy gains 1 (2) Thirsty.
-	How To Poke At Slimes
+TODO:	How To Poke At Slimes
 		Attack, X Energy:
-		Deal 3 damage X +1 (+2) times to ALL enemies.
+		Deal damage equal to your Flight X +1 (+2) times to ALL enemies.
 	Energetic Brew
 		Attack, 1 Energy: 
 		Deal 6 damage. Brew an Energy potion(+) in 4 turns.
@@ -72,7 +69,7 @@ Idea: It would be cool if we could have "true" intent display. If you don't have
 		Gain X times 2 (3) Plated Armor.
 	Catch me if you can
 		Skill, 0 Energy
-		Air. Prevent the next 2 (4) times you would lose Flight until the start of your next turn. // (Should also work on Flight loss in your own turn. "Lose 2 Flight" will lose 2 stacks of Airborne instead and "Lose all Flight" will cancel Airborne and Flight completely. Artifact no longer negates Flight loss.)
+		Air. Prevent the next 2 (4) times you would lose Flight until the start of your next turn. // ("Lose 2 Flight" will lose 2 stacks of Airborne instead and "Lose all Flight" will cancel Airborne and Flight completely.)
 	Step Back 
 		Skill, 2 Energy:
 		Gain 5 (8) Block. If you are flying, refund 2. Otherwise, gain 1 Flight.
@@ -135,18 +132,18 @@ Idea: It would be cool if we could have "true" intent display. If you don't have
 	Study
 		Skill, 1 Energy: 
 		Draw 3 cards and (you may) put one card from your hand hand on top of your deck.
-	Flying Cauldron
-		Skill, 1 Energy: 
-		Air. Gain 1 Brewing. Exhaust. (Upgrade: If you are flying, gain 1 Brewing. Otherwise, gain 1 Flight. Exhaust.)
+TODO:	Flying Cauldron
+		Skill, 0 Energy: 
+		Air. (Upgrade: No "Air Condition") Set your current potions aside. (You get them back in the combat reward.) Exhaust.
 	Lunchtime!
 		Skill, 1 Energy: 
 		Air. Lose 2 (1) Flight and brew all potions immediately.
 	Spoiled Food
 		Skill, 1 (0) Energy:
 		Apply 99 Thirsty. Exhaust.
-	How To Greet Byrds
+TODO:	How To Greet Byrds
 		Skill, X Energy:
-		Innate. Set your Flight to X. (Gain X Flight.) Exhaust.
+		Innate. Gain 2 (3) times X Flight.
 	Potion Trance
 		Skill, 1 Energy:
 		Draw 1 card (2 cards) whenever you use a Potion this turn. You cannot gain energy this turn.
@@ -174,15 +171,15 @@ Idea: It would be cool if we could have "true" intent display. If you don't have
 	Poem
 		Skill, X Energy:
 		Draw 1 card. Gain X+3 (4) Energy. Lose 3 (4) Energy after you played the next card this turn.
-	Altitude
+TODO:	Altitude
 		Power, 1 Energy: 
-		Gain 2 (3) Flight.
+		At the start of every turn, gain 1 (2) Flight.
 	Taste this one
 		Power, 1 Energy:
 		Whenever you use a potion, deal 10 (15) damage to a random enemy.
-	Brewmaster
+TODO:	Brewmaster
 		Power, 2 (1) Energy:
-		Gain 1 Brewing.
+		You need 1 less turn to Brew potions. // (Just dropping the keyword)
 	Undermine
 		Power, 1 Energy:
 		Apply 1 (2) Artifact to ALL enemies. Your Attack damage is increased by Artifact on the enemy. // Does not stack.
@@ -206,9 +203,9 @@ Idea: It would be cool if we could have "true" intent display. If you don't have
 	Shatter
 		Attack, 3 Energy
 		Air. Lose all Flight. Deal damage equal to half your max HP (equal to your max HP).
-	Escape
-		Skill, 1 Energy: 
-		Double your Flight. Exhaust. (Upgrade: No Exhaust.)
+TODO:	Escape
+		Skill, 2 (1) Energy: 
+		Double your Flight. Enemies with less HP than your Flight are removed from combat.
 	Extra Portion
 		Skill, 1 Energy: 
 		The next potion is (the next 2 potions are) applied twice this turn.
@@ -269,9 +266,9 @@ TODO:	Bookworm
 	Thunder Carpet
 		Boss relic: 
 		Replaces Flying carpet. Start each combat with 3 Flight.
-	Cook Book
+TODO:	Cook Book
 		Uncommon relic: 
-		Start each combat with 1 Brewing.
+		You need 1 less turn to Brew potions. // (Just dropping the keyword)
 	Ancient Magnet
 		Uncommon relic: 
 		You can debuff the enemy even if they have Artifact.
