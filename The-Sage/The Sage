@@ -42,7 +42,7 @@ Idea: It would be cool if we could have "true" intent display. If you don't have
 		Deal 6 (9) damage. The enemy gains 1 (2) Thirsty.
 TODO:	How To Poke At Slimes
 		Attack, X Energy:
-		Deal damage equal to your Flight X +1 (+2) times to ALL enemies.
+		Deal damage equal to your Flight (+3) to ALL enemies X times.
 	Energetic Brew
 		Attack, 1 Energy: 
 		Deal 6 damage. Brew an Energy potion(+) in 4 turns.
