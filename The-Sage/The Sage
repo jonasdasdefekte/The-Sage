@@ -8,8 +8,10 @@ Starts with 50 HP, 169 gold
 
 TODO: investigate upgraded potion shop render
 
-TODO: Flight is now also reduced when you block a hit!
 Idea: It would be cool if we could have "true" intent display. If you don't have enough Flight, the rear enemies should have their regular Attack damage displayed instead of half (to avoid bad surprises). The displayed value only needs to change when Flight changes, since it doesn't have anything to do anymore with Block.
+
+___________________________
+A. This part of the mod is only acessible if you play as the Sage.
 
 
 **STARTING RELIC**
@@ -49,9 +51,9 @@ TODO:	How To Poke At Slimes
 	Crank
 		Attack, 1 Energy:
 		Deal 8 (12) damage. If the enemy has Artifact, draw 1 card. (Draw cards equal to the enemy's Artifact.)
-	Grounded Strike
+TODO:	Grounded Strike 
 		Attack, 1 Energy:
-		Lose 3 (1) Flight. Deal 10 (13) damage.
+		Gain 1 Flight. Deal 5 (8) damage. // could be renamed, but maybe doesnt have to be?
 	How To Charm a Sentry
 		Attack, X Energy:
 		Do this X times: Gain 4 (6) Block. Deal 4 (6) damage. The enemy gains 1 Artifact. 
@@ -135,9 +137,9 @@ TODO:	How To Poke At Slimes
 TODO:	Flying Cauldron
 		Skill, 0 Energy: 
 		Air. (Upgrade: No "Air Condition") Set your current potions aside. (You get them back in the combat reward.) Exhaust.
-	Lunchtime!
+TODO:	Lunchtime!
 		Skill, 1 Energy: 
-		Air. Lose 2 (1) Flight and brew all potions immediately.
+		Air. Lose 1 Flight. (Upgrade: no Flight loss) Brew all potions immediately.
 	Spoiled Food
 		Skill, 1 (0) Energy:
 		Apply 99 Thirsty. Exhaust.
@@ -147,9 +149,9 @@ TODO:	How To Greet Byrds
 	Potion Trance
 		Skill, 1 Energy:
 		Draw 1 card (2 cards) whenever you use a Potion this turn. You cannot gain energy this turn.
-	How To Amuse Sneckos
+TODO:	How To Amuse Sneckos
 		Skill, X Energy:
-		Lose 3 (1) Flight. Draw X +1 cards. Refund 1.
+		Lose 1 Flight. Draw X + 1 (2 times X) cards. Refund 1.
 	Let it go
 		Skill, 1 Energy:
 		Exhaust a card (up to 2 cards) from your hand. Gain Flight equal to its (their) cost. Exhaust.
@@ -168,9 +170,9 @@ TODO:	How To Greet Byrds
 	Deadly Contraption
 		Skill, 1 Energy: 
 		Apply 3 Artifact to ALL enemies. For 2 (3) turns, enemies lose 1 HP per Artifact on them. // Stacks for the amount of turns.
-	Poem
-		Skill, X Energy:
-		Draw 1 card. Gain X+3 (4) Energy. Lose 3 (4) Energy after you played the next card this turn.
+TODO:	Poem
+		Skill, 1 (0) Energy:
+		Refund all Energy used when playing your next card. // Former effect of "Trixter"
 TODO:	Altitude
 		Power, 1 Energy: 
 		At the start of every turn, gain 1 (2) Flight.
@@ -185,7 +187,7 @@ TODO:	Brewmaster
 		Apply 1 (2) Artifact to ALL enemies. Your Attack damage is increased by Artifact on the enemy. // Does not stack.
  Rickety Defense
 		Power, 1 Energy:
-		Whenever you lose all Flight, gain 6 (8) Block. // (=Whenever you lose the Flight power.)
+		Whenever you lose all Flight, gain 6 (8) Block.
 
 **19 RARE CARDS (gold)**
 	Swoop Down
@@ -236,30 +238,19 @@ TODO:	Escape
 	Accumulation
 		Power, 1 Energy: 
 		Air. At the start of each turn, gain 1 Energy and lose 2 (1) Flight.
-TODO:	Bookworm
+	Bookworm
 		Power, 1 Energy:
-		All X cost cards Refund 1 (2) Energy. // Could the Text be added to the cards?
+		Whenever you play an X cost card, Refund 1 Energy.
+		(Upgrades to: Whenever you play an X cost card, Gain 1 Energy.)
 	On Fire
 		Power, 1 Energy:
 		Whenever you play 5 cards in a single turn, obtain a Fire Potion(+).
 	Vigorous Body
 		Power, 1 Energy:
 		Whenever an Artifact of you (or an enemy) gets triggered, gain 1 Strength.
-	Riches!!!
-		Power, 1 (0) Energy:
-		Whenever you use an upgraded potion, obtain a random unupgraded potion. // No healing Potions (like Quackster)
-
-
-**3 NEUTRAL CARDS (Shop)**
-	Perplexing Glare
-		Uncommon Skill, 2 Energy:
-		Apply 1 (2) Disoriented. Exhaust.
-	Refine
-		Uncommon Skill, 1 Energy
-		Upgrade a random unupgraded potion (all unupgraded potions) you are holding. Exhaust.
-	Trixter
-		Rare Skill, 1 (0) Energy:
-		Refund all Energy used when playing your next card.
+TODO/ IDEA:	Loony Carpet
+		Power, 3(2) Energy:
+		Playing Skill cards costs Flight instead of Energy.
 
 	
 **7 CHARACTER-SPECIFIC RELICS (Sage only)**
@@ -285,14 +276,20 @@ TODO:	Cook Book
 		Special case for The Sage 
 		Whenever you discard a potion, heal 5 HP.
 
+1 character specific potion
+	Flight Potion
+		Rare, Sage only
+		Gain 1 Flight.
 
-**6 OTHER RELICS (for all characters)**
-	Red Beast Statue
-		Uncommon relic:
-		Potions are 50% more likely to be uncommon or rare and 100% more likely to be upgraded.
-	Blowpipe
-		Rare relic: 
-		Whenever you throw a potion at an enemy, it also affects the other enemies.
+_______________________
+B. The following content can appear in games with other characters as well. However, it can be disabled by the option "Upgraded potions only".
+
+1 neutral card (Shop):
+	Perplexing Glare
+		Uncommon Skill, 2 Energy:
+		Apply 1 (2) Disoriented. Exhaust.
+
+3 relics:
 	Falmel's Amulet
 		Boss relic:
 		Gain [E] at the start of your turn. A random enemy attacks 1 additional time on the first turn.
@@ -302,15 +299,38 @@ TODO:	Cook Book
 	Creepy Carousel
 		Rare relic:
 		Every 5 turns, apply 1 Disoriented to a random enemy.
+
+1 Event:
+	Carpet trader
+		Akt 2
+		Option 1: #rLose #r30% #rmax. #rHP. 
+			(For The Sage:) #gObtain #gthe #gByrd #gfeather. 
+			(Any other character:) #gObtain #gthe #gFlying #gCarpet.
+		Option 2: Leave
+
+_______________________________
+C. "The Potion experience" - You can always enconter these parts of the mod as any character. Players who enable "Upgraded Potions only" will only see these items.
+
+1 neutral card (Shop):
+	Refine
+		Uncommon Skill, 1 Energy
+		Upgrade a random unupgraded potion (all unupgraded potions) you are holding. Exhaust.
+
+4 relics:
+	Red Beast Statue
+		Uncommon relic:
+		Potions are 50% more likely to be uncommon or rare and 100% more likely to be upgraded.
+	Blowpipe
+		Rare relic: 
+		Whenever you throw a potion at an enemy, it also affects the other enemies.
 	Singing Vial
 		Uncommon relic:
 		When adding cards into your deck, you may upgrade a random Potion instead.
+	Bottled Bottle
+		Rare Relic:
+		Whenever you use an upgraded potion, obtain a random unupgraded potion. // Former Power card "Riches!!!" - No healing Potions (like Quackster)
 
-
-**3 POTIONS**
-	Flight Potion
-		Rare, Sage only
-		Gain 1 Flight.
+2 Potions:
 	Fata Morgana
 		Rare
 		Apply 1 Disoriented.
@@ -319,8 +339,9 @@ TODO:	Cook Book
 		Reduce all prices in a shop by 20 Gold.
 		
 **NEW FEATURE FOR POTIONS**
-	Potions that are number based can have an upgrade which makes the, 50% more potent (or 2x effective if the number can not be manipulated)
+	Potions that are number based can have an upgrade which makes the effect 50% more potent (or 2x effective if the number cannot be manipulated)
 	Droprate: 20%
+_____________________________
 
 Cross mod issues:
 For the following potions, the displayed potency variable is changed, but the effect doesn't change (but they also don't really work with Sacred Bark so I'm not sure if we should care anyways):
@@ -367,15 +388,3 @@ other issues:
 	"SCP261:ThunderBarPotion"
 		- Gain 1 orb slots. Channel 5 Lightning. (same issue here)
 
-
-**1 EVENT**
-	Carpet trader
-		Akt 2
-		Option 1: #rLose #r30% #rmax. #rHP. 
-			(For The Sage:) #gObtain #gthe #gByrd #gfeather. 
-			(Any other character:) #gObtain #gthe #gFlying #gCarpet.
-		Option 2: Leave
-TODO:	Mirror Mist
-		Replay The Spire - Crossover
-		Option 1: Lose Fly. Obtain Reinforced Body.
-		Option 2: Lose Flying Carpet. Obtain . (Also removes Thunder Carpet from the pool.)
