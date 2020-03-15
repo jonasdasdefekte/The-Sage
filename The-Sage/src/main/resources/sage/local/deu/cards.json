@@ -260,7 +260,7 @@
 	},
 	"sagemod:Poem": {
 		"NAME": "Gedicht",
-		"DESCRIPTION": "Ziehe !sagemod:MISC! Karte. NL Erhalte X + !M! [E] . NL Nachdem du die nächste Karte in diesem Zug spielst, verlierst du !M! [E]."
+		"DESCRIPTION": "Erstatte die gesamte Energie für die nächste Karte, die du spielst."
 	},
 	"sagemod:Potion_Explosion": {
 		"NAME": "Trankexplosion",

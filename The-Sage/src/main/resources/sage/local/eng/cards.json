@@ -260,7 +260,7 @@
 	},
 	"sagemod:Poem": {
 		"NAME": "Poem",
-		"DESCRIPTION": "Draw !sagemod:MISC! Card. NL Gain X + !M! [E] . NL Lose !M! [E] after you played the next card this turn."
+		"DESCRIPTION": "Refund all energy used when playing your next card."
 	},
 	"sagemod:Potion_Explosion": {
 		"NAME": "Potion Explosion",

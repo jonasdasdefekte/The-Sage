@@ -112,8 +112,9 @@
 	"sagemod:Poem": {
 		"NAME": "Gedicht",
 		"DESCRIPTIONS": [
-			"Verliere #b",
-			" [E] nachdem du deine nächste Karte in diesem Zug spielst."
+			"#yErstatte die gesamte Energie für die nächste Karte, die du spielst.",
+			"#yErstatte die gesamte Energie für die nächsten #b",
+			"  Karten, die du spielst."
 		]
 	},
 	"sagemod:Potion_Trance": {

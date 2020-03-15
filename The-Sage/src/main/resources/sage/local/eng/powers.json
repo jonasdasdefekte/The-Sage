@@ -112,8 +112,9 @@
 	"sagemod:Poem": {
 		"NAME": "Poem",
 		"DESCRIPTIONS": [
-			"Lose #b",
-			" [E] after you played the next card this turn."
+			"#yRefund all energy used when playing your next card.",
+			"#yRefund all energy used when playing your next #b",
+			" cards."
 		]
 	},
 	"sagemod:Potion_Trance": {
