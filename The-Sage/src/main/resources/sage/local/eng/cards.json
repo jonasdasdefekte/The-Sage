@@ -168,8 +168,7 @@
 	},
 	"sagemod:How_To_Greet_Byrds": {
 		"NAME": "How To Greet Byrds",
-		"DESCRIPTION": "Innate. NL Set your Flight to X. NL Exhaust.",
-		"UPGRADE_DESCRIPTION": "Innate. NL Gain X Flight. NL Exhaust."
+		"DESCRIPTION": "Innate. NL Gain !M! times X Flight."
 	},
 	"sagemod:How_To_Murder_Ants": {
 		"NAME": "How To Murder Ants",

@@ -1,14 +1,11 @@
 package sagemod.cards;
 
-import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
-import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.powers.AbstractPower;
-import sagemod.powers.Flight;
+import com.megacrit.cardcrawl.powers.FlightPower;
 
 public class HowToGreetByrds extends AbstractSageCard {
 
@@ -20,21 +17,21 @@ public class HowToGreetByrds extends AbstractSageCard {
 	private static final CardType TYPE = CardType.SKILL;
 	private static final CardRarity RARITY = CardRarity.UNCOMMON;
 	private static final CardTarget TARGET = CardTarget.SELF;
+	
+	private static final int BASE_FLIGHT_TIMES = 2;
+	private static final int UPGRADE_FLIGHT_TIMES = 1;
 
 	public HowToGreetByrds() {
 		super(ID, NAME, COST, DESCRIPTION, TYPE, RARITY, TARGET);
-
-		exhaust = true;
+		baseMagicNumber = magicNumber = BASE_FLIGHT_TIMES;
 		isInnate = true;
-
 	}
 
 	@Override
 	public void upgrade() {
 		if (!upgraded) {
 			upgradeName();
-			rawDescription = cardStrings.UPGRADE_DESCRIPTION;
-			initializeDescription();
+			upgradeMagicNumber(UPGRADE_FLIGHT_TIMES);
 		}
 	}
 
@@ -47,23 +44,8 @@ public class HowToGreetByrds extends AbstractSageCard {
 	public void use(AbstractPlayer p, AbstractMonster m) {
 		int effect = getXEffect();
 
-		if (upgraded) {
-			if (effect > 0) {
-				applyPowerToSelf(new Flight(p, effect));
-			}
-		} else {
-			if (p.hasPower(Flight.POWER_ID)) {
-				AbstractPower power = p.getPower(Flight.POWER_ID);
-				if (effect <= 0) {
-					AbstractDungeon.actionManager
-							.addToBottom(new RemoveSpecificPowerAction(p, p, power));
-				} else {
-					power.amount = effect;
-					power.flash();
-				}
-			} else if (effect > 0) {
-				applyPowerToSelf(new Flight(p, effect));
-			}
+		if (effect > 0) {
+			applyPower(new FlightPower(p, magicNumber * effect), p);
 		}
 
 		useXEnergy();

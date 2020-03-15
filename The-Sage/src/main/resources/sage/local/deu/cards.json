@@ -168,8 +168,7 @@
 	},
 	"sagemod:How_To_Greet_Byrds": {
 		"NAME": "Wie man Fögl grüßt",
-		"DESCRIPTION": "Angeboren. NL Setze deinen Flug auf X. NL Erschöpft.",
-		"UPGRADE_DESCRIPTION": "Angeboren. NL Erhalte X Flug. NL Erschöpft."
+		"DESCRIPTION": "Angeboren. NL Erhalte !M! mal X Flug."
 	},
 	"sagemod:How_To_Murder_Ants": {
 		"NAME": "Wie man Ameisen mordet",
