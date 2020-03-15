@@ -4,10 +4,9 @@ import com.megacrit.cardcrawl.actions.AbstractGameAction.AttackEffect;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
-import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import sagemod.actions.ReduceFlightBlockableAction;
+import com.megacrit.cardcrawl.powers.FlightPower;
 
 public class GroundedStrike extends AbstractSageCard {
 
@@ -20,15 +19,14 @@ public class GroundedStrike extends AbstractSageCard {
 	private static final CardRarity RARITY = CardRarity.COMMON;
 	private static final CardTarget TARGET = CardTarget.ENEMY;
 
-	private static final int ATTACK_DMG = 10;
+	private static final int ATTACK_DMG = 5;
 	private static final int UPGRADE_ATTACK_DMG = 3;
-	private static final int FLIGHT_LOSS = 3;
-	private static final int UPGRADE_FLIGHT_LOSS = -2;
+	private static final int FLIGHT_GAIN = 1;
 
 	public GroundedStrike() {
 		super(ID, NAME, COST, DESCRIPTION, TYPE, RARITY, TARGET);
 		baseDamage = ATTACK_DMG;
-		baseMagicNumber = magicNumber = FLIGHT_LOSS;
+		baseMagicNumber = magicNumber = FLIGHT_GAIN;
 
 		tags.add(CardTags.STRIKE);
 	}
@@ -38,7 +36,6 @@ public class GroundedStrike extends AbstractSageCard {
 		if (!upgraded) {
 			upgradeName();
 			upgradeDamage(UPGRADE_ATTACK_DMG);
-			upgradeMagicNumber(UPGRADE_FLIGHT_LOSS);
 		}
 	}
 
@@ -49,8 +46,8 @@ public class GroundedStrike extends AbstractSageCard {
 
 	@Override
 	public void use(AbstractPlayer p, AbstractMonster m) {
-		attack(m, AttackEffect.SLASH_HORIZONTAL);
-		AbstractDungeon.actionManager.addToBottom(new ReduceFlightBlockableAction(magicNumber, p));
+		attack(m, AttackEffect.SLASH_VERTICAL);
+		applyPower(new FlightPower(p, magicNumber), p);
 	}
 
 	@Override

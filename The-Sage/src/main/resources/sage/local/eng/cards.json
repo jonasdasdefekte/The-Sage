@@ -142,7 +142,7 @@
 	},
 	"sagemod:Grounded_Strike": {
 		"NAME": "Grounded Strike",
-		"DESCRIPTION": "Lose !M! Flight. NL Deal !D! damage."
+		"DESCRIPTION": "Gain !M! Flight. NL Deal !D! damage."
 	},
 	"sagemod:How_To_Amuse_Sneckos": {
 		"NAME": "How To Amuse Sneckos",
