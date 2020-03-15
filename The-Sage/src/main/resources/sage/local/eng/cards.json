@@ -215,7 +215,8 @@
 	},
 	"sagemod:Lunchtime": {
 		"NAME": "Lunchtime!",
-		"DESCRIPTION": "Air. NL Lose !M! Flight and brew all potions immediately."
+		"DESCRIPTION": "Air. NL Lose !M! Flight and brew all potions immediately.",
+		"UPGRADE_DESCRIPTION": "Air. NL Brew all potions immediately."
 	},
 	"sagemod:Mechanics_Break": {
 		"NAME": "Mechanics Break!",

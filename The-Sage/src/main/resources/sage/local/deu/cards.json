@@ -215,7 +215,8 @@
 	},
 	"sagemod:Lunchtime": {
 		"NAME": "Essenszeit!",
-		"DESCRIPTION": "Luft. NL Verliere !M! Flug und braue sofort alle Tränke."
+		"DESCRIPTION": "Luft. NL Verliere !M! Flug und braue sofort alle Tränke.",
+		"UPGRADE_DESCRIPTION": "Luft. NL Braue sofort alle Tränke."
 	},
 	"sagemod:Mechanics_Break": {
 		"NAME": "Mechanik zerbricht!",
