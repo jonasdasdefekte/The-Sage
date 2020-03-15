@@ -6,6 +6,7 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import sagemod.powers.Flight;
 
 public class HowToPokeAtSlimes extends AbstractSageCard {
 
@@ -18,14 +19,12 @@ public class HowToPokeAtSlimes extends AbstractSageCard {
 	private static final CardRarity RARITY = CardRarity.COMMON;
 	private static final CardTarget TARGET = CardTarget.ALL_ENEMY;
 
-	private static final int BASE_ATTACK_DMG = 3;
-	private static final int BASE_ADDED_TIMES = 1;
-	private static final int UPGRADE_ADDED_TIMES = 1;
+	private static final int BASE_ATTACK_DMG = 0;
+	private static final int UPGRADE_ATTACK_DMG = 3;
 
 	public HowToPokeAtSlimes() {
 		super(ID, NAME, COST, DESCRIPTION, TYPE, RARITY, TARGET);
 		baseDamage = BASE_ATTACK_DMG;
-		baseMagicNumber = magicNumber = BASE_ADDED_TIMES;
 		isMultiDamage = true;
 	}
 
@@ -33,7 +32,9 @@ public class HowToPokeAtSlimes extends AbstractSageCard {
 	public void upgrade() {
 		if (!upgraded) {
 			upgradeName();
-			upgradeMagicNumber(UPGRADE_ADDED_TIMES);
+			upgradeDamage(UPGRADE_ATTACK_DMG);
+			rawDescription = cardStrings.UPGRADE_DESCRIPTION;
+			initializeDescription();
 		}
 	}
 
@@ -45,9 +46,16 @@ public class HowToPokeAtSlimes extends AbstractSageCard {
 	@Override
 	public void use(AbstractPlayer p, AbstractMonster m) {
 		int effect = getXEffect();
-		int times = effect + magicNumber;
 		
-		for (int i = 0; i < times; i++) {
+		if (isFlying()) {
+			damage += player().getPower(Flight.POWER_ID).amount;
+			this.isDamageModified = true;
+			for (int i = 0; i < multiDamage.length; i++) {
+				multiDamage[i] = damage;
+			}
+		}
+		
+		for (int i = 0; i < effect; i++) {
 			attackAllEnemies(AttackEffect.SLASH_HORIZONTAL);
 		}
 
@@ -56,7 +64,7 @@ public class HowToPokeAtSlimes extends AbstractSageCard {
 
 	@Override
 	public String getLoadedDescription() {
-		return DESCRIPTION;
+		return upgraded ? cardStrings.UPGRADE_DESCRIPTION : DESCRIPTION;
 	}
 
 }

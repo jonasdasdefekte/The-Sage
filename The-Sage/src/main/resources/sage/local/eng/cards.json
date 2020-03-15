@@ -178,7 +178,8 @@
 	},
 	"sagemod:How_To_Poke_At_Slimes": {
 		"NAME": "How To Poke At Slimes",
-		"DESCRIPTION": "Deal !D! damage X + !M! times to ALL enemies."
+		"DESCRIPTION": "Deal damage equal to your Flight to ALL enemies X times.",
+		"UPGRADE_DESCRIPTION": "Deal damage equal to your Flight + !D! to ALL enemies X times."
 	},
 	"sagemod:How_To_Wake_Lyons": {
 		"NAME": "How To Wake Lyons",
