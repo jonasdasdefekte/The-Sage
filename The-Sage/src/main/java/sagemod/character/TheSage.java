@@ -119,14 +119,12 @@ public class TheSage extends CustomPlayer {
 		cards.add(Strike.ID);
 		cards.add(Strike.ID);
 
-		// 3x Defend
+		// 4x Defend
+		cards.add(Defend.ID);
 		cards.add(Defend.ID);
 		cards.add(Defend.ID);
 		cards.add(Defend.ID);
 		
-		// 1x Swipe
-		cards.add(Swipe.ID);
-
 		// 1x Fly
 		cards.add(Fly.ID);
 		
@@ -157,12 +155,9 @@ public class TheSage extends CustomPlayer {
 
 	@Override
 	public AbstractCard getStartCardForEvent() {
-		// either Fly or Swipe or Upwards
-		int chance = AbstractDungeon.cardRandomRng.random(1, 100);
-		if (chance < 34) {
+		// either Fly or Upwards
+		if (AbstractDungeon.cardRandomRng.randomBoolean()) {
 			return new Fly();
-		} else if (chance < 67) {
-			return new Swipe();
 		} else {
 			return new Upwards();
 		}
