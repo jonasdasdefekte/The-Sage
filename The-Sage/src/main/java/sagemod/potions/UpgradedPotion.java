@@ -237,7 +237,7 @@ public class UpgradedPotion extends CustomPotion {
 
 	@Override
 	public void shopRender(SpriteBatch sb) {
-		potion.scale = scale;
+		this.scale = potion.scale;
 		potion.posX = posX;
 		potion.posY = posY;
 		potion.shopRender(sb);
@@ -283,7 +283,6 @@ public class UpgradedPotion extends CustomPotion {
 	
 	@Override
 	public void renderOutline(SpriteBatch sb, Color c) {
-		potion.scale = scale;
 		potion.posX = posX;
 		potion.posY = posY;
 		potion.renderOutline(sb, c);
@@ -291,7 +290,6 @@ public class UpgradedPotion extends CustomPotion {
 
 	@Override
 	public void renderOutline(SpriteBatch sb) {
-		potion.scale = scale;
 		potion.posX = posX;
 		potion.posY = posY;
 		potion.renderOutline(sb, OUTLINE_COLOR);
@@ -299,7 +297,6 @@ public class UpgradedPotion extends CustomPotion {
 
 	@Override
 	public void renderLightOutline(SpriteBatch sb) {
-		potion.scale = scale;
 		potion.posX = posX;
 		potion.posY = posY;
 		potion.renderOutline(sb, LIGHT_OUTLINE_COLOR);
