@@ -25,7 +25,6 @@ import sagemod.SageMod;
 import sagemod.cards.Defend;
 import sagemod.cards.Fly;
 import sagemod.cards.Strike;
-import sagemod.cards.Swipe;
 import sagemod.cards.Upwards;
 import sagemod.relics.FlyingCarpet;
 

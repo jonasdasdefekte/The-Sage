@@ -112,7 +112,6 @@ import sagemod.cards.SpoonStrike;
 import sagemod.cards.StepBack;
 import sagemod.cards.Strike;
 import sagemod.cards.Study;
-import sagemod.cards.Swipe;
 import sagemod.cards.SwoopDown;
 import sagemod.cards.TasteThisOne;
 import sagemod.cards.Tinker;
@@ -251,7 +250,6 @@ public class SageMod implements EditCharactersSubscriber, EditCardsSubscriber, E
 		// Basic
 		BaseMod.addCard(new Strike());
 		BaseMod.addCard(new Defend());
-		BaseMod.addCard(new Swipe());
 		BaseMod.addCard(new Fly());
 		BaseMod.addCard(new Upwards());
 
