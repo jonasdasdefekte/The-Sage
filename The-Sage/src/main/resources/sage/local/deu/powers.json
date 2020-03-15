@@ -161,14 +161,6 @@
 			" Zug."
 		]
 	},
-	"sagemod:Trixter": {
-		"NAME": "Trixter",
-		"DESCRIPTIONS": [
-			"#yErstatte die gesamte Energie für die nächste Karte, die du spielst.",
-			"#yErstatte die gesamte Energie für die nächsten #b",
-			"  Karten, die du spielst."
-		]
-	},
 	"sagemod:Undermine": {
 		"NAME": "Untergraben",
 		"DESCRIPTIONS": [

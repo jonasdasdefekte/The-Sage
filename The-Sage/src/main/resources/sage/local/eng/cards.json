@@ -369,10 +369,6 @@
 		"DESCRIPTION": "Gain 1 Block per Artifact on the field + !sagemod:MISC! NL (gains !B! Block).",
 		"UPGRADE_DESCRIPTION": "Gain 1 Artifact. NL Gain 1 Block per Artifact on the field + !sagemod:MISC! NL (gains !B! Block)."
 	},
-	"sagemod:Trixter": {
-		"NAME": "Trixter",
-		"DESCRIPTION": "Refund all energy used when playing your next card."
-	},
 	"sagemod:Turn_Around": {
 		"NAME": "Turn Around",
 		"DESCRIPTION": "Deal !D! damage. NL This deals !M! less damage per Flight you have."

@@ -121,7 +121,6 @@ import sagemod.cards.Upwards;
 import sagemod.cards.VigorousBody;
 import sagemod.cards.colorless.PerplexingGlare;
 import sagemod.cards.colorless.Refine;
-import sagemod.cards.colorless.Trixter;
 import sagemod.cards.debug.AvailablePotionUpgrade;
 import sagemod.cards.debug.ConsolePotion;
 import sagemod.cards.debug.CyclePotions;
@@ -333,7 +332,6 @@ public class SageMod implements EditCharactersSubscriber, EditCardsSubscriber, E
 		// Colorless
 		BaseMod.addCard(new PerplexingGlare());
 		BaseMod.addCard(new Refine());
-		BaseMod.addCard(new Trixter());
 
 		// Debug
 		BaseMod.addCard(new AvailablePotionUpgrade());

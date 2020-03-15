@@ -369,10 +369,6 @@
 		"DESCRIPTION": "Erhalte 1 Block pro Artefakt auf dem Feld + !sagemod:MISC! NL (gibt !B! Block).",
 		"UPGRADE_DESCRIPTION": "Erhalte 1 Artefakt. NL Erhalte 1 Block pro Artefakt auf dem Feld + !sagemod:MISC! NL (gibt !B! Block)."
 	},
-	"sagemod:Trixter": {
-		"NAME": "Trixter",
-		"DESCRIPTION": "Erstatte die gesamte Energie für die nächste Karte, die du spielst."
-	},
 	"sagemod:Turn_Around": {
 		"NAME": "Umkehren",
 		"DESCRIPTION": "Füge !D! Schaden zu. Diese Karte fügt !M! Schaden weniger zu pro Flug, den du hast."
