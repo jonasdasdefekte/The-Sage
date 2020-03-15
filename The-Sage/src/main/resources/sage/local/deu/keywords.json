@@ -17,12 +17,6 @@
 		],
 		"DESCRIPTION": "Erhalte einen Trank in einer bestimmten Anzahl Runden."
 	},
-	"BREWING": {
-		"NAMES": [
-			"brauen"
-		],
-		"DESCRIPTION": "Du brauchst weniger Züge, um Tränke zu brauen."
-	},
 	"DISORIENTED": {
 		"NAMES": [
 			"desorientiert"

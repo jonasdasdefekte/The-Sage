@@ -171,15 +171,15 @@ TODO:	Flying Cauldron
 	Poem
 		Skill, 1 (0) Energy:
 		Refund all Energy used when playing your next card. // Former effect of "Trixter"
-TODO:	Altitude
+	Altitude
 		Power, 1 Energy: 
 		At the start of every turn, gain 1 (2) Flight.
 	Taste this one
 		Power, 1 Energy:
 		Whenever you use a potion, deal 10 (15) damage to a random enemy.
-TODO:	Brewmaster
+	Brewmaster
 		Power, 2 (1) Energy:
-		You need 1 less turn to Brew potions. // (Just dropping the keyword)
+		You need 1 less turn to Brew potions.
 	Undermine
 		Power, 1 Energy:
 		Apply 1 (2) Artifact to ALL enemies. Your Attack damage is increased by Artifact on the enemy. // Does not stack.
@@ -255,9 +255,9 @@ TODO/ IDEA:	Loony Carpet
 	Thunder Carpet
 		Boss relic: 
 		Replaces Flying carpet. Start each combat with 3 Flight.
-TODO:	Cook Book
+	Cook Book
 		Uncommon relic: 
-		You need 1 less turn to Brew potions. // (Just dropping the keyword)
+		You need 1 less turn to Brew potions.
 	Ancient Magnet
 		Uncommon relic: 
 		You can debuff the enemy even if they have Artifact.

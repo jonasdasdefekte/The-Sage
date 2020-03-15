@@ -43,8 +43,8 @@
 		"NAME": "Cookbook",
 		"FLAVOR": "Reading this makes you hungry. Although probably you better should abstain from some of these dishes.",
 		"DESCRIPTIONS": [
-			"Start each combat with #b",
-			" #yBrewing."
+			"You need #b",
+			" less turn to #ybrew potions."
 		]
 	},
 	"sagemod:Creepy_Carousel": {

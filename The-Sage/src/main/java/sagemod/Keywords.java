@@ -13,7 +13,6 @@ public class Keywords {
 	public static final String AIR = "air";
 	public static final String ARTIFACT = "artifact";
 	public static final String BREW = "brew";
-	public static final String BREWING = "brewing";
 	public static final String DISORIENTED = "disoriented";
 	public static final String FLIGHT = "flight";
 	public static final String TAXING = "taxing";

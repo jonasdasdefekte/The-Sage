@@ -5,7 +5,7 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import sagemod.powers.Flight;
+import sagemod.powers.AltitudePower;
 
 public class Altitude extends AbstractSageCard {
 
@@ -18,7 +18,7 @@ public class Altitude extends AbstractSageCard {
 	private static final CardRarity RARITY = CardRarity.UNCOMMON;
 	private static final CardTarget TARGET = CardTarget.SELF;
 
-	private static final int FLIGHT_AMT = 2;
+	private static final int FLIGHT_AMT = 1;
 	private static final int UPGRADE_FLIGHT_AMT = 1;
 
 	public Altitude() {
@@ -41,7 +41,7 @@ public class Altitude extends AbstractSageCard {
 
 	@Override
 	public void use(AbstractPlayer p, AbstractMonster m) {
-		applyPowerToSelf(new Flight(p, magicNumber));
+		applyPowerToSelf(new AltitudePower(p, magicNumber));
 	}
 
 	@Override

@@ -29,7 +29,7 @@
 	},
 	"sagemod:Altitude": {
 		"NAME": "Altitude",
-		"DESCRIPTION": "Gain !M! Flight."
+		"DESCRIPTION": "Gain !M! Flight at the start of each turn."
 	},
 	"sagemod:Ambition": {
 		"NAME": "Ambition",
@@ -71,7 +71,7 @@
 	},
 	"sagemod:Brewmaster": {
 		"NAME": "Brewmaster",
-		"DESCRIPTION": "Gain !M! Brewing."
+		"DESCRIPTION": "You need !M! less turn brewing potions."
 	},
 	"sagemod:Burning_Flask": {
 		"NAME": "Burning Flask",

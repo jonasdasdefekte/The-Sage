@@ -52,8 +52,8 @@
 		"NAME": "Kochbuch",
 		"FLAVOR": "Diese Lektüre macht dich hungrig. Allerdings solltest du manche dieser Gerichte wohl besser nicht essen.",
 		"DESCRIPTIONS": [
-			"Beginne jeden Kampf mit #b",
-			" #yBrauen."
+			"Du brauchst #b",
+			" Zug weniger um Tränke zu #ybrauen."
 		]
 	},
 	"sagemod:Falmels_Amulet": {

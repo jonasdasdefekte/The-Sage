@@ -17,12 +17,6 @@
 		],
 		"DESCRIPTION": "Obtain a potion after a specific amount of turns."
 	},
-	"BREWING": {
-		"NAMES": [
-			"brewing"
-		],
-		"DESCRIPTION": "You need less turns to brew potions."
-	},
 	"DISORIENTED": {
 		"NAMES": [
 			"disoriented"

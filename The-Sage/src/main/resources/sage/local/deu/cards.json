@@ -29,7 +29,7 @@
 	},
 	"sagemod:Altitude": {
 		"NAME": "Flughöhe",
-		"DESCRIPTION": "Erhalte !M! Flug."
+		"DESCRIPTION": "Erhalte !M! Flug zu Beginn jedes Zuges."
 	},
 	"sagemod:Ambition": {
 		"NAME": "Ambition",
@@ -71,7 +71,7 @@
 	},
 	"sagemod:Brewmaster": {
 		"NAME": "Braumeisterin",
-		"DESCRIPTION": "Erhalte !M! Brauen. "
+		"DESCRIPTION": "Du brauchts einen Zug weniger, um Tränke zu brauen."
 	},
 	"sagemod:Burning_Flask": {
 		"NAME": "Brennende Flasche",

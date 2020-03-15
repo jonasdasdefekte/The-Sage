@@ -139,6 +139,7 @@ import sagemod.potions.Wine;
 import sagemod.powers.Accumulate;
 import sagemod.powers.Airborne;
 import sagemod.powers.AlchemyExpertPower;
+import sagemod.powers.AltitudePower;
 import sagemod.powers.BookwormPower;
 import sagemod.powers.Brew;
 import sagemod.powers.Brewing;
@@ -346,6 +347,7 @@ public class SageMod implements EditCharactersSubscriber, EditCardsSubscriber, E
 		BaseMod.addPower(Accumulate.class, Accumulate.POWER_ID);
 		BaseMod.addPower(Airborne.class, Airborne.POWER_ID);
 		BaseMod.addPower(AlchemyExpertPower.class, AlchemyExpertPower.POWER_ID);
+		BaseMod.addPower(AltitudePower.class, AltitudePower.POWER_ID);
 		BaseMod.addPower(BookwormPower.class, BookwormPower.POWER_ID);
 		BaseMod.addPower(Brew.class, Brew.POWER_ID);
 		BaseMod.addPower(Brewing.class, Brewing.POWER_ID);
