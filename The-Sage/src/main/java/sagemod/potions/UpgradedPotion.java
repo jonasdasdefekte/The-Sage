@@ -57,11 +57,11 @@ public class UpgradedPotion extends CustomPotion {
 	private static Texture plusImg;
 
 	private AbstractPotion potion;
-	private Texture outlineImg;
 
 	private UpgradedPotion(AbstractPotion potion) {
 		super(loadName(potion), potion.ID, potion.rarity, potion.size, potion.color);
 		this.potion = potion;
+		this.hb = potion.hb;
 
 		potency = loadPotency();
 		ReflectionHacks.setPrivate(potion, AbstractPotion.class, "potency", potency);
@@ -70,8 +70,6 @@ public class UpgradedPotion extends CustomPotion {
 		
 		isThrown = potion.isThrown;
 		targetRequired = potion.targetRequired;
-
-		outlineImg = (Texture) ReflectionHacks.getPrivate(this, AbstractPotion.class, "outlineImg");
 
 	}
 	
@@ -92,6 +90,8 @@ public class UpgradedPotion extends CustomPotion {
 		for (int i = 1; i < potion.tips.size(); i++) {
 			tips.add(potion.tips.get(i));
 		}
+		potion.description = this.description;
+		potion.tips = this.tips;
 	}
 
 	public static AbstractPotion forceUpgrade(AbstractPotion potion) {
@@ -242,8 +242,9 @@ public class UpgradedPotion extends CustomPotion {
 		potion.posY = posY;
 		potion.shopRender(sb);
 		sb.setColor(Color.WHITE);
-		sb.draw(plusImg, posX - 32.0F, posY - 32.0F, 32.0F, 32.0F, 64.0F, 64.0F, scale, scale,
+		sb.draw(plusImg, posX - 32.0F, posY - 32.0F, 32.0F, 32.0F, 64.0F, 64.0F, potion.scale, potion.scale,
 				getAngle(), 0, 0, 64, 64, false, false);
+		renderOutline(sb);
 	}
 
 	@Override
@@ -256,19 +257,52 @@ public class UpgradedPotion extends CustomPotion {
 		sb.draw(plusImg, posX - 32.0F, posY - 32.0F, 32.0F, 32.0F, 64.0F, 64.0F, scale, scale,
 				getAngle(), 0, 0, 64, 64, false, false);
 	}
+	
+	@Override
+	public void renderShiny(SpriteBatch sb) {
+		potion.scale = scale;
+		potion.posX = posX;
+		potion.posY = posY;
+		potion.renderShiny(sb);
+		sb.setColor(Color.WHITE);
+		sb.draw(plusImg, posX - 32.0F, posY - 32.0F, 32.0F, 32.0F, 64.0F, 64.0F, scale, scale,
+				getAngle(), 0, 0, 64, 64, false, false);
+	}
+	
+	@Override
+	public void labRender(SpriteBatch sb) {
+		potion.scale = scale;
+		potion.posX = posX;
+		potion.posY = posY;
+		potion.labRender(sb);
+		sb.setColor(Color.WHITE);
+		sb.draw(plusImg, posX - 32.0F, posY - 32.0F, 32.0F, 32.0F, 64.0F, 64.0F, scale, scale,
+				getAngle(), 0, 0, 64, 64, false, false);
+
+	}
+	
+	@Override
+	public void renderOutline(SpriteBatch sb, Color c) {
+		potion.scale = scale;
+		potion.posX = posX;
+		potion.posY = posY;
+		potion.renderOutline(sb, c);
+	}
 
 	@Override
 	public void renderOutline(SpriteBatch sb) {
-		sb.setColor(OUTLINE_COLOR);
-		sb.draw(outlineImg, posX - 32.0F, posY - 32.0F, 32.0F, 32.0F, 64.0F, 64.0F, scale, scale,
-				getAngle(), 0, 0, 64, 64, false, false);
+		potion.scale = scale;
+		potion.posX = posX;
+		potion.posY = posY;
+		potion.renderOutline(sb, OUTLINE_COLOR);
 	}
 
 	@Override
 	public void renderLightOutline(SpriteBatch sb) {
-		sb.setColor(LIGHT_OUTLINE_COLOR);
-		sb.draw(outlineImg, posX - 32.0F, posY - 32.0F, 32.0F, 32.0F, 64.0F, 64.0F, scale, scale,
-				getAngle(), 0, 0, 64, 64, false, false);
+		potion.scale = scale;
+		potion.posX = posX;
+		potion.posY = posY;
+		potion.renderOutline(sb, LIGHT_OUTLINE_COLOR);
 	}
 
 	public static class UpgradedPotionSave implements CustomSavable<boolean[]> {
