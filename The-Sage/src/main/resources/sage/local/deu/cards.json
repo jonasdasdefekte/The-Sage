@@ -64,7 +64,10 @@
 	},
 	"sagemod:Bouncing_Strike": {
 		"NAME": "Sprungschlag",
-		"DESCRIPTION": "Erhalte !M! Flug. Füge Schaden in Höhe deines Flugs mal !sagemod:MISC! zu. NL (Fügt !D! Schaden zu.)"
+		"DESCRIPTION": "Erhalte !M! Flug. Füge Schaden in Höhe deines Flugs mal !sagemod:MISC! zu.",
+		"EXTENDED_DESCRIPTION": [
+			" NL (Fügt !D! Schaden zu.)"
+		]
 	},
 	"sagemod:Brewmaster": {
 		"NAME": "Braumeisterin",

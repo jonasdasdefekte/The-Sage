@@ -102,7 +102,7 @@ A. This part of the mod is only acessible if you play as the Sage.
 	Pincer Attack
 		Attack, 1 Energy: 
 		Deal 6 (8) damage. Damage is increased by the number of Artifacts on the enemy (twice).
-	TODO: Bouncing Strike // Needs better implementation
+	Bouncing Strike
 		Attack, 1 Energy: 
 		Gain 1 Flight. Deal damage equal to 3x (5x) your Flight.
 	Turn Around

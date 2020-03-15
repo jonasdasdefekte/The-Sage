@@ -64,7 +64,10 @@
 	},
 	"sagemod:Bouncing_Strike": {
 		"NAME": "Bouncing Strike",
-		"DESCRIPTION": "Gain !M! Flight. Deal damage equal to !sagemod:MISC!x your Flight. NL (Deals !D! damage.)"
+		"DESCRIPTION": "Gain !M! Flight. Deal damage equal to !sagemod:MISC!x your Flight.",
+		"EXTENDED_DESCRIPTION": [
+			" NL (Deals !D! damage.)"
+		]
 	},
 	"sagemod:Brewmaster": {
 		"NAME": "Brewmaster",
