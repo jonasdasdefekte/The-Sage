@@ -149,7 +149,8 @@
 	},
 	"sagemod:How_To_Amuse_Sneckos": {
 		"NAME": "Wie man Sneckos erfreut",
-		"DESCRIPTION": "Verliere !M! Flug. NL Ziehe X + !sagemod:MISC! Karten. NL Erstatte !stslib:refund!."
+		"DESCRIPTION": "Verliere !M! Flug. NL Ziehe X + !sagemod:MISC! Karten. NL Erstatte !stslib:refund!.",
+		"UPGRADE_DESCRIPTION": "Verliere !M! Flug. NL Ziehe !sagemod:MISC! mal X Karten. NL Erstatte !stslib:refund!."
 	},
 	"sagemod:How_To_Befriend_A_Turtle": {
 		"NAME": "Wie man sich einpanzert",

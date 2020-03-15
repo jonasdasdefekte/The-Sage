@@ -7,7 +7,6 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-
 import sagemod.actions.ReduceFlightBlockableAction;
 import sagemod.powers.Flight;
 
@@ -23,22 +22,24 @@ public class HowToAmuseSneckos extends AbstractSageCard {
 	private static final CardTarget TARGET = CardTarget.SELF;
 
 	private static final int REFUND_AMT = 1;
-	private static final int FLIGHT_LOSS = 3;
-	private static final int UPGRADE_FLIGHT_LOSS = -2;
-	private static final int ADDED_DRAW = 1;
+	private static final int FLIGHT_LOSS = 1;
+	private static final int DRAW_CALC = 1;
+	private static final int UPGRADE_DRAW_CALC = 1;
 
 	public HowToAmuseSneckos() {
 		super(ID, NAME, COST, DESCRIPTION, TYPE, RARITY, TARGET);
 		RefundVariable.setBaseValue(this, REFUND_AMT);
 		baseMagicNumber = magicNumber = FLIGHT_LOSS;
-		initSageMisc(ADDED_DRAW);
+		initSageMisc(DRAW_CALC);
 	}
 
 	@Override
 	public void upgrade() {
 		if (!upgraded) {
 			upgradeName();
-			upgradeMagicNumber(UPGRADE_FLIGHT_LOSS);
+			upgradeSageMisc(UPGRADE_DRAW_CALC);
+			rawDescription = cardStrings.UPGRADE_DESCRIPTION;
+			initializeDescription();
 		}
 	}
 
@@ -50,13 +51,18 @@ public class HowToAmuseSneckos extends AbstractSageCard {
 	@Override
 	public void use(AbstractPlayer p, AbstractMonster m) {
 		int effect = getXEffect();
-		
+
 		if (p.hasPower(Flight.POWER_ID)) {
 			AbstractDungeon.actionManager.addToBottom(
 					new ReduceFlightBlockableAction(magicNumber, AbstractDungeon.player));
 		}
 
-		int draw = effect + sageMisc;
+		int draw = 0;
+		if (upgraded) {
+			draw = effect * sageMisc;
+		} else {
+			draw = effect + sageMisc;
+		}
 		if (draw > 0) {
 			draw(draw);
 		}
@@ -66,7 +72,7 @@ public class HowToAmuseSneckos extends AbstractSageCard {
 
 	@Override
 	public String getLoadedDescription() {
-		return DESCRIPTION;
+		return upgraded ? cardStrings.UPGRADE_DESCRIPTION : DESCRIPTION;
 	}
 
 }

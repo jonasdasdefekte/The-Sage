@@ -149,7 +149,8 @@
 	},
 	"sagemod:How_To_Amuse_Sneckos": {
 		"NAME": "How To Amuse Sneckos",
-		"DESCRIPTION": "Lose !M! Flight. NL Draw X + !sagemod:MISC! cards. NL Refund !stslib:refund!."
+		"DESCRIPTION": "Lose !M! Flight. NL Draw X + !sagemod:MISC! cards. NL Refund !stslib:refund!.",
+		"UPGRADE_DESCRIPTION": "Lose !M! Flight. NL Draw  !sagemod:MISC! times X cards. NL Refund !stslib:refund!."
 	},
 	"sagemod:How_To_Befriend_A_Turtle": {
 		"NAME": "How To Befriend A Turtle",
