@@ -324,7 +324,7 @@ C. "The Potion experience" - You can always enconter these parts of the mod as a
 	Singing Vial
 		Uncommon relic:
 		When adding cards into your deck, you may upgrade a random Potion instead.
-	Bottled Bottle
+TODO:	Bottled Bottle
 		Rare Relic:
 		Whenever you use an upgraded potion, obtain a random unupgraded potion. // Former Power card "Riches!!!" - No healing Potions (like Quackster)
 
@@ -341,7 +341,7 @@ C. "The Potion experience" - You can always enconter these parts of the mod as a
 	Droprate: 20%
 _____________________________
 
-Cross mod issues:
+TODO: Cross mod issues:
 For the following potions, the displayed potency variable is changed, but the effect doesn't change (but they also don't really work with Sacred Bark so I'm not sure if we should care anyways):
 	"BottledKami:Reimu" 
 		- Advent 1 random Kami.

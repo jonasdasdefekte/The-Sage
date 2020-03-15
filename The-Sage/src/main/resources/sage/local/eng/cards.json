@@ -83,7 +83,7 @@
 	},
 	"sagemod:Catch_Me_If_You_Can": {
 		"NAME": "Catch Me If You Can",
-		"DESCRIPTION": "Air. Prevent the next !M! times you would lose Flight until the start of your next turn."
+		"DESCRIPTION": "Air. Prevent the loss of !M! Flight until the start of your next turn."
 	},
 	"sagemod:Crank": {
 		"NAME": "Crank",
@@ -186,8 +186,8 @@
 	},
 	"sagemod:How_To_Wake_Lyons": {
 		"NAME": "How To Wake Lyons",
-		"DESCRIPTION": "Brew a NL Steroid Potion NL in !sagemod:BRW! -X turns. NL Exhaust.",
-		"UPGRADE_DESCRIPTION": "Brew a NL Steroid Potion NL in !sagemod:BRW! -X turns."
+		"DESCRIPTION": "Brew a NL Flex Potion NL in !sagemod:BRW! -X turns. NL Exhaust.",
+		"UPGRADE_DESCRIPTION": "Brew a NL Flex Potion NL in !sagemod:BRW! -X turns."
 	},
 	"sagemod:How_To_Warm_Elephants": {
 		"NAME": "How To Warm Elephants",

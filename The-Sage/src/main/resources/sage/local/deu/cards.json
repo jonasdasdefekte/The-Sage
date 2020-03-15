@@ -20,7 +20,7 @@
 	},
 	"sagemod:Accumulation": {
 		"NAME": "Akkumulation",
-		"DESCRIPTION": "Luft. NL Erhalte [E] und verliere !M! Flug zu Beginn jedes Zuges."
+		"DESCRIPTION": "Luft. NL Immer zu Beginn deines Zuges erhalte [E] und verliere !M! Flug."
 	},
 	"sagemod:Alchemy_Expert": {
 		"NAME": "Alchemistin",
@@ -29,7 +29,7 @@
 	},
 	"sagemod:Altitude": {
 		"NAME": "Flughöhe",
-		"DESCRIPTION": "Erhalte !M! Flug zu Beginn jedes Zuges."
+		"DESCRIPTION": "Erhalte immer zu Beginn deines Zuges !M! Flug."
 	},
 	"sagemod:Ambition": {
 		"NAME": "Ambition",
@@ -59,8 +59,8 @@
 	},
 	"sagemod:Bookworm": {
 		"NAME": "Bücherwurm",
-		"DESCRIPTION": "Jedes Mal, wenn du eine Karte spielst, die X kostet, erstattet diese !M! Energie.",
-		"UPGRADE_DESCRIPTION": "Jedes Mal, wenn du eine Karte spielst, die X kostet, erhalte [E] ."
+		"DESCRIPTION": "Immer wenn du eine Karte spielst, die X kostet, erstatte !M! Energie.",
+		"UPGRADE_DESCRIPTION": "Immer wenn du eine Karte spielst, die X kostet, erhalte [E] ."
 	},
 	"sagemod:Bouncing_Strike": {
 		"NAME": "Sprungschlag",
@@ -71,7 +71,7 @@
 	},
 	"sagemod:Brewmaster": {
 		"NAME": "Braumeisterin",
-		"DESCRIPTION": "Du brauchts einen Zug weniger, um Tränke zu brauen."
+		"DESCRIPTION": "Du brauchst einen Zug weniger, um Tränke zu brauen."
 	},
 	"sagemod:Burning_Flask": {
 		"NAME": "Brennende Flasche",
@@ -79,11 +79,11 @@
 	},
 	"sagemod:Cane_Strike": {
 		"NAME": "Stockschlag",
-		"DESCRIPTION": "Füge !D! Schaden zu. Fügt doppelten Schaden zu, wenn du gerade fliegst."
+		"DESCRIPTION": "Füge !D! Schaden zu. Verdopple den Schaden, wenn du gerade fliegst."
 	},
 	"sagemod:Catch_Me_If_You_Can": {
 		"NAME": "Fang mich doch",
-		"DESCRIPTION": "Verhindert die nächsten !M! Male bei denen du Flug verlieren würdest bis zu deinem nächsten Zug."
+		"DESCRIPTION": "Verhindere den Verlust von !M! Flug bis zu deinem nächsten Zug."
 	},
 	"sagemod:Crank": {
 		"NAME": "Am Rad drehen",
@@ -92,7 +92,7 @@
 	},
 	"sagemod:Cultist_Form": {
 		"NAME": "Kultistenform",
-		"DESCRIPTION": "Verliere !sagemod:MISC! Flug. NL Wende !M! mal 1 Desorientiert an einem zufälligen Gegner an."
+		"DESCRIPTION": "Verliere !sagemod:MISC! Flug. NL Wende !M! mal 1 Desorientiert an zufälligen Gegnern an."
 	},
 	"sagemod:Deadly_Contraption": {
 		"NAME": "Tödlicher Apparat",
@@ -181,8 +181,8 @@
 	},
 	"sagemod:How_To_Poke_At_Slimes": {
 		"NAME": "Wie man Schleime sticht",
-		"DESCRIPTION": "Füge ALLEN Gegnern X mal Schaden zu, der deinem Flug entspricht.",
-		"UPGRADE_DESCRIPTION": "Füge ALLEN Gegnern X mal Schaden zu, der deinem Flug + !D! entspricht."
+		"DESCRIPTION": "Füge ALLEN Gegnern X mal Schaden in Höhe deines Fluges zu.",
+		"UPGRADE_DESCRIPTION": "Füge ALLEN Gegnern X mal Schaden in Höhe deines Fluges + !D! zu."
 	},
 	"sagemod:How_To_Wake_Lyons": {
 		"NAME": "Wie man Lywen aufweckt",
@@ -205,11 +205,11 @@
 	},
 	"sagemod:Let_It_Go": {
 		"NAME": "Lass Es Los",
-		"DESCRIPTION": "Erschöpfe eine Karte aus deiner Hand. Erhalte soviel Flug, wie sie kostet. NL Erschöpft.",
-		"UPGRADE_DESCRIPTION": "Erschöpfe bis zu !M! Karten aus deiner Hand. Erhalte soviel Flug, wie sie kosten. NL Erschöpft."
+		"DESCRIPTION": "Erschöpfe eine Karte aus deiner Hand. Erhalte Flug in Höhe ihrer Kosten. NL Erschöpft.",
+		"UPGRADE_DESCRIPTION": "Erschöpfe bis zu !M! Karten aus deiner Hand. Erhalte Flug in Höhe ihrer Kosten. NL Erschöpft."
 	},
 	"sagemod:Light_Weighted": {
-		"NAME": "Leichtgewicht",
+		"NAME": "Leichtfüßig",
 		"DESCRIPTION": "Verliere deinen Block. NL Erhalte halbsoviel Flug. NL Erschöpft.",
 		"UPGRADE_DESCRIPTION": "Verliere deinen Block. NL Erhalte ebensoviel Flug. NL Erschöpft."
 	},
@@ -251,8 +251,8 @@
 	},
 	"sagemod:Pincer_Attack": {
 		"NAME": "Zangenangriff",
-		"DESCRIPTION": "Füge !D! Schaden zu. NL Schaden erhöht sich pro Artefakt des Gegners.",
-		"UPGRADE_DESCRIPTION": "Füge !D! Schaden zu. NL Schaden erhöht sich pro Artefakt des Gegners um 2."
+		"DESCRIPTION": "Füge !D! Schaden zu. NL Der Schaden erhöht sich pro Artefakt des Gegners.",
+		"UPGRADE_DESCRIPTION": "Füge !D! Schaden zu. NL Der Schaden erhöht sich pro Artefakt des Gegners um 2."
 	},
 	"sagemod:Pincer_Repair": {
 		"NAME": "Reparaturzange",
@@ -278,7 +278,7 @@
 	},
 	"sagemod:Pour_Tar_Pitch": {
 		"NAME": "Pech schütten",
-		"DESCRIPTION": "Füge !D! Schaden zu. NL Falls du fliegst: Trifft ALLE Gegner."
+		"DESCRIPTION": "Füge !D! Schaden zu. NL Trifft ALLE Gegner, falls du fliegst."
 	},
 	"sagemod:Prey": {
 		"NAME": "Beute",
@@ -358,7 +358,7 @@
 	},
 	"sagemod:Swoop_Down": {
 		"NAME": "Herabsausen",
-		"DESCRIPTION": "Füge einem zufälligen Monster !D! Schaden zu pro Flug, den du hast. NL Dann verliere deinen Flug."
+		"DESCRIPTION": "Füge zufälligen Gegnern pro Flug, den du hast, !D! Schaden zu. NL Dann verliere deinen Flug."
 	},
 	"sagemod:Taste_This_One": {
 		"NAME": "Probier das mal",
