@@ -274,10 +274,18 @@ TODO/ IDEA:	Loony Carpet
 		Special case for The Sage 
 		Whenever you discard a potion, heal 5 HP.
 
-1 character specific potion
-	Flight Potion
-		Rare, Sage only
+3 character specific potions
+TODO:	Flight Potion (Rarity changed)
+		Common
 		Gain 1 Flight.
+TODO:	Hot Pepperino (new)
+		Uncommon
+		Brew potions 1 turn faster this combat. (2 turns with upgrade, 3 with Sacred Bark!)
+TODO:	Fata Morgana (now Sage only)
+		Rare
+		Apply 1 Disoriented.
+
+TODO: Orange outlines for potion lab screen
 
 _______________________
 B. The following content can appear in games with other characters as well. However, it can be disabled by the option "Upgraded potions only".
@@ -314,24 +322,24 @@ C. "The Potion experience" - You can always enconter these parts of the mod as a
 		Uncommon Skill, 1 Energy
 		Upgrade a random unupgraded potion (all unupgraded potions) you are holding. Exhaust.
 
-4 relics:
+5 relics:
+TODO:	Re-filling glass
+		Common Relic:
+		Boss Combat rewards grant an Entropic Brew+. (Maybe a reward screen needs to be added for the 3rd Act boss when playing in Asc20 or with Act 4 - or just give it to the player like when brewing?)
 	Red Beast Statue
 		Uncommon relic:
 		Potions are 50% more likely to be uncommon or rare and 100% more likely to be upgraded.
-	Blowpipe
-		Rare relic: 
-		Whenever you throw a potion at an enemy, it also affects the other enemies.
 	Singing Vial
 		Uncommon relic:
 		When adding cards into your deck, you may upgrade a random Potion instead.
+	Blowpipe
+		Rare relic: 
+		Whenever you throw a potion at an enemy, it also affects the other enemies.
 TODO:	Bottled Bottle
 		Rare Relic:
 		Whenever you use an upgraded potion, obtain a random unupgraded potion. // Former Power card "Riches!!!" - No healing Potions (like Quackster)
 
-2 Potions:
-	Fata Morgana
-		Rare
-		Apply 1 Disoriented.
+1 Potion:
 	Wine
 		Uncommon
 		Reduce all prices in a shop by 20 Gold.
@@ -339,6 +347,9 @@ TODO:	Bottled Bottle
 **NEW FEATURE FOR POTIONS**
 	Potions that are number based can have an upgrade which makes the effect 50% more potent (or 2x effective if the number cannot be manipulated)
 	Droprate: 20%
+
+TODO:	Entropic Brew+
+		Fill all your empty potion slots with random UPGRADED potions. (Can give non-upgraded version of blacklisted potions.)
 _____________________________
 
 TODO: Cross mod issues:
@@ -359,10 +370,12 @@ For the following potions, the displayed potency variable is changed, but the ef
 		- Set your [E] to the amount it was at the start of this turn. Gain 1 energy at the start of the next 3 turns. (here, the number of turns is the magic number)
 	"ZuzhouPotion:ReiMu"
 		- Add 1 to all stackable debuffs (e.g. Weak, Vuln) on the target. 
+	"JungleJuicePotion" (The Jungle)
+		- Gain 5 Strength and receive 5 Poison. (Event only potion, not really important. Both numbers in the description change to 8. The actual effect is 8 Strength 5 Poison - which I would also suggest as effect. Maybe just keep it with the display bug.)
 
 Blacklist:
 	"RedTea" (KomeijiMod) 
-		- Red tea is good for sleep (stun-like effect for 3 turns). I don't think the sleep effect can be stacked, so this should go to the blacklist.
+		- Red tea is good for sleep. (Gives a stun-like effect for 3 turns. I don't think the sleep effect can be stacked, so this should go to the blacklist.)
 	"SCP261:BostonMolassesPotion" 
 		- Apply Slow. (Slow cannot be stacked. Alternatively "...to all enemies"? But this would intersect with our Blowpipe relic)
 	"UndeadPotion"
@@ -373,6 +386,21 @@ Blacklist:
 		- The next room you can go to, other than bosses, becomes a ? room. Cannot be used in The Ending. (could be a 2x potion, but it also doesn't work with Sacred Bark)
 	"jedi:wingpotion"
 		- You may ignore paths when choosing the next room to travel to once. (could be a 2x potion, but it also doesn't work with Sacred Bark)
+	"MarkedMod:BlackLotusJuice"
+		- Enter Dance of Death. (Costum Stance to interact with Mark keyword.)
+	"TwistedElixir" (The Jungle)
+		- Make an enemy stronger and gain special rewards based on the size of its health when this is thrown. (Potions from the Jungle can only spawn from an event, not worth the hassle.)
+	"HauntedGourdPotion" (The Jungle)
+		- Discover a Skill Power and Attack which cost 0 this turn. Add a random Curse and Slimed to your hand. (Could be discovery potion but it is for 1 event only so not really worth implementing)
+	"SneckoExtractPotion" (The Jungle)
+		- Drink this and something extremely random will happen. (Gives huge amount of random powers, i.e. buffs and debuffs from the game. Could also be whitelisted, but that wouldn't make much of a difference i guess)
+	"AntidotePotion" (The Jungle)
+		- Remove all Poison Frail Weakness and Vulnerable and heal for each point removed. (Could be heal 2 but again, it's event only, so prob not worth implementing)
+
+
+Whitelist (apply twice):
+	"DemoMod:BlankPotion" (Enter The Gungeon Mod)
+		- Deal 3 damage to all enemies. Stun them this turn. (At the moment, only the damage is increased, not the stun.)
 
 Card Potions:
 	"PinkPotion:ReiMu" 
@@ -386,3 +414,22 @@ other issues:
 	"SCP261:ThunderBarPotion"
 		- Gain 1 orb slots. Channel 5 Lightning. (same issue here)
 
+
+
+List of Mods that are taken into account:
+
+    Infinite Spire,
+    Replay The Spire,
+    Conspire,
+    Jedi's Mod,
+    Marisa,
+    Yuyuko,
+    Construct,
+	Marked Mod,
+	SCP 261 Mod,
+	Reimu,
+	KomeijiMod,
+	The Jungle,
+	The Beaked,
+	Quarter Circle Forward PUNCH!,
+	Gungeon Mod.
