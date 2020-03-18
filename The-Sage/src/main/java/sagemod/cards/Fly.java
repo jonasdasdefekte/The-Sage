@@ -18,7 +18,7 @@ public class Fly extends AbstractSageCard {
 	private static final CardRarity RARITY = CardRarity.BASIC;
 	private static final CardTarget TARGET = CardTarget.SELF;
 
-	private static final int BLOCK_AMT = 7;
+	private static final int BLOCK_AMT = 5;
 	private static final int UPGRADE_BLOCK_BY = 3;
 	private static final int FLIGHT_AMT = 1;
 

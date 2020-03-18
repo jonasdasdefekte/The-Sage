@@ -18,7 +18,7 @@ public class Upwards extends AbstractSageCard {
 	private static final CardRarity RARITY = CardRarity.BASIC;
 	private static final CardTarget TARGET = CardTarget.SELF;
 
-	private static final int FLIGHT_AMT = 1;
+	private static final int FLIGHT_AMT = 2;
 	private static final int UPGRADED_COST = 1;
 
 
