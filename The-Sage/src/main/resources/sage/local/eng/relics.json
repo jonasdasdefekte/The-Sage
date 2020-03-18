@@ -1,7 +1,7 @@
 {
 	"sagemod:Ancient_Magnet": {
 		"NAME": "Ancient Magnet",
-		"FLAVOR": "It reacts on any technology of the Ancients.",
+		"FLAVOR": "A smart tool to disable the technology of the Ancients.",
 		"DESCRIPTIONS": [
 			"You can debuff the enemy even if they have Artifact."
 		]
@@ -58,7 +58,7 @@
 	},
 	"sagemod:Falmels_Amulet": {
 		"NAME": "Falmel's Amulet",
-		"FLAVOR": "Falmel's Amulet",
+		"FLAVOR": "Someone forged this in prehistoric times to reach immortality. Seems like that didn't work out.",
 		"DESCRIPTIONS": [
 			"Gain [E] at the start of your turn. A random enemy attacks an additional time on the first turn."
 		]
@@ -82,7 +82,7 @@
 	},
 	"sagemod:Singing_Vial": {
 		"NAME": "Singing Vial",
-		"FLAVOR": "A vial that sings.",
+		"FLAVOR": "A wistful melody sounds upon opening the flask.",
 		"DESCRIPTIONS": [
 			"When adding cards into your deck, you may upgrade a random Potion instead.",
 			"Upgrade Potion"
@@ -90,7 +90,7 @@
 	},
 	"sagemod:The_Guidebook_Guide": {
 		"NAME": "The Guidebook Guide",
-		"FLAVOR": "It knows everything.",
+		"FLAVOR": "You always wanted to learn how to most effectively learn from all these guidebooks.",
 		"DESCRIPTIONS": [
 			"Whenever you play an X cost card, exhaust it and refund all energy."
 		]

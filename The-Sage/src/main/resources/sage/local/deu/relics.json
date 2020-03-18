@@ -1,7 +1,7 @@
 {
 	"sagemod:Ancient_Magnet": {
 		"NAME": "Uralter Magnet",
-		"FLAVOR": "Er reagiert auf die Technologie der Ahnen.",
+		"FLAVOR": "Praktisch, um die Technologie der Ahnen abzuschalten.",
 		"DESCRIPTIONS": [
 			"Du kannst Gegner auch debuffen, wenn sie Artefakt haben."
 		]
@@ -35,16 +35,16 @@
 		"NAME": "Kohlkopf",
 		"FLAVOR": "Stinkt.",
 		"DESCRIPTIONS": [
-			"Erhalte #b",
-			" #yGeschicklichkeit solange du nicht fliegst."
+			"Gewährt #b",
+			" #yGeschicklichkeit, solange du nicht fliegst."
 		]
 	},
 	"sagemod:Creepy_Carousel": {
 		"NAME": "Gruseliges Karussell",
 		"FLAVOR": "Gruselig...",
 		"DESCRIPTIONS": [
-			"Alle #b",
-			" Runden, wende #b",
+			"Wende jeden #b",
+			". Zug #b",
 			" #yDesorientiert auf einen zufälligen Gegner an."
 		]
 	},
@@ -53,12 +53,12 @@
 		"FLAVOR": "Diese Lektüre macht dich hungrig. Allerdings solltest du manche dieser Gerichte wohl besser nicht essen.",
 		"DESCRIPTIONS": [
 			"Du brauchst #b",
-			" Zug weniger um Tränke zu #ybrauen."
+			" Zug weniger, um Tränke zu #ybrauen."
 		]
 	},
 	"sagemod:Falmels_Amulet": {
 		"NAME": "Falmels Amulett",
-		"FLAVOR": "Falmels Amulett",
+		"FLAVOR": "Jemand hat es in grauer Vorzeit geschmiedet, um die Unsterblichkeit zu erlangen. Scheint nicht geklappt zu haben.",
 		"DESCRIPTIONS": [
 			"Erhalte [E] zu Beginn deines Zuges. Ein zufälliger Gegner greift in der ersten Runde einmal mehr an."
 		]
@@ -82,15 +82,15 @@
 	},
 	"sagemod:Singing_Vial": {
 		"NAME": "Singfläschchen",
-		"FLAVOR": "Ein Fläschchen, dass singt.",
+		"FLAVOR": "Wenn du dieses Fläschchen öffnest, ertönt eine wehmütige Melodie.",
 		"DESCRIPTIONS": [
 			"Statt eine Karte deinem Deck hinzuzufügen kannst du einen zufälligen Trank verbessern.",
 			"Trank verbessern"
 		]
 	},
 	"sagemod:The_Guidebook_Guide": {
-		"NAME": "Das Handbuch",
-		"FLAVOR": "Es weiß alles.",
+		"NAME": "Handbuch der Handbücher",
+		"FLAVOR": "Du wolltest immer schon lernen, wie man am Besten aus all den Handbüchern lernt.",
 		"DESCRIPTIONS": [
 			"Wenn du eine Karte spielst, die X kostet, erschöpfe sie und erstatte ihre gesamten Kosten."
 		]
