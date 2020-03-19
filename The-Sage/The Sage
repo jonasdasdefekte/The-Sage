@@ -64,9 +64,9 @@ A. This part of the mod is only acessible if you play as the Sage.
 	Armor Brew
 		Skill, 1 Energy: 
 		Gain 5 (8) Block. Brew a Block potion(+) in 4 turns.
-	How To Befriend A Turtle
+TODO:	How To Befriend A Turtle (needs seperate upgade_description)
 		Skill, X Energy:
-		Gain X times 2 (3) Plated Armor.
+		Gain X (times 2) Plated Armor. 
 	Catch me if you can
 		Skill, 0 Energy
 		Air. Prevent the next 2 (4) times you would lose Flight until the start of your next turn. // ("Lose 2 Flight" will lose 2 stacks of Airborne instead and "Lose all Flight" will cancel Airborne and Flight completely.)
@@ -350,6 +350,8 @@ TODO:	Bottled Bottle
 
 TODO:	Entropic Brew+
 		Fill all your empty potion slots with random UPGRADED potions. (Can give non-upgraded version of blacklisted potions.)
+TODO: 	Liquid Memories+
+		Should use the upgraded text that is also used for Sacred Bark
 _____________________________
 
 TODO: Cross mod issues:

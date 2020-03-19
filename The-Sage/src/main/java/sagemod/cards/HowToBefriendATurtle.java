@@ -18,7 +18,7 @@ public class HowToBefriendATurtle extends AbstractSageCard {
 	private static final CardRarity RARITY = CardRarity.COMMON;
 	private static final CardTarget TARGET = CardTarget.SELF;
 
-	private static final int BASE_TIMES = 2;
+	private static final int BASE_TIMES = 1;
 	private static final int UPGRADE_BASE_TIMES = 1;
 
 	public HowToBefriendATurtle() {
