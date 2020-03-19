@@ -19,8 +19,8 @@ public class Crank extends AbstractSageCard {
 	private static final CardRarity RARITY = CardRarity.COMMON;
 	private static final CardTarget TARGET = CardTarget.ENEMY;
 
-	private static final int ATTACK_DMG = 8;
-	private static final int UPGRADE_ATTACK_DMG = 4;
+	private static final int ATTACK_DMG = 6;
+	private static final int UPGRADE_ATTACK_DMG = 2;
 	private static final int CARD_DRAW = 1;
 
 	public Crank() {
