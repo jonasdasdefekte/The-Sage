@@ -522,9 +522,9 @@ public class SageMod implements EditCharactersSubscriber, EditCardsSubscriber, E
 		// character specific: The Sage
 		BaseMod.addPotion(FlightPotion.class, FlightPotion.LIQUID_COLOR, FlightPotion.HYBRID_COLOR,
 				FlightPotion.SPOTS_COLOR, FlightPotion.POTION_ID, SageCharEnum.THE_SAGE);
-		// all characters
 		BaseMod.addPotion(FataMorgana.class, FataMorgana.LIQUID_COLOR, FataMorgana.HYBRID_COLOR,
-				FataMorgana.SPOTS_COLOR, FataMorgana.POTION_ID);
+				FataMorgana.SPOTS_COLOR, FataMorgana.POTION_ID, SageCharEnum.THE_SAGE);
+		// all characters
 		BaseMod.addPotion(Wine.class, Wine.LIQUID_COLOR, Wine.HYBRID_COLOR,
 				Wine.SPOTS_COLOR, Wine.POTION_ID);
 	}

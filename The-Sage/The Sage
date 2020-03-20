@@ -54,7 +54,7 @@ A. This part of the mod is only acessible if you play as the Sage.
 		Gain 1 Flight. Deal 5 (8) damage. // could be renamed, but maybe doesnt have to be?
 	How To Charm a Sentry
 		Attack, X Energy:
-		Do this X times: Gain 4 (6) Block. Deal 4 (6) damage. The enemy gains 1 Artifact. 
+		Do this X times: Gain 4 (5) Block. Deal 4 (5) damage. The enemy gains 1 Artifact. 
 	Cane Strike
 		Attack, 1 Energy:
 		Deal 7 (10) damage. Deals double damage if you are flying.
@@ -64,9 +64,9 @@ A. This part of the mod is only acessible if you play as the Sage.
 	Armor Brew
 		Skill, 1 Energy: 
 		Gain 5 (8) Block. Brew a Block potion(+) in 4 turns.
-TODO:	How To Befriend A Turtle (needs seperate upgade_description)
+TODO:	How To Befriend A Turtle
 		Skill, X Energy:
-		Gain X (times 2) Plated Armor. 
+		Gain X times 2 Plated Armor. (Refund 1.)
 	Catch me if you can
 		Skill, 0 Energy
 		Air. Prevent the next 2 (4) times you would lose Flight until the start of your next turn. // ("Lose 2 Flight" will lose 2 stacks of Airborne instead and "Lose all Flight" will cancel Airborne and Flight completely.)
@@ -275,13 +275,13 @@ TODO/ IDEA:	Loony Carpet
 		Whenever you discard a potion, heal 5 HP.
 
 3 character specific potions
-TODO:	Flight Potion (Rarity changed)
+	Flight Potion
 		Common
 		Gain 1 Flight.
 TODO:	Hot Pepperino (new)
 		Uncommon
 		Brew potions 1 turn faster this combat. (2 turns with upgrade, 3 with Sacred Bark!)
-TODO:	Fata Morgana (now Sage only)
+TODO:	Fata Morgana (Asset could be changed to the moon-shaped bottle)
 		Rare
 		Apply 1 Disoriented.
 

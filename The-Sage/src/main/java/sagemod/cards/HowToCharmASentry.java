@@ -22,9 +22,9 @@ public class HowToCharmASentry extends AbstractSageCard {
 	private static final AttackEffect[] EFFECTS = {AttackEffect.SLASH_HORIZONTAL,
 			AttackEffect.SLASH_DIAGONAL, AttackEffect.SLASH_VERTICAL, AttackEffect.SLASH_HEAVY};
 	private static final int ATTACK_DMG = 4;
-	private static final int UPGRADE_ATTACK_DAMAGE = 2;
+	private static final int UPGRADE_ATTACK_DAMAGE = 1;
 	private static final int BLOCK_AMT = 4;
-	private static final int UPGRADE_BLOCK_AMT = 2;
+	private static final int UPGRADE_BLOCK_AMT = 1;
 	private static final int ARTIFACT_GAIN = 1;
 
 	public HowToCharmASentry() {

@@ -26,7 +26,7 @@ public class AltitudePower extends AbstractSagePower {
 
 	@Override
 	public void atStartOfTurn() {
-		addToBot(new ApplyPowerAction(owner, owner, new FlightPower(owner, amount), amount));
+		addToBot(new ApplyPowerAction(owner, owner, new Flight(owner, amount), amount));
 		flash();
 	}
 

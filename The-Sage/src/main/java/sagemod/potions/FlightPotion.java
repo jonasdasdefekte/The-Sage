@@ -21,7 +21,7 @@ public class FlightPotion extends CustomPotion {
 	public static final String NAME = potionStrings.NAME;
 	public static final String[] DESCRIPTIONS = potionStrings.DESCRIPTIONS;
 	public static final int POTENCY = 1;
-	public static final PotionRarity RARITY = PotionRarity.RARE;
+	public static final PotionRarity RARITY = PotionRarity.COMMON;
 	public static final PotionSize SIZE = PotionSize.S;
 	public static final PotionColor COLOR = PotionColor.WHITE;
 	public static final Color LIQUID_COLOR = Color.SKY;
