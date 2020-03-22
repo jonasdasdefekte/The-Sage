@@ -16,8 +16,8 @@
 	"sagemod:UPGRADED:AttackPotion": {
 		"NAME": "Angriffstrank",
 		"DESCRIPTIONS": [
-			"Wähle #b1 von #b3 zufälligen verbesserten #yAngriffskarten. Nimm sie auf die Hand, sie kostet für diesen Zug #b0.",
-			"Wähle #b1 von #b3 zufälligen verbesserten #yAngriffskarten. Nimm #b2 Kopien auf die Hand, sie kosten für diesen Zug #b0."
+			"Wähle #b1 von #b3 zufälligen verbesserten #yAngriffskarten. Nimm sie auf die Hand, sie kostet diesen Zug #b0.",
+			"Wähle #b1 von #b3 zufälligen verbesserten #yAngriffskarten. Nimm #b2 Kopien auf die Hand, sie kosten diesen Zug #b0."
 		]
 	},
 	"sagemod:UPGRADED:BottledMiracle": {
@@ -30,8 +30,8 @@
 	"sagemod:UPGRADED:ColorlessPotion": {
 		"NAME": "Farbloser Trank",
 		"DESCRIPTIONS": [
-			"Wähle #b1 von #b3 zufälligen verbesserten #yfarblosen Karten. Nimm sie auf die Hand, sie kostet für diesen Zug #b0.",
-			"Wähle #b1 von #b3 zufälligen verbesserten #yfarblosen Karten. Nimm #b2 Kopien auf die Hand, sie kosten für diesen Zug #b0."
+			"Wähle #b1 von #b3 zufälligen verbesserten #yfarblosen Karten. Nimm sie auf die Hand, sie kostet diesen Zug #b0.",
+			"Wähle #b1 von #b3 zufälligen verbesserten #yfarblosen Karten. Nimm #b2 Kopien auf die Hand, sie kosten diesen Zug #b0."
 		]
 	},
 	"sagemod:UPGRADED:infinitespire:BlackPotion": {
@@ -44,15 +44,15 @@
 	"sagemod:UPGRADED:PowerPotion": {
 		"NAME": "Machttrank",
 		"DESCRIPTIONS": [
-			"Wähle #b1 von #b3 zufälligen verbesserten #yMachtkarten. Nimm sie auf die Hand, sie kostet für diesen Zug #b0.",
-			"Wähle #b1 von #b3 zufälligen verbesserten #yMachtkarten. Nimm #b2 Kopien auf die Hand, sie kosten für diesen Zug #b0."
+			"Wähle #b1 von #b3 zufälligen verbesserten #yMachtkarten. Nimm sie auf die Hand, sie kostet diesen Zug #b0.",
+			"Wähle #b1 von #b3 zufälligen verbesserten #yMachtkarten. Nimm #b2 Kopien auf die Hand, sie kosten diesen Zug #b0."
 		]
 	},
 	"sagemod:UPGRADED:SkillPotion": {
 		"NAME": "Fertigkeitstrank",
 		"DESCRIPTIONS": [
-			"Wähle #b1 von #b3 zufälligen verbesserten #yFertigkeitskarten. Nimm sie auf die Hand, sie kostet für diesen Zug #b0.",
-      "Wähle #b1 von #b3 zufälligen verbesserten #yFertigkeitskarten. Nimm #b2 Kopien auf die Hand, sie kosten für diesen Zug #b0."
+			"Wähle #b1 von #b3 zufälligen verbesserten #yFertigkeitskarten. Nimm sie auf die Hand, sie kostet diesen Zug #b0.",
+      "Wähle #b1 von #b3 zufälligen verbesserten #yFertigkeitskarten. Nimm #b2 Kopien auf die Hand, sie kosten diesen Zug #b0."
 		]
 	},
 	"sagemod:Wine": {
