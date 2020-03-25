@@ -20,7 +20,6 @@ public class HowToWakeLyons extends AbstractSageCard {
 	private static final CardTarget TARGET = CardTarget.SELF;
 
 	private static final int TURNS = 4;
-	private static final int UPGRADE_TURNS = -1;
 
 	public HowToWakeLyons() {
 		super(ID, NAME, COST, DESCRIPTION, TYPE, RARITY, TARGET);
@@ -32,7 +31,6 @@ public class HowToWakeLyons extends AbstractSageCard {
 	public void upgrade() {
 		if (!upgraded) {
 			upgradeName();
-			upgradeBrewIn(UPGRADE_TURNS);
 			exhaust = false;
 			rawDescription = cardStrings.UPGRADE_DESCRIPTION;
 			initializeDescription();

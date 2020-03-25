@@ -64,9 +64,9 @@ A. This part of the mod is only acessible if you play as the Sage.
 	Armor Brew
 		Skill, 1 Energy: 
 		Gain 5 (8) Block. Brew a Block potion(+) in 4 turns.
-TODO:	How To Befriend A Turtle
+	How To Befriend A Turtle
 		Skill, X Energy:
-		Gain X times 2 Plated Armor. (Refund 1.)
+		Gain X times 1 (2) Plated Armor.
 	Catch me if you can
 		Skill, 0 Energy
 		Air. Prevent the next 2 (4) times you would lose Flight until the start of your next turn. // ("Lose 2 Flight" will lose 2 stacks of Airborne instead and "Lose all Flight" will cancel Airborne and Flight completely.)
@@ -125,7 +125,7 @@ TODO:	How To Befriend A Turtle
 		Brew a random potion in 4 turns. Exhaust. (No Exhaust.)
 	How to Wake Lyons
 		Skill, X Energy: 
-		Brew a Steroid potion in 4 (3) - X turns. Exhaust. (No Exhaust.)
+		Brew a Steroid potion in 4 - X turns. Exhaust. (No Exhaust.)
 	Perpetuum Mobile
 		Skill, 0 Energy: 
 		Draw 1 card. Play it if it costs 1 (or X).
@@ -326,9 +326,9 @@ C. "The Potion experience" - You can always enconter these parts of the mod as a
 TODO:	Re-filling glass
 		Common Relic:
 		Boss Combat rewards grant an Entropic Brew+. (Maybe a reward screen needs to be added for the 3rd Act boss when playing in Asc20 or with Act 4 - or just give it to the player like when brewing?)
-	Red Beast Statue
+TODO:	Red Beast Statue
 		Uncommon relic:
-		Potions are 50% more likely to be uncommon or rare and 100% more likely to be upgraded.
+		Dropped potions are 50% more likely to be uncommon or rare. Obtaining a second copy of a non-upgraded potion instead upgrades the first potion. (no longer doubles upgraded potion drops)
 	Singing Vial
 		Uncommon relic:
 		When adding cards into your deck, you may upgrade a random Potion instead.
