@@ -165,12 +165,12 @@ TODO:	Flying Cauldron
 	Shining Powder
 		Skill, Unplayable:
 		Whenever you use a Potion while this card in your hand, gain 1 (2) Energy.
-	Deadly Contraption
-		Skill, 1 Energy: 
-		Apply 3 Artifact to ALL enemies. For 2 (3) turns, enemies lose 1 HP per Artifact on them. // Stacks for the amount of turns.
+TODO:	Undermine
+		Skill, 0 Energy:
+		Apply 2 (3) Artifacts. Your Attacks deal more damage equal to Artifacts of their target this turn. // The buff can be stacked for damage (not turns).
 	Poem
 		Skill, 1 (0) Energy:
-		Refund all Energy used when playing your next card. // Former effect of "Trixter"
+		Refund all Energy used when playing your next card.
 	Altitude
 		Power, 1 Energy: 
 		At the start of every turn, gain 1 (2) Flight.
@@ -180,9 +180,9 @@ TODO:	Flying Cauldron
 	Brewmaster
 		Power, 2 (1) Energy:
 		You need 1 less turn to Brew potions.
-	Undermine
-		Power, 1 Energy:
-		Apply 1 (2) Artifact to ALL enemies. Your Attack damage is increased by Artifact on the enemy. // Does not stack.
+TODO:	Deadly Contraption
+		Power, 1 Energy: 
+		Apply 2 Artifact to a random enemy (up to 2 random enemies). At the end of your turn, all enemies lose 1 HP per Artifact on them. // Back to stacking HP loss per power (3 contraptions lose 3 HP per Artifact). I think this might be balanced if stacking Artifact is harder.
  Rickety Defense
 		Power, 1 Energy:
 		Whenever you lose all Flight, gain 6 (8) Block.
