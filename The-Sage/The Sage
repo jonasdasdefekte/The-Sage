@@ -338,11 +338,13 @@ TODO:	Red Beast Statue
 TODO:	Bottled Bottle
 		Rare Relic:
 		Whenever you use an upgraded potion, obtain a random unupgraded potion. // Former Power card "Riches!!!" - No healing Potions (like Quackster)
-
-1 Potion:
+2 Potions:
 	Wine
 		Uncommon
 		Reduce all prices in a shop by 20 Gold.
+TODO:   Freeloader's juice
+        	Uncommon
+		The next card you play has Refund 3.
 		
 **NEW FEATURE FOR POTIONS**
 	Potions that are number based can have an upgrade which makes the effect 50% more potent (or 2x effective if the number cannot be manipulated)
