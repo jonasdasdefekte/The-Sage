@@ -271,6 +271,7 @@ public class SageMod implements EditCharactersSubscriber, EditCardsSubscriber, E
 		BaseMod.addCard(new GroundedStrike());
 		BaseMod.addCard(new HowToCharmASentry());
 		BaseMod.addCard(new CaneStrike());
+		BaseMod.addCard(new AboutClark());
 
 		// Uncommon
 		BaseMod.addCard(new OnTheHead());
@@ -299,7 +300,6 @@ public class SageMod implements EditCharactersSubscriber, EditCardsSubscriber, E
 		BaseMod.addCard(new PotionTrance());
 		BaseMod.addCard(new RicketyDefense());
 		BaseMod.addCard(new PotionExplosion());
-		BaseMod.addCard(new AboutClark());
 		BaseMod.addCard(new LetItGo());
 		BaseMod.addCard(new Tinker());
 		BaseMod.addCard(new RockOil());
@@ -308,9 +308,9 @@ public class SageMod implements EditCharactersSubscriber, EditCardsSubscriber, E
 		BaseMod.addCard(new Undermine());
 		BaseMod.addCard(new SpoonStrike());
 		BaseMod.addCard(new Poem());
+		BaseMod.addCard(new Bookworm());
 
 		// Rare
-		BaseMod.addCard(new Bookworm());
 		BaseMod.addCard(new Escape());
 		BaseMod.addCard(new Accumulation());
 		BaseMod.addCard(new AntiAncientAttack());

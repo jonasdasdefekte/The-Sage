@@ -30,7 +30,7 @@ A. This part of the mod is only acessible if you play as the Sage.
 		Skill, 2 (1) Energy:
 		Gain 2 Flight.
 
-**17 COMMON CARDS (grey)**
+**19 COMMON CARDS (grey)**
 	Pincer Repair
 		Attack, 1 Energy
 		Deal 8 (12) damage. The enemy gains 2 Artifact.
@@ -49,15 +49,21 @@ A. This part of the mod is only acessible if you play as the Sage.
 	Crank
 		Attack, 1 Energy:
 		Deal 6 (8) damage. If the enemy has Artifact, draw 1 card. (Draw cards equal to the enemy's Artifact.)
-	Grounded Strike 
+TODO:	Grounded Strike 
+		Attack, 0 Energy:
+		Lose 3 (1) Flight. Deal 6 damage. // Back to be a Flight loss card.
+TODO/ NEW:	Winding Blow 
 		Attack, 1 Energy:
-		Gain 1 Flight. Deal 5 (8) damage. // could be renamed, but maybe doesnt have to be?
+		Gain 1 Flight. Deal 5 (8) damage. // Former effect of "Grounded Strike"
 	How To Charm a Sentry
 		Attack, X Energy:
 		Do this X times: Gain 4 (5) Block. Deal 4 (5) damage. The enemy gains 1 Artifact. 
 	Cane Strike
 		Attack, 1 Energy:
 		Deal 7 (10) damage. Deals double damage if you are flying.
+	About Clark
+		Attack, 2 (1) Energy:
+		Deal 8 (10) damage two times. Costs 1 [E] more per Flight you have.
 	How To Warm Elephants
 		Skill, X Energy: 
 		Brew an Explosive Potion(+) in 4 -X turns.
@@ -111,9 +117,6 @@ A. This part of the mod is only acessible if you play as the Sage.
 	Potion Explosion
 		Attack, 1 Energy:
 		Deal 6 (8) damage to ALL enemies. Repeat this once per potion you used this turn.
-	About Clark
-		Attack, 2 (1) Energy:
-		Deal 8 (10) damage two times. Costs 1 [E] more per Flight you have.
 	Spoon Strike
 		Attack, 1 Energy:
 		Deal 8 (11) damage. Advance all potions that you are currently brewing by 1 turn.
@@ -147,9 +150,9 @@ TODO:	Flying Cauldron
 	Potion Trance
 		Skill, 1 Energy:
 		Draw 1 card (2 cards) whenever you use a Potion this turn. You cannot gain energy this turn.
-	How To Amuse Sneckos
+TODO:	How To Amuse Sneckos
 		Skill, X Energy:
-		Lose 1 Flight. Draw X + 1 (2 times X) cards. Refund 1.
+		Draw X + 1 cards. Randomize the cost of cards in your hand between 0 and 3 (2) for this turn. // No more Flight loss, but cost randomization. Costs change back to normal after the cards where played or at end of the turn.
 	Let it go
 		Skill, 1 Energy:
 		Exhaust a card (up to 2 cards) from your hand. Gain Flight equal to its (their) cost. Exhaust.
@@ -167,25 +170,30 @@ TODO:	Flying Cauldron
 		Whenever you use a Potion while this card in your hand, gain 1 (2) Energy.
 TODO:	Undermine
 		Skill, 0 Energy:
-		Apply 2 (3) Artifacts. Your Attacks deal more damage equal to Artifacts of their target this turn. // The buff can be stacked for damage (not turns).
+		Apply 2 (3) Artifacts. Your Attacks deal more damage equal to Artifacts of their target this turn. // Changed back to be a skill. The buff can be stacked for damage (not turns).
 	Poem
 		Skill, 1 (0) Energy:
 		Refund all Energy used when playing your next card.
+TODO:	Taste this one
+		Skill, Unplayable:
+		Whenever you use a Potion while this card in your hand, deal 10 (15) damage to a random enemy. // Changed from being a power.
 	Altitude
 		Power, 1 Energy: 
 		At the start of every turn, gain 1 (2) Flight.
-	Taste this one
-		Power, 1 Energy:
-		Whenever you use a potion, deal 10 (15) damage to a random enemy.
 	Brewmaster
 		Power, 2 (1) Energy:
 		You need 1 less turn to Brew potions.
 TODO:	Deadly Contraption
 		Power, 1 Energy: 
-		Apply 2 Artifact to a random enemy (up to 2 random enemies). At the end of your turn, all enemies lose 1 HP per Artifact on them. // Back to stacking HP loss per power (3 contraptions lose 3 HP per Artifact). I think this might be balanced if stacking Artifact is harder.
+		Apply 2 Artifact to a random enemy (up to 2 random enemies). At the end of your turn, all enemies lose 1 HP per Artifact on them. // Changed back from being a Skill to a Power, and back to stacking HP loss per power (3 contraptions lose 3 HP per Artifact). I think this might be balanced if stacking Artifact is harder.
  Rickety Defense
 		Power, 1 Energy:
 		Whenever you lose all Flight, gain 6 (8) Block.
+Bookworm
+		Power, 1 Energy:
+		Whenever you play an X cost card, Refund 1 Energy.
+		(Upgrades to: Whenever you play an X cost card, Gain 1 Energy.)
+
 
 **19 RARE CARDS (gold)**
 	Swoop Down
@@ -236,10 +244,6 @@ TODO:	Escape
 	Accumulation
 		Power, 1 Energy: 
 		Air. At the start of each turn, gain 1 Energy and lose 2 (1) Flight.
-	Bookworm
-		Power, 1 Energy:
-		Whenever you play an X cost card, Refund 1 Energy.
-		(Upgrades to: Whenever you play an X cost card, Gain 1 Energy.)
 	On Fire
 		Power, 1 Energy:
 		Whenever you play 5 cards in a single turn, obtain a Fire Potion(+).
@@ -344,7 +348,7 @@ TODO:	Bottled Bottle
 		Reduce all prices in a shop by 20 Gold.
 TODO:   Freeloader's juice
         	Uncommon
-		The next card you play has Refund 3.
+		The next card you play Refunds 3 Energy.
 		
 **NEW FEATURE FOR POTIONS**
 	Potions that are number based can have an upgrade which makes the effect 50% more potent (or 2x effective if the number cannot be manipulated)
