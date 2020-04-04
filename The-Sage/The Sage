@@ -380,12 +380,14 @@ For the following potions, the displayed potency variable is changed, but the ef
 		- Add 1 to all stackable debuffs (e.g. Weak, Vuln) on the target. 
 	"JungleJuicePotion" (The Jungle)
 		- Gain 5 Strength and receive 5 Poison. (Event only potion, not really important. Both numbers in the description change to 8. The actual effect is 8 Strength 5 Poison - which I would also suggest as effect. Maybe just keep it with the display bug.)
+	"potionbrewer:BlacksmithPotion"
+		- Upgrade 1 random card in your deck (only outside of combat). (Numbers change but the effect doesn't.) 
 
 Blacklist:
 	"RedTea" (KomeijiMod) 
 		- Red tea is good for sleep. (Gives a stun-like effect for 3 turns. I don't think the sleep effect can be stacked, so this should go to the blacklist.)
 	"SCP261:BostonMolassesPotion" 
-		- Apply Slow. (Slow cannot be stacked. Alternatively "...to all enemies"? But this would intersect with our Blowpipe relic)
+		- Apply Slow. (Slow cannot be stacked. Could give additional stacks of "card plays" like potionbrewer:FreezingPotion)
 	"UndeadPotion"
 		- Lose 10 Max HP, this combat your HP cannot go below 1. (Can't use in Boss combat.)
 	"jedi:holywater"
@@ -409,12 +411,24 @@ Blacklist:
 Whitelist (apply twice):
 	"DemoMod:BlankPotion" (Enter The Gungeon Mod)
 		- Deal 3 damage to all enemies. Stun them this turn. (At the moment, only the damage is increased, not the stun.)
+	"potionbrewer:BarricadePotion"
+		- Double your Block. (Upgrade currently does nothing, Text changes with Sacred Bark (double your Block 2 times), then there is a magic number that is changed to "3 times" but effect doesnt change. Not sure about the effect though - might be better balanced if it gave +150% instead of +200%. Still "quadruple-ing" sounds fun)
+	"potionbrewer:BoundlessPotion"
+		- Double your Strength. (Same issues as with BarricadePot)
 
 Card Potions:
 	"PinkPotion:ReiMu" 
 		- This is a Discovery potion for pink (reimu) cards, should work like other Discovery potions.
 	"jedi:hoardpotion"
 		- Add all cards from current card reward screen to your deck. (In Jedimod, this upgrades all cards if you have Sacred Bark. Maybe the upgraded potion could just do the same?)
+
+Should use text/ magic number from Sacred Bark:
+	"potionbrewer:DiscountPotion"
+		- A (2) random card in your hand cost 0 this combat. (works fine, just the text for upgraded potion without sacred bark doesnt change)
+	"potionbrewer:QuicksilverPotion"
+		Prevent the next time (next 2 times) you would take damage. (same here)
+	"potionbrewer:StunPotion"
+		Stun the enemy for 1 turn (2 turns). (This even has a changing magic number but plural would be nice)
 
 other issues:
 	"SCP261:BlastolaColaPotion"
@@ -440,4 +454,5 @@ List of Mods that are taken into account:
 	The Jungle,
 	The Beaked,
 	Quarter Circle Forward PUNCH!,
-	Gungeon Mod.
+	Gungeon Mod,
+	The Potionbrewer.
