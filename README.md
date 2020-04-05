@@ -4,7 +4,7 @@ She learned flying a carpet and brewing potions in order to stop its rise.*
 
 ### [ :inbox_tray: Download](https://github.com/jonasdasdefekte/The-Sage/releases "Download")
 
-Jump to: **[Content](#content) - [Gameplay](#gameplay) - [Our Plans](#our-plans-for-the-sage) - [How To Mod The Spire](#how-to-mod-the-spire) - [Building](#building-only-important-for-modders)**
+Jump to: **[Content](#content) - [Gameplay](#gameplay) - [Our Plans](#our-plans-for-the-sage) - [How To Mod The Spire](#how-to-mod-the-spire) - [Building](#building-only-important-for-modders) - [Customizing Potion Upgrades](#customizing-your-mods-potion-upgrades)**
 
 ## Content
 
@@ -117,3 +117,40 @@ If you want to import your mod into an IDE, run:
 
 And then import the project using your IDE's Wizard
 
+## Customizing your mods potion upgrades
+With the latest version it is possible to customize your mods potion to have a specific upgrade.
+Normally our mod just works like Sacred Bark in that it increases potency (by 1.5x) and reloads the description.
+We also have some lists for special scenarios:
+ * a blacklist for potion without an upgrade
+ * a list for potions that shpuld be used twice as an upgrade
+ * a list for potions that use the discovery action
+
+If increasing the potency doesn't work for your potion or you just want to make a *double upgrade* (if the potion is upgarded and the player has sacred bark) different, you can do the following:
+
+#### public void  _sagemod_upgradedInitializeData()
+If your Potion class has a method with the exact signature of `public void  _sagemod_upgradedInitializeData()`, this method will be called once when your potion gets upgraded and then every time initializeData would be called on your object (e.g. when the player gets Sacred Bark). In this method you normally would change the potency and/or reload the description, but you can do pretty much anything.
+Note that if you provide a method like this, only your custom behaviour will happen. The potency will not be increased by 1.5 like it would when there is not method like this.
+Example:
+```java
+public void  _sagemod_upgradedInitializeData() {
+    if (!this.upgraded) {
+        this.upgraded = true;
+        this.potency *= 10;
+    }
+    this.description = DESCRIPTIONS[0] + this.potency + this.DESCRIPTIONS[1];
+    this.tips.clear();
+    this.tips.add(new PowerTip(this.name, this.description));
+}
+```
+If you only supply this method, your normal use method will be called on use
+
+#### public void _sagemod_upgradedUse(AbstractCreature c)
+If your Potion class has a method with the exact signature of `public void _sagemod_upgradedUse(AbstractCreature c)`, that method will be called instead of the normal use method if your potion is upgraded. Note that if you provide a method like this, the normal behaviour of multiplying potency by 1.5 will NOT happen. Typically, you would also provide a `public void  _sagemod_upgradedInitializeData()` if you provide this method, because the description should reflect what the upgraded potion does.
+Example for custom BottledMiracle upgrade that gives upgraded Miracles:
+```java
+public void _sagemod_upgradedUse(AbstractCreature c) {
+    Miracle miracle = new Miracle();
+    miracle.upgrade();
+    AbstractDungeon.actionManager.addToBottom(new MakeTempCardInHandAction(miracle, b.getPotency()));
+}
+```
