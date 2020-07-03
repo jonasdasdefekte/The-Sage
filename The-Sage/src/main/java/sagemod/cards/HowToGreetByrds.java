@@ -5,7 +5,7 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.powers.FlightPower;
+import sagemod.powers.Flight;
 
 public class HowToGreetByrds extends AbstractSageCard {
 
@@ -45,7 +45,7 @@ public class HowToGreetByrds extends AbstractSageCard {
 		int effect = getXEffect();
 
 		if (effect > 0) {
-			applyPower(new FlightPower(p, magicNumber * effect), p);
+			applyPower(new Flight(p, magicNumber * effect), p);
 		}
 
 		useXEnergy();

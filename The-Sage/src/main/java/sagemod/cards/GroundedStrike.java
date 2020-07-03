@@ -6,7 +6,7 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.powers.FlightPower;
+import sagemod.powers.Flight;
 
 public class GroundedStrike extends AbstractSageCard {
 
@@ -47,7 +47,7 @@ public class GroundedStrike extends AbstractSageCard {
 	@Override
 	public void use(AbstractPlayer p, AbstractMonster m) {
 		attack(m, AttackEffect.SLASH_VERTICAL);
-		applyPower(new FlightPower(p, magicNumber), p);
+		applyPower(new Flight(p, magicNumber), p);
 	}
 
 	@Override
