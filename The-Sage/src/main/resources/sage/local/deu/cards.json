@@ -132,8 +132,8 @@
 	},
 	"sagemod:Flying_Cauldron": {
 		"NAME": "Fliegender Kessel",
-		"DESCRIPTION": "Luft. NL Erhalte !M! Brauen. NL Erschöpft.",
-		"UPGRADE_DESCRIPTION": "Falls du fliegst: NL Erhalte !M! Brauen. NL Ansonsten: NL Erhalte !M! Flug. NL Erschöpft."
+		"DESCRIPTION": "Luft. NL Du braust Tränke in diesem Kampf !M! Zug schneller. NL Erschöpft.",
+		"UPGRADE_DESCRIPTION": "Falls du fliegst: NL Du braust Tränke in diesem Kampf !M! Zug schneller. NL Ansonsten: NL Erhalte !M! Flug. NL Erschöpft."
 	},
 	"sagemod:Folded_Carpet": {
 		"NAME": "Gefalteter Teppich",

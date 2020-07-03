@@ -132,8 +132,8 @@
 	},
 	"sagemod:Flying_Cauldron": {
 		"NAME": "Flying Cauldron",
-		"DESCRIPTION": "Air. NL Gain !M! Brewing. NL Exhaust.",
-		"UPGRADE_DESCRIPTION": "If you are flying: NL Gain !M! Brewing. NL Otherwise: NL Gain !M! Flight. NL Exhaust."
+		"DESCRIPTION": "Air. NL Brew potions !M! turn faster this combat. NL Exhaust.",
+		"UPGRADE_DESCRIPTION": "If you are flying: NL Brew potions !M! turn faster this combat. NL Otherwise: NL Gain !M! Flight. NL Exhaust."
 	},
 	"sagemod:Folded_Carpet": {
 		"NAME": "Folded Carpet",
