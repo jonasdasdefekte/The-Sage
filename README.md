@@ -122,7 +122,7 @@ With the latest version it is possible to customize your mods potion to have a s
 Normally our mod just works like Sacred Bark in that it increases potency (by 1.5x) and reloads the description.
 We also have some lists for special scenarios:
  * a blacklist for potion without an upgrade
- * a list for potions that shpuld be used twice as an upgrade
+ * a list for potions that should be used twice as an upgrade
  * a list for potions that use the discovery action
 
 If increasing the potency doesn't work for your potion or you just want to make a *double upgrade* (if the potion is upgarded and the player has sacred bark) different, you can do the following:
