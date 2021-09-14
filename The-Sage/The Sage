@@ -300,7 +300,7 @@ B. The following content can appear in games with other characters as well. Howe
 		Apply 1 (2) Disoriented. Exhaust.
 
 3 relics:
-	Falmel's Amulet
+TODO: DELETE	Falmel's Amulet
 		Boss relic:
 		Gain [E] at the start of your turn. A random enemy attacks 1 additional time on the first turn.
 	The Guidebook Guide
@@ -311,9 +311,9 @@ B. The following content can appear in games with other characters as well. Howe
 		Every 5 turns, apply 1 Disoriented to a random enemy.
 
 1 Event:
-	Carpet trader
+TODO:	Carpet trader
 		Akt 2
-		Option 1: #rLose #r30% #rmax. #rHP. 
+		Option 1:  
 			(For The Sage:) #gObtain #gthe #gByrd #gfeather. 
 			(Any other character:) #gObtain #gthe #gFlying #gCarpet.
 		Option 2: Leave
@@ -329,7 +329,7 @@ C. "The Potion experience" - You can always enconter these parts of the mod as a
 5 relics:
 TODO:	Re-filling glass
 		Common Relic:
-		Boss Combat rewards grant an Entropic Brew+. (Maybe a reward screen needs to be added for the 3rd Act boss when playing in Asc20 or with Act 4 - or just give it to the player like when brewing?)
+		At the start of a Boss Combat, brew an Entropic Brew+.
 TODO:	Red Beast Statue
 		Uncommon relic:
 		Dropped potions are 50% more likely to be uncommon or rare. Obtaining a second copy of a non-upgraded potion instead upgrades the first potion. (no longer doubles upgraded potion drops)
