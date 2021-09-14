@@ -295,7 +295,7 @@
 	},
 	"sagemod:Refine": {
 		"NAME": "Verfeinern",
-		"DESCRIPTION": "Verbessere einen zufälligen deiner Tränke, die du trägst. NL Erschöpft.",
+		"DESCRIPTION": "Verbessere einen zufälligen Trank, den du trägst. NL Erschöpft.",
 		"UPGRADE_DESCRIPTION": "Verbessere alle Tränke, die du trägst. NL Erschöpft."
 	},
 	"sagemod:Riches": {
