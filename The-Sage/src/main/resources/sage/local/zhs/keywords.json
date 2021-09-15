@@ -1,0 +1,50 @@
+{
+	"AIR": {
+		"NAMES": [
+			"air"
+		],
+		"DESCRIPTION": "This card can only be played if you have Flight."
+	},
+	"ARTIFACT": {
+		"NAMES": [
+			"artifact"
+		],
+		"DESCRIPTION": "Negates a debuff."
+	},
+	"BREW": {
+		"NAMES": [
+			"brew"
+		],
+		"DESCRIPTION": "Obtain a potion after a specific amount of turns."
+	},
+	"DISORIENTED": {
+		"NAMES": [
+			"disoriented"
+		],
+		"DESCRIPTION": "The first Attack of the Enemy has no effect."
+	},
+	"FLIGHT": {
+		"NAMES": [
+			"flight"
+		],
+		"DESCRIPTION": "Reduce attack damage taken by 50%. Reduced by one if you get attacked."
+	},
+	"TAXING": {
+		"NAMES": [
+			"taxing"
+		],
+		"DESCRIPTION": "Costs 1 more energy for every time you played this card for this combat."
+	},
+	"THIRSTY": {
+		"NAMES": [
+			"thirsty"
+		],
+		"DESCRIPTION": "Potions used against the enemy are 50% more effective."
+	},
+	"VIRUS": {
+		"NAMES": [
+			"virus"
+		],
+		"DESCRIPTION": "Poison applied to the enemy other than by Virus spreads to all other enemies instantly."
+	}
+}

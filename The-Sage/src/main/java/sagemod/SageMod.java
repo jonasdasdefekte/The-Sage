@@ -429,6 +429,8 @@ public class SageMod implements EditCharactersSubscriber, EditCardsSubscriber, E
 			case UKR:
 			case WWW:
 			case ZHS:
+				localLanguage = "zhs/";
+				break;
 			case ZHT:
 			case ENG:
 				localLanguage = "eng/";
