@@ -349,7 +349,7 @@
 		"DESCRIPTION": "Füge !D! Schaden zu."
 	},
 	"sagemod:Study": {
-		"NAME": "Studieren",
+		"NAME": "Den Kult Studieren",
 		"DESCRIPTION": "Ziehe !M! Karten. NL Lege !sagemod:MISC! Handkarte auf deinen Nachziehstapel.",
 		"UPGRADE_DESCRIPTION": "Ziehe !M! Karten. NL Du darfst !sagemod:MISC! Handkarte auf deinen Nachziehstapel legen.",
 		"EXTENDED_DESCRIPTION": [
