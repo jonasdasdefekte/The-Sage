@@ -133,6 +133,7 @@ import sagemod.listeners.LectureListener;
 import sagemod.listeners.PotionListener;
 import sagemod.potions.FataMorgana;
 import sagemod.potions.FlightPotion;
+import sagemod.potions.HotPepperino;
 import sagemod.potions.UpgradedPotion;
 import sagemod.potions.UpgradedPotion.UpgradedPotionSave;
 import sagemod.potions.Wine;
@@ -526,6 +527,8 @@ public class SageMod implements EditCharactersSubscriber, EditCardsSubscriber, E
 				FlightPotion.SPOTS_COLOR, FlightPotion.POTION_ID, SageCharEnum.THE_SAGE);
 		BaseMod.addPotion(FataMorgana.class, FataMorgana.LIQUID_COLOR, FataMorgana.HYBRID_COLOR,
 				FataMorgana.SPOTS_COLOR, FataMorgana.POTION_ID, SageCharEnum.THE_SAGE);
+		BaseMod.addPotion(HotPepperino.class, HotPepperino.LIQUID_COLOR, HotPepperino.HYBRID_COLOR,
+				HotPepperino.SPOTS_COLOR, HotPepperino.POTION_ID, SageCharEnum.THE_SAGE);
 		// all characters
 		BaseMod.addPotion(Wine.class, Wine.LIQUID_COLOR, Wine.HYBRID_COLOR,
 				Wine.SPOTS_COLOR, Wine.POTION_ID);

@@ -13,6 +13,14 @@
 			" #yFlight."
 		]
 	},
+	"sagemod:Hot_Pepperino": {
+		"NAME": "Hot Pepperino",
+		"DESCRIPTIONS": [
+			"Brew potions #b1 turn faster this combat.",
+			"Brew potions #b",
+			" turns faster this combat."
+		]
+	},
 	"sagemod:UPGRADED:AttackPotion": {
 		"NAME": "Attack Potion",
 		"DESCRIPTIONS": [

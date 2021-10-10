@@ -13,6 +13,14 @@
 			" #yFlug."
 		]
 	},
+	"sagemod:Hot_Pepperino": {
+		"NAME": "Scharfe Pepperino",
+		"DESCRIPTIONS": [
+			"Braue Tränke #b1 Zug schneller für diesen Kampf.",
+			"Braue Tränke #b",
+			" Züge schneller für diesen Kampf."
+		]
+	},
 	"sagemod:UPGRADED:AttackPotion": {
 		"NAME": "Angriffstrank",
 		"DESCRIPTIONS": [
