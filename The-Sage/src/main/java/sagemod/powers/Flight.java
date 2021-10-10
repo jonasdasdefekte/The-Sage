@@ -111,7 +111,11 @@ public class Flight extends AbstractSagePower {
 
 	@Override
 	public void updateDescription() {
-		description = DESCRIPTIONS[0];
+		if (amount == 1) {
+			description = DESCRIPTIONS[0];
+		} else {
+			description = DESCRIPTIONS[1] + amount + DESCRIPTIONS[2];
+		}
 	}
 
 	@Override

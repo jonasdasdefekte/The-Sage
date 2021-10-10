@@ -150,7 +150,9 @@
 	"sagemod:Flight": {
 		"NAME": "Flight",
 		"DESCRIPTIONS": [
-			"Reduce #yattack damage taken by #b50%. Reduced by one if you get attacked."
+			"Reduce #yattack damage taken by #b50%. Ends after you are hit #b1 more time.",
+			"Reduce #yattack damage taken by #b50%. Ends after you are hit #b",
+			" more times."
 		]
 	},
 	"sagemod:Taste_This_One": {
