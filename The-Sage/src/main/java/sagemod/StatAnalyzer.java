@@ -151,6 +151,11 @@ public class StatAnalyzer {
 						RelicLibrary.class,
 						"blueRelics")).values());
 				break;
+			case WATCHER:
+				relics.addAll(((HashMap<String, AbstractRelic>) ReflectionHacks.getPrivateStatic(
+						RelicLibrary.class,
+						"purpleRelics")).values());
+				break;
 			default:
 				relics.addAll(BaseMod.getRelicsInCustomPool(cardColor).values());
 				break;
@@ -168,6 +173,7 @@ public class StatAnalyzer {
 			case IRONCLAD:
 			case THE_SILENT:
 			case DEFECT:
+			case WATCHER:
 				potionCount = 1;
 				break;
 			default:
