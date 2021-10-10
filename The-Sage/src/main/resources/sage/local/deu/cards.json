@@ -59,7 +59,7 @@
 	},
 	"sagemod:Bookworm": {
 		"NAME": "Bücherwurm",
-		"DESCRIPTION": "Immer wenn du eine Karte spielst, die X kostet, erstatte !M! Energie.",
+		"DESCRIPTION": "Immer wenn du eine Karte spielst, die X kostet, erstatte !M! [E] .",
 		"UPGRADE_DESCRIPTION": "Immer wenn du eine Karte spielst, die X kostet, erhalte [E] ."
 	},
 	"sagemod:Bouncing_Strike": {
@@ -228,8 +228,8 @@
 	},
 	"sagemod:Momentum": {
 		"NAME": "Momentum",
-		"DESCRIPTION": "Braue einen Schnelligkeitstrank in !sagemod:BRW! Runden.",
-		"UPGRADE_DESCRIPTION": "Braue einen verbesserten Schnelligkeitstrank in !sagemod:BRW! Runden."
+		"DESCRIPTION": "Braue einen Schnelligkeitstrank in !sagemod:BRW! Zügen.",
+		"UPGRADE_DESCRIPTION": "Braue einen verbesserten Schnelligkeitstrank in !sagemod:BRW! Zügen."
 	},
 	"sagemod:On_Fire": {
 		"NAME": "Feuer",
