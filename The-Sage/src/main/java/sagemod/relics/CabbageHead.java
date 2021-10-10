@@ -19,7 +19,7 @@ public class CabbageHead extends AbstractSageRelic {
 	}
 
 	@Override
-	public void onEquip() {
+	public void atBattleStart() {
 		if (!AbstractDungeon.player.hasPower(Flight.POWER_ID)) {
 			gainDexterity();
 		}
