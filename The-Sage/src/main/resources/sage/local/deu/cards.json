@@ -358,7 +358,8 @@
 	},
 	"sagemod:Swoop_Down": {
 		"NAME": "Herabsausen",
-		"DESCRIPTION": "Füge zufälligen Gegnern pro Flug, den du hast, !D! Schaden zu. NL Dann verliere deinen Flug."
+		"DESCRIPTION": "Füge zufälligen Gegnern pro Flug, den du hast, !D! Schaden zu. NL Verliere !M! Flug.",
+		"UPGRADE_DESCRIPTION": "Füge zufälligen Gegnern pro Flug, den du hast, !D! Schaden zu."
 	},
 	"sagemod:Taste_This_One": {
 		"NAME": "Probier das mal",
