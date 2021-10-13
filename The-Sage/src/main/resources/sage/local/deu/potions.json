@@ -14,11 +14,11 @@
 		]
 	},
 	"sagemod:Hot_Pepperino": {
-		"NAME": "Scharfe Pepperino",
+		"NAME": "Scharfe Pepporine",
 		"DESCRIPTIONS": [
-			"Braue Tränke #b1 Zug schneller für diesen Kampf.",
-			"Braue Tränke #b",
-			" Züge schneller für diesen Kampf."
+			"Braue Tränke in diesem Kampf #b1 Zug schneller.",
+			"Braue Tränke in diesem Kampf #b",
+			" Züge schneller."
 		]
 	},
 	"sagemod:UPGRADED:AttackPotion": {
@@ -66,7 +66,7 @@
 	"sagemod:Wine": {
 		"NAME": "Wein",
 		"DESCRIPTIONS": [
-			"Reduziere alle Preise in einem Shop um #b",
+			"Senke alle Preise in einem Laden um #b",
 			" Gold."
 		]
 	}
