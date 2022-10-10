@@ -1,26 +1,26 @@
 {
 	"sagemod:Over_Brew": {
 		"TEXT": [
-			"If you don't use potions this turn, at the start of your next turn, when you obtain the Brewed potions, you must discard potions without using their effect!"
+			"如果你在这回合不使用药水，那么在下回合开始炼制得到药水的时候，你就必须丢弃药水而造成浪费！"
 		],
 		"LABEL": [
-			"Brewing too many potions"
+			"炼制进行中的药水过多"
 		]
 	},
 	"sagemod:Promo": {
 		"TEXT": [
-			"If you enjoyed playing as The Sage, please consider promoting it on Steam Workshop. We would be glad if you dropped a like or left a comment!"
+			"智者好玩吗？喜欢的话，请考虑在Steam创意工坊上面夸夸它。如能得到你的点赞或留言，我们将不胜荣幸！"
 		],
 		"LABEL": [
-			"Steam Workshop"
+			"Steam创意工坊"
 		]
 	},
 	"sagemod:Flight_Reduction": {
 		"TEXT": [
-			"If you don't block an attack this turn, you will stop Flying. This means that all attacks in the same round after losing Flight deal double the damage displayed!"
+			"只要你在飞行，敌人的意图中所显示的攻击值就必定是扣除飞行减伤后的值。但是，同一轮中，敌人的多次攻击可能会使你失去飞行，之后的攻击将对你造成双倍于此显示值的实际伤害！"
 		],
 		"LABEL": [
-			"Knocked Down"
+			"击坠"
 		]
 	}
 }

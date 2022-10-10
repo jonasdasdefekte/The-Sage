@@ -1,106 +1,106 @@
 {
 	"sagemod:Ancient_Magnet": {
-		"NAME": "Ancient Magnet",
-		"FLAVOR": "A smart tool to disable the technology of the Ancients.",
+		"NAME": "古老磁铁",
+		"FLAVOR": "一件智能工具，可以反制古人的技术。",
 		"DESCRIPTIONS": [
-			"You can debuff the enemy even if they have Artifact."
+			"你可以对有 #y人工制品 的敌人施加负面效果。"
 		]
 	},
 	"sagemod:Balloon_Animal": {
-		"NAME": "Balloon Animal",
-		"FLAVOR": "This cute figure almost pulls you upwards.",
+		"NAME": "气球狗",
+		"FLAVOR": "这个可爱的家伙快把你提起来了。",
 		"DESCRIPTIONS": [
-			"Draw #b",
-			" card at the start of your turn if you have no #yFlight."
+			"在你的回合开始时，如果你不在 #y飞行 状态下，抽 #b",
+			" 张牌。"
 		]
 	},
 	"sagemod:Blowpipe": {
-		"NAME": "Blowpipe",
-		"FLAVOR": "This hunting tool can apply any liquid on distant targets in the twinkling of an eye.",
+		"NAME": "吹筒",
+		"FLAVOR": "这件捕猎工具可以在眨眼间向远处的目标泼上任何液体。",
 		"DESCRIPTIONS": [
-			"Whenever you throw a potion at an enemy, it also affects the other enemies."
+			"每当你对一名敌人使用一瓶药水，其余的敌人也会受到影响。"
 		]
 	},
 	"sagemod:Byrd_Feather": {
-		"NAME": "Byrd Feather",
-		"FLAVOR": "You can't wait to pluck out some more.",
+		"NAME": "异鸟羽毛",
+		"FLAVOR": "你迫不及待地想拔掉更多。",
 		"DESCRIPTIONS": [
-			"If you have #b",
-			" or #b",
-			" #yFlight at the start of your turn, set it to #b",
-			"."
+			"如果你在你的回合开始时有 #b",
+			" 层或 #b",
+			" 层 #y飞行 ，将层数变为 #b",
+			" 。"
 		]
 	},
 	"sagemod:Cabbage_Head": {
-		"NAME": "Cabbage Head",
-		"FLAVOR": "Stinks.",
+		"NAME": "白菜头",
+		"FLAVOR": "散发着强烈的异味。",
 		"DESCRIPTIONS": [
-			"Gain #b",
-			" #yDexterity while you are not flying."
+			"非 #y飞行 时获得 #b",
+			" 点 #y敏捷 。"
 		]
 	},
 	"sagemod:Cookbook": {
-		"NAME": "Cookbook",
-		"FLAVOR": "Reading this makes you hungry. Although probably you better should abstain from some of these dishes.",
+		"NAME": "菜谱",
+		"FLAVOR": "看着看着你就饿了。不过里面有些菜你或许还是忌一忌的好。",
 		"DESCRIPTIONS": [
-			"You need #b",
-			" less turn to #ybrew potions."
+			"#y炼制 药水所需回合数减少 #b",
+			" 。"
 		]
 	},
 	"sagemod:Creepy_Carousel": {
-		"NAME": "Creepy Carousel",
-		"FLAVOR": "Creepy...",
+		"NAME": "瘆人的旋转木马",
+		"FLAVOR": "叫人瘆得慌……",
 		"DESCRIPTIONS": [
-			"Every #b",
-			" turns, apply #b",
-			" #yDisoriented to a random enemy."
+			"每 #b",
+			" 回合，随机给予一名敌人 #b",
+			" 层 #y迷失 。"
 		]
 	},
 	"sagemod:Falmels_Amulet": {
-		"NAME": "Falmel's Amulet",
-		"FLAVOR": "Someone forged this in prehistoric times to reach immortality. Seems like that didn't work out.",
+		"NAME": "法耳梅耳的护符",
+		"FLAVOR": "在史前时代，有人塑造了它以追求永生不死。看来他似乎失败了。",
 		"DESCRIPTIONS": [
-			"Gain [E] at the start of your turn. A random enemy attacks an additional time on the first turn."
+			"在你的回合开始时获得 [E] 。每场战斗的第一回合，随机一名敌人额外攻击一次。"
 		]
 	},
 	"sagemod:Flying_Carpet": {
-		"NAME": "Flying Carpet",
-		"FLAVOR": "An old carpet, similar to those used by the Slavers of the far east.",
+		"NAME": "飞行地毯",
+		"FLAVOR": "一条古老的地毯，跟遥远东方的奴隶主们所用的类似。",
 		"DESCRIPTIONS": [
-			"Gain #b",
-			" #yFlight at the start of your second turn."
+			"在每场战斗的第二个回合开始时，获得 #b",
+			" 层 #y飞行 。"
 		]
 	},
 	"sagemod:Red_Beast_Statue": {
-		"NAME": "Red Beast Statue",
-		"FLAVOR": "You have never seen such a creature before, but this statue reminds you of something.",
+		"NAME": "红兽雕像",
+		"FLAVOR": "你从来没有见过这种动物，不过这个雕像让你想起了什么。",
 		"DESCRIPTIONS": [
-			"#yPotions are #b",
-			"% more likely to be uncommon or rare and #b",
-			"% more likely to be upgraded."
+			"在原有的基础上，药水为 #y罕见 或 #y稀有 的概率提高 #b",
+			"% ，为已 #y升级 的概率提高 #b",
+			"% 。"
 		]
 	},
 	"sagemod:Singing_Vial": {
-		"NAME": "Singing Vial",
-		"FLAVOR": "A wistful melody sounds upon opening the flask.",
+		"NAME": "唱歌瓶",
+		"FLAVOR": "一打开这个瓶子，伤感的旋律随之响起。",
 		"DESCRIPTIONS": [
-			"When adding cards into your deck, you may upgrade a random Potion instead.",
-			"Upgrade Potion"
+			"可以将卡牌奖励转变为随机 #y升级 一瓶药水。",
+			"升级药水"
 		]
 	},
 	"sagemod:The_Guidebook_Guide": {
-		"NAME": "The Guidebook Guide",
-		"FLAVOR": "You always wanted to learn how to most effectively learn from all these guidebooks.",
+		"NAME": "指南的指南",
+		"FLAVOR": "工欲善其器，必先利其器。",
 		"DESCRIPTIONS": [
-			"Whenever you play an X cost card, exhaust it and refund all energy."
+			"每当你打出一张耗能为X的牌， #y消耗 它并 #y回馈 全部能量。"
 		]
 	},
 	"sagemod:Thunder_Carpet": {
-		"NAME": "Thunder Carpet",
-		"FLAVOR": "An ancient carpet, woven by eery cultists and infused with strange magic.",
+		"NAME": "雷霆地毯",
+		"FLAVOR": "一条古老的地毯，经阴森的邪教徒编织而成，注入了奇怪的魔力。",
 		"DESCRIPTIONS": [
-			"Replaces Flying Carpet. Start each combat with #b",
-			" Flight."
+			"替换 #y飞行地毯 。每场战斗开始时，获得 #b",
+			" 层 #y飞行 。"
 		]
 	},
 	"sagemod:Toy_Ornithopter": {

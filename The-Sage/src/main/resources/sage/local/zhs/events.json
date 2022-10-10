@@ -1,20 +1,20 @@
 {
 	"sagemod:Carpet_Trader": {
-		"NAME": "Carpet Trader",
+		"NAME": "地毯商人",
 		"DESCRIPTIONS": [
-			"This city is a peculiar place. Sneaking around the corner, you directly run into a #rhooded #rfigure lurking at a house entrance. NL NL You see carpets all over the place. Even that man seems to wear one.",
-			"As you approach, the figure quickly grabs a #rred #rcarpet. Staring down to it, the carpet-wearing man yells with a screechy voice: NL \"Are you ready? The carpet is. @For@ @you@ !\"",
-			"As you approach, the figure quickly grabs a #rpale #rfeather. Staring down to it, the carpet-wearing man yells with a screechy voice: NL \"Are you ready? The feather is. @For@ @you@ !\"",
-			"You ran away as fast as you could.",
-			"You accept the offer. NL NL Taking the #rred #rcarpet, you feel some of your strength leaving your body. At the same time, you feel how the carpet can carry you. NL While hearing a derisive laughter from that strange man, you fly away with the carpet under your feet. You are not sure if this flying masterpiece will help or kill you...",
-			"You accept the offer. NL NL Taking the #rpale #rfeather, you feel some of your strength leaving your body. At the same time, you are feeling lucky. NL While hearing a derisive laughter from that strange man, you fly away with the feather in your pocket. You are not sure if this flying masterpiece will help or kill you..."
+			"这座城市真是个神奇的地方。在街角潜行时，你一眼瞥见了一个 #r戴着斗篷的人影 ，他埋伏在一间房屋的入口。 NL NL 你环视四周，只见到处都是地毯。那个男人似乎也裹着一条。",
+			"当你靠近时，那人影快速抓起一条 #r红色地毯 。你放低目光端详起来，而那个身披地毯的男人尖声叫喊道： NL “你看好了吗？这条地毯可是 @给你@ 准备的！”",
+			"当你靠近时，那人影快速抓起一根 #r浅色羽毛 。你放低目光端详起来，而那个身披地毯的男人尖声叫喊道： NL “你看好了吗？这根羽毛可是 @给你@ 准备的！”",
+			"你跑掉了，能多快就多快。",
+			"你接受了要价。 NL NL 带着这条 #r红色地毯 ，你感觉你的一部分力量在离开自己的身体。同时，你也感受到了地毯是怎么载你飞行的。 NL 尽管听到那个奇怪的男人发出一阵嘲笑，你还是踩着地毯飞走了。你不确定这件飘飞的杰作是会救你于水火，还是会致你于死地……",
+			"你接受了要价。 NL NL 带着这根 #r浅色羽毛 ，你感觉你的一部分力量在离开自己的身体。同时，你也感到幸运。 NL 尽管听到那个奇怪的男人发出一阵嘲笑，你还是揣着羽毛飞走了。你不确定这件飘飞的杰作是会救你于水火，还是会致你于死地……"
 		],
 		"OPTIONS": [
-			"[Approach]",
-			"[Run]",
-			"[Agree] #rLose #r30% #rMax #rHP. #gObtain #gthe #gFlying #gCarpet.",
-			"[Agree] #rLose #r30% #rMax #rHP. #gObtain #gthe #gByrd #gFeather.",
-			"[Leave]"
+			"[接近]",
+			"[溜走]",
+			"[同意] #r失去 #r30% #r最大生命。 #g获得 飞行地毯 #g。",
+			"[同意] #r失去 #r30% #r最大生命。 #g获得 异鸟羽毛 #g。",
+			"[离开]"
 		]
 	}
 }

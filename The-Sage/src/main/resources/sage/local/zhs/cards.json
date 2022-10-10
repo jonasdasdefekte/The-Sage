@@ -1,16 +1,16 @@
 {
 	"sagemod:About_Clark": {
-		"NAME": "About Clark",
-		"DESCRIPTION": "Deal !D! damage two times. NL Costs 1 more [E] per Flight you have."
+		"NAME": "天边的克拉克",
+		"DESCRIPTION": "造成 D 点伤害两次。 NL 你每有一层 飞行 ，耗能就增加1 [E] 。"
 	},
 	"sagemod:AbstractSageCard": {
 		"NAME": "Abstract Sage Card",
 		"DESCRIPTION": "ABSTRACT CLASS! THIS SHOULD NEVER BE DISPLAYED!",
 		"UPGRADE_DESCRIPTION": "These values are for speech bubbles and updating the brew variable",
 		"EXTENDED_DESCRIPTION": [
-			"I can only play this if I have no Flight!",
-			"I can only play this if I am flying!",
-			"I can only play this if I have a potion!",
+			"这张牌只能在非飞行时打出！",
+			"这张牌只能在飞行时打出！",
+			"这张牌只能在持有药水时打出！",
 			".",
 			" next turn.",
 			"[(NL) ]*in[(NL) ]*!sagemod:BRW![(NL) ]*-[(NL) ]*X*.*[(NL) ]*turns*\\.",
@@ -19,372 +19,371 @@
 		]
 	},
 	"sagemod:Accumulation": {
-		"NAME": "Accumulation",
-		"DESCRIPTION": "Air. NL Gain [E] and lose !M! Flight at the start of each turn."
+		"NAME": "积聚",
+		"DESCRIPTION": "空气 。 NL 每回合开始时，获得 [E] ，失去 M 层 飞行 。"
 	},
 	"sagemod:Alchemy_Expert": {
-		"NAME": "Alchemy Expert",
-		"DESCRIPTION": "Whenever you use a potion, gain !M! Artifact.",
-		"UPGRADE_DESCRIPTION": "Innate. NL Whenever you use a potion, gain !M! Artifact."
+		"NAME": "炼金专家",
+		"DESCRIPTION": "每当你使用一瓶药水时，获得 M 层 人工制品 。",
+		"UPGRADE_DESCRIPTION": "固有 。 NL 每当你使用一瓶药水时，获得 M 层 人工制品 。"
 	},
 	"sagemod:Altitude": {
-		"NAME": "Altitude",
-		"DESCRIPTION": "Gain !M! Flight at the start of each turn."
+		"NAME": "海拔",
+		"DESCRIPTION": "每回合开始时，获得 M 层 飞行 。"
 	},
 	"sagemod:Ambition": {
-		"NAME": "Ambition",
-		"DESCRIPTION": "Lose your Flight. NL Gain [E] [E]."
+		"NAME": "志向",
+		"DESCRIPTION": "失去全部 飞行 。 NL 获得 [E] [E] 。"
 	},
 	"sagemod:Anti_Ancient_Attack": {
-		"NAME": "Anti Ancient Attack",
-		"DESCRIPTION": "Apply !M! Artifact. NL Then deal !D! damage per Artifact the enemy has.",
+		"NAME": "除旧攻击",
+		"DESCRIPTION": "给予 M 层 人工制品 。 NL 然后，目标每有一层 人工制品 ，造成一次 D 点伤害。",
 		"EXTENDED_DESCRIPTION": [
-			" NL (Attacks once.)",
-			" NL (Attacks ",
-			" times.)"
+			" NL （攻击一次。）",
+			" NL （攻击 ",
+			" 次。）"
 		]
 	},
 	"sagemod:Armor_Brew": {
-		"NAME": "Armor Brew",
-		"DESCRIPTION": "Gain !B! Block. NL Brew a Block Potion NL in !sagemod:BRW! turns.",
-		"UPGRADE_DESCRIPTION": "Gain !B! Block. NL Brew an upgraded Block Potion NL in !sagemod:BRW! turns."
+		"NAME": "护甲佳酿",
+		"DESCRIPTION": "获得 B 点 格挡 。 NL !sagemod:BRW! 回合后， 炼制 一瓶 *格挡药水 。",
+		"UPGRADE_DESCRIPTION": "获得 B 点 格挡 。 NL !sagemod:BRW! 回合后， 炼制 一瓶已 升级 的 *格挡药水 。"
 	},
 	"sagemod:Blurry": {
-		"NAME": "Blurry",
-		"DESCRIPTION": "Gain !M! Temporary_HP. NL This is reduced by your current Flight. NL Exhaust.",
+		"NAME": "灿影",
+		"DESCRIPTION": "获得 M 点 临时生命 。 NL 此值减去你的 飞行 层数。 NL 消耗 。",
 		"EXTENDED_DESCRIPTION": [
-			" NL (Gives a total of ",
-			" Temporary_HP. )"
+			" NL （获得 ",
+			" 点 临时生命 。）"
 		]
 	},
 	"sagemod:Bookworm": {
-		"NAME": "Bookworm",
-		"DESCRIPTION": "Whenever you play an X cost card, Refund 1 Energy.",
-		"UPGRADE_DESCRIPTION": "Whenever you play an X cost card, gain [E] ."
+		"NAME": "书虫",
+		"DESCRIPTION": "每当你打出一张耗能为X的牌， 回馈 1。",
+		"UPGRADE_DESCRIPTION": "每当你打出一张耗能为X的牌，获得 [E] 。"
 	},
 	"sagemod:Bouncing_Strike": {
-		"NAME": "Bouncing Strike",
-		"DESCRIPTION": "Gain !M! Flight. Deal damage equal to !sagemod:MISC!x your Flight.",
+		"NAME": "弹射打击",
+		"DESCRIPTION": "获得 M 层 飞行 。 NL 造成你当前 飞行 层数 !sagemod:MISC! 倍的伤害。",
 		"EXTENDED_DESCRIPTION": [
-			" NL (Deals !D! damage.)"
+			" NL （造成 D 点伤害。）"
 		]
 	},
 	"sagemod:Brewmaster": {
-		"NAME": "Brewmaster",
-		"DESCRIPTION": "You need !M! less turn brewing potions."
+		"NAME": "炼药大师",
+		"DESCRIPTION": "本场战斗 炼制 药水所需回合数减少 M 。"
 	},
 	"sagemod:Burning_Flask": {
-		"NAME": "Burning Flask",
-		"DESCRIPTION": "Deal !D! damage to ALL enemies. If you carry potions, discard one at random and deal !M! extra damage."
+		"NAME": "燃烧药瓶",
+		"DESCRIPTION": "对所有敌人造成 D 点伤害。 NL 如果你持有药水，随机丢弃一瓶，额外造成 M 点固定伤害。"
 	},
 	"sagemod:Cane_Strike": {
-		"NAME": "Cane Strike",
-		"DESCRIPTION": "Deal !D! damage. Deals double damage if you are flying."
+		"NAME": "藤条打击",
+		"DESCRIPTION": "造成 D 点伤害。 NL 飞行 时伤害翻倍。"
 	},
 	"sagemod:Catch_Me_If_You_Can": {
-		"NAME": "Catch Me If You Can",
-		"DESCRIPTION": "Air. NL Prevent the loss of !M! Flight until the start of your next turn."
+		"NAME": "来抓我啊",
+		"DESCRIPTION": "空气 。 NL 直到你的下个回合开始，阻止你前 M 层的 飞行 损失。"
 	},
 	"sagemod:Crank": {
-		"NAME": "Crank",
-		"DESCRIPTION": "Deal !D! damage. NL If the enemy has Artifact, draw !M! card.",
-		"UPGRADE_DESCRIPTION": "Deal !D! damage. NL Draw cards equal to the enemy's Artifact."
+		"NAME": "曲柄",
+		"DESCRIPTION": "造成 D 点伤害。 NL 如果目标有 人工制品 ，抽 M 张牌。",
+		"UPGRADE_DESCRIPTION": "造成 D 点伤害。 NL 抽牌，数量等于目标的 人工制品 层数。"
 	},
 	"sagemod:Cultist_Form": {
-		"NAME": "Cultist Form",
-		"DESCRIPTION": "Lose !sagemod:MISC! Flight. NL Apply 1 Disoriented to a random enemy !M! times."
+		"NAME": "邪教徒形态",
+		"DESCRIPTION": "失去 !sagemod:MISC! 层 飞行 。 NL 随机给予敌人1层 迷失 M 次。"
 	},
 	"sagemod:Deadly_Contraption": {
-		"NAME": "Deadly Contraption",
-		"DESCRIPTION": "ALL enemies gain !M! Artifact. For !sagemod:MISC! turns, enemies lose 1 HP per Artifact on them."
+		"NAME": "致命器械",
+		"DESCRIPTION": "所有敌人获得 M 层 人工制品 。 NL !sagemod:MISC! 回合内，敌人在其回合开始时失去其 人工制品 层数的生命。"
 	},
 	"sagemod:Defend": {
-		"NAME": "Defend",
-		"DESCRIPTION": "Gain !B! Block."
+		"NAME": "防御",
+		"DESCRIPTION": "获得 B 点 格挡 。"
 	},
 	"sagemod:Energetic_Brew": {
-		"NAME": "Energetic Brew",
-		"DESCRIPTION": "Deal !D! damage. NL Brew an Energy Potion NL in !sagemod:BRW! turns.",
-		"UPGRADE_DESCRIPTION": "Deal !D! damage. NL Brew an upgraded Energy Potion NL in !sagemod:BRW! turns."
+		"NAME": "能量佳酿",
+		"DESCRIPTION": "造成 D 点伤害。 NL !sagemod:BRW! 回合后， 炼制 一瓶 *能量药水 。",
+		"UPGRADE_DESCRIPTION": "造成 D 点伤害。 NL !sagemod:BRW! 回合后， 炼制 一瓶已 升级 的 *能量药水 。"
 	},
 	"sagemod:Escape": {
-		"NAME": "Escape",
-		"DESCRIPTION": "Double your Flight. NL Exhaust.",
-		"UPGRADE_DESCRIPTION": "Double your Flight."
+		"NAME": "逃脱",
+		"DESCRIPTION": "将你的 飞行 层数翻倍。 NL 消耗 。",
+		"UPGRADE_DESCRIPTION": "将你的 飞行 层数翻倍。"
 	},
 	"sagemod:Extra_Portion": {
-		"NAME": "Extra Portion",
-		"DESCRIPTION": "The next potion is applied twice this turn.",
-		"UPGRADE_DESCRIPTION": "The next !M! potions are applied twice this turn."
+		"NAME": "再来一瓶",
+		"DESCRIPTION": "在这个回合，你使用的下一瓶药水会使用两次。",
+		"UPGRADE_DESCRIPTION": "在这个回合，你使用的下 M 瓶药水会使用两次。"
 	},
 	"sagemod:Fire_Brew": {
-		"NAME": "Fire Brew",
-		"DESCRIPTION": "Deal !D! damage. NL Brew a Fire Potion NL in !sagemod:BRW! turns.",
-		"UPGRADE_DESCRIPTION": "Deal !D! damage. NL Brew an upgraded Fire Potion NL in !sagemod:BRW! turns."
+		"NAME": "火焰佳酿",
+		"DESCRIPTION": "造成 D 点伤害。 NL !sagemod:BRW! 回合后， 炼制 一瓶 *火焰药水 。",
+		"UPGRADE_DESCRIPTION": "造成 D 点伤害。 NL !sagemod:BRW! 回合后， 炼制 一瓶已 升级 的 *火焰药水 。"
 	},
 	"sagemod:Flight_Feint": {
-		"NAME": "Flight Feint",
-		"DESCRIPTION": "Deal !D! damage. NL Apply !M! Disoriented."
+		"NAME": "佯飞",
+		"DESCRIPTION": "造成 D 点伤害。 NL 给予 M 层 迷失 。"
 	},
 	"sagemod:Fly": {
-		"NAME": "Fly",
-		"DESCRIPTION": "If you are flying: NL Gain !B! Block. NL Otherwise: NL Gain !M! Flight."
+		"NAME": "飞",
+		"DESCRIPTION": "飞行 ：获得 B 点 格挡 。 NL 否则，获得 M 层 飞行 。"
 	},
 	"sagemod:Flying_Cauldron": {
-		"NAME": "Flying Cauldron",
-		"DESCRIPTION": "Air. NL Brew potions !M! turn faster this combat. NL Exhaust.",
-		"UPGRADE_DESCRIPTION": "If you are flying: NL Brew potions !M! turn faster this combat. NL Otherwise: NL Gain !M! Flight. NL Exhaust."
+		"NAME": "飞翔的大锅",
+		"DESCRIPTION": "空气 。 NL 本场战斗 炼制 药水所需回合数减少 M 。 NL 消耗 。",
+		"UPGRADE_DESCRIPTION": "飞行 ：本场战斗 炼制 药水所需回合数减少 M 。 NL 否则，获得 M 层 飞行 。 NL 消耗 。"
 	},
 	"sagemod:Folded_Carpet": {
-		"NAME": "Folded Carpet",
-		"DESCRIPTION": "Gain !B! Block per Flight you have."
+		"NAME": "折叠的地毯",
+		"DESCRIPTION": "你每有一层 飞行 ，获得 B 点 格挡 。"
 	},
 	"sagemod:Gearwheel_Master": {
-		"NAME": "Gearwheel Master",
-		"DESCRIPTION": "EVERYBODY gains !M! Artifact. NL Exhaust. NL Can be upgraded any number of times."
+		"NAME": "齿轮大师",
+		"DESCRIPTION": "所有角色获得 M 层 人工制品 。 NL 消耗 。 NL 能被多次 升级 。"
 	},
 	"sagemod:Grounded_Strike": {
-		"NAME": "Grounded Strike",
-		"DESCRIPTION": "Gain !M! Flight. NL Deal !D! damage."
+		"NAME": "停飞打击",
+		"DESCRIPTION": "获得 M 层 飞行 。 NL 造成 D 点伤害。"
 	},
 	"sagemod:How_To_Amuse_Sneckos": {
-		"NAME": "How To Amuse Sneckos",
-		"DESCRIPTION": "Lose !M! Flight. NL Draw X + !sagemod:MISC! cards. NL Refund !stslib:refund!.",
-		"UPGRADE_DESCRIPTION": "Lose !M! Flight. NL Draw  !sagemod:MISC! times X cards. NL Refund !stslib:refund!."
+		"NAME": "娱悦异蛇之道",
+		"DESCRIPTION": "失去 M 层 飞行 。 NL 抽X+ !sagemod:MISC! 张牌。 NL 回馈 !stslib:refund! 。",
+		"UPGRADE_DESCRIPTION": "失去 M 层 飞行 。 NL 抽 !sagemod:MISC! X张牌。 NL 回馈 !stslib:refund! 。"
 	},
 	"sagemod:How_To_Befriend_A_Turtle": {
-		"NAME": "How To Befriend A Turtle",
-		"DESCRIPTION": "Gain X times !M! Plated Armor."
+		"NAME": "交好乌龟之道",
+		"DESCRIPTION": "获得 M X层 *多重护甲 。"
 	},
 	"sagemod:How_To_Charm_A_Sentry": {
-		"NAME": "How To Charm A Sentry",
-		"DESCRIPTION": "Do X times: NL Gain !B! Block. NL Deal !D! damage. NL The enemy gains !M! Artifact."
+		"NAME": "魅惑哨卫之道",
+		"DESCRIPTION": "进行X次： NL 获得 B 点 格挡 。 NL 造成 D 点伤害。 NL 给予 M 层 人工制品 。"
 	},
 	"sagemod:How_To_Feed_Apes": {
-		"NAME": "How To Feed Apes",
-		"DESCRIPTION": "Brew one of the NL possible Potions NL in !sagemod:BRW! -X turns. NL Exhaust.",
+		"NAME": "喂食猩猩之道",
+		"DESCRIPTION": "!sagemod:BRW! -X回合后， 炼制 一瓶 *可能的药水 。 NL 消耗 。",
 		"EXTENDED_DESCRIPTION": [
-			"Possible Potions"
+			"可能的药水"
 		]
 	},
 	"sagemod:How_To_Greet_Byrds": {
-		"NAME": "How To Greet Byrds",
-		"DESCRIPTION": "Innate. NL Gain !M! times X Flight."
+		"NAME": "问候异鸟之道",
+		"DESCRIPTION": "固有 。 NL 获得 M X层 飞行 。"
 	},
 	"sagemod:How_To_Murder_Ants": {
-		"NAME": "How To Murder Ants",
-		"DESCRIPTION": "Air. NL Deal X damage to a random enemy !M! times.",
+		"NAME": "杀灭蚂蚁之道",
+		"DESCRIPTION": "空气 。 NL 随机对敌人造成X点伤害 M 次。",
 		"EXTENDED_DESCRIPTION": [
-			" NL (Deals !sagemod:MISC! damage ",
-			" times.)"
+			" NL （造成 !sagemod:MISC! 点伤害 ",
+			" 次。）"
 		]
 	},
 	"sagemod:How_To_Poke_At_Slimes": {
-		"NAME": "How To Poke At Slimes",
-		"DESCRIPTION": "Deal damage equal to your Flight to ALL enemies X times.",
-		"UPGRADE_DESCRIPTION": "Deal damage equal to your Flight + !D! to ALL enemies X times."
+		"NAME": "戳刺史莱姆之道",
+		"DESCRIPTION": "对所有敌人造成你 飞行 层数的伤害X次。",
+		"UPGRADE_DESCRIPTION": "对所有敌人造成你 飞行 层数+ D 的伤害X次。"
 	},
 	"sagemod:How_To_Wake_Lyons": {
-		"NAME": "How To Wake Lyons",
-		"DESCRIPTION": "Brew a NL Flex Potion NL in !sagemod:BRW! -X turns. NL Exhaust.",
-		"UPGRADE_DESCRIPTION": "Brew a NL Flex Potion NL in !sagemod:BRW! -X turns."
+		"NAME": "唤醒狮子之道",
+		"DESCRIPTION": "!sagemod:BRW! -X回合后， 炼制 一瓶 *类固醇药水 。 NL 消耗 。",
+		"UPGRADE_DESCRIPTION": "!sagemod:BRW! -X回合后， 炼制 一瓶 *类固醇药水 。"
 	},
 	"sagemod:How_To_Warm_Elephants": {
-		"NAME": "How To Warm Elephants",
-		"DESCRIPTION": "Brew an NL Explosive Potion NL in !sagemod:BRW! -X turns.",
-		"UPGRADE_DESCRIPTION": "Brew an NL upgraded Explosive Potion NL in !sagemod:BRW! -X turns."
+		"NAME": "温暖大象之道",
+		"DESCRIPTION": "!sagemod:BRW! -X回合后， 炼制 一瓶 *爆炸药水 。",
+		"UPGRADE_DESCRIPTION": "!sagemod:BRW! -X回合后， 炼制 一瓶已 升级 的 *爆炸药水 。"
 	},
 	"sagemod:Lecture": {
-		"NAME": "Lecture",
-		"DESCRIPTION": "Deal !D! damage per X cost card played this combat.",
+		"NAME": "训诫",
+		"DESCRIPTION": "本场战斗中每打出过一张耗能为X的牌，造成一次 D 点伤害。",
 		"EXTENDED_DESCRIPTION": [
-			" NL (Attacks ",
-			" times.)",
-			" NL (Attacks once.)"
+			" NL （攻击 ",
+			" 次。）",
+			" NL （攻击一次。）"
 		]
 	},
 	"sagemod:Let_It_Go": {
-		"NAME": "Let It Go",
-		"DESCRIPTION": "Exhaust a card from your hand. Gain Flight equal to its cost. NL Exhaust.",
-		"UPGRADE_DESCRIPTION": "Exhaust up to !M! cards from your hand. Gain Flight equal to their costs. NL Exhaust."
+		"NAME": "随它去",
+		"DESCRIPTION": "消耗 一张手牌。 NL 获得与其耗能相等的 飞行 。 NL 消耗 。",
+		"UPGRADE_DESCRIPTION": "消耗 最多 M 张手牌。 NL 获得与其总耗能相等的 飞行 。 NL 消耗 。"
 	},
 	"sagemod:Light_Weighted": {
-		"NAME": "Light-Weighted",
-		"DESCRIPTION": "Lose all Block. NL Gain half that much Flight. NL Exhaust.",
-		"UPGRADE_DESCRIPTION": "Lose all Block. NL Gain that much NL Flight. NL Exhaust."
+		"NAME": "一身轻",
+		"DESCRIPTION": "失去全部 格挡 。 NL 获得一半量的 飞行 。 NL 消耗 。",
+		"UPGRADE_DESCRIPTION": "失去全部 格挡 。 NL 获得等量的 飞行 。 NL 消耗 。"
 	},
 	"sagemod:Lunchtime": {
-		"NAME": "Lunchtime!",
-		"DESCRIPTION": "Air. NL Lose !M! Flight and brew all potions immediately.",
-		"UPGRADE_DESCRIPTION": "Air. NL Brew all potions immediately."
+		"NAME": "午餐时间！",
+		"DESCRIPTION": "空气 。 NL 失去 M 层 飞行 ，立即 炼制 所有进行中的药水。",
+		"UPGRADE_DESCRIPTION": "空气 。 NL 立即 炼制 所有进行中的药水。"
 	},
 	"sagemod:Mechanics_Break": {
-		"NAME": "Mechanics Break!",
-		"DESCRIPTION": "Gain !B! Block. NL The target enemy gains !M! Artifact."
+		"NAME": "力学破碎！",
+		"DESCRIPTION": "获得 B 点 格挡 。 NL 给予 M 层 人工制品 。"
 	},
 	"sagemod:Meditation": {
-		"NAME": "Meditation",
-		"DESCRIPTION": "Lose all Flight. NL Gain [E] per Flight lost. NL Draw !M! cards. NL Exhaust."
+		"NAME": "冥想",
+		"DESCRIPTION": "失去全部 飞行 。 NL 获得等量 [E] 。 NL 抽 M 张牌。 NL 消耗 。"
 	},
 	"sagemod:Momentum": {
-		"NAME": "Momentum",
-		"DESCRIPTION": "Brew a Swift Potion in !sagemod:BRW! turns.",
-		"UPGRADE_DESCRIPTION": "Brew an upgraded Swift Potion in !sagemod:BRW! turns."
+		"NAME": "动力",
+		"DESCRIPTION": "!sagemod:BRW! 回合后， 炼制 一瓶 *迅捷药水 。",
+		"UPGRADE_DESCRIPTION": "!sagemod:BRW! 回合后， 炼制 一瓶已 升级 的 *迅捷药水 。"
 	},
 	"sagemod:On_Fire": {
-		"NAME": "On Fire",
-		"DESCRIPTION": "Whenever you play !M! cards in a single turn, obtain a Fire Potion.",
-		"UPGRADE_DESCRIPTION": "Whenever you play !M! cards in a single turn, obtain an upgraded Fire Potion."
+		"NAME": "着火",
+		"DESCRIPTION": "每当你在一回合中打出 M 张牌，获得一瓶 *火焰药水 。",
+		"UPGRADE_DESCRIPTION": "每当你在一回合中打出 M 张牌，获得一瓶已 升级 的 *火焰药水 。"
 	},
 	"sagemod:On_The_Head": {
-		"NAME": "On The Head",
-		"DESCRIPTION": "Deal !D! damage. NL If you are flying: NL Draw !M! card NL and gain [E]."
+		"NAME": "槌头",
+		"DESCRIPTION": "造成 D 点伤害。 NL 飞行 ：抽 M 张牌，获得 [E] 。"
 	},
 	"sagemod:Perpetuum_Mobile": {
-		"NAME": "Perpetuum Mobile",
-		"DESCRIPTION": "Draw !M! card. NL Play it for free if it costs !sagemod:MISC!.",
-		"UPGRADE_DESCRIPTION": "Draw !M! card. NL Play it for free if it costs !sagemod:MISC! or X."
+		"NAME": "永动机",
+		"DESCRIPTION": "抽 M 张牌。 NL 如果其耗能为 !sagemod:MISC! ，免费打出它（目标随机而定）。",
+		"UPGRADE_DESCRIPTION": "抽 M 张牌。 NL 如果其耗能为 !sagemod:MISC! 或X，免费打出它（目标随机而定）。"
 	},
 	"sagemod:Perplexing_Glare": {
-		"NAME": "Perplexing Glare",
-		"DESCRIPTION": "Apply !M! Disoriented. NL Exhaust."
+		"NAME": "困惑瞪视",
+		"DESCRIPTION": "给予 M 层 迷失 。 NL 消耗 。"
 	},
 	"sagemod:Pincer_Attack": {
-		"NAME": "Pincer Attack",
-		"DESCRIPTION": "Deal !D! damage. NL Damage is increased by 1 per Artifact on the enemy.",
-		"UPGRADE_DESCRIPTION": "Deal !D! damage. NL Damage is increased by 2 per Artifact on the enemy."
+		"NAME": "螯击",
+		"DESCRIPTION": "造成 D 点伤害。 NL 此值加上目标的 人工制品 层数。",
+		"UPGRADE_DESCRIPTION": "造成 D 点伤害。 NL 此值加上目标 人工制品 层数的两倍。"
 	},
 	"sagemod:Pincer_Repair": {
-		"NAME": "Pincer Repair",
-		"DESCRIPTION": "Deal !D! damage. NL The enemy gains NL !M! Artifact."
+		"NAME": "螯缮",
+		"DESCRIPTION": "造成 D 点伤害。 NL 给予 M 层 人工制品 。"
 	},
 	"sagemod:Poem": {
-		"NAME": "Poem",
-		"DESCRIPTION": "Refund all energy used when playing your next card."
+		"NAME": "诗",
+		"DESCRIPTION": "你打出下一张牌时， 回馈 全部耗能。"
 	},
 	"sagemod:Potion_Explosion": {
-		"NAME": "Potion Explosion",
-		"DESCRIPTION": "Deal !D! damage to ALL enemies. Repeat this once per potion you used this turn.",
+		"NAME": "药水爆炸",
+		"DESCRIPTION": "对所有敌人造成 D 点伤害。 NL 你在本回合每使用过一瓶药水，重复一次。",
 		"EXTENDED_DESCRIPTION": [
-			" NL (Attacks once.)",
-			" NL (Attacks ",
-			" times.)"
+                                                " NL （攻击一次。）",
+			" NL （攻击 ",
+			" 次。）"
 		]
 	},
 	"sagemod:Potion_Trance": {
-		"NAME": "Potion Trance",
-		"DESCRIPTION": "Draw !M! card whenever you use a potion this turn. You cannot gain energy this turn.",
-		"UPGRADE_DESCRIPTION": "Draw !M! cards whenever you use a potion this turn. You cannot gain energy this turn."
+		"NAME": "药水催眠",
+		"DESCRIPTION": "在这个回合，每当你使用一瓶药水，抽 M 张牌。 NL 本回合你不能获得能量。",
+		"UPGRADE_DESCRIPTION": "在这个回合，每当你使用一瓶药水，抽 M 张牌。 NL 本回合你不能获得能量。"
 	},
 	"sagemod:Pour_Tar_Pitch": {
-		"NAME": "Pour Tar Pitch",
-		"DESCRIPTION": "Deal !D! damage. NL If you are flying, this affects ALL enemies."
+		"NAME": "倾倒焦油",
+		"DESCRIPTION": "造成 D 点伤害。 NL 飞行 ：改为对所有敌人造成伤害。"
 	},
 	"sagemod:Prey": {
-		"NAME": "Prey",
-		"DESCRIPTION": "Deal !D! damage. If this kills an enemy with more max HP than you, gain !M! max HP and remove this card from your deck."
+		"NAME": "掠食",
+		"DESCRIPTION": "造成 D 点伤害。 NL 如果这张牌杀死了一名最大生命值超过你的敌人，获得 M 点最大生命，然后将其从你的牌组中移除。"
 	},
 	"sagemod:Quackster": {
-		"NAME": "Quackster",
-		"DESCRIPTION": "Brew a random Potion in !sagemod:BRW! turns. NL Exhaust.",
-		"UPGRADE_DESCRIPTION": "Brew a random Potion in !sagemod:BRW! turns."
+		"NAME": "庸医",
+		"DESCRIPTION": "!sagemod:BRW! 回合后， 炼制 一瓶 *随机药水 。 NL 消耗 。",
+		"UPGRADE_DESCRIPTION": "!sagemod:BRW! 回合后， 炼制 一瓶 *随机药水 。"
 	},
 	"sagemod:Read_The_Riot_Act": {
-		"NAME": "Read The Riot Act",
-		"DESCRIPTION": "Play a random X cost card from your draw pile twice for free."
+		"NAME": "严正警告",
+		"DESCRIPTION": "随机将抽牌堆中一张耗能为X的牌免费打出两次（目标随机而定）。"
 	},
 	"sagemod:Refine": {
-		"NAME": "Refine",
-		"DESCRIPTION": "Upgrade a random unupgraded potion you are holding. NL Exhaust.",
-		"UPGRADE_DESCRIPTION": "Upgrade all unupgraded potions you are holding. NL Exhaust."
+		"NAME": "提纯",
+		"DESCRIPTION": "随机 升级 你持有的一瓶未 升级 的药水。 NL 消耗 。",
+		"UPGRADE_DESCRIPTION": "升级 你持有的所有未 升级 的药水。 NL 消耗 。"
 	},
 	"sagemod:Riches": {
-		"NAME": "Riches!!!",
-		"DESCRIPTION": "Whenever you use an upgraded potion, obtain a random unupgraded potion."
+		"NAME": "我们要发财了！！！",
+		"DESCRIPTION": "每当你使用一瓶已 升级 的药水，随机获得一瓶未 升级 的药水。"
 	},
 	"sagemod:Rickety_Defense": {
-		"NAME": "Rickety Defense",
-		"DESCRIPTION": "Whenever you lose all Flight, gain !M! Block."
+		"NAME": "松垮防线",
+		"DESCRIPTION": "每当你离开 飞行 ，获得 M 点 格挡 。"
 	},
 	"sagemod:Rock_Oil": {
-		"NAME": "Rock Oil",
-		"DESCRIPTION": "Unplayable. NL Whenever you use a Potion while this card is in your hand, gain !B! Block."
+		"NAME": "石油",
+		"DESCRIPTION": "不能被打出 。 NL 这张牌在你的手牌中时，你每使用一瓶药水就获得 B 点 格挡 。"
 	},
 	"sagemod:Salty_Strike": {
-		"NAME": "Salty Strike",
-		"DESCRIPTION": "Deal !D! damage. NL Apply !M! Thirsty."
+		"NAME": "多盐打击",
+		"DESCRIPTION": "造成 D 点伤害。 NL 给予 M 层 饥渴 。"
 	},
 	"sagemod:Shatter": {
-		"NAME": "Shatter",
-		"DESCRIPTION": "Air. NL Lose all Flight. NL Deal damage equal to half your max HP.",
-		"UPGRADE_DESCRIPTION": "Air. NL Lose all Flight. NL Deal damage equal to your max HP.",
+		"NAME": "崩解",
+		"DESCRIPTION": "空气 。 NL 失去全部 飞行 。 NL 造成你最大生命值一半的伤害。",
+		"UPGRADE_DESCRIPTION": "空气 。 NL 失去全部 飞行 。 NL 造成你最大生命值的伤害。",
 		"EXTENDED_DESCRIPTION": [
-			" NL (Deals ",
-			" damage.)"
+			" NL （造成 ",
+			" 点伤害。）"
 		]
 	},
 	"sagemod:Shining_Powder": {
-		"NAME": "Shining Powder",
-		"DESCRIPTION": "Unplayable. NL Whenever you use a Potion while this card is in your hand, gain [E].",
-		"UPGRADE_DESCRIPTION": "Unplayable. NL Whenever you use a Potion while this card is in your hand, gain [E] [E]."
+		"NAME": "闪亮药粉",
+		"DESCRIPTION": "不能被打出 。 NL 这张牌在你的手牌中时，你每使用一瓶药水就获得 [E] 。",
+		"UPGRADE_DESCRIPTION": "不能被打出 。 NL 这张牌在你的手牌中时，你每使用一瓶药水就获得 [E] [E] 。"
 	},
 	"sagemod:Slalom": {
-		"NAME": "Slalom",
-		"DESCRIPTION": "Set your Flight to !M!."
+		"NAME": "回旋",
+		"DESCRIPTION": "将你的 飞行 层数变为 M 。"
 	},
 	"sagemod:Spoiled_Food": {
-		"NAME": "Spoiled Food",
-		"DESCRIPTION": "Apply !M! Thirsty. NL Exhaust."
+		"NAME": "变质食品",
+		"DESCRIPTION": "给予 M 层 饥渴 。 NL 消耗 。"
 	},
 	"sagemod:Spoon_Strike": {
-		"NAME": "Spoon Strike",
-		"DESCRIPTION": "Deal !D! damage. NL Advance all potions you are currently brewing by !M! turn."
+		"NAME": "调羹打击",
+		"DESCRIPTION": "造成 D 点伤害。 NL 所有进行中的药水加快 M 回合 炼制 。"
 	},
 	"sagemod:Step_Back": {
-		"NAME": "Step Back",
-		"DESCRIPTION": "Gain !B! Block. NL If you are flying: NL Refund !sagemod:MISC!. NL Otherwise: NL Gain !M! Flight."
+		"NAME": "后撤步",
+		"DESCRIPTION": "获得 B 点 格挡 。 NL 飞行 ： 回馈 !sagemod:MISC! 。 NL 否则，获得 M 层 飞行 。"
 	},
 	"sagemod:Strike": {
-		"NAME": "Strike",
-		"DESCRIPTION": "Deal !D! damage."
+		"NAME": "打击",
+		"DESCRIPTION": "造成 D 点伤害。"
 	},
 	"sagemod:Study": {
-		"NAME": "Study The Cult",
-		"DESCRIPTION": "Draw !M! cards. NL Put !sagemod:MISC! card from your hand on top of your draw pile.",
-		"UPGRADE_DESCRIPTION": "Draw !M! cards. NL You may put !sagemod:MISC! card from your hand on top of your draw pile.",
+		"NAME": "研习",
+		"DESCRIPTION": "抽 M 张牌。 NL 将手牌中的 !sagemod:MISC! 张牌放到你的抽牌堆顶部。",
+		"UPGRADE_DESCRIPTION": "抽 M 张牌。 NL 你可以将手牌中的 !sagemod:MISC! 张牌放到你的抽牌堆顶部。",
 		"EXTENDED_DESCRIPTION": [
-			"put on top of your draw pile."
+			"放到你抽牌堆的顶端"
 		]
 	},
 	"sagemod:Swoop_Down": {
-		"NAME": "Swoop Down",
-		"DESCRIPTION": "Deal !D! damage to a random enemy for every Flight you have. NL Lose !M! Flight.",
-		"UPGRADE_DESCRIPTION": "Deal !D! damage to a random enemy for every Flight you have."
+		"NAME": "俯冲",
+		"DESCRIPTION": "你每有一层 飞行 ，就随机对敌人造成一次 D 点伤害。 NL 然后失去全部 飞行 。"
 	},
 	"sagemod:Taste_This_One": {
-		"NAME": "Taste This One",
-		"DESCRIPTION": "Whenever you use a potion, deal !M! damage to a random enemy."
+		"NAME": "尝尝这个",
+		"DESCRIPTION": "每当你使用一瓶药水，随机对一名敌人造成 M 点伤害。"
 	},
 	"sagemod:Tinker": {
-		"NAME": "Tinker",
-		"DESCRIPTION": "Gain 1 Block per Artifact on the field + !sagemod:MISC! NL (gains !B! Block).",
-		"UPGRADE_DESCRIPTION": "Gain 1 Artifact. NL Gain 1 Block per Artifact on the field + !sagemod:MISC! NL (gains !B! Block)."
+		"NAME": "修补",
+		"DESCRIPTION": "获得场上的 人工制品 层数+ !sagemod:MISC! 的 格挡 。 NL （获得 B 点 格挡 。）",
+		"UPGRADE_DESCRIPTION": "获得1层 人工制品 。 NL 然后获得场上的 人工制品 层数+ !sagemod:MISC! 的 格挡 。 NL （获得 B 点 格挡 。）"
 	},
 	"sagemod:Turn_Around": {
-		"NAME": "Turn Around",
-		"DESCRIPTION": "Deal !D! damage. NL This deals !M! less damage per Flight you have."
+		"NAME": "转身",
+		"DESCRIPTION": "造成 D 点伤害。 NL 你每有一层 飞行 ，此值减 M 。"
 	},
 	"sagemod:Undermine": {
-		"NAME": "Undermine",
-		"DESCRIPTION": "Apply !M! Artifact to ALL enemies. NL When you attack an enemy, they take extra damage equal to the Artifact on them."
+		"NAME": "侵蚀",
+		"DESCRIPTION": "给予所有敌人 M 层 人工制品 。 NL 每当你攻击敌人时，对其额外造成其 人工制品 层数的伤害。 NL 本能力不可叠加。"
 	},
 	"sagemod:Upwards": {
-		"NAME": "Upwards",
-		"DESCRIPTION": "Gain !M! Flight."
+		"NAME": "上升",
+		"DESCRIPTION": "获得 M 层 飞行 。"
 	},
 	"sagemod:Vigorous_Body": {
-		"NAME": "Vigorous Body",
-		"DESCRIPTION": "Whenever an Artifact of you gets triggered, gain !M! Strength.",
-		"UPGRADE_DESCRIPTION": "Whenever an Artifact of you or an enemy gets triggered, gain !M! Strength."
+		"NAME": "活化机体",
+		"DESCRIPTION": "每当你的 人工制品 被触发，获得 M 点 力量 。",
+		"UPGRADE_DESCRIPTION": "每当你或敌人的 人工制品 被触发，获得 M 点 力量 。"
 	}
 }

@@ -1,187 +1,185 @@
 {
 	"sagemod:Accumulate": {
-		"NAME": "Accumulate",
+		"NAME": "积聚",
 		"DESCRIPTIONS": [
-			"Gain ",
-			" and lose #b",
-			" Flight at the start of your turn."
+			"每回合开始时，获得 ",
+			" ，失去 #b",
+			" 层 #y飞行 。"
 		]
 	},
 	"sagemod:Airborne": {
-		"NAME": "Airborne",
+		"NAME": "升空",
 		"DESCRIPTIONS": [
-			"Prevent the next #b",
-			" times you would lose Flight until the start of your next turn.",
-			"Prevent the next time you would lose Flight until the start of your next turn."
+			"直到你的下个回合开始，阻止你下 #b",
+			" 层的 #y飞行 损失。",
+			"直到你的下个回合开始，阻止你下一层的 #y飞行 损失。"
 		]
 	},
 	"sagemod:Alchemy_Expert": {
-		"NAME": "Alchemy Expert",
+		"NAME": "炼金专家",
 		"DESCRIPTIONS": [
-			"Whenever you use a potion, gain #b",
-			" Artifact"
+			"每当你使用一瓶药水时，获得 #b",
+			" 层 #y人工制品 。"
 		]
 	},
 	"sagemod:Altitude": {
-		"NAME": "Altitude",
+		"NAME": "海拔",
 		"DESCRIPTIONS": [
-			"Gain #b",
-			" Flight at the start of each turn."
+			"每回合开始时，获得 #b",
+			" 层 #y飞行 。"
 		]
 	},
 	"sagemod:Bookworm": {
-		"NAME": "Bookworm",
+		"NAME": "书虫",
 		"DESCRIPTIONS": [
-			"When you play an X cost card",
-			", Refund #b",
-			" energy",
-			" and you gain ",
-			" you gain ",
-			"."
+			"每当你打出一张耗能为X的牌",
+			"， #y回馈 #b",
+			"",
+			" ，并且你获得 ",
+			" ，你获得 ",
+			"。"
 		]
 	},
 	"sagemod:Brew": {
-		"NAME": "Brew",
+		"NAME": "炼制",
 		"DESCRIPTIONS": [
-			"Obtain a #r",
+			"获得一瓶 #r",
 			"#b",
-			"x #r",
-			" in #b",
-			": #b",
-			" turn.",
-			" turns.",
-			" turns.",
-			" at the start of your next turn.",
+			" 瓶 #r",
+			" ，在 #b",
+			" ： #b",
+			" 回合后。",
+			" 回合后。",
+			" 回合后。",
+			" ，在你的下回合开始时。",
 			" NL ",
-			"Sozu prevents brewing potions!",
-			"You brewed a potion!",
-			"You brewed some potions!",
-			"Obtain in "
+			"添水阻止我炼制药水！",
+			"你炼制了一瓶药水！",
+			"你炼制了一些药水！",
+			"炼制，在 "
 		]
 	},
 	"sagemod:Brewing": {
-		"NAME": "Brewing",
+		"NAME": "炼制加速",
 		"DESCRIPTIONS": [
-			"You brew potions #b",
-			" turns quicker.",
-			" turn quicker."
+			"本场战斗 #y炼制 药水所需回合数减少 #b",
+			" 。",
+			" 。"
 		]
 	},
 	"sagemod:Deadly_Contraption": {
-		"NAME": "Deadly Contraption",
+		"NAME": "致命器械",
 		"DESCRIPTIONS": [
-			"For #b",
-			" turns, enemies lose 1 HP per Artifact on them.",
-			"This turn, enemies lose 1 HP per Artifact on them."
+			"#b",
+			" 回合内，敌人在其回合开始时失去其 #y人工制品 层数的生命。",
+			"本回合内，敌人在其回合开始时失去其 #y人工制品 层数的生命。"
 		]
 	},
 	"sagemod:Disoriented": {
-		"NAME": "Disoriented",
+		"NAME": "迷失",
 		"DESCRIPTIONS": [
-			"The first attack of this enemy has no effect, for #b",
-			" turns.",
-			"The first attack of this enemy has no effect for this turn."
+			"该敌人每回合的第一次 #y攻击 将无效，持续 #b",
+			" 回合。",
+			"在这个回合，该敌人的第一次 #y攻击 将无效。"
 		]
 	},
 	"sagemod:Extra_Portion": {
-		"NAME": "Extra Portion",
+		"NAME": "再来一瓶",
 		"DESCRIPTIONS": [
-			"The next #b",
-			" potions are applied twice this turn.",
-			"The next potion is applied twice this turn."
+			"在这个回合，你使用的下 #b",
+			" 瓶药水会使用两次。",
+			"在这个回合，你使用的下一瓶药水会使用两次。"
 		]
 	},
 	"sagemod:Lose_Flight_Next_Turn": {
-		"NAME": "Lose Flight",
+		"NAME": "失去飞行",
 		"DESCRIPTIONS": [
-			"At the start of your next turn, lose #b",
-			" Flight."
+			"在你的下回合开始时，失去 #b",
+			" 层 #y飞行 。"
 		]
 	},
 	"sagemod:No_Energy": {
-		"NAME": "No Energy",
+		"NAME": "无法获得能量",
 		"DESCRIPTIONS": [
-			"You cannot gain energy this turn."
+			"本回合你不能获得能量。"
 		]
 	},
 	"sagemod:On_Fire": {
-		"NAME": "On Fire",
+		"NAME": "着火",
 		"DESCRIPTIONS": [
-			"Play #b",
-			" more cards this turn to obtain #b",
-			" more card this turn to obtain #b",
-			" upgraded Fire Potions",
-			" and #b",
-			" Fire Potions",
-			"."
+			"这回合内再打出 #b",
+			" 张牌以获得 #b",
+			" 张牌以获得 #b",
+			" 瓶已 #y升级 的 #y火焰药水 ",
+			"和 #b",
+			" 瓶 #y火焰药水 ",
+			"。"
 		]
 	},
 	"sagemod:Poem": {
-		"NAME": "Poem",
+		"NAME": "诗",
 		"DESCRIPTIONS": [
-			"#yRefund all energy used when playing your next card.",
-			"#yRefund all energy used when playing your next #b",
-			" cards."
+			"你打出下一张牌时， #y回馈 全部耗能。",
+			"你打出下 #b",
+			" 张牌时， #y回馈 全部耗能。"
 		]
 	},
 	"sagemod:Potion_Trance": {
-		"NAME": "Potion Trance",
+		"NAME": "药水催眠",
 		"DESCRIPTIONS": [
-			"Draw #b",
-			" cards whenever you use a #yPotion this turn.",
-			" card whenever you use a #yPotion this turn."
+			"在这个回合，每当你使用一瓶药水，抽 #b",
+			" 张牌。",
+			" 张牌。"
 		]
 	},
 	"sagemod:Riches": {
-		"NAME": "Riches!!!",
+		"NAME": "我们要发财了！！！",
 		"DESCRIPTIONS": [
-			"Whenever you use an upgraded potion, obtain a random unupgraded potion.",
-			"Whenever you use an upgraded potion, obtain #b",
-			" random unupgraded potions."
+			"每当你使用一瓶已 #y升级 的药水，随机获得一瓶未 #y升级 的药水。",
+			"每当你使用一瓶已 #y升级 的药水，随机获得 #b",
+			" 瓶未 #y升级 的药水。"
 		]
 	},
 	"sagemod:Rickety_Defense": {
-		"NAME": "Rickety Defense",
+		"NAME": "松垮防线",
 		"DESCRIPTIONS": [
-			"Whenever you lose all #yFlight, gain #b",
-			" #yBlock."
+			"每当你离开 #y飞行 ，获得 #b",
+			" 点 #y格挡 。"
 		]
 	},
 	"sagemod:Flight": {
-		"NAME": "Flight",
+		"NAME": "飞行",
 		"DESCRIPTIONS": [
-			"Reduce #yattack damage taken by #b50%. Ends after you are hit #b1 more time.",
-			"Reduce #yattack damage taken by #b50%. Ends after you are hit #b",
-			" more times."
+			"将所受到的 #y攻击 伤害降低 #b50% 。每次受到 #y攻击 时减少 #b1 层。"
 		]
 	},
 	"sagemod:Taste_This_One": {
-		"NAME": "Taste This One",
+		"NAME": "尝尝这个",
 		"DESCRIPTIONS": [
-			"Whenever you use a potion, deal #b",
-			" damage to a random enemy."
+			"每当你使用一瓶药水，随机对一名敌人造成 #b",
+			" 点伤害。"
 		]
 	},
 	"sagemod:Thirsty": {
-		"NAME": "Thirsty",
+		"NAME": "饥渴",
 		"DESCRIPTIONS": [
-			"#yPotions used against this enemy are #y50% more effective, for #b",
-			" turns.",
-			" turn."
+			"对该敌人使用的药水效力提高 #b50% ，持续 #b",
+			" 回合。",
+			" 回合。"
 		]
 	},
 	"sagemod:Undermine": {
-		"NAME": "Undermine",
+		"NAME": "侵蚀",
 		"DESCRIPTIONS": [
-			"When you attack an enemy, they take extra damage equal to the Artifact on them."
+			"每当你攻击敌人时，对其额外造成其 #y人工制品 层数的伤害。"
 		]
 	},
 	"sagemod:Vigorous_Body": {
-		"NAME": "Vigorous Body",
+		"NAME": "活化机体",
 		"DESCRIPTIONS": [
-			"Whenever an #yArtifact of you gets triggered, gain #b",
-			"Whenever an #yArtifact of an enemy gets triggered, gain #b",
-			" #yStrength.",
+			"每当你的 #y人工制品 被触发，获得 #b",
+			"每当敌人的 #y人工制品 被触发，获得 #b",
+			" 点 #y力量 。",
 			" NL "
 		]
 	}
