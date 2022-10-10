@@ -1,33 +1,33 @@
 {
 	"AIR": {
 		"NAMES": [
-			"air"
+			"空气"
 		],
-		"DESCRIPTION": "This card can only be played if you have Flight."
+		"DESCRIPTION": "这张牌只有在 #y飞行 状态下才能被打出。"
 	},
 	"ARTIFACT": {
 		"NAMES": [
-			"artifact"
+			"人工制品"
 		],
-		"DESCRIPTION": "Negates a debuff."
+		"DESCRIPTION": "免疫下一次受到的负面效果。"
 	},
 	"BREW": {
 		"NAMES": [
-			"brew"
+			"炼制"
 		],
-		"DESCRIPTION": "Obtain a potion after a specific amount of turns."
+		"DESCRIPTION": "一定数量的回合后，获得一瓶药水。"
 	},
 	"DISORIENTED": {
 		"NAMES": [
-			"disoriented"
+			"迷失"
 		],
-		"DESCRIPTION": "The first Attack of the Enemy has no effect."
+		"DESCRIPTION": "迷失敌人每回合的第一次 #y攻击 将无效，持续 #y1 回合。"
 	},
 	"FLIGHT": {
 		"NAMES": [
-			"flight"
+			"飞行"
 		],
-		"DESCRIPTION": "Reduce attack damage taken by 50%. Reduced by one if you get attacked."
+		"DESCRIPTION": "将所受到的 #y攻击 伤害降低 #b50% 。每次受到 #y攻击 时减少 #b1 层。"
 	},
 	"TAXING": {
 		"NAMES": [
@@ -37,9 +37,9 @@
 	},
 	"THIRSTY": {
 		"NAMES": [
-			"thirsty"
+			"饥渴"
 		],
-		"DESCRIPTION": "Potions used against the enemy are 50% more effective."
+		"DESCRIPTION": "对饥渴敌人使用的药水效力提高 #b50% 。"
 	},
 	"VIRUS": {
 		"NAMES": [

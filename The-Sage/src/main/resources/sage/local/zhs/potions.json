@@ -1,73 +1,65 @@
 {
 	"sagemod:Fata_Morgana": {
-		"NAME": "Fata Morgana",
+		"NAME": "幻景",
 		"DESCRIPTIONS": [
-			"Apply #b",
-			" #yDisoriented."
+			"给予 #b",
+			" 层 #y迷失 。"
 		]
 	},
 	"sagemod:Flight_Potion": {
-		"NAME": "Flight Potion",
+		"NAME": "飞行药水",
 		"DESCRIPTIONS": [
-			"Gain #b",
-			" #yFlight."
-		]
-	},
-	"sagemod:Hot_Pepperino": {
-		"NAME": "Hot Pepperino",
-		"DESCRIPTIONS": [
-			"Brew potions #b1 turn faster this combat.",
-			"Brew potions #b",
-			" turns faster this combat."
+			"获得 #b",
+			" 层 #y飞行 。"
 		]
 	},
 	"sagemod:UPGRADED:AttackPotion": {
-		"NAME": "Attack Potion",
+		"NAME": "攻击药水",
 		"DESCRIPTIONS": [
-			"Choose #b1 of #b3 random upgraded #yAttack cards to add to your hand, it costs #b0 this turn.",
-			"Choose #b1 of #b3 random upgraded #yAttack cards and add #b2 copies to your hand, they cost #b0 this turn."
+			"从 #b3 张已 #y升级 的随机攻击牌中选择 #b1 张加入你的手牌。这张牌在本回合耗能变为 #b0 。",
+			"从 #b3 张已 #升级 的随机攻击牌中选择 #b1 张，将其加入你的手牌 #b2 次。这两张牌在本回合耗能变为 #b0 。"
 		]
 	},
 	"sagemod:UPGRADED:BottledMiracle": {
-    "NAME": "Bottled Miracle",
+    "NAME": "瓶装奇迹",
     "DESCRIPTIONS": [
-      "Add #b2 #yMiracles+ to your hand.",
-      "Add #b4 #yMiracles+ to your hand."
+      "增加 #b2 张 #y奇迹+ 到你的手牌。",
+      "增加 #b4 张 #y奇迹+ 到你的手牌。"
     ]
   },
 	"sagemod:UPGRADED:ColorlessPotion": {
-		"NAME": "Colorless Potion",
+		"NAME": "无色药水",
 		"DESCRIPTIONS": [
-			"Choose #b1 of #b3 random upgraded #yColorless cards to add to your hand, it costs #b0 this turn.",
-			"Choose #b1 of #b3 random upgraded #yColorless cards and add #b2 copies to your hand, they cost #b0 this turn."
+			"从 #b3 张已 #y升级 的随机 #y无色 牌中选择 #b1 张加入你的手牌。这张牌在本回合耗能变为 #b0 。",
+			"从 #b3 张已 #y升级 的随机 #y无色 牌中选择 #b1 张，将其加入你的手牌 #b2 次。这两张牌在本回合耗能变为 #b0 。"
 		]
 	},
 	"sagemod:UPGRADED:infinitespire:BlackPotion": {
-		"NAME": "Black Potion",
+		"NAME": "黑色药水",
 		"DESCRIPTIONS": [
-			"Choose #b1 of #b3 random upgraded [#3D00D6]Black[] cards to add to your hand, it costs #b0 this turn.",
-			"Choose #b1 of #b3 random upgraded [#3D00D6]Black[] cards to add to your hand, it costs #b0 this turn."
+			"从 #b3 张已 #y升级 的随机 [#3D00D6]黑色[] 牌中选择 #b1 张加入你的手牌。这张牌在本回合耗能变为 #b0 。",
+			"从 #b3 张已 #y升级 的随机 [#3D00D6]黑色[] 牌中选择 #b1 张加入你的手牌。这张牌在本回合耗能变为 #b0 。"
 		]
 	},
 	"sagemod:UPGRADED:PowerPotion": {
-		"NAME": "Power Potion",
+		"NAME": "能力药水",
 		"DESCRIPTIONS": [
-			"Choose #b1 of #b3 random upgraded #yPower cards to add to your hand, it costs #b0 this turn.",
-			"Choose #b1 of #b3 random upgraded #yPower cards and add #b2 copies to your hand, they cost #b0 this turn."
+			"从 #b3 张已 #y升级 的随机能力牌中选择 #b1 张加入你的手牌。这张牌在本回合耗能变为 #b0 。",
+			"从 #b3 张已 #升级 的随机能力牌中选择 #b1 张，将其加入你的手牌 #b2 次。这两张牌在本回合耗能变为 #b0 。"
 		]
 	},
 	"sagemod:UPGRADED:SkillPotion": {
-		"NAME": "Skill Potion",
+		"NAME": "技能药水",
 		"DESCRIPTIONS": [
-			"Choose #b1 of #b3 random upgraded #ySkill cards to add to your hand, it costs #b0 this turn.",
-			"Choose #b1 of #b3 random upgraded #ySkill cards and add #b2 copies to your hand, they cost #b0 this turn."
+			"从 #b3 张已 #y升级 的随机技能牌中选择 #b1 张加入你的手牌。这张牌在本回合耗能变为 #b0 。",
+			"从 #b3 张已 #升级 的随机技能牌中选择 #b1 张，将其加入你的手牌 #b2 次。这两张牌在本回合耗能变为 #b0 。"
 		]
 	},
 	"sagemod:Wine": {
-		"NAME": "Wine",
+		"NAME": "酒",
 		"DESCRIPTIONS": [
-			"Reduce all prices in a shop by #b",
-			" Gold."
+			"在商店使用，使当前所有商品减价 #b",
+			" #y金币 。"
 		]
 	}
 }
