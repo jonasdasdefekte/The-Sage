@@ -182,7 +182,11 @@
 	"sagemod:How_To_Poke_At_Slimes": {
 		"NAME": "戳刺史莱姆之道",
 		"DESCRIPTION": "对所有敌人造成你 飞行 层数的伤害X次。",
-		"UPGRADE_DESCRIPTION": "对所有敌人造成你 飞行 层数+ D 的伤害X次。"
+		"UPGRADE_DESCRIPTION": "对所有敌人造成你 飞行 层数+ D 的伤害X次。",
+		"EXTENDED_DESCRIPTION": [
+			" NL （造成 ",
+			" 点伤害X次。）"
+		]
 	},
 	"sagemod:How_To_Wake_Lyons": {
 		"NAME": "唤醒狮子之道",
@@ -266,7 +270,7 @@
 		"NAME": "药水爆炸",
 		"DESCRIPTION": "对所有敌人造成 D 点伤害。 NL 你在本回合每使用过一瓶药水，重复一次。",
 		"EXTENDED_DESCRIPTION": [
-                                                " NL （攻击一次。）",
+			" NL （攻击一次。）",
 			" NL （攻击 ",
 			" 次。）"
 		]
