@@ -29,12 +29,12 @@
 		]
 	},
 	"sagemod:UPGRADED:BottledMiracle": {
-    "NAME": "Bottled Miracle",
-    "DESCRIPTIONS": [
-      "Add #b2 #yMiracles+ to your hand.",
-      "Add #b4 #yMiracles+ to your hand."
-    ]
-  },
+		"NAME": "Bottled Miracle",
+		"DESCRIPTIONS": [
+			"Add #b2 #yMiracles+ to your hand.",
+			"Add #b4 #yMiracles+ to your hand."
+		]
+	},
 	"sagemod:UPGRADED:ColorlessPotion": {
 		"NAME": "Colorless Potion",
 		"DESCRIPTIONS": [
@@ -42,11 +42,25 @@
 			"Choose #b1 of #b3 random upgraded #yColorless cards and add #b2 copies to your hand, they cost #b0 this turn."
 		]
 	},
+	"sagemod:UPGRADED:DuplicationPotion": {
+		"NAME": "Duplication Potion",
+		"DESCRIPTIONS": [
+			"This turn, your next #b2 cards are played twice.",
+			"This turn, your next #b3 cards are played twice."
+		]
+	},
 	"sagemod:UPGRADED:infinitespire:BlackPotion": {
 		"NAME": "Black Potion",
 		"DESCRIPTIONS": [
 			"Choose #b1 of #b3 random upgraded [#3D00D6]Black[] cards to add to your hand, it costs #b0 this turn.",
 			"Choose #b1 of #b3 random upgraded [#3D00D6]Black[] cards to add to your hand, it costs #b0 this turn."
+		]
+	},
+	"sagemod:UPGRADED:LiquidMemories": {
+		"NAME": "Liquid Memories",
+		"DESCRIPTIONS": [
+			"Choose #b2 cards in your discard pile and return them to your hand. They cost #b0 this turn.",
+			"Choose #b3 cards in your discard pile and return them to your hand. They cost #b0 this turn."
 		]
 	},
 	"sagemod:UPGRADED:PowerPotion": {

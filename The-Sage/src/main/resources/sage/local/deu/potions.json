@@ -42,11 +42,25 @@
 			"Wähle #b1 von #b3 zufälligen verbesserten #yfarblosen Karten. Nimm #b2 Kopien auf die Hand, sie kosten diesen Zug #b0."
 		]
 	},
+	"sagemod:UPGRADED:DuplicationPotion": {
+		"NAME": "Verdopplungstrank",
+		"DESCRIPTIONS": [
+			"Deine nächsten #b2 Karten in diesem Zug werden zweimal gespielt.",
+			"Deine nächsten #b3 Karten in diesem Zug werden zweimal gespielt."
+		]
+	},
 	"sagemod:UPGRADED:infinitespire:BlackPotion": {
 		"NAME": "Black Potion",
 		"DESCRIPTIONS": [
 			"Choose #b1 of #b3 random upgraded [#3D00D6]Black[] cards to add to your hand, it costs #b0 this turn.",
 			"Choose #b1 of #b3 random upgraded [#3D00D6]Black[] cards to add to your hand, it costs #b0 this turn."
+		]
+	},
+	"sagemod:UPGRADED:LiquidMemories": {
+		"NAME": "Flüssige Erinnerungen",
+		"DESCRIPTIONS": [
+			"Wähle #b2 Karten aus deinem Abwurfstapel und nimm sie auf die Hand. Sie kosten diesen Zug #b0.",
+			"Wähle #b3 Karten aus deinem Abwurfstapel und nimm sie auf die Hand. Sie kosten diesen Zug #b0."
 		]
 	},
 	"sagemod:UPGRADED:PowerPotion": {
@@ -60,7 +74,7 @@
 		"NAME": "Fertigkeitstrank",
 		"DESCRIPTIONS": [
 			"Wähle #b1 von #b3 zufälligen verbesserten #yFertigkeitskarten. Nimm sie auf die Hand, sie kostet diesen Zug #b0.",
-      "Wähle #b1 von #b3 zufälligen verbesserten #yFertigkeitskarten. Nimm #b2 Kopien auf die Hand, sie kosten diesen Zug #b0."
+			"Wähle #b1 von #b3 zufälligen verbesserten #yFertigkeitskarten. Nimm #b2 Kopien auf die Hand, sie kosten diesen Zug #b0."
 		]
 	},
 	"sagemod:Wine": {

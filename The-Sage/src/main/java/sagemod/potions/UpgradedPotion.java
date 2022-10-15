@@ -20,10 +20,12 @@ import com.megacrit.cardcrawl.potions.AttackPotion;
 import com.megacrit.cardcrawl.potions.BlessingOfTheForge;
 import com.megacrit.cardcrawl.potions.BloodPotion;
 import com.megacrit.cardcrawl.potions.ColorlessPotion;
+import com.megacrit.cardcrawl.potions.DuplicationPotion;
 import com.megacrit.cardcrawl.potions.Elixir;
 import com.megacrit.cardcrawl.potions.EntropicBrew;
 import com.megacrit.cardcrawl.potions.FirePotion;
 import com.megacrit.cardcrawl.potions.GamblersBrew;
+import com.megacrit.cardcrawl.potions.LiquidMemories;
 import com.megacrit.cardcrawl.potions.PotionSlot;
 import com.megacrit.cardcrawl.potions.PowerPotion;
 import com.megacrit.cardcrawl.potions.SkillPotion;
@@ -40,6 +42,7 @@ public class UpgradedPotion extends CustomPotion {
 	public static final List<String> BLACKLIST = new ArrayList<>();
 	public static final List<String> DOUBLE_USE_WHITELIST = new ArrayList<>();
 	public static final List<String> DISCOVERY_LIST = new ArrayList<>();
+	public static final List<String> CUSTOM_DESCRIPTION_LIST = new ArrayList<>();
 
 	public static final float CHANCE = 0.20f;
 	public static final float POTENCY_MULTIPLIER = 1.5f;
@@ -190,6 +193,9 @@ public class UpgradedPotion extends CustomPotion {
 		DOUBLE_USE_WHITELIST.add("Turbid Wine");
 		DOUBLE_USE_WHITELIST.add("conspire:EchoDraught");
 		DOUBLE_USE_WHITELIST.add("construct:MegaPotion");
+		
+		CUSTOM_DESCRIPTION_LIST.add(DuplicationPotion.POTION_ID);
+		CUSTOM_DESCRIPTION_LIST.add(LiquidMemories.POTION_ID);
 	}
 
 	public static void initTextures() {
@@ -220,7 +226,7 @@ public class UpgradedPotion extends CustomPotion {
 				return TWICE + potion.description;
 			}
 
-			if (DISCOVERY_LIST.contains(potion.ID)) {
+			if (DISCOVERY_LIST.contains(potion.ID) || CUSTOM_DESCRIPTION_LIST.contains(potion.ID)) {
 				int descIndex = (AbstractDungeon.player != null
 						&& AbstractDungeon.player.hasRelic(SacredBark.ID)) ? 1 : 0;
 				return CardCrawlGame.languagePack
