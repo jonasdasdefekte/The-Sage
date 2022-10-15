@@ -38,7 +38,7 @@
 		"NAME": "复制药水",
 		"DESCRIPTIONS": [
 			"本回合你的下两张牌将被打出两次。",
-			"本回合你的下两张牌将被打出两次。"
+			"本回合你的下三张牌将被打出两次。"
 		]
 	},
 	"sagemod:UPGRADED:infinitespire:BlackPotion": {
