@@ -411,6 +411,9 @@ public class SageMod implements EditCharactersSubscriber, EditCardsSubscriber, E
 			case DEU:
 				localLanguage = "deu/";
 				break;
+			case ZHS:
+				localLanguage = "zhs/";
+				break;
 			case EPO:
 			case FRA:
 			case GRE:
@@ -429,9 +432,6 @@ public class SageMod implements EditCharactersSubscriber, EditCardsSubscriber, E
 			case TUR:
 			case UKR:
 			case WWW:
-			case ZHS:
-				localLanguage = "zhs/";
-				break;
 			case ZHT:
 			case ENG:
 				localLanguage = "eng/";
