@@ -32,6 +32,7 @@ public class Lunchtime extends AbstractSageCard {
 		if (!upgraded) {
 			upgradeName();
 			rawDescription = cardStrings.UPGRADE_DESCRIPTION;
+			initializeDescription();
 		}
 	}
 
