@@ -35,6 +35,8 @@ public class SwoopDown extends AbstractSageCard {
 	public void upgrade() {
 		if (!upgraded) {
 			upgradeName();
+			rawDescription = cardStrings.UPGRADE_DESCRIPTION;
+			initializeDescription();
 		}
 	}
 
@@ -53,13 +55,13 @@ public class SwoopDown extends AbstractSageCard {
 			attack(AbstractDungeon.getCurrRoom().monsters.getRandomMonster(true), AttackEffect.SLASH_VERTICAL);
 		}
 		if (!upgraded) {
-		AbstractDungeon.actionManager.addToBottom(new ReduceFlightBlockableAction(magicNumber, p));
+			AbstractDungeon.actionManager.addToBottom(new ReduceFlightBlockableAction(magicNumber, p));
 		}
 	}
 
 	@Override
 	public String getLoadedDescription() {
- 		return upgraded ? cardStrings.UPGRADE_DESCRIPTION : DESCRIPTION;
+		return upgraded ? cardStrings.UPGRADE_DESCRIPTION : DESCRIPTION;
 	}
 
 }
