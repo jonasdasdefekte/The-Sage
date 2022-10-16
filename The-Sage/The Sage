@@ -49,12 +49,12 @@ A. This part of the mod is only acessible if you play as the Sage.
 	Crank
 		Attack, 1 Energy:
 		Deal 6 (8) damage. If the enemy has Artifact, draw 1 card. (Draw cards equal to the enemy's Artifact.)
-TODO:	Grounded Strike 
+TODO:	Winding Blow 
 		Attack, 0 Energy:
-		Lose 3 (1) Flight. Deal 6 damage. // Back to be a Flight loss card.
-TODO/ NEW:	Winding Blow 
+		Lose 3 (1) Flight. Deal 6 damage.
+	Grounded Strike 
 		Attack, 1 Energy:
-		Gain 1 Flight. Deal 5 (8) damage. // Former effect of "Grounded Strike"
+		Gain 1 Flight. Deal 5 (8) damage.
 	How To Charm a Sentry
 		Attack, X Energy:
 		Do this X times: Gain 4 (5) Block. Deal 4 (5) damage. The enemy gains 1 Artifact. 
@@ -152,7 +152,7 @@ TODO:	Flying Cauldron
 		Draw 1 card (2 cards) whenever you use a Potion this turn. You cannot gain energy this turn.
 TODO:	How To Amuse Sneckos
 		Skill, X Energy:
-		Draw X + 1 cards. Randomize the cost of cards in your hand between 0 and 3 (2) for this turn. // No more Flight loss, but cost randomization. Costs change back to normal after the cards where played or at end of the turn.
+		Draw X (+ 1) cards with Snecko. // No more Flight loss, but cost randomization.
 	Let it go
 		Skill, 1 Energy:
 		Exhaust a card (up to 2 cards) from your hand. Gain Flight equal to its (their) cost. Exhaust.
