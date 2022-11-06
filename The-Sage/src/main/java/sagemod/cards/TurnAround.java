@@ -44,9 +44,18 @@ public class TurnAround extends AbstractSageCard {
 
 	@Override
 	public void use(AbstractPlayer p, AbstractMonster m) {
-		attack(m, AttackEffect.SLASH_HEAVY);
+		attack(m, AttackEffect.SLASH_HEAVY, damage);
 	}
-	
+
+	@Override
+	public void calculateCardDamage(AbstractMonster mo) {
+		super.calculateCardDamage(mo);
+		if (isFlying()) {
+			damage -= player().getPower(Flight.POWER_ID).amount * magicNumber;
+			isDamageModified = true;
+		}
+	}
+
 	@Override
 	public void applyPowers() {
 		super.applyPowers();

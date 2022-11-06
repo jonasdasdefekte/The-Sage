@@ -13,6 +13,7 @@ import javassist.expr.FieldAccess;
 import javassist.expr.MethodCall;
 import sagemod.relics.AncientMagnet;
 
+@SuppressWarnings("deprecation") // Normal Power Action is already handled in here
 public class PatchesForAncientMagnet {
 	
 	public static PowerType manipulateArtifactType(AbstractPower a) {

@@ -182,7 +182,11 @@
 	"sagemod:How_To_Poke_At_Slimes": {
 		"NAME": "Wie man Schleime sticht",
 		"DESCRIPTION": "Füge ALLEN Gegnern X mal Schaden in Höhe deines Fluges zu.",
-		"UPGRADE_DESCRIPTION": "Füge ALLEN Gegnern X mal Schaden in Höhe deines Fluges + !D! zu."
+		"UPGRADE_DESCRIPTION": "Füge ALLEN Gegnern X mal Schaden in Höhe deines Fluges + !D! zu.",
+		"EXTENDED_DESCRIPTION": [
+			" NL (Fügt X mal ",
+			" Schaden zu.)"
+		]
 	},
 	"sagemod:How_To_Wake_Lyons": {
 		"NAME": "Wie man Lywen aufweckt",

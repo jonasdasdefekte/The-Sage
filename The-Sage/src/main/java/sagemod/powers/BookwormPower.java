@@ -28,7 +28,9 @@ public class BookwormPower extends AbstractSagePower {
 
 	public BookwormPower(AbstractCreature owner, int amount) {
 		super(POWER_ID, NAME, owner, amount);
-		if (upgradeNext) {
+		// Only upgrade here if the player doesn't have this power yet
+		// If the player has this power already, upgradeNext is checked in stackPower
+		if (upgradeNext && !AbstractDungeon.player.hasPower(this.ID)) {
 			gainEnergy += amount;
 			upgradeNext = false;
 		} else {

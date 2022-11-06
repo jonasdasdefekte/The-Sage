@@ -21,12 +21,12 @@
 		]
 	},
 	"sagemod:UPGRADED:BottledMiracle": {
-    "NAME": "瓶装奇迹",
-    "DESCRIPTIONS": [
-      "增加 #b2 张 #y奇迹+ 到你的手牌。",
-      "增加 #b4 张 #y奇迹+ 到你的手牌。"
-    ]
-  },
+		"NAME": "瓶装奇迹",
+		"DESCRIPTIONS": [
+			"增加 #b2 张 #y奇迹+ 到你的手牌。",
+			"增加 #b4 张 #y奇迹+ 到你的手牌。"
+		]
+	},
 	"sagemod:UPGRADED:ColorlessPotion": {
 		"NAME": "无色药水",
 		"DESCRIPTIONS": [
@@ -34,11 +34,25 @@
 			"从 #b3 张已 #y升级 的随机 #y无色 牌中选择 #b1 张，将其加入你的手牌 #b2 次。这两张牌在本回合耗能变为 #b0 。"
 		]
 	},
+	"sagemod:UPGRADED:DuplicationPotion": {
+		"NAME": "复制药水",
+		"DESCRIPTIONS": [
+			"本回合你的下两张牌将被打出两次。",
+			"本回合你的下三张牌将被打出两次。"
+		]
+	},
 	"sagemod:UPGRADED:infinitespire:BlackPotion": {
 		"NAME": "黑色药水",
 		"DESCRIPTIONS": [
 			"从 #b3 张已 #y升级 的随机 [#3D00D6]黑色[] 牌中选择 #b1 张加入你的手牌。这张牌在本回合耗能变为 #b0 。",
 			"从 #b3 张已 #y升级 的随机 [#3D00D6]黑色[] 牌中选择 #b1 张加入你的手牌。这张牌在本回合耗能变为 #b0 。"
+		]
+	},
+	"sagemod:UPGRADED:LiquidMemories": {
+		"NAME": "液态记忆",
+		"DESCRIPTIONS": [
+			"选择弃牌堆中的 #b3 张牌放入你的手牌。它们在本回合的耗能变为 #b0 。",
+			"选择弃牌堆中的 #b3 张牌放入你的手牌。它们在本回合的耗能变为 #b0 。"
 		]
 	},
 	"sagemod:UPGRADED:PowerPotion": {

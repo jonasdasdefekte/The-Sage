@@ -37,6 +37,25 @@ public class HowToPokeAtSlimes extends AbstractSageCard {
 			initializeDescription();
 		}
 	}
+	
+	@Override
+	public void applyPowers() {
+		super.applyPowers();
+		updateExtendedDescription();
+	}
+	
+	private int getBonusDamage() {
+		if (isFlying()) {
+			return player().getPower(Flight.POWER_ID).amount;
+		}
+		return 0;
+	}
+
+	@Override
+	public void calculateCardDamage(AbstractMonster mo) {
+		super.calculateCardDamage(mo);
+		updateExtendedDescription();
+	}
 
 	@Override
 	public AbstractCard makeCopy() {
@@ -48,7 +67,7 @@ public class HowToPokeAtSlimes extends AbstractSageCard {
 		int effect = getXEffect();
 		
 		if (isFlying()) {
-			damage += player().getPower(Flight.POWER_ID).amount;
+			damage += getBonusDamage();
 			this.isDamageModified = true;
 			for (int i = 0; i < multiDamage.length; i++) {
 				multiDamage[i] = damage;
@@ -60,6 +79,14 @@ public class HowToPokeAtSlimes extends AbstractSageCard {
 		}
 
 		useXEnergy();
+	}
+	
+	private void updateExtendedDescription() {
+		rawDescription = getLoadedDescription();
+		rawDescription += cardStrings.EXTENDED_DESCRIPTION[0];
+		rawDescription += damage + getBonusDamage();
+		rawDescription += cardStrings.EXTENDED_DESCRIPTION[1];
+		initializeDescription();
 	}
 
 	@Override

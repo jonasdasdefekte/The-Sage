@@ -2,6 +2,7 @@ package sagemod.relics;
 
 import com.megacrit.cardcrawl.actions.common.ReducePowerAction;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
+import com.megacrit.cardcrawl.rooms.AbstractRoom;
 import com.megacrit.cardcrawl.powers.DexterityPower;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
 import sagemod.powers.Flight;
@@ -24,7 +25,19 @@ public class CabbageHead extends AbstractSageRelic {
 			gainDexterity();
 		}
 	}
-
+	@Override
+	public void onEquip() {
+		// something like this
+		if (AbstractDungeon.getCurrMapNode() != null && 
+				AbstractDungeon.getCurrRoom() != null &&
+				AbstractDungeon.getCurrRoom().phase == AbstractRoom.RoomPhase.COMBAT &&
+				AbstractDungeon.player != null &&
+				!AbstractDungeon.player.hasPower(Flight.POWER_ID)) {
+			gainDexterity();
+		}
+		super.onEquip();
+	}
+	
 	public void gainDexterity() {
 		applyPowerToSelf(new DexterityPower(AbstractDungeon.player, DEXTERITY_AMT));
 		flash();

@@ -6,7 +6,6 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import basemod.helpers.BaseModCardTags;
 
 public class Strike extends AbstractSageCard {
 
@@ -27,7 +26,7 @@ public class Strike extends AbstractSageCard {
 		baseDamage = ATTACK_DMG;
 
 		tags.add(CardTags.STRIKE);
-		tags.add(BaseModCardTags.BASIC_STRIKE);
+		tags.add(CardTags.STARTER_STRIKE);
 	}
 
 	@Override
