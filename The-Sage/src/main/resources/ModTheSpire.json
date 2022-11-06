@@ -5,10 +5,10 @@
 		"jonasdasdefekte",
 		"Skrelpoid"
 	],
-	"description": "Enhanced potion mechanics.\n\nNew character, The Sage.\n\nCharacter neutral content (cards, relics, potions, event).\n\n*** ***** ***\nLATEST UPDATE:\nFixed crashes for several Flight cards.",
-	"version": "0.5.1",
-	"sts_version": "01-27-2020",
-	"mts_version": "3.16.0",
+	"description": "Enhanced potion mechanics.\n\nNew character, The Sage.\n\nCharacter neutral content (cards, relics, potions, event).\n\n*** ***** ***\nLATEST UPDATE:\nSimplified Chinese added.\nSeveral fixes, new potion, new images.",
+	"version": "0.5.2",
+	"sts_version": "10-04-2022",
+	"mts_version": "3.30.0",
 	"dependencies": [
 		"basemod",
 		"stslib"
