@@ -21,7 +21,7 @@
 		"NAMES": [
 			"迷失"
 		],
-		"DESCRIPTION": "迷失敌人每回合的第一次 #y攻击 将无效，持续 #y1 回合。"
+		"DESCRIPTION": "迷失敌人每回合的第一次 #y攻击 将无效，持续 #b1 回合。"
 	},
 	"FLIGHT": {
 		"NAMES": [
@@ -39,7 +39,7 @@
 		"NAMES": [
 			"饥渴"
 		],
-		"DESCRIPTION": "对饥渴敌人使用的药水效力提高 #b50% 。"
+		"DESCRIPTION": "饥渴敌人获得的药水效果提高 #b50% 。"
 	},
 	"VIRUS": {
 		"NAMES": [

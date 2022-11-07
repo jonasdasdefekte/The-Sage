@@ -36,7 +36,7 @@
 		"DESCRIPTION": "失去全部 飞行 。 NL 获得 [E] [E] 。"
 	},
 	"sagemod:Anti_Ancient_Attack": {
-		"NAME": "除旧攻击",
+		"NAME": "古今无赦",
 		"DESCRIPTION": "给予 M 层 人工制品 。 NL 然后，目标每有一层 人工制品 ，造成一次 D 点伤害。",
 		"EXTENDED_DESCRIPTION": [
 			" NL （攻击一次。）",
@@ -79,7 +79,7 @@
 	},
 	"sagemod:Cane_Strike": {
 		"NAME": "藤条打击",
-		"DESCRIPTION": "造成 D 点伤害。 NL 飞行 时伤害翻倍。"
+		"DESCRIPTION": "造成 D 点伤害。 NL 飞行 时伤害先行翻倍。"
 	},
 	"sagemod:Catch_Me_If_You_Can": {
 		"NAME": "来抓我啊",
@@ -185,7 +185,7 @@
 		"UPGRADE_DESCRIPTION": "对所有敌人造成你 飞行 层数+ D 的伤害X次。",
 		"EXTENDED_DESCRIPTION": [
 			" NL （造成 ",
-			" 点伤害X次。）"
+			" 点伤害X次。以此值为准。）"
 		]
 	},
 	"sagemod:How_To_Wake_Lyons": {
@@ -255,8 +255,8 @@
 	},
 	"sagemod:Pincer_Attack": {
 		"NAME": "螯击",
-		"DESCRIPTION": "造成 D 点伤害。 NL 此值加上目标的 人工制品 层数。",
-		"UPGRADE_DESCRIPTION": "造成 D 点伤害。 NL 此值加上目标 人工制品 层数的两倍。"
+		"DESCRIPTION": "造成 D 点伤害。 NL 此值固定加上目标的 人工制品 层数。",
+		"UPGRADE_DESCRIPTION": "造成 D 点伤害。 NL 此值固定加上目标 人工制品 层数的两倍。"
 	},
 	"sagemod:Pincer_Repair": {
 		"NAME": "螯缮",
@@ -353,7 +353,7 @@
 		"DESCRIPTION": "造成 D 点伤害。"
 	},
 	"sagemod:Study": {
-		"NAME": "研习",
+		"NAME": "研究邪教",
 		"DESCRIPTION": "抽 M 张牌。 NL 将手牌中的 !sagemod:MISC! 张牌放到你的抽牌堆顶部。",
 		"UPGRADE_DESCRIPTION": "抽 M 张牌。 NL 你可以将手牌中的 !sagemod:MISC! 张牌放到你的抽牌堆顶部。",
 		"EXTENDED_DESCRIPTION": [
@@ -362,7 +362,8 @@
 	},
 	"sagemod:Swoop_Down": {
 		"NAME": "俯冲",
-		"DESCRIPTION": "你每有一层 飞行 ，就随机对敌人造成一次 D 点伤害。 NL 然后失去全部 飞行 。"
+		"DESCRIPTION": "你每有一层 飞行 ，就随机对敌人造成一次 D 点伤害。 NL 然后失去 M 层 飞行 。",
+                                "UPGRADE_DESCRIPTION": "你每有一层 飞行 ，就随机对敌人造成一次 D 点伤害。"
 	},
 	"sagemod:Taste_This_One": {
 		"NAME": "尝尝这个",
@@ -375,11 +376,11 @@
 	},
 	"sagemod:Turn_Around": {
 		"NAME": "转身",
-		"DESCRIPTION": "造成 D 点伤害。 NL 你每有一层 飞行 ，此值减 M 。"
+		"DESCRIPTION": "造成 D 点伤害。 NL 你每有一层 飞行 ，此值固定减 M 。"
 	},
 	"sagemod:Undermine": {
 		"NAME": "侵蚀",
-		"DESCRIPTION": "给予所有敌人 M 层 人工制品 。 NL 每当你攻击敌人时，对其额外造成其 人工制品 层数的伤害。 NL 本能力不可叠加。"
+		"DESCRIPTION": "给予所有敌人 M 层 人工制品 。 NL 每当你攻击敌人时，对其额外造成其 人工制品 层数的固定伤害。 NL 本能力不可叠加。"
 	},
 	"sagemod:Upwards": {
 		"NAME": "上升",
