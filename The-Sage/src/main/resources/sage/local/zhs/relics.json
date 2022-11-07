@@ -35,7 +35,7 @@
 		"NAME": "白菜头",
 		"FLAVOR": "散发着强烈的异味。",
 		"DESCRIPTIONS": [
-			"非 #y飞行 时获得 #b",
+			"非 #y飞行 时具有 #b",
 			" 点 #y敏捷 。"
 		]
 	},
@@ -65,7 +65,7 @@
 	},
 	"sagemod:Flying_Carpet": {
 		"NAME": "飞行地毯",
-		"FLAVOR": "一条古老的地毯，跟遥远东方的奴隶主们所用的类似。",
+		"FLAVOR": "一条古老的地毯，跟遥远东方的奴隶贩子们所用的类似。",
 		"DESCRIPTIONS": [
 			"在每场战斗的第二个回合开始时，获得 #b",
 			" 层 #y飞行 。"
@@ -107,8 +107,8 @@
 		"NAME": "",
 		"FLAVOR": "",
 		"DESCRIPTIONS": [
-			"Whenever you DISCARD a potion, heal #b",
-			" HP."
+			"你每 #r丢弃 一瓶药水，回复 #b",
+			" 点生命。"
 		]
 	}
 }

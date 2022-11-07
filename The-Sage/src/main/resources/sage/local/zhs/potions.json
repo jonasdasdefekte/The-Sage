@@ -13,6 +13,14 @@
 			" 层 #y飞行 。"
 		]
 	},
+                "sagemod:Hot_Pepperino": {
+		"NAME": "劲辣胡椒",
+		"DESCRIPTIONS": [
+			"本场战斗 #y炼制 药水所需回合数减少 #b1 。",
+			"本场战斗 #y炼制 药水所需回合数减少 #b",
+			" 。"
+		]
+	},
 	"sagemod:UPGRADED:AttackPotion": {
 		"NAME": "攻击药水",
 		"DESCRIPTIONS": [
@@ -51,7 +59,7 @@
 	"sagemod:UPGRADED:LiquidMemories": {
 		"NAME": "液态记忆",
 		"DESCRIPTIONS": [
-			"选择弃牌堆中的 #b3 张牌放入你的手牌。它们在本回合的耗能变为 #b0 。",
+			"选择弃牌堆中的 #b2 张牌放入你的手牌。它们在本回合的耗能变为 #b0 。",
 			"选择弃牌堆中的 #b3 张牌放入你的手牌。它们在本回合的耗能变为 #b0 。"
 		]
 	},
