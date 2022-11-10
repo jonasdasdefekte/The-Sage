@@ -3,10 +3,11 @@
 	"name": "The Sage",
 	"author_list": [
 		"jonasdasdefekte",
-		"Skrelpoid"
+		"Skrelpoid",
+		"lastcel"
 	],
-	"description": "Enhanced potion mechanics.\n\nNew character, The Sage.\n\nCharacter neutral content (cards, relics, potions, event).\n\n*** ***** ***\nLATEST UPDATE:\nSimplified Chinese added.\nSeveral fixes, new potion, new images.",
-	"version": "0.5.2",
+	"description": "Enhanced potion mechanics.\n\nNew character, The Sage.\n\nCharacter neutral content (cards, relics, potions, event).\n\n*** ***** ***\nLATEST UPDATE:\nSimplified Chinese updated.",
+	"version": "0.5.3",
 	"sts_version": "10-04-2022",
 	"mts_version": "3.30.0",
 	"dependencies": [
